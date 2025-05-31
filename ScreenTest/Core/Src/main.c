@@ -54,6 +54,11 @@
 #define OFFSET      50
 #define FREQ        5.0f     // Sinüs frekansı
 #define GAP_EVERY   10       
+
+// for fir filter 
+#define NUM_TAPS 32 
+#define BLOCK_SIZE 1 
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -162,6 +167,16 @@ char rxBuffer[RX_BUFFER_SIZE];
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+
+// fir filter coefficients
+float32_t fir_coeffs_f32[NUM_TAPS] = {
+
+};
+
+float32_t fir_state_f32[NUM_TAPS - BLOCK_SIZE -1];
+
+arm_fir_instance_f32 S;
+
 void my_flush_cb(lv_display_t * display, const lv_area_t * area, uint8_t * px_map)
 {
     
@@ -302,7 +317,10 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-
+    arm_fir_init_f32(&S, NUM_TAPS, fir_coeffs_f32, fir_state_f32, BLOCK_SIZE);
+    float32_t input_sample = /**/
+    float32_t output_sample;
+    ar_fir_f32(&S, &input_sample, &output_sample, 1);
   /* USER CODE END Init */
 
   /* Configure the system clock */
