@@ -50,8 +50,8 @@
 #define FRAME_VERT 272
 
 #define POINT_COUNT 150.0f
-#define AMPLITUDE   40
-#define OFFSET      25
+#define AMPLITUDE   10
+#define OFFSET      50
 #define FREQ        5.0f     // Sinüs frekansı
 #define GAP_EVERY   10       
 /* USER CODE END PD */
@@ -155,7 +155,9 @@ static void MX_USART6_UART_Init(void);
 void MX_USB_HOST_Process(void);
 
 /* USER CODE BEGIN PFP */
+#define RX_BUFFER_SIZE 64
 
+char rxBuffer[RX_BUFFER_SIZE];
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -185,15 +187,46 @@ lv_chart_series_t * series3;
 lv_timer_t * timer;
 int x = 0;
 uint8_t buf[10];
+
+
+float getFloatBetweenNewlines(void) {
+  uint8_t ch;
+  int index = 0;
+  int started = 0;
+
+  while (1) {
+      HAL_UART_Receive(&huart1, &ch, 1, HAL_MAX_DELAY);
+
+      if (ch == '\n') {
+          if (!started) {
+              // İlk newline geldi, şimdi başla
+              started = 1;
+              index = 0; // sıfırdan başla
+              continue;
+          } else {
+              // İkinci newline geldi, bitti
+              rxBuffer[index] = '\0';
+              break;
+          }
+      }
+
+      if (started && index < RX_BUFFER_SIZE - 1) {
+          rxBuffer[index++] = ch;
+      }
+  }
+
+  // String'i float'a çevir
+  return strtof(rxBuffer, NULL);
+}
 void timer_cb(lv_timer_t * timer)
 {
 
 
     float rad = 2 * 3.14159265359 * FREQ * x / POINT_COUNT;
     /* float val = sinf(rad); */
-    float val;
-    scanf("%.2f\r\n",val);
-    printf("%.2f\r\n",val);
+    float val = getFloatBetweenNewlines();
+    printf("%f", val);
+    //printf("%.2f\r\n",val);
     int16_t y = (int16_t)(val * AMPLITUDE + OFFSET);
     sprintf(buf, "%d", y);  
     lv_label_set_text(objects.label1, buf); 
@@ -204,7 +237,7 @@ void timer_cb(lv_timer_t * timer)
     int32_t * a1 = lv_chart_get_series_y_array(objects.chart1, series1);
 
     rad = 2 * 3.14159265359 * (FREQ+5) * x / POINT_COUNT;
-    val = sinf(rad);
+    //val = sinf(rad);
     
     y = (int16_t)(val * AMPLITUDE + OFFSET);
     sprintf(buf, "%d", y);  
@@ -216,7 +249,7 @@ void timer_cb(lv_timer_t * timer)
     int32_t * a2 = lv_chart_get_series_y_array(objects.chart2, series2);
 
     rad = 2 * 3.14159265359 * (FREQ+10) * x / POINT_COUNT;
-    val = sinf(rad);
+    //val = sinf(rad);
     y = (int16_t)(val * AMPLITUDE + OFFSET);
     sprintf(buf, "%d", y);
     lv_label_set_text(objects.label3, buf); 
@@ -249,23 +282,7 @@ int _write(int file, char *ptr, int len)
   HAL_UART_Transmit(&huart1,ptr,len,HAL_MAX_DELAY);
   return len;
 }
-int _read(int file, char *ptr, int len)
-{
-  int i;
-    for (i = 0; i < len; i++) {
-        // Blocking read one character at a time
-        HAL_UART_Receive(&huart1, (uint8_t *)&ptr[i], 1, HAL_MAX_DELAY);
 
-        // Optional: echo back if desired
-        // HAL_UART_Transmit(&huart1, (uint8_t *)&ptr[i], 1, HAL_MAX_DELAY);
-
-        // Stop at newline
-        if (ptr[i] == '\n' || ptr[i] == '\r') {
-            break;
-        }
-    }
-    return i;
-}
 /* USER CODE END 0 */
 
 /**
@@ -352,7 +369,7 @@ int main(void)
   BSP_LCD_DisplayStringAt (20, 20, "Hello World", LEFT_MODE);
   BSP_LCD_DrawCircle(100,100,50);
   BSP_LCD_DrawPixel(120,120, 0xFF00FF00 ); */
-  
+  setvbuf(stdin, NULL, _IONBF, 0);  // stdin buffer'ını kapat
   lv_init();
   lv_tick_set_cb(HAL_GetTick);
   
