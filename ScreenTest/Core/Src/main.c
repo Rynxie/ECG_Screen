@@ -21,7 +21,7 @@
 #include "string.h"
 #include "fatfs.h"
 #include "usb_host.h"
-
+#include "arm_math.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "stm32746g_discovery.h"
@@ -169,12 +169,20 @@ char rxBuffer[RX_BUFFER_SIZE];
 /* USER CODE BEGIN 0 */
 
 // fir filter coefficients
-float32_t fir_coeffs_f32[NUM_TAPS] = {
-
+float fir_coeffs_f32[NUM_TAPS] = {
+-1.11951795e-04  1.41887686e-03  1.86592777e-03 -6.46433736e-04
+ -6.09599105e-03 -9.31113805e-03 -3.11081339e-03  1.16811347e-02
+  2.04652487e-02  5.35656673e-03 -3.23527615e-02 -6.03046484e-02
+ -3.32833994e-02  6.66737800e-02  2.03186887e-01  3.01656326e-01
+  3.01656326e-01  2.03186887e-01  6.66737800e-02 -3.32833994e-02
+ -6.03046484e-02 -3.23527615e-02  5.35656673e-03  2.04652487e-02
+  1.16811347e-02 -3.11081339e-03 -9.31113805e-03 -6.09599105e-03
+ -6.46433736e-04  1.86592777e-03  1.41887686e-03 -1.11951795e-04]
 };
 
-float32_t fir_state_f32[NUM_TAPS - BLOCK_SIZE -1];
-
+float fir_state_f32[NUM_TAPS - BLOCK_SIZE -1];
+float ecgBuffer[150];
+float filtered_ecg[150];
 arm_fir_instance_f32 S;
 
 void my_flush_cb(lv_display_t * display, const lv_area_t * area, uint8_t * px_map)
@@ -318,9 +326,7 @@ int main(void)
 
   /* USER CODE BEGIN Init */
     arm_fir_init_f32(&S, NUM_TAPS, fir_coeffs_f32, fir_state_f32, BLOCK_SIZE);
-    float32_t input_sample = /**/
-    float32_t output_sample;
-    ar_fir_f32(&S, &input_sample, &output_sample, 1);
+    ar_fir_f32(&S, ecgBuffer, filtered_ecg, 1);
   /* USER CODE END Init */
 
   /* Configure the system clock */
