@@ -36,6 +36,7 @@
 #include "ui.h"
 #include "math.h"
 
+#include <math.h>
 #include <stdio.h>
 /* USER CODE END Includes */
 
@@ -58,6 +59,9 @@
 // for fir filter 
 #define NUM_TAPS 32 
 #define BLOCK_SIZE 1 
+
+#define jFT_SIZE 128//fast fouirer transorm
+
 
 /* USER CODE END PD */
 
@@ -128,6 +132,11 @@ SDRAM_HandleTypeDef hsdram1;
 
 /* USER CODE BEGIN PV */
 LTDC_LayerCfgTypeDef pLayerCfg;
+
+arm_fir_instance_f32 S;
+arm_rfft_fast_instance_f32 fft;
+arm_rfft_fast_init_f32(&fft, FFT_SIZE);
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -180,10 +189,17 @@ float fir_coeffs_f32[NUM_TAPS] = {
  -6.46433736e-04  1.86592777e-03  1.41887686e-03 -1.11951795e-04]
 };
 
+// fir filter 
 float fir_state_f32[NUM_TAPS - BLOCK_SIZE -1];
 float ecgBuffer[150];
 float filtered_ecg[150];
-arm_fir_instance_f32 S;
+float input128[128];
+
+//fft buffers 
+float fft_output[FFT_SIZE];
+float magnitude[FFT_SIZE/2];
+
+
 
 void my_flush_cb(lv_display_t * display, const lv_area_t * area, uint8_t * px_map)
 {
@@ -316,17 +332,35 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-
+    int index;
+    float frequency; 
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
-
+    for(int i = 0; i < 128; i++){
+        input128[i] = filtered_ecg[i];
+    }
   /* USER CODE BEGIN Init */
     arm_fir_init_f32(&S, NUM_TAPS, fir_coeffs_f32, fir_state_f32, BLOCK_SIZE);
-    ar_fir_f32(&S, ecgBuffer, filtered_ecg, 1);
+    arm_fir_f32(&S, ecgBuffer, filtered_ecg, 1);
+    
+    arm_rfft_fast_f32(&fft, input128, fft_output, 0);
+    
+    for(int i = 0; i < FFT_SIZE/2; i++){
+        float real = fft_output[2*i];
+        float imag = fft_output[2*i+1];
+        magnitude[i] = sqrtf((real*real + imag*imag);
+    }
+
+    for (int i = 1; i < FFT_SIZE/2; i++){
+        index = 0;
+        if(magnitude[i-1] < magnitude[i]{
+            index = i; 
+    }
+    frequency = (index * 250) / 128;
   /* USER CODE END Init */
 
   /* Configure the system clock */
