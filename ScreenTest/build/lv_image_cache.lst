@@ -1,0 +1,1070 @@
+ARM GAS  /tmp/ccALy2Tg.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.arch armv7e-m
+   3              		.fpu fpv5-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"lv_image_cache.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Drivers/lvgl/src/misc/cache/lv_image_cache.c"
+  20              		.section	.text.image_cache_free_cb,"ax",%progbits
+  21              		.align	1
+  22              		.syntax unified
+  23              		.thumb
+  24              		.thumb_func
+  26              	image_cache_free_cb:
+  27              	.LVL0:
+  28              	.LFB194:
+   1:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** /**
+   2:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** * @file lv_image_cache.c
+   3:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** *
+   4:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****  */
+   5:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+   6:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** /*********************
+   7:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****  *      INCLUDES
+   8:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****  *********************/
+   9:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+  10:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** #include "../../draw/lv_image_decoder_private.h"
+  11:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** #include "../lv_assert.h"
+  12:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** #include "../../core/lv_global.h"
+  13:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** #include "../../misc/lv_iter.h"
+  14:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+  15:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** #include "lv_image_cache.h"
+  16:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** #include "lv_image_header_cache.h"
+  17:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+  18:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** /*********************
+  19:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****  *      DEFINES
+  20:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****  *********************/
+  21:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+  22:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** #define CACHE_NAME  "IMAGE"
+  23:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+  24:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** #define img_cache_p (LV_GLOBAL_DEFAULT()->img_cache)
+  25:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** #define image_cache_draw_buf_handlers &(LV_GLOBAL_DEFAULT()->image_cache_draw_buf_handlers)
+  26:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+  27:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** /**********************
+  28:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****  *      TYPEDEFS
+  29:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****  **********************/
+  30:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+ARM GAS  /tmp/ccALy2Tg.s 			page 2
+
+
+  31:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** /**********************
+  32:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****  *  STATIC PROTOTYPES
+  33:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****  **********************/
+  34:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+  35:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** static lv_cache_compare_res_t image_cache_compare_cb(const lv_image_cache_data_t * lhs,
+  36:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****                                                      const lv_image_cache_data_t * rhs);
+  37:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** static void image_cache_free_cb(lv_image_cache_data_t * entry, void * user_data);
+  38:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** static void iter_inspect_cb(void * elem);
+  39:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+  40:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** /**********************
+  41:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****  *  GLOBAL VARIABLES
+  42:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****  **********************/
+  43:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+  44:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** /**********************
+  45:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****  *  STATIC VARIABLES
+  46:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****  **********************/
+  47:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+  48:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** /**********************
+  49:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****  *      MACROS
+  50:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****  **********************/
+  51:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+  52:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** /**********************
+  53:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****  *   GLOBAL FUNCTIONS
+  54:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****  **********************/
+  55:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+  56:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** lv_result_t lv_image_cache_init(uint32_t size)
+  57:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** {
+  58:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     if(img_cache_p != NULL) {
+  59:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         return LV_RESULT_OK;
+  60:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     }
+  61:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+  62:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     img_cache_p = lv_cache_create(&lv_cache_class_lru_rb_size,
+  63:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     sizeof(lv_image_cache_data_t), size, (lv_cache_ops_t) {
+  64:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         .compare_cb = (lv_cache_compare_cb_t) image_cache_compare_cb,
+  65:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         .create_cb = NULL,
+  66:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         .free_cb = (lv_cache_free_cb_t) image_cache_free_cb,
+  67:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     });
+  68:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+  69:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     lv_cache_set_name(img_cache_p, CACHE_NAME);
+  70:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     return img_cache_p != NULL ? LV_RESULT_OK : LV_RESULT_INVALID;
+  71:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+  72:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+  73:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** void lv_image_cache_resize(uint32_t new_size, bool evict_now)
+  74:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** {
+  75:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     lv_cache_set_max_size(img_cache_p, new_size, NULL);
+  76:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     if(evict_now) {
+  77:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         lv_cache_reserve(img_cache_p, new_size, NULL);
+  78:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     }
+  79:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+  80:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+  81:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** void lv_image_cache_drop(const void * src)
+  82:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** {
+  83:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     /*If user invalidate image, the header cache should be invalidated too.*/
+  84:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     lv_image_header_cache_drop(src);
+  85:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+  86:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     if(src == NULL) {
+  87:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         lv_cache_drop_all(img_cache_p, NULL);
+ARM GAS  /tmp/ccALy2Tg.s 			page 3
+
+
+  88:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         return;
+  89:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     }
+  90:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+  91:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     lv_image_cache_data_t search_key = {
+  92:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         .src = src,
+  93:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         .src_type = lv_image_src_get_type(src),
+  94:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     };
+  95:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+  96:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     lv_cache_drop(img_cache_p, &search_key, NULL);
+  97:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+  98:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+  99:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** bool lv_image_cache_is_enabled(void)
+ 100:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** {
+ 101:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     return lv_cache_is_enabled(img_cache_p);
+ 102:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+ 103:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+ 104:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** lv_iter_t * lv_image_cache_iter_create(void)
+ 105:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** {
+ 106:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     return lv_cache_iter_create(img_cache_p);
+ 107:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+ 108:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+ 109:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** void lv_image_cache_dump(void)
+ 110:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** {
+ 111:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     lv_iter_t * iter = lv_image_cache_iter_create();
+ 112:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     if(iter == NULL) return;
+ 113:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+ 114:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     LV_LOG_USER("Image cache dump:");
+ 115:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     LV_LOG_USER("\tsize\tdata_size\tcf\trc\ttype\tdecoded\t\t\tsrc");
+ 116:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     lv_iter_inspect(iter, iter_inspect_cb);
+ 117:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+ 118:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+ 119:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** /**********************
+ 120:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****  *   STATIC FUNCTIONS
+ 121:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****  **********************/
+ 122:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+ 123:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** inline static lv_cache_compare_res_t image_cache_common_compare(const void * lhs_src, lv_image_src_
+ 124:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****                                                                 const void * rhs_src, lv_image_src_
+ 125:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** {
+ 126:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     if(lhs_src_type == rhs_src_type) {
+ 127:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         if(lhs_src_type == LV_IMAGE_SRC_FILE) {
+ 128:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             int32_t cmp_res = lv_strcmp(lhs_src, rhs_src);
+ 129:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             if(cmp_res != 0) {
+ 130:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****                 return cmp_res > 0 ? 1 : -1;
+ 131:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             }
+ 132:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         }
+ 133:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         else if(lhs_src_type == LV_IMAGE_SRC_VARIABLE) {
+ 134:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             if(lhs_src != rhs_src) {
+ 135:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****                 return lhs_src > rhs_src ? 1 : -1;
+ 136:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             }
+ 137:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         }
+ 138:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         return 0;
+ 139:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     }
+ 140:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     return lhs_src_type > rhs_src_type ? 1 : -1;
+ 141:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+ 142:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+ 143:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** static lv_cache_compare_res_t image_cache_compare_cb(
+ 144:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     const lv_image_cache_data_t * lhs,
+ARM GAS  /tmp/ccALy2Tg.s 			page 4
+
+
+ 145:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     const lv_image_cache_data_t * rhs)
+ 146:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** {
+ 147:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     return image_cache_common_compare(lhs->src, lhs->src_type, rhs->src, rhs->src_type);
+ 148:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+ 149:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+ 150:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** static void image_cache_free_cb(lv_image_cache_data_t * entry, void * user_data)
+ 151:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** {
+  29              		.loc 1 151 1 view -0
+  30              		.cfi_startproc
+  31              		@ args = 0, pretend = 0, frame = 0
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  33              		.loc 1 151 1 is_stmt 0 view .LVU1
+  34 0000 38B5     		push	{r3, r4, r5, lr}
+  35              	.LCFI0:
+  36              		.cfi_def_cfa_offset 16
+  37              		.cfi_offset 3, -16
+  38              		.cfi_offset 4, -12
+  39              		.cfi_offset 5, -8
+  40              		.cfi_offset 14, -4
+  41 0002 0446     		mov	r4, r0
+ 152:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     LV_UNUSED(user_data);
+  42              		.loc 1 152 5 is_stmt 1 view .LVU2
+ 153:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+ 154:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     /* Destroy the decoded draw buffer if necessary. */
+ 155:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     lv_draw_buf_t * decoded = (lv_draw_buf_t *)entry->decoded;
+  43              		.loc 1 155 5 view .LVU3
+  44              		.loc 1 155 21 is_stmt 0 view .LVU4
+  45 0004 C568     		ldr	r5, [r0, #12]
+  46              	.LVL1:
+ 156:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     if(lv_draw_buf_has_flag(decoded, LV_IMAGE_FLAGS_ALLOCATED)) {
+  47              		.loc 1 156 5 is_stmt 1 view .LVU5
+  48              		.loc 1 156 8 is_stmt 0 view .LVU6
+  49 0006 1021     		movs	r1, #16
+  50              	.LVL2:
+  51              		.loc 1 156 8 view .LVU7
+  52 0008 2846     		mov	r0, r5
+  53              	.LVL3:
+  54              		.loc 1 156 8 view .LVU8
+  55 000a FFF7FEFF 		bl	lv_draw_buf_has_flag
+  56              	.LVL4:
+  57              		.loc 1 156 7 discriminator 1 view .LVU9
+  58 000e 18B9     		cbnz	r0, .L5
+  59              	.L2:
+ 157:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         lv_draw_buf_destroy(decoded);
+ 158:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     }
+ 159:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+ 160:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     /*Free the duplicated file name*/
+ 161:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     if(entry->src_type == LV_IMAGE_SRC_FILE) lv_free((void *)entry->src);
+  60              		.loc 1 161 5 is_stmt 1 view .LVU10
+  61              		.loc 1 161 13 is_stmt 0 view .LVU11
+  62 0010 237A     		ldrb	r3, [r4, #8]	@ zero_extendqisi2
+  63              		.loc 1 161 7 view .LVU12
+  64 0012 012B     		cmp	r3, #1
+  65 0014 04D0     		beq	.L6
+  66              	.L1:
+ 162:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+  67              		.loc 1 162 1 view .LVU13
+ARM GAS  /tmp/ccALy2Tg.s 			page 5
+
+
+  68 0016 38BD     		pop	{r3, r4, r5, pc}
+  69              	.LVL5:
+  70              	.L5:
+ 157:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         lv_draw_buf_destroy(decoded);
+  71              		.loc 1 157 9 is_stmt 1 view .LVU14
+  72 0018 2846     		mov	r0, r5
+  73 001a FFF7FEFF 		bl	lv_draw_buf_destroy
+  74              	.LVL6:
+  75 001e F7E7     		b	.L2
+  76              	.L6:
+ 161:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+  77              		.loc 1 161 46 discriminator 1 view .LVU15
+  78 0020 6068     		ldr	r0, [r4, #4]
+  79 0022 FFF7FEFF 		bl	lv_free
+  80              	.LVL7:
+  81              		.loc 1 162 1 is_stmt 0 view .LVU16
+  82 0026 F6E7     		b	.L1
+  83              		.cfi_endproc
+  84              	.LFE194:
+  86              		.section	.text.image_cache_common_compare,"ax",%progbits
+  87              		.align	1
+  88              		.syntax unified
+  89              		.thumb
+  90              		.thumb_func
+  92              	image_cache_common_compare:
+  93              	.LVL8:
+  94              	.LFB192:
+ 125:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     if(lhs_src_type == rhs_src_type) {
+  95              		.loc 1 125 1 is_stmt 1 view -0
+  96              		.cfi_startproc
+  97              		@ args = 0, pretend = 0, frame = 0
+  98              		@ frame_needed = 0, uses_anonymous_args = 0
+ 126:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         if(lhs_src_type == LV_IMAGE_SRC_FILE) {
+  99              		.loc 1 126 5 view .LVU18
+ 126:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         if(lhs_src_type == LV_IMAGE_SRC_FILE) {
+ 100              		.loc 1 126 7 is_stmt 0 view .LVU19
+ 101 0000 9942     		cmp	r1, r3
+ 102 0002 03D0     		beq	.L22
+ 140:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+ 103              		.loc 1 140 5 is_stmt 1 view .LVU20
+ 140:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+ 104              		.loc 1 140 44 is_stmt 0 view .LVU21
+ 105 0004 9942     		cmp	r1, r3
+ 106 0006 1AD9     		bls	.L16
+ 140:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+ 107              		.loc 1 140 44 discriminator 1 view .LVU22
+ 108 0008 0120     		movs	r0, #1
+ 109              	.LVL9:
+ 140:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+ 110              		.loc 1 140 44 discriminator 1 view .LVU23
+ 111 000a 7047     		bx	lr
+ 112              	.LVL10:
+ 113              	.L22:
+ 127:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             int32_t cmp_res = lv_strcmp(lhs_src, rhs_src);
+ 114              		.loc 1 127 9 is_stmt 1 view .LVU24
+ 127:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             int32_t cmp_res = lv_strcmp(lhs_src, rhs_src);
+ 115              		.loc 1 127 11 is_stmt 0 view .LVU25
+ARM GAS  /tmp/ccALy2Tg.s 			page 6
+
+
+ 116 000c 0129     		cmp	r1, #1
+ 117 000e 05D0     		beq	.L23
+ 133:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             if(lhs_src != rhs_src) {
+ 118              		.loc 1 133 14 is_stmt 1 view .LVU26
+ 133:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             if(lhs_src != rhs_src) {
+ 119              		.loc 1 133 16 is_stmt 0 view .LVU27
+ 120 0010 C1B9     		cbnz	r1, .L18
+ 134:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****                 return lhs_src > rhs_src ? 1 : -1;
+ 121              		.loc 1 134 13 is_stmt 1 view .LVU28
+ 134:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****                 return lhs_src > rhs_src ? 1 : -1;
+ 122              		.loc 1 134 15 is_stmt 0 view .LVU29
+ 123 0012 9042     		cmp	r0, r2
+ 124 0014 16D0     		beq	.L18
+ 135:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             }
+ 125              		.loc 1 135 17 is_stmt 1 view .LVU30
+ 135:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             }
+ 126              		.loc 1 135 46 is_stmt 0 view .LVU31
+ 127 0016 0DD9     		bls	.L15
+ 135:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             }
+ 128              		.loc 1 135 46 discriminator 1 view .LVU32
+ 129 0018 0120     		movs	r0, #1
+ 130              	.LVL11:
+ 135:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             }
+ 131              		.loc 1 135 46 discriminator 1 view .LVU33
+ 132 001a 7047     		bx	lr
+ 133              	.LVL12:
+ 134              	.L23:
+ 125:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     if(lhs_src_type == rhs_src_type) {
+ 135              		.loc 1 125 1 view .LVU34
+ 136 001c 08B5     		push	{r3, lr}
+ 137              	.LCFI1:
+ 138              		.cfi_def_cfa_offset 8
+ 139              		.cfi_offset 3, -8
+ 140              		.cfi_offset 14, -4
+ 141              	.LBB2:
+ 128:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             if(cmp_res != 0) {
+ 142              		.loc 1 128 13 is_stmt 1 view .LVU35
+ 128:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             if(cmp_res != 0) {
+ 143              		.loc 1 128 31 is_stmt 0 view .LVU36
+ 144 001e 1146     		mov	r1, r2
+ 145              	.LVL13:
+ 128:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             if(cmp_res != 0) {
+ 146              		.loc 1 128 31 view .LVU37
+ 147 0020 FFF7FEFF 		bl	lv_strcmp
+ 148              	.LVL14:
+ 129:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****                 return cmp_res > 0 ? 1 : -1;
+ 149              		.loc 1 129 13 is_stmt 1 view .LVU38
+ 129:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****                 return cmp_res > 0 ? 1 : -1;
+ 150              		.loc 1 129 15 is_stmt 0 view .LVU39
+ 151 0024 48B1     		cbz	r0, .L10
+ 130:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             }
+ 152              		.loc 1 130 17 is_stmt 1 view .LVU40
+ 130:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             }
+ 153              		.loc 1 130 40 is_stmt 0 view .LVU41
+ 154 0026 0028     		cmp	r0, #0
+ 155 0028 01DD     		ble	.L14
+ 130:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             }
+ARM GAS  /tmp/ccALy2Tg.s 			page 7
+
+
+ 156              		.loc 1 130 40 discriminator 1 view .LVU42
+ 157 002a 0120     		movs	r0, #1
+ 158              	.LVL15:
+ 130:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             }
+ 159              		.loc 1 130 40 discriminator 1 view .LVU43
+ 160 002c 06E0     		b	.L12
+ 161              	.LVL16:
+ 162              	.L14:
+ 130:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             }
+ 163              		.loc 1 130 40 discriminator 2 view .LVU44
+ 164 002e 4FF0FF30 		mov	r0, #-1
+ 165              	.LVL17:
+ 130:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             }
+ 166              		.loc 1 130 40 view .LVU45
+ 167 0032 03E0     		b	.L12
+ 168              	.LVL18:
+ 169              	.L15:
+ 170              	.LCFI2:
+ 171              		.cfi_def_cfa_offset 0
+ 172              		.cfi_restore 3
+ 173              		.cfi_restore 14
+ 130:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             }
+ 174              		.loc 1 130 40 view .LVU46
+ 175              	.LBE2:
+ 135:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             }
+ 176              		.loc 1 135 46 discriminator 2 view .LVU47
+ 177 0034 4FF0FF30 		mov	r0, #-1
+ 178              	.LVL19:
+ 135:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             }
+ 179              		.loc 1 135 46 view .LVU48
+ 180 0038 7047     		bx	lr
+ 181              	.LVL20:
+ 182              	.L10:
+ 183              	.LCFI3:
+ 184              		.cfi_def_cfa_offset 8
+ 185              		.cfi_offset 3, -8
+ 186              		.cfi_offset 14, -4
+ 138:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     }
+ 187              		.loc 1 138 9 is_stmt 1 view .LVU49
+ 138:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     }
+ 188              		.loc 1 138 16 is_stmt 0 view .LVU50
+ 189 003a 0020     		movs	r0, #0
+ 190              	.LVL21:
+ 191              	.L12:
+ 141:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+ 192              		.loc 1 141 1 view .LVU51
+ 193 003c 08BD     		pop	{r3, pc}
+ 194              	.LVL22:
+ 195              	.L16:
+ 196              	.LCFI4:
+ 197              		.cfi_def_cfa_offset 0
+ 198              		.cfi_restore 3
+ 199              		.cfi_restore 14
+ 140:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+ 200              		.loc 1 140 44 discriminator 2 view .LVU52
+ 201 003e 4FF0FF30 		mov	r0, #-1
+ 202              	.LVL23:
+ARM GAS  /tmp/ccALy2Tg.s 			page 8
+
+
+ 140:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+ 203              		.loc 1 140 44 discriminator 2 view .LVU53
+ 204 0042 7047     		bx	lr
+ 205              	.LVL24:
+ 206              	.L18:
+ 138:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     }
+ 207              		.loc 1 138 9 is_stmt 1 view .LVU54
+ 138:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     }
+ 208              		.loc 1 138 16 is_stmt 0 view .LVU55
+ 209 0044 0020     		movs	r0, #0
+ 210              	.LVL25:
+ 141:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+ 211              		.loc 1 141 1 view .LVU56
+ 212 0046 7047     		bx	lr
+ 213              		.cfi_endproc
+ 214              	.LFE192:
+ 216              		.section	.text.image_cache_compare_cb,"ax",%progbits
+ 217              		.align	1
+ 218              		.syntax unified
+ 219              		.thumb
+ 220              		.thumb_func
+ 222              	image_cache_compare_cb:
+ 223              	.LVL26:
+ 224              	.LFB193:
+ 146:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     return image_cache_common_compare(lhs->src, lhs->src_type, rhs->src, rhs->src_type);
+ 225              		.loc 1 146 1 is_stmt 1 view -0
+ 226              		.cfi_startproc
+ 227              		@ args = 0, pretend = 0, frame = 0
+ 228              		@ frame_needed = 0, uses_anonymous_args = 0
+ 146:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     return image_cache_common_compare(lhs->src, lhs->src_type, rhs->src, rhs->src_type);
+ 229              		.loc 1 146 1 is_stmt 0 view .LVU58
+ 230 0000 08B5     		push	{r3, lr}
+ 231              	.LCFI5:
+ 232              		.cfi_def_cfa_offset 8
+ 233              		.cfi_offset 3, -8
+ 234              		.cfi_offset 14, -4
+ 147:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+ 235              		.loc 1 147 5 is_stmt 1 view .LVU59
+ 147:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+ 236              		.loc 1 147 12 is_stmt 0 view .LVU60
+ 237 0002 0B7A     		ldrb	r3, [r1, #8]	@ zero_extendqisi2
+ 238 0004 4A68     		ldr	r2, [r1, #4]
+ 239 0006 017A     		ldrb	r1, [r0, #8]	@ zero_extendqisi2
+ 240              	.LVL27:
+ 147:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+ 241              		.loc 1 147 12 view .LVU61
+ 242 0008 4068     		ldr	r0, [r0, #4]
+ 243              	.LVL28:
+ 147:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+ 244              		.loc 1 147 12 view .LVU62
+ 245 000a FFF7FEFF 		bl	image_cache_common_compare
+ 246              	.LVL29:
+ 148:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+ 247              		.loc 1 148 1 view .LVU63
+ 248 000e 08BD     		pop	{r3, pc}
+ 249              		.cfi_endproc
+ 250              	.LFE193:
+ARM GAS  /tmp/ccALy2Tg.s 			page 9
+
+
+ 252              		.section	.text.iter_inspect_cb,"ax",%progbits
+ 253              		.align	1
+ 254              		.syntax unified
+ 255              		.thumb
+ 256              		.thumb_func
+ 258              	iter_inspect_cb:
+ 259              	.LVL30:
+ 260              	.LFB195:
+ 163:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+ 164:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** static void iter_inspect_cb(void * elem)
+ 165:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** {
+ 261              		.loc 1 165 1 is_stmt 1 view -0
+ 262              		.cfi_startproc
+ 263              		@ args = 0, pretend = 0, frame = 0
+ 264              		@ frame_needed = 0, uses_anonymous_args = 0
+ 265              		.loc 1 165 1 is_stmt 0 view .LVU65
+ 266 0000 08B5     		push	{r3, lr}
+ 267              	.LCFI6:
+ 268              		.cfi_def_cfa_offset 8
+ 269              		.cfi_offset 3, -8
+ 270              		.cfi_offset 14, -4
+ 166:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     lv_image_cache_data_t * data = (lv_image_cache_data_t *)elem;
+ 271              		.loc 1 166 5 is_stmt 1 view .LVU66
+ 272              	.LVL31:
+ 167:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     lv_draw_buf_t * decoded = (lv_draw_buf_t *)data->decoded;
+ 273              		.loc 1 167 5 view .LVU67
+ 168:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     lv_image_header_t * header = &decoded->header;
+ 274              		.loc 1 168 5 view .LVU68
+ 169:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     lv_cache_entry_t * entry = lv_cache_entry_get_entry(data, img_cache_p->node_size);
+ 275              		.loc 1 169 5 view .LVU69
+ 276              		.loc 1 169 63 is_stmt 0 view .LVU70
+ 277 0002 034B     		ldr	r3, .L28
+ 278 0004 D3F81C31 		ldr	r3, [r3, #284]
+ 279              		.loc 1 169 32 view .LVU71
+ 280 0008 5968     		ldr	r1, [r3, #4]
+ 281 000a FFF7FEFF 		bl	lv_cache_entry_get_entry
+ 282              	.LVL32:
+ 170:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+ 171:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     LV_UNUSED(decoded);
+ 283              		.loc 1 171 5 is_stmt 1 view .LVU72
+ 172:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     LV_UNUSED(header);
+ 284              		.loc 1 172 5 view .LVU73
+ 173:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     LV_UNUSED(entry);
+ 285              		.loc 1 173 5 view .LVU74
+ 174:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+ 175:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     /*  size    data_size   cf  rc  type    decoded         src*/
+ 176:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** #define IMAGE_CACHE_DUMP_FORMAT "	%4dx%-4d	%9"LV_PRIu32"	%d	%"LV_PRId32"	"
+ 177:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     switch(data->src_type) {
+ 286              		.loc 1 177 5 view .LVU75
+ 178:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         case LV_IMAGE_SRC_FILE:
+ 179:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             LV_LOG_USER(IMAGE_CACHE_DUMP_FORMAT "file\t%-12p\t%s", header->w, header->h, decoded->d
+ 180:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****                         lv_cache_entry_get_ref(entry), (void *)data->decoded, (char *)data->src);
+ 181:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             break;
+ 182:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         case LV_IMAGE_SRC_VARIABLE:
+ 183:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             LV_LOG_USER(IMAGE_CACHE_DUMP_FORMAT "var \t%-12p\t%p", header->w, header->h, decoded->d
+ 184:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****                         lv_cache_entry_get_ref(entry), (void *)data->decoded, data->src);
+ 185:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             break;
+ARM GAS  /tmp/ccALy2Tg.s 			page 10
+
+
+ 186:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         default:
+ 187:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             LV_LOG_USER(IMAGE_CACHE_DUMP_FORMAT "unkn\t%-12p\t%p", header->w, header->h, decoded->d
+ 287              		.loc 1 187 13 view .LVU76
+ 288              		.loc 1 187 13 view .LVU77
+ 289              		.loc 1 187 13 view .LVU78
+ 188:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****                         lv_cache_entry_get_ref(entry), (void *)data->decoded, data->src);
+ 189:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****             break;
+ 290              		.loc 1 189 13 view .LVU79
+ 190:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     }
+ 191:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+ 291              		.loc 1 191 1 is_stmt 0 view .LVU80
+ 292 000e 08BD     		pop	{r3, pc}
+ 293              	.L29:
+ 294              		.align	2
+ 295              	.L28:
+ 296 0010 00000000 		.word	lv_global
+ 297              		.cfi_endproc
+ 298              	.LFE195:
+ 300              		.section	.rodata.lv_image_cache_init.str1.4,"aMS",%progbits,1
+ 301              		.align	2
+ 302              	.LC2:
+ 303 0000 494D4147 		.ascii	"IMAGE\000"
+ 303      4500
+ 304              		.section	.text.lv_image_cache_init,"ax",%progbits
+ 305              		.align	1
+ 306              		.global	lv_image_cache_init
+ 307              		.syntax unified
+ 308              		.thumb
+ 309              		.thumb_func
+ 311              	lv_image_cache_init:
+ 312              	.LVL33:
+ 313              	.LFB186:
+  57:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     if(img_cache_p != NULL) {
+ 314              		.loc 1 57 1 is_stmt 1 view -0
+ 315              		.cfi_startproc
+ 316              		@ args = 0, pretend = 0, frame = 16
+ 317              		@ frame_needed = 0, uses_anonymous_args = 0
+  58:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         return LV_RESULT_OK;
+ 318              		.loc 1 58 5 view .LVU82
+  58:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         return LV_RESULT_OK;
+ 319              		.loc 1 58 8 is_stmt 0 view .LVU83
+ 320 0000 124B     		ldr	r3, .L38
+ 321 0002 D3F81C31 		ldr	r3, [r3, #284]
+  58:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         return LV_RESULT_OK;
+ 322              		.loc 1 58 7 view .LVU84
+ 323 0006 0BB1     		cbz	r3, .L37
+  59:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     }
+ 324              		.loc 1 59 16 view .LVU85
+ 325 0008 0120     		movs	r0, #1
+ 326              	.LVL34:
+  71:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+ 327              		.loc 1 71 1 view .LVU86
+ 328 000a 7047     		bx	lr
+ 329              	.LVL35:
+ 330              	.L37:
+  57:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     if(img_cache_p != NULL) {
+ 331              		.loc 1 57 1 view .LVU87
+ARM GAS  /tmp/ccALy2Tg.s 			page 11
+
+
+ 332 000c 10B5     		push	{r4, lr}
+ 333              	.LCFI7:
+ 334              		.cfi_def_cfa_offset 8
+ 335              		.cfi_offset 4, -8
+ 336              		.cfi_offset 14, -4
+ 337 000e 86B0     		sub	sp, sp, #24
+ 338              	.LCFI8:
+ 339              		.cfi_def_cfa_offset 32
+ 340 0010 8446     		mov	ip, r0
+  62:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     sizeof(lv_image_cache_data_t), size, (lv_cache_ops_t) {
+ 341              		.loc 1 62 5 is_stmt 1 view .LVU88
+  63:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         .compare_cb = (lv_cache_compare_cb_t) image_cache_compare_cb,
+ 342              		.loc 1 63 59 is_stmt 0 view .LVU89
+ 343 0012 0F4B     		ldr	r3, .L38+4
+ 344 0014 93E80700 		ldm	r3, {r0, r1, r2}
+ 345              	.LVL36:
+  63:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         .compare_cb = (lv_cache_compare_cb_t) image_cache_compare_cb,
+ 346              		.loc 1 63 59 view .LVU90
+ 347 0018 06AB     		add	r3, sp, #24
+ 348 001a 03E90700 		stmdb	r3, {r0, r1, r2}
+  62:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     sizeof(lv_image_cache_data_t), size, (lv_cache_ops_t) {
+ 349              		.loc 1 62 19 view .LVU91
+ 350 001e 13E90300 		ldmdb	r3, {r0, r1}
+ 351 0022 8DE80300 		stm	sp, {r0, r1}
+ 352 0026 039B     		ldr	r3, [sp, #12]
+ 353 0028 6246     		mov	r2, ip
+ 354 002a 1821     		movs	r1, #24
+ 355 002c 0948     		ldr	r0, .L38+8
+ 356 002e FFF7FEFF 		bl	lv_cache_create
+ 357              	.LVL37:
+  62:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     sizeof(lv_image_cache_data_t), size, (lv_cache_ops_t) {
+ 358              		.loc 1 62 17 discriminator 1 view .LVU92
+ 359 0032 064C     		ldr	r4, .L38
+ 360 0034 C4F81C01 		str	r0, [r4, #284]
+  69:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     return img_cache_p != NULL ? LV_RESULT_OK : LV_RESULT_INVALID;
+ 361              		.loc 1 69 5 is_stmt 1 view .LVU93
+ 362 0038 0749     		ldr	r1, .L38+12
+ 363 003a FFF7FEFF 		bl	lv_cache_set_name
+ 364              	.LVL38:
+  70:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+ 365              		.loc 1 70 5 view .LVU94
+  70:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+ 366              		.loc 1 70 12 is_stmt 0 view .LVU95
+ 367 003e D4F81C01 		ldr	r0, [r4, #284]
+  70:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+ 368              		.loc 1 70 47 view .LVU96
+ 369 0042 0038     		subs	r0, r0, #0
+ 370 0044 18BF     		it	ne
+ 371 0046 0120     		movne	r0, #1
+  71:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+ 372              		.loc 1 71 1 view .LVU97
+ 373 0048 06B0     		add	sp, sp, #24
+ 374              	.LCFI9:
+ 375              		.cfi_def_cfa_offset 8
+ 376              		@ sp needed
+ 377 004a 10BD     		pop	{r4, pc}
+ 378              	.L39:
+ARM GAS  /tmp/ccALy2Tg.s 			page 12
+
+
+ 379              		.align	2
+ 380              	.L38:
+ 381 004c 00000000 		.word	lv_global
+ 382 0050 00000000 		.word	.LANCHOR0
+ 383 0054 00000000 		.word	lv_cache_class_lru_rb_size
+ 384 0058 00000000 		.word	.LC2
+ 385              		.cfi_endproc
+ 386              	.LFE186:
+ 388              		.section	.text.lv_image_cache_resize,"ax",%progbits
+ 389              		.align	1
+ 390              		.global	lv_image_cache_resize
+ 391              		.syntax unified
+ 392              		.thumb
+ 393              		.thumb_func
+ 395              	lv_image_cache_resize:
+ 396              	.LVL39:
+ 397              	.LFB187:
+  74:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     lv_cache_set_max_size(img_cache_p, new_size, NULL);
+ 398              		.loc 1 74 1 is_stmt 1 view -0
+ 399              		.cfi_startproc
+ 400              		@ args = 0, pretend = 0, frame = 0
+ 401              		@ frame_needed = 0, uses_anonymous_args = 0
+  74:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     lv_cache_set_max_size(img_cache_p, new_size, NULL);
+ 402              		.loc 1 74 1 is_stmt 0 view .LVU99
+ 403 0000 38B5     		push	{r3, r4, r5, lr}
+ 404              	.LCFI10:
+ 405              		.cfi_def_cfa_offset 16
+ 406              		.cfi_offset 3, -16
+ 407              		.cfi_offset 4, -12
+ 408              		.cfi_offset 5, -8
+ 409              		.cfi_offset 14, -4
+ 410 0002 0446     		mov	r4, r0
+ 411 0004 0D46     		mov	r5, r1
+  75:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     if(evict_now) {
+ 412              		.loc 1 75 5 is_stmt 1 view .LVU100
+ 413 0006 0022     		movs	r2, #0
+ 414 0008 0146     		mov	r1, r0
+ 415              	.LVL40:
+  75:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     if(evict_now) {
+ 416              		.loc 1 75 5 is_stmt 0 view .LVU101
+ 417 000a 074B     		ldr	r3, .L44
+ 418 000c D3F81C01 		ldr	r0, [r3, #284]
+ 419              	.LVL41:
+  75:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     if(evict_now) {
+ 420              		.loc 1 75 5 view .LVU102
+ 421 0010 FFF7FEFF 		bl	lv_cache_set_max_size
+ 422              	.LVL42:
+  76:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         lv_cache_reserve(img_cache_p, new_size, NULL);
+ 423              		.loc 1 76 5 is_stmt 1 view .LVU103
+  76:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         lv_cache_reserve(img_cache_p, new_size, NULL);
+ 424              		.loc 1 76 7 is_stmt 0 view .LVU104
+ 425 0014 05B9     		cbnz	r5, .L43
+ 426              	.L40:
+  79:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+ 427              		.loc 1 79 1 view .LVU105
+ 428 0016 38BD     		pop	{r3, r4, r5, pc}
+ 429              	.LVL43:
+ARM GAS  /tmp/ccALy2Tg.s 			page 13
+
+
+ 430              	.L43:
+  77:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     }
+ 431              		.loc 1 77 9 is_stmt 1 view .LVU106
+ 432 0018 0022     		movs	r2, #0
+ 433 001a 2146     		mov	r1, r4
+ 434 001c 024B     		ldr	r3, .L44
+ 435 001e D3F81C01 		ldr	r0, [r3, #284]
+ 436 0022 FFF7FEFF 		bl	lv_cache_reserve
+ 437              	.LVL44:
+  79:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+ 438              		.loc 1 79 1 is_stmt 0 view .LVU107
+ 439 0026 F6E7     		b	.L40
+ 440              	.L45:
+ 441              		.align	2
+ 442              	.L44:
+ 443 0028 00000000 		.word	lv_global
+ 444              		.cfi_endproc
+ 445              	.LFE187:
+ 447              		.section	.text.lv_image_cache_drop,"ax",%progbits
+ 448              		.align	1
+ 449              		.global	lv_image_cache_drop
+ 450              		.syntax unified
+ 451              		.thumb
+ 452              		.thumb_func
+ 454              	lv_image_cache_drop:
+ 455              	.LVL45:
+ 456              	.LFB188:
+  82:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     /*If user invalidate image, the header cache should be invalidated too.*/
+ 457              		.loc 1 82 1 is_stmt 1 view -0
+ 458              		.cfi_startproc
+ 459              		@ args = 0, pretend = 0, frame = 24
+ 460              		@ frame_needed = 0, uses_anonymous_args = 0
+  82:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     /*If user invalidate image, the header cache should be invalidated too.*/
+ 461              		.loc 1 82 1 is_stmt 0 view .LVU109
+ 462 0000 70B5     		push	{r4, r5, r6, lr}
+ 463              	.LCFI11:
+ 464              		.cfi_def_cfa_offset 16
+ 465              		.cfi_offset 4, -16
+ 466              		.cfi_offset 5, -12
+ 467              		.cfi_offset 6, -8
+ 468              		.cfi_offset 14, -4
+ 469 0002 86B0     		sub	sp, sp, #24
+ 470              	.LCFI12:
+ 471              		.cfi_def_cfa_offset 40
+ 472 0004 0646     		mov	r6, r0
+  84:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+ 473              		.loc 1 84 5 is_stmt 1 view .LVU110
+ 474 0006 FFF7FEFF 		bl	lv_image_header_cache_drop
+ 475              	.LVL46:
+  86:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         lv_cache_drop_all(img_cache_p, NULL);
+ 476              		.loc 1 86 5 view .LVU111
+  86:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         lv_cache_drop_all(img_cache_p, NULL);
+ 477              		.loc 1 86 7 is_stmt 0 view .LVU112
+ 478 000a AEB1     		cbz	r6, .L50
+  91:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         .src = src,
+ 479              		.loc 1 91 5 is_stmt 1 view .LVU113
+  91:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         .src = src,
+ARM GAS  /tmp/ccALy2Tg.s 			page 14
+
+
+ 480              		.loc 1 91 27 is_stmt 0 view .LVU114
+ 481 000c 0024     		movs	r4, #0
+ 482 000e 0094     		str	r4, [sp]
+ 483 0010 0194     		str	r4, [sp, #4]
+ 484 0012 0294     		str	r4, [sp, #8]
+ 485 0014 0394     		str	r4, [sp, #12]
+ 486 0016 0494     		str	r4, [sp, #16]
+ 487 0018 0594     		str	r4, [sp, #20]
+ 488 001a 0196     		str	r6, [sp, #4]
+  93:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     };
+ 489              		.loc 1 93 21 view .LVU115
+ 490 001c 3046     		mov	r0, r6
+ 491 001e FFF7FEFF 		bl	lv_image_src_get_type
+ 492              	.LVL47:
+  91:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         .src = src,
+ 493              		.loc 1 91 27 view .LVU116
+ 494 0022 8DF80800 		strb	r0, [sp, #8]
+  96:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+ 495              		.loc 1 96 5 is_stmt 1 view .LVU117
+ 496 0026 2246     		mov	r2, r4
+ 497 0028 6946     		mov	r1, sp
+ 498 002a 074B     		ldr	r3, .L51
+ 499 002c D3F81C01 		ldr	r0, [r3, #284]
+ 500 0030 FFF7FEFF 		bl	lv_cache_drop
+ 501              	.LVL48:
+ 502              	.L46:
+  97:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+ 503              		.loc 1 97 1 is_stmt 0 view .LVU118
+ 504 0034 06B0     		add	sp, sp, #24
+ 505              	.LCFI13:
+ 506              		.cfi_remember_state
+ 507              		.cfi_def_cfa_offset 16
+ 508              		@ sp needed
+ 509 0036 70BD     		pop	{r4, r5, r6, pc}
+ 510              	.LVL49:
+ 511              	.L50:
+ 512              	.LCFI14:
+ 513              		.cfi_restore_state
+  87:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****         return;
+ 514              		.loc 1 87 9 is_stmt 1 view .LVU119
+ 515 0038 0021     		movs	r1, #0
+ 516 003a 034B     		ldr	r3, .L51
+ 517 003c D3F81C01 		ldr	r0, [r3, #284]
+ 518 0040 FFF7FEFF 		bl	lv_cache_drop_all
+ 519              	.LVL50:
+  88:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     }
+ 520              		.loc 1 88 9 view .LVU120
+ 521 0044 F6E7     		b	.L46
+ 522              	.L52:
+ 523 0046 00BF     		.align	2
+ 524              	.L51:
+ 525 0048 00000000 		.word	lv_global
+ 526              		.cfi_endproc
+ 527              	.LFE188:
+ 529              		.section	.text.lv_image_cache_is_enabled,"ax",%progbits
+ 530              		.align	1
+ 531              		.global	lv_image_cache_is_enabled
+ARM GAS  /tmp/ccALy2Tg.s 			page 15
+
+
+ 532              		.syntax unified
+ 533              		.thumb
+ 534              		.thumb_func
+ 536              	lv_image_cache_is_enabled:
+ 537              	.LFB189:
+ 100:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     return lv_cache_is_enabled(img_cache_p);
+ 538              		.loc 1 100 1 view -0
+ 539              		.cfi_startproc
+ 540              		@ args = 0, pretend = 0, frame = 0
+ 541              		@ frame_needed = 0, uses_anonymous_args = 0
+ 542 0000 08B5     		push	{r3, lr}
+ 543              	.LCFI15:
+ 544              		.cfi_def_cfa_offset 8
+ 545              		.cfi_offset 3, -8
+ 546              		.cfi_offset 14, -4
+ 101:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+ 547              		.loc 1 101 5 view .LVU122
+ 101:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+ 548              		.loc 1 101 12 is_stmt 0 view .LVU123
+ 549 0002 034B     		ldr	r3, .L55
+ 550 0004 D3F81C01 		ldr	r0, [r3, #284]
+ 551 0008 FFF7FEFF 		bl	lv_cache_is_enabled
+ 552              	.LVL51:
+ 102:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+ 553              		.loc 1 102 1 view .LVU124
+ 554 000c 08BD     		pop	{r3, pc}
+ 555              	.L56:
+ 556 000e 00BF     		.align	2
+ 557              	.L55:
+ 558 0010 00000000 		.word	lv_global
+ 559              		.cfi_endproc
+ 560              	.LFE189:
+ 562              		.section	.text.lv_image_cache_iter_create,"ax",%progbits
+ 563              		.align	1
+ 564              		.global	lv_image_cache_iter_create
+ 565              		.syntax unified
+ 566              		.thumb
+ 567              		.thumb_func
+ 569              	lv_image_cache_iter_create:
+ 570              	.LFB190:
+ 105:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     return lv_cache_iter_create(img_cache_p);
+ 571              		.loc 1 105 1 is_stmt 1 view -0
+ 572              		.cfi_startproc
+ 573              		@ args = 0, pretend = 0, frame = 0
+ 574              		@ frame_needed = 0, uses_anonymous_args = 0
+ 575 0000 08B5     		push	{r3, lr}
+ 576              	.LCFI16:
+ 577              		.cfi_def_cfa_offset 8
+ 578              		.cfi_offset 3, -8
+ 579              		.cfi_offset 14, -4
+ 106:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+ 580              		.loc 1 106 5 view .LVU126
+ 106:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+ 581              		.loc 1 106 12 is_stmt 0 view .LVU127
+ 582 0002 034B     		ldr	r3, .L59
+ 583 0004 D3F81C01 		ldr	r0, [r3, #284]
+ 584 0008 FFF7FEFF 		bl	lv_cache_iter_create
+ARM GAS  /tmp/ccALy2Tg.s 			page 16
+
+
+ 585              	.LVL52:
+ 107:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+ 586              		.loc 1 107 1 view .LVU128
+ 587 000c 08BD     		pop	{r3, pc}
+ 588              	.L60:
+ 589 000e 00BF     		.align	2
+ 590              	.L59:
+ 591 0010 00000000 		.word	lv_global
+ 592              		.cfi_endproc
+ 593              	.LFE190:
+ 595              		.section	.text.lv_image_cache_dump,"ax",%progbits
+ 596              		.align	1
+ 597              		.global	lv_image_cache_dump
+ 598              		.syntax unified
+ 599              		.thumb
+ 600              		.thumb_func
+ 602              	lv_image_cache_dump:
+ 603              	.LFB191:
+ 110:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     lv_iter_t * iter = lv_image_cache_iter_create();
+ 604              		.loc 1 110 1 is_stmt 1 view -0
+ 605              		.cfi_startproc
+ 606              		@ args = 0, pretend = 0, frame = 0
+ 607              		@ frame_needed = 0, uses_anonymous_args = 0
+ 608 0000 08B5     		push	{r3, lr}
+ 609              	.LCFI17:
+ 610              		.cfi_def_cfa_offset 8
+ 611              		.cfi_offset 3, -8
+ 612              		.cfi_offset 14, -4
+ 111:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     if(iter == NULL) return;
+ 613              		.loc 1 111 5 view .LVU130
+ 111:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     if(iter == NULL) return;
+ 614              		.loc 1 111 24 is_stmt 0 view .LVU131
+ 615 0002 FFF7FEFF 		bl	lv_image_cache_iter_create
+ 616              	.LVL53:
+ 112:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+ 617              		.loc 1 112 5 is_stmt 1 view .LVU132
+ 112:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+ 618              		.loc 1 112 7 is_stmt 0 view .LVU133
+ 619 0006 10B1     		cbz	r0, .L61
+ 114:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     LV_LOG_USER("\tsize\tdata_size\tcf\trc\ttype\tdecoded\t\t\tsrc");
+ 620              		.loc 1 114 5 is_stmt 1 view .LVU134
+ 114:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     LV_LOG_USER("\tsize\tdata_size\tcf\trc\ttype\tdecoded\t\t\tsrc");
+ 621              		.loc 1 114 5 view .LVU135
+ 114:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     LV_LOG_USER("\tsize\tdata_size\tcf\trc\ttype\tdecoded\t\t\tsrc");
+ 622              		.loc 1 114 5 view .LVU136
+ 115:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     lv_iter_inspect(iter, iter_inspect_cb);
+ 623              		.loc 1 115 5 view .LVU137
+ 115:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     lv_iter_inspect(iter, iter_inspect_cb);
+ 624              		.loc 1 115 5 view .LVU138
+ 115:Drivers/lvgl/src/misc/cache/lv_image_cache.c ****     lv_iter_inspect(iter, iter_inspect_cb);
+ 625              		.loc 1 115 5 view .LVU139
+ 116:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** }
+ 626              		.loc 1 116 5 view .LVU140
+ 627 0008 0149     		ldr	r1, .L64
+ 628 000a FFF7FEFF 		bl	lv_iter_inspect
+ 629              	.LVL54:
+ 630              	.L61:
+ARM GAS  /tmp/ccALy2Tg.s 			page 17
+
+
+ 117:Drivers/lvgl/src/misc/cache/lv_image_cache.c **** 
+ 631              		.loc 1 117 1 is_stmt 0 view .LVU141
+ 632 000e 08BD     		pop	{r3, pc}
+ 633              	.L65:
+ 634              		.align	2
+ 635              	.L64:
+ 636 0010 00000000 		.word	iter_inspect_cb
+ 637              		.cfi_endproc
+ 638              	.LFE191:
+ 640              		.section	.rodata
+ 641              		.align	2
+ 642              		.set	.LANCHOR0,. + 0
+ 643              	.LC1:
+ 644 0000 00000000 		.word	image_cache_compare_cb
+ 645 0004 00000000 		.word	0
+ 646 0008 00000000 		.word	image_cache_free_cb
+ 647              		.text
+ 648              	.Letext0:
+ 649              		.file 2 "/usr/arm-none-eabi/include/machine/_default_types.h"
+ 650              		.file 3 "/usr/arm-none-eabi/include/sys/_stdint.h"
+ 651              		.file 4 "/usr/lib/gcc/arm-none-eabi/14.2.0/include/stddef.h"
+ 652              		.file 5 "Drivers/lvgl/src/misc/cache/../../draw/../misc/lv_types.h"
+ 653              		.file 6 "Drivers/lvgl/src/misc/cache/../../core/../draw/lv_draw.h"
+ 654              		.file 7 "Drivers/lvgl/src/misc/cache/../../core/../draw/lv_draw_private.h"
+ 655              		.file 8 "Drivers/lvgl/src/misc/cache/../../core/../misc/lv_timer_private.h"
+ 656              		.file 9 "Drivers/lvgl/src/misc/cache/../../draw/lv_image_decoder_private.h"
+ 657              		.file 10 "Drivers/lvgl/src/misc/cache/../../core/../draw/sw/../lv_draw_image.h"
+ 658              		.file 11 "Drivers/lvgl/src/misc/cache/../../draw/../misc/cache/lv_cache_private.h"
+ 659              		.file 12 "Drivers/lvgl/src/misc/cache/../../core/../draw/lv_draw_buf_private.h"
+ 660              		.file 13 "Drivers/lvgl/src/misc/cache/../../draw/lv_draw_buf.h"
+ 661              		.file 14 "Drivers/lvgl/src/misc/cache/../../draw/../misc/lv_area.h"
+ 662              		.file 15 "Drivers/lvgl/src/misc/cache/../../draw/../misc/lv_color.h"
+ 663              		.file 16 "Drivers/lvgl/src/misc/cache/../../draw/lv_image_dsc.h"
+ 664              		.file 17 "Drivers/lvgl/src/misc/cache/../../draw/../misc/lv_fs.h"
+ 665              		.file 18 "Drivers/lvgl/src/misc/cache/../../draw/lv_image_decoder.h"
+ 666              		.file 19 "Drivers/lvgl/src/misc/cache/../../draw/../misc/cache/../../osal/lv_os_none.h"
+ 667              		.file 20 "Drivers/lvgl/src/misc/cache/../../core/../draw/../misc/../tick/lv_tick.h"
+ 668              		.file 21 "Drivers/lvgl/src/misc/cache/../../core/../draw/../misc/lv_ll.h"
+ 669              		.file 22 "Drivers/lvgl/src/misc/cache/../../core/../draw/../misc/lv_timer.h"
+ 670              		.file 23 "Drivers/lvgl/src/misc/cache/../../core/../draw/../misc/../layouts/lv_layout.h"
+ 671              		.file 24 "Drivers/lvgl/src/misc/cache/../../core/../draw/../misc/lv_style.h"
+ 672              		.file 25 "Drivers/lvgl/src/misc/cache/../../core/../misc/lv_anim_private.h"
+ 673              		.file 26 "Drivers/lvgl/src/misc/cache/../../core/../tick/lv_tick_private.h"
+ 674              		.file 27 "Drivers/lvgl/src/misc/cache/../../core/../draw/sw/lv_draw_sw_mask_private.h"
+ 675              		.file 28 "Drivers/lvgl/src/misc/cache/../../core/../layouts/lv_layout_private.h"
+ 676              		.file 29 "Drivers/lvgl/src/misc/cache/../../core/lv_global.h"
+ 677              		.file 30 "Drivers/lvgl/src/misc/cache/../../draw/../misc/cache/lv_cache_lru_rb.h"
+ 678              		.file 31 "Drivers/lvgl/src/misc/cache/../../misc/lv_iter.h"
+ 679              		.file 32 "Drivers/lvgl/src/misc/cache/../../draw/../misc/cache/lv_cache_entry.h"
+ 680              		.file 33 "Drivers/lvgl/src/misc/cache/../../draw/../misc/cache/lv_cache.h"
+ 681              		.file 34 "Drivers/lvgl/src/misc/cache/../../draw/../misc/cache/lv_image_header_cache.h"
+ 682              		.file 35 "Drivers/lvgl/src/misc/cache/../../draw/../misc/../stdlib/lv_string.h"
+ 683              		.file 36 "Drivers/lvgl/src/misc/cache/../../draw/../misc/../stdlib/lv_mem.h"
+ARM GAS  /tmp/ccALy2Tg.s 			page 18
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 lv_image_cache.c
+     /tmp/ccALy2Tg.s:21     .text.image_cache_free_cb:00000000 $t
+     /tmp/ccALy2Tg.s:26     .text.image_cache_free_cb:00000000 image_cache_free_cb
+     /tmp/ccALy2Tg.s:87     .text.image_cache_common_compare:00000000 $t
+     /tmp/ccALy2Tg.s:92     .text.image_cache_common_compare:00000000 image_cache_common_compare
+     /tmp/ccALy2Tg.s:217    .text.image_cache_compare_cb:00000000 $t
+     /tmp/ccALy2Tg.s:222    .text.image_cache_compare_cb:00000000 image_cache_compare_cb
+     /tmp/ccALy2Tg.s:253    .text.iter_inspect_cb:00000000 $t
+     /tmp/ccALy2Tg.s:258    .text.iter_inspect_cb:00000000 iter_inspect_cb
+     /tmp/ccALy2Tg.s:296    .text.iter_inspect_cb:00000010 $d
+     /tmp/ccALy2Tg.s:301    .rodata.lv_image_cache_init.str1.4:00000000 $d
+     /tmp/ccALy2Tg.s:305    .text.lv_image_cache_init:00000000 $t
+     /tmp/ccALy2Tg.s:311    .text.lv_image_cache_init:00000000 lv_image_cache_init
+     /tmp/ccALy2Tg.s:381    .text.lv_image_cache_init:0000004c $d
+     /tmp/ccALy2Tg.s:389    .text.lv_image_cache_resize:00000000 $t
+     /tmp/ccALy2Tg.s:395    .text.lv_image_cache_resize:00000000 lv_image_cache_resize
+     /tmp/ccALy2Tg.s:443    .text.lv_image_cache_resize:00000028 $d
+     /tmp/ccALy2Tg.s:448    .text.lv_image_cache_drop:00000000 $t
+     /tmp/ccALy2Tg.s:454    .text.lv_image_cache_drop:00000000 lv_image_cache_drop
+     /tmp/ccALy2Tg.s:525    .text.lv_image_cache_drop:00000048 $d
+     /tmp/ccALy2Tg.s:530    .text.lv_image_cache_is_enabled:00000000 $t
+     /tmp/ccALy2Tg.s:536    .text.lv_image_cache_is_enabled:00000000 lv_image_cache_is_enabled
+     /tmp/ccALy2Tg.s:558    .text.lv_image_cache_is_enabled:00000010 $d
+     /tmp/ccALy2Tg.s:563    .text.lv_image_cache_iter_create:00000000 $t
+     /tmp/ccALy2Tg.s:569    .text.lv_image_cache_iter_create:00000000 lv_image_cache_iter_create
+     /tmp/ccALy2Tg.s:591    .text.lv_image_cache_iter_create:00000010 $d
+     /tmp/ccALy2Tg.s:596    .text.lv_image_cache_dump:00000000 $t
+     /tmp/ccALy2Tg.s:602    .text.lv_image_cache_dump:00000000 lv_image_cache_dump
+     /tmp/ccALy2Tg.s:636    .text.lv_image_cache_dump:00000010 $d
+     /tmp/ccALy2Tg.s:641    .rodata:00000000 $d
+
+UNDEFINED SYMBOLS
+lv_draw_buf_has_flag
+lv_draw_buf_destroy
+lv_free
+lv_strcmp
+lv_cache_entry_get_entry
+lv_global
+lv_cache_create
+lv_cache_set_name
+lv_cache_class_lru_rb_size
+lv_cache_set_max_size
+lv_cache_reserve
+lv_image_header_cache_drop
+lv_image_src_get_type
+lv_cache_drop
+lv_cache_drop_all
+lv_cache_is_enabled
+lv_cache_iter_create
+lv_iter_inspect
