@@ -340,13 +340,15 @@ int main(void)
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
-    for(int i = 0; i < 128; i++){
-        input128[i] = filtered_ecg[i];
-    }
   /* USER CODE BEGIN Init */
     arm_fir_init_f32(&S, NUM_TAPS, fir_coeffs_f32, fir_state_f32, BLOCK_SIZE);
     arm_fir_f32(&S, ecgBuffer, filtered_ecg, 1);
     
+
+    for(int i = 0; i < 128; i++){
+        input128[i] = filtered_ecg[i];
+    }
+
     arm_rfft_fast_f32(&fft, input128, fft_output, 0);
     
     for(int i = 0; i < FFT_SIZE/2; i++){
