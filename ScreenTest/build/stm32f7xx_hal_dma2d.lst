@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccTQO7wT.s 			page 1
+ARM GAS  /tmp/ccjfoFVl.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
   28:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****     [..]
   29:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****       (#) Program the required configuration through the following parameters:
   30:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****           the transfer mode, the output color mode and the output offset using
-ARM GAS  /tmp/ccTQO7wT.s 			page 2
+ARM GAS  /tmp/ccjfoFVl.s 			page 2
 
 
   31:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****           HAL_DMA2D_Init() function.
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
   85:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****           HAL_DMA2D_CLUTLoading_Abort().
   86:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
   87:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****       (#) To control the DMA2D state, use the following function: HAL_DMA2D_GetState().
-ARM GAS  /tmp/ccTQO7wT.s 			page 3
+ARM GAS  /tmp/ccjfoFVl.s 			page 3
 
 
   88:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  142:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****           as weak (overridden) functions. They must be defined by the user to be resorted to.
  143:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
  144:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****           Callbacks can be registered/unregistered in READY state only.
-ARM GAS  /tmp/ccTQO7wT.s 			page 4
+ARM GAS  /tmp/ccjfoFVl.s 			page 4
 
 
  145:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****           Exception done for MspInit/MspDeInit callbacks that can be registered/unregistered
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  199:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** /* Private macro -------------------------------------------------------------*/
  200:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** /* Private function prototypes -----------------------------------------------*/
  201:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** /** @addtogroup DMA2D_Private_Functions DMA2D Private Functions
-ARM GAS  /tmp/ccTQO7wT.s 			page 5
+ARM GAS  /tmp/ccjfoFVl.s 			page 5
 
 
  202:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   * @{
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  256:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** #if (USE_HAL_DMA2D_REGISTER_CALLBACKS == 1)
  257:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   if (hdma2d->State == HAL_DMA2D_STATE_RESET)
  258:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   {
-ARM GAS  /tmp/ccTQO7wT.s 			page 6
+ARM GAS  /tmp/ccjfoFVl.s 			page 6
 
 
  259:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****     /* Reset Callback pointers in HAL_DMA2D_STATE_RESET only */
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  313:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   * @retval None
  314:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   */
  315:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
-ARM GAS  /tmp/ccTQO7wT.s 			page 7
+ARM GAS  /tmp/ccjfoFVl.s 			page 7
 
 
  316:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** HAL_StatusTypeDef HAL_DMA2D_DeInit(DMA2D_HandleTypeDef *hdma2d)
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  370:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   hdma2d->Instance->BGPFCCR  =    0U;
  371:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   hdma2d->Instance->OPFCCR   =    0U;
  372:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
-ARM GAS  /tmp/ccTQO7wT.s 			page 8
+ARM GAS  /tmp/ccjfoFVl.s 			page 8
 
 
  373:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** #if (USE_HAL_DMA2D_REGISTER_CALLBACKS == 1)
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  427:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   /* NOTE : This function should not be modified; when the callback is needed,
  428:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****             the HAL_DMA2D_MspDeInit can be implemented in the user file.
  429:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****    */
-ARM GAS  /tmp/ccTQO7wT.s 			page 9
+ARM GAS  /tmp/ccjfoFVl.s 			page 9
 
 
  430:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** }
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  484:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****         hdma2d->MspInitCallback = pCallback;
  485:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****         break;
  486:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
-ARM GAS  /tmp/ccTQO7wT.s 			page 10
+ARM GAS  /tmp/ccjfoFVl.s 			page 10
 
 
  487:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****       case HAL_DMA2D_MSPDEINIT_CB_ID :
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  541:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   *          @arg @ref HAL_DMA2D_CLUTLOADINGCPLT_CB_ID DMA2D CLUT loading completion Callback ID
  542:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   *          @arg @ref HAL_DMA2D_MSPINIT_CB_ID DMA2D MspInit callback ID
  543:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   *          @arg @ref HAL_DMA2D_MSPDEINIT_CB_ID DMA2D MspDeInit callback ID
-ARM GAS  /tmp/ccTQO7wT.s 			page 11
+ARM GAS  /tmp/ccjfoFVl.s 			page 11
 
 
  544:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   * @note No weak predefined callbacks are defined for HAL_DMA2D_TRANSFERCOMPLETE_CB_ID or HAL_DMA2
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  598:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****       case HAL_DMA2D_MSPDEINIT_CB_ID :
  599:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****         hdma2d->MspDeInitCallback = HAL_DMA2D_MspDeInit;  /* Legacy weak (overridden) Msp DeInit */
  600:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****         break;
-ARM GAS  /tmp/ccTQO7wT.s 			page 12
+ARM GAS  /tmp/ccjfoFVl.s 			page 12
 
 
  601:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  655:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****       (+) handle DMA2D interrupt request.
  656:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****       (+) Transfer watermark callback.
  657:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****       (+) CLUT Transfer Complete callback.
-ARM GAS  /tmp/ccTQO7wT.s 			page 13
+ARM GAS  /tmp/ccjfoFVl.s 			page 13
 
 
  658:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  712:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   * @retval HAL status
  713:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   */
  714:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** HAL_StatusTypeDef HAL_DMA2D_Start_IT(DMA2D_HandleTypeDef *hdma2d, uint32_t pdata, uint32_t DstAddre
-ARM GAS  /tmp/ccTQO7wT.s 			page 14
+ARM GAS  /tmp/ccjfoFVl.s 			page 14
 
 
  715:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****                                      uint32_t Height)
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  769:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
  770:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   /* Enable the Peripheral */
  771:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   __HAL_DMA2D_ENABLE(hdma2d);
-ARM GAS  /tmp/ccTQO7wT.s 			page 15
+ARM GAS  /tmp/ccjfoFVl.s 			page 15
 
 
  772:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  826:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   /* Abort the DMA2D transfer */
  827:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   /* START bit is reset to make sure not to set it again, in the event the HW clears it
  828:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****      between the register read and the register write by the CPU (writing 0 has no
-ARM GAS  /tmp/ccTQO7wT.s 			page 16
+ARM GAS  /tmp/ccjfoFVl.s 			page 16
 
 
  829:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****      effect on START bitvalue) */
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  883:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
  884:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   /* Check if the DMA2D is effectively suspended */
  885:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   while ((hdma2d->Instance->CR & (DMA2D_CR_SUSP | DMA2D_CR_START)) == DMA2D_CR_START)
-ARM GAS  /tmp/ccTQO7wT.s 			page 17
+ARM GAS  /tmp/ccjfoFVl.s 			page 17
 
 
  886:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   {
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  940:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   * @brief  Enable the DMA2D CLUT Transfer.
  941:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   * @param  hdma2d   Pointer to a DMA2D_HandleTypeDef structure that contains
  942:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   *                   the configuration information for the DMA2D.
-ARM GAS  /tmp/ccTQO7wT.s 			page 18
+ARM GAS  /tmp/ccjfoFVl.s 			page 18
 
 
  943:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   * @param  LayerIdx DMA2D Layer index.
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  997:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
  998:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   /* Configure the CLUT of the background DMA2D layer */
  999:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   if (LayerIdx == DMA2D_BACKGROUND_LAYER)
-ARM GAS  /tmp/ccTQO7wT.s 			page 19
+ARM GAS  /tmp/ccjfoFVl.s 			page 19
 
 
 1000:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   {
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1054:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   if (LayerIdx == DMA2D_BACKGROUND_LAYER)
 1055:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   {
 1056:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****     /* Write background CLUT memory address */
-ARM GAS  /tmp/ccTQO7wT.s 			page 20
+ARM GAS  /tmp/ccjfoFVl.s 			page 20
 
 
 1057:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****     WRITE_REG(hdma2d->Instance->BGCMAR, (uint32_t)CLUTCfg->pCLUT);
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1111:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   __HAL_LOCK(hdma2d);
 1112:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
 1113:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   /* Change DMA2D peripheral state */
-ARM GAS  /tmp/ccTQO7wT.s 			page 21
+ARM GAS  /tmp/ccjfoFVl.s 			page 21
 
 
 1114:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   hdma2d->State = HAL_DMA2D_STATE_BUSY;
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1168:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   __HAL_LOCK(hdma2d);
 1169:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
 1170:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   /* Change DMA2D peripheral state */
-ARM GAS  /tmp/ccTQO7wT.s 			page 22
+ARM GAS  /tmp/ccjfoFVl.s 			page 22
 
 
 1171:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   hdma2d->State = HAL_DMA2D_STATE_BUSY;
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1225:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
 1226:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   /* If foreground CLUT loading is considered, update local variables */
 1227:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   if (LayerIdx == DMA2D_FOREGROUND_LAYER)
-ARM GAS  /tmp/ccTQO7wT.s 			page 23
+ARM GAS  /tmp/ccjfoFVl.s 			page 23
 
 
 1228:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   {
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1282:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   SET_BIT(hdma2d->Instance->CR, DMA2D_CR_SUSP);
 1283:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
 1284:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   /* If foreground CLUT loading is considered, update local variables */
-ARM GAS  /tmp/ccTQO7wT.s 			page 24
+ARM GAS  /tmp/ccjfoFVl.s 			page 24
 
 
 1285:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   if (LayerIdx == DMA2D_FOREGROUND_LAYER)
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1339:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   */
 1340:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** HAL_StatusTypeDef HAL_DMA2D_CLUTLoading_Resume(DMA2D_HandleTypeDef *hdma2d, uint32_t LayerIdx)
 1341:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** {
-ARM GAS  /tmp/ccTQO7wT.s 			page 25
+ARM GAS  /tmp/ccjfoFVl.s 			page 25
 
 
 1342:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   /* Check the SUSP and START bits for background or foreground CLUT loading */
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1396:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****     {
 1397:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****       isrflags = READ_REG(hdma2d->Instance->ISR);
 1398:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****       if ((isrflags & (DMA2D_FLAG_CE | DMA2D_FLAG_TE)) != 0U)
-ARM GAS  /tmp/ccTQO7wT.s 			page 26
+ARM GAS  /tmp/ccjfoFVl.s 			page 26
 
 
 1399:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****       {
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1453:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****           hdma2d->ErrorCode |= HAL_DMA2D_ERROR_CAE;
 1454:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****         }
 1455:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****         if ((isrflags & DMA2D_FLAG_CE) != 0U)
-ARM GAS  /tmp/ccTQO7wT.s 			page 27
+ARM GAS  /tmp/ccjfoFVl.s 			page 27
 
 
 1456:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****         {
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1510:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   */
 1511:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** void HAL_DMA2D_IRQHandler(DMA2D_HandleTypeDef *hdma2d)
 1512:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** {
-ARM GAS  /tmp/ccTQO7wT.s 			page 28
+ARM GAS  /tmp/ccjfoFVl.s 			page 28
 
 
 1513:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   uint32_t isrflags = READ_REG(hdma2d->Instance->ISR);
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1567:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****       }
 1568:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****     }
 1569:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   }
-ARM GAS  /tmp/ccTQO7wT.s 			page 29
+ARM GAS  /tmp/ccjfoFVl.s 			page 29
 
 
 1570:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   /* CLUT access Error Interrupt management ***********************************/
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1624:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
 1625:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****       /* Clear the transfer complete flag */
 1626:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****       __HAL_DMA2D_CLEAR_FLAG(hdma2d, DMA2D_FLAG_TC);
-ARM GAS  /tmp/ccTQO7wT.s 			page 30
+ARM GAS  /tmp/ccjfoFVl.s 			page 30
 
 
 1627:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1681:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** __weak void HAL_DMA2D_LineEventCallback(DMA2D_HandleTypeDef *hdma2d)
 1682:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** {
 1683:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   /* Prevent unused argument(s) compilation warning */
-ARM GAS  /tmp/ccTQO7wT.s 			page 31
+ARM GAS  /tmp/ccjfoFVl.s 			page 31
 
 
 1684:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   UNUSED(hdma2d);
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1738:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   * @retval HAL status
 1739:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   */
 1740:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** HAL_StatusTypeDef HAL_DMA2D_ConfigLayer(DMA2D_HandleTypeDef *hdma2d, uint32_t LayerIdx)
-ARM GAS  /tmp/ccTQO7wT.s 			page 32
+ARM GAS  /tmp/ccjfoFVl.s 			page 32
 
 
 1741:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** {
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1795:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
 1796:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****     /* DMA2D BGOR register configuration -------------------------------------*/
 1797:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****     WRITE_REG(hdma2d->Instance->BGOR, pLayerCfg->InputOffset);
-ARM GAS  /tmp/ccTQO7wT.s 			page 33
+ARM GAS  /tmp/ccjfoFVl.s 			page 33
 
 
 1798:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1852:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   assert_param(IS_DMA2D_CLUT_SIZE(CLUTCfg.Size));
 1853:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
 1854:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   /* Process locked */
-ARM GAS  /tmp/ccTQO7wT.s 			page 34
+ARM GAS  /tmp/ccjfoFVl.s 			page 34
 
 
 1855:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   __HAL_LOCK(hdma2d);
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1909:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   {
 1910:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****     /* Process locked */
 1911:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****     __HAL_LOCK(hdma2d);
-ARM GAS  /tmp/ccTQO7wT.s 			page 35
+ARM GAS  /tmp/ccjfoFVl.s 			page 35
 
 
 1912:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1966:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
 1967:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   /* Clear DMA2D_AMTCR EN bit */
 1968:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   CLEAR_BIT(hdma2d->Instance->AMTCR, DMA2D_AMTCR_EN);
-ARM GAS  /tmp/ccTQO7wT.s 			page 36
+ARM GAS  /tmp/ccjfoFVl.s 			page 36
 
 
 1969:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 2023:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   */
 2024:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
 2025:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** /**
-ARM GAS  /tmp/ccTQO7wT.s 			page 37
+ARM GAS  /tmp/ccjfoFVl.s 			page 37
 
 
 2026:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   * @brief  Return the DMA2D state
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
   36              		.cfi_def_cfa_offset 12
   37              		.cfi_offset 4, -12
   38              		.cfi_offset 5, -8
-ARM GAS  /tmp/ccTQO7wT.s 			page 38
+ARM GAS  /tmp/ccjfoFVl.s 			page 38
 
 
   39              		.cfi_offset 14, -4
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 2102:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****     else if (hdma2d->Init.ColorMode == DMA2D_OUTPUT_RGB565)
 2103:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****     {
 2104:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****       tmp2 = (tmp2 >> 19U);
-ARM GAS  /tmp/ccTQO7wT.s 			page 39
+ARM GAS  /tmp/ccjfoFVl.s 			page 39
 
 
 2105:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****       tmp3 = (tmp3 >> 10U);
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
   83 0030 01F47F45 		and	r5, r1, #65280
   84              	.LVL6:
 2091:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
-ARM GAS  /tmp/ccTQO7wT.s 			page 40
+ARM GAS  /tmp/ccjfoFVl.s 			page 40
 
 
   85              		.loc 1 2091 5 is_stmt 1 view .LVU21
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  125 0052 DB02     		lsls	r3, r3, #11
  126              	.LVL12:
 2107:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****     }
-ARM GAS  /tmp/ccTQO7wT.s 			page 41
+ARM GAS  /tmp/ccjfoFVl.s 			page 41
 
 
  127              		.loc 1 2107 28 view .LVU36
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 2119:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****       tmp2 = (tmp2 >> 20U);
  165              		.loc 1 2119 12 is_stmt 0 view .LVU53
  166 0076 4FEA1C7C 		lsr	ip, ip, #28
-ARM GAS  /tmp/ccTQO7wT.s 			page 42
+ARM GAS  /tmp/ccjfoFVl.s 			page 42
 
 
  167              	.LVL21:
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  209              		.loc 1 414 1 is_stmt 0 view .LVU67
  210 0000 7047     		bx	lr
  211              		.cfi_endproc
-ARM GAS  /tmp/ccTQO7wT.s 			page 43
+ARM GAS  /tmp/ccjfoFVl.s 			page 43
 
 
  212              	.LFE143:
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  254 0012 2268     		ldr	r2, [r4]
  255 0014 1368     		ldr	r3, [r2]
  256 0016 23F44033 		bic	r3, r3, #196608
-ARM GAS  /tmp/ccTQO7wT.s 			page 44
+ARM GAS  /tmp/ccjfoFVl.s 			page 44
 
 
  257 001a 6168     		ldr	r1, [r4, #4]
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  299              		.cfi_restore 4
  300              		.cfi_restore 14
  243:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   }
-ARM GAS  /tmp/ccTQO7wT.s 			page 45
+ARM GAS  /tmp/ccjfoFVl.s 			page 45
 
 
  301              		.loc 1 243 12 view .LVU94
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  353 0004 0446     		mov	r4, r0
  682:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   assert_param(IS_DMA2D_PIXEL(Width));
  354              		.loc 1 682 3 is_stmt 1 view .LVU101
-ARM GAS  /tmp/ccTQO7wT.s 			page 46
+ARM GAS  /tmp/ccjfoFVl.s 			page 46
 
 
  683:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  396              		.cfi_restore_state
  686:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
  397              		.loc 1 686 3 discriminator 1 view .LVU115
-ARM GAS  /tmp/ccTQO7wT.s 			page 47
+ARM GAS  /tmp/ccjfoFVl.s 			page 47
 
 
  398 0034 0220     		movs	r0, #2
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  443 0016 84F83900 		strb	r0, [r4, #57]
  728:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
  444              		.loc 1 728 3 is_stmt 1 view .LVU127
-ARM GAS  /tmp/ccTQO7wT.s 			page 48
+ARM GAS  /tmp/ccjfoFVl.s 			page 48
 
 
  445 001a 0498     		ldr	r0, [sp, #16]
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  494              		@ frame_needed = 0, uses_anonymous_args = 0
  753:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   /* Check the parameters */
  495              		.loc 1 753 1 is_stmt 0 view .LVU135
-ARM GAS  /tmp/ccTQO7wT.s 			page 49
+ARM GAS  /tmp/ccjfoFVl.s 			page 49
 
 
  496 0000 10B5     		push	{r4, lr}
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  537 002a FFF7FEFF 		bl	DMA2D_SetConfig
  538              	.LVL47:
  771:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
-ARM GAS  /tmp/ccTQO7wT.s 			page 50
+ARM GAS  /tmp/ccjfoFVl.s 			page 50
 
 
  539              		.loc 1 771 3 is_stmt 1 view .LVU149
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  588              	.LCFI16:
  589              		.cfi_def_cfa_offset 16
  590 0004 0446     		mov	r4, r0
-ARM GAS  /tmp/ccTQO7wT.s 			page 51
+ARM GAS  /tmp/ccjfoFVl.s 			page 51
 
 
  591 0006 1046     		mov	r0, r2
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  630              		.loc 1 811 3 view .LVU171
  631 0038 2268     		ldr	r2, [r4]
  632 003a 1368     		ldr	r3, [r2]
-ARM GAS  /tmp/ccTQO7wT.s 			page 52
+ARM GAS  /tmp/ccjfoFVl.s 			page 52
 
 
  633 003c 43F00103 		orr	r3, r3, #1
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  681              		.loc 1 824 3 is_stmt 1 view .LVU179
  830:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
  682              		.loc 1 830 3 view .LVU180
-ARM GAS  /tmp/ccTQO7wT.s 			page 53
+ARM GAS  /tmp/ccjfoFVl.s 			page 53
 
 
  683 0004 0268     		ldr	r2, [r0]
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  844:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
  721              		.loc 1 844 21 is_stmt 0 view .LVU197
  722 0036 0320     		movs	r0, #3
-ARM GAS  /tmp/ccTQO7wT.s 			page 54
+ARM GAS  /tmp/ccjfoFVl.s 			page 54
 
 
  723 0038 84F83900 		strb	r0, [r4, #57]
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  764              		.loc 1 872 1 is_stmt 1 view -0
  765              		.cfi_startproc
  766              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccTQO7wT.s 			page 55
+ARM GAS  /tmp/ccjfoFVl.s 			page 55
 
 
  767              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  887:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****     {
  807              		.loc 1 887 24 discriminator 1 view .LVU227
  808 0028 401B     		subs	r0, r0, r5
-ARM GAS  /tmp/ccTQO7wT.s 			page 56
+ARM GAS  /tmp/ccjfoFVl.s 			page 56
 
 
  887:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****     {
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  847 005a 0020     		movs	r0, #0
  848 005c EFE7     		b	.L48
  849              		.cfi_endproc
-ARM GAS  /tmp/ccTQO7wT.s 			page 57
+ARM GAS  /tmp/ccjfoFVl.s 			page 57
 
 
  850              	.LFE150:
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  894 001e F5E7     		b	.L54
  895              		.cfi_endproc
  896              	.LFE151:
-ARM GAS  /tmp/ccTQO7wT.s 			page 58
+ARM GAS  /tmp/ccjfoFVl.s 			page 58
 
 
  898              		.section	.text.HAL_DMA2D_EnableCLUT,"ax",%progbits
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  940              	.LVL72:
  941              	.L58:
  967:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   }
-ARM GAS  /tmp/ccTQO7wT.s 			page 59
+ARM GAS  /tmp/ccjfoFVl.s 			page 59
 
 
  942              		.loc 1 967 5 is_stmt 1 view .LVU269
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  987              	.LCFI21:
  988              		.cfi_def_cfa_offset 8
  989              		.cfi_offset 4, -8
-ARM GAS  /tmp/ccTQO7wT.s 			page 60
+ARM GAS  /tmp/ccjfoFVl.s 			page 60
 
 
  990              		.cfi_offset 5, -4
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  1032              		.cfi_restore 5
  1033              		.cfi_restore 4
  1034              		.cfi_def_cfa_offset 0
-ARM GAS  /tmp/ccTQO7wT.s 			page 61
+ARM GAS  /tmp/ccjfoFVl.s 			page 61
 
 
  1035 0042 7047     		bx	lr
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  1081 0074 EF00FFFF 		.word	-65297
  1082              		.cfi_endproc
  1083              	.LFE153:
-ARM GAS  /tmp/ccTQO7wT.s 			page 62
+ARM GAS  /tmp/ccjfoFVl.s 			page 62
 
 
  1085              		.section	.text.HAL_DMA2D_CLUTStartLoad_IT,"ax",%progbits
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  1126 0018 0A68     		ldr	r2, [r1]
  1127              	.LVL85:
 1057:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
-ARM GAS  /tmp/ccTQO7wT.s 			page 63
+ARM GAS  /tmp/ccjfoFVl.s 			page 63
 
 
  1128              		.loc 1 1057 5 is_stmt 0 view .LVU315
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  1174              		.loc 1 1076 5 is_stmt 1 view .LVU323
  1175 0054 0468     		ldr	r4, [r0]
  1176 0056 E269     		ldr	r2, [r4, #28]
-ARM GAS  /tmp/ccTQO7wT.s 			page 64
+ARM GAS  /tmp/ccjfoFVl.s 			page 64
 
 
  1177 0058 0B4B     		ldr	r3, .L78
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  1227              	.LFB155:
 1104:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   /* Check the parameters */
  1228              		.loc 1 1104 1 is_stmt 1 view -0
-ARM GAS  /tmp/ccTQO7wT.s 			page 65
+ARM GAS  /tmp/ccjfoFVl.s 			page 65
 
 
  1229              		.cfi_startproc
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  1269 002a 154B     		ldr	r3, .L85
  1270 002c 1340     		ands	r3, r3, r2
  1271 002e 029A     		ldr	r2, [sp, #8]
-ARM GAS  /tmp/ccTQO7wT.s 			page 66
+ARM GAS  /tmp/ccjfoFVl.s 			page 66
 
 
  1272 0030 1201     		lsls	r2, r2, #4
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  1319 006c 0268     		ldr	r2, [r0]
  1320 006e D369     		ldr	r3, [r2, #28]
  1321 0070 43F02003 		orr	r3, r3, #32
-ARM GAS  /tmp/ccTQO7wT.s 			page 67
+ARM GAS  /tmp/ccjfoFVl.s 			page 67
 
 
  1322 0074 D361     		str	r3, [r2, #28]
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  1369              		.loc 1 1165 3 view .LVU360
 1168:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
  1370              		.loc 1 1168 3 view .LVU361
-ARM GAS  /tmp/ccTQO7wT.s 			page 68
+ARM GAS  /tmp/ccjfoFVl.s 			page 68
 
 
 1168:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  1413              	.LVL100:
  1414              	.L88:
 1207:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
-ARM GAS  /tmp/ccTQO7wT.s 			page 69
+ARM GAS  /tmp/ccjfoFVl.s 			page 69
 
 
  1415              		.loc 1 1207 1 view .LVU374
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  1462              	.LVL104:
  1463              	.L90:
 1168:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
-ARM GAS  /tmp/ccTQO7wT.s 			page 70
+ARM GAS  /tmp/ccjfoFVl.s 			page 70
 
 
  1464              		.loc 1 1168 3 discriminator 1 view .LVU382
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  1511 0010 1360     		str	r3, [r2]
 1227:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   {
  1512              		.loc 1 1227 3 is_stmt 1 view .LVU392
-ARM GAS  /tmp/ccTQO7wT.s 			page 71
+ARM GAS  /tmp/ccjfoFVl.s 			page 71
 
 
 1227:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   {
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  1550 0038 0320     		movs	r0, #3
  1551 003a 86F83900 		strb	r0, [r6, #57]
 1248:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
-ARM GAS  /tmp/ccTQO7wT.s 			page 72
+ARM GAS  /tmp/ccjfoFVl.s 			page 72
 
 
  1552              		.loc 1 1248 7 is_stmt 1 view .LVU410
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  1590              		.cfi_endproc
  1591              	.LFE157:
  1593              		.section	.text.HAL_DMA2D_DeInit,"ax",%progbits
-ARM GAS  /tmp/ccTQO7wT.s 			page 73
+ARM GAS  /tmp/ccjfoFVl.s 			page 73
 
 
  1594              		.align	1
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  1636              		.loc 1 341 28 is_stmt 0 view .LVU439
  1637 001c 5A6A     		ldr	r2, [r3, #36]
  341:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****       {
-ARM GAS  /tmp/ccTQO7wT.s 			page 74
+ARM GAS  /tmp/ccjfoFVl.s 			page 74
 
 
  1638              		.loc 1 341 10 view .LVU440
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  1674              		.loc 1 369 30 view .LVU458
  1675 0042 DC61     		str	r4, [r3, #28]
  370:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   hdma2d->Instance->OPFCCR   =    0U;
-ARM GAS  /tmp/ccTQO7wT.s 			page 75
+ARM GAS  /tmp/ccjfoFVl.s 			page 75
 
 
  1676              		.loc 1 370 3 is_stmt 1 view .LVU459
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  332:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****       {
  1712              		.loc 1 332 10 discriminator 1 view .LVU478
  1713 0064 0028     		cmp	r0, #0
-ARM GAS  /tmp/ccTQO7wT.s 			page 76
+ARM GAS  /tmp/ccjfoFVl.s 			page 76
 
 
  1714 0066 E1D0     		beq	.L104
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  1757              	.L119:
  1758              		.align	2
  1759              	.L118:
-ARM GAS  /tmp/ccTQO7wT.s 			page 77
+ARM GAS  /tmp/ccjfoFVl.s 			page 77
 
 
  1760 008c 00380240 		.word	1073887232
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  1805 0012 0129     		cmp	r1, #1
  1806 0014 0FD0     		beq	.L133
  1807              	.LVL130:
-ARM GAS  /tmp/ccTQO7wT.s 			page 78
+ARM GAS  /tmp/ccjfoFVl.s 			page 78
 
 
  1808              	.L121:
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1287:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   }
  1846              		.loc 1 1287 20 is_stmt 0 view .LVU517
  1847 0036 0668     		ldr	r6, [r0]
-ARM GAS  /tmp/ccTQO7wT.s 			page 79
+ARM GAS  /tmp/ccjfoFVl.s 			page 79
 
 
  1848              	.LVL136:
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  1887              		.loc 1 1300 8 discriminator 1 view .LVU532
  1888 005a B0F57A7F 		cmp	r0, #1000
  1889 005e EFD8     		bhi	.L135
-ARM GAS  /tmp/ccTQO7wT.s 			page 80
+ARM GAS  /tmp/ccjfoFVl.s 			page 80
 
 
 1311:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****     /* 2nd condition: Not Start Check */
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  1928 008a 2A68     		ldr	r2, [r5]
  1929 008c 1368     		ldr	r3, [r2]
  1930 008e 23F00203 		bic	r3, r3, #2
-ARM GAS  /tmp/ccTQO7wT.s 			page 81
+ARM GAS  /tmp/ccjfoFVl.s 			page 81
 
 
  1931 0092 1360     		str	r3, [r2]
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  1974              	.L138:
 1369:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
  1975              		.loc 1 1369 3 is_stmt 1 view .LVU562
-ARM GAS  /tmp/ccTQO7wT.s 			page 82
+ARM GAS  /tmp/ccjfoFVl.s 			page 82
 
 
  1976 001a 0268     		ldr	r2, [r0]
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1384:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   uint32_t tickstart;
  2020              		.loc 1 1384 1 is_stmt 1 view -0
  2021              		.cfi_startproc
-ARM GAS  /tmp/ccTQO7wT.s 			page 83
+ARM GAS  /tmp/ccjfoFVl.s 			page 83
 
 
  2022              		@ args = 0, pretend = 0, frame = 8
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1440:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   if (layer_start != 0U)
  2062              		.loc 1 1440 15 view .LVU590
  2063 001c 1343     		orrs	r3, r3, r2
-ARM GAS  /tmp/ccTQO7wT.s 			page 84
+ARM GAS  /tmp/ccjfoFVl.s 			page 84
 
 
  2064              	.LVL150:
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1395:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****     {
  2105              		.loc 1 1395 5 is_stmt 1 view .LVU604
  2106              	.L146:
-ARM GAS  /tmp/ccTQO7wT.s 			page 85
+ARM GAS  /tmp/ccjfoFVl.s 			page 85
 
 
 1395:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****     {
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  2143              		.loc 1 1425 17 is_stmt 0 view .LVU622
  2144 006a E36B     		ldr	r3, [r4, #60]
 1425:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
-ARM GAS  /tmp/ccTQO7wT.s 			page 86
+ARM GAS  /tmp/ccjfoFVl.s 			page 86
 
 
  2145              		.loc 1 1425 29 view .LVU623
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  2181              		.loc 1 1406 17 is_stmt 0 view .LVU641
  2182 0098 E26B     		ldr	r2, [r4, #60]
 1406:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****         }
-ARM GAS  /tmp/ccTQO7wT.s 			page 87
+ARM GAS  /tmp/ccjfoFVl.s 			page 87
 
 
  2183              		.loc 1 1406 29 view .LVU642
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  2221              		.loc 1 1448 7 is_stmt 1 view .LVU658
 1448:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****       if ((isrflags & (DMA2D_FLAG_CAE | DMA2D_FLAG_CE | DMA2D_FLAG_TE)) != 0U)
  2222              		.loc 1 1448 18 is_stmt 0 view .LVU659
-ARM GAS  /tmp/ccTQO7wT.s 			page 88
+ARM GAS  /tmp/ccjfoFVl.s 			page 88
 
 
  2223 00c4 5A68     		ldr	r2, [r3, #4]
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1486:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
  2260              		.loc 1 1486 11 view .LVU677
  2261 00f2 0023     		movs	r3, #0
-ARM GAS  /tmp/ccTQO7wT.s 			page 89
+ARM GAS  /tmp/ccjfoFVl.s 			page 89
 
 
  2262 00f4 84F83830 		strb	r3, [r4, #56]
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  2298 011c 12F0010F 		tst	r2, #1
  2299 0120 03D0     		beq	.L154
 1461:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****         }
-ARM GAS  /tmp/ccTQO7wT.s 			page 90
+ARM GAS  /tmp/ccjfoFVl.s 			page 90
 
 
  2300              		.loc 1 1461 11 is_stmt 1 view .LVU696
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  2343 0000 7047     		bx	lr
  2344              		.cfi_endproc
  2345              	.LFE162:
-ARM GAS  /tmp/ccTQO7wT.s 			page 91
+ARM GAS  /tmp/ccjfoFVl.s 			page 91
 
 
  2347              		.section	.text.HAL_DMA2D_CLUTLoadingCpltCallback,"ax",%progbits
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  2396              	.LVL164:
 1514:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
  2397              		.loc 1 1514 3 is_stmt 1 view .LVU718
-ARM GAS  /tmp/ccTQO7wT.s 			page 92
+ARM GAS  /tmp/ccjfoFVl.s 			page 92
 
 
 1514:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1536:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****       {
  2435              		.loc 1 1536 10 view .LVU736
  2436 003a 03B1     		cbz	r3, .L166
-ARM GAS  /tmp/ccTQO7wT.s 			page 93
+ARM GAS  /tmp/ccjfoFVl.s 			page 93
 
 
 1539:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****       }
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  2474              		.loc 1 1563 17 is_stmt 0 view .LVU753
  2475 006e 6369     		ldr	r3, [r4, #20]
 1563:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****       {
-ARM GAS  /tmp/ccTQO7wT.s 			page 94
+ARM GAS  /tmp/ccjfoFVl.s 			page 94
 
 
  2476              		.loc 1 1563 10 view .LVU754
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1590:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****       {
  2515              		.loc 1 1590 7 view .LVU770
 1590:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****       {
-ARM GAS  /tmp/ccTQO7wT.s 			page 95
+ARM GAS  /tmp/ccjfoFVl.s 			page 95
 
 
  2516              		.loc 1 1590 17 is_stmt 0 view .LVU771
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  2555 00d8 E363     		str	r3, [r4, #60]
 1632:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
  2556              		.loc 1 1632 7 is_stmt 1 view .LVU787
-ARM GAS  /tmp/ccTQO7wT.s 			page 96
+ARM GAS  /tmp/ccjfoFVl.s 			page 96
 
 
 1632:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  2596 010a 9A60     		str	r2, [r3, #8]
 1612:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** #endif /* USE_HAL_DMA2D_REGISTER_CALLBACKS */
  2597              		.loc 1 1612 7 view .LVU803
-ARM GAS  /tmp/ccTQO7wT.s 			page 97
+ARM GAS  /tmp/ccjfoFVl.s 			page 97
 
 
  2598 010c 2046     		mov	r0, r4
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  2642              	HAL_DMA2D_ConfigLayer:
  2643              	.LVL173:
  2644              	.LFB164:
-ARM GAS  /tmp/ccTQO7wT.s 			page 98
+ARM GAS  /tmp/ccjfoFVl.s 			page 98
 
 
 1741:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   const DMA2D_LayerCfgTypeDef *pLayerCfg;
@@ -5878,7 +5878,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1776:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   regMask  = DMA2D_BGPFCCR_CM | DMA2D_BGPFCCR_AM | DMA2D_BGPFCCR_ALPHA;
  2681              		.loc 1 1776 3 view .LVU834
 1776:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   regMask  = DMA2D_BGPFCCR_CM | DMA2D_BGPFCCR_AM | DMA2D_BGPFCCR_ALPHA;
-ARM GAS  /tmp/ccTQO7wT.s 			page 99
+ARM GAS  /tmp/ccjfoFVl.s 			page 99
 
 
  2682              		.loc 1 1776 23 is_stmt 0 view .LVU835
@@ -5938,7 +5938,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1797:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
  2723              		.loc 1 1797 5 is_stmt 0 view .LVU849
  2724 004e 9469     		ldr	r4, [r2, #24]
-ARM GAS  /tmp/ccTQO7wT.s 			page 100
+ARM GAS  /tmp/ccjfoFVl.s 			page 100
 
 
  2725 0050 8461     		str	r4, [r0, #24]
@@ -5998,7 +5998,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1783:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   }
  2765              		.loc 1 1783 14 view .LVU864
  2766 0076 0243     		orrs	r2, r2, r0
-ARM GAS  /tmp/ccTQO7wT.s 			page 101
+ARM GAS  /tmp/ccjfoFVl.s 			page 101
 
 
  2767              	.LVL181:
@@ -6058,7 +6058,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  2809 00aa 0231     		adds	r1, r1, #2
  2810              	.LVL187:
 1820:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****                                                                    DMA2D_FGCOLR_RED));
-ARM GAS  /tmp/ccTQO7wT.s 			page 102
+ARM GAS  /tmp/ccjfoFVl.s 			page 102
 
 
  2811              		.loc 1 1820 7 is_stmt 0 view .LVU877
@@ -6118,7 +6118,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  2861 0006 00E90E00 		stmdb	r0, {r1, r2, r3}
 1850:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   assert_param(IS_DMA2D_CLUT_CM(CLUTCfg.CLUTColorMode));
  2862              		.loc 1 1850 3 is_stmt 1 view .LVU884
-ARM GAS  /tmp/ccTQO7wT.s 			page 103
+ARM GAS  /tmp/ccjfoFVl.s 			page 103
 
 
 1851:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   assert_param(IS_DMA2D_CLUT_SIZE(CLUTCfg.Size));
@@ -6178,7 +6178,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  2902 0042 8CF83930 		strb	r3, [ip, #57]
 1885:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
  2903              		.loc 1 1885 3 is_stmt 1 view .LVU900
-ARM GAS  /tmp/ccTQO7wT.s 			page 104
+ARM GAS  /tmp/ccjfoFVl.s 			page 104
 
 
 1885:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
@@ -6238,7 +6238,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1855:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
  2948              		.loc 1 1855 3 discriminator 1 view .LVU911
  2949 0074 EAE7     		b	.L191
-ARM GAS  /tmp/ccTQO7wT.s 			page 105
+ARM GAS  /tmp/ccjfoFVl.s 			page 105
 
 
  2950              	.L197:
@@ -6298,7 +6298,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1920:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
  2995              		.loc 1 1920 5 is_stmt 0 view .LVU923
  2996 0020 0B68     		ldr	r3, [r1]
-ARM GAS  /tmp/ccTQO7wT.s 			page 106
+ARM GAS  /tmp/ccjfoFVl.s 			page 106
 
 
  2997              	.LVL202:
@@ -6358,7 +6358,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  3040              	.LVL208:
  3041              	.LFB167:
 1938:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c ****   /* Process Locked */
-ARM GAS  /tmp/ccTQO7wT.s 			page 107
+ARM GAS  /tmp/ccjfoFVl.s 			page 107
 
 
  3042              		.loc 1 1938 1 is_stmt 1 view -0
@@ -6418,7 +6418,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1940:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
  3081              		.loc 1 1940 3 discriminator 1 view .LVU953
  3082 002a 0220     		movs	r0, #2
-ARM GAS  /tmp/ccTQO7wT.s 			page 108
+ARM GAS  /tmp/ccjfoFVl.s 			page 108
 
 
  3083              	.LVL211:
@@ -6478,7 +6478,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  3126              		.loc 1 1973 3 view .LVU966
  3127 0022 0023     		movs	r3, #0
  3128 0024 80F83830 		strb	r3, [r0, #56]
-ARM GAS  /tmp/ccTQO7wT.s 			page 109
+ARM GAS  /tmp/ccjfoFVl.s 			page 109
 
 
 1973:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
@@ -6538,7 +6538,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
 1989:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
  3174              		.loc 1 1989 3 view .LVU978
 1991:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.c **** 
-ARM GAS  /tmp/ccTQO7wT.s 			page 110
+ARM GAS  /tmp/ccjfoFVl.s 			page 110
 
 
  3175              		.loc 1 1991 3 view .LVU979
@@ -6598,7 +6598,7 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  3217              		.global	HAL_DMA2D_GetState
  3218              		.syntax unified
  3219              		.thumb
-ARM GAS  /tmp/ccTQO7wT.s 			page 111
+ARM GAS  /tmp/ccjfoFVl.s 			page 111
 
 
  3220              		.thumb_func
@@ -6657,87 +6657,87 @@ ARM GAS  /tmp/ccTQO7wT.s 			page 1
  3269              		.file 6 "Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h"
  3270              		.file 7 "Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma2d.h"
  3271              		.file 8 "Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h"
-ARM GAS  /tmp/ccTQO7wT.s 			page 112
+ARM GAS  /tmp/ccjfoFVl.s 			page 112
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f7xx_hal_dma2d.c
-     /tmp/ccTQO7wT.s:21     .text.DMA2D_SetConfig:00000000 $t
-     /tmp/ccTQO7wT.s:26     .text.DMA2D_SetConfig:00000000 DMA2D_SetConfig
-     /tmp/ccTQO7wT.s:96     .text.DMA2D_SetConfig:00000040 $d
-     /tmp/ccTQO7wT.s:100    .text.DMA2D_SetConfig:00000044 $t
-     /tmp/ccTQO7wT.s:194    .text.HAL_DMA2D_MspInit:00000000 $t
-     /tmp/ccTQO7wT.s:200    .text.HAL_DMA2D_MspInit:00000000 HAL_DMA2D_MspInit
-     /tmp/ccTQO7wT.s:215    .text.HAL_DMA2D_Init:00000000 $t
-     /tmp/ccTQO7wT.s:221    .text.HAL_DMA2D_Init:00000000 HAL_DMA2D_Init
-     /tmp/ccTQO7wT.s:310    .text.HAL_DMA2D_MspDeInit:00000000 $t
-     /tmp/ccTQO7wT.s:316    .text.HAL_DMA2D_MspDeInit:00000000 HAL_DMA2D_MspDeInit
-     /tmp/ccTQO7wT.s:331    .text.HAL_DMA2D_Start:00000000 $t
-     /tmp/ccTQO7wT.s:337    .text.HAL_DMA2D_Start:00000000 HAL_DMA2D_Start
-     /tmp/ccTQO7wT.s:404    .text.HAL_DMA2D_Start_IT:00000000 $t
-     /tmp/ccTQO7wT.s:410    .text.HAL_DMA2D_Start_IT:00000000 HAL_DMA2D_Start_IT
-     /tmp/ccTQO7wT.s:482    .text.HAL_DMA2D_BlendingStart:00000000 $t
-     /tmp/ccTQO7wT.s:488    .text.HAL_DMA2D_BlendingStart:00000000 HAL_DMA2D_BlendingStart
-     /tmp/ccTQO7wT.s:568    .text.HAL_DMA2D_BlendingStart_IT:00000000 $t
-     /tmp/ccTQO7wT.s:574    .text.HAL_DMA2D_BlendingStart_IT:00000000 HAL_DMA2D_BlendingStart_IT
-     /tmp/ccTQO7wT.s:659    .text.HAL_DMA2D_Abort:00000000 $t
-     /tmp/ccTQO7wT.s:665    .text.HAL_DMA2D_Abort:00000000 HAL_DMA2D_Abort
-     /tmp/ccTQO7wT.s:755    .text.HAL_DMA2D_Suspend:00000000 $t
-     /tmp/ccTQO7wT.s:761    .text.HAL_DMA2D_Suspend:00000000 HAL_DMA2D_Suspend
-     /tmp/ccTQO7wT.s:853    .text.HAL_DMA2D_Resume:00000000 $t
-     /tmp/ccTQO7wT.s:859    .text.HAL_DMA2D_Resume:00000000 HAL_DMA2D_Resume
-     /tmp/ccTQO7wT.s:899    .text.HAL_DMA2D_EnableCLUT:00000000 $t
-     /tmp/ccTQO7wT.s:905    .text.HAL_DMA2D_EnableCLUT:00000000 HAL_DMA2D_EnableCLUT
-     /tmp/ccTQO7wT.s:963    .text.HAL_DMA2D_CLUTStartLoad:00000000 $t
-     /tmp/ccTQO7wT.s:969    .text.HAL_DMA2D_CLUTStartLoad:00000000 HAL_DMA2D_CLUTStartLoad
-     /tmp/ccTQO7wT.s:1081   .text.HAL_DMA2D_CLUTStartLoad:00000074 $d
-     /tmp/ccTQO7wT.s:1086   .text.HAL_DMA2D_CLUTStartLoad_IT:00000000 $t
-     /tmp/ccTQO7wT.s:1092   .text.HAL_DMA2D_CLUTStartLoad_IT:00000000 HAL_DMA2D_CLUTStartLoad_IT
-     /tmp/ccTQO7wT.s:1214   .text.HAL_DMA2D_CLUTStartLoad_IT:00000088 $d
-     /tmp/ccTQO7wT.s:1219   .text.HAL_DMA2D_CLUTLoad:00000000 $t
-     /tmp/ccTQO7wT.s:1225   .text.HAL_DMA2D_CLUTLoad:00000000 HAL_DMA2D_CLUTLoad
-     /tmp/ccTQO7wT.s:1338   .text.HAL_DMA2D_CLUTLoad:00000080 $d
-     /tmp/ccTQO7wT.s:1343   .text.HAL_DMA2D_CLUTLoad_IT:00000000 $t
-     /tmp/ccTQO7wT.s:1349   .text.HAL_DMA2D_CLUTLoad_IT:00000000 HAL_DMA2D_CLUTLoad_IT
-     /tmp/ccTQO7wT.s:1472   .text.HAL_DMA2D_CLUTLoad_IT:00000094 $d
-     /tmp/ccTQO7wT.s:1477   .text.HAL_DMA2D_CLUTLoading_Abort:00000000 $t
-     /tmp/ccTQO7wT.s:1483   .text.HAL_DMA2D_CLUTLoading_Abort:00000000 HAL_DMA2D_CLUTLoading_Abort
-     /tmp/ccTQO7wT.s:1594   .text.HAL_DMA2D_DeInit:00000000 $t
-     /tmp/ccTQO7wT.s:1600   .text.HAL_DMA2D_DeInit:00000000 HAL_DMA2D_DeInit
-     /tmp/ccTQO7wT.s:1760   .text.HAL_DMA2D_DeInit:0000008c $d
-     /tmp/ccTQO7wT.s:1765   .text.HAL_DMA2D_CLUTLoading_Suspend:00000000 $t
-     /tmp/ccTQO7wT.s:1771   .text.HAL_DMA2D_CLUTLoading_Suspend:00000000 HAL_DMA2D_CLUTLoading_Suspend
-     /tmp/ccTQO7wT.s:1939   .text.HAL_DMA2D_CLUTLoading_Resume:00000000 $t
-     /tmp/ccTQO7wT.s:1945   .text.HAL_DMA2D_CLUTLoading_Resume:00000000 HAL_DMA2D_CLUTLoading_Resume
-     /tmp/ccTQO7wT.s:2011   .text.HAL_DMA2D_PollForTransfer:00000000 $t
-     /tmp/ccTQO7wT.s:2017   .text.HAL_DMA2D_PollForTransfer:00000000 HAL_DMA2D_PollForTransfer
-     /tmp/ccTQO7wT.s:2327   .text.HAL_DMA2D_LineEventCallback:00000000 $t
-     /tmp/ccTQO7wT.s:2333   .text.HAL_DMA2D_LineEventCallback:00000000 HAL_DMA2D_LineEventCallback
-     /tmp/ccTQO7wT.s:2348   .text.HAL_DMA2D_CLUTLoadingCpltCallback:00000000 $t
-     /tmp/ccTQO7wT.s:2354   .text.HAL_DMA2D_CLUTLoadingCpltCallback:00000000 HAL_DMA2D_CLUTLoadingCpltCallback
-     /tmp/ccTQO7wT.s:2369   .text.HAL_DMA2D_IRQHandler:00000000 $t
-     /tmp/ccTQO7wT.s:2375   .text.HAL_DMA2D_IRQHandler:00000000 HAL_DMA2D_IRQHandler
-ARM GAS  /tmp/ccTQO7wT.s 			page 113
+     /tmp/ccjfoFVl.s:21     .text.DMA2D_SetConfig:00000000 $t
+     /tmp/ccjfoFVl.s:26     .text.DMA2D_SetConfig:00000000 DMA2D_SetConfig
+     /tmp/ccjfoFVl.s:96     .text.DMA2D_SetConfig:00000040 $d
+     /tmp/ccjfoFVl.s:100    .text.DMA2D_SetConfig:00000044 $t
+     /tmp/ccjfoFVl.s:194    .text.HAL_DMA2D_MspInit:00000000 $t
+     /tmp/ccjfoFVl.s:200    .text.HAL_DMA2D_MspInit:00000000 HAL_DMA2D_MspInit
+     /tmp/ccjfoFVl.s:215    .text.HAL_DMA2D_Init:00000000 $t
+     /tmp/ccjfoFVl.s:221    .text.HAL_DMA2D_Init:00000000 HAL_DMA2D_Init
+     /tmp/ccjfoFVl.s:310    .text.HAL_DMA2D_MspDeInit:00000000 $t
+     /tmp/ccjfoFVl.s:316    .text.HAL_DMA2D_MspDeInit:00000000 HAL_DMA2D_MspDeInit
+     /tmp/ccjfoFVl.s:331    .text.HAL_DMA2D_Start:00000000 $t
+     /tmp/ccjfoFVl.s:337    .text.HAL_DMA2D_Start:00000000 HAL_DMA2D_Start
+     /tmp/ccjfoFVl.s:404    .text.HAL_DMA2D_Start_IT:00000000 $t
+     /tmp/ccjfoFVl.s:410    .text.HAL_DMA2D_Start_IT:00000000 HAL_DMA2D_Start_IT
+     /tmp/ccjfoFVl.s:482    .text.HAL_DMA2D_BlendingStart:00000000 $t
+     /tmp/ccjfoFVl.s:488    .text.HAL_DMA2D_BlendingStart:00000000 HAL_DMA2D_BlendingStart
+     /tmp/ccjfoFVl.s:568    .text.HAL_DMA2D_BlendingStart_IT:00000000 $t
+     /tmp/ccjfoFVl.s:574    .text.HAL_DMA2D_BlendingStart_IT:00000000 HAL_DMA2D_BlendingStart_IT
+     /tmp/ccjfoFVl.s:659    .text.HAL_DMA2D_Abort:00000000 $t
+     /tmp/ccjfoFVl.s:665    .text.HAL_DMA2D_Abort:00000000 HAL_DMA2D_Abort
+     /tmp/ccjfoFVl.s:755    .text.HAL_DMA2D_Suspend:00000000 $t
+     /tmp/ccjfoFVl.s:761    .text.HAL_DMA2D_Suspend:00000000 HAL_DMA2D_Suspend
+     /tmp/ccjfoFVl.s:853    .text.HAL_DMA2D_Resume:00000000 $t
+     /tmp/ccjfoFVl.s:859    .text.HAL_DMA2D_Resume:00000000 HAL_DMA2D_Resume
+     /tmp/ccjfoFVl.s:899    .text.HAL_DMA2D_EnableCLUT:00000000 $t
+     /tmp/ccjfoFVl.s:905    .text.HAL_DMA2D_EnableCLUT:00000000 HAL_DMA2D_EnableCLUT
+     /tmp/ccjfoFVl.s:963    .text.HAL_DMA2D_CLUTStartLoad:00000000 $t
+     /tmp/ccjfoFVl.s:969    .text.HAL_DMA2D_CLUTStartLoad:00000000 HAL_DMA2D_CLUTStartLoad
+     /tmp/ccjfoFVl.s:1081   .text.HAL_DMA2D_CLUTStartLoad:00000074 $d
+     /tmp/ccjfoFVl.s:1086   .text.HAL_DMA2D_CLUTStartLoad_IT:00000000 $t
+     /tmp/ccjfoFVl.s:1092   .text.HAL_DMA2D_CLUTStartLoad_IT:00000000 HAL_DMA2D_CLUTStartLoad_IT
+     /tmp/ccjfoFVl.s:1214   .text.HAL_DMA2D_CLUTStartLoad_IT:00000088 $d
+     /tmp/ccjfoFVl.s:1219   .text.HAL_DMA2D_CLUTLoad:00000000 $t
+     /tmp/ccjfoFVl.s:1225   .text.HAL_DMA2D_CLUTLoad:00000000 HAL_DMA2D_CLUTLoad
+     /tmp/ccjfoFVl.s:1338   .text.HAL_DMA2D_CLUTLoad:00000080 $d
+     /tmp/ccjfoFVl.s:1343   .text.HAL_DMA2D_CLUTLoad_IT:00000000 $t
+     /tmp/ccjfoFVl.s:1349   .text.HAL_DMA2D_CLUTLoad_IT:00000000 HAL_DMA2D_CLUTLoad_IT
+     /tmp/ccjfoFVl.s:1472   .text.HAL_DMA2D_CLUTLoad_IT:00000094 $d
+     /tmp/ccjfoFVl.s:1477   .text.HAL_DMA2D_CLUTLoading_Abort:00000000 $t
+     /tmp/ccjfoFVl.s:1483   .text.HAL_DMA2D_CLUTLoading_Abort:00000000 HAL_DMA2D_CLUTLoading_Abort
+     /tmp/ccjfoFVl.s:1594   .text.HAL_DMA2D_DeInit:00000000 $t
+     /tmp/ccjfoFVl.s:1600   .text.HAL_DMA2D_DeInit:00000000 HAL_DMA2D_DeInit
+     /tmp/ccjfoFVl.s:1760   .text.HAL_DMA2D_DeInit:0000008c $d
+     /tmp/ccjfoFVl.s:1765   .text.HAL_DMA2D_CLUTLoading_Suspend:00000000 $t
+     /tmp/ccjfoFVl.s:1771   .text.HAL_DMA2D_CLUTLoading_Suspend:00000000 HAL_DMA2D_CLUTLoading_Suspend
+     /tmp/ccjfoFVl.s:1939   .text.HAL_DMA2D_CLUTLoading_Resume:00000000 $t
+     /tmp/ccjfoFVl.s:1945   .text.HAL_DMA2D_CLUTLoading_Resume:00000000 HAL_DMA2D_CLUTLoading_Resume
+     /tmp/ccjfoFVl.s:2011   .text.HAL_DMA2D_PollForTransfer:00000000 $t
+     /tmp/ccjfoFVl.s:2017   .text.HAL_DMA2D_PollForTransfer:00000000 HAL_DMA2D_PollForTransfer
+     /tmp/ccjfoFVl.s:2327   .text.HAL_DMA2D_LineEventCallback:00000000 $t
+     /tmp/ccjfoFVl.s:2333   .text.HAL_DMA2D_LineEventCallback:00000000 HAL_DMA2D_LineEventCallback
+     /tmp/ccjfoFVl.s:2348   .text.HAL_DMA2D_CLUTLoadingCpltCallback:00000000 $t
+     /tmp/ccjfoFVl.s:2354   .text.HAL_DMA2D_CLUTLoadingCpltCallback:00000000 HAL_DMA2D_CLUTLoadingCpltCallback
+     /tmp/ccjfoFVl.s:2369   .text.HAL_DMA2D_IRQHandler:00000000 $t
+     /tmp/ccjfoFVl.s:2375   .text.HAL_DMA2D_IRQHandler:00000000 HAL_DMA2D_IRQHandler
+ARM GAS  /tmp/ccjfoFVl.s 			page 113
 
 
-     /tmp/ccTQO7wT.s:2636   .text.HAL_DMA2D_ConfigLayer:00000000 $t
-     /tmp/ccTQO7wT.s:2642   .text.HAL_DMA2D_ConfigLayer:00000000 HAL_DMA2D_ConfigLayer
-     /tmp/ccTQO7wT.s:2834   .text.HAL_DMA2D_ConfigLayer:000000c0 $d
-     /tmp/ccTQO7wT.s:2839   .text.HAL_DMA2D_ConfigCLUT:00000000 $t
-     /tmp/ccTQO7wT.s:2845   .text.HAL_DMA2D_ConfigCLUT:00000000 HAL_DMA2D_ConfigCLUT
-     /tmp/ccTQO7wT.s:2953   .text.HAL_DMA2D_ConfigCLUT:00000078 $d
-     /tmp/ccTQO7wT.s:2958   .text.HAL_DMA2D_ProgramLineEvent:00000000 $t
-     /tmp/ccTQO7wT.s:2964   .text.HAL_DMA2D_ProgramLineEvent:00000000 HAL_DMA2D_ProgramLineEvent
-     /tmp/ccTQO7wT.s:3033   .text.HAL_DMA2D_EnableDeadTime:00000000 $t
-     /tmp/ccTQO7wT.s:3039   .text.HAL_DMA2D_EnableDeadTime:00000000 HAL_DMA2D_EnableDeadTime
-     /tmp/ccTQO7wT.s:3090   .text.HAL_DMA2D_DisableDeadTime:00000000 $t
-     /tmp/ccTQO7wT.s:3096   .text.HAL_DMA2D_DisableDeadTime:00000000 HAL_DMA2D_DisableDeadTime
-     /tmp/ccTQO7wT.s:3147   .text.HAL_DMA2D_ConfigDeadTime:00000000 $t
-     /tmp/ccTQO7wT.s:3153   .text.HAL_DMA2D_ConfigDeadTime:00000000 HAL_DMA2D_ConfigDeadTime
-     /tmp/ccTQO7wT.s:3216   .text.HAL_DMA2D_GetState:00000000 $t
-     /tmp/ccTQO7wT.s:3222   .text.HAL_DMA2D_GetState:00000000 HAL_DMA2D_GetState
-     /tmp/ccTQO7wT.s:3240   .text.HAL_DMA2D_GetError:00000000 $t
-     /tmp/ccTQO7wT.s:3246   .text.HAL_DMA2D_GetError:00000000 HAL_DMA2D_GetError
+     /tmp/ccjfoFVl.s:2636   .text.HAL_DMA2D_ConfigLayer:00000000 $t
+     /tmp/ccjfoFVl.s:2642   .text.HAL_DMA2D_ConfigLayer:00000000 HAL_DMA2D_ConfigLayer
+     /tmp/ccjfoFVl.s:2834   .text.HAL_DMA2D_ConfigLayer:000000c0 $d
+     /tmp/ccjfoFVl.s:2839   .text.HAL_DMA2D_ConfigCLUT:00000000 $t
+     /tmp/ccjfoFVl.s:2845   .text.HAL_DMA2D_ConfigCLUT:00000000 HAL_DMA2D_ConfigCLUT
+     /tmp/ccjfoFVl.s:2953   .text.HAL_DMA2D_ConfigCLUT:00000078 $d
+     /tmp/ccjfoFVl.s:2958   .text.HAL_DMA2D_ProgramLineEvent:00000000 $t
+     /tmp/ccjfoFVl.s:2964   .text.HAL_DMA2D_ProgramLineEvent:00000000 HAL_DMA2D_ProgramLineEvent
+     /tmp/ccjfoFVl.s:3033   .text.HAL_DMA2D_EnableDeadTime:00000000 $t
+     /tmp/ccjfoFVl.s:3039   .text.HAL_DMA2D_EnableDeadTime:00000000 HAL_DMA2D_EnableDeadTime
+     /tmp/ccjfoFVl.s:3090   .text.HAL_DMA2D_DisableDeadTime:00000000 $t
+     /tmp/ccjfoFVl.s:3096   .text.HAL_DMA2D_DisableDeadTime:00000000 HAL_DMA2D_DisableDeadTime
+     /tmp/ccjfoFVl.s:3147   .text.HAL_DMA2D_ConfigDeadTime:00000000 $t
+     /tmp/ccjfoFVl.s:3153   .text.HAL_DMA2D_ConfigDeadTime:00000000 HAL_DMA2D_ConfigDeadTime
+     /tmp/ccjfoFVl.s:3216   .text.HAL_DMA2D_GetState:00000000 $t
+     /tmp/ccjfoFVl.s:3222   .text.HAL_DMA2D_GetState:00000000 HAL_DMA2D_GetState
+     /tmp/ccjfoFVl.s:3240   .text.HAL_DMA2D_GetError:00000000 $t
+     /tmp/ccjfoFVl.s:3246   .text.HAL_DMA2D_GetError:00000000 HAL_DMA2D_GetError
 
 UNDEFINED SYMBOLS
 HAL_GetTick

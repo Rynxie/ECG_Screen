@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc0RXC8c.s 			page 1
+ARM GAS  /tmp/ccUVYK8n.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
   27:Drivers/lvgl/src/misc/lv_text_private.h **** /**********************
   28:Drivers/lvgl/src/misc/lv_text_private.h ****  * GLOBAL PROTOTYPES
   29:Drivers/lvgl/src/misc/lv_text_private.h ****  **********************/
-ARM GAS  /tmp/cc0RXC8c.s 			page 2
+ARM GAS  /tmp/ccUVYK8n.s 			page 2
 
 
   30:Drivers/lvgl/src/misc/lv_text_private.h **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
   84:Drivers/lvgl/src/misc/lv_text_private.h **** 
   85:Drivers/lvgl/src/misc/lv_text_private.h **** /**
   86:Drivers/lvgl/src/misc/lv_text_private.h ****  * Test if char is break char or not (a text can broken here or not)
-ARM GAS  /tmp/cc0RXC8c.s 			page 3
+ARM GAS  /tmp/ccUVYK8n.s 			page 3
 
 
   87:Drivers/lvgl/src/misc/lv_text_private.h ****  * @param letter a letter
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
   48              		.loc 2 122 7 view .LVU8
   49 0012 5D2A     		cmp	r2, #93
   50 0014 1DD9     		bls	.L5
-ARM GAS  /tmp/cc0RXC8c.s 			page 4
+ARM GAS  /tmp/ccUVYK8n.s 			page 4
 
 
  123:Drivers/lvgl/src/misc/lv_text_private.h ****         return true;
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
   80 003a 0F2A     		cmp	r2, #15
   81 003c 13D9     		bls	.L10
  148:Drivers/lvgl/src/misc/lv_text_private.h ****         return true;
-ARM GAS  /tmp/cc0RXC8c.s 			page 5
+ARM GAS  /tmp/ccUVYK8n.s 			page 5
 
 
  149:Drivers/lvgl/src/misc/lv_text_private.h ****     }
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  120              		.loc 2 128 16 view .LVU36
  121 0058 7047     		bx	lr
  122              	.LVL10:
-ARM GAS  /tmp/cc0RXC8c.s 			page 6
+ARM GAS  /tmp/ccUVYK8n.s 			page 6
 
 
  123              	.L7:
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  168              		.thumb
  169              		.thumb_func
  171              	lv_text_utf8_size:
-ARM GAS  /tmp/cc0RXC8c.s 			page 7
+ARM GAS  /tmp/ccUVYK8n.s 			page 7
 
 
  172              	.LVL20:
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
   53:Drivers/lvgl/src/misc/lv_text.c **** 
   54:Drivers/lvgl/src/misc/lv_text.c **** /**********************
   55:Drivers/lvgl/src/misc/lv_text.c ****  *  GLOBAL VARIABLES
-ARM GAS  /tmp/cc0RXC8c.s 			page 8
+ARM GAS  /tmp/ccUVYK8n.s 			page 8
 
 
   56:Drivers/lvgl/src/misc/lv_text.c ****  **********************/
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  110:Drivers/lvgl/src/misc/lv_text.c **** 
  111:Drivers/lvgl/src/misc/lv_text.c ****         if((unsigned long)size_res->y + (unsigned long)letter_height + (unsigned long)line_space > 
  112:Drivers/lvgl/src/misc/lv_text.c ****             LV_LOG_WARN("integer overflow while calculating text height");
-ARM GAS  /tmp/cc0RXC8c.s 			page 9
+ARM GAS  /tmp/ccUVYK8n.s 			page 9
 
 
  113:Drivers/lvgl/src/misc/lv_text.c ****             return;
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  167:Drivers/lvgl/src/misc/lv_text.c **** 
  168:Drivers/lvgl/src/misc/lv_text.c ****     return ret;
  169:Drivers/lvgl/src/misc/lv_text.c **** }
-ARM GAS  /tmp/cc0RXC8c.s 			page 10
+ARM GAS  /tmp/ccUVYK8n.s 			page 10
 
 
  170:Drivers/lvgl/src/misc/lv_text.c **** 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  224:Drivers/lvgl/src/misc/lv_text.c ****     /*Obtain the full word, regardless if it fits or not in max_width*/
  225:Drivers/lvgl/src/misc/lv_text.c ****     while(txt[i] != '\0') {
  226:Drivers/lvgl/src/misc/lv_text.c ****         letter_next = lv_text_encoded_next(txt, &i_next_next);
-ARM GAS  /tmp/cc0RXC8c.s 			page 11
+ARM GAS  /tmp/ccUVYK8n.s 			page 11
 
 
  227:Drivers/lvgl/src/misc/lv_text.c ****         word_len++;
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  281:Drivers/lvgl/src/misc/lv_text.c ****         if(word_len == 0 || (letter == '\r' && letter_next == '\n')) i = i_next;
  282:Drivers/lvgl/src/misc/lv_text.c ****         return i;
  283:Drivers/lvgl/src/misc/lv_text.c ****     }
-ARM GAS  /tmp/cc0RXC8c.s 			page 12
+ARM GAS  /tmp/ccUVYK8n.s 			page 12
 
 
  284:Drivers/lvgl/src/misc/lv_text.c **** 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  338:Drivers/lvgl/src/misc/lv_text.c ****         for(i = 0; i < len && txt[i] != '\n' && txt[i] != '\r' && txt[i] != '\0'; i++) {
  339:Drivers/lvgl/src/misc/lv_text.c ****             /*Just find the new line chars or string ends by incrementing `i`*/
  340:Drivers/lvgl/src/misc/lv_text.c ****         }
-ARM GAS  /tmp/cc0RXC8c.s 			page 13
+ARM GAS  /tmp/ccUVYK8n.s 			page 13
 
 
  341:Drivers/lvgl/src/misc/lv_text.c ****         if(i < len && txt[i] != '\0') i++;    /*To go beyond `\n`*/
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  395:Drivers/lvgl/src/misc/lv_text.c **** 
  396:Drivers/lvgl/src/misc/lv_text.c ****     uint32_t i                   = 0;
  397:Drivers/lvgl/src/misc/lv_text.c ****     int32_t width             = 0;
-ARM GAS  /tmp/cc0RXC8c.s 			page 14
+ARM GAS  /tmp/ccUVYK8n.s 			page 14
 
 
  398:Drivers/lvgl/src/misc/lv_text.c **** 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  452:Drivers/lvgl/src/misc/lv_text.c ****             width -= letter_space; /*Trim the last letter space. Important if the text is center
  453:Drivers/lvgl/src/misc/lv_text.c ****                                       aligned*/
  454:Drivers/lvgl/src/misc/lv_text.c ****         }
-ARM GAS  /tmp/cc0RXC8c.s 			page 15
+ARM GAS  /tmp/ccUVYK8n.s 			page 15
 
 
  455:Drivers/lvgl/src/misc/lv_text.c ****     }
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  509:Drivers/lvgl/src/misc/lv_text.c ****     LV_ASSERT_MALLOC(raw_txt);
  510:Drivers/lvgl/src/misc/lv_text.c ****     if(raw_txt == NULL) {
  511:Drivers/lvgl/src/misc/lv_text.c ****         return NULL;
-ARM GAS  /tmp/cc0RXC8c.s 			page 16
+ARM GAS  /tmp/ccUVYK8n.s 			page 16
 
 
  512:Drivers/lvgl/src/misc/lv_text.c ****     }
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  182 0002 90F90020 		ldrsb	r2, [r0]
  183              		.loc 1 557 7 view .LVU50
  184 0006 002A     		cmp	r2, #0
-ARM GAS  /tmp/cc0RXC8c.s 			page 17
+ARM GAS  /tmp/ccUVYK8n.s 			page 17
 
 
  185 0008 0DDA     		bge	.L16
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  225              		.loc 1 562 16 view .LVU64
  226 0030 7047     		bx	lr
  227              	.LVL28:
-ARM GAS  /tmp/cc0RXC8c.s 			page 18
+ARM GAS  /tmp/ccUVYK8n.s 			page 18
 
 
  228              	.L19:
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  268 0010 43F0C003 		orr	r3, r3, #192
  269              		.loc 1 579 18 view .LVU77
  270 0014 8DF80430 		strb	r3, [sp, #4]
-ARM GAS  /tmp/cc0RXC8c.s 			page 19
+ARM GAS  /tmp/ccUVYK8n.s 			page 19
 
 
  580:Drivers/lvgl/src/misc/lv_text.c ****         bytes[1] = ((letter_uni >> 0) & 0x3F) | 0x80;
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  302              	.L22:
  303              	.LCFI2:
  304              		.cfi_restore_state
-ARM GAS  /tmp/cc0RXC8c.s 			page 20
+ARM GAS  /tmp/ccUVYK8n.s 			page 20
 
 
  584:Drivers/lvgl/src/misc/lv_text.c ****         bytes[0] = ((letter_uni >> 12) & 0x0F) | 0xE0;
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  341 006a 18D2     		bcs	.L26
  591:Drivers/lvgl/src/misc/lv_text.c ****         bytes[1] = ((letter_uni >> 12) & 0x3F) | 0x80;
  342              		.loc 1 591 9 is_stmt 1 view .LVU108
-ARM GAS  /tmp/cc0RXC8c.s 			page 21
+ARM GAS  /tmp/ccUVYK8n.s 			page 21
 
 
  591:Drivers/lvgl/src/misc/lv_text.c ****         bytes[1] = ((letter_uni >> 12) & 0x3F) | 0x80;
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  380              	.L28:
  381              	.LCFI3:
  382              		.cfi_def_cfa_offset 0
-ARM GAS  /tmp/cc0RXC8c.s 			page 22
+ARM GAS  /tmp/ccUVYK8n.s 			page 22
 
 
  383              		.loc 1 602 1 view .LVU126
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  403              	.LCFI4:
  404              		.cfi_def_cfa_offset 4
  405              		.cfi_offset 14, -4
-ARM GAS  /tmp/cc0RXC8c.s 			page 23
+ARM GAS  /tmp/ccUVYK8n.s 			page 23
 
 
  406 0002 83B0     		sub	sp, sp, #12
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  438 0020 1846     		mov	r0, r3
  439              	.LVL44:
  661:Drivers/lvgl/src/misc/lv_text.c ****         (*i)++;
-ARM GAS  /tmp/cc0RXC8c.s 			page 24
+ARM GAS  /tmp/ccUVYK8n.s 			page 24
 
 
  440              		.loc 1 661 9 is_stmt 1 view .LVU143
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  447 0028 03B0     		add	sp, sp, #12
  448              	.LCFI6:
  449              		.cfi_remember_state
-ARM GAS  /tmp/cc0RXC8c.s 			page 25
+ARM GAS  /tmp/ccUVYK8n.s 			page 25
 
 
  450              		.cfi_def_cfa_offset 4
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  667:Drivers/lvgl/src/misc/lv_text.c ****             (*i)++;
  491              		.loc 1 667 20 view .LVU159
  492 0058 03F4F863 		and	r3, r3, #1984
-ARM GAS  /tmp/cc0RXC8c.s 			page 26
+ARM GAS  /tmp/ccUVYK8n.s 			page 26
 
 
  493              	.LVL50:
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  530              		.loc 1 678 13 is_stmt 1 view .LVU176
  678:Drivers/lvgl/src/misc/lv_text.c ****             result += (uint32_t)(txt[*i] & 0x3F) << 6;
  531              		.loc 1 678 16 is_stmt 0 view .LVU177
-ARM GAS  /tmp/cc0RXC8c.s 			page 27
+ARM GAS  /tmp/ccUVYK8n.s 			page 27
 
 
  532 0084 415C     		ldrb	r1, [r0, r1]	@ zero_extendqisi2
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  570              		.loc 1 688 13 is_stmt 1 view .LVU193
  688:Drivers/lvgl/src/misc/lv_text.c ****             (*i)++;
  571              		.loc 1 688 49 is_stmt 0 view .LVU194
-ARM GAS  /tmp/cc0RXC8c.s 			page 28
+ARM GAS  /tmp/ccUVYK8n.s 			page 28
 
 
  572 00b6 9B04     		lsls	r3, r3, #18
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  609              		.loc 1 696 20 view .LVU211
  610 00ee 1944     		add	r1, r1, r3
  611              	.LVL61:
-ARM GAS  /tmp/cc0RXC8c.s 			page 29
+ARM GAS  /tmp/ccUVYK8n.s 			page 29
 
 
  697:Drivers/lvgl/src/misc/lv_text.c **** 
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  651              	.L41:
  669:Drivers/lvgl/src/misc/lv_text.c ****             result += (txt[*i] & 0x3F);
  652              		.loc 1 669 57 discriminator 1 view .LVU227
-ARM GAS  /tmp/cc0RXC8c.s 			page 30
+ARM GAS  /tmp/ccUVYK8n.s 			page 30
 
 
  653 0116 0020     		movs	r0, #0
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  710:Drivers/lvgl/src/misc/lv_text.c **** /**
  711:Drivers/lvgl/src/misc/lv_text.c ****  * Get previous UTF-8 character form a string.
  712:Drivers/lvgl/src/misc/lv_text.c ****  * @param txt pointer to '\0' terminated string
-ARM GAS  /tmp/cc0RXC8c.s 			page 31
+ARM GAS  /tmp/ccUVYK8n.s 			page 31
 
 
  713:Drivers/lvgl/src/misc/lv_text.c ****  * @param i start byte index in 'txt' where to start. After the call it will point to the previous
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  734 0014 3560     		str	r5, [r6]
  735              	.L54:
  731:Drivers/lvgl/src/misc/lv_text.c ****             else
-ARM GAS  /tmp/cc0RXC8c.s 			page 32
+ARM GAS  /tmp/ccUVYK8n.s 			page 32
 
 
  732:Drivers/lvgl/src/misc/lv_text.c ****                 return 0;
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  774 0036 0193     		str	r3, [sp, #4]
  738:Drivers/lvgl/src/misc/lv_text.c ****     uint32_t letter = lv_text_encoded_next(txt, &i_tmp); /*Character found, get it*/
  775              		.loc 1 738 5 is_stmt 1 view .LVU264
-ARM GAS  /tmp/cc0RXC8c.s 			page 33
+ARM GAS  /tmp/ccUVYK8n.s 			page 33
 
 
  776              		.loc 1 738 23 is_stmt 0 view .LVU265
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  818 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
  819              	.LCFI11:
  820              		.cfi_def_cfa_offset 24
-ARM GAS  /tmp/cc0RXC8c.s 			page 34
+ARM GAS  /tmp/ccUVYK8n.s 			page 34
 
 
  821              		.cfi_offset 3, -24
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  862 001a FFF7FEFF 		bl	lv_text_utf8_size
  863              	.LVL93:
  864              		.loc 1 757 9 is_stmt 1 view .LVU288
-ARM GAS  /tmp/cc0RXC8c.s 			page 35
+ARM GAS  /tmp/ccUVYK8n.s 			page 35
 
 
  865              		.loc 1 757 37 is_stmt 0 view .LVU289
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  907 0004 0646     		mov	r6, r0
  908 0006 0D46     		mov	r5, r1
  772:Drivers/lvgl/src/misc/lv_text.c ****     uint32_t i        = 0;
-ARM GAS  /tmp/cc0RXC8c.s 			page 36
+ARM GAS  /tmp/ccUVYK8n.s 			page 36
 
 
  909              		.loc 1 772 5 is_stmt 1 view .LVU296
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  782:Drivers/lvgl/src/misc/lv_text.c **** 
  783:Drivers/lvgl/src/misc/lv_text.c **** /**
  784:Drivers/lvgl/src/misc/lv_text.c ****  * Get the number of characters (and NOT bytes) in a string. Decode it with UTF-8 if enabled.
-ARM GAS  /tmp/cc0RXC8c.s 			page 37
+ARM GAS  /tmp/ccUVYK8n.s 			page 37
 
 
  785:Drivers/lvgl/src/misc/lv_text.c ****  * E.g.: "ÁBC" is 3 characters (but 4 bytes)
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  794:Drivers/lvgl/src/misc/lv_text.c ****         lv_text_encoded_next(txt, &i);
  995              		.loc 1 794 18 view .LVU320
  996 001a 002B     		cmp	r3, #0
-ARM GAS  /tmp/cc0RXC8c.s 			page 38
+ARM GAS  /tmp/ccUVYK8n.s 			page 38
 
 
  997 001c F6D1     		bne	.L73
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  1043              		.cfi_remember_state
  1044              		.cfi_def_cfa_offset 4
  1045              		@ sp needed
-ARM GAS  /tmp/cc0RXC8c.s 			page 39
+ARM GAS  /tmp/ccUVYK8n.s 			page 39
 
 
  1046 0010 5DF804FB 		ldr	pc, [sp], #4
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  619:Drivers/lvgl/src/misc/lv_text.c ****             if((swapped & 0xFF) == 0)
  1084              		.loc 1 619 9 view .LVU346
  1085 003e 01E0     		b	.L77
-ARM GAS  /tmp/cc0RXC8c.s 			page 40
+ARM GAS  /tmp/ccUVYK8n.s 			page 40
 
 
  1086              	.LVL111:
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  1131              		@ frame_needed = 0, uses_anonymous_args = 0
  1132              		@ link register save eliminated.
  141:Drivers/lvgl/src/misc/lv_text.c ****     bool ret = false;
-ARM GAS  /tmp/cc0RXC8c.s 			page 41
+ARM GAS  /tmp/ccUVYK8n.s 			page 41
 
 
  1133              		.loc 1 141 1 is_stmt 0 view .LVU358
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  147:Drivers/lvgl/src/misc/lv_text.c ****         }
  1171              		.loc 1 147 13 is_stmt 0 view .LVU375
  1172 0018 F6E7     		b	.L84
-ARM GAS  /tmp/cc0RXC8c.s 			page 42
+ARM GAS  /tmp/ccUVYK8n.s 			page 42
 
 
  1173              	.LVL123:
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  163:Drivers/lvgl/src/misc/lv_text.c ****         }
  1212              		.loc 1 163 20 is_stmt 0 view .LVU391
  1213 0032 0222     		movs	r2, #2
-ARM GAS  /tmp/cc0RXC8c.s 			page 43
+ARM GAS  /tmp/ccUVYK8n.s 			page 43
 
 
  1214 0034 1A70     		strb	r2, [r3]
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  1262 0010 0028     		cmp	r0, #0
  1263 0012 00F0A680 		beq	.L115
  1264 0016 8046     		mov	r8, r0
-ARM GAS  /tmp/cc0RXC8c.s 			page 44
+ARM GAS  /tmp/ccUVYK8n.s 			page 44
 
 
  207:Drivers/lvgl/src/misc/lv_text.c ****     if(font == NULL) return 0;
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  1300 0038 05A9     		add	r1, sp, #20
  1301              	.LVL136:
  221:Drivers/lvgl/src/misc/lv_text.c ****     i_next_next = i_next;
-ARM GAS  /tmp/cc0RXC8c.s 			page 45
+ARM GAS  /tmp/ccUVYK8n.s 			page 45
 
 
  1302              		.loc 1 221 14 view .LVU417
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  1340              	.LVL143:
  1341              	.L120:
  1342              	.LBB7:
-ARM GAS  /tmp/cc0RXC8c.s 			page 46
+ARM GAS  /tmp/ccUVYK8n.s 			page 46
 
 
  1343              	.LBB8:
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  1383              		.loc 1 272 65 is_stmt 1 discriminator 1 view .LVU447
  272:Drivers/lvgl/src/misc/lv_text.c **** 
  1384              		.loc 1 272 77 is_stmt 0 discriminator 1 view .LVU448
-ARM GAS  /tmp/cc0RXC8c.s 			page 47
+ARM GAS  /tmp/ccUVYK8n.s 			page 47
 
 
  1385 0086 119B     		ldr	r3, [sp, #68]
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  1425 00a8 09F10103 		add	r3, r9, #1
  1426 00ac 0093     		str	r3, [sp]
  1427              	.LVL153:
-ARM GAS  /tmp/cc0RXC8c.s 			page 48
+ARM GAS  /tmp/ccUVYK8n.s 			page 48
 
 
  230:Drivers/lvgl/src/misc/lv_text.c ****             if(lv_text_is_cmd(cmd_state, letter)) {
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  1466              		.loc 1 247 11 is_stmt 0 view .LVU478
  1467 00d4 BAF1FF3F 		cmp	r10, #-1
  1468 00d8 08D1     		bne	.L101
-ARM GAS  /tmp/cc0RXC8c.s 			page 49
+ARM GAS  /tmp/ccUVYK8n.s 			page 49
 
 
  247:Drivers/lvgl/src/misc/lv_text.c ****             break_index = i;
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  1509              		.loc 2 97 9 is_stmt 1 view .LVU492
   97:Drivers/lvgl/src/misc/lv_text_private.h ****             ret = true; /*If match then it is break char*/
  1510              		.loc 2 97 11 is_stmt 0 view .LVU493
-ARM GAS  /tmp/cc0RXC8c.s 			page 50
+ARM GAS  /tmp/ccUVYK8n.s 			page 50
 
 
  1511 0104 9442     		cmp	r4, r2
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  1550              		.loc 1 227 17 is_stmt 0 view .LVU508
  1551 0126 DDF80090 		ldr	r9, [sp]
  1552              	.LVL167:
-ARM GAS  /tmp/cc0RXC8c.s 			page 51
+ARM GAS  /tmp/ccUVYK8n.s 			page 51
 
 
  1553              	.L102:
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  1591 0150 0D2C     		cmp	r4, #13
  1592 0152 08BF     		it	eq
  1593 0154 0A2D     		cmpeq	r5, #10
-ARM GAS  /tmp/cc0RXC8c.s 			page 52
+ARM GAS  /tmp/ccUVYK8n.s 			page 52
 
 
  1594 0156 02D1     		bne	.L121
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  318:Drivers/lvgl/src/misc/lv_text.c **** #endif
  1638              		.loc 1 318 12 view .LVU535
  1639 017a 4FF0000A 		mov	r10, #0
-ARM GAS  /tmp/cc0RXC8c.s 			page 53
+ARM GAS  /tmp/ccUVYK8n.s 			page 53
 
 
  1640              	.LVL180:
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  326:Drivers/lvgl/src/misc/lv_text.c **** 
  1691              		.loc 1 326 20 is_stmt 1 discriminator 1 view .LVU541
  326:Drivers/lvgl/src/misc/lv_text.c **** 
-ARM GAS  /tmp/cc0RXC8c.s 			page 54
+ARM GAS  /tmp/ccUVYK8n.s 			page 54
 
 
  1692              		.loc 1 326 32 is_stmt 0 discriminator 1 view .LVU542
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  1728              		.loc 1 351 10 is_stmt 0 view .LVU560
  1729 0042 38E0     		b	.L137
  1730              	.LVL185:
-ARM GAS  /tmp/cc0RXC8c.s 			page 55
+ARM GAS  /tmp/ccUVYK8n.s 			page 55
 
 
  1731              	.L134:
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  342:Drivers/lvgl/src/misc/lv_text.c ****         return i;
  1770              		.loc 1 342 24 is_stmt 1 discriminator 1 view .LVU576
  342:Drivers/lvgl/src/misc/lv_text.c ****         return i;
-ARM GAS  /tmp/cc0RXC8c.s 			page 56
+ARM GAS  /tmp/ccUVYK8n.s 			page 56
 
 
  1771              		.loc 1 342 36 is_stmt 0 discriminator 1 view .LVU577
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  1812              		.loc 1 357 19 is_stmt 0 view .LVU590
  1813 0092 059B     		ldr	r3, [sp, #20]
  1814 0094 ED1A     		subs	r5, r5, r3
-ARM GAS  /tmp/cc0RXC8c.s 			page 57
+ARM GAS  /tmp/ccUVYK8n.s 			page 57
 
 
  1815              	.LVL194:
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  1853 00b8 B342     		cmp	r3, r6
  1854 00ba 0BD2     		bcs	.L141
  351:Drivers/lvgl/src/misc/lv_text.c ****         lv_text_flag_t word_flag = flag;
-ARM GAS  /tmp/cc0RXC8c.s 			page 58
+ARM GAS  /tmp/ccUVYK8n.s 			page 58
 
 
  1855              		.loc 1 351 25 discriminator 1 view .LVU607
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  383:Drivers/lvgl/src/misc/lv_text.c ****         *used_width = line_w;
  1894              		.loc 1 383 5 is_stmt 1 view .LVU623
  383:Drivers/lvgl/src/misc/lv_text.c ****         *used_width = line_w;
-ARM GAS  /tmp/cc0RXC8c.s 			page 59
+ARM GAS  /tmp/ccUVYK8n.s 			page 59
 
 
  1895              		.loc 1 383 7 is_stmt 0 view .LVU624
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  1937              		.loc 1 379 22 view .LVU636
  1938 00fe FFF7FEFF 		bl	lv_font_get_glyph_width
  1939              	.LVL208:
-ARM GAS  /tmp/cc0RXC8c.s 			page 60
+ARM GAS  /tmp/ccUVYK8n.s 			page 60
 
 
  379:Drivers/lvgl/src/misc/lv_text.c ****         }
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  1985              		.loc 1 462 5 view .LVU647
  462:Drivers/lvgl/src/misc/lv_text.c **** 
  1986              		.loc 1 462 7 is_stmt 0 view .LVU648
-ARM GAS  /tmp/cc0RXC8c.s 			page 61
+ARM GAS  /tmp/ccUVYK8n.s 			page 61
 
 
  1987 0000 002A     		cmp	r2, #0
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  469:Drivers/lvgl/src/misc/lv_text.c **** 
  2029              		.loc 1 469 24 is_stmt 0 view .LVU661
  2030 0026 4146     		mov	r1, r8
-ARM GAS  /tmp/cc0RXC8c.s 			page 62
+ARM GAS  /tmp/ccUVYK8n.s 			page 62
 
 
  2031 0028 2846     		mov	r0, r5
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  479:Drivers/lvgl/src/misc/lv_text.c **** 
  2070              		.loc 1 479 1 view .LVU677
  2071              		.cfi_endproc
-ARM GAS  /tmp/cc0RXC8c.s 			page 63
+ARM GAS  /tmp/ccUVYK8n.s 			page 63
 
 
  2072              	.LFE27:
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  2118              	.LVL232:
  2119 0018 0446     		mov	r4, r0
  2120              	.LVL233:
-ARM GAS  /tmp/cc0RXC8c.s 			page 64
+ARM GAS  /tmp/ccUVYK8n.s 			page 64
 
 
  488:Drivers/lvgl/src/misc/lv_text.c **** 
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  2160              		.cfi_restore 5
  2161              		.cfi_restore 6
  2162              		.cfi_restore 7
-ARM GAS  /tmp/cc0RXC8c.s 			page 65
+ARM GAS  /tmp/ccUVYK8n.s 			page 65
 
 
  2163              		.cfi_restore 14
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  2210              	.LVL242:
  502:Drivers/lvgl/src/misc/lv_text.c ****     va_end(ap_copy);
  2211              		.loc 1 502 20 view .LVU712
-ARM GAS  /tmp/cc0RXC8c.s 			page 66
+ARM GAS  /tmp/ccUVYK8n.s 			page 66
 
 
  2212 0012 FFF7FEFF 		bl	lv_vsnprintf
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  2251              	.LCFI36:
  2252              		.cfi_restore_state
  528:Drivers/lvgl/src/misc/lv_text.c ****     if(text == NULL) {
-ARM GAS  /tmp/cc0RXC8c.s 			page 67
+ARM GAS  /tmp/ccUVYK8n.s 			page 67
 
 
  2253              		.loc 1 528 5 is_stmt 1 discriminator 1 view .LVU728
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  542:Drivers/lvgl/src/misc/lv_text.c **** }
  2299              		.loc 1 542 5 is_stmt 1 view .LVU739
  542:Drivers/lvgl/src/misc/lv_text.c **** }
-ARM GAS  /tmp/cc0RXC8c.s 			page 68
+ARM GAS  /tmp/ccUVYK8n.s 			page 68
 
 
  2300              		.loc 1 542 77 is_stmt 0 view .LVU740
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  2348              		.loc 1 392 7 is_stmt 0 view .LVU748
  2349 0006 18B3     		cbz	r0, .L185
  2350 0008 0E46     		mov	r6, r1
-ARM GAS  /tmp/cc0RXC8c.s 			page 69
+ARM GAS  /tmp/ccUVYK8n.s 			page 69
 
 
  2351 000a 1546     		mov	r5, r2
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  2390 002e 4046     		mov	r0, r8
  2391 0030 FFF7FEFF 		bl	lv_text_encoded_letter_next_2
  2392              	.LVL258:
-ARM GAS  /tmp/cc0RXC8c.s 			page 70
+ARM GAS  /tmp/ccUVYK8n.s 			page 70
 
 
  405:Drivers/lvgl/src/misc/lv_text.c ****             if(char_width > 0) {
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  392:Drivers/lvgl/src/misc/lv_text.c ****     if(font == NULL) return 0;
  2431              		.loc 1 392 28 discriminator 1 view .LVU780
  2432 0050 0024     		movs	r4, #0
-ARM GAS  /tmp/cc0RXC8c.s 			page 71
+ARM GAS  /tmp/ccUVYK8n.s 			page 71
 
 
  2433 0052 02E0     		b	.L180
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  2483              		.loc 1 424 5 is_stmt 1 view .LVU786
  424:Drivers/lvgl/src/misc/lv_text.c ****     if(font == NULL) return 0;
  2484              		.loc 1 424 7 is_stmt 0 view .LVU787
-ARM GAS  /tmp/cc0RXC8c.s 			page 72
+ARM GAS  /tmp/ccUVYK8n.s 			page 72
 
 
  2485 000a 0028     		cmp	r0, #0
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  2524              	.LVL271:
  445:Drivers/lvgl/src/misc/lv_text.c ****                 width += char_width;
  2525              		.loc 1 445 13 is_stmt 1 view .LVU803
-ARM GAS  /tmp/cc0RXC8c.s 			page 73
+ARM GAS  /tmp/ccUVYK8n.s 			page 73
 
 
  445:Drivers/lvgl/src/misc/lv_text.c ****                 width += char_width;
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  439:Drivers/lvgl/src/misc/lv_text.c ****                     continue;
  2564              		.loc 1 439 17 is_stmt 1 view .LVU820
  439:Drivers/lvgl/src/misc/lv_text.c ****                     continue;
-ARM GAS  /tmp/cc0RXC8c.s 			page 74
+ARM GAS  /tmp/ccUVYK8n.s 			page 74
 
 
  2565              		.loc 1 439 20 is_stmt 0 view .LVU821
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  458:Drivers/lvgl/src/misc/lv_text.c **** 
  2608              		.loc 1 458 1 view .LVU833
  2609 008c 4846     		mov	r0, r9
-ARM GAS  /tmp/cc0RXC8c.s 			page 75
+ARM GAS  /tmp/ccUVYK8n.s 			page 75
 
 
  2610 008e 05B0     		add	sp, sp, #20
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
   96:Drivers/lvgl/src/misc/lv_text.c **** 
  2659              		.loc 1 96 17 is_stmt 0 view .LVU841
  2660 0014 4360     		str	r3, [r0, #4]
-ARM GAS  /tmp/cc0RXC8c.s 			page 76
+ARM GAS  /tmp/ccUVYK8n.s 			page 76
 
 
   98:Drivers/lvgl/src/misc/lv_text.c ****     if(font == NULL) return;
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  108:Drivers/lvgl/src/misc/lv_text.c ****         new_line_start += lv_text_get_next_line(&text[line_start], LV_TEXT_LEN_MAX, font, letter_sp
  2699              		.loc 1 108 15 is_stmt 0 view .LVU858
  2700 003a 09EB0506 		add	r6, r9, r5
-ARM GAS  /tmp/cc0RXC8c.s 			page 77
+ARM GAS  /tmp/ccUVYK8n.s 			page 77
 
 
  2701 003e 19F80530 		ldrb	r3, [r9, r5]	@ zero_extendqisi2
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  2741 0078 CDF800A0 		str	r10, [sp]
  2742 007c 4346     		mov	r3, r8
  2743 007e 3A46     		mov	r2, r7
-ARM GAS  /tmp/cc0RXC8c.s 			page 78
+ARM GAS  /tmp/ccUVYK8n.s 			page 78
 
 
  2744 0080 3046     		mov	r0, r6
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  2783              		.loc 1 134 16 is_stmt 0 view .LVU887
  2784 00ac 6368     		ldr	r3, [r4, #4]
  134:Drivers/lvgl/src/misc/lv_text.c ****         size_res->y = letter_height;
-ARM GAS  /tmp/cc0RXC8c.s 			page 79
+ARM GAS  /tmp/ccUVYK8n.s 			page 79
 
 
  2785              		.loc 1 134 7 view .LVU888
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  2845              	lv_text_encoded_next:
  2846 0000 00000000 		.word	lv_text_utf8_next
  2847              		.global	lv_text_encoded_conv_wc
-ARM GAS  /tmp/cc0RXC8c.s 			page 80
+ARM GAS  /tmp/ccUVYK8n.s 			page 80
 
 
  2848              		.section	.rodata.lv_text_encoded_conv_wc,"a"
@@ -4771,71 +4771,71 @@ ARM GAS  /tmp/cc0RXC8c.s 			page 1
  2881              		.file 14 "Drivers/lvgl/src/misc/../stdlib/lv_sprintf.h"
  2882              		.file 15 "Drivers/lvgl/src/misc/../font/../draw/../misc/../stdlib/lv_string.h"
  2883              		.file 16 "<built-in>"
-ARM GAS  /tmp/cc0RXC8c.s 			page 81
+ARM GAS  /tmp/ccUVYK8n.s 			page 81
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_text.c
-     /tmp/cc0RXC8c.s:21     .text.lv_text_is_a_word:00000000 $t
-     /tmp/cc0RXC8c.s:26     .text.lv_text_is_a_word:00000000 lv_text_is_a_word
-     /tmp/cc0RXC8c.s:160    .text.lv_text_is_a_word:00000070 $d
-     /tmp/cc0RXC8c.s:166    .text.lv_text_utf8_size:00000000 $t
-     /tmp/cc0RXC8c.s:171    .text.lv_text_utf8_size:00000000 lv_text_utf8_size
-     /tmp/cc0RXC8c.s:238    .text.lv_text_unicode_to_utf8:00000000 $t
-     /tmp/cc0RXC8c.s:243    .text.lv_text_unicode_to_utf8:00000000 lv_text_unicode_to_utf8
-     /tmp/cc0RXC8c.s:389    .text.lv_text_utf8_next:00000000 $t
-     /tmp/cc0RXC8c.s:394    .text.lv_text_utf8_next:00000000 lv_text_utf8_next
-     /tmp/cc0RXC8c.s:691    .text.lv_text_utf8_prev:00000000 $t
-     /tmp/cc0RXC8c.s:696    .text.lv_text_utf8_prev:00000000 lv_text_utf8_prev
-     /tmp/cc0RXC8c.s:805    .text.lv_text_utf8_get_byte_id:00000000 $t
-     /tmp/cc0RXC8c.s:810    .text.lv_text_utf8_get_byte_id:00000000 lv_text_utf8_get_byte_id
-     /tmp/cc0RXC8c.s:884    .text.lv_text_utf8_get_char_id:00000000 $t
-     /tmp/cc0RXC8c.s:889    .text.lv_text_utf8_get_char_id:00000000 lv_text_utf8_get_char_id
-     /tmp/cc0RXC8c.s:947    .text.lv_text_utf8_get_length:00000000 $t
-     /tmp/cc0RXC8c.s:952    .text.lv_text_utf8_get_length:00000000 lv_text_utf8_get_length
-     /tmp/cc0RXC8c.s:1011   .text.lv_text_utf8_conv_wc:00000000 $t
-     /tmp/cc0RXC8c.s:1016   .text.lv_text_utf8_conv_wc:00000000 lv_text_utf8_conv_wc
-     /tmp/cc0RXC8c.s:1119   .text.lv_text_is_cmd:00000000 $t
-     /tmp/cc0RXC8c.s:1125   .text.lv_text_is_cmd:00000000 lv_text_is_cmd
-     /tmp/cc0RXC8c.s:1224   .rodata.lv_text_get_next_word.str1.4:00000000 $d
-     /tmp/cc0RXC8c.s:1228   .text.lv_text_get_next_word:00000000 $t
-     /tmp/cc0RXC8c.s:1233   .text.lv_text_get_next_word:00000000 lv_text_get_next_word
-     /tmp/cc0RXC8c.s:1646   .text.lv_text_get_next_word:00000180 $d
-     /tmp/cc0RXC8c.s:1651   .text.lv_text_get_next_line:00000000 $t
-     /tmp/cc0RXC8c.s:1657   .text.lv_text_get_next_line:00000000 lv_text_get_next_line
-     /tmp/cc0RXC8c.s:1972   .text.lv_text_ins:00000000 $t
-     /tmp/cc0RXC8c.s:1978   .text.lv_text_ins:00000000 lv_text_ins
-     /tmp/cc0RXC8c.s:2075   .text.lv_text_cut:00000000 $t
-     /tmp/cc0RXC8c.s:2081   .text.lv_text_cut:00000000 lv_text_cut
-     /tmp/cc0RXC8c.s:2170   .text.lv_text_set_text_vfmt:00000000 $t
-     /tmp/cc0RXC8c.s:2176   .text.lv_text_set_text_vfmt:00000000 lv_text_set_text_vfmt
-     /tmp/cc0RXC8c.s:2263   .text.lv_text_encoded_letter_next_2:00000000 $t
-     /tmp/cc0RXC8c.s:2269   .text.lv_text_encoded_letter_next_2:00000000 lv_text_encoded_letter_next_2
-     /tmp/cc0RXC8c.s:2321   .text.lv_text_get_width:00000000 $t
-     /tmp/cc0RXC8c.s:2327   .text.lv_text_get_width:00000000 lv_text_get_width
-     /tmp/cc0RXC8c.s:2455   .text.lv_text_get_width_with_flags:00000000 $t
-     /tmp/cc0RXC8c.s:2461   .text.lv_text_get_width_with_flags:00000000 lv_text_get_width_with_flags
-     /tmp/cc0RXC8c.s:2620   .text.lv_text_get_size:00000000 $t
-     /tmp/cc0RXC8c.s:2626   .text.lv_text_get_size:00000000 lv_text_get_size
-     /tmp/cc0RXC8c.s:2817   .rodata.lv_text_get_encoded_length:00000000 lv_text_get_encoded_length
-     /tmp/cc0RXC8c.s:2814   .rodata.lv_text_get_encoded_length:00000000 $d
-     /tmp/cc0RXC8c.s:2824   .rodata.lv_text_encoded_get_char_id:00000000 lv_text_encoded_get_char_id
-     /tmp/cc0RXC8c.s:2821   .rodata.lv_text_encoded_get_char_id:00000000 $d
-     /tmp/cc0RXC8c.s:2831   .rodata.lv_text_encoded_get_byte_id:00000000 lv_text_encoded_get_byte_id
-     /tmp/cc0RXC8c.s:2828   .rodata.lv_text_encoded_get_byte_id:00000000 $d
-     /tmp/cc0RXC8c.s:2838   .rodata.lv_text_encoded_prev:00000000 lv_text_encoded_prev
-     /tmp/cc0RXC8c.s:2835   .rodata.lv_text_encoded_prev:00000000 $d
-     /tmp/cc0RXC8c.s:2845   .rodata.lv_text_encoded_next:00000000 lv_text_encoded_next
-     /tmp/cc0RXC8c.s:2842   .rodata.lv_text_encoded_next:00000000 $d
-     /tmp/cc0RXC8c.s:2852   .rodata.lv_text_encoded_conv_wc:00000000 lv_text_encoded_conv_wc
-     /tmp/cc0RXC8c.s:2849   .rodata.lv_text_encoded_conv_wc:00000000 $d
-     /tmp/cc0RXC8c.s:2859   .rodata.lv_text_unicode_to_encoded:00000000 lv_text_unicode_to_encoded
-     /tmp/cc0RXC8c.s:2856   .rodata.lv_text_unicode_to_encoded:00000000 $d
-ARM GAS  /tmp/cc0RXC8c.s 			page 82
+     /tmp/ccUVYK8n.s:21     .text.lv_text_is_a_word:00000000 $t
+     /tmp/ccUVYK8n.s:26     .text.lv_text_is_a_word:00000000 lv_text_is_a_word
+     /tmp/ccUVYK8n.s:160    .text.lv_text_is_a_word:00000070 $d
+     /tmp/ccUVYK8n.s:166    .text.lv_text_utf8_size:00000000 $t
+     /tmp/ccUVYK8n.s:171    .text.lv_text_utf8_size:00000000 lv_text_utf8_size
+     /tmp/ccUVYK8n.s:238    .text.lv_text_unicode_to_utf8:00000000 $t
+     /tmp/ccUVYK8n.s:243    .text.lv_text_unicode_to_utf8:00000000 lv_text_unicode_to_utf8
+     /tmp/ccUVYK8n.s:389    .text.lv_text_utf8_next:00000000 $t
+     /tmp/ccUVYK8n.s:394    .text.lv_text_utf8_next:00000000 lv_text_utf8_next
+     /tmp/ccUVYK8n.s:691    .text.lv_text_utf8_prev:00000000 $t
+     /tmp/ccUVYK8n.s:696    .text.lv_text_utf8_prev:00000000 lv_text_utf8_prev
+     /tmp/ccUVYK8n.s:805    .text.lv_text_utf8_get_byte_id:00000000 $t
+     /tmp/ccUVYK8n.s:810    .text.lv_text_utf8_get_byte_id:00000000 lv_text_utf8_get_byte_id
+     /tmp/ccUVYK8n.s:884    .text.lv_text_utf8_get_char_id:00000000 $t
+     /tmp/ccUVYK8n.s:889    .text.lv_text_utf8_get_char_id:00000000 lv_text_utf8_get_char_id
+     /tmp/ccUVYK8n.s:947    .text.lv_text_utf8_get_length:00000000 $t
+     /tmp/ccUVYK8n.s:952    .text.lv_text_utf8_get_length:00000000 lv_text_utf8_get_length
+     /tmp/ccUVYK8n.s:1011   .text.lv_text_utf8_conv_wc:00000000 $t
+     /tmp/ccUVYK8n.s:1016   .text.lv_text_utf8_conv_wc:00000000 lv_text_utf8_conv_wc
+     /tmp/ccUVYK8n.s:1119   .text.lv_text_is_cmd:00000000 $t
+     /tmp/ccUVYK8n.s:1125   .text.lv_text_is_cmd:00000000 lv_text_is_cmd
+     /tmp/ccUVYK8n.s:1224   .rodata.lv_text_get_next_word.str1.4:00000000 $d
+     /tmp/ccUVYK8n.s:1228   .text.lv_text_get_next_word:00000000 $t
+     /tmp/ccUVYK8n.s:1233   .text.lv_text_get_next_word:00000000 lv_text_get_next_word
+     /tmp/ccUVYK8n.s:1646   .text.lv_text_get_next_word:00000180 $d
+     /tmp/ccUVYK8n.s:1651   .text.lv_text_get_next_line:00000000 $t
+     /tmp/ccUVYK8n.s:1657   .text.lv_text_get_next_line:00000000 lv_text_get_next_line
+     /tmp/ccUVYK8n.s:1972   .text.lv_text_ins:00000000 $t
+     /tmp/ccUVYK8n.s:1978   .text.lv_text_ins:00000000 lv_text_ins
+     /tmp/ccUVYK8n.s:2075   .text.lv_text_cut:00000000 $t
+     /tmp/ccUVYK8n.s:2081   .text.lv_text_cut:00000000 lv_text_cut
+     /tmp/ccUVYK8n.s:2170   .text.lv_text_set_text_vfmt:00000000 $t
+     /tmp/ccUVYK8n.s:2176   .text.lv_text_set_text_vfmt:00000000 lv_text_set_text_vfmt
+     /tmp/ccUVYK8n.s:2263   .text.lv_text_encoded_letter_next_2:00000000 $t
+     /tmp/ccUVYK8n.s:2269   .text.lv_text_encoded_letter_next_2:00000000 lv_text_encoded_letter_next_2
+     /tmp/ccUVYK8n.s:2321   .text.lv_text_get_width:00000000 $t
+     /tmp/ccUVYK8n.s:2327   .text.lv_text_get_width:00000000 lv_text_get_width
+     /tmp/ccUVYK8n.s:2455   .text.lv_text_get_width_with_flags:00000000 $t
+     /tmp/ccUVYK8n.s:2461   .text.lv_text_get_width_with_flags:00000000 lv_text_get_width_with_flags
+     /tmp/ccUVYK8n.s:2620   .text.lv_text_get_size:00000000 $t
+     /tmp/ccUVYK8n.s:2626   .text.lv_text_get_size:00000000 lv_text_get_size
+     /tmp/ccUVYK8n.s:2817   .rodata.lv_text_get_encoded_length:00000000 lv_text_get_encoded_length
+     /tmp/ccUVYK8n.s:2814   .rodata.lv_text_get_encoded_length:00000000 $d
+     /tmp/ccUVYK8n.s:2824   .rodata.lv_text_encoded_get_char_id:00000000 lv_text_encoded_get_char_id
+     /tmp/ccUVYK8n.s:2821   .rodata.lv_text_encoded_get_char_id:00000000 $d
+     /tmp/ccUVYK8n.s:2831   .rodata.lv_text_encoded_get_byte_id:00000000 lv_text_encoded_get_byte_id
+     /tmp/ccUVYK8n.s:2828   .rodata.lv_text_encoded_get_byte_id:00000000 $d
+     /tmp/ccUVYK8n.s:2838   .rodata.lv_text_encoded_prev:00000000 lv_text_encoded_prev
+     /tmp/ccUVYK8n.s:2835   .rodata.lv_text_encoded_prev:00000000 $d
+     /tmp/ccUVYK8n.s:2845   .rodata.lv_text_encoded_next:00000000 lv_text_encoded_next
+     /tmp/ccUVYK8n.s:2842   .rodata.lv_text_encoded_next:00000000 $d
+     /tmp/ccUVYK8n.s:2852   .rodata.lv_text_encoded_conv_wc:00000000 lv_text_encoded_conv_wc
+     /tmp/ccUVYK8n.s:2849   .rodata.lv_text_encoded_conv_wc:00000000 $d
+     /tmp/ccUVYK8n.s:2859   .rodata.lv_text_unicode_to_encoded:00000000 lv_text_unicode_to_encoded
+     /tmp/ccUVYK8n.s:2856   .rodata.lv_text_unicode_to_encoded:00000000 $d
+ARM GAS  /tmp/ccUVYK8n.s 			page 82
 
 
-     /tmp/cc0RXC8c.s:2866   .rodata.lv_text_encoded_size:00000000 lv_text_encoded_size
-     /tmp/cc0RXC8c.s:2863   .rodata.lv_text_encoded_size:00000000 $d
+     /tmp/ccUVYK8n.s:2866   .rodata.lv_text_encoded_size:00000000 lv_text_encoded_size
+     /tmp/ccUVYK8n.s:2863   .rodata.lv_text_encoded_size:00000000 $d
 
 UNDEFINED SYMBOLS
 lv_memcpy

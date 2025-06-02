@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccgnsg21.s 			page 1
+ARM GAS  /tmp/ccghimqS.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
   28:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c **** 
   29:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c **** /**********************
   30:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****  *      TYPEDEFS
-ARM GAS  /tmp/ccgnsg21.s 			page 2
+ARM GAS  /tmp/ccghimqS.s 			page 2
 
 
   31:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****  **********************/
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
   85:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c **** 
   86:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c **** /**********************
   87:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****  *   STATIC FUNCTIONS
-ARM GAS  /tmp/ccgnsg21.s 			page 3
+ARM GAS  /tmp/ccghimqS.s 			page 3
 
 
   88:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****  **********************/
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  142:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****     if(left_side && right_side && top_side && bottom_side &&
  143:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****        core_w < SPLIT_LIMIT) {
  144:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****         split_hor = false;
-ARM GAS  /tmp/ccgnsg21.s 			page 4
+ARM GAS  /tmp/ccghimqS.s 			page 4
 
 
  145:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****     }
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  199:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****         int32_t max_h = LV_MAX(rout, inner_area->y1 - outer_area->y1);
  200:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****         for(h = 0; h < max_h; h++) {
  201:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****             int32_t top_y = outer_area->y1 + h;
-ARM GAS  /tmp/ccgnsg21.s 			page 5
+ARM GAS  /tmp/ccghimqS.s 			page 5
 
 
  202:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****             int32_t bottom_y = outer_area->y2 - h;
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  256:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c **** 
  257:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****         if(blend_w > 0) {
  258:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****             if(right_side || top_side) {
-ARM GAS  /tmp/ccgnsg21.s 			page 6
+ARM GAS  /tmp/ccghimqS.s 			page 6
 
 
  259:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****                 for(h = draw_area.y1; h < core_area.y1; h++) {
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
   51 000a 1546     		mov	r5, r2
   52 000c 0393     		str	r3, [sp, #12]
  291:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****     lv_area_t a;
-ARM GAS  /tmp/ccgnsg21.s 			page 7
+ARM GAS  /tmp/ccghimqS.s 			page 7
 
 
   53              		.loc 1 291 5 is_stmt 1 view .LVU2
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
   46:Drivers/lvgl/src/draw/sw/../../misc/../stdlib/lv_string.h ****  * @param len Number of bytes to be set to the value.
   47:Drivers/lvgl/src/draw/sw/../../misc/../stdlib/lv_string.h ****  */
   48:Drivers/lvgl/src/draw/sw/../../misc/../stdlib/lv_string.h **** void lv_memset(void * dst, uint8_t v, size_t len);
-ARM GAS  /tmp/ccgnsg21.s 			page 8
+ARM GAS  /tmp/ccghimqS.s 			page 8
 
 
   49:Drivers/lvgl/src/draw/sw/../../misc/../stdlib/lv_string.h **** 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
   85 0024 ADF82920 		strh	r2, [sp, #41]	@ unaligned
   86 0028 8DF82B30 		strb	r3, [sp, #43]
  296:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****     blend_dsc.opa = opa;
-ARM GAS  /tmp/ccgnsg21.s 			page 9
+ARM GAS  /tmp/ccghimqS.s 			page 9
 
 
   87              		.loc 1 296 5 is_stmt 1 view .LVU15
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  130              		.loc 1 307 27 is_stmt 0 view .LVU37
  131 005a 731E     		subs	r3, r6, #1
  132              	.LVL12:
-ARM GAS  /tmp/ccgnsg21.s 			page 10
+ARM GAS  /tmp/ccghimqS.s 			page 10
 
 
  133              		.loc 1 307 10 view .LVU38
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  172 007c 1DDC     		bgt	.L4
  173              		.loc 1 322 40 discriminator 1 view .LVU59
  174 007e 6B68     		ldr	r3, [r5, #4]
-ARM GAS  /tmp/ccgnsg21.s 			page 11
+ARM GAS  /tmp/ccghimqS.s 			page 11
 
 
  175              	.L5:
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  217              		.loc 1 334 1 view .LVU77
  218              		@ sp needed
  219 00a2 BDE8F08F 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
-ARM GAS  /tmp/ccgnsg21.s 			page 12
+ARM GAS  /tmp/ccghimqS.s 			page 12
 
 
  220              	.LVL14:
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  270              	.LVL19:
  271              	.LFB187:
   92:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c **** #if LV_DRAW_SW_COMPLEX
-ARM GAS  /tmp/ccgnsg21.s 			page 13
+ARM GAS  /tmp/ccghimqS.s 			page 13
 
 
  272              		.loc 1 92 1 is_stmt 1 view -0
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  318              	.LVL24:
  319              	.L47:
  320              	.LCFI7:
-ARM GAS  /tmp/ccgnsg21.s 			page 14
+ARM GAS  /tmp/ccghimqS.s 			page 14
 
 
  321              		.cfi_restore_state
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  363 0044 2693     		str	r3, [sp, #152]
  108:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****     lv_draw_sw_mask_radius_init(&mask_rin_param, inner_area, rin, true);
  364              		.loc 1 108 5 is_stmt 1 view .LVU109
-ARM GAS  /tmp/ccgnsg21.s 			page 15
+ARM GAS  /tmp/ccghimqS.s 			page 15
 
 
  109:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****     mask_list[0] = &mask_rin_param;
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  402 0078 8DF8B030 		strb	r3, [sp, #176]
  127:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****     core_area.x1 = LV_MAX(outer_area->x1 + rout, inner_area->x1);
  403              		.loc 1 127 5 is_stmt 1 view .LVU127
-ARM GAS  /tmp/ccgnsg21.s 			page 16
+ARM GAS  /tmp/ccghimqS.s 			page 16
 
 
  128:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****     core_area.x2 = LV_MIN(outer_area->x2 - rout, inner_area->x2);
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  132:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c **** 
  445              		.loc 1 132 22 is_stmt 0 view .LVU141
  446 00b4 0AA8     		add	r0, sp, #40
-ARM GAS  /tmp/ccgnsg21.s 			page 17
+ARM GAS  /tmp/ccghimqS.s 			page 17
 
 
  447 00b6 FFF7FEFF 		bl	lv_area_get_width
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  487              		.loc 1 139 33 is_stmt 0 view .LVU155
  488 00ea B268     		ldr	r2, [r6, #8]
  489 00ec 0592     		str	r2, [sp, #20]
-ARM GAS  /tmp/ccgnsg21.s 			page 18
+ARM GAS  /tmp/ccghimqS.s 			page 18
 
 
  139:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c **** 
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  531              		.loc 1 116 22 is_stmt 0 view .LVU168
  532 0122 CDF894B0 		str	fp, [sp, #148]
  533 0126 9AE7     		b	.L18
-ARM GAS  /tmp/ccgnsg21.s 			page 19
+ARM GAS  /tmp/ccghimqS.s 			page 19
 
 
  534              	.LVL42:
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  574 0150 3CDD     		ble	.L52
  575              	.L24:
  182:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****             blend_area.x1 = inner_area->x2 + 1;
-ARM GAS  /tmp/ccgnsg21.s 			page 20
+ARM GAS  /tmp/ccghimqS.s 			page 20
 
 
  576              		.loc 1 182 9 is_stmt 1 view .LVU183
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  614              		.loc 1 200 9 view .LVU199
  615 0178 5AE0     		b	.L26
  616              	.LVL48:
-ARM GAS  /tmp/ccgnsg21.s 			page 21
+ARM GAS  /tmp/ccghimqS.s 			page 21
 
 
  617              	.L49:
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  653 0196 0A9B     		ldr	r3, [sp, #40]
  158:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****         blend_area.x2 = core_area.x2;
  654              		.loc 1 158 23 view .LVU218
-ARM GAS  /tmp/ccgnsg21.s 			page 22
+ARM GAS  /tmp/ccghimqS.s 			page 22
 
 
  655 0198 0E93     		str	r3, [sp, #56]
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  169:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****         blend_area.y2 = core_area.y2;
  691              		.loc 1 169 34 is_stmt 0 view .LVU237
  692 01ba 0B9B     		ldr	r3, [sp, #44]
-ARM GAS  /tmp/ccgnsg21.s 			page 23
+ARM GAS  /tmp/ccghimqS.s 			page 23
 
 
  169:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****         blend_area.y2 = core_area.y2;
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  179:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****         }
  729              		.loc 1 179 13 is_stmt 1 view .LVU256
  730 01de 27A9     		add	r1, sp, #156
-ARM GAS  /tmp/ccgnsg21.s 			page 24
+ARM GAS  /tmp/ccghimqS.s 			page 24
 
 
  731 01e0 4846     		mov	r0, r9
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  770 0206 FF21     		movs	r1, #255
  771 0208 4046     		mov	r0, r8
  772 020a FFF7FEFF 		bl	lv_memset
-ARM GAS  /tmp/ccgnsg21.s 			page 25
+ARM GAS  /tmp/ccghimqS.s 			page 25
 
 
  773              	.LVL56:
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  812              		.loc 1 201 21 view .LVU286
  813 0236 2C44     		add	r4, r4, r5
  814              	.LVL59:
-ARM GAS  /tmp/ccgnsg21.s 			page 26
+ARM GAS  /tmp/ccghimqS.s 			page 26
 
 
  202:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****             if(top_y < draw_area.y1 && bottom_y > draw_area.y2) continue;   /*This line is clipped 
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  852 025a 1197     		str	r7, [sp, #68]
  217:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****             }
  853              		.loc 1 217 17 is_stmt 1 view .LVU304
-ARM GAS  /tmp/ccgnsg21.s 			page 27
+ARM GAS  /tmp/ccghimqS.s 			page 27
 
 
  854 025c 27A9     		add	r1, sp, #156
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  224:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****         blend_w = lv_area_get_width(&blend_area);
  897              		.loc 1 224 23 view .LVU316
  898 028c 1093     		str	r3, [sp, #64]
-ARM GAS  /tmp/ccgnsg21.s 			page 28
+ARM GAS  /tmp/ccghimqS.s 			page 28
 
 
  225:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****         if(blend_w > 0) {
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  233:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****                     lv_draw_sw_blend(t, &blend_dsc);
  937              		.loc 1 233 42 is_stmt 0 view .LVU333
  938 02b2 0095     		str	r5, [sp]
-ARM GAS  /tmp/ccgnsg21.s 			page 29
+ARM GAS  /tmp/ccghimqS.s 			page 29
 
 
  939 02b4 2346     		mov	r3, r4
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  979              		.loc 1 240 35 is_stmt 0 view .LVU347
  980 02e2 0F94     		str	r4, [sp, #60]
  241:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c **** 
-ARM GAS  /tmp/ccgnsg21.s 			page 30
+ARM GAS  /tmp/ccghimqS.s 			page 30
 
 
  981              		.loc 1 241 21 is_stmt 1 view .LVU348
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  1023 0318 9342     		cmp	r3, r2
  1024 031a B8BF     		it	lt
  1025 031c 1346     		movlt	r3, r2
-ARM GAS  /tmp/ccgnsg21.s 			page 31
+ARM GAS  /tmp/ccghimqS.s 			page 31
 
 
  251:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****         blend_area.x1 = LV_MAX(draw_area.x1, core_area.x2 + 1);
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  1063              		.loc 1 259 17 view .LVU377
  1064 0344 14E0     		b	.L39
  1065              	.LVL86:
-ARM GAS  /tmp/ccgnsg21.s 			page 32
+ARM GAS  /tmp/ccghimqS.s 			page 32
 
 
  1066              	.L40:
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  269:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****                 for(h = core_area.y2 + 1; h <= draw_area.y2; h++) {
  1107              		.loc 1 269 13 is_stmt 1 view .LVU391
  269:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****                 for(h = core_area.y2 + 1; h <= draw_area.y2; h++) {
-ARM GAS  /tmp/ccgnsg21.s 			page 33
+ARM GAS  /tmp/ccghimqS.s 			page 33
 
 
  1108              		.loc 1 269 15 is_stmt 0 view .LVU392
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  270:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****                     blend_area.y1 = h;
  1149              		.loc 1 270 63 discriminator 3 view .LVU406
  1150 03ae 0134     		adds	r4, r4, #1
-ARM GAS  /tmp/ccgnsg21.s 			page 34
+ARM GAS  /tmp/ccghimqS.s 			page 34
 
 
  1151              	.LVL96:
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  1198              		.cfi_offset 14, -4
  1199 000a 89B0     		sub	sp, sp, #36
  1200              	.LCFI9:
-ARM GAS  /tmp/ccgnsg21.s 			page 35
+ARM GAS  /tmp/ccghimqS.s 			page 35
 
 
  1201              		.cfi_def_cfa_offset 56
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  1242              	.LVL105:
   61:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****     int32_t rout = dsc->radius;
  1243              		.loc 1 61 24 view .LVU429
-ARM GAS  /tmp/ccgnsg21.s 			page 36
+ARM GAS  /tmp/ccghimqS.s 			page 36
 
 
  1244 002e FFF7FEFF 		bl	lv_area_get_height
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
   18:Drivers/lvgl/src/draw/sw/../../misc/lv_area.h **** #include "lv_math.h"
   19:Drivers/lvgl/src/draw/sw/../../misc/lv_area.h **** 
   20:Drivers/lvgl/src/draw/sw/../../misc/lv_area.h **** /*********************
-ARM GAS  /tmp/ccgnsg21.s 			page 37
+ARM GAS  /tmp/ccghimqS.s 			page 37
 
 
   21:Drivers/lvgl/src/draw/sw/../../misc/lv_area.h ****  *      DEFINES
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
   75:Drivers/lvgl/src/draw/sw/../../misc/lv_area.h **** } lv_align_t;
   76:Drivers/lvgl/src/draw/sw/../../misc/lv_area.h **** 
   77:Drivers/lvgl/src/draw/sw/../../misc/lv_area.h **** typedef enum {
-ARM GAS  /tmp/ccgnsg21.s 			page 38
+ARM GAS  /tmp/ccghimqS.s 			page 38
 
 
   78:Drivers/lvgl/src/draw/sw/../../misc/lv_area.h ****     LV_DIR_NONE     = 0x00,
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  1290              		.loc 3 112 19 is_stmt 0 view .LVU451
  1291 0058 E968     		ldr	r1, [r5, #12]
  1292              		.loc 3 112 14 view .LVU452
-ARM GAS  /tmp/ccgnsg21.s 			page 39
+ARM GAS  /tmp/ccghimqS.s 			page 39
 
 
  1293 005a 0791     		str	r1, [sp, #28]
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
   72:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c **** 
  1333              		.loc 1 72 72 is_stmt 0 view .LVU468
  1334 008a 10F0010F 		tst	r0, #1
-ARM GAS  /tmp/ccgnsg21.s 			page 40
+ARM GAS  /tmp/ccghimqS.s 			page 40
 
 
  1335 008e 1ED0     		beq	.L67
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  1375              		.loc 1 69 78 discriminator 2 view .LVU482
  1376 00b6 626A     		ldr	r2, [r4, #36]
   69:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****     area_inner.x2 -= ((dsc->side & LV_BORDER_SIDE_RIGHT) ? dsc->width : - (dsc->width + rout));
-ARM GAS  /tmp/ccgnsg21.s 			page 41
+ARM GAS  /tmp/ccghimqS.s 			page 41
 
 
  1377              		.loc 1 69 86 discriminator 2 view .LVU483
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  1417 00da 94F82810 		ldrb	r1, [r4, #40]	@ zero_extendqisi2
   81:Drivers/lvgl/src/draw/sw/lv_draw_sw_border.c ****     }
  1418              		.loc 1 81 9 view .LVU498
-ARM GAS  /tmp/ccgnsg21.s 			page 42
+ARM GAS  /tmp/ccghimqS.s 			page 42
 
 
  1419 00de 0291     		str	r1, [sp, #8]
@@ -2511,17 +2511,17 @@ ARM GAS  /tmp/ccgnsg21.s 			page 1
  1464              		.file 18 "Drivers/lvgl/src/draw/sw/../../misc/../stdlib/lv_mem.h"
  1465              		.file 19 "Drivers/lvgl/src/draw/sw/../../misc/lv_area_private.h"
  1466              		.file 20 "Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend.h"
-ARM GAS  /tmp/ccgnsg21.s 			page 43
+ARM GAS  /tmp/ccghimqS.s 			page 43
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_draw_sw_border.c
-     /tmp/ccgnsg21.s:21     .text.draw_border_simple:00000000 $t
-     /tmp/ccgnsg21.s:26     .text.draw_border_simple:00000000 draw_border_simple
-     /tmp/ccgnsg21.s:264    .text.draw_border_complex:00000000 $t
-     /tmp/ccgnsg21.s:269    .text.draw_border_complex:00000000 draw_border_complex
-     /tmp/ccgnsg21.s:1171   .text.lv_draw_sw_border:00000000 $t
-     /tmp/ccgnsg21.s:1177   .text.lv_draw_sw_border:00000000 lv_draw_sw_border
+     /tmp/ccghimqS.s:21     .text.draw_border_simple:00000000 $t
+     /tmp/ccghimqS.s:26     .text.draw_border_simple:00000000 draw_border_simple
+     /tmp/ccghimqS.s:264    .text.draw_border_complex:00000000 $t
+     /tmp/ccghimqS.s:269    .text.draw_border_complex:00000000 draw_border_complex
+     /tmp/ccghimqS.s:1171   .text.lv_draw_sw_border:00000000 $t
+     /tmp/ccghimqS.s:1177   .text.lv_draw_sw_border:00000000 lv_draw_sw_border
 
 UNDEFINED SYMBOLS
 lv_memset

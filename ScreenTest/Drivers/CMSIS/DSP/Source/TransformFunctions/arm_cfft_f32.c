@@ -599,7 +599,7 @@ void arm_cfft_f32(
     }
 
     if ( bitReverseFlag )
-        arm_bitreversal_32((uint32_t*)p1,S->bitRevLength,S->pBitRevTable);
+        //arm_bitreversal_32((uint32_t*)p1,S->bitRevLength,S->pBitRevTable);
 
     if (ifftFlag == 1U)
     {

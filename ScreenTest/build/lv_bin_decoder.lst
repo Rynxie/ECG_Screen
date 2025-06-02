@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccIqxYx6.s 			page 1
+ARM GAS  /tmp/cc25XPOd.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
   28:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****  *********************/
   29:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** 
   30:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** #define DECODER_NAME    "BIN"
-ARM GAS  /tmp/ccIqxYx6.s 			page 2
+ARM GAS  /tmp/cc25XPOd.s 			page 2
 
 
   31:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
   85:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****  *      MACROS
   86:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****  **********************/
   87:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** 
-ARM GAS  /tmp/ccIqxYx6.s 			page 3
+ARM GAS  /tmp/cc25XPOd.s 			page 3
 
 
   88:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** /**********************
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  142:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****          */
  143:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         if(header->magic != LV_IMAGE_HEADER_MAGIC) {
  144:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****             LV_LOG_WARN("Legacy bin image detected: %s", (char *)src);
-ARM GAS  /tmp/ccIqxYx6.s 			page 4
+ARM GAS  /tmp/cc25XPOd.s 			page 4
 
 
  145:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****             header->cf = header->magic;
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  199:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         decoder_data_t * decoder_data = get_decoder_data(dsc);
  200:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         if(decoder_data == NULL) {
  201:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****             return LV_RESULT_INVALID;
-ARM GAS  /tmp/ccIqxYx6.s 			page 5
+ARM GAS  /tmp/cc25XPOd.s 			page 5
 
 
  202:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         }
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  256:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         /*The variables should have valid data*/
  257:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         lv_image_dsc_t * image = (lv_image_dsc_t *)dsc->src;
  258:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         if(image->data == NULL) {
-ARM GAS  /tmp/ccIqxYx6.s 			page 6
+ARM GAS  /tmp/cc25XPOd.s 			page 6
 
 
  259:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****             return LV_RESULT_INVALID;
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  313:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****             if(res == LV_RESULT_OK) {
  314:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****                 dsc->decoded = decoded;
  315:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** 
-ARM GAS  /tmp/ccIqxYx6.s 			page 7
+ARM GAS  /tmp/cc25XPOd.s 			page 7
 
 
  316:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****                 if(decoded->header.stride == 0) {
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  370:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     decoder_data_t * decoder_data = get_decoder_data(dsc);
  371:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     decoder_data->decoded = NULL; /*Cache will take care of it*/
  372:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** 
-ARM GAS  /tmp/ccIqxYx6.s 			page 8
+ARM GAS  /tmp/cc25XPOd.s 			page 8
 
 
  373:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     return LV_RESULT_OK;
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  427:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** 
  428:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         decoded = lv_draw_buf_reshape(decoder_data->decoded_partial, cf_decoded, w_px, 1, LV_STRIDE
  429:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         if(decoded == NULL) {
-ARM GAS  /tmp/ccIqxYx6.s 			page 9
+ARM GAS  /tmp/cc25XPOd.s 			page 9
 
 
  430:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****             if(decoder_data->decoded_partial != NULL) {
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  484:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     }
  485:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** 
  486:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     if(cf == LV_COLOR_FORMAT_ARGB8888 || cf == LV_COLOR_FORMAT_XRGB8888 || cf == LV_COLOR_FORMAT_RG
-ARM GAS  /tmp/ccIqxYx6.s 			page 10
+ARM GAS  /tmp/cc25XPOd.s 			page 10
 
 
  487:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****        || cf == LV_COLOR_FORMAT_RGB565 || cf == LV_COLOR_FORMAT_ARGB8565) {
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  541:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** 
  542:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         dsc->user_data = data;
  543:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     }
-ARM GAS  /tmp/ccIqxYx6.s 			page 11
+ARM GAS  /tmp/cc25XPOd.s 			page 11
 
 
  544:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  598:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****             return LV_RESULT_INVALID;
  599:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         }
  600:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** 
-ARM GAS  /tmp/ccIqxYx6.s 			page 12
+ARM GAS  /tmp/cc25XPOd.s 			page 12
 
 
  601:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         decoder_data->palette = (void *)palette; /*Need to free when decoder closes*/
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  655:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     uint8_t * out = img_data;
  656:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     for(uint32_t y = 0; y < dsc->header.h; y++) {
  657:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         decode_indexed_line(cf, dsc->palette, 0, dsc->header.w, in, (lv_color32_t *)out);
-ARM GAS  /tmp/ccIqxYx6.s 			page 13
+ARM GAS  /tmp/cc25XPOd.s 			page 13
 
 
  658:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         in += dsc->header.stride;
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  701:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** 
  702:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     if(dsc->header.flags & LV_IMAGE_FLAGS_COMPRESSED) {
  703:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         /*The decompressed image is already loaded to RAM*/
-ARM GAS  /tmp/ccIqxYx6.s 			page 14
+ARM GAS  /tmp/cc25XPOd.s 			page 14
 
 
  704:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         dsc->decoded = decoder_data->decompressed;
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  758:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****             LV_LOG_WARN("Failed to get file to size");
  759:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****             lv_draw_buf_destroy(decoded);
  760:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****             return LV_RESULT_INVALID;
-ARM GAS  /tmp/ccIqxYx6.s 			page 15
+ARM GAS  /tmp/cc25XPOd.s 			page 15
 
 
  761:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         }
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  800:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         LV_LOG_ERROR("No memory for rgb file read");
  801:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         return LV_RESULT_INVALID;
  802:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     }
-ARM GAS  /tmp/ccIqxYx6.s 			page 16
+ARM GAS  /tmp/cc25XPOd.s 			page 16
 
 
  803:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** 
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  857:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****                                     buf_stride);
  858:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     if(decoded == NULL) {
  859:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         LV_LOG_ERROR("Out of memory");
-ARM GAS  /tmp/ccIqxYx6.s 			page 17
+ARM GAS  /tmp/cc25XPOd.s 			page 17
 
 
  860:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         return LV_RESULT_INVALID;
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  914:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** static lv_result_t decode_compressed(lv_image_decoder_t * decoder, lv_image_decoder_dsc_t * dsc)
  915:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** {
   57              		.loc 1 915 1 is_stmt 1 view -0
-ARM GAS  /tmp/ccIqxYx6.s 			page 18
+ARM GAS  /tmp/cc25XPOd.s 			page 18
 
 
   58              		.cfi_startproc
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  966:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****             return LV_RESULT_INVALID;
  967:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         }
  968:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** 
-ARM GAS  /tmp/ccIqxYx6.s 			page 19
+ARM GAS  /tmp/cc25XPOd.s 			page 19
 
 
  969:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         /*Decompress the image*/
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
 1023:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     return res;
 1024:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** #else
 1025:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     LV_UNUSED(decompress_image);
-ARM GAS  /tmp/ccIqxYx6.s 			page 20
+ARM GAS  /tmp/cc25XPOd.s 			page 20
 
 
   62              		.loc 1 1025 5 view .LVU10
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  103              		.loc 1 1040 5 view .LVU24
  104 0004 0738     		subs	r0, r0, #7
  105              	.LVL6:
-ARM GAS  /tmp/ccIqxYx6.s 			page 21
+ARM GAS  /tmp/cc25XPOd.s 			page 21
 
 
  106              		.loc 1 1040 5 is_stmt 0 view .LVU25
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
 1057:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****             px_size = 8;
 1058:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****             in += x;
 1059:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****             shift = 0;
-ARM GAS  /tmp/ccIqxYx6.s 			page 22
+ARM GAS  /tmp/cc25XPOd.s 			page 22
 
 
 1060:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****             break;
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  180              		.loc 1 1049 23 is_stmt 0 view .LVU51
  181 0046 D043     		mvns	r0, r2
 1049:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****             break;
-ARM GAS  /tmp/ccIqxYx6.s 			page 23
+ARM GAS  /tmp/cc25XPOd.s 			page 23
 
 
  182              		.loc 1 1049 19 view .LVU52
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  221              		.loc 1 1055 13 view .LVU67
  222 006c DBE7     		b	.L11
  223              	.LVL24:
-ARM GAS  /tmp/ccIqxYx6.s 			page 24
+ARM GAS  /tmp/cc25XPOd.s 			page 24
 
 
  224              	.L21:
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  260              		.loc 1 1068 27 is_stmt 1 discriminator 2 view .LVU83
  261 0086 0CF1010C 		add	ip, ip, #1
  262              	.LVL31:
-ARM GAS  /tmp/ccIqxYx6.s 			page 25
+ARM GAS  /tmp/cc25XPOd.s 			page 25
 
 
  263              	.L14:
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
 1077:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     }
 1078:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     return LV_RESULT_OK;
  301              		.loc 1 1078 12 view .LVU99
-ARM GAS  /tmp/ccIqxYx6.s 			page 26
+ARM GAS  /tmp/cc25XPOd.s 			page 26
 
 
  302 00aa 0120     		movs	r0, #1
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  350              		.loc 1 119 5 is_stmt 1 view .LVU107
  119:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** 
  351              		.loc 1 119 20 is_stmt 0 view .LVU108
-ARM GAS  /tmp/ccIqxYx6.s 			page 27
+ARM GAS  /tmp/cc25XPOd.s 			page 27
 
 
  352 000a 2B7C     		ldrb	r3, [r5, #16]	@ zero_extendqisi2
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  123:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     }
  390              		.loc 1 123 9 view .LVU125
  391 0026 FFF7FEFF 		bl	lv_memcpy
-ARM GAS  /tmp/ccIqxYx6.s 			page 28
+ARM GAS  /tmp/cc25XPOd.s 			page 28
 
 
  392              	.LVL48:
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  127:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** 
  432              		.loc 1 127 12 view .LVU140
  433 0044 FFF7FEFF 		bl	lv_fs_get_ext
-ARM GAS  /tmp/ccIqxYx6.s 			page 29
+ARM GAS  /tmp/cc25XPOd.s 			page 29
 
 
  434              	.LVL51:
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  472              		.loc 1 144 13 view .LVU156
  144:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****             header->cf = header->magic;
  473              		.loc 1 144 13 view .LVU157
-ARM GAS  /tmp/ccIqxYx6.s 			page 30
+ARM GAS  /tmp/cc25XPOd.s 			page 30
 
 
  145:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****             header->magic = LV_IMAGE_HEADER_MAGIC;
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
 1082:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** {
  518              		.loc 1 1082 1 is_stmt 1 view -0
  519              		.cfi_startproc
-ARM GAS  /tmp/ccIqxYx6.s 			page 31
+ARM GAS  /tmp/cc25XPOd.s 			page 31
 
 
  520              		@ args = 4, pretend = 0, frame = 0
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
 1094:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     }
 1095:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** 
 1096:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     return LV_FS_RES_OK;
-ARM GAS  /tmp/ccIqxYx6.s 			page 32
+ARM GAS  /tmp/cc25XPOd.s 			page 32
 
 
 1097:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** }
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  610              		.cfi_offset 8, -12
  611              		.cfi_offset 9, -8
  612              		.cfi_offset 14, -4
-ARM GAS  /tmp/ccIqxYx6.s 			page 33
+ARM GAS  /tmp/cc25XPOd.s 			page 33
 
 
  613 0004 85B0     		sub	sp, sp, #20
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  656              	.L65:
  657 0038 4FF00809 		mov	r9, #8
  658              	.L50:
-ARM GAS  /tmp/ccIqxYx6.s 			page 34
+ARM GAS  /tmp/cc25XPOd.s 			page 34
 
 
  659              	.LVL72:
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  695 0054 2F       		.byte	(.L67-.L61)/2
  696 0055 24       		.byte	(.L63-.L61)/2
  697 0056 2A       		.byte	(.L62-.L61)/2
-ARM GAS  /tmp/ccIqxYx6.s 			page 35
+ARM GAS  /tmp/cc25XPOd.s 			page 35
 
 
  698 0057 2C       		.byte	(.L60-.L61)/2
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  736 006e 80B1     		cbz	r0, .L55
  588:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         if(palette == NULL) {
  737              		.loc 1 588 9 discriminator 2 view .LVU236
-ARM GAS  /tmp/ccIqxYx6.s 			page 36
+ARM GAS  /tmp/cc25XPOd.s 			page 36
 
 
  588:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         if(palette == NULL) {
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  588:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         if(palette == NULL) {
  776              		.loc 1 588 9 is_stmt 1 discriminator 1 view .LVU253
  588:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         if(palette == NULL) {
-ARM GAS  /tmp/ccIqxYx6.s 			page 37
+ARM GAS  /tmp/cc25XPOd.s 			page 37
 
 
  777              		.loc 1 588 9 discriminator 1 view .LVU254
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  817              		.loc 1 638 18 view .LVU268
  818 00a8 1023     		movs	r3, #16
  819 00aa F8E7     		b	.L64
-ARM GAS  /tmp/ccIqxYx6.s 			page 38
+ARM GAS  /tmp/cc25XPOd.s 			page 38
 
 
  820              	.L60:
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  842:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     uint8_t bpp = lv_color_format_get_bpp(dsc->header.cf);
  869              		.loc 1 842 5 view .LVU276
  842:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     uint8_t bpp = lv_color_format_get_bpp(dsc->header.cf);
-ARM GAS  /tmp/ccIqxYx6.s 			page 39
+ARM GAS  /tmp/cc25XPOd.s 			page 39
 
 
  870              		.loc 1 842 22 is_stmt 0 view .LVU277
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  911              		.loc 1 852 5 is_stmt 1 view .LVU290
  852:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     lv_draw_buf_t * decoded;
  912              		.loc 1 852 39 is_stmt 0 view .LVU291
-ARM GAS  /tmp/ccIqxYx6.s 			page 40
+ARM GAS  /tmp/cc25XPOd.s 			page 40
 
 
  913 0032 EA8C     		ldrh	r2, [r5, #38]
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  869:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         res = fs_read_file_at(decoder_data->f, sizeof(lv_image_header_t), img_data, file_len, &rn);
  951              		.loc 1 869 10 is_stmt 1 view .LVU308
  869:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         res = fs_read_file_at(decoder_data->f, sizeof(lv_image_header_t), img_data, file_len, &rn);
-ARM GAS  /tmp/ccIqxYx6.s 			page 41
+ARM GAS  /tmp/cc25XPOd.s 			page 41
 
 
  952              		.loc 1 869 16 is_stmt 0 view .LVU309
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  989              		.loc 1 886 17 view .LVU326
  990 0082 0AF1FF3A 		add	r10, r10, #-1
  991 0086 5FFA8AFA 		uxtb	r10, r10
-ARM GAS  /tmp/ccIqxYx6.s 			page 42
+ARM GAS  /tmp/cc25XPOd.s 			page 42
 
 
  992              	.LVL112:
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  1032 00ac 5246     		mov	r2, r10
  1033 00ae 0C21     		movs	r1, #12
  1034 00b0 FFF7FEFF 		bl	fs_read_file_at
-ARM GAS  /tmp/ccIqxYx6.s 			page 43
+ARM GAS  /tmp/cc25XPOd.s 			page 43
 
 
  1035              	.LVL118:
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  1073 00d2 C6E7     		b	.L73
  1074              	.LVL125:
  1075              	.L80:
-ARM GAS  /tmp/ccIqxYx6.s 			page 44
+ARM GAS  /tmp/cc25XPOd.s 			page 44
 
 
  1076              	.LBB23:
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  901:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****                 shift = 0;
  1116              		.loc 1 901 15 is_stmt 0 view .LVU371
  1117 00f4 0728     		cmp	r0, #7
-ARM GAS  /tmp/ccIqxYx6.s 			page 45
+ARM GAS  /tmp/cc25XPOd.s 			page 45
 
 
  1118 00f6 02D9     		bls	.L81
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  1156 0110 1AEA0101 		ands	r1, r10, r1
  1157              	.LVL138:
  825:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** 
-ARM GAS  /tmp/ccIqxYx6.s 			page 46
+ARM GAS  /tmp/cc25XPOd.s 			page 46
 
 
  1158              		.loc 1 825 7 view .LVU388
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  1199 0130 F8000000 		.word	lv_global+248
  1200              		.cfi_endproc
  1201              	.LFE196:
-ARM GAS  /tmp/ccIqxYx6.s 			page 47
+ARM GAS  /tmp/cc25XPOd.s 			page 47
 
 
  1203              		.section	.text.free_decoder_data,"ax",%progbits
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  1246              		.loc 1 558 5 view .LVU413
  558:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     if(decoder_data->decompressed) lv_draw_buf_destroy(decoder_data->decompressed);
  1247              		.loc 1 558 20 is_stmt 0 view .LVU414
-ARM GAS  /tmp/ccIqxYx6.s 			page 48
+ARM GAS  /tmp/cc25XPOd.s 			page 48
 
 
  1248 0016 E069     		ldr	r0, [r4, #28]
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  1292              	.LVL153:
  1293              	.LFB189:
  377:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     LV_UNUSED(decoder); /*Unused*/
-ARM GAS  /tmp/ccIqxYx6.s 			page 49
+ARM GAS  /tmp/cc25XPOd.s 			page 49
 
 
  1294              		.loc 1 377 1 is_stmt 1 view -0
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  1334              		.loc 1 387 1 view .LVU441
  1335              		.cfi_endproc
  1336              	.LFE189:
-ARM GAS  /tmp/ccIqxYx6.s 			page 50
+ARM GAS  /tmp/cc25XPOd.s 			page 50
 
 
  1338              		.section	.text.get_decoder_data,"ax",%progbits
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  1380              		.loc 1 536 9 discriminator 2 view .LVU454
  536:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         if(data == NULL) {
  1381              		.loc 1 536 31 discriminator 2 view .LVU455
-ARM GAS  /tmp/ccIqxYx6.s 			page 51
+ARM GAS  /tmp/cc25XPOd.s 			page 51
 
 
  537:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****             LV_LOG_ERROR("Out of memory");
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  1427 0008 0C46     		mov	r4, r1
  187:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** 
  1428              		.loc 1 187 5 is_stmt 1 view .LVU467
-ARM GAS  /tmp/ccIqxYx6.s 			page 52
+ARM GAS  /tmp/cc25XPOd.s 			page 52
 
 
  189:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     lv_fs_res_t fs_res = LV_FS_RES_UNKNOWN;
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  1464              		.loc 1 264 13 is_stmt 1 view .LVU486
  264:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         }
  1465              		.loc 1 264 19 is_stmt 0 view .LVU487
-ARM GAS  /tmp/ccIqxYx6.s 			page 53
+ARM GAS  /tmp/cc25XPOd.s 			page 53
 
 
  1466 002e FFF7FEFF 		bl	decode_compressed
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  339:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         free_decoder_data(dsc);
  1505              		.loc 1 339 7 is_stmt 0 view .LVU503
  1506 0058 0746     		mov	r7, r0
-ARM GAS  /tmp/ccIqxYx6.s 			page 54
+ARM GAS  /tmp/cc25XPOd.s 			page 54
 
 
  1507 005a 0028     		cmp	r0, #0
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  353:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** 
  1545              		.loc 1 353 51 is_stmt 0 discriminator 3 view .LVU520
  1546 007e 0125     		movs	r5, #1
-ARM GAS  /tmp/ccIqxYx6.s 			page 55
+ARM GAS  /tmp/cc25XPOd.s 			page 55
 
 
  1547              	.LVL178:
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  1586              	.LVL184:
  205:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         if(f == NULL) {
  1587              		.loc 1 205 28 view .LVU536
-ARM GAS  /tmp/ccIqxYx6.s 			page 56
+ARM GAS  /tmp/cc25XPOd.s 			page 56
 
 
  1588 00a6 FFF7FEFF 		bl	lv_malloc
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  1625 00ce 0546     		mov	r5, r0
  1626              	.LVL190:
  224:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         }
-ARM GAS  /tmp/ccIqxYx6.s 			page 57
+ARM GAS  /tmp/cc25XPOd.s 			page 57
 
 
  1627              		.loc 1 224 19 view .LVU554
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  1666              		.loc 1 216 20 view .LVU569
  1667 00ee 8EE0     		b	.L109
  1668              	.LVL200:
-ARM GAS  /tmp/ccIqxYx6.s 			page 58
+ARM GAS  /tmp/cc25XPOd.s 			page 58
 
 
  1669              	.L112:
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  1708 0116 FFF7FEFF 		bl	decode_indexed
  1709              	.LVL206:
  232:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****             }
-ARM GAS  /tmp/ccIqxYx6.s 			page 59
+ARM GAS  /tmp/cc25XPOd.s 			page 59
 
 
  1710              		.loc 1 232 23 view .LVU585
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  191:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** 
  1752              		.loc 1 191 10 view .LVU598
  1753              	.LBE34:
-ARM GAS  /tmp/ccIqxYx6.s 			page 60
+ARM GAS  /tmp/cc25XPOd.s 			page 60
 
 
  1754              	.LBB35:
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  1793              	.LBE35:
  191:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** 
  1794              		.loc 1 191 10 view .LVU614
-ARM GAS  /tmp/ccIqxYx6.s 			page 61
+ARM GAS  /tmp/cc25XPOd.s 			page 61
 
 
  1795 0164 4FF00008 		mov	r8, #0
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  1835              	.L120:
  279:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****             }
  1836              		.loc 1 279 17 is_stmt 1 view .LVU629
-ARM GAS  /tmp/ccIqxYx6.s 			page 62
+ARM GAS  /tmp/cc25XPOd.s 			page 62
 
 
  279:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****             }
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  1875 01aa D3B9     		cbnz	r3, .L123
  1876              	.LBB28:
  305:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****                     tmp.header.stride = (tmp.header.w * lv_color_format_get_bpp(cf) + 7) >> 3;
-ARM GAS  /tmp/ccIqxYx6.s 			page 63
+ARM GAS  /tmp/cc25XPOd.s 			page 63
 
 
  1877              		.loc 1 305 21 is_stmt 1 view .LVU646
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  1917 01e0 06E0     		b	.L122
  1918              	.LVL240:
  1919              	.L123:
-ARM GAS  /tmp/ccIqxYx6.s 			page 64
+ARM GAS  /tmp/cc25XPOd.s 			page 64
 
 
  310:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****             }
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  321:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****             }
  1959              		.loc 1 321 30 view .LVU676
  1960 0204 18E7     		b	.L113
-ARM GAS  /tmp/ccIqxYx6.s 			page 65
+ARM GAS  /tmp/cc25XPOd.s 			page 65
 
 
  1961              	.LVL248:
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  2005              	.LVL256:
  341:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     }
  2006              		.loc 1 341 16 view .LVU687
-ARM GAS  /tmp/ccIqxYx6.s 			page 66
+ARM GAS  /tmp/cc25XPOd.s 			page 66
 
 
  2007 0228 F1E7     		b	.L109
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  2044 0248 0993     		str	r3, [sp, #36]
  362:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** 
  2045              		.loc 1 362 5 is_stmt 1 view .LVU705
-ARM GAS  /tmp/ccIqxYx6.s 			page 67
+ARM GAS  /tmp/cc25XPOd.s 			page 67
 
 
  362:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** 
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  2083              	.L150:
  366:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         return LV_RESULT_INVALID;
  2084              		.loc 1 366 9 is_stmt 1 view .LVU723
-ARM GAS  /tmp/ccIqxYx6.s 			page 68
+ARM GAS  /tmp/cc25XPOd.s 			page 68
 
 
  2085 026c 2046     		mov	r0, r4
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  2132              	.LCFI21:
  2133              		.cfi_def_cfa_offset 36
  2134              		.cfi_offset 4, -36
-ARM GAS  /tmp/ccIqxYx6.s 			page 69
+ARM GAS  /tmp/cc25XPOd.s 			page 69
 
 
  2135              		.cfi_offset 5, -32
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  403:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     if(!supported) {
  2179              		.loc 1 403 22 discriminator 2 view .LVU743
  2180 003a 142E     		cmp	r6, #20
-ARM GAS  /tmp/ccIqxYx6.s 			page 70
+ARM GAS  /tmp/cc25XPOd.s 			page 70
 
 
  2181 003c 40F0F780 		bne	.L169
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  421:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** 
  2219              		.loc 1 421 5 view .LVU760
  421:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** 
-ARM GAS  /tmp/ccIqxYx6.s 			page 71
+ARM GAS  /tmp/cc25XPOd.s 			page 71
 
 
  2220              		.loc 1 421 26 is_stmt 0 view .LVU761
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  2258 0086 6A68     		ldr	r2, [r5, #4]
  449:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         return LV_RESULT_INVALID;
  2259              		.loc 1 449 36 view .LVU778
-ARM GAS  /tmp/ccIqxYx6.s 			page 72
+ARM GAS  /tmp/cc25XPOd.s 			page 72
 
 
  2260 0088 FB68     		ldr	r3, [r7, #12]
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  2298 00b6 01EB8505 		add	r5, r1, r5, lsl #2
  2299              	.LVL291:
  459:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         offset += decoded_area->x1 * bpp / 8; /*Move to x1*/
-ARM GAS  /tmp/ccIqxYx6.s 			page 73
+ARM GAS  /tmp/cc25XPOd.s 			page 73
 
 
  2300              		.loc 1 459 9 is_stmt 1 view .LVU795
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  2339 00e4 3046     		mov	r0, r6
  2340 00e6 FFF7FEFF 		bl	decode_indexed_line
  2341              	.LVL297:
-ARM GAS  /tmp/ccIqxYx6.s 			page 74
+ARM GAS  /tmp/cc25XPOd.s 			page 74
 
 
  480:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c **** 
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  428:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         if(decoded == NULL) {
  2381              		.loc 1 428 19 view .LVU826
  2382 010a 0023     		movs	r3, #0
-ARM GAS  /tmp/ccIqxYx6.s 			page 75
+ARM GAS  /tmp/cc25XPOd.s 			page 75
 
 
  2383 010c 0093     		str	r3, [sp]
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  432:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****             }
  2424              		.loc 1 432 47 is_stmt 0 view .LVU840
  2425 0138 0023     		movs	r3, #0
-ARM GAS  /tmp/ccIqxYx6.s 			page 76
+ARM GAS  /tmp/cc25XPOd.s 			page 76
 
 
  2426 013a C9F84030 		str	r3, [r9, #64]
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  2465              		.loc 1 464 13 view .LVU855
  467:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****             if(res != LV_FS_RES_OK) {
  2466              		.loc 1 467 13 view .LVU856
-ARM GAS  /tmp/ccIqxYx6.s 			page 77
+ARM GAS  /tmp/cc25XPOd.s 			page 77
 
 
  467:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****             if(res != LV_FS_RES_OK) {
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  2506 0186 FFF7FEFF 		bl	lv_free
  2507              	.LVL320:
  2508 018a B1E7     		b	.L167
-ARM GAS  /tmp/ccIqxYx6.s 			page 78
+ARM GAS  /tmp/cc25XPOd.s 			page 78
 
 
  2509              	.LVL321:
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  2547              		.loc 1 490 36 view .LVU887
  2548 01ae 0AFB01F1 		mul	r1, r10, r1
  2549              	.LVL326:
-ARM GAS  /tmp/ccIqxYx6.s 			page 79
+ARM GAS  /tmp/cc25XPOd.s 			page 79
 
 
  491:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         if(res != LV_FS_RES_OK) {
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  503:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         offset += decoded_area->x1 * bpp / 8; /*Move to x1*/
  2588              		.loc 1 503 49 is_stmt 0 view .LVU904
  2589 01d4 238D     		ldrh	r3, [r4, #40]
-ARM GAS  /tmp/ccIqxYx6.s 			page 80
+ARM GAS  /tmp/cc25XPOd.s 			page 80
 
 
  503:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         offset += decoded_area->x1 * bpp / 8; /*Move to x1*/
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  2629 0200 238D     		ldrh	r3, [r4, #40]
  512:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****         offset += decoded_area->y1 * (dsc->header.stride / 2); /*Move to y1*/
  2630              		.loc 1 512 33 view .LVU920
-ARM GAS  /tmp/ccIqxYx6.s 			page 81
+ARM GAS  /tmp/cc25XPOd.s 			page 81
 
 
  2631 0202 03FB01F1 		mul	r1, r3, r1
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  2669              	.LVL344:
  2670              	.L169:
  521:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     }
-ARM GAS  /tmp/ccIqxYx6.s 			page 82
+ARM GAS  /tmp/cc25XPOd.s 			page 82
 
 
  2671              		.loc 1 521 16 view .LVU937
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  2715              		.loc 1 493 20 view .LVU947
  2716 0246 F5E7     		b	.L155
  2717              	.L188:
-ARM GAS  /tmp/ccIqxYx6.s 			page 83
+ARM GAS  /tmp/cc25XPOd.s 			page 83
 
 
  2718              		.align	2
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  107:Drivers/lvgl/src/libs/bin_decoder/lv_bin_decoder.c ****     lv_image_decoder_set_get_area_cb(decoder, lv_bin_decoder_get_area);
  2764              		.loc 1 107 5 view .LVU958
  2765 0010 0849     		ldr	r1, .L193+4
-ARM GAS  /tmp/ccIqxYx6.s 			page 84
+ARM GAS  /tmp/cc25XPOd.s 			page 84
 
 
  2766 0012 2046     		mov	r0, r4
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  2811              		.file 7 "Drivers/lvgl/src/libs/bin_decoder/../../core/../draw/lv_draw_private.h"
  2812              		.file 8 "Drivers/lvgl/src/libs/bin_decoder/../../core/../misc/lv_timer_private.h"
  2813              		.file 9 "Drivers/lvgl/src/libs/bin_decoder/../../draw/lv_image_decoder_private.h"
-ARM GAS  /tmp/ccIqxYx6.s 			page 85
+ARM GAS  /tmp/cc25XPOd.s 			page 85
 
 
  2814              		.file 10 "Drivers/lvgl/src/libs/bin_decoder/../../draw/lv_draw_image.h"
@@ -5064,50 +5064,50 @@ ARM GAS  /tmp/ccIqxYx6.s 			page 1
  2834              		.file 30 "Drivers/lvgl/src/libs/bin_decoder/../../draw/../misc/../stdlib/lv_mem.h"
  2835              		.file 31 "Drivers/lvgl/src/libs/bin_decoder/../../draw/../misc/../stdlib/lv_string.h"
  2836              		.file 32 "Drivers/lvgl/src/libs/bin_decoder/../../draw/../misc/cache/lv_image_cache.h"
-ARM GAS  /tmp/ccIqxYx6.s 			page 86
+ARM GAS  /tmp/cc25XPOd.s 			page 86
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_bin_decoder.c
-     /tmp/ccIqxYx6.s:21     .text.load_indexed:00000000 $t
-     /tmp/ccIqxYx6.s:26     .text.load_indexed:00000000 load_indexed
-     /tmp/ccIqxYx6.s:49     .text.decode_compressed:00000000 $t
-     /tmp/ccIqxYx6.s:54     .text.decode_compressed:00000000 decode_compressed
-     /tmp/ccIqxYx6.s:78     .text.decode_indexed_line:00000000 $t
-     /tmp/ccIqxYx6.s:83     .text.decode_indexed_line:00000000 decode_indexed_line
-     /tmp/ccIqxYx6.s:111    .text.decode_indexed_line:0000000e $d
-     /tmp/ccIqxYx6.s:115    .text.decode_indexed_line:00000012 $t
-     /tmp/ccIqxYx6.s:316    .rodata.lv_bin_decoder_info.str1.4:00000000 $d
-     /tmp/ccIqxYx6.s:320    .text.lv_bin_decoder_info:00000000 $t
-     /tmp/ccIqxYx6.s:326    .text.lv_bin_decoder_info:00000000 lv_bin_decoder_info
-     /tmp/ccIqxYx6.s:505    .text.lv_bin_decoder_info:0000008c $d
-     /tmp/ccIqxYx6.s:510    .text.fs_read_file_at:00000000 $t
-     /tmp/ccIqxYx6.s:515    .text.fs_read_file_at:00000000 fs_read_file_at
-     /tmp/ccIqxYx6.s:590    .text.decode_indexed:00000000 $t
-     /tmp/ccIqxYx6.s:595    .text.decode_indexed:00000000 decode_indexed
-     /tmp/ccIqxYx6.s:638    .text.decode_indexed:0000001c $d
-     /tmp/ccIqxYx6.s:642    .text.decode_indexed:00000020 $t
-     /tmp/ccIqxYx6.s:695    .text.decode_indexed:00000054 $d
-     /tmp/ccIqxYx6.s:700    .text.decode_indexed:00000058 $t
-     /tmp/ccIqxYx6.s:837    .text.decode_alpha_only:00000000 $t
-     /tmp/ccIqxYx6.s:842    .text.decode_alpha_only:00000000 decode_alpha_only
-     /tmp/ccIqxYx6.s:1199   .text.decode_alpha_only:00000130 $d
-     /tmp/ccIqxYx6.s:1204   .text.free_decoder_data:00000000 $t
-     /tmp/ccIqxYx6.s:1209   .text.free_decoder_data:00000000 free_decoder_data
-     /tmp/ccIqxYx6.s:1285   .text.lv_bin_decoder_close:00000000 $t
-     /tmp/ccIqxYx6.s:1291   .text.lv_bin_decoder_close:00000000 lv_bin_decoder_close
-     /tmp/ccIqxYx6.s:1339   .text.get_decoder_data:00000000 $t
-     /tmp/ccIqxYx6.s:1344   .text.get_decoder_data:00000000 get_decoder_data
-     /tmp/ccIqxYx6.s:1399   .text.lv_bin_decoder_open:00000000 $t
-     /tmp/ccIqxYx6.s:1405   .text.lv_bin_decoder_open:00000000 lv_bin_decoder_open
-     /tmp/ccIqxYx6.s:2112   .text.lv_bin_decoder_open:00000280 $d
-     /tmp/ccIqxYx6.s:2117   .text.lv_bin_decoder_get_area:00000000 $t
-     /tmp/ccIqxYx6.s:2123   .text.lv_bin_decoder_get_area:00000000 lv_bin_decoder_get_area
-     /tmp/ccIqxYx6.s:2720   .text.lv_bin_decoder_get_area:00000248 $d
-     /tmp/ccIqxYx6.s:2727   .rodata.lv_bin_decoder_init.str1.4:00000000 $d
-     /tmp/ccIqxYx6.s:2731   .text.lv_bin_decoder_init:00000000 $t
-     /tmp/ccIqxYx6.s:2737   .text.lv_bin_decoder_init:00000000 lv_bin_decoder_init
-     /tmp/ccIqxYx6.s:2796   .text.lv_bin_decoder_init:00000030 $d
+     /tmp/cc25XPOd.s:21     .text.load_indexed:00000000 $t
+     /tmp/cc25XPOd.s:26     .text.load_indexed:00000000 load_indexed
+     /tmp/cc25XPOd.s:49     .text.decode_compressed:00000000 $t
+     /tmp/cc25XPOd.s:54     .text.decode_compressed:00000000 decode_compressed
+     /tmp/cc25XPOd.s:78     .text.decode_indexed_line:00000000 $t
+     /tmp/cc25XPOd.s:83     .text.decode_indexed_line:00000000 decode_indexed_line
+     /tmp/cc25XPOd.s:111    .text.decode_indexed_line:0000000e $d
+     /tmp/cc25XPOd.s:115    .text.decode_indexed_line:00000012 $t
+     /tmp/cc25XPOd.s:316    .rodata.lv_bin_decoder_info.str1.4:00000000 $d
+     /tmp/cc25XPOd.s:320    .text.lv_bin_decoder_info:00000000 $t
+     /tmp/cc25XPOd.s:326    .text.lv_bin_decoder_info:00000000 lv_bin_decoder_info
+     /tmp/cc25XPOd.s:505    .text.lv_bin_decoder_info:0000008c $d
+     /tmp/cc25XPOd.s:510    .text.fs_read_file_at:00000000 $t
+     /tmp/cc25XPOd.s:515    .text.fs_read_file_at:00000000 fs_read_file_at
+     /tmp/cc25XPOd.s:590    .text.decode_indexed:00000000 $t
+     /tmp/cc25XPOd.s:595    .text.decode_indexed:00000000 decode_indexed
+     /tmp/cc25XPOd.s:638    .text.decode_indexed:0000001c $d
+     /tmp/cc25XPOd.s:642    .text.decode_indexed:00000020 $t
+     /tmp/cc25XPOd.s:695    .text.decode_indexed:00000054 $d
+     /tmp/cc25XPOd.s:700    .text.decode_indexed:00000058 $t
+     /tmp/cc25XPOd.s:837    .text.decode_alpha_only:00000000 $t
+     /tmp/cc25XPOd.s:842    .text.decode_alpha_only:00000000 decode_alpha_only
+     /tmp/cc25XPOd.s:1199   .text.decode_alpha_only:00000130 $d
+     /tmp/cc25XPOd.s:1204   .text.free_decoder_data:00000000 $t
+     /tmp/cc25XPOd.s:1209   .text.free_decoder_data:00000000 free_decoder_data
+     /tmp/cc25XPOd.s:1285   .text.lv_bin_decoder_close:00000000 $t
+     /tmp/cc25XPOd.s:1291   .text.lv_bin_decoder_close:00000000 lv_bin_decoder_close
+     /tmp/cc25XPOd.s:1339   .text.get_decoder_data:00000000 $t
+     /tmp/cc25XPOd.s:1344   .text.get_decoder_data:00000000 get_decoder_data
+     /tmp/cc25XPOd.s:1399   .text.lv_bin_decoder_open:00000000 $t
+     /tmp/cc25XPOd.s:1405   .text.lv_bin_decoder_open:00000000 lv_bin_decoder_open
+     /tmp/cc25XPOd.s:2112   .text.lv_bin_decoder_open:00000280 $d
+     /tmp/cc25XPOd.s:2117   .text.lv_bin_decoder_get_area:00000000 $t
+     /tmp/cc25XPOd.s:2123   .text.lv_bin_decoder_get_area:00000000 lv_bin_decoder_get_area
+     /tmp/cc25XPOd.s:2720   .text.lv_bin_decoder_get_area:00000248 $d
+     /tmp/cc25XPOd.s:2727   .rodata.lv_bin_decoder_init.str1.4:00000000 $d
+     /tmp/cc25XPOd.s:2731   .text.lv_bin_decoder_init:00000000 $t
+     /tmp/cc25XPOd.s:2737   .text.lv_bin_decoder_init:00000000 lv_bin_decoder_init
+     /tmp/cc25XPOd.s:2796   .text.lv_bin_decoder_init:00000030 $d
 
 UNDEFINED SYMBOLS
 lv_memcpy
@@ -5124,7 +5124,7 @@ lv_global
 lv_fs_close
 lv_malloc_zeroed
 lv_image_decoder_post_process
-ARM GAS  /tmp/ccIqxYx6.s 			page 87
+ARM GAS  /tmp/cc25XPOd.s 			page 87
 
 
 lv_fs_open

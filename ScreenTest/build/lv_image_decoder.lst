@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccUAbNcg.s 			page 1
+ARM GAS  /tmp/ccounFgN.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
   28:Drivers/lvgl/src/draw/lv_image_decoder.c **** /**********************
   29:Drivers/lvgl/src/draw/lv_image_decoder.c ****  *  STATIC PROTOTYPES
   30:Drivers/lvgl/src/draw/lv_image_decoder.c ****  **********************/
-ARM GAS  /tmp/ccUAbNcg.s 			page 2
+ARM GAS  /tmp/ccounFgN.s 			page 2
 
 
   31:Drivers/lvgl/src/draw/lv_image_decoder.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
   85:Drivers/lvgl/src/draw/lv_image_decoder.c **** 
   86:Drivers/lvgl/src/draw/lv_image_decoder.c ****     lv_image_decoder_t * decoder = image_decoder_get_info(&dsc, header);
   87:Drivers/lvgl/src/draw/lv_image_decoder.c ****     if(decoder == NULL) return LV_RESULT_INVALID;
-ARM GAS  /tmp/ccUAbNcg.s 			page 3
+ARM GAS  /tmp/ccounFgN.s 			page 3
 
 
   88:Drivers/lvgl/src/draw/lv_image_decoder.c **** 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  142:Drivers/lvgl/src/draw/lv_image_decoder.c ****                         (void *)dsc->decoded->data,
  143:Drivers/lvgl/src/draw/lv_image_decoder.c ****                         dsc->decoded->header.cf);
  144:Drivers/lvgl/src/draw/lv_image_decoder.c ****         }
-ARM GAS  /tmp/ccUAbNcg.s 			page 4
+ARM GAS  /tmp/ccounFgN.s 			page 4
 
 
  145:Drivers/lvgl/src/draw/lv_image_decoder.c ****     }
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  199:Drivers/lvgl/src/draw/lv_image_decoder.c **** }
  200:Drivers/lvgl/src/draw/lv_image_decoder.c **** 
  201:Drivers/lvgl/src/draw/lv_image_decoder.c **** void lv_image_decoder_set_info_cb(lv_image_decoder_t * decoder, lv_image_decoder_info_f_t info_cb)
-ARM GAS  /tmp/ccUAbNcg.s 			page 5
+ARM GAS  /tmp/ccounFgN.s 			page 5
 
 
  202:Drivers/lvgl/src/draw/lv_image_decoder.c **** {
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  256:Drivers/lvgl/src/draw/lv_image_decoder.c ****                                                                 decoded->header.cf, stride_expect);
  257:Drivers/lvgl/src/draw/lv_image_decoder.c ****                 if(aligned == NULL) {
  258:Drivers/lvgl/src/draw/lv_image_decoder.c ****                     LV_LOG_ERROR("No memory for Stride adjust.");
-ARM GAS  /tmp/ccUAbNcg.s 			page 6
+ARM GAS  /tmp/ccounFgN.s 			page 6
 
 
  259:Drivers/lvgl/src/draw/lv_image_decoder.c ****                     return NULL;
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  313:Drivers/lvgl/src/draw/lv_image_decoder.c ****     bool is_header_cache_enabled = lv_image_header_cache_is_enabled();
  314:Drivers/lvgl/src/draw/lv_image_decoder.c **** 
  315:Drivers/lvgl/src/draw/lv_image_decoder.c ****     if(is_header_cache_enabled && src_type == LV_IMAGE_SRC_FILE) {
-ARM GAS  /tmp/ccUAbNcg.s 			page 7
+ARM GAS  /tmp/ccounFgN.s 			page 7
 
 
  316:Drivers/lvgl/src/draw/lv_image_decoder.c ****         lv_image_header_cache_data_t search_key;
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  370:Drivers/lvgl/src/draw/lv_image_decoder.c ****         lv_image_header_cache_data_t search_key;
  371:Drivers/lvgl/src/draw/lv_image_decoder.c ****         search_key.src_type = src_type;
  372:Drivers/lvgl/src/draw/lv_image_decoder.c ****         search_key.src = lv_strdup(src);
-ARM GAS  /tmp/ccUAbNcg.s 			page 8
+ARM GAS  /tmp/ccounFgN.s 			page 8
 
 
  373:Drivers/lvgl/src/draw/lv_image_decoder.c ****         search_key.decoder = decoder;
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  404:Drivers/lvgl/src/draw/lv_image_decoder.c ****     search_key.src = dsc->src;
   52              		.loc 1 404 5 is_stmt 1 view .LVU7
   53              		.loc 1 404 25 is_stmt 0 view .LVU8
-ARM GAS  /tmp/ccUAbNcg.s 			page 9
+ARM GAS  /tmp/ccounFgN.s 			page 9
 
 
   54 000c C368     		ldr	r3, [r0, #12]
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  410:Drivers/lvgl/src/draw/lv_image_decoder.c ****         dsc->decoder = (lv_image_decoder_t *)cached_data->decoder;
   92              		.loc 1 410 35 is_stmt 0 view .LVU21
   93 0028 C368     		ldr	r3, [r0, #12]
-ARM GAS  /tmp/ccUAbNcg.s 			page 10
+ARM GAS  /tmp/ccounFgN.s 			page 10
 
 
  410:Drivers/lvgl/src/draw/lv_image_decoder.c ****         dsc->decoder = (lv_image_decoder_t *)cached_data->decoder;
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  391:Drivers/lvgl/src/draw/lv_image_decoder.c ****     }
  136              		.loc 1 391 9 is_stmt 1 view .LVU36
  391:Drivers/lvgl/src/draw/lv_image_decoder.c ****     }
-ARM GAS  /tmp/ccUAbNcg.s 			page 11
+ARM GAS  /tmp/ccounFgN.s 			page 11
 
 
  137              		.loc 1 391 22 is_stmt 0 view .LVU37
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  181 0000 2DE9F047 		push	{r4, r5, r6, r7, r8, r9, r10, lr}
  182              	.LCFI5:
  183              		.cfi_def_cfa_offset 32
-ARM GAS  /tmp/ccUAbNcg.s 			page 12
+ARM GAS  /tmp/ccounFgN.s 			page 12
 
 
  184              		.cfi_offset 4, -32
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
   36:Drivers/lvgl/src/draw/../misc/../stdlib/lv_string.h ****  * @return Pointer to the destination array.
   37:Drivers/lvgl/src/draw/../misc/../stdlib/lv_string.h ****  * @note The function does not check for any overlapping of the source and destination memory block
   38:Drivers/lvgl/src/draw/../misc/../stdlib/lv_string.h ****  */
-ARM GAS  /tmp/ccUAbNcg.s 			page 13
+ARM GAS  /tmp/ccounFgN.s 			page 13
 
 
   39:Drivers/lvgl/src/draw/../misc/../stdlib/lv_string.h **** void * lv_memcpy(void * dst, const void * src, size_t len);
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  301:Drivers/lvgl/src/draw/lv_image_decoder.c ****     lv_image_src_t src_type = dsc->src_type;
  218              		.loc 1 301 18 is_stmt 0 view .LVU57
  219 0014 D5F80C90 		ldr	r9, [r5, #12]
-ARM GAS  /tmp/ccUAbNcg.s 			page 14
+ARM GAS  /tmp/ccounFgN.s 			page 14
 
 
  220              	.LVL16:
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  315:Drivers/lvgl/src/draw/lv_image_decoder.c ****         lv_image_header_cache_data_t search_key;
  254              		.loc 1 315 32 is_stmt 0 view .LVU78
  255 0028 012F     		cmp	r7, #1
-ARM GAS  /tmp/ccUAbNcg.s 			page 15
+ARM GAS  /tmp/ccounFgN.s 			page 15
 
 
  256 002a 14BF     		ite	ne
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  322:Drivers/lvgl/src/draw/lv_image_decoder.c ****             lv_image_header_cache_data_t * cached_data = lv_cache_entry_get_data(entry);
  297              		.loc 1 322 9 is_stmt 1 view .LVU92
  322:Drivers/lvgl/src/draw/lv_image_decoder.c ****             lv_image_header_cache_data_t * cached_data = lv_cache_entry_get_data(entry);
-ARM GAS  /tmp/ccUAbNcg.s 			page 16
+ARM GAS  /tmp/ccounFgN.s 			page 16
 
 
  298              		.loc 1 322 11 is_stmt 0 view .LVU93
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  337              		.loc 1 329 13 is_stmt 0 view .LVU108
  338              	.LBE21:
  339              	.LBE20:
-ARM GAS  /tmp/ccUAbNcg.s 			page 17
+ARM GAS  /tmp/ccounFgN.s 			page 17
 
 
  340              	.LBB22:
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  378              	.LBE23:
  342:Drivers/lvgl/src/draw/lv_image_decoder.c ****         /*Info and Open callbacks are required*/
  379              		.loc 1 342 5 discriminator 2 view .LVU125
-ARM GAS  /tmp/ccUAbNcg.s 			page 18
+ARM GAS  /tmp/ccounFgN.s 			page 18
 
 
  380 00a4 2146     		mov	r1, r4
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  349:Drivers/lvgl/src/draw/lv_image_decoder.c ****                     LV_LOG_INFO("Image decoder didn't set stride. Calculate it from width.");
  421              		.loc 1 349 26 is_stmt 0 view .LVU139
  422 00d6 3389     		ldrh	r3, [r6, #8]
-ARM GAS  /tmp/ccUAbNcg.s 			page 19
+ARM GAS  /tmp/ccounFgN.s 			page 19
 
 
  349:Drivers/lvgl/src/draw/lv_image_decoder.c ****                     LV_LOG_INFO("Image decoder didn't set stride. Calculate it from width.");
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  457 00ee FFF7FEFF 		bl	lv_strdup
  458              	.LVL44:
  372:Drivers/lvgl/src/draw/lv_image_decoder.c ****         search_key.decoder = decoder;
-ARM GAS  /tmp/ccUAbNcg.s 			page 20
+ARM GAS  /tmp/ccounFgN.s 			page 20
 
 
  459              		.loc 1 372 24 discriminator 1 view .LVU160
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  500              		.cfi_def_cfa_offset 32
  501              		@ sp needed
  502 0124 BDE8F087 		pop	{r4, r5, r6, r7, r8, r9, r10, pc}
-ARM GAS  /tmp/ccUAbNcg.s 			page 21
+ARM GAS  /tmp/ccounFgN.s 			page 21
 
 
  503              	.LVL49:
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  550              		.thumb_func
  552              	lv_image_decoder_init:
  553              	.LVL57:
-ARM GAS  /tmp/ccUAbNcg.s 			page 22
+ARM GAS  /tmp/ccounFgN.s 			page 22
 
 
  554              	.LFB186:
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  600              		.syntax unified
  601              		.thumb
  602              		.thumb_func
-ARM GAS  /tmp/ccUAbNcg.s 			page 23
+ARM GAS  /tmp/ccounFgN.s 			page 23
 
 
  604              	lv_image_decoder_deinit:
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  653              		.loc 1 80 1 is_stmt 0 view .LVU197
  654 0000 70B5     		push	{r4, r5, r6, lr}
  655              	.LCFI11:
-ARM GAS  /tmp/ccUAbNcg.s 			page 24
+ARM GAS  /tmp/ccounFgN.s 			page 24
 
 
  656              		.cfi_def_cfa_offset 16
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  700              		.loc 1 86 36 is_stmt 0 view .LVU212
  701 0020 2946     		mov	r1, r5
  702 0022 3046     		mov	r0, r6
-ARM GAS  /tmp/ccUAbNcg.s 			page 25
+ARM GAS  /tmp/ccounFgN.s 			page 25
 
 
  703 0024 FFF7FEFF 		bl	image_decoder_get_info
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  751              		.cfi_offset 6, -8
  752              		.cfi_offset 14, -4
  753 0002 0446     		mov	r4, r0
-ARM GAS  /tmp/ccUAbNcg.s 			page 26
+ARM GAS  /tmp/ccounFgN.s 			page 26
 
 
  754 0004 0D46     		mov	r5, r1
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  101:Drivers/lvgl/src/draw/lv_image_decoder.c ****         /*Try cache first, unless we are told to ignore cache.*/
  795              		.loc 1 101 22 is_stmt 0 view .LVU238
  796 0024 1C4B     		ldr	r3, .L59
-ARM GAS  /tmp/ccUAbNcg.s 			page 27
+ARM GAS  /tmp/ccounFgN.s 			page 27
 
 
  797 0026 D3F81C31 		ldr	r3, [r3, #284]
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  835 0050 3068     		ldr	r0, [r6]	@ unaligned
  836 0052 6060     		str	r0, [r4, #4]
  837 0054 3279     		ldrb	r2, [r6, #4]	@ zero_extendqisi2
-ARM GAS  /tmp/ccUAbNcg.s 			page 28
+ARM GAS  /tmp/ccounFgN.s 			page 28
 
 
  838 0056 2272     		strb	r2, [r4, #8]
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  880 007e 33B1     		cbz	r3, .L53
  132:Drivers/lvgl/src/draw/lv_image_decoder.c **** 
  881              		.loc 1 132 9 is_stmt 1 discriminator 4 view .LVU267
-ARM GAS  /tmp/ccUAbNcg.s 			page 29
+ARM GAS  /tmp/ccounFgN.s 			page 29
 
 
  135:Drivers/lvgl/src/draw/lv_image_decoder.c ****             lv_draw_buf_flush_cache(dsc->decoded, NULL);
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  926              	.LVL97:
  927              	.LFB190:
  152:Drivers/lvgl/src/draw/lv_image_decoder.c ****     lv_result_t res = LV_RESULT_INVALID;
-ARM GAS  /tmp/ccUAbNcg.s 			page 30
+ARM GAS  /tmp/ccounFgN.s 			page 30
 
 
  928              		.loc 1 152 1 is_stmt 1 view -0
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  969              		.cfi_endproc
  970              	.LFE190:
  972              		.section	.text.lv_image_decoder_close,"ax",%progbits
-ARM GAS  /tmp/ccUAbNcg.s 			page 31
+ARM GAS  /tmp/ccounFgN.s 			page 31
 
 
  973              		.align	1
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  1015              		.loc 1 164 46 discriminator 1 view .LVU306
  1016 0016 206C     		ldr	r0, [r4, #64]
  164:Drivers/lvgl/src/draw/lv_image_decoder.c ****             /*Decoded data is in cache, release it from cache's callback*/
-ARM GAS  /tmp/ccUAbNcg.s 			page 32
+ARM GAS  /tmp/ccounFgN.s 			page 32
 
 
  1017              		.loc 1 164 40 discriminator 1 view .LVU307
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  179:Drivers/lvgl/src/draw/lv_image_decoder.c ****     if(decoder == NULL) return NULL;
  1062              		.loc 1 179 5 discriminator 2 view .LVU319
  179:Drivers/lvgl/src/draw/lv_image_decoder.c ****     if(decoder == NULL) return NULL;
-ARM GAS  /tmp/ccUAbNcg.s 			page 33
+ARM GAS  /tmp/ccounFgN.s 			page 33
 
 
  1063              		.loc 1 179 30 discriminator 2 view .LVU320
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  1108              		.loc 1 188 1 view -0
  1109              		.cfi_startproc
  1110              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccUAbNcg.s 			page 34
+ARM GAS  /tmp/ccounFgN.s 			page 34
 
 
  1111              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  1159              		.cfi_offset 3, -8
  1160              		.cfi_offset 14, -4
  195:Drivers/lvgl/src/draw/lv_image_decoder.c ****         return lv_ll_get_head(img_decoder_ll_p);
-ARM GAS  /tmp/ccUAbNcg.s 			page 35
+ARM GAS  /tmp/ccounFgN.s 			page 35
 
 
  1161              		.loc 1 195 5 is_stmt 1 view .LVU342
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  1207              		.loc 1 203 5 view .LVU352
  203:Drivers/lvgl/src/draw/lv_image_decoder.c **** }
  1208              		.loc 1 203 22 is_stmt 0 view .LVU353
-ARM GAS  /tmp/ccUAbNcg.s 			page 36
+ARM GAS  /tmp/ccounFgN.s 			page 36
 
 
  1209 0000 0160     		str	r1, [r0]
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  1258              		.cfi_endproc
  1259              	.LFE197:
  1261              		.section	.text.lv_image_decoder_set_close_cb,"ax",%progbits
-ARM GAS  /tmp/ccUAbNcg.s 			page 37
+ARM GAS  /tmp/ccounFgN.s 			page 37
 
 
  1262              		.align	1
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  225:Drivers/lvgl/src/draw/lv_image_decoder.c ****     if(cache_entry == NULL) {
  1312              		.loc 1 225 38 is_stmt 0 view .LVU370
  1313 000a 0022     		movs	r2, #0
-ARM GAS  /tmp/ccUAbNcg.s 			page 38
+ARM GAS  /tmp/ccounFgN.s 			page 38
 
 
  1314              	.LVL129:
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  241:Drivers/lvgl/src/draw/lv_image_decoder.c **** }
  1351              		.loc 1 241 5 is_stmt 1 view .LVU388
  1352              	.LVL135:
-ARM GAS  /tmp/ccUAbNcg.s 			page 39
+ARM GAS  /tmp/ccounFgN.s 			page 39
 
 
  1353              	.L90:
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  1401              		.loc 1 246 5 is_stmt 1 view .LVU396
  246:Drivers/lvgl/src/draw/lv_image_decoder.c **** 
  1402              		.loc 1 246 7 is_stmt 0 view .LVU397
-ARM GAS  /tmp/ccUAbNcg.s 			page 40
+ARM GAS  /tmp/ccounFgN.s 			page 40
 
 
  1403 0004 0D46     		mov	r5, r1
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  1444              	.LVL144:
  1445              	.L103:
  1446              	.LCFI25:
-ARM GAS  /tmp/ccUAbNcg.s 			page 41
+ARM GAS  /tmp/ccounFgN.s 			page 41
 
 
  1447              		.cfi_restore_state
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  1484              		.loc 1 255 130 view .LVU427
  1485 0046 EA88     		ldrh	r2, [r5, #6]
  256:Drivers/lvgl/src/draw/lv_image_decoder.c ****                 if(aligned == NULL) {
-ARM GAS  /tmp/ccUAbNcg.s 			page 42
+ARM GAS  /tmp/ccounFgN.s 			page 42
 
 
  1486              		.loc 1 256 80 view .LVU428
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  272:Drivers/lvgl/src/draw/lv_image_decoder.c ****       ) {
  1528              		.loc 1 272 8 discriminator 1 view .LVU441
  1529 0074 0028     		cmp	r0, #0
-ARM GAS  /tmp/ccUAbNcg.s 			page 43
+ARM GAS  /tmp/ccounFgN.s 			page 43
 
 
  1530 0076 D5D1     		bne	.L98
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  1570 009e 0546     		mov	r5, r0
  1571              	.LVL162:
  259:Drivers/lvgl/src/draw/lv_image_decoder.c ****                 }
-ARM GAS  /tmp/ccUAbNcg.s 			page 44
+ARM GAS  /tmp/ccounFgN.s 			page 44
 
 
  1572              		.loc 1 259 28 view .LVU456
@@ -2627,56 +2627,56 @@ ARM GAS  /tmp/ccUAbNcg.s 			page 1
  1616              		.file 33 "Drivers/lvgl/src/draw/../misc/cache/lv_cache_entry.h"
  1617              		.file 34 "Drivers/lvgl/src/draw/../misc/cache/lv_image_cache.h"
  1618              		.file 35 "Drivers/lvgl/src/draw/../misc/cache/lv_image_header_cache.h"
-ARM GAS  /tmp/ccUAbNcg.s 			page 45
+ARM GAS  /tmp/ccounFgN.s 			page 45
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_image_decoder.c
-     /tmp/ccUAbNcg.s:21     .text.try_cache:00000000 $t
-     /tmp/ccUAbNcg.s:26     .text.try_cache:00000000 try_cache
-     /tmp/ccUAbNcg.s:115    .text.img_width_to_stride:00000000 $t
-     /tmp/ccUAbNcg.s:120    .text.img_width_to_stride:00000000 img_width_to_stride
-     /tmp/ccUAbNcg.s:168    .text.image_decoder_get_info:00000000 $t
-     /tmp/ccUAbNcg.s:173    .text.image_decoder_get_info:00000000 image_decoder_get_info
-     /tmp/ccUAbNcg.s:539    .text.image_decoder_get_info:00000144 $d
-     /tmp/ccUAbNcg.s:546    .text.lv_image_decoder_init:00000000 $t
-     /tmp/ccUAbNcg.s:552    .text.lv_image_decoder_init:00000000 lv_image_decoder_init
-     /tmp/ccUAbNcg.s:593    .text.lv_image_decoder_init:0000001c $d
-     /tmp/ccUAbNcg.s:598    .text.lv_image_decoder_deinit:00000000 $t
-     /tmp/ccUAbNcg.s:604    .text.lv_image_decoder_deinit:00000000 lv_image_decoder_deinit
-     /tmp/ccUAbNcg.s:635    .text.lv_image_decoder_deinit:00000024 $d
-     /tmp/ccUAbNcg.s:640    .text.lv_image_decoder_get_info:00000000 $t
-     /tmp/ccUAbNcg.s:646    .text.lv_image_decoder_get_info:00000000 lv_image_decoder_get_info
-     /tmp/ccUAbNcg.s:732    .text.lv_image_decoder_open:00000000 $t
-     /tmp/ccUAbNcg.s:738    .text.lv_image_decoder_open:00000000 lv_image_decoder_open
-     /tmp/ccUAbNcg.s:914    .text.lv_image_decoder_open:00000098 $d
-     /tmp/ccUAbNcg.s:919    .text.lv_image_decoder_get_area:00000000 $t
-     /tmp/ccUAbNcg.s:925    .text.lv_image_decoder_get_area:00000000 lv_image_decoder_get_area
-     /tmp/ccUAbNcg.s:973    .text.lv_image_decoder_close:00000000 $t
-     /tmp/ccUAbNcg.s:979    .text.lv_image_decoder_close:00000000 lv_image_decoder_close
-     /tmp/ccUAbNcg.s:1035   .text.lv_image_decoder_create:00000000 $t
-     /tmp/ccUAbNcg.s:1041   .text.lv_image_decoder_create:00000000 lv_image_decoder_create
-     /tmp/ccUAbNcg.s:1094   .text.lv_image_decoder_create:0000001c $d
-     /tmp/ccUAbNcg.s:1099   .text.lv_image_decoder_delete:00000000 $t
-     /tmp/ccUAbNcg.s:1105   .text.lv_image_decoder_delete:00000000 lv_image_decoder_delete
-     /tmp/ccUAbNcg.s:1137   .text.lv_image_decoder_delete:00000014 $d
-     /tmp/ccUAbNcg.s:1142   .text.lv_image_decoder_get_next:00000000 $t
-     /tmp/ccUAbNcg.s:1148   .text.lv_image_decoder_get_next:00000000 lv_image_decoder_get_next
-     /tmp/ccUAbNcg.s:1188   .text.lv_image_decoder_get_next:00000018 $d
-     /tmp/ccUAbNcg.s:1193   .text.lv_image_decoder_set_info_cb:00000000 $t
-     /tmp/ccUAbNcg.s:1199   .text.lv_image_decoder_set_info_cb:00000000 lv_image_decoder_set_info_cb
-     /tmp/ccUAbNcg.s:1216   .text.lv_image_decoder_set_open_cb:00000000 $t
-     /tmp/ccUAbNcg.s:1222   .text.lv_image_decoder_set_open_cb:00000000 lv_image_decoder_set_open_cb
-     /tmp/ccUAbNcg.s:1239   .text.lv_image_decoder_set_get_area_cb:00000000 $t
-     /tmp/ccUAbNcg.s:1245   .text.lv_image_decoder_set_get_area_cb:00000000 lv_image_decoder_set_get_area_cb
-     /tmp/ccUAbNcg.s:1262   .text.lv_image_decoder_set_close_cb:00000000 $t
-     /tmp/ccUAbNcg.s:1268   .text.lv_image_decoder_set_close_cb:00000000 lv_image_decoder_set_close_cb
-     /tmp/ccUAbNcg.s:1285   .text.lv_image_decoder_add_to_cache:00000000 $t
-     /tmp/ccUAbNcg.s:1291   .text.lv_image_decoder_add_to_cache:00000000 lv_image_decoder_add_to_cache
-     /tmp/ccUAbNcg.s:1372   .text.lv_image_decoder_add_to_cache:00000040 $d
-     /tmp/ccUAbNcg.s:1377   .text.lv_image_decoder_post_process:00000000 $t
-     /tmp/ccUAbNcg.s:1383   .text.lv_image_decoder_post_process:00000000 lv_image_decoder_post_process
-     /tmp/ccUAbNcg.s:1577   .text.lv_image_decoder_post_process:000000a4 $d
+     /tmp/ccounFgN.s:21     .text.try_cache:00000000 $t
+     /tmp/ccounFgN.s:26     .text.try_cache:00000000 try_cache
+     /tmp/ccounFgN.s:115    .text.img_width_to_stride:00000000 $t
+     /tmp/ccounFgN.s:120    .text.img_width_to_stride:00000000 img_width_to_stride
+     /tmp/ccounFgN.s:168    .text.image_decoder_get_info:00000000 $t
+     /tmp/ccounFgN.s:173    .text.image_decoder_get_info:00000000 image_decoder_get_info
+     /tmp/ccounFgN.s:539    .text.image_decoder_get_info:00000144 $d
+     /tmp/ccounFgN.s:546    .text.lv_image_decoder_init:00000000 $t
+     /tmp/ccounFgN.s:552    .text.lv_image_decoder_init:00000000 lv_image_decoder_init
+     /tmp/ccounFgN.s:593    .text.lv_image_decoder_init:0000001c $d
+     /tmp/ccounFgN.s:598    .text.lv_image_decoder_deinit:00000000 $t
+     /tmp/ccounFgN.s:604    .text.lv_image_decoder_deinit:00000000 lv_image_decoder_deinit
+     /tmp/ccounFgN.s:635    .text.lv_image_decoder_deinit:00000024 $d
+     /tmp/ccounFgN.s:640    .text.lv_image_decoder_get_info:00000000 $t
+     /tmp/ccounFgN.s:646    .text.lv_image_decoder_get_info:00000000 lv_image_decoder_get_info
+     /tmp/ccounFgN.s:732    .text.lv_image_decoder_open:00000000 $t
+     /tmp/ccounFgN.s:738    .text.lv_image_decoder_open:00000000 lv_image_decoder_open
+     /tmp/ccounFgN.s:914    .text.lv_image_decoder_open:00000098 $d
+     /tmp/ccounFgN.s:919    .text.lv_image_decoder_get_area:00000000 $t
+     /tmp/ccounFgN.s:925    .text.lv_image_decoder_get_area:00000000 lv_image_decoder_get_area
+     /tmp/ccounFgN.s:973    .text.lv_image_decoder_close:00000000 $t
+     /tmp/ccounFgN.s:979    .text.lv_image_decoder_close:00000000 lv_image_decoder_close
+     /tmp/ccounFgN.s:1035   .text.lv_image_decoder_create:00000000 $t
+     /tmp/ccounFgN.s:1041   .text.lv_image_decoder_create:00000000 lv_image_decoder_create
+     /tmp/ccounFgN.s:1094   .text.lv_image_decoder_create:0000001c $d
+     /tmp/ccounFgN.s:1099   .text.lv_image_decoder_delete:00000000 $t
+     /tmp/ccounFgN.s:1105   .text.lv_image_decoder_delete:00000000 lv_image_decoder_delete
+     /tmp/ccounFgN.s:1137   .text.lv_image_decoder_delete:00000014 $d
+     /tmp/ccounFgN.s:1142   .text.lv_image_decoder_get_next:00000000 $t
+     /tmp/ccounFgN.s:1148   .text.lv_image_decoder_get_next:00000000 lv_image_decoder_get_next
+     /tmp/ccounFgN.s:1188   .text.lv_image_decoder_get_next:00000018 $d
+     /tmp/ccounFgN.s:1193   .text.lv_image_decoder_set_info_cb:00000000 $t
+     /tmp/ccounFgN.s:1199   .text.lv_image_decoder_set_info_cb:00000000 lv_image_decoder_set_info_cb
+     /tmp/ccounFgN.s:1216   .text.lv_image_decoder_set_open_cb:00000000 $t
+     /tmp/ccounFgN.s:1222   .text.lv_image_decoder_set_open_cb:00000000 lv_image_decoder_set_open_cb
+     /tmp/ccounFgN.s:1239   .text.lv_image_decoder_set_get_area_cb:00000000 $t
+     /tmp/ccounFgN.s:1245   .text.lv_image_decoder_set_get_area_cb:00000000 lv_image_decoder_set_get_area_cb
+     /tmp/ccounFgN.s:1262   .text.lv_image_decoder_set_close_cb:00000000 $t
+     /tmp/ccounFgN.s:1268   .text.lv_image_decoder_set_close_cb:00000000 lv_image_decoder_set_close_cb
+     /tmp/ccounFgN.s:1285   .text.lv_image_decoder_add_to_cache:00000000 $t
+     /tmp/ccounFgN.s:1291   .text.lv_image_decoder_add_to_cache:00000000 lv_image_decoder_add_to_cache
+     /tmp/ccounFgN.s:1372   .text.lv_image_decoder_add_to_cache:00000040 $d
+     /tmp/ccounFgN.s:1377   .text.lv_image_decoder_post_process:00000000 $t
+     /tmp/ccounFgN.s:1383   .text.lv_image_decoder_post_process:00000000 lv_image_decoder_post_process
+     /tmp/ccounFgN.s:1577   .text.lv_image_decoder_post_process:000000a4 $d
 
 UNDEFINED SYMBOLS
 lv_cache_acquire
@@ -2687,7 +2687,7 @@ lv_image_header_cache_is_enabled
 lv_ll_get_head
 lv_cache_release
 lv_fs_open
-ARM GAS  /tmp/ccUAbNcg.s 			page 46
+ARM GAS  /tmp/ccounFgN.s 			page 46
 
 
 lv_ll_get_next

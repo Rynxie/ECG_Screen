@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccGpYpzg.s 			page 1
+ARM GAS  /tmp/ccqfI4jc.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
   28:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** /**********************
   29:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** *      TYPEDEFS
   30:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** **********************/
-ARM GAS  /tmp/ccGpYpzg.s 			page 2
+ARM GAS  /tmp/ccqfI4jc.s 			page 2
 
 
   31:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
   85:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** #endif
   86:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** 
   87:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** #ifndef LV_DRAW_SW_ARGB8888_PREMULTIPLIED_BLEND_NORMAL_TO_ARGB8888_PREMULTIPLIED
-ARM GAS  /tmp/ccGpYpzg.s 			page 3
+ARM GAS  /tmp/ccqfI4jc.s 			page 3
 
 
   88:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****     #define   LV_DRAW_SW_ARGB8888_PREMULTIPLIED_BLEND_NORMAL_TO_ARGB8888_PREMULTIPLIED(...)        
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  142:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****         for(y = 0; y < h; y++) {
  143:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****             for(x = 0; x < w; x++) {
  144:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                 dest_buf[x] = color32;
-ARM GAS  /tmp/ccGpYpzg.s 			page 4
+ARM GAS  /tmp/ccqfI4jc.s 			page 4
 
 
  145:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****             }
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  199:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****  * @param dsc Blending descriptor containing source and destination buffer information
  200:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****  */
  201:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** void LV_ATTRIBUTE_FAST_MEM lv_draw_sw_blend_image_to_argb8888_premultiplied(lv_draw_sw_blend_image_
-ARM GAS  /tmp/ccGpYpzg.s 			page 5
+ARM GAS  /tmp/ccqfI4jc.s 			page 5
 
 
  202:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** {
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  256:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                         dest_buf_c32[x] = lv_color_32_32_mix_premul(color_argb, dest_buf_c32[x], &c
  257:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                     }
  258:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                     dest_buf_c32 = drawbuf_next_row(dest_buf_c32, dest_stride);
-ARM GAS  /tmp/ccGpYpzg.s 			page 6
+ARM GAS  /tmp/ccqfI4jc.s 			page 6
 
 
  259:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                     src_buf_c32 = drawbuf_next_row(src_buf_c32, src_stride);
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  313:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                         color_argb.alpha = LV_OPA_MIX3(color_argb.alpha, opa, mask_buf[x]);
  314:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** 
  315:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                         /* Premultiply alpha */
-ARM GAS  /tmp/ccGpYpzg.s 			page 7
+ARM GAS  /tmp/ccqfI4jc.s 			page 7
 
 
  316:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                         color_argb.red   = (color_argb.red   * color_argb.alpha) >> 8;
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  370:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****     lv_color_mix_with_alpha_cache_init(&cache);
  371:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** 
  372:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****     int32_t x, y;
-ARM GAS  /tmp/ccGpYpzg.s 			page 8
+ARM GAS  /tmp/ccqfI4jc.s 			page 8
 
 
  373:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  427:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                             color_argb.blue = (color_argb.blue * reciprocal_alpha) >> 8;
  428:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                         }
  429:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                         /* Adjust alpha using mask */
-ARM GAS  /tmp/ccGpYpzg.s 			page 9
+ARM GAS  /tmp/ccqfI4jc.s 			page 9
 
 
  430:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                         color_argb.alpha = LV_OPA_MIX2(color_argb.alpha, mask_buf[x]);
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  484:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                     color_argb.red = (color_argb.red * reciprocal_alpha) >> 8;
  485:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                     color_argb.green = (color_argb.green * reciprocal_alpha) >> 8;
  486:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                     color_argb.blue = (color_argb.blue * reciprocal_alpha) >> 8;
-ARM GAS  /tmp/ccGpYpzg.s 			page 10
+ARM GAS  /tmp/ccqfI4jc.s 			page 10
 
 
  487:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                 }
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  541:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****             LV_ASSERT(cache->res_alpha_saved != 0);
  542:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** 
  543:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****             /* Compute premultiplied blending ratio */
-ARM GAS  /tmp/ccGpYpzg.s 			page 11
+ARM GAS  /tmp/ccqfI4jc.s 			page 11
 
 
  544:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****             cache->ratio_saved = (uint32_t)((uint32_t)fg.alpha * 255) / cache->res_alpha_saved;
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
   16:Drivers/lvgl/src/draw/sw/blend/../../../misc/../font/../draw/../misc/../stdlib/lv_string.h **** #include "../lv_conf_internal.h"
   17:Drivers/lvgl/src/draw/sw/blend/../../../misc/../font/../draw/../misc/../stdlib/lv_string.h **** #include "../misc/lv_types.h"
   18:Drivers/lvgl/src/draw/sw/blend/../../../misc/../font/../draw/../misc/../stdlib/lv_string.h **** 
-ARM GAS  /tmp/ccGpYpzg.s 			page 12
+ARM GAS  /tmp/ccqfI4jc.s 			page 12
 
 
   19:Drivers/lvgl/src/draw/sw/blend/../../../misc/../font/../draw/../misc/../stdlib/lv_string.h **** /*********************
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
   73:Drivers/lvgl/src/draw/sw/blend/../../../misc/../font/../draw/../misc/../stdlib/lv_string.h **** static inline void lv_memzero(void * dst, size_t len)
   45              		.loc 2 73 20 view .LVU3
   46              	.LBB67:
-ARM GAS  /tmp/ccGpYpzg.s 			page 13
+ARM GAS  /tmp/ccqfI4jc.s 			page 13
 
 
   74:Drivers/lvgl/src/draw/sw/blend/../../../misc/../font/../draw/../misc/../stdlib/lv_string.h **** {
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
   93 0026 6373     		strb	r3, [r4, #13]
  571:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** }
   94              		.loc 1 571 1 view .LVU20
-ARM GAS  /tmp/ccGpYpzg.s 			page 14
+ARM GAS  /tmp/ccqfI4jc.s 			page 14
 
 
   95 0028 10BD     		pop	{r4, pc}
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  533:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****         return lv_color_mix32_premultiplied(fg, bg);
  142              		.loc 1 533 10 is_stmt 1 view .LVU31
  533:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****         return lv_color_mix32_premultiplied(fg, bg);
-ARM GAS  /tmp/ccGpYpzg.s 			page 15
+ARM GAS  /tmp/ccqfI4jc.s 			page 15
 
 
  143              		.loc 1 533 12 is_stmt 0 view .LVU32
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  562:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** 
  181              		.loc 1 562 1 view .LVU49
  182 0046 0020     		movs	r0, #0
-ARM GAS  /tmp/ccGpYpzg.s 			page 16
+ARM GAS  /tmp/ccqfI4jc.s 			page 16
 
 
  183 0048 9DF80C30 		ldrb	r3, [sp, #12]	@ zero_extendqisi2
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  227              		.loc 1 544 71 view .LVU59
  228 008a B2FBF3F3 		udiv	r3, r2, r3
  544:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****         }
-ARM GAS  /tmp/ccGpYpzg.s 			page 17
+ARM GAS  /tmp/ccqfI4jc.s 			page 17
 
 
  229              		.loc 1 544 32 view .LVU60
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  266              		.loc 1 555 40 is_stmt 0 view .LVU77
  267 00b8 9DF80530 		ldrb	r3, [sp, #5]	@ zero_extendqisi2
  555:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****             cache->res_saved.blue  = fg.blue  + ((bg.blue  * inv_fg_alpha) >> 8);
-ARM GAS  /tmp/ccGpYpzg.s 			page 18
+ARM GAS  /tmp/ccqfI4jc.s 			page 18
 
 
  268              		.loc 1 555 53 view .LVU78
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  306              	.LVL15:
  548:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****             cache->fg_saved = fg;
  307              		.loc 1 548 48 discriminator 1 view .LVU95
-ARM GAS  /tmp/ccGpYpzg.s 			page 19
+ARM GAS  /tmp/ccqfI4jc.s 			page 19
 
 
  308 00ee 0028     		cmp	r0, #0
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  586:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** 
  587:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****     switch(mode) {
  350              		.loc 1 587 5 is_stmt 1 view .LVU103
-ARM GAS  /tmp/ccGpYpzg.s 			page 20
+ARM GAS  /tmp/ccqfI4jc.s 			page 20
 
 
  351 0012 0139     		subs	r1, r1, #1
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  594:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** 
  595:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****         case LV_BLEND_MODE_SUBTRACTIVE:
  596:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****             /* Ensure RGB remains non-negative and premultiplied */
-ARM GAS  /tmp/ccGpYpzg.s 			page 21
+ARM GAS  /tmp/ccqfI4jc.s 			page 21
 
 
  597:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****             res.red   = LV_MAX(dest->red - src.red, 0);
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  427              	.LVL26:
  428              	.L25:
  429              	.LCFI8:
-ARM GAS  /tmp/ccGpYpzg.s 			page 22
+ARM GAS  /tmp/ccqfI4jc.s 			page 22
 
 
  430              		.cfi_restore_state
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  604:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****             res.green = ((dest->green * src.green) / LV_MAX(src_alpha, 1));
  469              		.loc 1 604 50 view .LVU138
  470 00b6 0146     		mov	r1, r0
-ARM GAS  /tmp/ccGpYpzg.s 			page 23
+ARM GAS  /tmp/ccqfI4jc.s 			page 23
 
 
  471 00b8 0128     		cmp	r0, #1
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  610:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****             res.green = LV_ABS(dest->green - src.green);
  508              		.loc 1 610 25 view .LVU156
  509 00ee 9DF80610 		ldrb	r1, [sp, #6]	@ zero_extendqisi2
-ARM GAS  /tmp/ccGpYpzg.s 			page 24
+ARM GAS  /tmp/ccqfI4jc.s 			page 24
 
 
  510 00f2 5B1A     		subs	r3, r3, r1
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  556              	.LCFI9:
  557              		.cfi_def_cfa_offset 36
  558              		.cfi_offset 4, -36
-ARM GAS  /tmp/ccGpYpzg.s 			page 25
+ARM GAS  /tmp/ccqfI4jc.s 			page 25
 
 
  559              		.cfi_offset 5, -32
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  599              	.LVL39:
  234:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****     const lv_opa_t * mask_buf = dsc->mask_buf;
  600              		.loc 1 234 13 view .LVU181
-ARM GAS  /tmp/ccGpYpzg.s 			page 26
+ARM GAS  /tmp/ccqfI4jc.s 			page 26
 
 
  601 001e 0193     		str	r3, [sp, #4]
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  638              		.loc 1 245 11 view .LVU198
  639 0046 1342     		tst	r3, r2
  640 0048 4CD1     		bne	.L55
-ARM GAS  /tmp/ccGpYpzg.s 			page 27
+ARM GAS  /tmp/ccqfI4jc.s 			page 27
 
 
  263:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****             if(LV_RESULT_INVALID == LV_DRAW_SW_ARGB8888_BLEND_NORMAL_TO_ARGB8888_PREMULTIPLIED_WITH
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  252:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                         color_argb.green = (color_argb.green * color_argb.alpha) >> 8;
  682              		.loc 1 252 55 is_stmt 0 view .LVU212
  683 0078 9DF82620 		ldrb	r2, [sp, #38]	@ zero_extendqisi2
-ARM GAS  /tmp/ccGpYpzg.s 			page 28
+ARM GAS  /tmp/ccqfI4jc.s 			page 28
 
 
  252:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                         color_argb.green = (color_argb.green * color_argb.alpha) >> 8;
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  721 00be 7B70     		strb	r3, [r7, #1]
  722 00c0 C0F30743 		ubfx	r3, r0, #16, #8
  723 00c4 BB70     		strb	r3, [r7, #2]
-ARM GAS  /tmp/ccGpYpzg.s 			page 29
+ARM GAS  /tmp/ccqfI4jc.s 			page 29
 
 
  724 00c6 C0F30760 		ubfx	r0, r0, #24, #8
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  764 00dc D945     		cmp	r9, fp
  765 00de C5DA     		bge	.L31
  248:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                         color_argb = src_buf_c32[x];
-ARM GAS  /tmp/ccGpYpzg.s 			page 30
+ARM GAS  /tmp/ccqfI4jc.s 			page 30
 
 
  766              		.loc 1 248 27 is_stmt 0 view .LVU244
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  804              		.loc 1 274 62 view .LVU260
  805 0114 03FB02F2 		mul	r2, r3, r2
  274:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                         color_argb.blue  = (color_argb.blue  * color_argb.alpha) >> 8;
-ARM GAS  /tmp/ccGpYpzg.s 			page 31
+ARM GAS  /tmp/ccqfI4jc.s 			page 31
 
 
  806              		.loc 1 274 82 view .LVU261
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  279:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                     src_buf_c32 = drawbuf_next_row(src_buf_c32, src_stride);
  848              		.loc 1 279 21 is_stmt 1 view .LVU274
  849              	.LVL61:
-ARM GAS  /tmp/ccGpYpzg.s 			page 32
+ARM GAS  /tmp/ccqfI4jc.s 			page 32
 
 
  850              	.LBB80:
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  890              		.loc 1 265 23 view .LVU288
  891 017c B946     		mov	r9, r7
  892              	.LVL67:
-ARM GAS  /tmp/ccGpYpzg.s 			page 33
+ARM GAS  /tmp/ccqfI4jc.s 			page 33
 
 
  265:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                     for(x = 0; x < w; x++) {
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  929              		.loc 1 296 55 is_stmt 0 view .LVU306
  930 01b4 9DF82420 		ldrb	r2, [sp, #36]	@ zero_extendqisi2
  296:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** 
-ARM GAS  /tmp/ccGpYpzg.s 			page 34
+ARM GAS  /tmp/ccqfI4jc.s 			page 34
 
 
  931              		.loc 1 296 62 view .LVU307
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  973              		.loc 1 576 12 is_stmt 0 view .LVU319
  974 01f8 009B     		ldr	r3, [sp]
  975 01fa 1D44     		add	r5, r5, r3
-ARM GAS  /tmp/ccGpYpzg.s 			page 35
+ARM GAS  /tmp/ccqfI4jc.s 			page 35
 
 
  976              	.LVL72:
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  1016              		.loc 1 286 23 view .LVU333
  1017 021a DDF80C90 		ldr	r9, [sp, #12]
  1018 021e F2E7     		b	.L42
-ARM GAS  /tmp/ccGpYpzg.s 			page 36
+ARM GAS  /tmp/ccqfI4jc.s 			page 36
 
 
  1019              	.LVL79:
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  1055              		.loc 1 318 62 view .LVU351
  1056 025c 02FB03F3 		mul	r3, r2, r3
  318:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** 
-ARM GAS  /tmp/ccGpYpzg.s 			page 37
+ARM GAS  /tmp/ccqfI4jc.s 			page 37
 
 
  1057              		.loc 1 318 82 view .LVU352
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  1100              	.LVL83:
  576:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** }
  1101              		.loc 1 576 12 view .LVU364
-ARM GAS  /tmp/ccGpYpzg.s 			page 38
+ARM GAS  /tmp/ccqfI4jc.s 			page 38
 
 
  1102              	.LBE91:
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  1143              		.loc 1 308 23 view .LVU377
  1144 02b8 2E46     		mov	r6, r5
  1145              	.LVL90:
-ARM GAS  /tmp/ccGpYpzg.s 			page 39
+ARM GAS  /tmp/ccqfI4jc.s 			page 39
 
 
  308:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                     for(x = 0; x < w; x++) {
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  1183              		.loc 1 343 17 is_stmt 1 view .LVU394
  343:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** 
  1184              		.loc 1 343 47 is_stmt 0 view .LVU395
-ARM GAS  /tmp/ccGpYpzg.s 			page 40
+ARM GAS  /tmp/ccqfI4jc.s 			page 40
 
 
  1185 02f2 9DF82420 		ldrb	r2, [sp, #36]	@ zero_extendqisi2
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  347:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****             dest_buf_c32 = drawbuf_next_row(dest_buf_c32, dest_stride);
  1225              		.loc 1 347 13 is_stmt 1 view .LVU410
  347:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****             dest_buf_c32 = drawbuf_next_row(dest_buf_c32, dest_stride);
-ARM GAS  /tmp/ccGpYpzg.s 			page 41
+ARM GAS  /tmp/ccqfI4jc.s 			page 41
 
 
  1226              		.loc 1 347 15 is_stmt 0 view .LVU411
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  1266 0348 9B45     		cmp	fp, r3
  1267 034a BFF68FAE 		bge	.L31
  331:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                 color_argb = src_buf_c32[x];
-ARM GAS  /tmp/ccGpYpzg.s 			page 42
+ARM GAS  /tmp/ccqfI4jc.s 			page 42
 
 
  1268              		.loc 1 331 19 is_stmt 0 view .LVU426
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  1317              		.loc 1 359 5 is_stmt 1 view .LVU433
  359:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****     lv_opa_t opa = dsc->opa;
  1318              		.loc 1 359 13 is_stmt 0 view .LVU434
-ARM GAS  /tmp/ccGpYpzg.s 			page 43
+ARM GAS  /tmp/ccqfI4jc.s 			page 43
 
 
  1319 000a D0F808A0 		ldr	r10, [r0, #8]
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  1356              		.loc 1 368 5 is_stmt 1 view .LVU451
  369:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****     lv_color_mix_with_alpha_cache_init(&cache);
  1357              		.loc 1 369 5 view .LVU452
-ARM GAS  /tmp/ccGpYpzg.s 			page 44
+ARM GAS  /tmp/ccqfI4jc.s 			page 44
 
 
  370:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** 
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  416:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****             if(LV_RESULT_INVALID == LV_DRAW_SW_ARGB8888_PREMULTIPLIED_BLEND_NORMAL_TO_ARGB8888_PREM
  1397              		.loc 1 416 16 view .LVU468
  1398 005e 1A42     		tst	r2, r3
-ARM GAS  /tmp/ccGpYpzg.s 			page 45
+ARM GAS  /tmp/ccqfI4jc.s 			page 45
 
 
  1399 0060 40F00581 		bne	.L101
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  574:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** {
  1444              		.loc 1 574 44 view .LVU478
  1445              	.LBB100:
-ARM GAS  /tmp/ccGpYpzg.s 			page 46
+ARM GAS  /tmp/ccqfI4jc.s 			page 46
 
 
  576:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** }
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  1486              		.loc 1 401 25 is_stmt 1 view .LVU492
  401:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** 
  1487              		.loc 1 401 44 is_stmt 0 view .LVU493
-ARM GAS  /tmp/ccGpYpzg.s 			page 47
+ARM GAS  /tmp/ccqfI4jc.s 			page 47
 
 
  1488 00c0 03FB08F3 		mul	r3, r3, r8
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  1523 00f8 07AA     		add	r2, sp, #28
  1524 00fa 55F80B10 		ldr	r1, [r5, fp]	@ unaligned
  1525 00fe 0B98     		ldr	r0, [sp, #44]
-ARM GAS  /tmp/ccGpYpzg.s 			page 48
+ARM GAS  /tmp/ccqfI4jc.s 			page 48
 
 
  1526 0100 FFF7FEFF 		bl	lv_color_32_32_mix_premul
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  395:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                             color_argb.green = (color_argb.green * reciprocal_alpha) >> 8;
  1567              		.loc 1 395 44 view .LVU526
  1568 0144 8DF82E20 		strb	r2, [sp, #46]
-ARM GAS  /tmp/ccGpYpzg.s 			page 49
+ARM GAS  /tmp/ccqfI4jc.s 			page 49
 
 
  396:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                             color_argb.blue = (color_argb.blue * reciprocal_alpha) >> 8;
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  1607              	.LVL132:
  576:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** }
  1608              		.loc 1 576 12 view .LVU543
-ARM GAS  /tmp/ccGpYpzg.s 			page 50
+ARM GAS  /tmp/ccqfI4jc.s 			page 50
 
 
  1609              	.LBE106:
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  1651 0196 EDE7     		b	.L76
  1652              	.LVL139:
  1653              	.L83:
-ARM GAS  /tmp/ccGpYpzg.s 			page 51
+ARM GAS  /tmp/ccqfI4jc.s 			page 51
 
 
  430:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** 
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  437:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                     }
  1689              		.loc 1 437 93 is_stmt 0 view .LVU575
  1690 01ce 04EB0B09 		add	r9, r4, fp
-ARM GAS  /tmp/ccGpYpzg.s 			page 52
+ARM GAS  /tmp/ccqfI4jc.s 			page 52
 
 
  437:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                     }
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  1732 021a 4FF47F40 		mov	r0, #65280
  1733 021e 90FBF3F0 		sdiv	r0, r0, r3
  1734              	.LVL144:
-ARM GAS  /tmp/ccGpYpzg.s 			page 53
+ARM GAS  /tmp/ccqfI4jc.s 			page 53
 
 
  425:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                             color_argb.green = (color_argb.green * reciprocal_alpha) >> 8;
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  1773              	.LBI111:
  574:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** {
  1774              		.loc 1 574 44 view .LVU605
-ARM GAS  /tmp/ccGpYpzg.s 			page 54
+ARM GAS  /tmp/ccqfI4jc.s 			page 54
 
 
  1775              	.LBB113:
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  1815              		.loc 1 418 23 view .LVU619
  1816 026e 4FF00009 		mov	r9, #0
  1817 0272 F4E7     		b	.L81
-ARM GAS  /tmp/ccGpYpzg.s 			page 55
+ARM GAS  /tmp/ccqfI4jc.s 			page 55
 
 
  1818              	.LVL152:
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  1854 02ac 8DF82C30 		strb	r3, [sp, #44]
  467:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                     }
  1855              		.loc 1 467 25 is_stmt 1 view .LVU638
-ARM GAS  /tmp/ccGpYpzg.s 			page 56
+ARM GAS  /tmp/ccqfI4jc.s 			page 56
 
 
  467:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                     }
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  454:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                             color_argb.green = (color_argb.green * reciprocal_alpha) >> 8;
  1897              		.loc 1 454 57 is_stmt 0 view .LVU652
  1898 02f2 9DF82E20 		ldrb	r2, [sp, #46]	@ zero_extendqisi2
-ARM GAS  /tmp/ccGpYpzg.s 			page 57
+ARM GAS  /tmp/ccqfI4jc.s 			page 57
 
 
  1899 02f6 4FF47F40 		mov	r0, #65280
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  1937              		.loc 1 469 21 is_stmt 1 view .LVU668
  1938              	.LVL159:
  1939              	.LBB121:
-ARM GAS  /tmp/ccGpYpzg.s 			page 58
+ARM GAS  /tmp/ccqfI4jc.s 			page 58
 
 
  1940              	.LBI118:
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  1980 0344 C9E7     		b	.L89
  1981              	.LVL164:
  1982              	.L103:
-ARM GAS  /tmp/ccGpYpzg.s 			page 59
+ARM GAS  /tmp/ccqfI4jc.s 			page 59
 
 
  447:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                     for(x = 0; x < w; x++) {
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  2021 0378 9DF82D20 		ldrb	r2, [sp, #45]	@ zero_extendqisi2
  497:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                 color_argb.blue  = (color_argb.blue  * color_argb.alpha) >> 8;
  2022              		.loc 1 497 54 view .LVU699
-ARM GAS  /tmp/ccGpYpzg.s 			page 60
+ARM GAS  /tmp/ccqfI4jc.s 			page 60
 
 
  2023 037c 03FB02F2 		mul	r2, r3, r2
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  2061              		.loc 1 482 30 is_stmt 0 view .LVU715
  2062 03b8 9DF82F30 		ldrb	r3, [sp, #47]	@ zero_extendqisi2
  482:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                     uint16_t reciprocal_alpha = (255 * 256) / color_argb.alpha;
-ARM GAS  /tmp/ccGpYpzg.s 			page 61
+ARM GAS  /tmp/ccqfI4jc.s 			page 61
 
 
  2063              		.loc 1 482 19 view .LVU716
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  2101              	.L113:
  486:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                 }
  2102              		.loc 1 486 37 view .LVU733
-ARM GAS  /tmp/ccGpYpzg.s 			page 62
+ARM GAS  /tmp/ccqfI4jc.s 			page 62
 
 
  2103              	.LBE124:
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  2141 040a 029B     		ldr	r3, [sp, #8]
  2142 040c 1D44     		add	r5, r5, r3
  2143              	.LVL176:
-ARM GAS  /tmp/ccGpYpzg.s 			page 63
+ARM GAS  /tmp/ccqfI4jc.s 			page 63
 
 
  576:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** }
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  2192              		.cfi_offset 8, -20
  2193              		.cfi_offset 9, -16
  2194              		.cfi_offset 10, -12
-ARM GAS  /tmp/ccGpYpzg.s 			page 64
+ARM GAS  /tmp/ccqfI4jc.s 			page 64
 
 
  2195              		.cfi_offset 11, -8
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  2233              		.loc 1 127 5 is_stmt 1 view .LVU773
  128:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** 
  2234              		.loc 1 128 5 view .LVU774
-ARM GAS  /tmp/ccGpYpzg.s 			page 65
+ARM GAS  /tmp/ccqfI4jc.s 			page 65
 
 
  131:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****     color_argb.red   = (color_argb.red   * color_argb.alpha) >> 8;
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  138:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****         uint32_t color32 = lv_color_to_u32(dsc->color);
  2271              		.loc 1 138 5 is_stmt 1 view .LVU793
  138:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****         uint32_t color32 = lv_color_to_u32(dsc->color);
-ARM GAS  /tmp/ccGpYpzg.s 			page 66
+ARM GAS  /tmp/ccqfI4jc.s 			page 66
 
 
  2272              		.loc 1 138 13 is_stmt 0 view .LVU794
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  140:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** 
  2313              		.loc 1 140 9 is_stmt 1 view .LVU808
  140:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** 
-ARM GAS  /tmp/ccGpYpzg.s 			page 67
+ARM GAS  /tmp/ccqfI4jc.s 			page 67
 
 
  2314              		.loc 1 140 20 is_stmt 0 view .LVU809
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  143:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                 dest_buf[x] = color32;
  2354              		.loc 1 143 32 is_stmt 1 discriminator 3 view .LVU824
  2355 00a6 0133     		adds	r3, r3, #1
-ARM GAS  /tmp/ccGpYpzg.s 			page 68
+ARM GAS  /tmp/ccqfI4jc.s 			page 68
 
 
  2356              	.LVL200:
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  2398              	.LBE131:
  2399              	.LBE130:
  152:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****             for(x = 0; x < w; x++) {
-ARM GAS  /tmp/ccGpYpzg.s 			page 69
+ARM GAS  /tmp/ccqfI4jc.s 			page 69
 
 
  2400              		.loc 1 152 28 is_stmt 1 discriminator 2 view .LVU837
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  165:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                 color_premul.red   = (color_premul.red   * color_premul.alpha) >> 8;
  2441              		.loc 1 165 17 is_stmt 1 view .LVU851
  165:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                 color_premul.red   = (color_premul.red   * color_premul.alpha) >> 8;
-ARM GAS  /tmp/ccGpYpzg.s 			page 70
+ARM GAS  /tmp/ccqfI4jc.s 			page 70
 
 
  2442              		.loc 1 165 42 is_stmt 0 view .LVU852
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  2477 0136 04AA     		add	r2, sp, #16
  2478 0138 5AF82410 		ldr	r1, [r10, r4, lsl #2]	@ unaligned
  2479 013c 0298     		ldr	r0, [sp, #8]
-ARM GAS  /tmp/ccGpYpzg.s 			page 71
+ARM GAS  /tmp/ccqfI4jc.s 			page 71
 
 
  2480 013e FFF7FEFF 		bl	lv_color_32_32_mix_premul
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  2522              		.loc 1 163 19 is_stmt 0 view .LVU883
  2523 016c 0024     		movs	r4, #0
  2524 016e F4E7     		b	.L128
-ARM GAS  /tmp/ccGpYpzg.s 			page 72
+ARM GAS  /tmp/ccqfI4jc.s 			page 72
 
 
  2525              	.LVL217:
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  2563              		.loc 1 182 80 view .LVU899
  2564 0196 1212     		asrs	r2, r2, #8
  182:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                 color_premul.green = (color_premul.green * color_premul.alpha) >> 8;
-ARM GAS  /tmp/ccGpYpzg.s 			page 73
+ARM GAS  /tmp/ccqfI4jc.s 			page 73
 
 
  2565              		.loc 1 182 36 view .LVU900
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  2605              	.L131:
  179:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c ****                 lv_color32_t color_premul = color_argb;
  2606              		.loc 1 179 26 discriminator 1 view .LVU915
-ARM GAS  /tmp/ccGpYpzg.s 			page 74
+ARM GAS  /tmp/ccqfI4jc.s 			page 74
 
 
  2607 01e0 B442     		cmp	r4, r6
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  2648              		.loc 1 191 1 view .LVU928
  2649 01f8 09B0     		add	sp, sp, #36
  2650              	.LCFI19:
-ARM GAS  /tmp/ccGpYpzg.s 			page 75
+ARM GAS  /tmp/ccqfI4jc.s 			page 75
 
 
  2651              		.cfi_def_cfa_offset 36
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  2696              		.loc 1 207 13 is_stmt 1 view .LVU939
  2697 0014 FFF7FEFF 		bl	argb8888_image_blend
  2698              	.LVL232:
-ARM GAS  /tmp/ccGpYpzg.s 			page 76
+ARM GAS  /tmp/ccqfI4jc.s 			page 76
 
 
  208:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c **** #endif
@@ -4520,27 +4520,27 @@ ARM GAS  /tmp/ccGpYpzg.s 			page 1
  2714              		.file 9 "Drivers/lvgl/src/draw/sw/blend/../../../misc/../font/../draw/../misc/lv_color.h"
  2715              		.file 10 "Drivers/lvgl/src/draw/sw/blend/../../../misc/lv_style.h"
  2716              		.file 11 "Drivers/lvgl/src/draw/sw/blend/../../../misc/../font/../draw/../misc/lv_color_op.h"
-ARM GAS  /tmp/ccGpYpzg.s 			page 77
+ARM GAS  /tmp/ccqfI4jc.s 			page 77
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_draw_sw_blend_to_argb8888_premultiplied.c
-     /tmp/ccGpYpzg.s:21     .text.lv_color_mix_with_alpha_cache_init:00000000 $t
-     /tmp/ccGpYpzg.s:26     .text.lv_color_mix_with_alpha_cache_init:00000000 lv_color_mix_with_alpha_cache_init
-     /tmp/ccGpYpzg.s:101    .text.lv_color_32_32_mix_premul:00000000 $t
-     /tmp/ccGpYpzg.s:106    .text.lv_color_32_32_mix_premul:00000000 lv_color_32_32_mix_premul
-     /tmp/ccGpYpzg.s:315    .text.blend_non_normal_pixel_premultiplied:00000000 $t
-     /tmp/ccGpYpzg.s:320    .text.blend_non_normal_pixel_premultiplied:00000000 blend_non_normal_pixel_premultiplied
-     /tmp/ccGpYpzg.s:358    .text.blend_non_normal_pixel_premultiplied:0000001c $d
-     /tmp/ccGpYpzg.s:362    .text.blend_non_normal_pixel_premultiplied:00000020 $t
-     /tmp/ccGpYpzg.s:542    .text.argb8888_image_blend:00000000 $t
-     /tmp/ccGpYpzg.s:547    .text.argb8888_image_blend:00000000 argb8888_image_blend
-     /tmp/ccGpYpzg.s:1284   .text.argb8888_premultiplied_image_blend:00000000 $t
-     /tmp/ccGpYpzg.s:1289   .text.argb8888_premultiplied_image_blend:00000000 argb8888_premultiplied_image_blend
-     /tmp/ccGpYpzg.s:2171   .text.lv_draw_sw_blend_color_to_argb8888_premultiplied:00000000 $t
-     /tmp/ccGpYpzg.s:2177   .text.lv_draw_sw_blend_color_to_argb8888_premultiplied:00000000 lv_draw_sw_blend_color_to_argb8888_premultiplied
-     /tmp/ccGpYpzg.s:2661   .text.lv_draw_sw_blend_image_to_argb8888_premultiplied:00000000 $t
-     /tmp/ccGpYpzg.s:2667   .text.lv_draw_sw_blend_image_to_argb8888_premultiplied:00000000 lv_draw_sw_blend_image_to_argb8888_premultiplied
+     /tmp/ccqfI4jc.s:21     .text.lv_color_mix_with_alpha_cache_init:00000000 $t
+     /tmp/ccqfI4jc.s:26     .text.lv_color_mix_with_alpha_cache_init:00000000 lv_color_mix_with_alpha_cache_init
+     /tmp/ccqfI4jc.s:101    .text.lv_color_32_32_mix_premul:00000000 $t
+     /tmp/ccqfI4jc.s:106    .text.lv_color_32_32_mix_premul:00000000 lv_color_32_32_mix_premul
+     /tmp/ccqfI4jc.s:315    .text.blend_non_normal_pixel_premultiplied:00000000 $t
+     /tmp/ccqfI4jc.s:320    .text.blend_non_normal_pixel_premultiplied:00000000 blend_non_normal_pixel_premultiplied
+     /tmp/ccqfI4jc.s:358    .text.blend_non_normal_pixel_premultiplied:0000001c $d
+     /tmp/ccqfI4jc.s:362    .text.blend_non_normal_pixel_premultiplied:00000020 $t
+     /tmp/ccqfI4jc.s:542    .text.argb8888_image_blend:00000000 $t
+     /tmp/ccqfI4jc.s:547    .text.argb8888_image_blend:00000000 argb8888_image_blend
+     /tmp/ccqfI4jc.s:1284   .text.argb8888_premultiplied_image_blend:00000000 $t
+     /tmp/ccqfI4jc.s:1289   .text.argb8888_premultiplied_image_blend:00000000 argb8888_premultiplied_image_blend
+     /tmp/ccqfI4jc.s:2171   .text.lv_draw_sw_blend_color_to_argb8888_premultiplied:00000000 $t
+     /tmp/ccqfI4jc.s:2177   .text.lv_draw_sw_blend_color_to_argb8888_premultiplied:00000000 lv_draw_sw_blend_color_to_argb8888_premultiplied
+     /tmp/ccqfI4jc.s:2661   .text.lv_draw_sw_blend_image_to_argb8888_premultiplied:00000000 $t
+     /tmp/ccqfI4jc.s:2667   .text.lv_draw_sw_blend_image_to_argb8888_premultiplied:00000000 lv_draw_sw_blend_image_to_argb8888_premultiplied
 
 UNDEFINED SYMBOLS
 lv_memset

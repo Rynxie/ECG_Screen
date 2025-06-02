@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccf9QuAd.s 			page 1
+ARM GAS  /tmp/ccGVQGsk.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
   28:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** /* Includes ------------------------------------------------------------------*/
   29:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** #include "stm32746g_discovery.h"
   30:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** 
-ARM GAS  /tmp/ccf9QuAd.s 			page 2
+ARM GAS  /tmp/ccGVQGsk.s 			page 2
 
 
   31:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** /** @addtogroup BSP
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
   85:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** const uint16_t BUTTON_PIN[BUTTONn] = {WAKEUP_BUTTON_PIN,
   86:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****                                       TAMPER_BUTTON_PIN,
   87:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****                                       KEY_BUTTON_PIN};
-ARM GAS  /tmp/ccf9QuAd.s 			page 3
+ARM GAS  /tmp/ccGVQGsk.s 			page 3
 
 
   88:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  142:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** uint8_t         CAMERA_IO_Read(uint8_t Addr, uint8_t Reg);
  143:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** 
  144:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** /* I2C EEPROM IO function */
-ARM GAS  /tmp/ccf9QuAd.s 			page 4
+ARM GAS  /tmp/ccGVQGsk.s 			page 4
 
 
  145:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** void                EEPROM_IO_Init(void);
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  199:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   * @param  Led: LED to be configured. 
  200:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   *          This parameter can be one of the following values:
  201:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   *            @arg  LED1
-ARM GAS  /tmp/ccf9QuAd.s 			page 5
+ARM GAS  /tmp/ccGVQGsk.s 			page 5
 
 
  202:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   * @note Led DeInit does not disable the GPIO clock
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  256:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** 
  257:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** /**
  258:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   * @brief  Toggles the selected LED.
-ARM GAS  /tmp/ccf9QuAd.s 			page 6
+ARM GAS  /tmp/ccGVQGsk.s 			page 6
 
 
  259:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   * @param  Led: LED to be toggled
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  313:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****     gpio_init_structure.Pull = GPIO_NOPULL;
  314:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****     gpio_init_structure.Speed = GPIO_SPEED_FAST;
  315:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****     
-ARM GAS  /tmp/ccf9QuAd.s 			page 7
+ARM GAS  /tmp/ccGVQGsk.s 			page 7
 
 
  316:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****     if(Button != BUTTON_WAKEUP)
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  370:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   return HAL_GPIO_ReadPin(BUTTON_PORT[Button], BUTTON_PIN[Button]);
  371:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** }
  372:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** 
-ARM GAS  /tmp/ccf9QuAd.s 			page 8
+ARM GAS  /tmp/ccGVQGsk.s 			page 8
 
 
  373:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** /**
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  427:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   HAL_UART_DeInit(huart);
  428:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** 
  429:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   /* Enable USART clock */
-ARM GAS  /tmp/ccf9QuAd.s 			page 9
+ARM GAS  /tmp/ccGVQGsk.s 			page 9
 
 
  430:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   DISCOVERY_COMx_CLK_DISABLE(COM);
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  462:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****     gpio_init_structure.Pin = DISCOVERY_AUDIO_I2Cx_SCL_PIN;
  463:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****     gpio_init_structure.Mode = GPIO_MODE_AF_OD;
  464:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****     gpio_init_structure.Pull = GPIO_NOPULL;
-ARM GAS  /tmp/ccf9QuAd.s 			page 10
+ARM GAS  /tmp/ccGVQGsk.s 			page 10
 
 
  465:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****     gpio_init_structure.Speed = GPIO_SPEED_FAST;
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
   69 001e 4FF48073 		mov	r3, #256
   70 0022 0593     		str	r3, [sp, #20]
  501:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****     gpio_init_structure.Mode = GPIO_MODE_AF_OD;
-ARM GAS  /tmp/ccf9QuAd.s 			page 11
+ARM GAS  /tmp/ccGVQGsk.s 			page 11
 
 
   71              		.loc 1 501 5 is_stmt 1 view .LVU13
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  113 0056 236C     		ldr	r3, [r4, #64]
  114 0058 03F40013 		and	r3, r3, #2097152
  115 005c 0493     		str	r3, [sp, #16]
-ARM GAS  /tmp/ccf9QuAd.s 			page 12
+ARM GAS  /tmp/ccGVQGsk.s 			page 12
 
 
  116              		.loc 1 513 5 view .LVU30
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  154              		@ sp needed
  155 0092 F0BD     		pop	{r4, r5, r6, r7, pc}
  156              	.LVL8:
-ARM GAS  /tmp/ccf9QuAd.s 			page 13
+ARM GAS  /tmp/ccGVQGsk.s 			page 13
 
 
  157              	.L5:
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  195 00ba 0993     		str	r3, [sp, #36]
  467:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** 
  196              		.loc 1 467 5 is_stmt 1 view .LVU55
-ARM GAS  /tmp/ccf9QuAd.s 			page 14
+ARM GAS  /tmp/ccGVQGsk.s 			page 14
 
 
  197 00bc 05AF     		add	r7, sp, #20
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  238 00f8 2A46     		mov	r2, r5
  239 00fa 0F21     		movs	r1, #15
  240 00fc 4820     		movs	r0, #72
-ARM GAS  /tmp/ccf9QuAd.s 			page 15
+ARM GAS  /tmp/ccGVQGsk.s 			page 15
 
 
  241 00fe FFF7FEFF 		bl	HAL_NVIC_SetPriority
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  286              		.cfi_offset 14, -4
  287 0002 0446     		mov	r4, r0
  538:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   if(HAL_I2C_GetState(i2c_handler) == HAL_I2C_STATE_RESET)
-ARM GAS  /tmp/ccf9QuAd.s 			page 16
+ARM GAS  /tmp/ccGVQGsk.s 			page 16
 
 
  288              		.loc 1 538 3 is_stmt 1 view .LVU74
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  556:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****     i2c_handler->Init.NoStretchMode    = I2C_NOSTRETCH_DISABLE;
  325              		.loc 1 556 5 is_stmt 1 view .LVU93
  326              		.loc 1 556 40 is_stmt 0 view .LVU94
-ARM GAS  /tmp/ccf9QuAd.s 			page 17
+ARM GAS  /tmp/ccGVQGsk.s 			page 17
 
 
  327 0026 2362     		str	r3, [r4, #32]
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  573:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   */
  574:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** static HAL_StatusTypeDef I2Cx_ReadMultiple(I2C_HandleTypeDef *i2c_handler,
  575:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****                                            uint8_t Addr,
-ARM GAS  /tmp/ccf9QuAd.s 			page 18
+ARM GAS  /tmp/ccGVQGsk.s 			page 18
 
 
  576:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****                                            uint16_t Reg,
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  630:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   * @retval HAL status
  631:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   */
  632:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** static HAL_StatusTypeDef I2Cx_IsDeviceReady(I2C_HandleTypeDef *i2c_handler, uint16_t DevAddress, ui
-ARM GAS  /tmp/ccf9QuAd.s 			page 19
+ARM GAS  /tmp/ccGVQGsk.s 			page 19
 
 
  633:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** { 
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  610:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   HAL_StatusTypeDef status = HAL_OK;
  402              		.loc 1 610 1 is_stmt 0 view .LVU107
  403 0000 70B5     		push	{r4, r5, r6, lr}
-ARM GAS  /tmp/ccf9QuAd.s 			page 20
+ARM GAS  /tmp/ccGVQGsk.s 			page 20
 
 
  404              	.LCFI6:
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  619:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   }
  450              		.loc 1 619 5 is_stmt 0 view .LVU116
  451 002a FFF7FEFF 		bl	I2Cx_Error
-ARM GAS  /tmp/ccf9QuAd.s 			page 21
+ARM GAS  /tmp/ccGVQGsk.s 			page 21
 
 
  452              	.LVL30:
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  591:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** }
  501              		.loc 1 591 3 is_stmt 1 view .LVU124
  592:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** 
-ARM GAS  /tmp/ccf9QuAd.s 			page 22
+ARM GAS  /tmp/ccGVQGsk.s 			page 22
 
 
  502              		.loc 1 592 1 is_stmt 0 view .LVU125
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  551              		.cfi_endproc
  552              	.LFE156:
  554              		.section	.text.BSP_GetVersion,"ax",%progbits
-ARM GAS  /tmp/ccf9QuAd.s 			page 23
+ARM GAS  /tmp/ccGVQGsk.s 			page 23
 
 
  555              		.align	1
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  603              		.cfi_def_cfa_offset 12
  604              		.cfi_offset 4, -12
  605              		.cfi_offset 5, -8
-ARM GAS  /tmp/ccf9QuAd.s 			page 24
+ARM GAS  /tmp/ccGVQGsk.s 			page 24
 
 
  606              		.cfi_offset 14, -4
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  644 002a 074C     		ldr	r4, .L38+4
  645 002c 01A9     		add	r1, sp, #4
  646 002e 2046     		mov	r0, r4
-ARM GAS  /tmp/ccf9QuAd.s 			page 25
+ARM GAS  /tmp/ccGVQGsk.s 			page 25
 
 
  647              	.LVL42:
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  694              	.LCFI18:
  695              		.cfi_def_cfa_offset 8
  696              		.cfi_offset 4, -8
-ARM GAS  /tmp/ccf9QuAd.s 			page 26
+ARM GAS  /tmp/ccGVQGsk.s 			page 26
 
 
  697              		.cfi_offset 14, -4
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  745              		@ args = 0, pretend = 0, frame = 0
  746              		@ frame_needed = 0, uses_anonymous_args = 0
  230:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** 
-ARM GAS  /tmp/ccf9QuAd.s 			page 27
+ARM GAS  /tmp/ccGVQGsk.s 			page 27
 
 
  747              		.loc 1 230 3 view .LVU175
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  793              		.loc 1 250 3 view .LVU185
  250:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   {
  794              		.loc 1 250 6 is_stmt 0 view .LVU186
-ARM GAS  /tmp/ccf9QuAd.s 			page 28
+ARM GAS  /tmp/ccGVQGsk.s 			page 28
 
 
  795 0000 00B1     		cbz	r0, .L64
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  842              	.L73:
  265:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   GPIO_TypeDef*     gpio_led;
  843              		.loc 1 265 1 view .LVU196
-ARM GAS  /tmp/ccf9QuAd.s 			page 29
+ARM GAS  /tmp/ccGVQGsk.s 			page 29
 
 
  844 0004 08B5     		push	{r3, lr}
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  297:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   
  893              		.loc 1 297 3 view .LVU204
  297:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   
-ARM GAS  /tmp/ccf9QuAd.s 			page 30
+ARM GAS  /tmp/ccGVQGsk.s 			page 30
 
 
  894              		.loc 1 297 3 view .LVU205
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  933              		.cfi_def_cfa_offset 12
  934              		@ sp needed
  935 0026 30BD     		pop	{r4, r5, pc}
-ARM GAS  /tmp/ccf9QuAd.s 			page 31
+ARM GAS  /tmp/ccGVQGsk.s 			page 31
 
 
  936              	.LVL65:
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  297:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   
  976              		.loc 1 297 3 is_stmt 0 discriminator 4 view .LVU235
  977 0054 019B     		ldr	r3, [sp, #4]
-ARM GAS  /tmp/ccf9QuAd.s 			page 32
+ARM GAS  /tmp/ccGVQGsk.s 			page 32
 
 
  978              	.LBE9:
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  1016 007e 0393     		str	r3, [sp, #12]
  313:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****     gpio_init_structure.Speed = GPIO_SPEED_FAST;
  1017              		.loc 1 313 5 is_stmt 1 view .LVU252
-ARM GAS  /tmp/ccf9QuAd.s 			page 33
+ARM GAS  /tmp/ccGVQGsk.s 			page 33
 
 
  313:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****     gpio_init_structure.Speed = GPIO_SPEED_FAST;
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  322:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****     }
  1058              		.loc 1 322 7 is_stmt 1 view .LVU267
  322:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****     }
-ARM GAS  /tmp/ccf9QuAd.s 			page 34
+ARM GAS  /tmp/ccGVQGsk.s 			page 34
 
 
  1059              		.loc 1 322 32 is_stmt 0 view .LVU268
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  1108              	.LVL74:
  351:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****     HAL_GPIO_DeInit(BUTTON_PORT[Button], gpio_init_structure.Pin);
  1109              		.loc 1 351 5 is_stmt 0 view .LVU276
-ARM GAS  /tmp/ccf9QuAd.s 			page 35
+ARM GAS  /tmp/ccGVQGsk.s 			page 35
 
 
  1110 0014 FFF7FEFF 		bl	HAL_NVIC_DisableIRQ
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  1159 0008 034B     		ldr	r3, .L96+4
  1160 000a 53F82000 		ldr	r0, [r3, r0, lsl #2]
  1161              	.LVL79:
-ARM GAS  /tmp/ccf9QuAd.s 			page 36
+ARM GAS  /tmp/ccGVQGsk.s 			page 36
 
 
  370:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** }
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  388:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   DISCOVERY_COMx_RX_GPIO_CLK_ENABLE(COM);
  1210              		.loc 1 388 3 discriminator 1 view .LVU292
  388:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   DISCOVERY_COMx_RX_GPIO_CLK_ENABLE(COM);
-ARM GAS  /tmp/ccf9QuAd.s 			page 37
+ARM GAS  /tmp/ccGVQGsk.s 			page 37
 
 
  1211              		.loc 1 388 3 discriminator 1 view .LVU293
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  392:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** 
  1248              		.loc 1 392 3 view .LVU311
  392:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** 
-ARM GAS  /tmp/ccf9QuAd.s 			page 38
+ARM GAS  /tmp/ccGVQGsk.s 			page 38
 
 
  1249              		.loc 1 392 3 view .LVU312
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  399:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   HAL_GPIO_Init(COM_TX_PORT[COM], &gpio_init_structure);
  1286              		.loc 1 399 3 is_stmt 1 view .LVU330
  399:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   HAL_GPIO_Init(COM_TX_PORT[COM], &gpio_init_structure);
-ARM GAS  /tmp/ccf9QuAd.s 			page 39
+ARM GAS  /tmp/ccGVQGsk.s 			page 39
 
 
  1287              		.loc 1 399 33 is_stmt 0 view .LVU331
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  411:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** 
  1327              		.loc 1 411 1 is_stmt 0 view .LVU346
  1328 0092 08B0     		add	sp, sp, #32
-ARM GAS  /tmp/ccf9QuAd.s 			page 40
+ARM GAS  /tmp/ccGVQGsk.s 			page 40
 
 
  1329              	.LCFI34:
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  1377              		.loc 1 430 3 view .LVU354
  1378 0012 24B9     		cbnz	r4, .L104
  430:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** 
-ARM GAS  /tmp/ccf9QuAd.s 			page 41
+ARM GAS  /tmp/ccGVQGsk.s 			page 41
 
 
  1379              		.loc 1 430 3 is_stmt 0 discriminator 1 view .LVU355
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  665:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** }
  1419              		.loc 1 665 1 is_stmt 0 view .LVU360
  1420 0008 08BD     		pop	{r3, pc}
-ARM GAS  /tmp/ccf9QuAd.s 			page 42
+ARM GAS  /tmp/ccGVQGsk.s 			page 42
 
 
  1421              	.L112:
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  1461              		.loc 1 683 1 is_stmt 0 view .LVU364
  1462 0000 00B5     		push	{lr}
  1463              	.LCFI37:
-ARM GAS  /tmp/ccf9QuAd.s 			page 43
+ARM GAS  /tmp/ccGVQGsk.s 			page 43
 
 
  1464              		.cfi_def_cfa_offset 4
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  1510              		.cfi_endproc
  1511              	.LFE160:
  1513              		.section	.text.AUDIO_IO_Read,"ax",%progbits
-ARM GAS  /tmp/ccf9QuAd.s 			page 44
+ARM GAS  /tmp/ccGVQGsk.s 			page 44
 
 
  1514              		.align	1
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  1555              		.loc 1 705 10 is_stmt 0 view .LVU385
  1556 001e BDF80E30 		ldrh	r3, [sp, #14]
  1557              	.LVL105:
-ARM GAS  /tmp/ccf9QuAd.s 			page 45
+ARM GAS  /tmp/ccGVQGsk.s 			page 45
 
 
  706:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  1599              		.cfi_offset 3, -8
  1600              		.cfi_offset 14, -4
  721:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   HAL_Delay(Delay);
-ARM GAS  /tmp/ccf9QuAd.s 			page 46
+ARM GAS  /tmp/ccGVQGsk.s 			page 46
 
 
  1601              		.loc 1 721 3 is_stmt 1 view .LVU394
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  1647              	CAMERA_IO_Write:
  1648              	.LVL110:
  1649              	.LFB164:
-ARM GAS  /tmp/ccf9QuAd.s 			page 47
+ARM GAS  /tmp/ccGVQGsk.s 			page 47
 
 
  734:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** 
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  1692              	.LFE164:
  1694              		.section	.text.CAMERA_IO_Read,"ax",%progbits
  1695              		.align	1
-ARM GAS  /tmp/ccf9QuAd.s 			page 48
+ARM GAS  /tmp/ccGVQGsk.s 			page 48
 
 
  1696              		.global	CAMERA_IO_Read
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  1736 001e 9DF80F00 		ldrb	r0, [sp, #15]	@ zero_extendqisi2
  1737 0022 05B0     		add	sp, sp, #20
  1738              	.LCFI50:
-ARM GAS  /tmp/ccf9QuAd.s 			page 49
+ARM GAS  /tmp/ccGVQGsk.s 			page 49
 
 
  1739              		.cfi_def_cfa_offset 4
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  772:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** /******************************** LINK I2C EEPROM *****************************/
  773:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** 
  774:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** /**
-ARM GAS  /tmp/ccf9QuAd.s 			page 50
+ARM GAS  /tmp/ccGVQGsk.s 			page 50
 
 
  775:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   * @brief  Initializes peripherals used by the I2C EEPROM driver.
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  1824              	.LCFI53:
  1825              		.cfi_def_cfa_offset 4
  1826              		.cfi_offset 14, -4
-ARM GAS  /tmp/ccf9QuAd.s 			page 51
+ARM GAS  /tmp/ccGVQGsk.s 			page 51
 
 
  1827 0002 83B0     		sub	sp, sp, #12
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  804:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** HAL_StatusTypeDef EEPROM_IO_ReadData(uint16_t DevAddress, uint16_t MemAddress, uint8_t* pBuffer, ui
  805:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** {
  1872              		.loc 1 805 1 is_stmt 1 view -0
-ARM GAS  /tmp/ccf9QuAd.s 			page 52
+ARM GAS  /tmp/ccGVQGsk.s 			page 52
 
 
  1873              		.cfi_startproc
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  809:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** /**
  810:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   * @brief  Checks if target device is ready for communication. 
  811:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   * @note   This function is used with Memory devices
-ARM GAS  /tmp/ccf9QuAd.s 			page 53
+ARM GAS  /tmp/ccGVQGsk.s 			page 53
 
 
  812:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c ****   * @param  DevAddress: Target device address
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  1965              		.loc 1 828 1 is_stmt 1 view -0
  1966              		.cfi_startproc
  1967              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccf9QuAd.s 			page 54
+ARM GAS  /tmp/ccGVQGsk.s 			page 54
 
 
  1968              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  2011 0008 0123     		movs	r3, #1
  2012 000a 0193     		str	r3, [sp, #4]
  2013 000c 0DF10F02 		add	r2, sp, #15
-ARM GAS  /tmp/ccf9QuAd.s 			page 55
+ARM GAS  /tmp/ccGVQGsk.s 			page 55
 
 
  2014              	.LVL141:
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  2060 0002 85B0     		sub	sp, sp, #20
  2061              	.LCFI65:
  2062              		.cfi_def_cfa_offset 24
-ARM GAS  /tmp/ccf9QuAd.s 			page 56
+ARM GAS  /tmp/ccGVQGsk.s 			page 56
 
 
  2063 0004 0A46     		mov	r2, r1
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  865:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.c **** {
  2106              		.loc 1 865 1 is_stmt 1 view -0
  2107              		.cfi_startproc
-ARM GAS  /tmp/ccf9QuAd.s 			page 57
+ARM GAS  /tmp/ccGVQGsk.s 			page 57
 
 
  2108              		@ args = 0, pretend = 0, frame = 0
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  2165              		.section	.data.COM_RX_PORT,"aw"
  2166              		.align	2
  2169              	COM_RX_PORT:
-ARM GAS  /tmp/ccf9QuAd.s 			page 58
+ARM GAS  /tmp/ccGVQGsk.s 			page 58
 
 
  2170 0000 00040240 		.word	1073873920
@@ -3471,137 +3471,137 @@ ARM GAS  /tmp/ccf9QuAd.s 			page 1
  2229              		.file 10 "Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.h"
  2230              		.file 11 "Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h"
  2231              		.file 12 "Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h"
-ARM GAS  /tmp/ccf9QuAd.s 			page 59
+ARM GAS  /tmp/ccGVQGsk.s 			page 59
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32746g_discovery.c
-     /tmp/ccf9QuAd.s:21     .text.I2Cx_MspInit:00000000 $t
-     /tmp/ccf9QuAd.s:26     .text.I2Cx_MspInit:00000000 I2Cx_MspInit
-     /tmp/ccf9QuAd.s:261    .text.I2Cx_MspInit:0000011c $d
-     /tmp/ccf9QuAd.s:2134   .bss.hI2cAudioHandler:00000000 hI2cAudioHandler
-     /tmp/ccf9QuAd.s:269    .text.I2Cx_Init:00000000 $t
-     /tmp/ccf9QuAd.s:274    .text.I2Cx_Init:00000000 I2Cx_Init
-     /tmp/ccf9QuAd.s:349    .text.I2Cx_Init:0000003c $d
-     /tmp/ccf9QuAd.s:357    .text.I2Cx_Error:00000000 $t
-     /tmp/ccf9QuAd.s:362    .text.I2Cx_Error:00000000 I2Cx_Error
-     /tmp/ccf9QuAd.s:390    .text.I2Cx_WriteMultiple:00000000 $t
-     /tmp/ccf9QuAd.s:395    .text.I2Cx_WriteMultiple:00000000 I2Cx_WriteMultiple
-     /tmp/ccf9QuAd.s:458    .text.I2Cx_ReadMultiple:00000000 $t
-     /tmp/ccf9QuAd.s:463    .text.I2Cx_ReadMultiple:00000000 I2Cx_ReadMultiple
-     /tmp/ccf9QuAd.s:526    .text.I2Cx_IsDeviceReady:00000000 $t
-     /tmp/ccf9QuAd.s:531    .text.I2Cx_IsDeviceReady:00000000 I2Cx_IsDeviceReady
-     /tmp/ccf9QuAd.s:555    .text.BSP_GetVersion:00000000 $t
-     /tmp/ccf9QuAd.s:561    .text.BSP_GetVersion:00000000 BSP_GetVersion
-     /tmp/ccf9QuAd.s:575    .text.BSP_GetVersion:00000004 $d
-     /tmp/ccf9QuAd.s:580    .text.BSP_LED_Init:00000000 $t
-     /tmp/ccf9QuAd.s:586    .text.BSP_LED_Init:00000000 BSP_LED_Init
-     /tmp/ccf9QuAd.s:666    .text.BSP_LED_Init:00000044 $d
-     /tmp/ccf9QuAd.s:672    .text.BSP_LED_DeInit:00000000 $t
-     /tmp/ccf9QuAd.s:678    .text.BSP_LED_DeInit:00000000 BSP_LED_DeInit
-     /tmp/ccf9QuAd.s:729    .text.BSP_LED_DeInit:00000024 $d
-     /tmp/ccf9QuAd.s:734    .text.BSP_LED_On:00000000 $t
-     /tmp/ccf9QuAd.s:740    .text.BSP_LED_On:00000000 BSP_LED_On
-     /tmp/ccf9QuAd.s:774    .text.BSP_LED_On:00000014 $d
-     /tmp/ccf9QuAd.s:779    .text.BSP_LED_Off:00000000 $t
-     /tmp/ccf9QuAd.s:785    .text.BSP_LED_Off:00000000 BSP_LED_Off
-     /tmp/ccf9QuAd.s:819    .text.BSP_LED_Off:00000014 $d
-     /tmp/ccf9QuAd.s:824    .text.BSP_LED_Toggle:00000000 $t
-     /tmp/ccf9QuAd.s:830    .text.BSP_LED_Toggle:00000000 BSP_LED_Toggle
-     /tmp/ccf9QuAd.s:863    .text.BSP_LED_Toggle:00000010 $d
-     /tmp/ccf9QuAd.s:868    .text.BSP_PB_Init:00000000 $t
-     /tmp/ccf9QuAd.s:874    .text.BSP_PB_Init:00000000 BSP_PB_Init
-     /tmp/ccf9QuAd.s:1066   .text.BSP_PB_Init:000000bc $d
-     /tmp/ccf9QuAd.s:2199   .rodata.BUTTON_PIN:00000000 BUTTON_PIN
-     /tmp/ccf9QuAd.s:2208   .data.BUTTON_PORT:00000000 BUTTON_PORT
-     /tmp/ccf9QuAd.s:2190   .rodata.BUTTON_IRQn:00000000 BUTTON_IRQn
-     /tmp/ccf9QuAd.s:1074   .text.BSP_PB_DeInit:00000000 $t
-     /tmp/ccf9QuAd.s:1080   .text.BSP_PB_DeInit:00000000 BSP_PB_DeInit
-     /tmp/ccf9QuAd.s:1129   .text.BSP_PB_DeInit:00000028 $d
-     /tmp/ccf9QuAd.s:1136   .text.BSP_PB_GetState:00000000 $t
-     /tmp/ccf9QuAd.s:1142   .text.BSP_PB_GetState:00000000 BSP_PB_GetState
-     /tmp/ccf9QuAd.s:1170   .text.BSP_PB_GetState:00000014 $d
-     /tmp/ccf9QuAd.s:1176   .text.BSP_COM_Init:00000000 $t
-     /tmp/ccf9QuAd.s:1182   .text.BSP_COM_Init:00000000 BSP_COM_Init
-     /tmp/ccf9QuAd.s:1338   .text.BSP_COM_Init:00000098 $d
-     /tmp/ccf9QuAd.s:2176   .data.COM_TX_PORT:00000000 COM_TX_PORT
-     /tmp/ccf9QuAd.s:2169   .data.COM_RX_PORT:00000000 COM_RX_PORT
-     /tmp/ccf9QuAd.s:2183   .data.COM_USART:00000000 COM_USART
-     /tmp/ccf9QuAd.s:1346   .text.BSP_COM_DeInit:00000000 $t
-     /tmp/ccf9QuAd.s:1352   .text.BSP_COM_DeInit:00000000 BSP_COM_DeInit
-     /tmp/ccf9QuAd.s:1392   .text.BSP_COM_DeInit:00000020 $d
-     /tmp/ccf9QuAd.s:1398   .text.AUDIO_IO_Init:00000000 $t
-ARM GAS  /tmp/ccf9QuAd.s 			page 60
+     /tmp/ccGVQGsk.s:21     .text.I2Cx_MspInit:00000000 $t
+     /tmp/ccGVQGsk.s:26     .text.I2Cx_MspInit:00000000 I2Cx_MspInit
+     /tmp/ccGVQGsk.s:261    .text.I2Cx_MspInit:0000011c $d
+     /tmp/ccGVQGsk.s:2134   .bss.hI2cAudioHandler:00000000 hI2cAudioHandler
+     /tmp/ccGVQGsk.s:269    .text.I2Cx_Init:00000000 $t
+     /tmp/ccGVQGsk.s:274    .text.I2Cx_Init:00000000 I2Cx_Init
+     /tmp/ccGVQGsk.s:349    .text.I2Cx_Init:0000003c $d
+     /tmp/ccGVQGsk.s:357    .text.I2Cx_Error:00000000 $t
+     /tmp/ccGVQGsk.s:362    .text.I2Cx_Error:00000000 I2Cx_Error
+     /tmp/ccGVQGsk.s:390    .text.I2Cx_WriteMultiple:00000000 $t
+     /tmp/ccGVQGsk.s:395    .text.I2Cx_WriteMultiple:00000000 I2Cx_WriteMultiple
+     /tmp/ccGVQGsk.s:458    .text.I2Cx_ReadMultiple:00000000 $t
+     /tmp/ccGVQGsk.s:463    .text.I2Cx_ReadMultiple:00000000 I2Cx_ReadMultiple
+     /tmp/ccGVQGsk.s:526    .text.I2Cx_IsDeviceReady:00000000 $t
+     /tmp/ccGVQGsk.s:531    .text.I2Cx_IsDeviceReady:00000000 I2Cx_IsDeviceReady
+     /tmp/ccGVQGsk.s:555    .text.BSP_GetVersion:00000000 $t
+     /tmp/ccGVQGsk.s:561    .text.BSP_GetVersion:00000000 BSP_GetVersion
+     /tmp/ccGVQGsk.s:575    .text.BSP_GetVersion:00000004 $d
+     /tmp/ccGVQGsk.s:580    .text.BSP_LED_Init:00000000 $t
+     /tmp/ccGVQGsk.s:586    .text.BSP_LED_Init:00000000 BSP_LED_Init
+     /tmp/ccGVQGsk.s:666    .text.BSP_LED_Init:00000044 $d
+     /tmp/ccGVQGsk.s:672    .text.BSP_LED_DeInit:00000000 $t
+     /tmp/ccGVQGsk.s:678    .text.BSP_LED_DeInit:00000000 BSP_LED_DeInit
+     /tmp/ccGVQGsk.s:729    .text.BSP_LED_DeInit:00000024 $d
+     /tmp/ccGVQGsk.s:734    .text.BSP_LED_On:00000000 $t
+     /tmp/ccGVQGsk.s:740    .text.BSP_LED_On:00000000 BSP_LED_On
+     /tmp/ccGVQGsk.s:774    .text.BSP_LED_On:00000014 $d
+     /tmp/ccGVQGsk.s:779    .text.BSP_LED_Off:00000000 $t
+     /tmp/ccGVQGsk.s:785    .text.BSP_LED_Off:00000000 BSP_LED_Off
+     /tmp/ccGVQGsk.s:819    .text.BSP_LED_Off:00000014 $d
+     /tmp/ccGVQGsk.s:824    .text.BSP_LED_Toggle:00000000 $t
+     /tmp/ccGVQGsk.s:830    .text.BSP_LED_Toggle:00000000 BSP_LED_Toggle
+     /tmp/ccGVQGsk.s:863    .text.BSP_LED_Toggle:00000010 $d
+     /tmp/ccGVQGsk.s:868    .text.BSP_PB_Init:00000000 $t
+     /tmp/ccGVQGsk.s:874    .text.BSP_PB_Init:00000000 BSP_PB_Init
+     /tmp/ccGVQGsk.s:1066   .text.BSP_PB_Init:000000bc $d
+     /tmp/ccGVQGsk.s:2199   .rodata.BUTTON_PIN:00000000 BUTTON_PIN
+     /tmp/ccGVQGsk.s:2208   .data.BUTTON_PORT:00000000 BUTTON_PORT
+     /tmp/ccGVQGsk.s:2190   .rodata.BUTTON_IRQn:00000000 BUTTON_IRQn
+     /tmp/ccGVQGsk.s:1074   .text.BSP_PB_DeInit:00000000 $t
+     /tmp/ccGVQGsk.s:1080   .text.BSP_PB_DeInit:00000000 BSP_PB_DeInit
+     /tmp/ccGVQGsk.s:1129   .text.BSP_PB_DeInit:00000028 $d
+     /tmp/ccGVQGsk.s:1136   .text.BSP_PB_GetState:00000000 $t
+     /tmp/ccGVQGsk.s:1142   .text.BSP_PB_GetState:00000000 BSP_PB_GetState
+     /tmp/ccGVQGsk.s:1170   .text.BSP_PB_GetState:00000014 $d
+     /tmp/ccGVQGsk.s:1176   .text.BSP_COM_Init:00000000 $t
+     /tmp/ccGVQGsk.s:1182   .text.BSP_COM_Init:00000000 BSP_COM_Init
+     /tmp/ccGVQGsk.s:1338   .text.BSP_COM_Init:00000098 $d
+     /tmp/ccGVQGsk.s:2176   .data.COM_TX_PORT:00000000 COM_TX_PORT
+     /tmp/ccGVQGsk.s:2169   .data.COM_RX_PORT:00000000 COM_RX_PORT
+     /tmp/ccGVQGsk.s:2183   .data.COM_USART:00000000 COM_USART
+     /tmp/ccGVQGsk.s:1346   .text.BSP_COM_DeInit:00000000 $t
+     /tmp/ccGVQGsk.s:1352   .text.BSP_COM_DeInit:00000000 BSP_COM_DeInit
+     /tmp/ccGVQGsk.s:1392   .text.BSP_COM_DeInit:00000020 $d
+     /tmp/ccGVQGsk.s:1398   .text.AUDIO_IO_Init:00000000 $t
+ARM GAS  /tmp/ccGVQGsk.s 			page 60
 
 
-     /tmp/ccf9QuAd.s:1404   .text.AUDIO_IO_Init:00000000 AUDIO_IO_Init
-     /tmp/ccf9QuAd.s:1424   .text.AUDIO_IO_Init:0000000c $d
-     /tmp/ccf9QuAd.s:1429   .text.AUDIO_IO_DeInit:00000000 $t
-     /tmp/ccf9QuAd.s:1435   .text.AUDIO_IO_DeInit:00000000 AUDIO_IO_DeInit
-     /tmp/ccf9QuAd.s:1448   .text.AUDIO_IO_Write:00000000 $t
-     /tmp/ccf9QuAd.s:1454   .text.AUDIO_IO_Write:00000000 AUDIO_IO_Write
-     /tmp/ccf9QuAd.s:1509   .text.AUDIO_IO_Write:00000034 $d
-     /tmp/ccf9QuAd.s:1514   .text.AUDIO_IO_Read:00000000 $t
-     /tmp/ccf9QuAd.s:1520   .text.AUDIO_IO_Read:00000000 AUDIO_IO_Read
-     /tmp/ccf9QuAd.s:1577   .text.AUDIO_IO_Read:00000034 $d
-     /tmp/ccf9QuAd.s:1582   .text.AUDIO_IO_Delay:00000000 $t
-     /tmp/ccf9QuAd.s:1588   .text.AUDIO_IO_Delay:00000000 AUDIO_IO_Delay
-     /tmp/ccf9QuAd.s:1610   .text.CAMERA_IO_Init:00000000 $t
-     /tmp/ccf9QuAd.s:1616   .text.CAMERA_IO_Init:00000000 CAMERA_IO_Init
-     /tmp/ccf9QuAd.s:1636   .text.CAMERA_IO_Init:0000000c $d
-     /tmp/ccf9QuAd.s:2128   .bss.hI2cExtHandler:00000000 hI2cExtHandler
-     /tmp/ccf9QuAd.s:1641   .text.CAMERA_IO_Write:00000000 $t
-     /tmp/ccf9QuAd.s:1647   .text.CAMERA_IO_Write:00000000 CAMERA_IO_Write
-     /tmp/ccf9QuAd.s:1690   .text.CAMERA_IO_Write:00000024 $d
-     /tmp/ccf9QuAd.s:1695   .text.CAMERA_IO_Read:00000000 $t
-     /tmp/ccf9QuAd.s:1701   .text.CAMERA_IO_Read:00000000 CAMERA_IO_Read
-     /tmp/ccf9QuAd.s:1745   .text.CAMERA_IO_Read:00000028 $d
-     /tmp/ccf9QuAd.s:1750   .text.CAMERA_Delay:00000000 $t
-     /tmp/ccf9QuAd.s:1756   .text.CAMERA_Delay:00000000 CAMERA_Delay
-     /tmp/ccf9QuAd.s:1778   .text.EEPROM_IO_Init:00000000 $t
-     /tmp/ccf9QuAd.s:1784   .text.EEPROM_IO_Init:00000000 EEPROM_IO_Init
-     /tmp/ccf9QuAd.s:1804   .text.EEPROM_IO_Init:0000000c $d
-     /tmp/ccf9QuAd.s:1809   .text.EEPROM_IO_WriteData:00000000 $t
-     /tmp/ccf9QuAd.s:1815   .text.EEPROM_IO_WriteData:00000000 EEPROM_IO_WriteData
-     /tmp/ccf9QuAd.s:1858   .text.EEPROM_IO_WriteData:0000001c $d
-     /tmp/ccf9QuAd.s:1863   .text.EEPROM_IO_ReadData:00000000 $t
-     /tmp/ccf9QuAd.s:1869   .text.EEPROM_IO_ReadData:00000000 EEPROM_IO_ReadData
-     /tmp/ccf9QuAd.s:1912   .text.EEPROM_IO_ReadData:0000001c $d
-     /tmp/ccf9QuAd.s:1917   .text.EEPROM_IO_IsDeviceReady:00000000 $t
-     /tmp/ccf9QuAd.s:1923   .text.EEPROM_IO_IsDeviceReady:00000000 EEPROM_IO_IsDeviceReady
-     /tmp/ccf9QuAd.s:1952   .text.EEPROM_IO_IsDeviceReady:00000010 $d
-     /tmp/ccf9QuAd.s:1957   .text.TS_IO_Init:00000000 $t
-     /tmp/ccf9QuAd.s:1963   .text.TS_IO_Init:00000000 TS_IO_Init
-     /tmp/ccf9QuAd.s:1983   .text.TS_IO_Init:0000000c $d
-     /tmp/ccf9QuAd.s:1988   .text.TS_IO_Write:00000000 $t
-     /tmp/ccf9QuAd.s:1994   .text.TS_IO_Write:00000000 TS_IO_Write
-     /tmp/ccf9QuAd.s:2037   .text.TS_IO_Write:00000024 $d
-     /tmp/ccf9QuAd.s:2042   .text.TS_IO_Read:00000000 $t
-     /tmp/ccf9QuAd.s:2048   .text.TS_IO_Read:00000000 TS_IO_Read
-     /tmp/ccf9QuAd.s:2092   .text.TS_IO_Read:00000028 $d
-     /tmp/ccf9QuAd.s:2097   .text.TS_IO_Delay:00000000 $t
-     /tmp/ccf9QuAd.s:2103   .text.TS_IO_Delay:00000000 TS_IO_Delay
-     /tmp/ccf9QuAd.s:2125   .bss.hI2cExtHandler:00000000 $d
-     /tmp/ccf9QuAd.s:2131   .bss.hI2cAudioHandler:00000000 $d
-     /tmp/ccf9QuAd.s:2141   .rodata.COM_RX_AF:00000000 COM_RX_AF
-     /tmp/ccf9QuAd.s:2138   .rodata.COM_RX_AF:00000000 $d
-     /tmp/ccf9QuAd.s:2148   .rodata.COM_TX_AF:00000000 COM_TX_AF
-     /tmp/ccf9QuAd.s:2145   .rodata.COM_TX_AF:00000000 $d
-     /tmp/ccf9QuAd.s:2155   .rodata.COM_RX_PIN:00000000 COM_RX_PIN
-     /tmp/ccf9QuAd.s:2152   .rodata.COM_RX_PIN:00000000 $d
-     /tmp/ccf9QuAd.s:2162   .rodata.COM_TX_PIN:00000000 COM_TX_PIN
-     /tmp/ccf9QuAd.s:2159   .rodata.COM_TX_PIN:00000000 $d
-ARM GAS  /tmp/ccf9QuAd.s 			page 61
+     /tmp/ccGVQGsk.s:1404   .text.AUDIO_IO_Init:00000000 AUDIO_IO_Init
+     /tmp/ccGVQGsk.s:1424   .text.AUDIO_IO_Init:0000000c $d
+     /tmp/ccGVQGsk.s:1429   .text.AUDIO_IO_DeInit:00000000 $t
+     /tmp/ccGVQGsk.s:1435   .text.AUDIO_IO_DeInit:00000000 AUDIO_IO_DeInit
+     /tmp/ccGVQGsk.s:1448   .text.AUDIO_IO_Write:00000000 $t
+     /tmp/ccGVQGsk.s:1454   .text.AUDIO_IO_Write:00000000 AUDIO_IO_Write
+     /tmp/ccGVQGsk.s:1509   .text.AUDIO_IO_Write:00000034 $d
+     /tmp/ccGVQGsk.s:1514   .text.AUDIO_IO_Read:00000000 $t
+     /tmp/ccGVQGsk.s:1520   .text.AUDIO_IO_Read:00000000 AUDIO_IO_Read
+     /tmp/ccGVQGsk.s:1577   .text.AUDIO_IO_Read:00000034 $d
+     /tmp/ccGVQGsk.s:1582   .text.AUDIO_IO_Delay:00000000 $t
+     /tmp/ccGVQGsk.s:1588   .text.AUDIO_IO_Delay:00000000 AUDIO_IO_Delay
+     /tmp/ccGVQGsk.s:1610   .text.CAMERA_IO_Init:00000000 $t
+     /tmp/ccGVQGsk.s:1616   .text.CAMERA_IO_Init:00000000 CAMERA_IO_Init
+     /tmp/ccGVQGsk.s:1636   .text.CAMERA_IO_Init:0000000c $d
+     /tmp/ccGVQGsk.s:2128   .bss.hI2cExtHandler:00000000 hI2cExtHandler
+     /tmp/ccGVQGsk.s:1641   .text.CAMERA_IO_Write:00000000 $t
+     /tmp/ccGVQGsk.s:1647   .text.CAMERA_IO_Write:00000000 CAMERA_IO_Write
+     /tmp/ccGVQGsk.s:1690   .text.CAMERA_IO_Write:00000024 $d
+     /tmp/ccGVQGsk.s:1695   .text.CAMERA_IO_Read:00000000 $t
+     /tmp/ccGVQGsk.s:1701   .text.CAMERA_IO_Read:00000000 CAMERA_IO_Read
+     /tmp/ccGVQGsk.s:1745   .text.CAMERA_IO_Read:00000028 $d
+     /tmp/ccGVQGsk.s:1750   .text.CAMERA_Delay:00000000 $t
+     /tmp/ccGVQGsk.s:1756   .text.CAMERA_Delay:00000000 CAMERA_Delay
+     /tmp/ccGVQGsk.s:1778   .text.EEPROM_IO_Init:00000000 $t
+     /tmp/ccGVQGsk.s:1784   .text.EEPROM_IO_Init:00000000 EEPROM_IO_Init
+     /tmp/ccGVQGsk.s:1804   .text.EEPROM_IO_Init:0000000c $d
+     /tmp/ccGVQGsk.s:1809   .text.EEPROM_IO_WriteData:00000000 $t
+     /tmp/ccGVQGsk.s:1815   .text.EEPROM_IO_WriteData:00000000 EEPROM_IO_WriteData
+     /tmp/ccGVQGsk.s:1858   .text.EEPROM_IO_WriteData:0000001c $d
+     /tmp/ccGVQGsk.s:1863   .text.EEPROM_IO_ReadData:00000000 $t
+     /tmp/ccGVQGsk.s:1869   .text.EEPROM_IO_ReadData:00000000 EEPROM_IO_ReadData
+     /tmp/ccGVQGsk.s:1912   .text.EEPROM_IO_ReadData:0000001c $d
+     /tmp/ccGVQGsk.s:1917   .text.EEPROM_IO_IsDeviceReady:00000000 $t
+     /tmp/ccGVQGsk.s:1923   .text.EEPROM_IO_IsDeviceReady:00000000 EEPROM_IO_IsDeviceReady
+     /tmp/ccGVQGsk.s:1952   .text.EEPROM_IO_IsDeviceReady:00000010 $d
+     /tmp/ccGVQGsk.s:1957   .text.TS_IO_Init:00000000 $t
+     /tmp/ccGVQGsk.s:1963   .text.TS_IO_Init:00000000 TS_IO_Init
+     /tmp/ccGVQGsk.s:1983   .text.TS_IO_Init:0000000c $d
+     /tmp/ccGVQGsk.s:1988   .text.TS_IO_Write:00000000 $t
+     /tmp/ccGVQGsk.s:1994   .text.TS_IO_Write:00000000 TS_IO_Write
+     /tmp/ccGVQGsk.s:2037   .text.TS_IO_Write:00000024 $d
+     /tmp/ccGVQGsk.s:2042   .text.TS_IO_Read:00000000 $t
+     /tmp/ccGVQGsk.s:2048   .text.TS_IO_Read:00000000 TS_IO_Read
+     /tmp/ccGVQGsk.s:2092   .text.TS_IO_Read:00000028 $d
+     /tmp/ccGVQGsk.s:2097   .text.TS_IO_Delay:00000000 $t
+     /tmp/ccGVQGsk.s:2103   .text.TS_IO_Delay:00000000 TS_IO_Delay
+     /tmp/ccGVQGsk.s:2125   .bss.hI2cExtHandler:00000000 $d
+     /tmp/ccGVQGsk.s:2131   .bss.hI2cAudioHandler:00000000 $d
+     /tmp/ccGVQGsk.s:2141   .rodata.COM_RX_AF:00000000 COM_RX_AF
+     /tmp/ccGVQGsk.s:2138   .rodata.COM_RX_AF:00000000 $d
+     /tmp/ccGVQGsk.s:2148   .rodata.COM_TX_AF:00000000 COM_TX_AF
+     /tmp/ccGVQGsk.s:2145   .rodata.COM_TX_AF:00000000 $d
+     /tmp/ccGVQGsk.s:2155   .rodata.COM_RX_PIN:00000000 COM_RX_PIN
+     /tmp/ccGVQGsk.s:2152   .rodata.COM_RX_PIN:00000000 $d
+     /tmp/ccGVQGsk.s:2162   .rodata.COM_TX_PIN:00000000 COM_TX_PIN
+     /tmp/ccGVQGsk.s:2159   .rodata.COM_TX_PIN:00000000 $d
+ARM GAS  /tmp/ccGVQGsk.s 			page 61
 
 
-     /tmp/ccf9QuAd.s:2166   .data.COM_RX_PORT:00000000 $d
-     /tmp/ccf9QuAd.s:2173   .data.COM_TX_PORT:00000000 $d
-     /tmp/ccf9QuAd.s:2180   .data.COM_USART:00000000 $d
-     /tmp/ccf9QuAd.s:2187   .rodata.BUTTON_IRQn:00000000 $d
-     /tmp/ccf9QuAd.s:2196   .rodata.BUTTON_PIN:00000000 $d
-     /tmp/ccf9QuAd.s:2205   .data.BUTTON_PORT:00000000 $d
-     /tmp/ccf9QuAd.s:2217   .rodata.GPIO_PIN:00000000 GPIO_PIN
-     /tmp/ccf9QuAd.s:2214   .rodata.GPIO_PIN:00000000 $d
+     /tmp/ccGVQGsk.s:2166   .data.COM_RX_PORT:00000000 $d
+     /tmp/ccGVQGsk.s:2173   .data.COM_TX_PORT:00000000 $d
+     /tmp/ccGVQGsk.s:2180   .data.COM_USART:00000000 $d
+     /tmp/ccGVQGsk.s:2187   .rodata.BUTTON_IRQn:00000000 $d
+     /tmp/ccGVQGsk.s:2196   .rodata.BUTTON_PIN:00000000 $d
+     /tmp/ccGVQGsk.s:2205   .data.BUTTON_PORT:00000000 $d
+     /tmp/ccGVQGsk.s:2217   .rodata.GPIO_PIN:00000000 GPIO_PIN
+     /tmp/ccGVQGsk.s:2214   .rodata.GPIO_PIN:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_GPIO_Init

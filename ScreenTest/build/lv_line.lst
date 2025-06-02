@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc570KBw.s 			page 1
+ARM GAS  /tmp/ccXRgocp.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
   28:Drivers/lvgl/src/widgets/line/lv_line.c **** /**********************
   29:Drivers/lvgl/src/widgets/line/lv_line.c ****  *  STATIC PROTOTYPES
   30:Drivers/lvgl/src/widgets/line/lv_line.c ****  **********************/
-ARM GAS  /tmp/cc570KBw.s 			page 2
+ARM GAS  /tmp/ccXRgocp.s 			page 2
 
 
   31:Drivers/lvgl/src/widgets/line/lv_line.c **** static void lv_line_constructor(const lv_obj_class_t * class_p, lv_obj_t * obj);
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
   85:Drivers/lvgl/src/widgets/line/lv_line.c ****     line->y_inv = en ? 1U : 0U;
   86:Drivers/lvgl/src/widgets/line/lv_line.c **** 
   87:Drivers/lvgl/src/widgets/line/lv_line.c ****     lv_obj_invalidate(obj);
-ARM GAS  /tmp/cc570KBw.s 			page 3
+ARM GAS  /tmp/ccXRgocp.s 			page 3
 
 
   88:Drivers/lvgl/src/widgets/line/lv_line.c **** }
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  142:Drivers/lvgl/src/widgets/line/lv_line.c **** 
  143:Drivers/lvgl/src/widgets/line/lv_line.c **** static void lv_line_constructor(const lv_obj_class_t * class_p, lv_obj_t * obj)
  144:Drivers/lvgl/src/widgets/line/lv_line.c **** {
-ARM GAS  /tmp/cc570KBw.s 			page 4
+ARM GAS  /tmp/ccXRgocp.s 			page 4
 
 
  145:Drivers/lvgl/src/widgets/line/lv_line.c ****     LV_UNUSED(class_p);
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
   50 001c C3F17F63 		rsb	r3, r3, #267386880
   51 0020 03F57F23 		add	r3, r3, #1044480
   52 0024 03F6FF73 		addw	r3, r3, #4095
-ARM GAS  /tmp/cc570KBw.s 			page 5
+ARM GAS  /tmp/ccXRgocp.s 			page 5
 
 
   53              	.L3:
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  101              		.cfi_offset 10, -12
  102              		.cfi_offset 11, -8
  103              		.cfi_offset 14, -4
-ARM GAS  /tmp/cc570KBw.s 			page 6
+ARM GAS  /tmp/ccXRgocp.s 			page 6
 
 
  104 0004 97B0     		sub	sp, sp, #92
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  221:Drivers/lvgl/src/widgets/line/lv_line.c ****         }
  222:Drivers/lvgl/src/widgets/line/lv_line.c **** 
  223:Drivers/lvgl/src/widgets/line/lv_line.c ****         p->x = w;
-ARM GAS  /tmp/cc570KBw.s 			page 7
+ARM GAS  /tmp/ccXRgocp.s 			page 7
 
 
  224:Drivers/lvgl/src/widgets/line/lv_line.c ****         p->y = h;
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  133              		.cfi_restore_state
  194:Drivers/lvgl/src/widgets/line/lv_line.c ****     lv_obj_t * obj = lv_event_get_current_target(e);
  134              		.loc 1 194 5 is_stmt 1 view .LVU22
-ARM GAS  /tmp/cc570KBw.s 			page 8
+ARM GAS  /tmp/ccXRgocp.s 			page 8
 
 
  194:Drivers/lvgl/src/widgets/line/lv_line.c ****     lv_obj_t * obj = lv_event_get_current_target(e);
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  174 003a 0646     		mov	r6, r0
  175              	.LVL17:
  228:Drivers/lvgl/src/widgets/line/lv_line.c **** 
-ARM GAS  /tmp/cc570KBw.s 			page 9
+ARM GAS  /tmp/ccXRgocp.s 			page 9
 
 
  176              		.loc 1 228 30 view .LVU38
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  215              	.LVL24:
  235:Drivers/lvgl/src/widgets/line/lv_line.c **** 
  216              		.loc 1 235 17 discriminator 1 view .LVU54
-ARM GAS  /tmp/cc570KBw.s 			page 10
+ARM GAS  /tmp/ccXRgocp.s 			page 10
 
 
  217 0066 A5EB000B 		sub	fp, r5, r0
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
   12:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h **** 
   13:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h **** #ifdef __cplusplus
   14:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h **** extern "C" {
-ARM GAS  /tmp/cc570KBw.s 			page 11
+ARM GAS  /tmp/ccXRgocp.s 			page 11
 
 
   15:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h **** #endif
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
   69:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h **** 
   70:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h **** static inline int32_t lv_obj_get_style_y(const lv_obj_t * obj, lv_part_t part)
   71:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h **** {
-ARM GAS  /tmp/cc570KBw.s 			page 12
+ARM GAS  /tmp/ccXRgocp.s 			page 12
 
 
   72:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_Y);
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  126:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_TRANSFORM_ROTATION);
  127:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
  128:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h **** }
-ARM GAS  /tmp/cc570KBw.s 			page 13
+ARM GAS  /tmp/ccXRgocp.s 			page 13
 
 
  129:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h **** 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  183:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h **** 
  184:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h **** static inline int32_t lv_obj_get_style_pad_column(const lv_obj_t * obj, lv_part_t part)
  185:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h **** {
-ARM GAS  /tmp/cc570KBw.s 			page 14
+ARM GAS  /tmp/ccXRgocp.s 			page 14
 
 
  186:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_PAD_COLUMN);
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  240:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_BG_GRAD_COLOR);
  241:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h ****     return v.color;
  242:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h **** }
-ARM GAS  /tmp/cc570KBw.s 			page 15
+ARM GAS  /tmp/ccXRgocp.s 			page 15
 
 
  243:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h **** 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  297:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h **** 
  298:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h **** static inline lv_color_t lv_obj_get_style_bg_image_recolor(const lv_obj_t * obj, lv_part_t part)
  299:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h **** {
-ARM GAS  /tmp/cc570KBw.s 			page 16
+ARM GAS  /tmp/ccXRgocp.s 			page 16
 
 
  300:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_BG_IMAGE_RECOLOR);
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  354:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_BORDER_POST);
  355:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h ****     return (bool)v.num;
  356:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h **** }
-ARM GAS  /tmp/cc570KBw.s 			page 17
+ARM GAS  /tmp/ccXRgocp.s 			page 17
 
 
  357:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h **** 
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  411:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h **** 
  412:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h **** static inline lv_color_t lv_obj_get_style_shadow_color(const lv_obj_t * obj, lv_part_t part)
  413:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h **** {
-ARM GAS  /tmp/cc570KBw.s 			page 18
+ARM GAS  /tmp/ccXRgocp.s 			page 18
 
 
  414:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_SHADOW_COLOR);
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  260              		.loc 2 456 26 view .LVU70
  261 008c 0690     		str	r0, [sp, #24]
  457:Drivers/lvgl/src/widgets/line/../../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
-ARM GAS  /tmp/cc570KBw.s 			page 19
+ARM GAS  /tmp/ccXRgocp.s 			page 19
 
 
  262              		.loc 2 457 5 is_stmt 1 view .LVU71
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  208:Drivers/lvgl/src/widgets/line/lv_line.c ****         int32_t w = 0;
  301              		.loc 1 208 9 is_stmt 1 view .LVU88
  208:Drivers/lvgl/src/widgets/line/lv_line.c ****         int32_t w = 0;
-ARM GAS  /tmp/cc570KBw.s 			page 20
+ARM GAS  /tmp/ccXRgocp.s 			page 20
 
 
  302              		.loc 1 208 26 is_stmt 0 view .LVU89
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  213:Drivers/lvgl/src/widgets/line/lv_line.c ****             if(!LV_COORD_IS_PCT((int32_t)line->point_array.constant[i].x)) {
  342              		.loc 1 213 22 discriminator 1 view .LVU104
  213:Drivers/lvgl/src/widgets/line/lv_line.c ****             if(!LV_COORD_IS_PCT((int32_t)line->point_array.constant[i].x)) {
-ARM GAS  /tmp/cc570KBw.s 			page 21
+ARM GAS  /tmp/ccXRgocp.s 			page 21
 
 
  343              		.loc 1 213 28 is_stmt 0 discriminator 1 view .LVU105
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  383              		.loc 1 224 9 is_stmt 1 view .LVU119
  224:Drivers/lvgl/src/widgets/line/lv_line.c ****     }
  384              		.loc 1 224 14 is_stmt 0 view .LVU120
-ARM GAS  /tmp/cc570KBw.s 			page 22
+ARM GAS  /tmp/ccXRgocp.s 			page 22
 
 
  385 010a 4660     		str	r6, [r0, #4]
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  244:Drivers/lvgl/src/widgets/line/lv_line.c ****             int32_t w = lv_obj_get_width(obj);
  425              		.loc 1 244 40 discriminator 1 view .LVU135
  426 0130 013B     		subs	r3, r3, #1
-ARM GAS  /tmp/cc570KBw.s 			page 23
+ARM GAS  /tmp/ccXRgocp.s 			page 23
 
 
  244:Drivers/lvgl/src/widgets/line/lv_line.c ****             int32_t w = lv_obj_get_width(obj);
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  466 0162 2946     		mov	r1, r5
  467 0164 7068     		ldr	r0, [r6, #4]
  468 0166 FFF7FEFF 		bl	resolve_point_coord
-ARM GAS  /tmp/cc570KBw.s 			page 24
+ARM GAS  /tmp/ccXRgocp.s 			page 24
 
 
  469              	.LVL53:
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  507 019a 0E96     		str	r6, [sp, #56]
  256:Drivers/lvgl/src/widgets/line/lv_line.c ****             }
  508              		.loc 1 256 17 is_stmt 1 view .LVU167
-ARM GAS  /tmp/cc570KBw.s 			page 25
+ARM GAS  /tmp/ccXRgocp.s 			page 25
 
 
  256:Drivers/lvgl/src/widgets/line/lv_line.c ****             }
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  152:Drivers/lvgl/src/widgets/line/lv_line.c ****     line->point_array_is_mutable = 0;
  554              		.loc 1 152 5 is_stmt 1 view .LVU179
  152:Drivers/lvgl/src/widgets/line/lv_line.c ****     line->point_array_is_mutable = 0;
-ARM GAS  /tmp/cc570KBw.s 			page 26
+ARM GAS  /tmp/ccXRgocp.s 			page 26
 
 
  555              		.loc 1 152 23 is_stmt 0 view .LVU180
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  162:Drivers/lvgl/src/widgets/line/lv_line.c **** 
  600              		.loc 1 162 33 discriminator 2 view .LVU192
  164:Drivers/lvgl/src/widgets/line/lv_line.c ****     line->point_array.constant = points;
-ARM GAS  /tmp/cc570KBw.s 			page 27
+ARM GAS  /tmp/ccXRgocp.s 			page 27
 
 
  601              		.loc 1 164 5 view .LVU193
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  641              		.align	1
  642              		.global	lv_line_create
  643              		.syntax unified
-ARM GAS  /tmp/cc570KBw.s 			page 28
+ARM GAS  /tmp/ccXRgocp.s 			page 28
 
 
  644              		.thumb
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  686 0014 00000000 		.word	lv_line_class
  687              		.cfi_endproc
  688              	.LFE171:
-ARM GAS  /tmp/cc570KBw.s 			page 29
+ARM GAS  /tmp/ccXRgocp.s 			page 29
 
 
  690              		.section	.text.lv_line_set_points,"ax",%progbits
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  740 0002 0123     		movs	r3, #1
  741 0004 FFF7FEFF 		bl	line_set_points
  742              	.LVL77:
-ARM GAS  /tmp/cc570KBw.s 			page 30
+ARM GAS  /tmp/ccXRgocp.s 			page 30
 
 
   76:Drivers/lvgl/src/widgets/line/lv_line.c **** 
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  786 0018 80F83420 		strb	r2, [r0, #52]
   87:Drivers/lvgl/src/widgets/line/lv_line.c **** }
  787              		.loc 1 87 5 is_stmt 1 view .LVU242
-ARM GAS  /tmp/cc570KBw.s 			page 31
+ARM GAS  /tmp/ccXRgocp.s 			page 31
 
 
  788 001c FFF7FEFF 		bl	lv_obj_invalidate
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  100:Drivers/lvgl/src/widgets/line/lv_line.c **** 
  831              		.loc 1 100 1 is_stmt 0 view .LVU256
  832 0002 C06A     		ldr	r0, [r0, #44]
-ARM GAS  /tmp/cc570KBw.s 			page 32
+ARM GAS  /tmp/ccXRgocp.s 			page 32
 
 
  833              	.LVL84:
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  874 0004 7047     		bx	lr
  875              	.LVL89:
  876              	.L56:
-ARM GAS  /tmp/cc570KBw.s 			page 33
+ARM GAS  /tmp/ccXRgocp.s 			page 33
 
 
  104:Drivers/lvgl/src/widgets/line/lv_line.c **** 
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  112:Drivers/lvgl/src/widgets/line/lv_line.c **** 
  918              		.loc 1 112 5 discriminator 1 view .LVU287
  112:Drivers/lvgl/src/widgets/line/lv_line.c **** 
-ARM GAS  /tmp/cc570KBw.s 			page 34
+ARM GAS  /tmp/ccXRgocp.s 			page 34
 
 
  919              		.loc 1 112 5 discriminator 1 view .LVU288
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  961              	.L62:
  120:Drivers/lvgl/src/widgets/line/lv_line.c **** 
  962              		.loc 1 120 5 is_stmt 1 discriminator 1 view .LVU303
-ARM GAS  /tmp/cc570KBw.s 			page 35
+ARM GAS  /tmp/ccXRgocp.s 			page 35
 
 
  120:Drivers/lvgl/src/widgets/line/lv_line.c **** 
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  1004              		.loc 1 137 1 view .LVU318
  1005 0006 00F00100 		and	r0, r0, #1
  1006 000a 7047     		bx	lr
-ARM GAS  /tmp/cc570KBw.s 			page 36
+ARM GAS  /tmp/ccXRgocp.s 			page 36
 
 
  1007              	.LVL103:
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  1058              		.file 19 "Drivers/lvgl/src/widgets/line/../../core/../indev/lv_indev.h"
  1059              		.file 20 "Drivers/lvgl/src/widgets/line/../../core/lv_obj.h"
  1060              		.file 21 "Drivers/lvgl/src/widgets/line/lv_line.h"
-ARM GAS  /tmp/cc570KBw.s 			page 37
+ARM GAS  /tmp/ccXRgocp.s 			page 37
 
 
  1061              		.file 22 "Drivers/lvgl/src/widgets/line/../../core/lv_obj_pos.h"
@@ -2167,43 +2167,43 @@ ARM GAS  /tmp/cc570KBw.s 			page 1
  1064              		.file 25 "Drivers/lvgl/src/widgets/line/../../core/lv_obj_draw.h"
  1065              		.file 26 "Drivers/lvgl/src/widgets/line/../../core/lv_obj_scroll.h"
  1066              		.file 27 "Drivers/lvgl/src/widgets/line/../../core/lv_obj_event.h"
-ARM GAS  /tmp/cc570KBw.s 			page 38
+ARM GAS  /tmp/ccXRgocp.s 			page 38
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_line.c
-     /tmp/cc570KBw.s:21     .text.resolve_point_coord:00000000 $t
-     /tmp/cc570KBw.s:26     .text.resolve_point_coord:00000000 resolve_point_coord
-     /tmp/cc570KBw.s:74     .text.resolve_point_coord:00000044 $d
-     /tmp/cc570KBw.s:79     .text.lv_line_event:00000000 $t
-     /tmp/cc570KBw.s:84     .text.lv_line_event:00000000 lv_line_event
-     /tmp/cc570KBw.s:517    .text.lv_line_event:000001a4 $d
-     /tmp/cc570KBw.s:1027   .rodata.lv_line_class:00000000 lv_line_class
-     /tmp/cc570KBw.s:524    .text.lv_line_constructor:00000000 $t
-     /tmp/cc570KBw.s:529    .text.lv_line_constructor:00000000 lv_line_constructor
-     /tmp/cc570KBw.s:577    .text.line_set_points:00000000 $t
-     /tmp/cc570KBw.s:582    .text.line_set_points:00000000 line_set_points
-     /tmp/cc570KBw.s:641    .text.lv_line_create:00000000 $t
-     /tmp/cc570KBw.s:647    .text.lv_line_create:00000000 lv_line_create
-     /tmp/cc570KBw.s:686    .text.lv_line_create:00000014 $d
-     /tmp/cc570KBw.s:691    .text.lv_line_set_points:00000000 $t
-     /tmp/cc570KBw.s:697    .text.lv_line_set_points:00000000 lv_line_set_points
-     /tmp/cc570KBw.s:720    .text.lv_line_set_points_mutable:00000000 $t
-     /tmp/cc570KBw.s:726    .text.lv_line_set_points_mutable:00000000 lv_line_set_points_mutable
-     /tmp/cc570KBw.s:749    .text.lv_line_set_y_invert:00000000 $t
-     /tmp/cc570KBw.s:755    .text.lv_line_set_y_invert:00000000 lv_line_set_y_invert
-     /tmp/cc570KBw.s:809    .text.lv_line_get_points:00000000 $t
-     /tmp/cc570KBw.s:815    .text.lv_line_get_points:00000000 lv_line_get_points
-     /tmp/cc570KBw.s:848    .text.lv_line_get_point_count:00000000 $t
-     /tmp/cc570KBw.s:854    .text.lv_line_get_point_count:00000000 lv_line_get_point_count
-     /tmp/cc570KBw.s:887    .text.lv_line_is_point_array_mutable:00000000 $t
-     /tmp/cc570KBw.s:893    .text.lv_line_is_point_array_mutable:00000000 lv_line_is_point_array_mutable
-     /tmp/cc570KBw.s:927    .text.lv_line_get_points_mutable:00000000 $t
-     /tmp/cc570KBw.s:933    .text.lv_line_get_points_mutable:00000000 lv_line_get_points_mutable
-     /tmp/cc570KBw.s:979    .text.lv_line_get_y_invert:00000000 $t
-     /tmp/cc570KBw.s:985    .text.lv_line_get_y_invert:00000000 lv_line_get_y_invert
-     /tmp/cc570KBw.s:1020   .rodata.str1.4:00000000 $d
-     /tmp/cc570KBw.s:1024   .rodata.lv_line_class:00000000 $d
+     /tmp/ccXRgocp.s:21     .text.resolve_point_coord:00000000 $t
+     /tmp/ccXRgocp.s:26     .text.resolve_point_coord:00000000 resolve_point_coord
+     /tmp/ccXRgocp.s:74     .text.resolve_point_coord:00000044 $d
+     /tmp/ccXRgocp.s:79     .text.lv_line_event:00000000 $t
+     /tmp/ccXRgocp.s:84     .text.lv_line_event:00000000 lv_line_event
+     /tmp/ccXRgocp.s:517    .text.lv_line_event:000001a4 $d
+     /tmp/ccXRgocp.s:1027   .rodata.lv_line_class:00000000 lv_line_class
+     /tmp/ccXRgocp.s:524    .text.lv_line_constructor:00000000 $t
+     /tmp/ccXRgocp.s:529    .text.lv_line_constructor:00000000 lv_line_constructor
+     /tmp/ccXRgocp.s:577    .text.line_set_points:00000000 $t
+     /tmp/ccXRgocp.s:582    .text.line_set_points:00000000 line_set_points
+     /tmp/ccXRgocp.s:641    .text.lv_line_create:00000000 $t
+     /tmp/ccXRgocp.s:647    .text.lv_line_create:00000000 lv_line_create
+     /tmp/ccXRgocp.s:686    .text.lv_line_create:00000014 $d
+     /tmp/ccXRgocp.s:691    .text.lv_line_set_points:00000000 $t
+     /tmp/ccXRgocp.s:697    .text.lv_line_set_points:00000000 lv_line_set_points
+     /tmp/ccXRgocp.s:720    .text.lv_line_set_points_mutable:00000000 $t
+     /tmp/ccXRgocp.s:726    .text.lv_line_set_points_mutable:00000000 lv_line_set_points_mutable
+     /tmp/ccXRgocp.s:749    .text.lv_line_set_y_invert:00000000 $t
+     /tmp/ccXRgocp.s:755    .text.lv_line_set_y_invert:00000000 lv_line_set_y_invert
+     /tmp/ccXRgocp.s:809    .text.lv_line_get_points:00000000 $t
+     /tmp/ccXRgocp.s:815    .text.lv_line_get_points:00000000 lv_line_get_points
+     /tmp/ccXRgocp.s:848    .text.lv_line_get_point_count:00000000 $t
+     /tmp/ccXRgocp.s:854    .text.lv_line_get_point_count:00000000 lv_line_get_point_count
+     /tmp/ccXRgocp.s:887    .text.lv_line_is_point_array_mutable:00000000 $t
+     /tmp/ccXRgocp.s:893    .text.lv_line_is_point_array_mutable:00000000 lv_line_is_point_array_mutable
+     /tmp/ccXRgocp.s:927    .text.lv_line_get_points_mutable:00000000 $t
+     /tmp/ccXRgocp.s:933    .text.lv_line_get_points_mutable:00000000 lv_line_get_points_mutable
+     /tmp/ccXRgocp.s:979    .text.lv_line_get_y_invert:00000000 $t
+     /tmp/ccXRgocp.s:985    .text.lv_line_get_y_invert:00000000 lv_line_get_y_invert
+     /tmp/ccXRgocp.s:1020   .rodata.str1.4:00000000 $d
+     /tmp/ccXRgocp.s:1024   .rodata.lv_line_class:00000000 $d
 
 UNDEFINED SYMBOLS
 lv_obj_event_base

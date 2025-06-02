@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc1pb3S0.s 			page 1
+ARM GAS  /tmp/ccoTriE8.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc1pb3S0.s 			page 1
   27:Drivers/lvgl/src/stdlib/clib/lv_string_clib.c ****  *  STATIC VARIABLES
   28:Drivers/lvgl/src/stdlib/clib/lv_string_clib.c ****  **********************/
   29:Drivers/lvgl/src/stdlib/clib/lv_string_clib.c **** 
-ARM GAS  /tmp/cc1pb3S0.s 			page 2
+ARM GAS  /tmp/ccoTriE8.s 			page 2
 
 
   30:Drivers/lvgl/src/stdlib/clib/lv_string_clib.c **** /**********************
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc1pb3S0.s 			page 1
   70 0002 FFF7FEFF 		bl	memset
   71              	.LVL3:
   46:Drivers/lvgl/src/stdlib/clib/lv_string_clib.c **** }
-ARM GAS  /tmp/cc1pb3S0.s 			page 3
+ARM GAS  /tmp/ccoTriE8.s 			page 3
 
 
   72              		.loc 1 46 1 is_stmt 0 view .LVU8
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc1pb3S0.s 			page 1
  122              	.LCFI3:
  123              		.cfi_def_cfa_offset 8
  124              		.cfi_offset 3, -8
-ARM GAS  /tmp/cc1pb3S0.s 			page 4
+ARM GAS  /tmp/ccoTriE8.s 			page 4
 
 
  125              		.cfi_offset 14, -4
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc1pb3S0.s 			page 1
   64:Drivers/lvgl/src/stdlib/clib/lv_string_clib.c **** {
  174              		.loc 1 64 1 is_stmt 1 view -0
  175              		.cfi_startproc
-ARM GAS  /tmp/cc1pb3S0.s 			page 5
+ARM GAS  /tmp/ccoTriE8.s 			page 5
 
 
  176              		@ args = 0, pretend = 0, frame = 0
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc1pb3S0.s 			page 1
  226              	.LVL14:
  227              		.loc 1 70 22 view .LVU34
  228 000e 0546     		mov	r5, r0
-ARM GAS  /tmp/cc1pb3S0.s 			page 6
+ARM GAS  /tmp/ccoTriE8.s 			page 6
 
 
  229              	.LVL15:
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc1pb3S0.s 			page 1
  275              		.global	lv_strncpy
  276              		.syntax unified
  277              		.thumb
-ARM GAS  /tmp/cc1pb3S0.s 			page 7
+ARM GAS  /tmp/ccoTriE8.s 			page 7
 
 
  278              		.thumb_func
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc1pb3S0.s 			page 1
   87:Drivers/lvgl/src/stdlib/clib/lv_string_clib.c **** }
  326              		.loc 1 87 1 view .LVU57
  327 0006 08BD     		pop	{r3, pc}
-ARM GAS  /tmp/cc1pb3S0.s 			page 8
+ARM GAS  /tmp/ccoTriE8.s 			page 8
 
 
  328              		.cfi_endproc
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc1pb3S0.s 			page 1
  378              		.cfi_offset 3, -8
  379              		.cfi_offset 14, -4
   96:Drivers/lvgl/src/stdlib/clib/lv_string_clib.c ****     return strncmp(s1, s2, len);
-ARM GAS  /tmp/cc1pb3S0.s 			page 9
+ARM GAS  /tmp/ccoTriE8.s 			page 9
 
 
  380              		.loc 1 96 5 is_stmt 1 view .LVU65
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc1pb3S0.s 			page 1
  105:Drivers/lvgl/src/stdlib/clib/lv_string_clib.c **** 
  106:Drivers/lvgl/src/stdlib/clib/lv_string_clib.c ****     lv_memcpy(dst, src, len); /*do memcpy is faster than strncpy when length is known*/
  428              		.loc 1 106 5 is_stmt 1 view .LVU77
-ARM GAS  /tmp/cc1pb3S0.s 			page 10
+ARM GAS  /tmp/ccoTriE8.s 			page 10
 
 
  429 0014 2246     		mov	r2, r4
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc1pb3S0.s 			page 1
  478              	.LVL39:
  114:Drivers/lvgl/src/stdlib/clib/lv_string_clib.c ****     if(dst == NULL) return NULL;
  479              		.loc 1 114 5 is_stmt 1 view .LVU89
-ARM GAS  /tmp/cc1pb3S0.s 			page 11
+ARM GAS  /tmp/ccoTriE8.s 			page 11
 
 
  480              		.loc 1 114 7 is_stmt 0 view .LVU90
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc1pb3S0.s 			page 1
  526 0006 08BD     		pop	{r3, pc}
  527              		.cfi_endproc
  528              	.LFE15:
-ARM GAS  /tmp/cc1pb3S0.s 			page 12
+ARM GAS  /tmp/ccoTriE8.s 			page 12
 
 
  530              		.section	.text.lv_strncat,"ax",%progbits
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc1pb3S0.s 			page 1
  133:Drivers/lvgl/src/stdlib/clib/lv_string_clib.c ****     return strchr(str, c);
  579              		.loc 1 133 5 is_stmt 1 view .LVU109
  580              		.loc 1 133 12 is_stmt 0 view .LVU110
-ARM GAS  /tmp/cc1pb3S0.s 			page 13
+ARM GAS  /tmp/ccoTriE8.s 			page 13
 
 
  581 0002 FFF7FEFF 		bl	strchr
@@ -736,43 +736,43 @@ ARM GAS  /tmp/cc1pb3S0.s 			page 1
  593              		.file 5 "/usr/arm-none-eabi/include/string.h"
  594              		.file 6 "Drivers/lvgl/src/stdlib/clib/../lv_mem.h"
  595              		.file 7 "<built-in>"
-ARM GAS  /tmp/cc1pb3S0.s 			page 14
+ARM GAS  /tmp/ccoTriE8.s 			page 14
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_string_clib.c
-     /tmp/cc1pb3S0.s:21     .text.lv_memcpy:00000000 $t
-     /tmp/cc1pb3S0.s:27     .text.lv_memcpy:00000000 lv_memcpy
-     /tmp/cc1pb3S0.s:50     .text.lv_memset:00000000 $t
-     /tmp/cc1pb3S0.s:56     .text.lv_memset:00000000 lv_memset
-     /tmp/cc1pb3S0.s:78     .text.lv_memmove:00000000 $t
-     /tmp/cc1pb3S0.s:84     .text.lv_memmove:00000000 lv_memmove
-     /tmp/cc1pb3S0.s:107    .text.lv_memcmp:00000000 $t
-     /tmp/cc1pb3S0.s:113    .text.lv_memcmp:00000000 lv_memcmp
-     /tmp/cc1pb3S0.s:136    .text.lv_strlen:00000000 $t
-     /tmp/cc1pb3S0.s:142    .text.lv_strlen:00000000 lv_strlen
-     /tmp/cc1pb3S0.s:165    .text.lv_strnlen:00000000 $t
-     /tmp/cc1pb3S0.s:171    .text.lv_strnlen:00000000 lv_strnlen
-     /tmp/cc1pb3S0.s:194    .text.lv_strlcpy:00000000 $t
-     /tmp/cc1pb3S0.s:200    .text.lv_strlcpy:00000000 lv_strlcpy
-     /tmp/cc1pb3S0.s:274    .text.lv_strncpy:00000000 $t
-     /tmp/cc1pb3S0.s:280    .text.lv_strncpy:00000000 lv_strncpy
-     /tmp/cc1pb3S0.s:303    .text.lv_strcpy:00000000 $t
-     /tmp/cc1pb3S0.s:309    .text.lv_strcpy:00000000 lv_strcpy
-     /tmp/cc1pb3S0.s:332    .text.lv_strcmp:00000000 $t
-     /tmp/cc1pb3S0.s:338    .text.lv_strcmp:00000000 lv_strcmp
-     /tmp/cc1pb3S0.s:361    .text.lv_strncmp:00000000 $t
-     /tmp/cc1pb3S0.s:367    .text.lv_strncmp:00000000 lv_strncmp
-     /tmp/cc1pb3S0.s:390    .text.lv_strdup:00000000 $t
-     /tmp/cc1pb3S0.s:396    .text.lv_strdup:00000000 lv_strdup
-     /tmp/cc1pb3S0.s:443    .text.lv_strndup:00000000 $t
-     /tmp/cc1pb3S0.s:449    .text.lv_strndup:00000000 lv_strndup
-     /tmp/cc1pb3S0.s:502    .text.lv_strcat:00000000 $t
-     /tmp/cc1pb3S0.s:508    .text.lv_strcat:00000000 lv_strcat
-     /tmp/cc1pb3S0.s:531    .text.lv_strncat:00000000 $t
-     /tmp/cc1pb3S0.s:537    .text.lv_strncat:00000000 lv_strncat
-     /tmp/cc1pb3S0.s:560    .text.lv_strchr:00000000 $t
-     /tmp/cc1pb3S0.s:566    .text.lv_strchr:00000000 lv_strchr
+     /tmp/ccoTriE8.s:21     .text.lv_memcpy:00000000 $t
+     /tmp/ccoTriE8.s:27     .text.lv_memcpy:00000000 lv_memcpy
+     /tmp/ccoTriE8.s:50     .text.lv_memset:00000000 $t
+     /tmp/ccoTriE8.s:56     .text.lv_memset:00000000 lv_memset
+     /tmp/ccoTriE8.s:78     .text.lv_memmove:00000000 $t
+     /tmp/ccoTriE8.s:84     .text.lv_memmove:00000000 lv_memmove
+     /tmp/ccoTriE8.s:107    .text.lv_memcmp:00000000 $t
+     /tmp/ccoTriE8.s:113    .text.lv_memcmp:00000000 lv_memcmp
+     /tmp/ccoTriE8.s:136    .text.lv_strlen:00000000 $t
+     /tmp/ccoTriE8.s:142    .text.lv_strlen:00000000 lv_strlen
+     /tmp/ccoTriE8.s:165    .text.lv_strnlen:00000000 $t
+     /tmp/ccoTriE8.s:171    .text.lv_strnlen:00000000 lv_strnlen
+     /tmp/ccoTriE8.s:194    .text.lv_strlcpy:00000000 $t
+     /tmp/ccoTriE8.s:200    .text.lv_strlcpy:00000000 lv_strlcpy
+     /tmp/ccoTriE8.s:274    .text.lv_strncpy:00000000 $t
+     /tmp/ccoTriE8.s:280    .text.lv_strncpy:00000000 lv_strncpy
+     /tmp/ccoTriE8.s:303    .text.lv_strcpy:00000000 $t
+     /tmp/ccoTriE8.s:309    .text.lv_strcpy:00000000 lv_strcpy
+     /tmp/ccoTriE8.s:332    .text.lv_strcmp:00000000 $t
+     /tmp/ccoTriE8.s:338    .text.lv_strcmp:00000000 lv_strcmp
+     /tmp/ccoTriE8.s:361    .text.lv_strncmp:00000000 $t
+     /tmp/ccoTriE8.s:367    .text.lv_strncmp:00000000 lv_strncmp
+     /tmp/ccoTriE8.s:390    .text.lv_strdup:00000000 $t
+     /tmp/ccoTriE8.s:396    .text.lv_strdup:00000000 lv_strdup
+     /tmp/ccoTriE8.s:443    .text.lv_strndup:00000000 $t
+     /tmp/ccoTriE8.s:449    .text.lv_strndup:00000000 lv_strndup
+     /tmp/ccoTriE8.s:502    .text.lv_strcat:00000000 $t
+     /tmp/ccoTriE8.s:508    .text.lv_strcat:00000000 lv_strcat
+     /tmp/ccoTriE8.s:531    .text.lv_strncat:00000000 $t
+     /tmp/ccoTriE8.s:537    .text.lv_strncat:00000000 lv_strncat
+     /tmp/ccoTriE8.s:560    .text.lv_strchr:00000000 $t
+     /tmp/ccoTriE8.s:566    .text.lv_strchr:00000000 lv_strchr
 
 UNDEFINED SYMBOLS
 memcpy

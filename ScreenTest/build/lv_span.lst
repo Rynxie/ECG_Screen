@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cco2vquQ.s 			page 1
+ARM GAS  /tmp/ccsYVSIa.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
   27:Drivers/lvgl/src/widgets/span/../../misc/lv_text_private.h **** /**********************
   28:Drivers/lvgl/src/widgets/span/../../misc/lv_text_private.h ****  * GLOBAL PROTOTYPES
   29:Drivers/lvgl/src/widgets/span/../../misc/lv_text_private.h ****  **********************/
-ARM GAS  /tmp/cco2vquQ.s 			page 2
+ARM GAS  /tmp/ccsYVSIa.s 			page 2
 
 
   30:Drivers/lvgl/src/widgets/span/../../misc/lv_text_private.h **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
   84:Drivers/lvgl/src/widgets/span/../../misc/lv_text_private.h **** 
   85:Drivers/lvgl/src/widgets/span/../../misc/lv_text_private.h **** /**
   86:Drivers/lvgl/src/widgets/span/../../misc/lv_text_private.h ****  * Test if char is break char or not (a text can broken here or not)
-ARM GAS  /tmp/cco2vquQ.s 			page 3
+ARM GAS  /tmp/ccsYVSIa.s 			page 3
 
 
   87:Drivers/lvgl/src/widgets/span/../../misc/lv_text_private.h ****  * @param letter a letter
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
   48              		.loc 2 122 7 view .LVU8
   49 0012 5D2A     		cmp	r2, #93
   50 0014 1DD9     		bls	.L5
-ARM GAS  /tmp/cco2vquQ.s 			page 4
+ARM GAS  /tmp/ccsYVSIa.s 			page 4
 
 
  123:Drivers/lvgl/src/widgets/span/../../misc/lv_text_private.h ****         return true;
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
   80 003a 0F2A     		cmp	r2, #15
   81 003c 13D9     		bls	.L10
  148:Drivers/lvgl/src/widgets/span/../../misc/lv_text_private.h ****         return true;
-ARM GAS  /tmp/cco2vquQ.s 			page 5
+ARM GAS  /tmp/ccsYVSIa.s 			page 5
 
 
  149:Drivers/lvgl/src/widgets/span/../../misc/lv_text_private.h ****     }
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  120              		.loc 2 128 16 view .LVU36
  121 0058 7047     		bx	lr
  122              	.LVL10:
-ARM GAS  /tmp/cco2vquQ.s 			page 6
+ARM GAS  /tmp/ccsYVSIa.s 			page 6
 
 
  123              	.L7:
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  168              		.thumb
  169              		.thumb_func
  171              	lv_get_snippet_count:
-ARM GAS  /tmp/cco2vquQ.s 			page 7
+ARM GAS  /tmp/ccsYVSIa.s 			page 7
 
 
  172              	.LFB225:
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
   54:Drivers/lvgl/src/widgets/span/lv_span.c **** static const lv_font_t * lv_span_get_style_text_font(lv_obj_t * par, lv_span_t * span);
   55:Drivers/lvgl/src/widgets/span/lv_span.c **** static int32_t lv_span_get_style_text_letter_space(lv_obj_t * par, lv_span_t * span);
   56:Drivers/lvgl/src/widgets/span/lv_span.c **** static lv_color_t lv_span_get_style_text_color(lv_obj_t * par, lv_span_t * span);
-ARM GAS  /tmp/cco2vquQ.s 			page 8
+ARM GAS  /tmp/ccsYVSIa.s 			page 8
 
 
   57:Drivers/lvgl/src/widgets/span/lv_span.c **** static lv_opa_t lv_span_get_style_text_opa(lv_obj_t * par, lv_span_t * span);
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  111:Drivers/lvgl/src/widgets/span/lv_span.c **** lv_obj_t * lv_spangroup_create(lv_obj_t * par)
  112:Drivers/lvgl/src/widgets/span/lv_span.c **** {
  113:Drivers/lvgl/src/widgets/span/lv_span.c ****     lv_obj_t * obj = lv_obj_class_create_obj(&lv_spangroup_class, par);
-ARM GAS  /tmp/cco2vquQ.s 			page 9
+ARM GAS  /tmp/ccsYVSIa.s 			page 9
 
 
  114:Drivers/lvgl/src/widgets/span/lv_span.c ****     lv_obj_class_init_obj(obj);
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  168:Drivers/lvgl/src/widgets/span/lv_span.c **** void lv_span_set_text(lv_span_t * span, const char * text)
  169:Drivers/lvgl/src/widgets/span/lv_span.c **** {
  170:Drivers/lvgl/src/widgets/span/lv_span.c ****     if(span == NULL || text == NULL) {
-ARM GAS  /tmp/cco2vquQ.s 			page 10
+ARM GAS  /tmp/ccsYVSIa.s 			page 10
 
 
  171:Drivers/lvgl/src/widgets/span/lv_span.c ****         return;
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  225:Drivers/lvgl/src/widgets/span/lv_span.c ****     span->static_flag = 0;
  226:Drivers/lvgl/src/widgets/span/lv_span.c **** #else
  227:Drivers/lvgl/src/widgets/span/lv_span.c ****     span->txt = (char *)text;
-ARM GAS  /tmp/cco2vquQ.s 			page 11
+ARM GAS  /tmp/ccsYVSIa.s 			page 11
 
 
  228:Drivers/lvgl/src/widgets/span/lv_span.c **** #endif
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  282:Drivers/lvgl/src/widgets/span/lv_span.c ****     if(mode == LV_SPAN_MODE_EXPAND) {
  283:Drivers/lvgl/src/widgets/span/lv_span.c ****         lv_obj_set_width(obj, LV_SIZE_CONTENT);
  284:Drivers/lvgl/src/widgets/span/lv_span.c ****         lv_obj_set_height(obj, LV_SIZE_CONTENT);
-ARM GAS  /tmp/cco2vquQ.s 			page 12
+ARM GAS  /tmp/ccsYVSIa.s 			page 12
 
 
  285:Drivers/lvgl/src/widgets/span/lv_span.c ****     }
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  339:Drivers/lvgl/src/widgets/span/lv_span.c ****     bool traverse_forwards = (id >= 0);
  340:Drivers/lvgl/src/widgets/span/lv_span.c ****     int32_t cur_idx = 0;
  341:Drivers/lvgl/src/widgets/span/lv_span.c ****     lv_ll_node_t * cur_node = linked_list->head;
-ARM GAS  /tmp/cco2vquQ.s 			page 13
+ARM GAS  /tmp/ccsYVSIa.s 			page 13
 
 
  342:Drivers/lvgl/src/widgets/span/lv_span.c **** 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  396:Drivers/lvgl/src/widgets/span/lv_span.c **** }
  397:Drivers/lvgl/src/widgets/span/lv_span.c **** 
  398:Drivers/lvgl/src/widgets/span/lv_span.c **** lv_span_mode_t lv_spangroup_get_mode(lv_obj_t * obj)
-ARM GAS  /tmp/cco2vquQ.s 			page 14
+ARM GAS  /tmp/ccsYVSIa.s 			page 14
 
 
  399:Drivers/lvgl/src/widgets/span/lv_span.c **** {
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  453:Drivers/lvgl/src/widgets/span/lv_span.c ****     int32_t letter_space = 0;
  454:Drivers/lvgl/src/widgets/span/lv_span.c ****     LV_LL_READ(&spans->child_ll, cur_span) {
  455:Drivers/lvgl/src/widgets/span/lv_span.c ****         const lv_font_t * font = lv_span_get_style_text_font(obj, cur_span);
-ARM GAS  /tmp/cco2vquQ.s 			page 15
+ARM GAS  /tmp/ccsYVSIa.s 			page 15
 
 
  456:Drivers/lvgl/src/widgets/span/lv_span.c ****         letter_space = lv_span_get_style_text_letter_space(obj, cur_span);
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  510:Drivers/lvgl/src/widgets/span/lv_span.c ****             /* switch to the next span when current is end */
  511:Drivers/lvgl/src/widgets/span/lv_span.c ****             if(cur_txt[cur_txt_ofs] == '\0') {
  512:Drivers/lvgl/src/widgets/span/lv_span.c ****                 cur_span->trailing_pos = txt_pos;
-ARM GAS  /tmp/cco2vquQ.s 			page 16
+ARM GAS  /tmp/ccsYVSIa.s 			page 16
 
 
  513:Drivers/lvgl/src/widgets/span/lv_span.c **** 
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  567:Drivers/lvgl/src/widgets/span/lv_span.c ****             snippet_cnt ++;
  568:Drivers/lvgl/src/widgets/span/lv_span.c ****             max_w = max_w - use_width;
  569:Drivers/lvgl/src/widgets/span/lv_span.c ****             if(isfill  || max_w <= 0) {
-ARM GAS  /tmp/cco2vquQ.s 			page 17
+ARM GAS  /tmp/ccsYVSIa.s 			page 17
 
 
  570:Drivers/lvgl/src/widgets/span/lv_span.c ****                 break;
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  624:Drivers/lvgl/src/widgets/span/lv_span.c **** lv_span_t * lv_spangroup_get_span_by_point(lv_obj_t * obj, const lv_point_t * p)
  625:Drivers/lvgl/src/widgets/span/lv_span.c **** {
  626:Drivers/lvgl/src/widgets/span/lv_span.c ****     const lv_spangroup_t * spangroup = (lv_spangroup_t *)obj;
-ARM GAS  /tmp/cco2vquQ.s 			page 18
+ARM GAS  /tmp/ccsYVSIa.s 			page 18
 
 
  627:Drivers/lvgl/src/widgets/span/lv_span.c ****     const lv_ll_t * spans = &spangroup->child_ll;
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  681:Drivers/lvgl/src/widgets/span/lv_span.c ****     spans->indent = 0;
  682:Drivers/lvgl/src/widgets/span/lv_span.c ****     spans->lines = -1;
  683:Drivers/lvgl/src/widgets/span/lv_span.c ****     spans->overflow = LV_SPAN_OVERFLOW_CLIP;
-ARM GAS  /tmp/cco2vquQ.s 			page 19
+ARM GAS  /tmp/ccsYVSIa.s 			page 19
 
 
  684:Drivers/lvgl/src/widgets/span/lv_span.c ****     spans->cache_w = 0;
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  738:Drivers/lvgl/src/widgets/span/lv_span.c ****             width = spans->cache_w;
  739:Drivers/lvgl/src/widgets/span/lv_span.c ****             height = spans->cache_h;
  740:Drivers/lvgl/src/widgets/span/lv_span.c ****         }
-ARM GAS  /tmp/cco2vquQ.s 			page 20
+ARM GAS  /tmp/ccsYVSIa.s 			page 20
 
 
  741:Drivers/lvgl/src/widgets/span/lv_span.c ****         else if(mode == LV_SPAN_MODE_BREAK) {
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  795:Drivers/lvgl/src/widgets/span/lv_span.c ****     if(txt[ofs] == '\0' && *use_width < max_width && !(ofs && (txt[ofs - 1] == '\n' || txt[ofs - 1]
  796:Drivers/lvgl/src/widgets/span/lv_span.c ****         return false;
  797:Drivers/lvgl/src/widgets/span/lv_span.c ****     }
-ARM GAS  /tmp/cco2vquQ.s 			page 21
+ARM GAS  /tmp/ccsYVSIa.s 			page 21
 
 
  798:Drivers/lvgl/src/widgets/span/lv_span.c ****     else {
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  205              		@ link register save eliminated.
  822:Drivers/lvgl/src/widgets/span/lv_span.c ****     return &snippet_stack->stack[index];
  206              		.loc 1 822 5 view .LVU52
-ARM GAS  /tmp/cco2vquQ.s 			page 22
+ARM GAS  /tmp/ccsYVSIa.s 			page 22
 
 
  207              		.loc 1 822 13 is_stmt 0 view .LVU53
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  259              	.LFB229:
  829:Drivers/lvgl/src/widgets/span/lv_span.c **** 
  830:Drivers/lvgl/src/widgets/span/lv_span.c **** static const lv_font_t * lv_span_get_style_text_font(lv_obj_t * par, lv_span_t * span)
-ARM GAS  /tmp/cco2vquQ.s 			page 23
+ARM GAS  /tmp/ccsYVSIa.s 			page 23
 
 
  831:Drivers/lvgl/src/widgets/span/lv_span.c **** {
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  852:Drivers/lvgl/src/widgets/span/lv_span.c ****     else {
  853:Drivers/lvgl/src/widgets/span/lv_span.c ****         letter_space = (int32_t)value.num;
  293              		.loc 1 853 9 is_stmt 1 view .LVU70
-ARM GAS  /tmp/cco2vquQ.s 			page 24
+ARM GAS  /tmp/ccsYVSIa.s 			page 24
 
 
  294              		.loc 1 853 22 is_stmt 0 view .LVU71
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
   31:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
   32:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** }
   33:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** 
-ARM GAS  /tmp/cco2vquQ.s 			page 25
+ARM GAS  /tmp/ccsYVSIa.s 			page 25
 
 
   34:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** static inline int32_t lv_obj_get_style_max_width(const lv_obj_t * obj, lv_part_t part)
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
   88:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** static inline int32_t lv_obj_get_style_transform_height(const lv_obj_t * obj, lv_part_t part)
   89:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** {
   90:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_TRANSFORM_HEIGHT);
-ARM GAS  /tmp/cco2vquQ.s 			page 26
+ARM GAS  /tmp/ccsYVSIa.s 			page 26
 
 
   91:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  145:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
  146:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** }
  147:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** 
-ARM GAS  /tmp/cco2vquQ.s 			page 27
+ARM GAS  /tmp/ccsYVSIa.s 			page 27
 
 
  148:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** static inline int32_t lv_obj_get_style_transform_skew_y(const lv_obj_t * obj, lv_part_t part)
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  202:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** static inline int32_t lv_obj_get_style_margin_bottom(const lv_obj_t * obj, lv_part_t part)
  203:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** {
  204:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_MARGIN_BOTTOM);
-ARM GAS  /tmp/cco2vquQ.s 			page 28
+ARM GAS  /tmp/ccsYVSIa.s 			page 28
 
 
  205:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  259:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
  260:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** }
  261:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** 
-ARM GAS  /tmp/cco2vquQ.s 			page 29
+ARM GAS  /tmp/ccsYVSIa.s 			page 29
 
 
  262:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** static inline int32_t lv_obj_get_style_bg_grad_stop(const lv_obj_t * obj, lv_part_t part)
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  316:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** static inline bool lv_obj_get_style_bg_image_tiled(const lv_obj_t * obj, lv_part_t part)
  317:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** {
  318:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_BG_IMAGE_TILED);
-ARM GAS  /tmp/cco2vquQ.s 			page 30
+ARM GAS  /tmp/ccsYVSIa.s 			page 30
 
 
  319:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h ****     return (bool)v.num;
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  373:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h ****     return v.color;
  374:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** }
  375:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** 
-ARM GAS  /tmp/cco2vquQ.s 			page 31
+ARM GAS  /tmp/ccsYVSIa.s 			page 31
 
 
  376:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** static inline lv_opa_t lv_obj_get_style_outline_opa(const lv_obj_t * obj, lv_part_t part)
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  430:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** static inline lv_opa_t lv_obj_get_style_image_opa(const lv_obj_t * obj, lv_part_t part)
  431:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** {
  432:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_IMAGE_OPA);
-ARM GAS  /tmp/cco2vquQ.s 			page 32
+ARM GAS  /tmp/ccsYVSIa.s 			page 32
 
 
  433:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h ****     return (lv_opa_t)v.num;
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  487:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h ****     return v.color;
  488:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** }
  489:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** 
-ARM GAS  /tmp/cco2vquQ.s 			page 33
+ARM GAS  /tmp/ccsYVSIa.s 			page 33
 
 
  490:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** static inline lv_opa_t lv_obj_get_style_line_opa(const lv_obj_t * obj, lv_part_t part)
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  544:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** static inline lv_opa_t lv_obj_get_style_text_opa(const lv_obj_t * obj, lv_part_t part)
  545:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** {
  546:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_TEXT_OPA);
-ARM GAS  /tmp/cco2vquQ.s 			page 34
+ARM GAS  /tmp/ccsYVSIa.s 			page 34
 
 
  547:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h ****     return (lv_opa_t)v.num;
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  354 0002 86B0     		sub	sp, sp, #24
  355              	.LCFI5:
  356              		.cfi_def_cfa_offset 32
-ARM GAS  /tmp/cco2vquQ.s 			page 35
+ARM GAS  /tmp/ccsYVSIa.s 			page 35
 
 
  357 0004 0446     		mov	r4, r0
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  403              	.LBB83:
  404              	.LBI83:
  532:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** {
-ARM GAS  /tmp/cco2vquQ.s 			page 36
+ARM GAS  /tmp/ccsYVSIa.s 			page 36
 
 
  405              		.loc 3 532 26 view .LVU94
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  451              		@ frame_needed = 0, uses_anonymous_args = 0
  452              		.loc 1 869 1 is_stmt 0 view .LVU103
  453 0000 10B5     		push	{r4, lr}
-ARM GAS  /tmp/cco2vquQ.s 			page 37
+ARM GAS  /tmp/ccsYVSIa.s 			page 37
 
 
  454              	.LCFI8:
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  497              		.cfi_restore_state
  874:Drivers/lvgl/src/widgets/span/lv_span.c ****         opa = (lv_opa_t)lv_obj_get_style_text_opa(par, LV_PART_MAIN);
  498              		.loc 1 874 9 is_stmt 1 view .LVU116
-ARM GAS  /tmp/cco2vquQ.s 			page 38
+ARM GAS  /tmp/ccsYVSIa.s 			page 38
 
 
  499              	.LBB85:
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  546 0004 0446     		mov	r4, r0
  547 0006 0846     		mov	r0, r1
  548              	.LVL53:
-ARM GAS  /tmp/cco2vquQ.s 			page 39
+ARM GAS  /tmp/ccsYVSIa.s 			page 39
 
 
  832:Drivers/lvgl/src/widgets/span/lv_span.c ****     lv_style_value_t value;
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  588              		.loc 3 552 5 view .LVU140
  552:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h ****     return (const lv_font_t *)v.ptr;
  589              		.loc 3 552 26 is_stmt 0 view .LVU141
-ARM GAS  /tmp/cco2vquQ.s 			page 40
+ARM GAS  /tmp/ccsYVSIa.s 			page 40
 
 
  590 001c 5A22     		movs	r2, #90
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  637 000a 5D21     		movs	r1, #93
  638              	.LVL64:
  639              		.loc 1 886 26 view .LVU151
-ARM GAS  /tmp/cco2vquQ.s 			page 41
+ARM GAS  /tmp/ccsYVSIa.s 			page 41
 
 
  640 000c 0430     		adds	r0, r0, #4
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  674 001e 0021     		movs	r1, #0
  675 0020 2046     		mov	r0, r4
  676              	.LVL69:
-ARM GAS  /tmp/cco2vquQ.s 			page 42
+ARM GAS  /tmp/ccsYVSIa.s 			page 42
 
 
  677              		.loc 3 570 26 view .LVU163
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  724              	.LVL75:
  725              	.L47:
  813:Drivers/lvgl/src/widgets/span/lv_span.c **** 
-ARM GAS  /tmp/cco2vquQ.s 			page 43
+ARM GAS  /tmp/ccsYVSIa.s 			page 43
 
 
  726              		.loc 1 813 1 view .LVU175
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  770              		@ args = 12, pretend = 0, frame = 0
  771              		@ frame_needed = 0, uses_anonymous_args = 0
  778:Drivers/lvgl/src/widgets/span/lv_span.c ****     if(txt == NULL || txt[0] == '\0') {
-ARM GAS  /tmp/cco2vquQ.s 			page 44
+ARM GAS  /tmp/ccsYVSIa.s 			page 44
 
 
  772              		.loc 1 778 1 is_stmt 0 view .LVU188
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  815 001a 70BD     		pop	{r4, r5, r6, pc}
  816              	.LVL84:
  817              	.L55:
-ARM GAS  /tmp/cco2vquQ.s 			page 45
+ARM GAS  /tmp/ccsYVSIa.s 			page 45
 
 
  818              	.LCFI24:
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  795:Drivers/lvgl/src/widgets/span/lv_span.c ****         return false;
  857              		.loc 1 795 54 discriminator 3 view .LVU215
  858 0048 0A2B     		cmp	r3, #10
-ARM GAS  /tmp/cco2vquQ.s 			page 46
+ARM GAS  /tmp/ccsYVSIa.s 			page 46
 
 
  859 004a 18BF     		it	ne
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  905              	.LVL98:
  906              	.LFB220:
  690:Drivers/lvgl/src/widgets/span/lv_span.c ****     LV_UNUSED(class_p);
-ARM GAS  /tmp/cco2vquQ.s 			page 47
+ARM GAS  /tmp/ccsYVSIa.s 			page 47
 
 
  907              		.loc 1 690 1 is_stmt 1 view -0
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  702:Drivers/lvgl/src/widgets/span/lv_span.c ****     }
  948              		.loc 1 702 20 is_stmt 0 view .LVU240
  949 001c 2846     		mov	r0, r5
-ARM GAS  /tmp/cco2vquQ.s 			page 48
+ARM GAS  /tmp/ccsYVSIa.s 			page 48
 
 
  950 001e FFF7FEFF 		bl	lv_ll_get_head
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  994              	lv_spangroup_constructor:
  995              	.LVL110:
  996              	.LFB219:
-ARM GAS  /tmp/cco2vquQ.s 			page 49
+ARM GAS  /tmp/ccsYVSIa.s 			page 49
 
 
  677:Drivers/lvgl/src/widgets/span/lv_span.c ****     LV_UNUSED(class_p);
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  685:Drivers/lvgl/src/widgets/span/lv_span.c ****     spans->refresh = 1;
  1036              		.loc 1 685 5 is_stmt 1 view .LVU268
  685:Drivers/lvgl/src/widgets/span/lv_span.c ****     spans->refresh = 1;
-ARM GAS  /tmp/cco2vquQ.s 			page 50
+ARM GAS  /tmp/ccsYVSIa.s 			page 50
 
 
  1037              		.loc 1 685 20 is_stmt 0 view .LVU269
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  925:Drivers/lvgl/src/widgets/span/lv_span.c ****  * @param mask the label will be drawn only in this area
  926:Drivers/lvgl/src/widgets/span/lv_span.c ****  */
  927:Drivers/lvgl/src/widgets/span/lv_span.c **** static void lv_draw_span(lv_obj_t * obj, lv_layer_t * layer)
-ARM GAS  /tmp/cco2vquQ.s 			page 51
+ARM GAS  /tmp/ccsYVSIa.s 			page 51
 
 
  928:Drivers/lvgl/src/widgets/span/lv_span.c **** {
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  982:Drivers/lvgl/src/widgets/span/lv_span.c **** #endif
  983:Drivers/lvgl/src/widgets/span/lv_span.c **** 
  984:Drivers/lvgl/src/widgets/span/lv_span.c ****     uint32_t cur_txt_ofs = 0;
-ARM GAS  /tmp/cco2vquQ.s 			page 52
+ARM GAS  /tmp/ccsYVSIa.s 			page 52
 
 
  985:Drivers/lvgl/src/widgets/span/lv_span.c ****     lv_snippet_t snippet;   /* use to save cur_span info and push it to stack */
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
 1039:Drivers/lvgl/src/widgets/span/lv_span.c ****                     uint32_t letter = lv_text_encoded_prev(&cur_txt[cur_txt_ofs], &tmp_ofs);
 1040:Drivers/lvgl/src/widgets/span/lv_span.c ****                     uint32_t letter_next = lv_text_encoded_next(&cur_txt[cur_txt_ofs + next_ofs], N
 1041:Drivers/lvgl/src/widgets/span/lv_span.c ****                     if(!(letter == '\0' || letter == '\n' || letter == '\r' || lv_text_is_break_cha
-ARM GAS  /tmp/cco2vquQ.s 			page 53
+ARM GAS  /tmp/ccsYVSIa.s 			page 53
 
 
 1042:Drivers/lvgl/src/widgets/span/lv_span.c ****                          lv_text_is_a_word(letter) || lv_text_is_a_word(letter_next))) {
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
 1096:Drivers/lvgl/src/widgets/span/lv_span.c **** #if LV_USE_BIDI
 1097:Drivers/lvgl/src/widgets/span/lv_span.c ****         if(base_dir == LV_BASE_DIR_AUTO) {
 1098:Drivers/lvgl/src/widgets/span/lv_span.c ****             base_dir = LV_BASE_DIR_LTR;
-ARM GAS  /tmp/cco2vquQ.s 			page 54
+ARM GAS  /tmp/ccsYVSIa.s 			page 54
 
 
 1099:Drivers/lvgl/src/widgets/span/lv_span.c ****         }
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
 1153:Drivers/lvgl/src/widgets/span/lv_span.c ****                 label_draw_dsc.bidi_dir = base_dir;
 1154:Drivers/lvgl/src/widgets/span/lv_span.c ****                 label_draw_dsc.has_bided = true;
 1155:Drivers/lvgl/src/widgets/span/lv_span.c ****                 label_draw_dsc.text_local = true;
-ARM GAS  /tmp/cco2vquQ.s 			page 55
+ARM GAS  /tmp/ccsYVSIa.s 			page 55
 
 
 1156:Drivers/lvgl/src/widgets/span/lv_span.c ****                 lv_bidi_process_paragraph(pinfo->txt, bidi_txt, pinfo->bytes, label_draw_dsc.bidi_d
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
 1210:Drivers/lvgl/src/widgets/span/lv_span.c **** #if LV_USE_BIDI
 1211:Drivers/lvgl/src/widgets/span/lv_span.c ****                 if(base_dir == LV_BASE_DIR_RTL) {
 1212:Drivers/lvgl/src/widgets/span/lv_span.c ****                     if(txt_bytes > label_draw_dsc.text_length) {
-ARM GAS  /tmp/cco2vquQ.s 			page 56
+ARM GAS  /tmp/ccsYVSIa.s 			page 56
 
 
 1213:Drivers/lvgl/src/widgets/span/lv_span.c ****                         char * tmp_txt = lv_malloc(label_draw_dsc.text_length + 1);
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
 1267:Drivers/lvgl/src/widgets/span/lv_span.c **** #endif
 1268:Drivers/lvgl/src/widgets/span/lv_span.c ****         }
 1269:Drivers/lvgl/src/widgets/span/lv_span.c **** 
-ARM GAS  /tmp/cco2vquQ.s 			page 57
+ARM GAS  /tmp/ccsYVSIa.s 			page 57
 
 
 1270:Drivers/lvgl/src/widgets/span/lv_span.c **** Next_line_init:
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
 1289:Drivers/lvgl/src/widgets/span/lv_span.c ****     if(curr_span == NULL) return coords;
  1094              		.loc 1 1289 5 is_stmt 1 view .LVU281
  1095              		.loc 1 1289 7 is_stmt 0 view .LVU282
-ARM GAS  /tmp/cco2vquQ.s 			page 58
+ARM GAS  /tmp/ccsYVSIa.s 			page 58
 
 
  1096 0018 002D     		cmp	r5, #0
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  1124              		.loc 1 1315 5 is_stmt 1 view .LVU295
 1316:Drivers/lvgl/src/widgets/span/lv_span.c ****                 pre_trailing_pos.x + padding.x1, pre_trailing_pos.y + padding.y1,
  1125              		.loc 1 1316 45 is_stmt 0 view .LVU296
-ARM GAS  /tmp/cco2vquQ.s 			page 59
+ARM GAS  /tmp/ccsYVSIa.s 			page 59
 
 
  1126 0036 DDF86090 		ldr	r9, [sp, #96]
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
 1327:Drivers/lvgl/src/widgets/span/lv_span.c ****                 curr_span->trailing_pos.x + padding.x1, curr_span->trailing_pos.y + curr_span->trai
  1164              		.loc 1 1327 40 is_stmt 0 view .LVU308
  1165 0068 6B69     		ldr	r3, [r5, #20]
-ARM GAS  /tmp/cco2vquQ.s 			page 60
+ARM GAS  /tmp/ccsYVSIa.s 			page 60
 
 
  1166              		.loc 1 1327 80 view .LVU309
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  1213 00ae F5E7     		b	.L70
  1214              	.L77:
 1293:Drivers/lvgl/src/widgets/span/lv_span.c ****                     curr_span->trailing_pos.y + padding.y1);
-ARM GAS  /tmp/cco2vquQ.s 			page 61
+ARM GAS  /tmp/ccsYVSIa.s 			page 61
 
 
  1215              		.loc 1 1293 9 is_stmt 1 view .LVU319
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  1257              		.loc 1 1299 16 is_stmt 0 view .LVU331
  1258 00ee 3D46     		mov	r5, r7
  1259              	.LVL137:
-ARM GAS  /tmp/cco2vquQ.s 			page 62
+ARM GAS  /tmp/ccsYVSIa.s 			page 62
 
 
 1299:Drivers/lvgl/src/widgets/span/lv_span.c ****     }
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  1301 0122 3D46     		mov	r5, r7
  1302              	.LVL144:
 1308:Drivers/lvgl/src/widgets/span/lv_span.c ****     }
-ARM GAS  /tmp/cco2vquQ.s 			page 63
+ARM GAS  /tmp/ccsYVSIa.s 			page 63
 
 
  1303              		.loc 1 1308 16 view .LVU345
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  1349              		.loc 1 100 5 discriminator 1 view .LVU355
  100:Drivers/lvgl/src/widgets/span/lv_span.c ****     if(!stack) {
  1350              		.loc 1 100 5 discriminator 1 view .LVU356
-ARM GAS  /tmp/cco2vquQ.s 			page 64
+ARM GAS  /tmp/ccsYVSIa.s 			page 64
 
 
  100:Drivers/lvgl/src/widgets/span/lv_span.c ****     if(!stack) {
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  1404              		@ args = 0, pretend = 0, frame = 0
  1405              		@ frame_needed = 0, uses_anonymous_args = 0
  112:Drivers/lvgl/src/widgets/span/lv_span.c ****     lv_obj_t * obj = lv_obj_class_create_obj(&lv_spangroup_class, par);
-ARM GAS  /tmp/cco2vquQ.s 			page 65
+ARM GAS  /tmp/ccsYVSIa.s 			page 65
 
 
  1406              		.loc 1 112 1 is_stmt 0 view .LVU362
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  170:Drivers/lvgl/src/widgets/span/lv_span.c ****         return;
  1453              		.loc 1 170 5 view .LVU372
  170:Drivers/lvgl/src/widgets/span/lv_span.c ****         return;
-ARM GAS  /tmp/cco2vquQ.s 			page 66
+ARM GAS  /tmp/ccsYVSIa.s 			page 66
 
 
  1454              		.loc 1 170 7 is_stmt 0 view .LVU373
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  1495              		.loc 1 183 21 is_stmt 0 view .LVU386
  1496 0024 3046     		mov	r0, r6
  1497 0026 FFF7FEFF 		bl	lv_malloc
-ARM GAS  /tmp/cco2vquQ.s 			page 67
+ARM GAS  /tmp/ccsYVSIa.s 			page 67
 
 
  1498              	.LVL159:
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  1534              		.loc 1 187 9 view .LVU404
  187:Drivers/lvgl/src/widgets/span/lv_span.c ****         LV_ASSERT_MALLOC(span->txt);
  1535              		.loc 1 187 21 is_stmt 0 view .LVU405
-ARM GAS  /tmp/cco2vquQ.s 			page 68
+ARM GAS  /tmp/ccsYVSIa.s 			page 68
 
 
  1536 0046 3146     		mov	r1, r6
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  1580              		.cfi_offset 4, -12
  1581              		.cfi_offset 5, -8
  1582              		.cfi_offset 14, -4
-ARM GAS  /tmp/cco2vquQ.s 			page 69
+ARM GAS  /tmp/ccsYVSIa.s 			page 69
 
 
  1583 000a 0446     		mov	r4, r0
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  1624              		.cfi_restore 5
  1625              		.cfi_restore 14
  216:Drivers/lvgl/src/widgets/span/lv_span.c ****     }
-ARM GAS  /tmp/cco2vquQ.s 			page 70
+ARM GAS  /tmp/ccsYVSIa.s 			page 70
 
 
  1626              		.loc 1 216 19 view .LVU431
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  1676              		@ frame_needed = 0, uses_anonymous_args = 0
  256:Drivers/lvgl/src/widgets/span/lv_span.c ****     lv_spangroup_t * spans = (lv_spangroup_t *)obj;
  1677              		.loc 1 256 5 view .LVU440
-ARM GAS  /tmp/cco2vquQ.s 			page 71
+ARM GAS  /tmp/ccsYVSIa.s 			page 71
 
 
  256:Drivers/lvgl/src/widgets/span/lv_span.c ****     lv_spangroup_t * spans = (lv_spangroup_t *)obj;
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  1716 0016 FEE7     		b	.L117
  1717              	.LVL175:
  1718              	.L121:
-ARM GAS  /tmp/cco2vquQ.s 			page 72
+ARM GAS  /tmp/ccsYVSIa.s 			page 72
 
 
  1719              	.LCFI40:
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  1769              	.LFB205:
  325:Drivers/lvgl/src/widgets/span/lv_span.c ****     return span->txt;
  1770              		.loc 1 325 1 is_stmt 1 view -0
-ARM GAS  /tmp/cco2vquQ.s 			page 73
+ARM GAS  /tmp/ccsYVSIa.s 			page 73
 
 
  1771              		.cfi_startproc
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  1815              	.LVL182:
  337:Drivers/lvgl/src/widgets/span/lv_span.c **** 
  1816              		.loc 1 337 5 view .LVU478
-ARM GAS  /tmp/cco2vquQ.s 			page 74
+ARM GAS  /tmp/ccsYVSIa.s 			page 74
 
 
  337:Drivers/lvgl/src/widgets/span/lv_span.c **** 
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  1854              		.loc 1 359 20 is_stmt 0 view .LVU495
  1855 0024 013C     		subs	r4, r4, #1
  1856              	.LVL190:
-ARM GAS  /tmp/cco2vquQ.s 			page 75
+ARM GAS  /tmp/ccsYVSIa.s 			page 75
 
 
  1857              	.L129:
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  1899              		.cfi_offset 14, -4
  364:Drivers/lvgl/src/widgets/span/lv_span.c **** 
  1900              		.loc 1 364 1 view .LVU508
-ARM GAS  /tmp/cco2vquQ.s 			page 76
+ARM GAS  /tmp/ccsYVSIa.s 			page 76
 
 
  1901 003e 0846     		mov	r0, r1
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  1942              	.LVL198:
  376:Drivers/lvgl/src/widgets/span/lv_span.c **** }
  1943              		.loc 1 376 12 view .LVU524
-ARM GAS  /tmp/cco2vquQ.s 			page 77
+ARM GAS  /tmp/ccsYVSIa.s 			page 77
 
 
  1944 0006 FFF7FEFF 		bl	lv_ll_get_len
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  574:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** static inline lv_text_align_t lv_obj_get_style_text_align(const lv_obj_t * obj, lv_part_t part)
  1989              		.loc 3 574 31 view .LVU534
  1990              	.LBB92:
-ARM GAS  /tmp/cco2vquQ.s 			page 78
+ARM GAS  /tmp/ccsYVSIa.s 			page 78
 
 
  575:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** {
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  2036              		.loc 1 388 5 view .LVU547
  388:Drivers/lvgl/src/widgets/span/lv_span.c **** }
  2037              		.loc 1 388 17 is_stmt 0 view .LVU548
-ARM GAS  /tmp/cco2vquQ.s 			page 79
+ARM GAS  /tmp/ccsYVSIa.s 			page 79
 
 
  2038 0002 90F84800 		ldrb	r0, [r0, #72]	@ zero_extendqisi2
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  396:Drivers/lvgl/src/widgets/span/lv_span.c **** 
  2080              		.loc 1 396 1 view .LVU563
  2081 0004 7047     		bx	lr
-ARM GAS  /tmp/cco2vquQ.s 			page 80
+ARM GAS  /tmp/ccsYVSIa.s 			page 80
 
 
  2082              	.LVL212:
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
   22:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** {
  2126              		.loc 3 22 23 view .LVU576
  2127              	.LBB94:
-ARM GAS  /tmp/cco2vquQ.s 			page 81
+ARM GAS  /tmp/ccsYVSIa.s 			page 81
 
 
   24:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  2168              		.loc 1 412 16 view .LVU590
  2169 002e 0020     		movs	r0, #0
  2170              	.L154:
-ARM GAS  /tmp/cco2vquQ.s 			page 82
+ARM GAS  /tmp/ccsYVSIa.s 			page 82
 
 
  414:Drivers/lvgl/src/widgets/span/lv_span.c **** 
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  905:Drivers/lvgl/src/widgets/span/lv_span.c ****     lv_spangroup_t * spans = (lv_spangroup_t *)obj;
  2218              		.loc 1 905 1 is_stmt 0 view .LVU600
  2219 0000 38B5     		push	{r3, r4, r5, lr}
-ARM GAS  /tmp/cco2vquQ.s 			page 83
+ARM GAS  /tmp/ccsYVSIa.s 			page 83
 
 
  2220              	.LCFI54:
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  2261 0028 14D0     		beq	.L163
  914:Drivers/lvgl/src/widgets/span/lv_span.c ****         }
  2262              		.loc 1 914 13 is_stmt 1 view .LVU614
-ARM GAS  /tmp/cco2vquQ.s 			page 84
+ARM GAS  /tmp/ccsYVSIa.s 			page 84
 
 
  914:Drivers/lvgl/src/widgets/span/lv_span.c ****         }
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  2308              		.section	.text.lv_draw_span,"ax",%progbits
  2309              		.align	1
  2310              		.syntax unified
-ARM GAS  /tmp/cco2vquQ.s 			page 85
+ARM GAS  /tmp/ccsYVSIa.s 			page 85
 
 
  2311              		.thumb
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  936:Drivers/lvgl/src/widgets/span/lv_span.c ****         return;
  2357              		.loc 1 936 7 discriminator 1 view .LVU632
  2358 0020 38B1     		cbz	r0, .L168
-ARM GAS  /tmp/cco2vquQ.s 			page 86
+ARM GAS  /tmp/ccsYVSIa.s 			page 86
 
 
  941:Drivers/lvgl/src/widgets/span/lv_span.c ****     if(!lv_area_intersect(&clip_area, &coords, &layer->_clip_area))  return;
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  562:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** {
  2401              		.loc 3 562 23 view .LVU645
  2402              	.LBB98:
-ARM GAS  /tmp/cco2vquQ.s 			page 87
+ARM GAS  /tmp/ccsYVSIa.s 			page 87
 
 
  564:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  2443              	.LVL249:
  952:Drivers/lvgl/src/widgets/span/lv_span.c **** 
  2444              		.loc 1 952 5 is_stmt 1 view .LVU660
-ARM GAS  /tmp/cco2vquQ.s 			page 88
+ARM GAS  /tmp/ccsYVSIa.s 			page 88
 
 
  952:Drivers/lvgl/src/widgets/span/lv_span.c **** 
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  2483              	.LBB100:
  898:Drivers/lvgl/src/widgets/span/lv_span.c ****         *text = "";
  2484              		.loc 1 898 5 view .LVU677
-ARM GAS  /tmp/cco2vquQ.s 			page 89
+ARM GAS  /tmp/ccsYVSIa.s 			page 89
 
 
  898:Drivers/lvgl/src/widgets/span/lv_span.c ****         *text = "";
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
    3:Drivers/lvgl/src/widgets/span/../../core/../misc/../font/../draw/../misc/../stdlib/lv_string.h ****  *
    4:Drivers/lvgl/src/widgets/span/../../core/../misc/../font/../draw/../misc/../stdlib/lv_string.h ****  */
    5:Drivers/lvgl/src/widgets/span/../../core/../misc/../font/../draw/../misc/../stdlib/lv_string.h **** 
-ARM GAS  /tmp/cco2vquQ.s 			page 90
+ARM GAS  /tmp/ccsYVSIa.s 			page 90
 
 
    6:Drivers/lvgl/src/widgets/span/../../core/../misc/../font/../draw/../misc/../stdlib/lv_string.h **** #ifndef LV_STRING_H
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
   60:Drivers/lvgl/src/widgets/span/../../core/../misc/../font/../draw/../misc/../stdlib/lv_string.h ****  * @brief This function will compare two memory blocks
   61:Drivers/lvgl/src/widgets/span/../../core/../misc/../font/../draw/../misc/../stdlib/lv_string.h ****  * @param p1 Pointer to the first memory block
   62:Drivers/lvgl/src/widgets/span/../../core/../misc/../font/../draw/../misc/../stdlib/lv_string.h ****  * @param p2 Pointer to the second memory block
-ARM GAS  /tmp/cco2vquQ.s 			page 91
+ARM GAS  /tmp/ccsYVSIa.s 			page 91
 
 
   63:Drivers/lvgl/src/widgets/span/../../core/../misc/../font/../draw/../misc/../stdlib/lv_string.h ****  * @param len Number of bytes to compare
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  2557              	.LBB101:
  899:Drivers/lvgl/src/widgets/span/lv_span.c ****         LV_LOG_ERROR("occur an error that span text == NULL");
  2558              		.loc 1 899 15 view .LVU706
-ARM GAS  /tmp/cco2vquQ.s 			page 92
+ARM GAS  /tmp/ccsYVSIa.s 			page 92
 
 
  2559 00be 8E4B     		ldr	r3, .L241
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  900:Drivers/lvgl/src/widgets/span/lv_span.c ****     }
  2599              		.loc 1 900 9 view .LVU721
  900:Drivers/lvgl/src/widgets/span/lv_span.c ****     }
-ARM GAS  /tmp/cco2vquQ.s 			page 93
+ARM GAS  /tmp/ccsYVSIa.s 			page 93
 
 
  2600              		.loc 1 900 9 is_stmt 0 view .LVU722
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
 1017:Drivers/lvgl/src/widgets/span/lv_span.c ****                 snippet.line_h = lv_font_get_line_height(snippet.font) + line_space;
  2641              		.loc 1 1017 38 discriminator 1 view .LVU736
  2642 0100 3B90     		str	r0, [sp, #236]
-ARM GAS  /tmp/cco2vquQ.s 			page 94
+ARM GAS  /tmp/ccsYVSIa.s 			page 94
 
 
 1018:Drivers/lvgl/src/widgets/span/lv_span.c ****             }
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  2684              	.LVL280:
 1041:Drivers/lvgl/src/widgets/span/lv_span.c ****                          lv_text_is_a_word(letter) || lv_text_is_a_word(letter_next))) {
  2685              		.loc 1 1041 110 discriminator 3 view .LVU750
-ARM GAS  /tmp/cco2vquQ.s 			page 95
+ARM GAS  /tmp/ccsYVSIa.s 			page 95
 
 
  2686 0124 70B9     		cbnz	r0, .L178
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
 1054:Drivers/lvgl/src/widgets/span/lv_span.c ****                 max_line_h = snippet.line_h;
  2726              		.loc 1 1054 13 is_stmt 1 view .LVU765
 1054:Drivers/lvgl/src/widgets/span/lv_span.c ****                 max_line_h = snippet.line_h;
-ARM GAS  /tmp/cco2vquQ.s 			page 96
+ARM GAS  /tmp/ccsYVSIa.s 			page 96
 
 
  2727              		.loc 1 1054 36 is_stmt 0 view .LVU766
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  2767              	.LBE108:
 1001:Drivers/lvgl/src/widgets/span/lv_span.c ****             /* switch to the next span when current is end */
  2768              		.loc 1 1001 9 is_stmt 1 view .LVU781
-ARM GAS  /tmp/cco2vquQ.s 			page 97
+ARM GAS  /tmp/ccsYVSIa.s 			page 97
 
 
  2769              	.LBB121:
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  2808              		.loc 1 1028 29 is_stmt 0 view .LVU796
  2809 01aa 159B     		ldr	r3, [sp, #84]
 1028:Drivers/lvgl/src/widgets/span/lv_span.c ****                     int32_t drawn_width = use_width;
-ARM GAS  /tmp/cco2vquQ.s 			page 98
+ARM GAS  /tmp/ccsYVSIa.s 			page 98
 
 
  2810              		.loc 1 1028 19 view .LVU797
@@ -5878,7 +5878,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  2851 01da 9847     		blx	r3
  2852              	.LVL296:
  2853 01dc 0790     		str	r0, [sp, #28]
-ARM GAS  /tmp/cco2vquQ.s 			page 99
+ARM GAS  /tmp/ccsYVSIa.s 			page 99
 
 
  2854              	.LVL297:
@@ -5938,7 +5938,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
   97:Drivers/lvgl/src/widgets/span/../../misc/lv_text_private.h ****             ret = true; /*If match then it is break char*/
  2897              		.loc 2 97 9 is_stmt 1 view .LVU822
   97:Drivers/lvgl/src/widgets/span/../../misc/lv_text_private.h ****             ret = true; /*If match then it is break char*/
-ARM GAS  /tmp/cco2vquQ.s 			page 100
+ARM GAS  /tmp/ccsYVSIa.s 			page 100
 
 
  2898              		.loc 2 97 11 is_stmt 0 view .LVU823
@@ -5998,7 +5998,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  2939              	.L215:
   98:Drivers/lvgl/src/widgets/span/../../misc/lv_text_private.h ****             break;
  2940              		.loc 2 98 17 view .LVU837
-ARM GAS  /tmp/cco2vquQ.s 			page 101
+ARM GAS  /tmp/ccsYVSIa.s 			page 101
 
 
  2941 022e 0146     		mov	r1, r0
@@ -6058,7 +6058,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  2981 024a FFF7FEFF 		bl	lv_get_snippet
  2982              	.LVL316:
 1076:Drivers/lvgl/src/widgets/span/lv_span.c ****             if(last_snippet->txt[last_snippet->bytes] == '\0') {
-ARM GAS  /tmp/cco2vquQ.s 			page 102
+ARM GAS  /tmp/ccsYVSIa.s 			page 102
 
 
  2983              		.loc 1 1076 13 is_stmt 1 view .LVU852
@@ -6118,7 +6118,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  3020 0270 03F00106 		and	r6, r3, #1
  3021              	.LVL320:
 1086:Drivers/lvgl/src/widgets/span/lv_span.c ****             }
-ARM GAS  /tmp/cco2vquQ.s 			page 103
+ARM GAS  /tmp/ccsYVSIa.s 			page 103
 
 
  3022              		.loc 1 1086 17 is_stmt 1 view .LVU870
@@ -6178,7 +6178,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  3059              		.loc 1 1272 23 view .LVU887
  3060 0298 0A9D     		ldr	r5, [sp, #40]
 1279:Drivers/lvgl/src/widgets/span/lv_span.c ****     }
-ARM GAS  /tmp/cco2vquQ.s 			page 104
+ARM GAS  /tmp/ccsYVSIa.s 			page 104
 
 
  3061              		.loc 1 1279 15 view .LVU888
@@ -6238,7 +6238,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  3101              		.loc 1 1080 17 is_stmt 1 view .LVU902
 1080:Drivers/lvgl/src/widgets/span/lv_span.c ****                     next_line_h = lv_font_get_line_height(lv_span_get_style_text_font(obj, next_spa
  3102              		.loc 1 1080 19 is_stmt 0 view .LVU903
-ARM GAS  /tmp/cco2vquQ.s 			page 105
+ARM GAS  /tmp/ccsYVSIa.s 			page 105
 
 
  3103 02be 0146     		mov	r1, r0
@@ -6298,7 +6298,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  3144              	.LBE123:
  3145              	.LBE124:
  995:Drivers/lvgl/src/widgets/span/lv_span.c ****         int32_t max_line_h = 0;  /* the max height of span-font when a line have a lot of span */
-ARM GAS  /tmp/cco2vquQ.s 			page 106
+ARM GAS  /tmp/ccsYVSIa.s 			page 106
 
 
  3146              		.loc 1 995 14 view .LVU917
@@ -6358,7 +6358,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
 1109:Drivers/lvgl/src/widgets/span/lv_span.c ****             lv_snippet_t * pinfo = lv_get_snippet(i_item);
  3188              		.loc 1 1109 32 discriminator 1 view .LVU930
  3189 030e 5445     		cmp	r4, r10
-ARM GAS  /tmp/cco2vquQ.s 			page 107
+ARM GAS  /tmp/ccsYVSIa.s 			page 107
 
 
  3190 0310 1ED2     		bcs	.L236
@@ -6418,7 +6418,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  3233              	.L193:
 1115:Drivers/lvgl/src/widgets/span/lv_span.c ****             }
  3234              		.loc 1 1115 30 view .LVU942
-ARM GAS  /tmp/cco2vquQ.s 			page 108
+ARM GAS  /tmp/ccsYVSIa.s 			page 108
 
 
  3235              	.LBE126:
@@ -6478,7 +6478,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  3276              	.L200:
  3277              	.LBB128:
 1198:Drivers/lvgl/src/widgets/span/lv_span.c ****             /* deal overflow */
-ARM GAS  /tmp/cco2vquQ.s 			page 109
+ARM GAS  /tmp/ccsYVSIa.s 			page 109
 
 
  3278              		.loc 1 1198 22 view .LVU956
@@ -6538,7 +6538,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  3320 039e A068     		ldr	r0, [r4, #8]
  3321 03a0 FFF7FEFF 		bl	lv_font_get_glyph_width
  3322              	.LVL358:
-ARM GAS  /tmp/cco2vquQ.s 			page 110
+ARM GAS  /tmp/ccsYVSIa.s 			page 110
 
 
 1202:Drivers/lvgl/src/widgets/span/lv_span.c **** 
@@ -6598,7 +6598,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  3363              		.loc 1 1208 22 view .LVU982
  3364 03dc 1A93     		str	r3, [sp, #104]
 1209:Drivers/lvgl/src/widgets/span/lv_span.c **** #if LV_USE_BIDI
-ARM GAS  /tmp/cco2vquQ.s 			page 111
+ARM GAS  /tmp/ccsYVSIa.s 			page 111
 
 
  3365              		.loc 1 1209 17 is_stmt 1 view .LVU983
@@ -6658,7 +6658,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
 1166:Drivers/lvgl/src/widgets/span/lv_span.c ****             pos.y = txt_pos.y + max_line_h - pinfo->line_h - (max_baseline - pinfo->font->base_line
  3405              		.loc 1 1166 13 view .LVU998
 1166:Drivers/lvgl/src/widgets/span/lv_span.c ****             pos.y = txt_pos.y + max_line_h - pinfo->line_h - (max_baseline - pinfo->font->base_line
-ARM GAS  /tmp/cco2vquQ.s 			page 112
+ARM GAS  /tmp/ccsYVSIa.s 			page 112
 
 
  3406              		.loc 1 1166 28 is_stmt 0 view .LVU999
@@ -6718,7 +6718,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
 1169:Drivers/lvgl/src/widgets/span/lv_span.c ****             label_draw_dsc.font = lv_span_get_style_text_font(obj, pinfo->span);
  3446              		.loc 1 1169 32 discriminator 1 view .LVU1014
  3447 0436 8DF8C000 		strb	r0, [sp, #192]
-ARM GAS  /tmp/cco2vquQ.s 			page 113
+ARM GAS  /tmp/ccsYVSIa.s 			page 113
 
 
 1170:Drivers/lvgl/src/widgets/span/lv_span.c ****             if(obj_opa < LV_OPA_MAX) {
@@ -6778,7 +6778,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  3484              		.loc 1 1182 13 is_stmt 1 view .LVU1032
 1182:Drivers/lvgl/src/widgets/span/lv_span.c ****             label_draw_dsc.decor = lv_span_get_style_text_decor(obj, pinfo->span);
  3485              		.loc 1 1182 48 is_stmt 0 view .LVU1033
-ARM GAS  /tmp/cco2vquQ.s 			page 114
+ARM GAS  /tmp/ccsYVSIa.s 			page 114
 
 
  3486 0466 A369     		ldr	r3, [r4, #24]
@@ -6838,7 +6838,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
 1198:Drivers/lvgl/src/widgets/span/lv_span.c ****             /* deal overflow */
  3522              		.loc 1 1198 13 view .LVU1052
 1200:Drivers/lvgl/src/widgets/span/lv_span.c ****                 uint32_t dot_letter_w = lv_font_get_glyph_width(pinfo->font, '.', '.');
-ARM GAS  /tmp/cco2vquQ.s 			page 115
+ARM GAS  /tmp/ccsYVSIa.s 			page 115
 
 
  3523              		.loc 1 1200 13 view .LVU1053
@@ -6898,7 +6898,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  3562 04b8 FFF7FEFF 		bl	lv_draw_label
  3563              	.LVL379:
  3564 04bc 93E7     		b	.L205
-ARM GAS  /tmp/cco2vquQ.s 			page 116
+ARM GAS  /tmp/ccsYVSIa.s 			page 116
 
 
  3565              	.LVL380:
@@ -6958,7 +6958,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  3610              		.thumb_func
  3612              	draw_main:
  3613              	.LVL385:
-ARM GAS  /tmp/cco2vquQ.s 			page 117
+ARM GAS  /tmp/ccsYVSIa.s 			page 117
 
 
  3614              	.LFB222:
@@ -7018,7 +7018,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  3657              		.align	1
  3658              		.global	lv_spangroup_get_max_lines
  3659              		.syntax unified
-ARM GAS  /tmp/cco2vquQ.s 			page 118
+ARM GAS  /tmp/ccsYVSIa.s 			page 118
 
 
  3660              		.thumb
@@ -7078,7 +7078,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  3703              	.LVL397:
  3704              	.LFB213:
  425:Drivers/lvgl/src/widgets/span/lv_span.c ****     LV_ASSERT_OBJ(obj, MY_CLASS);
-ARM GAS  /tmp/cco2vquQ.s 			page 119
+ARM GAS  /tmp/ccsYVSIa.s 			page 119
 
 
  3705              		.loc 1 425 1 view -0
@@ -7138,7 +7138,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  3747              		.cfi_restore 4
  3748              		.cfi_restore 5
  3749              		.cfi_restore 6
-ARM GAS  /tmp/cco2vquQ.s 			page 120
+ARM GAS  /tmp/ccsYVSIa.s 			page 120
 
 
  3750              		.cfi_restore 7
@@ -7198,7 +7198,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  3791              		.loc 1 434 9 is_stmt 1 view .LVU1130
  434:Drivers/lvgl/src/widgets/span/lv_span.c ****             max_line_h = line_h;
  3792              		.loc 1 434 11 is_stmt 0 view .LVU1131
-ARM GAS  /tmp/cco2vquQ.s 			page 121
+ARM GAS  /tmp/ccsYVSIa.s 			page 121
 
 
  3793 0030 8542     		cmp	r5, r0
@@ -7258,7 +7258,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  3841              		.cfi_def_cfa_offset 56
  444:Drivers/lvgl/src/widgets/span/lv_span.c ****     lv_spangroup_t * spans = (lv_spangroup_t *)obj;
  3842              		.loc 1 444 5 is_stmt 1 view .LVU1140
-ARM GAS  /tmp/cco2vquQ.s 			page 122
+ARM GAS  /tmp/ccsYVSIa.s 			page 122
 
 
  444:Drivers/lvgl/src/widgets/span/lv_span.c ****     lv_spangroup_t * spans = (lv_spangroup_t *)obj;
@@ -7318,7 +7318,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  453:Drivers/lvgl/src/widgets/span/lv_span.c ****     LV_LL_READ(&spans->child_ll, cur_span) {
  3882              		.loc 1 453 13 is_stmt 0 view .LVU1156
  3883 0032 4FF00009 		mov	r9, #0
-ARM GAS  /tmp/cco2vquQ.s 			page 123
+ARM GAS  /tmp/ccsYVSIa.s 			page 123
 
 
  3884              	.LVL418:
@@ -7378,7 +7378,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  3924 005a E5B9     		cbnz	r5, .L268
  899:Drivers/lvgl/src/widgets/span/lv_span.c ****         LV_LOG_ERROR("occur an error that span text == NULL");
  3925              		.loc 1 899 15 view .LVU1171
-ARM GAS  /tmp/cco2vquQ.s 			page 124
+ARM GAS  /tmp/ccsYVSIa.s 			page 124
 
 
  3926 005c 194D     		ldr	r5, .L279
@@ -7438,7 +7438,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  3965              		.loc 1 464 13 is_stmt 1 view .LVU1186
  464:Drivers/lvgl/src/widgets/span/lv_span.c ****             uint32_t letter_next = lv_text_encoded_next(&cur_txt[j], NULL);
  3966              		.loc 1 464 36 is_stmt 0 view .LVU1187
-ARM GAS  /tmp/cco2vquQ.s 			page 125
+ARM GAS  /tmp/ccsYVSIa.s 			page 125
 
 
  3967 0072 154B     		ldr	r3, .L279+4
@@ -7498,7 +7498,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  4008              		.loc 1 460 26 view .LVU1200
  4009 009a 3BB1     		cbz	r3, .L278
  4010              	.LBB140:
-ARM GAS  /tmp/cco2vquQ.s 			page 126
+ARM GAS  /tmp/ccsYVSIa.s 			page 126
 
 
  461:Drivers/lvgl/src/widgets/span/lv_span.c ****                 return max_width;
@@ -7558,7 +7558,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  4054              	.L272:
  448:Drivers/lvgl/src/widgets/span/lv_span.c ****     }
  4055              		.loc 1 448 16 view .LVU1212
-ARM GAS  /tmp/cco2vquQ.s 			page 127
+ARM GAS  /tmp/ccsYVSIa.s 			page 127
 
 
  4056 00be 0020     		movs	r0, #0
@@ -7618,7 +7618,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  4105              	.LVL447:
  478:Drivers/lvgl/src/widgets/span/lv_span.c ****         return 0;
  4106              		.loc 1 478 5 view .LVU1220
-ARM GAS  /tmp/cco2vquQ.s 			page 128
+ARM GAS  /tmp/ccsYVSIa.s 			page 128
 
 
  478:Drivers/lvgl/src/widgets/span/lv_span.c ****         return 0;
@@ -7678,7 +7678,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  4146              		.loc 1 486 22 is_stmt 0 view .LVU1235
  4147 0036 2946     		mov	r1, r5
  4148 0038 2046     		mov	r0, r4
-ARM GAS  /tmp/cco2vquQ.s 			page 129
+ARM GAS  /tmp/ccsYVSIa.s 			page 129
 
 
  4149              	.LVL453:
@@ -7738,7 +7738,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  900:Drivers/lvgl/src/widgets/span/lv_span.c ****     }
  4189              		.loc 1 900 9 is_stmt 1 view .LVU1250
  900:Drivers/lvgl/src/widgets/span/lv_span.c ****     }
-ARM GAS  /tmp/cco2vquQ.s 			page 130
+ARM GAS  /tmp/ccsYVSIa.s 			page 130
 
 
  4190              		.loc 1 900 9 view .LVU1251
@@ -7798,7 +7798,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  4229 0080 E8E0     		b	.L287
  4230              	.LVL468:
  4231              	.L283:
-ARM GAS  /tmp/cco2vquQ.s 			page 131
+ARM GAS  /tmp/ccsYVSIa.s 			page 131
 
 
  476:Drivers/lvgl/src/widgets/span/lv_span.c ****     lv_spangroup_t * spans = (lv_spangroup_t *)obj;
@@ -7858,7 +7858,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  515:Drivers/lvgl/src/widgets/span/lv_span.c ****                 cur_txt = cur_span->txt;
  4272              		.loc 1 515 19 is_stmt 0 view .LVU1281
  4273 00a6 0646     		mov	r6, r0
-ARM GAS  /tmp/cco2vquQ.s 			page 132
+ARM GAS  /tmp/ccsYVSIa.s 			page 132
 
 
  4274 00a8 0028     		cmp	r0, #0
@@ -7918,7 +7918,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  899:Drivers/lvgl/src/widgets/span/lv_span.c ****         LV_LOG_ERROR("occur an error that span text == NULL");
  4313              		.loc 1 899 15 view .LVU1297
  4314              	.LBE152:
-ARM GAS  /tmp/cco2vquQ.s 			page 133
+ARM GAS  /tmp/ccsYVSIa.s 			page 133
 
 
  4315              	.LBE153:
@@ -7978,7 +7978,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  4354              		.loc 1 540 13 is_stmt 1 view .LVU1312
  4355              	.LVL483:
  4356              	.L295:
-ARM GAS  /tmp/cco2vquQ.s 			page 134
+ARM GAS  /tmp/ccsYVSIa.s 			page 134
 
 
  560:Drivers/lvgl/src/widgets/span/lv_span.c ****             snippet.bytes = next_ofs;
@@ -8038,7 +8038,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  4393 010c 002F     		cmp	r7, #0
  4394 010e D8BF     		it	le
  4395 0110 42F00102 		orrle	r2, r2, #1
-ARM GAS  /tmp/cco2vquQ.s 			page 135
+ARM GAS  /tmp/ccsYVSIa.s 			page 135
 
 
  569:Drivers/lvgl/src/widgets/span/lv_span.c ****                 break;
@@ -8098,7 +8098,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  4436 0144 FFF7FEFF 		bl	lv_text_get_snippet
  4437              	.LVL489:
  536:Drivers/lvgl/src/widgets/span/lv_span.c ****             else txt_pos.x += use_width;
-ARM GAS  /tmp/cco2vquQ.s 			page 136
+ARM GAS  /tmp/ccsYVSIa.s 			page 136
 
 
  4438              		.loc 1 536 13 is_stmt 1 view .LVU1345
@@ -8158,7 +8158,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  4477 016e 9F42     		cmp	r7, r3
  4478 0170 5CDB     		blt	.L321
  549:Drivers/lvgl/src/widgets/span/lv_span.c ****                 uint32_t letter = lv_text_encoded_prev(&cur_txt[cur_txt_ofs], &tmp_ofs);
-ARM GAS  /tmp/cco2vquQ.s 			page 137
+ARM GAS  /tmp/ccsYVSIa.s 			page 137
 
 
  4479              		.loc 1 549 17 is_stmt 1 view .LVU1361
@@ -8218,7 +8218,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
   96:Drivers/lvgl/src/widgets/span/../../misc/lv_text_private.h ****         if(letter == (uint32_t)LV_TXT_BREAK_CHARS[i]) {
  4523              		.loc 2 96 11 view .LVU1372
  4524 01a6 0023     		movs	r3, #0
-ARM GAS  /tmp/cco2vquQ.s 			page 138
+ARM GAS  /tmp/ccsYVSIa.s 			page 138
 
 
  4525 01a8 0C98     		ldr	r0, [sp, #48]
@@ -8278,7 +8278,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  4565              		.loc 2 93 10 view .LVU1386
  4566 01c4 0021     		movs	r1, #0
  4567              	.L300:
-ARM GAS  /tmp/cco2vquQ.s 			page 139
+ARM GAS  /tmp/ccsYVSIa.s 			page 139
 
 
  4568              	.LVL505:
@@ -8338,7 +8338,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  4610              		.loc 2 96 38 is_stmt 1 discriminator 1 view .LVU1398
   96:Drivers/lvgl/src/widgets/span/../../misc/lv_text_private.h ****         if(letter == (uint32_t)LV_TXT_BREAK_CHARS[i]) {
  4611              		.loc 2 96 34 is_stmt 0 discriminator 1 view .LVU1399
-ARM GAS  /tmp/cco2vquQ.s 			page 140
+ARM GAS  /tmp/ccsYVSIa.s 			page 140
 
 
  4612 01fa 2149     		ldr	r1, .L334+8
@@ -8398,7 +8398,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  4653              		.loc 1 569 15 view .LVU1412
  4654 021e D946     		mov	r9, fp
  4655              	.LVL514:
-ARM GAS  /tmp/cco2vquQ.s 			page 141
+ARM GAS  /tmp/ccsYVSIa.s 			page 141
 
 
  4656              	.L289:
@@ -8458,7 +8458,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  579:Drivers/lvgl/src/widgets/span/lv_span.c ****             tmp_span = lv_ll_get_next(&spans->child_ll, tmp_span))
  4695              		.loc 1 579 22 is_stmt 1 view .LVU1428
  579:Drivers/lvgl/src/widgets/span/lv_span.c ****             tmp_span = lv_ll_get_next(&spans->child_ll, tmp_span))
-ARM GAS  /tmp/cco2vquQ.s 			page 142
+ARM GAS  /tmp/ccsYVSIa.s 			page 142
 
 
  4696              		.loc 1 579 34 is_stmt 0 view .LVU1429
@@ -8518,7 +8518,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  4737              	.LVL524:
  4738              	.L309:
  505:Drivers/lvgl/src/widgets/span/lv_span.c ****         int32_t max_line_h = 0;  /* the max height of span-font when a line have a lot of span */
-ARM GAS  /tmp/cco2vquQ.s 			page 143
+ARM GAS  /tmp/ccsYVSIa.s 			page 143
 
 
  4739              		.loc 1 505 13 view .LVU1443
@@ -8578,7 +8578,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  4788              		.loc 1 597 1 is_stmt 1 view -0
  4789              		.cfi_startproc
  4790              		@ args = 0, pretend = 0, frame = 24
-ARM GAS  /tmp/cco2vquQ.s 			page 144
+ARM GAS  /tmp/ccsYVSIa.s 			page 144
 
 
  4791              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -8638,7 +8638,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  604:Drivers/lvgl/src/widgets/span/lv_span.c ****         0
  4834              		.loc 1 604 5 is_stmt 1 view .LVU1462
  604:Drivers/lvgl/src/widgets/span/lv_span.c ****         0
-ARM GAS  /tmp/cco2vquQ.s 			page 145
+ARM GAS  /tmp/ccsYVSIa.s 			page 145
 
 
  4835              		.loc 1 604 7 is_stmt 0 view .LVU1463
@@ -8698,7 +8698,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  610:Drivers/lvgl/src/widgets/span/lv_span.c ****         if(curr_span == span) break;
  4879              		.loc 1 610 5 view .LVU1474
  4880 0044 4046     		mov	r0, r8
-ARM GAS  /tmp/cco2vquQ.s 			page 146
+ARM GAS  /tmp/ccsYVSIa.s 			page 146
 
 
  4881 0046 FFF7FEFF 		bl	lv_ll_get_head
@@ -8758,7 +8758,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  4921 0066 0021     		movs	r1, #0
  4922 0068 2846     		mov	r0, r5
  4923              	.LVL549:
-ARM GAS  /tmp/cco2vquQ.s 			page 147
+ARM GAS  /tmp/ccsYVSIa.s 			page 147
 
 
  342:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
@@ -8818,7 +8818,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  4964              	.LBB170:
  156:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
  4965              		.loc 3 156 5 view .LVU1503
-ARM GAS  /tmp/cco2vquQ.s 			page 148
+ARM GAS  /tmp/ccsYVSIa.s 			page 148
 
 
  156:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
@@ -8878,7 +8878,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  5007 00a6 CDF810B0 		str	fp, [sp, #16]
  5008 00aa 0CAB     		add	r3, sp, #48
  5009 00ac 13E90F00 		ldmdb	r3, {r0, r1, r2, r3}
-ARM GAS  /tmp/cco2vquQ.s 			page 149
+ARM GAS  /tmp/ccsYVSIa.s 			page 149
 
 
  5010 00b0 8DE80F00 		stm	sp, {r0, r1, r2, r3}
@@ -8938,7 +8938,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  628:Drivers/lvgl/src/widgets/span/lv_span.c ****     const int32_t indent = lv_spangroup_get_indent(obj);
  5060              		.loc 1 628 27 is_stmt 0 view .LVU1523
  5061 000e FFF7FEFF 		bl	lv_obj_get_content_width
-ARM GAS  /tmp/cco2vquQ.s 			page 150
+ARM GAS  /tmp/ccsYVSIa.s 			page 150
 
 
  5062              	.LVL566:
@@ -8998,7 +8998,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  635:Drivers/lvgl/src/widgets/span/lv_span.c **** 
  5100              		.loc 1 635 16 is_stmt 0 view .LVU1540
  5101 0036 6368     		ldr	r3, [r4, #4]
-ARM GAS  /tmp/cco2vquQ.s 			page 151
+ARM GAS  /tmp/ccsYVSIa.s 			page 151
 
 
  635:Drivers/lvgl/src/widgets/span/lv_span.c **** 
@@ -9058,7 +9058,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  5142              	.LVL579:
  169:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** }
  5143              		.loc 3 169 5 is_stmt 0 view .LVU1555
-ARM GAS  /tmp/cco2vquQ.s 			page 152
+ARM GAS  /tmp/ccsYVSIa.s 			page 152
 
 
  5144              	.LBE175:
@@ -9118,7 +9118,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  642:Drivers/lvgl/src/widgets/span/lv_span.c ****             .x1 = lv_obj_get_style_pad_left(obj, LV_PART_MAIN),
  5186              		.loc 1 642 93 view .LVU1568
  5187 0074 1690     		str	r0, [sp, #88]
-ARM GAS  /tmp/cco2vquQ.s 			page 153
+ARM GAS  /tmp/ccsYVSIa.s 			page 153
 
 
  5188 0076 4FF0000B 		mov	fp, #0
@@ -9178,7 +9178,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  5231              		.loc 1 641 5 is_stmt 1 discriminator 2 view .LVU1579
  5232 00c0 2146     		mov	r1, r4
  5233 00c2 4846     		mov	r0, r9
-ARM GAS  /tmp/cco2vquQ.s 			page 154
+ARM GAS  /tmp/ccsYVSIa.s 			page 154
 
 
  5234 00c4 FFF7FEFF 		bl	lv_ll_get_next
@@ -9238,7 +9238,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  5281              		.cfi_offset 4, -8
  5282              		.cfi_offset 14, -4
  5283 0002 0446     		mov	r4, r0
-ARM GAS  /tmp/cco2vquQ.s 			page 155
+ARM GAS  /tmp/ccsYVSIa.s 			page 155
 
 
  666:Drivers/lvgl/src/widgets/span/lv_span.c ****     spans->refresh = 1;
@@ -9298,7 +9298,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  5328              		.loc 1 711 8 is_stmt 0 view .LVU1600
  5329 0004 5948     		ldr	r0, .L382
  5330              	.LVL600:
-ARM GAS  /tmp/cco2vquQ.s 			page 156
+ARM GAS  /tmp/ccsYVSIa.s 			page 156
 
 
  711:Drivers/lvgl/src/widgets/span/lv_span.c **** 
@@ -9358,7 +9358,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  5375 004c 0F000000 		.word	.L356+1
  5376 0050 0F000000 		.word	.L356+1
  5377 0054 0F000000 		.word	.L356+1
-ARM GAS  /tmp/cco2vquQ.s 			page 157
+ARM GAS  /tmp/ccsYVSIa.s 			page 157
 
 
  5378 0058 0F000000 		.word	.L356+1
@@ -9418,7 +9418,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  5422 00a4 2046     		mov	r0, r4
  5423              	.LVL616:
  729:Drivers/lvgl/src/widgets/span/lv_span.c **** 
-ARM GAS  /tmp/cco2vquQ.s 			page 158
+ARM GAS  /tmp/ccsYVSIa.s 			page 158
 
 
  5424              		.loc 1 729 34 view .LVU1621
@@ -9478,7 +9478,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  5462 00c8 002B     		cmp	r3, #0
  5463 00ca 46DA     		bge	.L380
  757:Drivers/lvgl/src/widgets/span/lv_span.c ****         }
-ARM GAS  /tmp/cco2vquQ.s 			page 159
+ARM GAS  /tmp/ccsYVSIa.s 			page 159
 
 
  5464              		.loc 1 757 73 discriminator 2 view .LVU1638
@@ -9538,7 +9538,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  734:Drivers/lvgl/src/widgets/span/lv_span.c ****                 spans->cache_h = lv_spangroup_get_max_line_height(obj);
  5505              		.loc 1 734 17 is_stmt 1 view .LVU1652
  734:Drivers/lvgl/src/widgets/span/lv_span.c ****                 spans->cache_h = lv_spangroup_get_max_line_height(obj);
-ARM GAS  /tmp/cco2vquQ.s 			page 160
+ARM GAS  /tmp/ccsYVSIa.s 			page 160
 
 
  5506              		.loc 1 734 43 is_stmt 0 view .LVU1653
@@ -9598,7 +9598,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  744:Drivers/lvgl/src/widgets/span/lv_span.c ****                     height = lv_spangroup_get_expand_height(obj, width);
  5546              		.loc 1 744 34 is_stmt 0 view .LVU1668
  5547 0122 736B     		ldr	r3, [r6, #52]
-ARM GAS  /tmp/cco2vquQ.s 			page 161
+ARM GAS  /tmp/ccsYVSIa.s 			page 161
 
 
  744:Drivers/lvgl/src/widgets/span/lv_span.c ****                     height = lv_spangroup_get_expand_height(obj, width);
@@ -9658,7 +9658,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  5587 0150 3046     		mov	r0, r6
  5588              	.LVL639:
  756:Drivers/lvgl/src/widgets/span/lv_span.c ****             height = self_size->y >= 0 ? lv_obj_get_content_height(obj) : 0;
-ARM GAS  /tmp/cco2vquQ.s 			page 162
+ARM GAS  /tmp/ccsYVSIa.s 			page 162
 
 
  5589              		.loc 1 756 42 discriminator 1 view .LVU1684
@@ -9718,7 +9718,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  119:Drivers/lvgl/src/widgets/span/lv_span.c ****     if(obj == NULL) {
  5638              		.loc 1 119 1 is_stmt 1 view -0
  5639              		.cfi_startproc
-ARM GAS  /tmp/cco2vquQ.s 			page 163
+ARM GAS  /tmp/ccsYVSIa.s 			page 163
 
 
  5640              		@ args = 0, pretend = 0, frame = 0
@@ -9778,7 +9778,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  5677 0012 FFF7FEFF 		bl	lv_style_init
  5678              	.LVL654:
  130:Drivers/lvgl/src/widgets/span/lv_span.c ****     span->static_flag = 1;
-ARM GAS  /tmp/cco2vquQ.s 			page 164
+ARM GAS  /tmp/ccsYVSIa.s 			page 164
 
 
  5679              		.loc 1 130 5 is_stmt 1 view .LVU1710
@@ -9838,7 +9838,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  5722              		.thumb_func
  5724              	lv_spangroup_delete_span:
  5725              	.LVL658:
-ARM GAS  /tmp/cco2vquQ.s 			page 165
+ARM GAS  /tmp/ccsYVSIa.s 			page 165
 
 
  5726              	.LFB193:
@@ -9898,7 +9898,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  5767              	.LVL662:
  5768              	.L394:
  147:Drivers/lvgl/src/widgets/span/lv_span.c ****         if(cur_span == span) {
-ARM GAS  /tmp/cco2vquQ.s 			page 166
+ARM GAS  /tmp/ccsYVSIa.s 			page 166
 
 
  5769              		.loc 1 147 5 is_stmt 1 discriminator 1 view .LVU1736
@@ -9958,7 +9958,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  5810              		.loc 1 156 13 view .LVU1749
  157:Drivers/lvgl/src/widgets/span/lv_span.c ****         }
  5811              		.loc 1 157 13 view .LVU1750
-ARM GAS  /tmp/cco2vquQ.s 			page 167
+ARM GAS  /tmp/ccsYVSIa.s 			page 167
 
 
  5812              	.L397:
@@ -10018,7 +10018,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  5859 0008 FFF7FEFF 		bl	lv_span_set_text
  5860              	.LVL675:
  205:Drivers/lvgl/src/widgets/span/lv_span.c **** }
-ARM GAS  /tmp/cco2vquQ.s 			page 168
+ARM GAS  /tmp/ccsYVSIa.s 			page 168
 
 
  5861              		.loc 1 205 5 is_stmt 1 view .LVU1760
@@ -10078,7 +10078,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  5908              	.LFE197:
  5910              		.section	.text.lv_spangroup_set_span_style,"ax",%progbits
  5911              		.align	1
-ARM GAS  /tmp/cco2vquQ.s 			page 169
+ARM GAS  /tmp/ccsYVSIa.s 			page 169
 
 
  5912              		.global	lv_spangroup_set_span_style
@@ -10138,7 +10138,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  5953 0014 FFF7FEFF 		bl	lv_spangroup_refresh
  5954              	.LVL686:
  245:Drivers/lvgl/src/widgets/span/lv_span.c **** 
-ARM GAS  /tmp/cco2vquQ.s 			page 170
+ARM GAS  /tmp/ccsYVSIa.s 			page 170
 
 
  5955              		.loc 1 245 1 is_stmt 0 view .LVU1784
@@ -10198,7 +10198,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  5998              		.loc 1 266 5 view .LVU1797
  5999 0000 38B1     		cbz	r0, .L419
  265:Drivers/lvgl/src/widgets/span/lv_span.c ****     LV_ASSERT_OBJ(obj, MY_CLASS);
-ARM GAS  /tmp/cco2vquQ.s 			page 171
+ARM GAS  /tmp/ccsYVSIa.s 			page 171
 
 
  6000              		.loc 1 265 1 is_stmt 0 view .LVU1798
@@ -10258,7 +10258,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  6040              		.section	.text.lv_spangroup_set_mode,"ax",%progbits
  6041              		.align	1
  6042              		.global	lv_spangroup_set_mode
-ARM GAS  /tmp/cco2vquQ.s 			page 172
+ARM GAS  /tmp/ccsYVSIa.s 			page 172
 
 
  6043              		.syntax unified
@@ -10318,7 +10318,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  6083 0012 10D0     		beq	.L435
  292:Drivers/lvgl/src/widgets/span/lv_span.c ****         /* use this mode, The user needs to set the size. */
  6084              		.loc 1 292 10 is_stmt 1 view .LVU1829
-ARM GAS  /tmp/cco2vquQ.s 			page 173
+ARM GAS  /tmp/ccsYVSIa.s 			page 173
 
 
  292:Drivers/lvgl/src/widgets/span/lv_span.c ****         /* use this mode, The user needs to set the size. */
@@ -10378,7 +10378,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  6128 0034 EFE7     		b	.L428
  6129              	.LVL699:
  6130              	.L435:
-ARM GAS  /tmp/cco2vquQ.s 			page 174
+ARM GAS  /tmp/ccsYVSIa.s 			page 174
 
 
  287:Drivers/lvgl/src/widgets/span/lv_span.c ****             lv_obj_set_width(obj, 100);
@@ -10438,7 +10438,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  6173              	.LBI184:
   22:Drivers/lvgl/src/widgets/span/../../core/lv_obj_style_gen.h **** {
  6174              		.loc 3 22 23 view .LVU1853
-ARM GAS  /tmp/cco2vquQ.s 			page 175
+ARM GAS  /tmp/ccsYVSIa.s 			page 175
 
 
  6175              	.LBB185:
@@ -10498,7 +10498,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  299:Drivers/lvgl/src/widgets/span/lv_span.c ****         }
  6216              		.loc 1 299 13 is_stmt 1 view .LVU1867
  6217 0082 6421     		movs	r1, #100
-ARM GAS  /tmp/cco2vquQ.s 			page 176
+ARM GAS  /tmp/ccsYVSIa.s 			page 176
 
 
  6218 0084 2046     		mov	r0, r4
@@ -10558,7 +10558,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  6263 0006 FFF7FEFF 		bl	lv_spangroup_refresh
  6264              	.LVL715:
  313:Drivers/lvgl/src/widgets/span/lv_span.c **** 
-ARM GAS  /tmp/cco2vquQ.s 			page 177
+ARM GAS  /tmp/ccsYVSIa.s 			page 177
 
 
  6265              		.loc 1 313 1 is_stmt 0 view .LVU1879
@@ -10618,7 +10618,7 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  6316              		.file 15 "Drivers/lvgl/src/widgets/span/../../draw/../misc/cache/lv_cache_private.h"
  6317              		.file 16 "Drivers/lvgl/src/widgets/span/lv_span_private.h"
  6318              		.file 17 "Drivers/lvgl/src/widgets/span/../../core/../draw/lv_draw_buf_private.h"
-ARM GAS  /tmp/cco2vquQ.s 			page 178
+ARM GAS  /tmp/ccsYVSIa.s 			page 178
 
 
  6319              		.file 18 "Drivers/lvgl/src/widgets/span/../../core/../display/../misc/lv_array.h"
@@ -10651,135 +10651,135 @@ ARM GAS  /tmp/cco2vquQ.s 			page 1
  6346              		.file 45 "Drivers/lvgl/src/widgets/span/../../core/lv_obj_class.h"
  6347              		.file 46 "Drivers/lvgl/src/widgets/span/../../core/lv_obj_event.h"
  6348              		.file 47 "<built-in>"
-ARM GAS  /tmp/cco2vquQ.s 			page 179
+ARM GAS  /tmp/ccsYVSIa.s 			page 179
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_span.c
-     /tmp/cco2vquQ.s:21     .text.lv_text_is_a_word:00000000 $t
-     /tmp/cco2vquQ.s:26     .text.lv_text_is_a_word:00000000 lv_text_is_a_word
-     /tmp/cco2vquQ.s:160    .text.lv_text_is_a_word:00000070 $d
-     /tmp/cco2vquQ.s:166    .text.lv_get_snippet_count:00000000 $t
-     /tmp/cco2vquQ.s:171    .text.lv_get_snippet_count:00000000 lv_get_snippet_count
-     /tmp/cco2vquQ.s:188    .text.lv_get_snippet_count:0000000c $d
-     /tmp/cco2vquQ.s:193    .text.lv_get_snippet:00000000 $t
-     /tmp/cco2vquQ.s:198    .text.lv_get_snippet:00000000 lv_get_snippet
-     /tmp/cco2vquQ.s:219    .text.lv_get_snippet:00000010 $d
-     /tmp/cco2vquQ.s:224    .text.lv_snippet_clear:00000000 $t
-     /tmp/cco2vquQ.s:229    .text.lv_snippet_clear:00000000 lv_snippet_clear
-     /tmp/cco2vquQ.s:247    .text.lv_snippet_clear:00000010 $d
-     /tmp/cco2vquQ.s:252    .text.lv_span_get_style_text_letter_space:00000000 $t
-     /tmp/cco2vquQ.s:257    .text.lv_span_get_style_text_letter_space:00000000 lv_span_get_style_text_letter_space
-     /tmp/cco2vquQ.s:336    .text.lv_span_get_style_text_color:00000000 $t
-     /tmp/cco2vquQ.s:341    .text.lv_span_get_style_text_color:00000000 lv_span_get_style_text_color
-     /tmp/cco2vquQ.s:440    .text.lv_span_get_style_text_opa:00000000 $t
-     /tmp/cco2vquQ.s:445    .text.lv_span_get_style_text_opa:00000000 lv_span_get_style_text_opa
-     /tmp/cco2vquQ.s:525    .text.lv_span_get_style_text_font:00000000 $t
-     /tmp/cco2vquQ.s:530    .text.lv_span_get_style_text_font:00000000 lv_span_get_style_text_font
-     /tmp/cco2vquQ.s:608    .text.lv_span_get_style_text_decor:00000000 $t
-     /tmp/cco2vquQ.s:613    .text.lv_span_get_style_text_decor:00000000 lv_span_get_style_text_decor
-     /tmp/cco2vquQ.s:695    .text.lv_snippet_push:00000000 $t
-     /tmp/cco2vquQ.s:700    .text.lv_snippet_push:00000000 lv_snippet_push
-     /tmp/cco2vquQ.s:755    .text.lv_snippet_push:00000030 $d
-     /tmp/cco2vquQ.s:760    .text.lv_text_get_snippet:00000000 $t
-     /tmp/cco2vquQ.s:765    .text.lv_text_get_snippet:00000000 lv_text_get_snippet
-     /tmp/cco2vquQ.s:899    .text.lv_spangroup_destructor:00000000 $t
-     /tmp/cco2vquQ.s:904    .text.lv_spangroup_destructor:00000000 lv_spangroup_destructor
-     /tmp/cco2vquQ.s:989    .text.lv_spangroup_constructor:00000000 $t
-     /tmp/cco2vquQ.s:994    .text.lv_spangroup_constructor:00000000 lv_spangroup_constructor
-     /tmp/cco2vquQ.s:1051   .text.make_span_coords:00000000 $t
-     /tmp/cco2vquQ.s:1056   .text.make_span_coords:00000000 make_span_coords
-     /tmp/cco2vquQ.s:1315   .text.lv_span_stack_init:00000000 $t
-     /tmp/cco2vquQ.s:1321   .text.lv_span_stack_init:00000000 lv_span_stack_init
-     /tmp/cco2vquQ.s:1356   .text.lv_span_stack_init:00000018 $d
-     /tmp/cco2vquQ.s:1361   .text.lv_span_stack_deinit:00000000 $t
-     /tmp/cco2vquQ.s:1367   .text.lv_span_stack_deinit:00000000 lv_span_stack_deinit
-     /tmp/cco2vquQ.s:1388   .text.lv_span_stack_deinit:00000010 $d
-     /tmp/cco2vquQ.s:1393   .text.lv_spangroup_create:00000000 $t
-     /tmp/cco2vquQ.s:1399   .text.lv_spangroup_create:00000000 lv_spangroup_create
-     /tmp/cco2vquQ.s:1435   .text.lv_spangroup_create:00000014 $d
-     /tmp/cco2vquQ.s:6291   .rodata.lv_spangroup_class:00000000 lv_spangroup_class
-     /tmp/cco2vquQ.s:1440   .text.lv_span_set_text:00000000 $t
-     /tmp/cco2vquQ.s:1446   .text.lv_span_set_text:00000000 lv_span_set_text
-     /tmp/cco2vquQ.s:1556   .text.lv_span_set_text_static:00000000 $t
-     /tmp/cco2vquQ.s:1562   .text.lv_span_set_text_static:00000000 lv_span_set_text_static
-     /tmp/cco2vquQ.s:1632   .text.lv_spangroup_set_align:00000000 $t
-     /tmp/cco2vquQ.s:1638   .text.lv_spangroup_set_align:00000000 lv_spangroup_set_align
-     /tmp/cco2vquQ.s:1664   .text.lv_spangroup_set_overflow:00000000 $t
-     /tmp/cco2vquQ.s:1670   .text.lv_spangroup_set_overflow:00000000 lv_spangroup_set_overflow
-     /tmp/cco2vquQ.s:1737   .text.lv_span_get_style:00000000 $t
-     /tmp/cco2vquQ.s:1743   .text.lv_span_get_style:00000000 lv_span_get_style
-     /tmp/cco2vquQ.s:1761   .text.lv_span_get_text:00000000 $t
-     /tmp/cco2vquQ.s:1767   .text.lv_span_get_text:00000000 lv_span_get_text
-ARM GAS  /tmp/cco2vquQ.s 			page 180
+     /tmp/ccsYVSIa.s:21     .text.lv_text_is_a_word:00000000 $t
+     /tmp/ccsYVSIa.s:26     .text.lv_text_is_a_word:00000000 lv_text_is_a_word
+     /tmp/ccsYVSIa.s:160    .text.lv_text_is_a_word:00000070 $d
+     /tmp/ccsYVSIa.s:166    .text.lv_get_snippet_count:00000000 $t
+     /tmp/ccsYVSIa.s:171    .text.lv_get_snippet_count:00000000 lv_get_snippet_count
+     /tmp/ccsYVSIa.s:188    .text.lv_get_snippet_count:0000000c $d
+     /tmp/ccsYVSIa.s:193    .text.lv_get_snippet:00000000 $t
+     /tmp/ccsYVSIa.s:198    .text.lv_get_snippet:00000000 lv_get_snippet
+     /tmp/ccsYVSIa.s:219    .text.lv_get_snippet:00000010 $d
+     /tmp/ccsYVSIa.s:224    .text.lv_snippet_clear:00000000 $t
+     /tmp/ccsYVSIa.s:229    .text.lv_snippet_clear:00000000 lv_snippet_clear
+     /tmp/ccsYVSIa.s:247    .text.lv_snippet_clear:00000010 $d
+     /tmp/ccsYVSIa.s:252    .text.lv_span_get_style_text_letter_space:00000000 $t
+     /tmp/ccsYVSIa.s:257    .text.lv_span_get_style_text_letter_space:00000000 lv_span_get_style_text_letter_space
+     /tmp/ccsYVSIa.s:336    .text.lv_span_get_style_text_color:00000000 $t
+     /tmp/ccsYVSIa.s:341    .text.lv_span_get_style_text_color:00000000 lv_span_get_style_text_color
+     /tmp/ccsYVSIa.s:440    .text.lv_span_get_style_text_opa:00000000 $t
+     /tmp/ccsYVSIa.s:445    .text.lv_span_get_style_text_opa:00000000 lv_span_get_style_text_opa
+     /tmp/ccsYVSIa.s:525    .text.lv_span_get_style_text_font:00000000 $t
+     /tmp/ccsYVSIa.s:530    .text.lv_span_get_style_text_font:00000000 lv_span_get_style_text_font
+     /tmp/ccsYVSIa.s:608    .text.lv_span_get_style_text_decor:00000000 $t
+     /tmp/ccsYVSIa.s:613    .text.lv_span_get_style_text_decor:00000000 lv_span_get_style_text_decor
+     /tmp/ccsYVSIa.s:695    .text.lv_snippet_push:00000000 $t
+     /tmp/ccsYVSIa.s:700    .text.lv_snippet_push:00000000 lv_snippet_push
+     /tmp/ccsYVSIa.s:755    .text.lv_snippet_push:00000030 $d
+     /tmp/ccsYVSIa.s:760    .text.lv_text_get_snippet:00000000 $t
+     /tmp/ccsYVSIa.s:765    .text.lv_text_get_snippet:00000000 lv_text_get_snippet
+     /tmp/ccsYVSIa.s:899    .text.lv_spangroup_destructor:00000000 $t
+     /tmp/ccsYVSIa.s:904    .text.lv_spangroup_destructor:00000000 lv_spangroup_destructor
+     /tmp/ccsYVSIa.s:989    .text.lv_spangroup_constructor:00000000 $t
+     /tmp/ccsYVSIa.s:994    .text.lv_spangroup_constructor:00000000 lv_spangroup_constructor
+     /tmp/ccsYVSIa.s:1051   .text.make_span_coords:00000000 $t
+     /tmp/ccsYVSIa.s:1056   .text.make_span_coords:00000000 make_span_coords
+     /tmp/ccsYVSIa.s:1315   .text.lv_span_stack_init:00000000 $t
+     /tmp/ccsYVSIa.s:1321   .text.lv_span_stack_init:00000000 lv_span_stack_init
+     /tmp/ccsYVSIa.s:1356   .text.lv_span_stack_init:00000018 $d
+     /tmp/ccsYVSIa.s:1361   .text.lv_span_stack_deinit:00000000 $t
+     /tmp/ccsYVSIa.s:1367   .text.lv_span_stack_deinit:00000000 lv_span_stack_deinit
+     /tmp/ccsYVSIa.s:1388   .text.lv_span_stack_deinit:00000010 $d
+     /tmp/ccsYVSIa.s:1393   .text.lv_spangroup_create:00000000 $t
+     /tmp/ccsYVSIa.s:1399   .text.lv_spangroup_create:00000000 lv_spangroup_create
+     /tmp/ccsYVSIa.s:1435   .text.lv_spangroup_create:00000014 $d
+     /tmp/ccsYVSIa.s:6291   .rodata.lv_spangroup_class:00000000 lv_spangroup_class
+     /tmp/ccsYVSIa.s:1440   .text.lv_span_set_text:00000000 $t
+     /tmp/ccsYVSIa.s:1446   .text.lv_span_set_text:00000000 lv_span_set_text
+     /tmp/ccsYVSIa.s:1556   .text.lv_span_set_text_static:00000000 $t
+     /tmp/ccsYVSIa.s:1562   .text.lv_span_set_text_static:00000000 lv_span_set_text_static
+     /tmp/ccsYVSIa.s:1632   .text.lv_spangroup_set_align:00000000 $t
+     /tmp/ccsYVSIa.s:1638   .text.lv_spangroup_set_align:00000000 lv_spangroup_set_align
+     /tmp/ccsYVSIa.s:1664   .text.lv_spangroup_set_overflow:00000000 $t
+     /tmp/ccsYVSIa.s:1670   .text.lv_spangroup_set_overflow:00000000 lv_spangroup_set_overflow
+     /tmp/ccsYVSIa.s:1737   .text.lv_span_get_style:00000000 $t
+     /tmp/ccsYVSIa.s:1743   .text.lv_span_get_style:00000000 lv_span_get_style
+     /tmp/ccsYVSIa.s:1761   .text.lv_span_get_text:00000000 $t
+     /tmp/ccsYVSIa.s:1767   .text.lv_span_get_text:00000000 lv_span_get_text
+ARM GAS  /tmp/ccsYVSIa.s 			page 180
 
 
-     /tmp/cco2vquQ.s:1785   .text.lv_spangroup_get_child:00000000 $t
-     /tmp/cco2vquQ.s:1791   .text.lv_spangroup_get_child:00000000 lv_spangroup_get_child
-     /tmp/cco2vquQ.s:1908   .text.lv_spangroup_get_span_count:00000000 $t
-     /tmp/cco2vquQ.s:1914   .text.lv_spangroup_get_span_count:00000000 lv_spangroup_get_span_count
-     /tmp/cco2vquQ.s:1964   .text.lv_spangroup_get_align:00000000 $t
-     /tmp/cco2vquQ.s:1970   .text.lv_spangroup_get_align:00000000 lv_spangroup_get_align
-     /tmp/cco2vquQ.s:2015   .text.lv_spangroup_get_overflow:00000000 $t
-     /tmp/cco2vquQ.s:2021   .text.lv_spangroup_get_overflow:00000000 lv_spangroup_get_overflow
-     /tmp/cco2vquQ.s:2055   .text.lv_spangroup_get_indent:00000000 $t
-     /tmp/cco2vquQ.s:2061   .text.lv_spangroup_get_indent:00000000 lv_spangroup_get_indent
-     /tmp/cco2vquQ.s:2094   .text.lv_spangroup_get_mode:00000000 $t
-     /tmp/cco2vquQ.s:2100   .text.lv_spangroup_get_mode:00000000 lv_spangroup_get_mode
-     /tmp/cco2vquQ.s:2206   .text.convert_indent_pct:00000000 $t
-     /tmp/cco2vquQ.s:2211   .text.convert_indent_pct:00000000 convert_indent_pct
-     /tmp/cco2vquQ.s:2294   .text.convert_indent_pct:00000058 $d
-     /tmp/cco2vquQ.s:2299   .rodata.lv_draw_span.str1.4:00000000 $d
-     /tmp/cco2vquQ.s:2309   .text.lv_draw_span:00000000 $t
-     /tmp/cco2vquQ.s:2314   .text.lv_draw_span:00000000 lv_draw_span
-     /tmp/cco2vquQ.s:3169   .text.lv_draw_span:000002f8 $d
-     /tmp/cco2vquQ.s:3178   .text.lv_draw_span:00000308 $t
-     /tmp/cco2vquQ.s:3602   .text.lv_draw_span:000004e0 $d
-     /tmp/cco2vquQ.s:3607   .text.draw_main:00000000 $t
-     /tmp/cco2vquQ.s:3612   .text.draw_main:00000000 draw_main
-     /tmp/cco2vquQ.s:3657   .text.lv_spangroup_get_max_lines:00000000 $t
-     /tmp/cco2vquQ.s:3663   .text.lv_spangroup_get_max_lines:00000000 lv_spangroup_get_max_lines
-     /tmp/cco2vquQ.s:3696   .text.lv_spangroup_get_max_line_height:00000000 $t
-     /tmp/cco2vquQ.s:3702   .text.lv_spangroup_get_max_line_height:00000000 lv_spangroup_get_max_line_height
-     /tmp/cco2vquQ.s:3813   .text.lv_spangroup_get_expand_width:00000000 $t
-     /tmp/cco2vquQ.s:3819   .text.lv_spangroup_get_expand_width:00000000 lv_spangroup_get_expand_width
-     /tmp/cco2vquQ.s:4061   .text.lv_spangroup_get_expand_width:000000c4 $d
-     /tmp/cco2vquQ.s:4067   .text.lv_spangroup_get_expand_height:00000000 $t
-     /tmp/cco2vquQ.s:4073   .text.lv_spangroup_get_expand_height:00000000 lv_spangroup_get_expand_height
-     /tmp/cco2vquQ.s:4771   .text.lv_spangroup_get_expand_height:00000278 $d
-     /tmp/cco2vquQ.s:4779   .text.lv_spangroup_get_span_coords:00000000 $t
-     /tmp/cco2vquQ.s:4785   .text.lv_spangroup_get_span_coords:00000000 lv_spangroup_get_span_coords
-     /tmp/cco2vquQ.s:5022   .text.lv_spangroup_get_span_by_point:00000000 $t
-     /tmp/cco2vquQ.s:5028   .text.lv_spangroup_get_span_by_point:00000000 lv_spangroup_get_span_by_point
-     /tmp/cco2vquQ.s:5264   .text.lv_spangroup_refresh:00000000 $t
-     /tmp/cco2vquQ.s:5270   .text.lv_spangroup_refresh:00000000 lv_spangroup_refresh
-     /tmp/cco2vquQ.s:5305   .text.lv_spangroup_event:00000000 $t
-     /tmp/cco2vquQ.s:5310   .text.lv_spangroup_event:00000000 lv_spangroup_event
-     /tmp/cco2vquQ.s:5368   .text.lv_spangroup_event:00000030 $d
-     /tmp/cco2vquQ.s:5392   .text.lv_spangroup_event:00000090 $t
-     /tmp/cco2vquQ.s:5623   .text.lv_spangroup_event:0000016c $d
-     /tmp/cco2vquQ.s:5629   .text.lv_spangroup_add_span:00000000 $t
-     /tmp/cco2vquQ.s:5635   .text.lv_spangroup_add_span:00000000 lv_spangroup_add_span
-     /tmp/cco2vquQ.s:5713   .text.lv_spangroup_add_span:00000034 $d
-     /tmp/cco2vquQ.s:5718   .text.lv_spangroup_delete_span:00000000 $t
-     /tmp/cco2vquQ.s:5724   .text.lv_spangroup_delete_span:00000000 lv_spangroup_delete_span
-     /tmp/cco2vquQ.s:5833   .text.lv_spangroup_set_span_text:00000000 $t
-     /tmp/cco2vquQ.s:5839   .text.lv_spangroup_set_span_text:00000000 lv_spangroup_set_span_text
-     /tmp/cco2vquQ.s:5872   .text.lv_spangroup_set_span_text_static:00000000 $t
-     /tmp/cco2vquQ.s:5878   .text.lv_spangroup_set_span_text_static:00000000 lv_spangroup_set_span_text_static
-     /tmp/cco2vquQ.s:5911   .text.lv_spangroup_set_span_style:00000000 $t
-     /tmp/cco2vquQ.s:5917   .text.lv_spangroup_set_span_style:00000000 lv_spangroup_set_span_style
-     /tmp/cco2vquQ.s:5984   .text.lv_spangroup_set_indent:00000000 $t
-     /tmp/cco2vquQ.s:5990   .text.lv_spangroup_set_indent:00000000 lv_spangroup_set_indent
-ARM GAS  /tmp/cco2vquQ.s 			page 181
+     /tmp/ccsYVSIa.s:1785   .text.lv_spangroup_get_child:00000000 $t
+     /tmp/ccsYVSIa.s:1791   .text.lv_spangroup_get_child:00000000 lv_spangroup_get_child
+     /tmp/ccsYVSIa.s:1908   .text.lv_spangroup_get_span_count:00000000 $t
+     /tmp/ccsYVSIa.s:1914   .text.lv_spangroup_get_span_count:00000000 lv_spangroup_get_span_count
+     /tmp/ccsYVSIa.s:1964   .text.lv_spangroup_get_align:00000000 $t
+     /tmp/ccsYVSIa.s:1970   .text.lv_spangroup_get_align:00000000 lv_spangroup_get_align
+     /tmp/ccsYVSIa.s:2015   .text.lv_spangroup_get_overflow:00000000 $t
+     /tmp/ccsYVSIa.s:2021   .text.lv_spangroup_get_overflow:00000000 lv_spangroup_get_overflow
+     /tmp/ccsYVSIa.s:2055   .text.lv_spangroup_get_indent:00000000 $t
+     /tmp/ccsYVSIa.s:2061   .text.lv_spangroup_get_indent:00000000 lv_spangroup_get_indent
+     /tmp/ccsYVSIa.s:2094   .text.lv_spangroup_get_mode:00000000 $t
+     /tmp/ccsYVSIa.s:2100   .text.lv_spangroup_get_mode:00000000 lv_spangroup_get_mode
+     /tmp/ccsYVSIa.s:2206   .text.convert_indent_pct:00000000 $t
+     /tmp/ccsYVSIa.s:2211   .text.convert_indent_pct:00000000 convert_indent_pct
+     /tmp/ccsYVSIa.s:2294   .text.convert_indent_pct:00000058 $d
+     /tmp/ccsYVSIa.s:2299   .rodata.lv_draw_span.str1.4:00000000 $d
+     /tmp/ccsYVSIa.s:2309   .text.lv_draw_span:00000000 $t
+     /tmp/ccsYVSIa.s:2314   .text.lv_draw_span:00000000 lv_draw_span
+     /tmp/ccsYVSIa.s:3169   .text.lv_draw_span:000002f8 $d
+     /tmp/ccsYVSIa.s:3178   .text.lv_draw_span:00000308 $t
+     /tmp/ccsYVSIa.s:3602   .text.lv_draw_span:000004e0 $d
+     /tmp/ccsYVSIa.s:3607   .text.draw_main:00000000 $t
+     /tmp/ccsYVSIa.s:3612   .text.draw_main:00000000 draw_main
+     /tmp/ccsYVSIa.s:3657   .text.lv_spangroup_get_max_lines:00000000 $t
+     /tmp/ccsYVSIa.s:3663   .text.lv_spangroup_get_max_lines:00000000 lv_spangroup_get_max_lines
+     /tmp/ccsYVSIa.s:3696   .text.lv_spangroup_get_max_line_height:00000000 $t
+     /tmp/ccsYVSIa.s:3702   .text.lv_spangroup_get_max_line_height:00000000 lv_spangroup_get_max_line_height
+     /tmp/ccsYVSIa.s:3813   .text.lv_spangroup_get_expand_width:00000000 $t
+     /tmp/ccsYVSIa.s:3819   .text.lv_spangroup_get_expand_width:00000000 lv_spangroup_get_expand_width
+     /tmp/ccsYVSIa.s:4061   .text.lv_spangroup_get_expand_width:000000c4 $d
+     /tmp/ccsYVSIa.s:4067   .text.lv_spangroup_get_expand_height:00000000 $t
+     /tmp/ccsYVSIa.s:4073   .text.lv_spangroup_get_expand_height:00000000 lv_spangroup_get_expand_height
+     /tmp/ccsYVSIa.s:4771   .text.lv_spangroup_get_expand_height:00000278 $d
+     /tmp/ccsYVSIa.s:4779   .text.lv_spangroup_get_span_coords:00000000 $t
+     /tmp/ccsYVSIa.s:4785   .text.lv_spangroup_get_span_coords:00000000 lv_spangroup_get_span_coords
+     /tmp/ccsYVSIa.s:5022   .text.lv_spangroup_get_span_by_point:00000000 $t
+     /tmp/ccsYVSIa.s:5028   .text.lv_spangroup_get_span_by_point:00000000 lv_spangroup_get_span_by_point
+     /tmp/ccsYVSIa.s:5264   .text.lv_spangroup_refresh:00000000 $t
+     /tmp/ccsYVSIa.s:5270   .text.lv_spangroup_refresh:00000000 lv_spangroup_refresh
+     /tmp/ccsYVSIa.s:5305   .text.lv_spangroup_event:00000000 $t
+     /tmp/ccsYVSIa.s:5310   .text.lv_spangroup_event:00000000 lv_spangroup_event
+     /tmp/ccsYVSIa.s:5368   .text.lv_spangroup_event:00000030 $d
+     /tmp/ccsYVSIa.s:5392   .text.lv_spangroup_event:00000090 $t
+     /tmp/ccsYVSIa.s:5623   .text.lv_spangroup_event:0000016c $d
+     /tmp/ccsYVSIa.s:5629   .text.lv_spangroup_add_span:00000000 $t
+     /tmp/ccsYVSIa.s:5635   .text.lv_spangroup_add_span:00000000 lv_spangroup_add_span
+     /tmp/ccsYVSIa.s:5713   .text.lv_spangroup_add_span:00000034 $d
+     /tmp/ccsYVSIa.s:5718   .text.lv_spangroup_delete_span:00000000 $t
+     /tmp/ccsYVSIa.s:5724   .text.lv_spangroup_delete_span:00000000 lv_spangroup_delete_span
+     /tmp/ccsYVSIa.s:5833   .text.lv_spangroup_set_span_text:00000000 $t
+     /tmp/ccsYVSIa.s:5839   .text.lv_spangroup_set_span_text:00000000 lv_spangroup_set_span_text
+     /tmp/ccsYVSIa.s:5872   .text.lv_spangroup_set_span_text_static:00000000 $t
+     /tmp/ccsYVSIa.s:5878   .text.lv_spangroup_set_span_text_static:00000000 lv_spangroup_set_span_text_static
+     /tmp/ccsYVSIa.s:5911   .text.lv_spangroup_set_span_style:00000000 $t
+     /tmp/ccsYVSIa.s:5917   .text.lv_spangroup_set_span_style:00000000 lv_spangroup_set_span_style
+     /tmp/ccsYVSIa.s:5984   .text.lv_spangroup_set_indent:00000000 $t
+     /tmp/ccsYVSIa.s:5990   .text.lv_spangroup_set_indent:00000000 lv_spangroup_set_indent
+ARM GAS  /tmp/ccsYVSIa.s 			page 181
 
 
-     /tmp/cco2vquQ.s:6041   .text.lv_spangroup_set_mode:00000000 $t
-     /tmp/cco2vquQ.s:6047   .text.lv_spangroup_set_mode:00000000 lv_spangroup_set_mode
-     /tmp/cco2vquQ.s:6233   .text.lv_spangroup_set_max_lines:00000000 $t
-     /tmp/cco2vquQ.s:6239   .text.lv_spangroup_set_max_lines:00000000 lv_spangroup_set_max_lines
-     /tmp/cco2vquQ.s:6284   .rodata.str1.4:00000000 $d
-     /tmp/cco2vquQ.s:6288   .rodata.lv_spangroup_class:00000000 $d
+     /tmp/ccsYVSIa.s:6041   .text.lv_spangroup_set_mode:00000000 $t
+     /tmp/ccsYVSIa.s:6047   .text.lv_spangroup_set_mode:00000000 lv_spangroup_set_mode
+     /tmp/ccsYVSIa.s:6233   .text.lv_spangroup_set_max_lines:00000000 $t
+     /tmp/ccsYVSIa.s:6239   .text.lv_spangroup_set_max_lines:00000000 lv_spangroup_set_max_lines
+     /tmp/ccsYVSIa.s:6284   .rodata.str1.4:00000000 $d
+     /tmp/ccsYVSIa.s:6288   .rodata.lv_spangroup_class:00000000 $d
 
 UNDEFINED SYMBOLS
 lv_global
@@ -10831,7 +10831,7 @@ lv_style_copy
 lv_obj_set_width
 lv_obj_set_height
 lv_obj_set_content_height
-ARM GAS  /tmp/cco2vquQ.s 			page 182
+ARM GAS  /tmp/ccsYVSIa.s 			page 182
 
 
 lv_obj_class

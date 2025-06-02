@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccM8kVnB.s 			page 1
+ARM GAS  /tmp/ccr5D473.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
   27:Drivers/lvgl/src/misc/lv_color.c ****  **********************/
   28:Drivers/lvgl/src/misc/lv_color.c **** 
   29:Drivers/lvgl/src/misc/lv_color.c **** const lv_color_filter_dsc_t lv_color_filter_shade = {.filter_cb = lv_color_filter_shade_cb};
-ARM GAS  /tmp/ccM8kVnB.s 			page 2
+ARM GAS  /tmp/ccr5D473.s 			page 2
 
 
   30:Drivers/lvgl/src/misc/lv_color.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
   68 0023 28       		.byte	(.L2-.L4)/2
   69 0024 28       		.byte	(.L2-.L4)/2
   70 0025 28       		.byte	(.L2-.L4)/2
-ARM GAS  /tmp/ccM8kVnB.s 			page 3
+ARM GAS  /tmp/ccr5D473.s 			page 3
 
 
   71 0026 28       		.byte	(.L2-.L4)/2
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
   63:Drivers/lvgl/src/misc/lv_color.c ****         case LV_COLOR_FORMAT_ARGB2222:
   64:Drivers/lvgl/src/misc/lv_color.c ****             return 8;
  108              		.loc 1 64 13 is_stmt 1 view .LVU8
-ARM GAS  /tmp/ccM8kVnB.s 			page 4
+ARM GAS  /tmp/ccr5D473.s 			page 4
 
 
  109              		.loc 1 64 20 is_stmt 0 view .LVU9
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
   87:Drivers/lvgl/src/misc/lv_color.c ****     }
   88:Drivers/lvgl/src/misc/lv_color.c **** }
  140              		.loc 1 88 1 view .LVU21
-ARM GAS  /tmp/ccM8kVnB.s 			page 5
+ARM GAS  /tmp/ccr5D473.s 			page 5
 
 
  141 0060 7047     		bx	lr
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  112:Drivers/lvgl/src/misc/lv_color.c ****     }
  113:Drivers/lvgl/src/misc/lv_color.c **** }
  174              		.loc 1 113 1 view .LVU26
-ARM GAS  /tmp/ccM8kVnB.s 			page 6
+ARM GAS  /tmp/ccr5D473.s 			page 6
 
 
  175 0012 7047     		bx	lr
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  222              		.loc 1 122 5 is_stmt 1 view .LVU41
  223              		.loc 1 122 12 is_stmt 0 view .LVU42
  224 0020 029B     		ldr	r3, [sp, #8]
-ARM GAS  /tmp/ccM8kVnB.s 			page 7
+ARM GAS  /tmp/ccr5D473.s 			page 7
 
 
  225 0022 0393     		str	r3, [sp, #12]
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  276 001c 80B2     		uxth	r0, r0
  277              		.loc 1 127 77 view .LVU51
  278 001e 9DF80430 		ldrb	r3, [sp, #4]	@ zero_extendqisi2
-ARM GAS  /tmp/ccM8kVnB.s 			page 8
+ARM GAS  /tmp/ccr5D473.s 			page 8
 
 
  279              		.loc 1 127 68 view .LVU52
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  329              	.LCFI5:
  330              		.cfi_def_cfa_offset 0
  331              		@ sp needed
-ARM GAS  /tmp/ccM8kVnB.s 			page 9
+ARM GAS  /tmp/ccr5D473.s 			page 9
 
 
  332 001e 7047     		bx	lr
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  176:Drivers/lvgl/src/misc/lv_color.c ****             b = p;
  177:Drivers/lvgl/src/misc/lv_color.c ****             break;
  178:Drivers/lvgl/src/misc/lv_color.c ****         case 2:
-ARM GAS  /tmp/ccM8kVnB.s 			page 10
+ARM GAS  /tmp/ccr5D473.s 			page 10
 
 
  179:Drivers/lvgl/src/misc/lv_color.c ****             r = p;
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  207:Drivers/lvgl/src/misc/lv_color.c ****     uint16_t g = ((uint32_t)g8 << 10) / 255;
  372              		.loc 1 207 5 is_stmt 1 view .LVU68
  373              		.loc 1 207 32 is_stmt 0 view .LVU69
-ARM GAS  /tmp/ccM8kVnB.s 			page 11
+ARM GAS  /tmp/ccr5D473.s 			page 11
 
 
  374 0012 8B02     		lsls	r3, r1, #10
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  417              		.loc 1 218 13 is_stmt 0 view .LVU85
  418 004a 8845     		cmp	r8, r1
  419 004c 94BF     		ite	ls
-ARM GAS  /tmp/ccM8kVnB.s 			page 12
+ARM GAS  /tmp/ccr5D473.s 			page 12
 
 
  420 004e A5EB0806 		subls	r6, r5, r8
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  239:Drivers/lvgl/src/misc/lv_color.c ****         h = (((r - g) << 10) / delta) + (4 << 10); // between magenta & cyan
  454              		.loc 1 239 9 is_stmt 1 view .LVU101
  455              		.loc 1 239 18 is_stmt 0 view .LVU102
-ARM GAS  /tmp/ccM8kVnB.s 			page 13
+ARM GAS  /tmp/ccr5D473.s 			page 13
 
 
  456 0080 AEEB040E 		sub	lr, lr, r4
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  497 00b0 8902     		lsls	r1, r1, #10
  235:Drivers/lvgl/src/misc/lv_color.c ****     else if(rgbMax == g)
  498              		.loc 1 235 30 view .LVU120
-ARM GAS  /tmp/ccM8kVnB.s 			page 14
+ARM GAS  /tmp/ccr5D473.s 			page 14
 
 
  499 00b2 91FBF6F1 		sdiv	r1, r1, r6
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  541 00de BDF80630 		ldrh	r3, [sp, #6]
  542 00e2 63F31F40 		bfi	r0, r3, #16, #16
  543 00e6 02B0     		add	sp, sp, #8
-ARM GAS  /tmp/ccM8kVnB.s 			page 15
+ARM GAS  /tmp/ccr5D473.s 			page 15
 
 
  544              	.LCFI8:
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  587              		.cfi_endproc
  588              	.LFE11:
  590              		.section	.text.lv_color_to_hsv,"ax",%progbits
-ARM GAS  /tmp/ccM8kVnB.s 			page 16
+ARM GAS  /tmp/ccr5D473.s 			page 16
 
 
  591              		.align	1
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  637              		.syntax unified
  638              		.thumb
  639              		.thumb_func
-ARM GAS  /tmp/ccM8kVnB.s 			page 17
+ARM GAS  /tmp/ccr5D473.s 			page 17
 
 
  641              	lv_color_format_get_size:
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  687              		.loc 1 268 15 is_stmt 0 view .LVU162
  688 0004 9DF80430 		ldrb	r3, [sp, #4]	@ zero_extendqisi2
  689              		.loc 1 268 25 view .LVU163
-ARM GAS  /tmp/ccM8kVnB.s 			page 18
+ARM GAS  /tmp/ccr5D473.s 			page 18
 
 
  690 0008 9DF80520 		ldrb	r2, [sp, #5]	@ zero_extendqisi2
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  740 0014 8442     		cmp	r4, r0
  741 0016 14BF     		ite	ne
  742 0018 0020     		movne	r0, #0
-ARM GAS  /tmp/ccM8kVnB.s 			page 19
+ARM GAS  /tmp/ccr5D473.s 			page 19
 
 
  743 001a 0120     		moveq	r0, #1
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  281:Drivers/lvgl/src/misc/lv_color.c **** lv_color_t lv_color_hex(uint32_t c)
  282:Drivers/lvgl/src/misc/lv_color.c **** {
  795              		.loc 1 282 1 is_stmt 1 view -0
-ARM GAS  /tmp/ccM8kVnB.s 			page 20
+ARM GAS  /tmp/ccr5D473.s 			page 20
 
 
  796              		.cfi_startproc
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  845              		.syntax unified
  846              		.thumb
  847              		.thumb_func
-ARM GAS  /tmp/ccM8kVnB.s 			page 21
+ARM GAS  /tmp/ccr5D473.s 			page 21
 
 
  849              	lv_color_make:
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  894              		.cfi_endproc
  895              	.LFE18:
  897              		.section	.text.lv_color_hsv_to_rgb,"ax",%progbits
-ARM GAS  /tmp/ccM8kVnB.s 			page 22
+ARM GAS  /tmp/ccr5D473.s 			page 22
 
 
  898              		.align	1
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  150:Drivers/lvgl/src/misc/lv_color.c **** 
  943              		.loc 1 150 5 is_stmt 1 view .LVU215
  150:Drivers/lvgl/src/misc/lv_color.c **** 
-ARM GAS  /tmp/ccM8kVnB.s 			page 23
+ARM GAS  /tmp/ccr5D473.s 			page 23
 
 
  944              		.loc 1 150 9 is_stmt 0 view .LVU216
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  982              		.loc 1 164 5 is_stmt 1 view .LVU232
  164:Drivers/lvgl/src/misc/lv_color.c ****     t = (v * (255 - ((s * (255 - remainder)) >> 8))) >> 8;
  983              		.loc 1 164 25 is_stmt 0 view .LVU233
-ARM GAS  /tmp/ccM8kVnB.s 			page 24
+ARM GAS  /tmp/ccr5D473.s 			page 24
 
 
  984 0066 0CFB03F0 		mul	r0, ip, r3
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  1024              		.loc 1 157 16 is_stmt 0 view .LVU247
  1025 009e 0A46     		mov	r2, r1
  1026 00a0 0846     		mov	r0, r1
-ARM GAS  /tmp/ccM8kVnB.s 			page 25
+ARM GAS  /tmp/ccr5D473.s 			page 25
 
 
  1027              	.LVL62:
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  1071 00f6 9DF80630 		ldrb	r3, [sp, #6]	@ zero_extendqisi2
  1072 00fa 63F31740 		bfi	r0, r3, #16, #8
  1073 00fe 02B0     		add	sp, sp, #8
-ARM GAS  /tmp/ccM8kVnB.s 			page 26
+ARM GAS  /tmp/ccr5D473.s 			page 26
 
 
  1074              	.LCFI27:
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  1113 0110 D6E7     		b	.L68
  1114              	.LVL77:
  1115              	.L64:
-ARM GAS  /tmp/ccM8kVnB.s 			page 27
+ARM GAS  /tmp/ccr5D473.s 			page 27
 
 
  189:Drivers/lvgl/src/misc/lv_color.c ****             g = p;
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  1154              	.L73:
  1155 0128 176CC116 		.word	381774871
  1156 012c 1F85EB51 		.word	1374389535
-ARM GAS  /tmp/ccM8kVnB.s 			page 28
+ARM GAS  /tmp/ccr5D473.s 			page 28
 
 
  1157 0130 83BEA02F 		.word	799063683
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  1204 0020 9DF80530 		ldrb	r3, [sp, #5]	@ zero_extendqisi2
  1205 0024 63F30F20 		bfi	r0, r3, #8, #8
  1206 0028 9DF80630 		ldrb	r3, [sp, #6]	@ zero_extendqisi2
-ARM GAS  /tmp/ccM8kVnB.s 			page 29
+ARM GAS  /tmp/ccr5D473.s 			page 29
 
 
  1207 002c 63F31740 		bfi	r0, r3, #16, #8
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  1257 001a 1201     		lsls	r2, r2, #4
  1258 001c D2B2     		uxtb	r2, r2
  311:Drivers/lvgl/src/misc/lv_color.c ****     return lv_color_make((uint8_t)(((c >> 4) & 0xF0) | ((c >> 8) & 0xF)), (uint8_t)((c & 0xF0) | ((
-ARM GAS  /tmp/ccM8kVnB.s 			page 30
+ARM GAS  /tmp/ccr5D473.s 			page 30
 
 
  1259              		.loc 1 311 12 view .LVU314
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  1308              		.loc 1 318 7 is_stmt 0 view .LVU321
  1309 0004 A2B1     		cbz	r2, .L82
  319:Drivers/lvgl/src/misc/lv_color.c ****     if(c1 == c2) return c1;
-ARM GAS  /tmp/ccM8kVnB.s 			page 31
+ARM GAS  /tmp/ccr5D473.s 			page 31
 
 
  1310              		.loc 1 319 5 is_stmt 1 view .LVU322
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  1353              		.loc 1 330 9 view .LVU341
  1354 002a 43EA1140 		orr	r0, r3, r1, lsr #16
  1355              	.LVL105:
-ARM GAS  /tmp/ccM8kVnB.s 			page 32
+ARM GAS  /tmp/ccr5D473.s 			page 32
 
 
  331:Drivers/lvgl/src/misc/lv_color.c **** 
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  1404 001a C0F30740 		ubfx	r0, r0, #16, #8
  1405 001e 8DF80600 		strb	r0, [sp, #6]
  1406              		.loc 1 337 12 discriminator 1 view .LVU349
-ARM GAS  /tmp/ccM8kVnB.s 			page 33
+ARM GAS  /tmp/ccr5D473.s 			page 33
 
 
  1407 0022 0020     		movs	r0, #0
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  1457 001c 8DF80E00 		strb	r0, [sp, #14]
  138:Drivers/lvgl/src/misc/lv_color.c **** }
  1458              		.loc 1 138 12 discriminator 1 view .LVU356
-ARM GAS  /tmp/ccM8kVnB.s 			page 34
+ARM GAS  /tmp/ccr5D473.s 			page 34
 
 
  1459 0020 2246     		mov	r2, r4
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  1509 0006 1146     		mov	r1, r2
  1510 0008 1046     		mov	r0, r2
  1511 000a FFF7FEFF 		bl	lv_color_make
-ARM GAS  /tmp/ccM8kVnB.s 			page 35
+ARM GAS  /tmp/ccr5D473.s 			page 35
 
 
  1512              	.LVL112:
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  1563              	.LVL114:
  143:Drivers/lvgl/src/misc/lv_color.c **** }
  1564              		.loc 1 143 12 view .LVU368
-ARM GAS  /tmp/ccM8kVnB.s 			page 36
+ARM GAS  /tmp/ccr5D473.s 			page 36
 
 
  1565 000c 8DF80C00 		strb	r0, [sp, #12]
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  355:Drivers/lvgl/src/misc/lv_color.c **** 
  356:Drivers/lvgl/src/misc/lv_color.c ****     c->red = LV_OPA_MIX2(c->red, c->alpha);
  357:Drivers/lvgl/src/misc/lv_color.c ****     c->green = LV_OPA_MIX2(c->green, c->alpha);
-ARM GAS  /tmp/ccM8kVnB.s 			page 37
+ARM GAS  /tmp/ccr5D473.s 			page 37
 
 
  358:Drivers/lvgl/src/misc/lv_color.c ****     c->blue = LV_OPA_MIX2(c->blue, c->alpha);
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  412:Drivers/lvgl/src/misc/lv_color.c ****  */
  413:Drivers/lvgl/src/misc/lv_color.c **** static lv_color_t lv_color_filter_shade_cb(const lv_color_filter_dsc_t * dsc, lv_color_t c, lv_opa_
  414:Drivers/lvgl/src/misc/lv_color.c **** {
-ARM GAS  /tmp/ccM8kVnB.s 			page 38
+ARM GAS  /tmp/ccr5D473.s 			page 38
 
 
  1607              		.loc 1 414 1 is_stmt 1 view -0
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  1656              	.LCFI48:
  1657              		.cfi_remember_state
  1658              		.cfi_def_cfa_offset 4
-ARM GAS  /tmp/ccM8kVnB.s 			page 39
+ARM GAS  /tmp/ccr5D473.s 			page 39
 
 
  1659              		@ sp needed
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  1707              		@ frame_needed = 0, uses_anonymous_args = 0
  346:Drivers/lvgl/src/misc/lv_color.c ****     if(c->alpha == LV_OPA_COVER) {
  1708              		.loc 1 346 1 is_stmt 0 view .LVU392
-ARM GAS  /tmp/ccM8kVnB.s 			page 40
+ARM GAS  /tmp/ccr5D473.s 			page 40
 
 
  1709 0000 08B5     		push	{r3, lr}
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  1748              	.LVL126:
  1749              	.L104:
  352:Drivers/lvgl/src/misc/lv_color.c ****         return;
-ARM GAS  /tmp/ccM8kVnB.s 			page 41
+ARM GAS  /tmp/ccr5D473.s 			page 41
 
 
  1750              		.loc 1 352 9 is_stmt 1 view .LVU408
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
   51:Drivers/lvgl/src/misc/../stdlib/lv_string.h ****  * @brief Move a block of memory from source to destination
   52:Drivers/lvgl/src/misc/../stdlib/lv_string.h ****  * @param dst Pointer to the destination array where the content is to be copied.
   53:Drivers/lvgl/src/misc/../stdlib/lv_string.h ****  * @param src Pointer to the source of data to be copied.
-ARM GAS  /tmp/ccM8kVnB.s 			page 42
+ARM GAS  /tmp/ccr5D473.s 			page 42
 
 
   54:Drivers/lvgl/src/misc/../stdlib/lv_string.h ****  * @param len Number of bytes to copy
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  1784              		.loc 1 363 7 is_stmt 0 view .LVU415
  1785 0000 FF29     		cmp	r1, #255
  1786 0002 21D0     		beq	.L109
-ARM GAS  /tmp/ccM8kVnB.s 			page 43
+ARM GAS  /tmp/ccr5D473.s 			page 43
 
 
  362:Drivers/lvgl/src/misc/lv_color.c ****     if(a == LV_OPA_COVER) {
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  1827              		.loc 1 375 1 view .LVU429
  1828 003e 08BD     		pop	{r3, pc}
  1829              	.LVL131:
-ARM GAS  /tmp/ccM8kVnB.s 			page 44
+ARM GAS  /tmp/ccr5D473.s 			page 44
 
 
  1830              	.L112:
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  1878 0008 03EB8302 		add	r2, r3, r3, lsl #2
  1879 000c 03EB4203 		add	r3, r3, r2, lsl #1
  1880 0010 C3EBC303 		rsb	r3, r3, r3, lsl #3
-ARM GAS  /tmp/ccM8kVnB.s 			page 45
+ARM GAS  /tmp/ccr5D473.s 			page 45
 
 
  379:Drivers/lvgl/src/misc/lv_color.c **** }
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  1926              		.loc 1 384 38 view .LVU450
  1927 0004 03EB8303 		add	r3, r3, r3, lsl #2
  1928 0008 C3EBC313 		rsb	r3, r3, r3, lsl #7
-ARM GAS  /tmp/ccM8kVnB.s 			page 46
+ARM GAS  /tmp/ccr5D473.s 			page 46
 
 
  384:Drivers/lvgl/src/misc/lv_color.c **** }
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  1974 000a C3EBC303 		rsb	r3, r3, r3, lsl #3
  389:Drivers/lvgl/src/misc/lv_color.c **** }
  1975              		.loc 1 389 54 view .LVU462
-ARM GAS  /tmp/ccM8kVnB.s 			page 47
+ARM GAS  /tmp/ccr5D473.s 			page 47
 
 
  1976 000e 4278     		ldrb	r2, [r0, #1]	@ zero_extendqisi2
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  2022 000c 03EB4203 		add	r3, r3, r2, lsl #1
  2023 0010 C3EBC303 		rsb	r3, r3, r3, lsl #3
  394:Drivers/lvgl/src/misc/lv_color.c **** }
-ARM GAS  /tmp/ccM8kVnB.s 			page 48
+ARM GAS  /tmp/ccr5D473.s 			page 48
 
 
  2024              		.loc 1 394 55 view .LVU473
@@ -2867,82 +2867,82 @@ ARM GAS  /tmp/ccM8kVnB.s 			page 1
  2064              		.file 6 "Drivers/lvgl/src/misc/lv_types.h"
  2065              		.file 7 "Drivers/lvgl/src/misc/lv_color_op.h"
  2066              		.file 8 "Drivers/lvgl/src/misc/lv_color.h"
-ARM GAS  /tmp/ccM8kVnB.s 			page 49
+ARM GAS  /tmp/ccr5D473.s 			page 49
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_color.c
-     /tmp/ccM8kVnB.s:21     .text.lv_color_format_get_bpp:00000000 $t
-     /tmp/ccM8kVnB.s:27     .text.lv_color_format_get_bpp:00000000 lv_color_format_get_bpp
-     /tmp/ccM8kVnB.s:43     .text.lv_color_format_get_bpp:0000000a $d
-     /tmp/ccM8kVnB.s:91     .text.lv_color_format_get_bpp:0000003a $t
-     /tmp/ccM8kVnB.s:146    .text.lv_color_format_has_alpha:00000000 $t
-     /tmp/ccM8kVnB.s:152    .text.lv_color_format_has_alpha:00000000 lv_color_format_has_alpha
-     /tmp/ccM8kVnB.s:179    .text.lv_color_format_has_alpha:00000014 $d
-     /tmp/ccM8kVnB.s:184    .text.lv_color_to_32:00000000 $t
-     /tmp/ccM8kVnB.s:190    .text.lv_color_to_32:00000000 lv_color_to_32
-     /tmp/ccM8kVnB.s:245    .text.lv_color_to_u16:00000000 $t
-     /tmp/ccM8kVnB.s:251    .text.lv_color_to_u16:00000000 lv_color_to_u16
-     /tmp/ccM8kVnB.s:291    .text.lv_color_to_u16:0000002c $d
-     /tmp/ccM8kVnB.s:296    .text.lv_color_to_u32:00000000 $t
-     /tmp/ccM8kVnB.s:302    .text.lv_color_to_u32:00000000 lv_color_to_u32
-     /tmp/ccM8kVnB.s:337    .text.lv_color_rgb_to_hsv:00000000 $t
-     /tmp/ccM8kVnB.s:343    .text.lv_color_rgb_to_hsv:00000000 lv_color_rgb_to_hsv
-     /tmp/ccM8kVnB.s:586    .text.lv_color_rgb_to_hsv:0000010c $d
-     /tmp/ccM8kVnB.s:591    .text.lv_color_to_hsv:00000000 $t
-     /tmp/ccM8kVnB.s:597    .text.lv_color_to_hsv:00000000 lv_color_to_hsv
-     /tmp/ccM8kVnB.s:635    .text.lv_color_format_get_size:00000000 $t
-     /tmp/ccM8kVnB.s:641    .text.lv_color_format_get_size:00000000 lv_color_format_get_size
-     /tmp/ccM8kVnB.s:667    .text.lv_color_to_int:00000000 $t
-     /tmp/ccM8kVnB.s:673    .text.lv_color_to_int:00000000 lv_color_to_int
-     /tmp/ccM8kVnB.s:708    .text.lv_color_eq:00000000 $t
-     /tmp/ccM8kVnB.s:714    .text.lv_color_eq:00000000 lv_color_eq
-     /tmp/ccM8kVnB.s:753    .text.lv_color32_eq:00000000 $t
-     /tmp/ccM8kVnB.s:759    .text.lv_color32_eq:00000000 lv_color32_eq
-     /tmp/ccM8kVnB.s:786    .text.lv_color_hex:00000000 $t
-     /tmp/ccM8kVnB.s:792    .text.lv_color_hex:00000000 lv_color_hex
-     /tmp/ccM8kVnB.s:843    .text.lv_color_make:00000000 $t
-     /tmp/ccM8kVnB.s:849    .text.lv_color_make:00000000 lv_color_make
-     /tmp/ccM8kVnB.s:898    .text.lv_color_hsv_to_rgb:00000000 $t
-     /tmp/ccM8kVnB.s:904    .text.lv_color_hsv_to_rgb:00000000 lv_color_hsv_to_rgb
-     /tmp/ccM8kVnB.s:1015   .text.lv_color_hsv_to_rgb:00000098 $d
-     /tmp/ccM8kVnB.s:1155   .text.lv_color_hsv_to_rgb:00000128 $d
-     /tmp/ccM8kVnB.s:1162   .text.lv_color32_make:00000000 $t
-     /tmp/ccM8kVnB.s:1168   .text.lv_color32_make:00000000 lv_color32_make
-     /tmp/ccM8kVnB.s:1222   .text.lv_color_hex3:00000000 $t
-     /tmp/ccM8kVnB.s:1228   .text.lv_color_hex3:00000000 lv_color_hex3
-     /tmp/ccM8kVnB.s:1289   .text.lv_color_16_16_mix:00000000 $t
-     /tmp/ccM8kVnB.s:1295   .text.lv_color_16_16_mix:00000000 lv_color_16_16_mix
-     /tmp/ccM8kVnB.s:1370   .text.lv_color_16_16_mix:00000034 $d
-     /tmp/ccM8kVnB.s:1375   .text.lv_color_white:00000000 $t
-     /tmp/ccM8kVnB.s:1381   .text.lv_color_white:00000000 lv_color_white
-     /tmp/ccM8kVnB.s:1424   .text.lv_color_lighten:00000000 $t
-     /tmp/ccM8kVnB.s:1430   .text.lv_color_lighten:00000000 lv_color_lighten
-     /tmp/ccM8kVnB.s:1487   .text.lv_color_black:00000000 $t
-     /tmp/ccM8kVnB.s:1493   .text.lv_color_black:00000000 lv_color_black
-     /tmp/ccM8kVnB.s:1536   .text.lv_color_darken:00000000 $t
-     /tmp/ccM8kVnB.s:1542   .text.lv_color_darken:00000000 lv_color_darken
-     /tmp/ccM8kVnB.s:1599   .text.lv_color_filter_shade_cb:00000000 $t
-     /tmp/ccM8kVnB.s:1604   .text.lv_color_filter_shade_cb:00000000 lv_color_filter_shade_cb
-     /tmp/ccM8kVnB.s:1695   .text.lv_color_premultiply:00000000 $t
-     /tmp/ccM8kVnB.s:1701   .text.lv_color_premultiply:00000000 lv_color_premultiply
-     /tmp/ccM8kVnB.s:1770   .text.lv_color16_premultiply:00000000 $t
-ARM GAS  /tmp/ccM8kVnB.s 			page 50
+     /tmp/ccr5D473.s:21     .text.lv_color_format_get_bpp:00000000 $t
+     /tmp/ccr5D473.s:27     .text.lv_color_format_get_bpp:00000000 lv_color_format_get_bpp
+     /tmp/ccr5D473.s:43     .text.lv_color_format_get_bpp:0000000a $d
+     /tmp/ccr5D473.s:91     .text.lv_color_format_get_bpp:0000003a $t
+     /tmp/ccr5D473.s:146    .text.lv_color_format_has_alpha:00000000 $t
+     /tmp/ccr5D473.s:152    .text.lv_color_format_has_alpha:00000000 lv_color_format_has_alpha
+     /tmp/ccr5D473.s:179    .text.lv_color_format_has_alpha:00000014 $d
+     /tmp/ccr5D473.s:184    .text.lv_color_to_32:00000000 $t
+     /tmp/ccr5D473.s:190    .text.lv_color_to_32:00000000 lv_color_to_32
+     /tmp/ccr5D473.s:245    .text.lv_color_to_u16:00000000 $t
+     /tmp/ccr5D473.s:251    .text.lv_color_to_u16:00000000 lv_color_to_u16
+     /tmp/ccr5D473.s:291    .text.lv_color_to_u16:0000002c $d
+     /tmp/ccr5D473.s:296    .text.lv_color_to_u32:00000000 $t
+     /tmp/ccr5D473.s:302    .text.lv_color_to_u32:00000000 lv_color_to_u32
+     /tmp/ccr5D473.s:337    .text.lv_color_rgb_to_hsv:00000000 $t
+     /tmp/ccr5D473.s:343    .text.lv_color_rgb_to_hsv:00000000 lv_color_rgb_to_hsv
+     /tmp/ccr5D473.s:586    .text.lv_color_rgb_to_hsv:0000010c $d
+     /tmp/ccr5D473.s:591    .text.lv_color_to_hsv:00000000 $t
+     /tmp/ccr5D473.s:597    .text.lv_color_to_hsv:00000000 lv_color_to_hsv
+     /tmp/ccr5D473.s:635    .text.lv_color_format_get_size:00000000 $t
+     /tmp/ccr5D473.s:641    .text.lv_color_format_get_size:00000000 lv_color_format_get_size
+     /tmp/ccr5D473.s:667    .text.lv_color_to_int:00000000 $t
+     /tmp/ccr5D473.s:673    .text.lv_color_to_int:00000000 lv_color_to_int
+     /tmp/ccr5D473.s:708    .text.lv_color_eq:00000000 $t
+     /tmp/ccr5D473.s:714    .text.lv_color_eq:00000000 lv_color_eq
+     /tmp/ccr5D473.s:753    .text.lv_color32_eq:00000000 $t
+     /tmp/ccr5D473.s:759    .text.lv_color32_eq:00000000 lv_color32_eq
+     /tmp/ccr5D473.s:786    .text.lv_color_hex:00000000 $t
+     /tmp/ccr5D473.s:792    .text.lv_color_hex:00000000 lv_color_hex
+     /tmp/ccr5D473.s:843    .text.lv_color_make:00000000 $t
+     /tmp/ccr5D473.s:849    .text.lv_color_make:00000000 lv_color_make
+     /tmp/ccr5D473.s:898    .text.lv_color_hsv_to_rgb:00000000 $t
+     /tmp/ccr5D473.s:904    .text.lv_color_hsv_to_rgb:00000000 lv_color_hsv_to_rgb
+     /tmp/ccr5D473.s:1015   .text.lv_color_hsv_to_rgb:00000098 $d
+     /tmp/ccr5D473.s:1155   .text.lv_color_hsv_to_rgb:00000128 $d
+     /tmp/ccr5D473.s:1162   .text.lv_color32_make:00000000 $t
+     /tmp/ccr5D473.s:1168   .text.lv_color32_make:00000000 lv_color32_make
+     /tmp/ccr5D473.s:1222   .text.lv_color_hex3:00000000 $t
+     /tmp/ccr5D473.s:1228   .text.lv_color_hex3:00000000 lv_color_hex3
+     /tmp/ccr5D473.s:1289   .text.lv_color_16_16_mix:00000000 $t
+     /tmp/ccr5D473.s:1295   .text.lv_color_16_16_mix:00000000 lv_color_16_16_mix
+     /tmp/ccr5D473.s:1370   .text.lv_color_16_16_mix:00000034 $d
+     /tmp/ccr5D473.s:1375   .text.lv_color_white:00000000 $t
+     /tmp/ccr5D473.s:1381   .text.lv_color_white:00000000 lv_color_white
+     /tmp/ccr5D473.s:1424   .text.lv_color_lighten:00000000 $t
+     /tmp/ccr5D473.s:1430   .text.lv_color_lighten:00000000 lv_color_lighten
+     /tmp/ccr5D473.s:1487   .text.lv_color_black:00000000 $t
+     /tmp/ccr5D473.s:1493   .text.lv_color_black:00000000 lv_color_black
+     /tmp/ccr5D473.s:1536   .text.lv_color_darken:00000000 $t
+     /tmp/ccr5D473.s:1542   .text.lv_color_darken:00000000 lv_color_darken
+     /tmp/ccr5D473.s:1599   .text.lv_color_filter_shade_cb:00000000 $t
+     /tmp/ccr5D473.s:1604   .text.lv_color_filter_shade_cb:00000000 lv_color_filter_shade_cb
+     /tmp/ccr5D473.s:1695   .text.lv_color_premultiply:00000000 $t
+     /tmp/ccr5D473.s:1701   .text.lv_color_premultiply:00000000 lv_color_premultiply
+     /tmp/ccr5D473.s:1770   .text.lv_color16_premultiply:00000000 $t
+ARM GAS  /tmp/ccr5D473.s 			page 50
 
 
-     /tmp/ccM8kVnB.s:1776   .text.lv_color16_premultiply:00000000 lv_color16_premultiply
-     /tmp/ccM8kVnB.s:1857   .text.lv_color_luminance:00000000 $t
-     /tmp/ccM8kVnB.s:1863   .text.lv_color_luminance:00000000 lv_color_luminance
-     /tmp/ccM8kVnB.s:1909   .text.lv_color16_luminance:00000000 $t
-     /tmp/ccM8kVnB.s:1915   .text.lv_color16_luminance:00000000 lv_color16_luminance
-     /tmp/ccM8kVnB.s:1954   .text.lv_color24_luminance:00000000 $t
-     /tmp/ccM8kVnB.s:1960   .text.lv_color24_luminance:00000000 lv_color24_luminance
-     /tmp/ccM8kVnB.s:2000   .text.lv_color32_luminance:00000000 $t
-     /tmp/ccM8kVnB.s:2006   .text.lv_color32_luminance:00000000 lv_color32_luminance
-     /tmp/ccM8kVnB.s:2056   .rodata.lv_color_filter_shade:00000000 lv_color_filter_shade
-     /tmp/ccM8kVnB.s:2053   .rodata.lv_color_filter_shade:00000000 $d
-     /tmp/ccM8kVnB.s:1021   .text.lv_color_hsv_to_rgb:0000009d $d
-     /tmp/ccM8kVnB.s:1021   .text.lv_color_hsv_to_rgb:0000009e $t
+     /tmp/ccr5D473.s:1776   .text.lv_color16_premultiply:00000000 lv_color16_premultiply
+     /tmp/ccr5D473.s:1857   .text.lv_color_luminance:00000000 $t
+     /tmp/ccr5D473.s:1863   .text.lv_color_luminance:00000000 lv_color_luminance
+     /tmp/ccr5D473.s:1909   .text.lv_color16_luminance:00000000 $t
+     /tmp/ccr5D473.s:1915   .text.lv_color16_luminance:00000000 lv_color16_luminance
+     /tmp/ccr5D473.s:1954   .text.lv_color24_luminance:00000000 $t
+     /tmp/ccr5D473.s:1960   .text.lv_color24_luminance:00000000 lv_color24_luminance
+     /tmp/ccr5D473.s:2000   .text.lv_color32_luminance:00000000 $t
+     /tmp/ccr5D473.s:2006   .text.lv_color32_luminance:00000000 lv_color32_luminance
+     /tmp/ccr5D473.s:2056   .rodata.lv_color_filter_shade:00000000 lv_color_filter_shade
+     /tmp/ccr5D473.s:2053   .rodata.lv_color_filter_shade:00000000 $d
+     /tmp/ccr5D473.s:1021   .text.lv_color_hsv_to_rgb:0000009d $d
+     /tmp/ccr5D473.s:1021   .text.lv_color_hsv_to_rgb:0000009e $t
 
 UNDEFINED SYMBOLS
 lv_color_mix

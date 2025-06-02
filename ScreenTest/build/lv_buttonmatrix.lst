@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc9C7swH.s 			page 1
+ARM GAS  /tmp/cck6mppU.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
   28:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
   29:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** #define BTN_EXTRA_CLICK_AREA_MAX (LV_DPI_DEF / 10)
   30:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** #define LV_BUTTONMATRIX_WIDTH_MASK 0x000F
-ARM GAS  /tmp/cc9C7swH.s 			page 2
+ARM GAS  /tmp/cck6mppU.s 			page 2
 
 
   31:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
   85:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
   86:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** /**********************
   87:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****  *   GLOBAL FUNCTIONS
-ARM GAS  /tmp/cc9C7swH.s 			page 3
+ARM GAS  /tmp/cck6mppU.s 			page 3
 
 
   88:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****  **********************/
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  142:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** {
  143:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     LV_ASSERT_OBJ(obj, MY_CLASS);
  144:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
-ARM GAS  /tmp/cc9C7swH.s 			page 4
+ARM GAS  /tmp/cck6mppU.s 			page 4
 
 
  145:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     lv_buttonmatrix_t * btnm = (lv_buttonmatrix_t *)obj;
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  199:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** void lv_buttonmatrix_set_button_width(lv_obj_t * obj, uint32_t btn_id, uint32_t width)
  200:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** {
  201:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     LV_ASSERT_OBJ(obj, MY_CLASS);
-ARM GAS  /tmp/cc9C7swH.s 			page 5
+ARM GAS  /tmp/cck6mppU.s 			page 5
 
 
  202:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  256:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     while(btn_i != btn_id) {
  257:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         btn_i++;
  258:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         txt_i++;
-ARM GAS  /tmp/cc9C7swH.s 			page 6
+ARM GAS  /tmp/cck6mppU.s 			page 6
 
 
  259:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         if(lv_strcmp(btnm->map_p[txt_i], "\n") == 0) txt_i++;
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  313:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     LV_TRACE_OBJ_CREATE("begin");
  314:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     LV_UNUSED(class_p);
  315:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     lv_buttonmatrix_t * btnm = (lv_buttonmatrix_t *)obj;
-ARM GAS  /tmp/cc9C7swH.s 			page 7
+ARM GAS  /tmp/cck6mppU.s 			page 7
 
 
  316:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     lv_free(btnm->button_areas);
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  370:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****             else {
  371:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****                 btnm->btn_id_sel = LV_BUTTONMATRIX_BUTTON_NONE;
  372:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****             }
-ARM GAS  /tmp/cc9C7swH.s 			page 8
+ARM GAS  /tmp/cck6mppU.s 			page 8
 
 
  373:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         }
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  427:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
  428:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     }
  429:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     else if(code == LV_EVENT_LONG_PRESSED_REPEAT) {
-ARM GAS  /tmp/cc9C7swH.s 			page 9
+ARM GAS  /tmp/cck6mppU.s 			page 9
 
 
  430:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         if(btnm->btn_id_sel != LV_BUTTONMATRIX_BUTTON_NONE) {
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  484:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     else if(code == LV_EVENT_DEFOCUSED || code == LV_EVENT_LEAVE) {
  485:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         //        TODO
  486:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         //        if(btnm->btn_id_sel != LV_BUTTONMATRIX_BUTTON_NONE) invalidate_button_area(obj, b
-ARM GAS  /tmp/cc9C7swH.s 			page 10
+ARM GAS  /tmp/cck6mppU.s 			page 10
 
 
  487:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         //        btnm->btn_id_sel = LV_BUTTONMATRIX_BUTTON_NONE;
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  541:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****                 uint32_t area_below;
  542:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****                 int32_t pr_center =
  543:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****                     btnm->button_areas[btnm->btn_id_sel].x1 + (lv_area_get_width(&btnm->button_area
-ARM GAS  /tmp/cc9C7swH.s 			page 11
+ARM GAS  /tmp/cck6mppU.s 			page 11
 
 
  544:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  598:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** }
  599:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
  600:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** static void draw_main(lv_event_t * e)
-ARM GAS  /tmp/cc9C7swH.s 			page 12
+ARM GAS  /tmp/cck6mppU.s 			page 12
 
 
  601:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** {
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  655:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         if(button_get_checked(btnm->ctrl_bits[btn_i])) btn_state |= LV_STATE_CHECKED;
  656:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
  657:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         if(button_is_inactive(btnm->ctrl_bits[btn_i])) btn_state |= LV_STATE_DISABLED;
-ARM GAS  /tmp/cc9C7swH.s 			page 13
+ARM GAS  /tmp/cck6mppU.s 			page 13
 
 
  658:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         else if(btn_i == btnm->btn_id_sel) {
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  712:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
  713:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         /*Draw the background*/
  714:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         lv_draw_rect(layer, &draw_rect_dsc_act, &btn_area);
-ARM GAS  /tmp/cc9C7swH.s 			page 14
+ARM GAS  /tmp/cck6mppU.s 			page 14
 
 
  715:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  769:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         }
  770:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         else {
  771:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****             btnm->row_cnt++;
-ARM GAS  /tmp/cc9C7swH.s 			page 15
+ARM GAS  /tmp/cck6mppU.s 			page 15
 
 
  772:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         }
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
   46 0008 7047     		bx	lr
   47              		.cfi_endproc
   48              	.LFE191:
-ARM GAS  /tmp/cc9C7swH.s 			page 16
+ARM GAS  /tmp/cck6mppU.s 			page 16
 
 
   50              		.section	.text.button_is_hidden,"ax",%progbits
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
   98              		.syntax unified
   99              		.thumb
  100              		.thumb_func
-ARM GAS  /tmp/cc9C7swH.s 			page 17
+ARM GAS  /tmp/cck6mppU.s 			page 17
 
 
  102              	button_is_repeat_disabled:
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  150              	.LFB196:
  829:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
  830:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** static bool button_is_click_trig(lv_buttonmatrix_ctrl_t ctrl_bits)
-ARM GAS  /tmp/cc9C7swH.s 			page 18
+ARM GAS  /tmp/cck6mppU.s 			page 18
 
 
  831:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** {
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  198              		.cfi_startproc
  199              		@ args = 0, pretend = 0, frame = 0
  200              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/cc9C7swH.s 			page 19
+ARM GAS  /tmp/cck6mppU.s 			page 19
 
 
  201              		@ link register save eliminated.
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  858:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     lv_area_t obj_cords;
  859:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     lv_area_t btn_area;
  860:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     lv_buttonmatrix_t * btnm = (lv_buttonmatrix_t *)obj;
-ARM GAS  /tmp/cc9C7swH.s 			page 20
+ARM GAS  /tmp/cck6mppU.s 			page 20
 
 
  861:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     uint32_t i;
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  915:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
  916:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     lv_buttonmatrix_t * btnm = (lv_buttonmatrix_t *)obj;
  917:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     if(btn_idx >= btnm->btn_cnt) return;
-ARM GAS  /tmp/cc9C7swH.s 			page 21
+ARM GAS  /tmp/cck6mppU.s 			page 21
 
 
  918:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  972:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         return false;
  973:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     }
  974:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
-ARM GAS  /tmp/cc9C7swH.s 			page 22
+ARM GAS  /tmp/cck6mppU.s 			page 22
 
 
  975:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     const char * const * map_row = btnm->map_p;
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  971:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         return false;
  278              		.loc 1 971 7 view .LVU47
  279 0002 BBB1     		cbz	r3, .L17
-ARM GAS  /tmp/cc9C7swH.s 			page 23
+ARM GAS  /tmp/cck6mppU.s 			page 23
 
 
  968:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     lv_buttonmatrix_t * btnm = (lv_buttonmatrix_t *)obj;
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  318 0022 736B     		ldr	r3, [r6, #52]
  979:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****             return true;
  319              		.loc 1 979 12 view .LVU64
-ARM GAS  /tmp/cc9C7swH.s 			page 24
+ARM GAS  /tmp/cck6mppU.s 			page 24
 
 
  320 0024 33F81400 		ldrh	r0, [r3, r4, lsl #1]
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  364 0040 0023     		movs	r3, #0
  365 0042 FBE7     		b	.L14
  366              	.L25:
-ARM GAS  /tmp/cc9C7swH.s 			page 25
+ARM GAS  /tmp/cck6mppU.s 			page 25
 
 
  367              		.align	2
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
   41:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style.h **** /**
   42:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style.h ****  * Add a style to an object.
   43:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style.h ****  * @param obj       pointer to an object
-ARM GAS  /tmp/cc9C7swH.s 			page 26
+ARM GAS  /tmp/cck6mppU.s 			page 26
 
 
   44:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style.h ****  * @param style     pointer to a style to add
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
   98:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style.h ****  * @param style     pointer to a style. Only the objects with this style will be notified
   99:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style.h ****  *                  (NULL to notify all objects)
  100:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style.h ****  */
-ARM GAS  /tmp/cc9C7swH.s 			page 27
+ARM GAS  /tmp/cck6mppU.s 			page 27
 
 
  101:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style.h **** void lv_obj_report_style_change(lv_style_t * style);
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  155:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style.h ****  * Remove a local style property from a part of an object with a given state.
  156:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style.h ****  * @param obj       pointer to an object
  157:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style.h ****  * @param prop      a style property to remove.
-ARM GAS  /tmp/cc9C7swH.s 			page 28
+ARM GAS  /tmp/cck6mppU.s 			page 28
 
 
  158:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style.h ****  * @param selector  OR-ed value of parts and state for which the style should be removed
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  212:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style.h ****     lv_obj_set_style_pad_top(obj, value, selector);
  213:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style.h ****     lv_obj_set_style_pad_bottom(obj, value, selector);
  214:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style.h **** }
-ARM GAS  /tmp/cc9C7swH.s 			page 29
+ARM GAS  /tmp/cck6mppU.s 			page 29
 
 
  215:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style.h **** 
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  394              		.cfi_offset 7, -12
  395              		.cfi_offset 8, -8
  396              		.cfi_offset 14, -4
-ARM GAS  /tmp/cc9C7swH.s 			page 30
+ARM GAS  /tmp/cck6mppU.s 			page 30
 
 
  397 0004 82B0     		sub	sp, sp, #8
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
   44:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** }
   45:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** 
   46:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** static inline int32_t lv_obj_get_style_min_height(const lv_obj_t * obj, lv_part_t part)
-ARM GAS  /tmp/cc9C7swH.s 			page 31
+ARM GAS  /tmp/cck6mppU.s 			page 31
 
 
   47:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** {
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  101:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** {
  102:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_TRANSLATE_Y);
  103:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
-ARM GAS  /tmp/cc9C7swH.s 			page 32
+ARM GAS  /tmp/cck6mppU.s 			page 32
 
 
  104:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** }
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  158:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** }
  159:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** 
  160:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** static inline int32_t lv_obj_get_style_pad_bottom(const lv_obj_t * obj, lv_part_t part)
-ARM GAS  /tmp/cc9C7swH.s 			page 33
+ARM GAS  /tmp/cck6mppU.s 			page 33
 
 
  161:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** {
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  194:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** }
  195:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** 
  196:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** static inline int32_t lv_obj_get_style_margin_top(const lv_obj_t * obj, lv_part_t part)
-ARM GAS  /tmp/cc9C7swH.s 			page 34
+ARM GAS  /tmp/cck6mppU.s 			page 34
 
 
  197:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** {
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  251:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** {
  252:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_BG_GRAD_DIR);
  253:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h ****     return (lv_grad_dir_t)v.num;
-ARM GAS  /tmp/cc9C7swH.s 			page 35
+ARM GAS  /tmp/cck6mppU.s 			page 35
 
 
  254:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** }
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  308:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** }
  309:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** 
  310:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** static inline lv_opa_t lv_obj_get_style_bg_image_recolor_opa(const lv_obj_t * obj, lv_part_t part)
-ARM GAS  /tmp/cc9C7swH.s 			page 36
+ARM GAS  /tmp/cck6mppU.s 			page 36
 
 
  311:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** {
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  447              	.LBI81:
  344:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** }
  345:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** 
-ARM GAS  /tmp/cc9C7swH.s 			page 37
+ARM GAS  /tmp/cck6mppU.s 			page 37
 
 
  346:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** static inline lv_border_side_t lv_obj_get_style_border_side(const lv_obj_t * obj, lv_part_t part)
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  267:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style.h ****     int32_t border_width = lv_obj_get_style_border_width(obj, part);
  268:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style.h ****     lv_border_side_t border_side = lv_obj_get_style_border_side(obj, part);
  269:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style.h ****     return (border_side & LV_BORDER_SIDE_RIGHT) ? padding + border_width : padding;
-ARM GAS  /tmp/cc9C7swH.s 			page 38
+ARM GAS  /tmp/cck6mppU.s 			page 38
 
 
  270:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style.h **** }
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  535              	.LBB85:
  536              	.LBI85:
  340:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** {
-ARM GAS  /tmp/cc9C7swH.s 			page 39
+ARM GAS  /tmp/cck6mppU.s 			page 39
 
 
  537              		.loc 3 340 23 view .LVU116
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  580 0036 04EB0708 		add	r8, r4, r7
  581              	.L29:
  278:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style.h **** }
-ARM GAS  /tmp/cc9C7swH.s 			page 40
+ARM GAS  /tmp/cck6mppU.s 			page 40
 
 
  582              		.loc 2 278 1 view .LVU132
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  352:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** static inline bool lv_obj_get_style_border_post(const lv_obj_t * obj, lv_part_t part)
  353:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** {
  354:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_BORDER_POST);
-ARM GAS  /tmp/cc9C7swH.s 			page 41
+ARM GAS  /tmp/cck6mppU.s 			page 41
 
 
  355:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h ****     return (bool)v.num;
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  409:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
  410:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** }
  411:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** 
-ARM GAS  /tmp/cc9C7swH.s 			page 42
+ARM GAS  /tmp/cck6mppU.s 			page 42
 
 
  412:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** static inline lv_color_t lv_obj_get_style_shadow_color(const lv_obj_t * obj, lv_part_t part)
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  466:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** static inline int32_t lv_obj_get_style_line_dash_gap(const lv_obj_t * obj, lv_part_t part)
  467:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** {
  468:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_LINE_DASH_GAP);
-ARM GAS  /tmp/cc9C7swH.s 			page 43
+ARM GAS  /tmp/cck6mppU.s 			page 43
 
 
  469:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  523:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h ****     return (lv_opa_t)v.num;
  524:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** }
  525:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** 
-ARM GAS  /tmp/cc9C7swH.s 			page 44
+ARM GAS  /tmp/cck6mppU.s 			page 44
 
 
  526:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** static inline const void * lv_obj_get_style_arc_image_src(const lv_obj_t * obj, lv_part_t part)
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  580:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** static inline lv_color_t lv_obj_get_style_text_outline_stroke_color(const lv_obj_t * obj, lv_part_t
  581:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** {
  582:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_TEXT_OUTLINE_STROKE_COLOR);
-ARM GAS  /tmp/cc9C7swH.s 			page 45
+ARM GAS  /tmp/cck6mppU.s 			page 45
 
 
  583:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h ****     return v.color;
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  637:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h ****     return (const lv_color_filter_dsc_t *)v.ptr;
  638:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** }
  639:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** 
-ARM GAS  /tmp/cc9C7swH.s 			page 46
+ARM GAS  /tmp/cck6mppU.s 			page 46
 
 
  640:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** static inline lv_opa_t lv_obj_get_style_color_filter_opa(const lv_obj_t * obj, lv_part_t part)
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  633              		.loc 3 690 26 is_stmt 0 view .LVU141
  634 0008 2722     		movs	r2, #39
  635 000a 0021     		movs	r1, #0
-ARM GAS  /tmp/cc9C7swH.s 			page 47
+ARM GAS  /tmp/cck6mppU.s 			page 47
 
 
  636 000c FFF7FEFF 		bl	lv_obj_get_style_prop
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  680 0034 0446     		mov	r4, r0
  681 0036 0D90     		str	r0, [sp, #52]
  682 0038 0F90     		str	r0, [sp, #60]
-ARM GAS  /tmp/cc9C7swH.s 			page 48
+ARM GAS  /tmp/cck6mppU.s 			page 48
 
 
  181:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** }
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  725              	.LVL72:
 1007:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
 1008:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     /*Calculate the position of each row*/
-ARM GAS  /tmp/cc9C7swH.s 			page 49
+ARM GAS  /tmp/cck6mppU.s 			page 49
 
 
 1009:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     int32_t max_h_no_gap = max_h - (prow * (btnm->row_cnt - 1));
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  763              	.LVL77:
 1025:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****             btn_cnt++;
  764              		.loc 1 1025 13 is_stmt 1 view .LVU190
-ARM GAS  /tmp/cc9C7swH.s 			page 50
+ARM GAS  /tmp/cck6mppU.s 			page 50
 
 
  765              		.loc 1 1025 20 is_stmt 0 view .LVU191
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
 1019:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         uint32_t unit_cnt = 0;           /*Number of units in a row*/
  805              		.loc 1 1019 42 is_stmt 1 discriminator 2 view .LVU208
  806 009c 0132     		adds	r2, r2, #1
-ARM GAS  /tmp/cc9C7swH.s 			page 51
+ARM GAS  /tmp/cck6mppU.s 			page 51
 
 
  807              	.LVL83:
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  852 00d2 0B44     		add	r3, r3, r1
  853              		.loc 1 1035 76 view .LVU226
  854 00d4 1844     		add	r0, r0, r3
-ARM GAS  /tmp/cc9C7swH.s 			page 52
+ARM GAS  /tmp/cck6mppU.s 			page 52
 
 
  855              		.loc 1 1035 89 view .LVU227
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
 1044:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****             uint32_t btn_u = get_button_width(btnm->ctrl_bits[btn_tot_i]);
 1045:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
 1046:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****             int32_t btn_x1 = (max_w_no_gap * row_unit_cnt) / unit_cnt + btn * pcol;
-ARM GAS  /tmp/cc9C7swH.s 			page 53
+ARM GAS  /tmp/cck6mppU.s 			page 53
 
 
 1047:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****             int32_t btn_x2 = (max_w_no_gap * (row_unit_cnt + btn_u)) / unit_cnt + btn * pcol - 1;
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  930              	.LBB98:
 1044:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
  931              		.loc 1 1044 13 view .LVU255
-ARM GAS  /tmp/cc9C7swH.s 			page 54
+ARM GAS  /tmp/cck6mppU.s 			page 54
 
 
 1044:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
 1052:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****                 btn_x2 = tmp;
  970              		.loc 1 1052 17 view .LVU272
 1053:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
-ARM GAS  /tmp/cc9C7swH.s 			page 55
+ARM GAS  /tmp/cck6mppU.s 			page 55
 
 
  971              		.loc 1 1053 17 view .LVU273
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  1009 0166 FFF7FEFF 		bl	lv_obj_refresh_ext_draw_size
  1010              	.LVL112:
 1073:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
-ARM GAS  /tmp/cc9C7swH.s 			page 56
+ARM GAS  /tmp/cck6mppU.s 			page 56
 
 
 1074:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     lv_obj_invalidate(obj);
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  1061              		.loc 1 858 5 is_stmt 1 view .LVU293
  859:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     lv_buttonmatrix_t * btnm = (lv_buttonmatrix_t *)obj;
  1062              		.loc 1 859 5 view .LVU294
-ARM GAS  /tmp/cc9C7swH.s 			page 57
+ARM GAS  /tmp/cck6mppU.s 			page 57
 
 
  860:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     uint32_t i;
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  1103 002c 0590     		str	r0, [sp, #20]
  169:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** }
  1104              		.loc 3 169 5 is_stmt 1 view .LVU309
-ARM GAS  /tmp/cc9C7swH.s 			page 58
+ARM GAS  /tmp/cck6mppU.s 			page 58
 
 
  1105              	.LVL126:
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  157:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** }
  1146              		.loc 3 157 5 is_stmt 1 view .LVU323
  1147              	.LVL132:
-ARM GAS  /tmp/cc9C7swH.s 			page 59
+ARM GAS  /tmp/cck6mppU.s 			page 59
 
 
  157:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** }
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  1188              		.loc 3 181 5 is_stmt 1 view .LVU337
  1189              	.LVL138:
  181:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** }
-ARM GAS  /tmp/cc9C7swH.s 			page 60
+ARM GAS  /tmp/cck6mppU.s 			page 60
 
 
  1190              		.loc 3 181 5 is_stmt 0 view .LVU338
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  875:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
  1230              		.loc 1 875 18 is_stmt 0 view .LVU353
  1231 0086 0346     		mov	r3, r0
-ARM GAS  /tmp/cc9C7swH.s 			page 61
+ARM GAS  /tmp/cck6mppU.s 			page 61
 
 
  1232 0088 0028     		cmp	r0, #0
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  1273              	.LVL150:
  883:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         lv_area_copy(&btn_area, &btnm->button_areas[i]);
  1274              		.loc 1 883 5 is_stmt 1 view .LVU367
-ARM GAS  /tmp/cc9C7swH.s 			page 62
+ARM GAS  /tmp/cck6mppU.s 			page 62
 
 
  883:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         lv_area_copy(&btn_area, &btnm->button_areas[i]);
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  1314              		.loc 1 893 42 view .LVU382
  1315 00ec 4B44     		add	r3, r3, r9
  893:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
-ARM GAS  /tmp/cc9C7swH.s 			page 63
+ARM GAS  /tmp/cck6mppU.s 			page 63
 
 
  1316              		.loc 1 893 26 view .LVU383
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  1355              		.loc 1 884 33 view .LVU398
  1356 0116 01EB0412 		add	r2, r1, r4, lsl #4
  1357              	.LVL156:
-ARM GAS  /tmp/cc9C7swH.s 			page 64
+ARM GAS  /tmp/cck6mppU.s 			page 64
 
 
  1358              	.LBB112:
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
   52:Drivers/lvgl/src/widgets/buttonmatrix/../../core/../misc/../font/../draw/../misc/lv_area.h ****     LV_ALIGN_DEFAULT = 0,
   53:Drivers/lvgl/src/widgets/buttonmatrix/../../core/../misc/../font/../draw/../misc/lv_area.h ****     LV_ALIGN_TOP_LEFT,
   54:Drivers/lvgl/src/widgets/buttonmatrix/../../core/../misc/../font/../draw/../misc/lv_area.h ****     LV_ALIGN_TOP_MID,
-ARM GAS  /tmp/cc9C7swH.s 			page 65
+ARM GAS  /tmp/cck6mppU.s 			page 65
 
 
   55:Drivers/lvgl/src/widgets/buttonmatrix/../../core/../misc/../font/../draw/../misc/lv_area.h ****     LV_ALIGN_TOP_RIGHT,
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  1362              	.LBB113:
  108:Drivers/lvgl/src/widgets/buttonmatrix/../../core/../misc/../font/../draw/../misc/lv_area.h **** {
  109:Drivers/lvgl/src/widgets/buttonmatrix/../../core/../misc/../font/../draw/../misc/lv_area.h ****     dest->x1 = src->x1;
-ARM GAS  /tmp/cc9C7swH.s 			page 66
+ARM GAS  /tmp/cck6mppU.s 			page 66
 
 
  1363              		.loc 4 109 5 view .LVU400
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  888:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         else btn_area.y1 += obj_cords.y1 - prow;
  1407              		.loc 1 888 33 is_stmt 1 discriminator 1 view .LVU420
  888:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         else btn_area.y1 += obj_cords.y1 - prow;
-ARM GAS  /tmp/cc9C7swH.s 			page 67
+ARM GAS  /tmp/cck6mppU.s 			page 67
 
 
  1408              		.loc 1 888 57 is_stmt 0 discriminator 1 view .LVU421
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  895:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****                                                                                     BTN_EXTRA_CLICK
  1446              		.loc 1 895 72 discriminator 1 view .LVU438
  1447 0170 3344     		add	r3, r3, r6
-ARM GAS  /tmp/cc9C7swH.s 			page 68
+ARM GAS  /tmp/cck6mppU.s 			page 68
 
 
  895:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****                                                                                     BTN_EXTRA_CLICK
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  911:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
  1495              		.loc 1 911 5 view .LVU448
  911:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
-ARM GAS  /tmp/cc9C7swH.s 			page 69
+ARM GAS  /tmp/cck6mppU.s 			page 69
 
 
  1496              		.loc 1 911 7 is_stmt 0 view .LVU449
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  1540              	.LVL166:
  919:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     lv_obj_get_coords(obj, &obj_area);
  1541              		.loc 1 919 48 view .LVU460
-ARM GAS  /tmp/cc9C7swH.s 			page 70
+ARM GAS  /tmp/cck6mppU.s 			page 70
 
 
  1542 001c 2A01     		lsls	r2, r5, #4
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  1582              		.loc 3 178 23 view .LVU478
  1583              	.LBB117:
  180:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
-ARM GAS  /tmp/cc9C7swH.s 			page 71
+ARM GAS  /tmp/cck6mppU.s 			page 71
 
 
  1584              		.loc 3 180 5 view .LVU479
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  1625              	.LVL177:
  928:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     row_gap = LV_MAX(row_gap, dpi / 10);
  1626              		.loc 1 928 19 discriminator 1 view .LVU493
-ARM GAS  /tmp/cc9C7swH.s 			page 72
+ARM GAS  /tmp/cck6mppU.s 			page 72
 
 
  1627 005a FFF7FEFF 		bl	lv_display_get_dpi
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  1666              		.loc 1 935 32 is_stmt 0 view .LVU508
  1667 008a 3944     		add	r1, r1, r7
  935:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     btn_area.y2 += obj_area.y1 + col_gap;
-ARM GAS  /tmp/cc9C7swH.s 			page 73
+ARM GAS  /tmp/cck6mppU.s 			page 73
 
 
  1668              		.loc 1 935 17 view .LVU509
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  940:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     }
  1708              		.loc 1 940 17 discriminator 1 view .LVU524
  1709 00bc 079B     		ldr	r3, [sp, #28]
-ARM GAS  /tmp/cc9C7swH.s 			page 74
+ARM GAS  /tmp/cck6mppU.s 			page 74
 
 
  940:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     }
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  602:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     lv_buttonmatrix_t * btnm = (lv_buttonmatrix_t *)obj;
  1762              		.loc 1 602 5 is_stmt 1 view .LVU529
  602:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     lv_buttonmatrix_t * btnm = (lv_buttonmatrix_t *)obj;
-ARM GAS  /tmp/cc9C7swH.s 			page 75
+ARM GAS  /tmp/cck6mppU.s 			page 75
 
 
  1763              		.loc 1 602 22 is_stmt 0 view .LVU530
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  1804 0032 7EA9     		add	r1, sp, #504
  1805 0034 4846     		mov	r0, r9
  1806              	.LVL193:
-ARM GAS  /tmp/cc9C7swH.s 			page 76
+ARM GAS  /tmp/cck6mppU.s 			page 76
 
 
  610:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  1842 005e 10AD     		add	r5, sp, #64
  1843 0060 2846     		mov	r0, r5
  1844 0062 FFF7FEFF 		bl	lv_draw_label_dsc_init
-ARM GAS  /tmp/cc9C7swH.s 			page 77
+ARM GAS  /tmp/cck6mppU.s 			page 77
 
 
  1845              	.LVL198:
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  157:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** }
  1886              		.loc 3 157 5 is_stmt 0 view .LVU576
  1887              	.LBE121:
-ARM GAS  /tmp/cc9C7swH.s 			page 78
+ARM GAS  /tmp/cck6mppU.s 			page 78
 
 
  1888              	.LBE120:
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  1928              	.LVL209:
  169:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h **** }
  1929              		.loc 3 169 5 is_stmt 0 view .LVU591
-ARM GAS  /tmp/cc9C7swH.s 			page 79
+ARM GAS  /tmp/cck6mppU.s 			page 79
 
 
  1930              	.LBE125:
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  646:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****             txt_i++;
  1970              		.loc 1 646 29 is_stmt 0 view .LVU606
  1971 00d2 D9F82C30 		ldr	r3, [r9, #44]
-ARM GAS  /tmp/cc9C7swH.s 			page 80
+ARM GAS  /tmp/cck6mppU.s 			page 80
 
 
  646:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****             txt_i++;
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  2011 010e 3846     		mov	r0, r7
  2012 0110 FFF7FEFF 		bl	button_is_inactive
  2013              	.LVL221:
-ARM GAS  /tmp/cc9C7swH.s 			page 81
+ARM GAS  /tmp/cck6mppU.s 			page 81
 
 
  657:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         else if(btn_i == btnm->btn_id_sel) {
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  2051 0134 D068     		ldr	r0, [r2, #12]
  2052              		.loc 4 112 14 view .LVU641
  2053 0136 7D90     		str	r0, [sp, #500]
-ARM GAS  /tmp/cc9C7swH.s 			page 82
+ARM GAS  /tmp/cck6mppU.s 			page 82
 
 
  2054              	.LVL224:
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  2094              	.L97:
  691:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         if(recolor) draw_label_dsc_act.flag |= LV_TEXT_FLAG_RECOLOR;
  2095              		.loc 1 691 9 view .LVU657
-ARM GAS  /tmp/cc9C7swH.s 			page 83
+ARM GAS  /tmp/cck6mppU.s 			page 83
 
 
  691:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         if(recolor) draw_label_dsc_act.flag |= LV_TEXT_FLAG_RECOLOR;
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  700:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****             if(btn_area.x2 == obj->coords.x2 - pright) draw_rect_dsc_act.border_side &= ~LV_BORDER_
  2134              		.loc 1 700 46 view .LVU674
  2135 01aa 0C9A     		ldr	r2, [sp, #48]
-ARM GAS  /tmp/cc9C7swH.s 			page 84
+ARM GAS  /tmp/cck6mppU.s 			page 84
 
 
  2136 01ac 1344     		add	r3, r3, r2
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  706:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
  2176              		.loc 1 706 30 is_stmt 0 view .LVU689
  2177 01e6 7AA8     		add	r0, sp, #488
-ARM GAS  /tmp/cc9C7swH.s 			page 85
+ARM GAS  /tmp/cck6mppU.s 			page 85
 
 
  2178              	.LVL228:
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  718:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         int32_t line_space = draw_label_dsc_act.line_space;
  2218              		.loc 1 718 9 is_stmt 1 view .LVU704
  718:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         int32_t line_space = draw_label_dsc_act.line_space;
-ARM GAS  /tmp/cc9C7swH.s 			page 86
+ARM GAS  /tmp/cck6mppU.s 			page 86
 
 
  2219              		.loc 1 718 17 is_stmt 0 view .LVU705
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  2261              	.LVL242:
  734:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         btn_area.y1 += (lv_area_get_height(&btn_area) - txt_size.y) / 2;
  2262              		.loc 1 734 64 discriminator 1 view .LVU718
-ARM GAS  /tmp/cc9C7swH.s 			page 87
+ARM GAS  /tmp/cck6mppU.s 			page 87
 
 
  2263 024e 0E9B     		ldr	r3, [sp, #56]
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  2301 027e 7D93     		str	r3, [sp, #500]
  739:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****             /*Push up the button text into the popover*/
  2302              		.loc 1 739 9 is_stmt 1 view .LVU735
-ARM GAS  /tmp/cc9C7swH.s 			page 88
+ARM GAS  /tmp/cck6mppU.s 			page 88
 
 
  739:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****             /*Push up the button text into the popover*/
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  2341              		.loc 1 749 9 is_stmt 1 view .LVU751
  2342 02ba 7AAA     		add	r2, sp, #488
  2343 02bc 45A9     		add	r1, sp, #276
-ARM GAS  /tmp/cc9C7swH.s 			page 89
+ARM GAS  /tmp/cck6mppU.s 			page 89
 
 
  2344 02be 0498     		ldr	r0, [sp, #16]
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  2384              		.loc 1 659 13 is_stmt 1 view .LVU765
  659:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****             if(state_ori & LV_STATE_FOCUSED) btn_state |= LV_STATE_FOCUSED;
  2385              		.loc 1 659 15 is_stmt 0 view .LVU766
-ARM GAS  /tmp/cc9C7swH.s 			page 90
+ARM GAS  /tmp/cck6mppU.s 			page 90
 
 
  2386 02f0 089B     		ldr	r3, [sp, #32]
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  2425              	.LVL253:
  2426              	.L96:
  679:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****             obj->skip_trans = 1;
-ARM GAS  /tmp/cc9C7swH.s 			page 91
+ARM GAS  /tmp/cck6mppU.s 			page 91
 
 
  2427              		.loc 1 679 13 is_stmt 1 view .LVU782
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  2468 0368 A9F82830 		strh	r3, [r9, #40]	@ movhi
  688:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         }
  2469              		.loc 1 688 13 is_stmt 1 view .LVU796
-ARM GAS  /tmp/cc9C7swH.s 			page 92
+ARM GAS  /tmp/cck6mppU.s 			page 92
 
 
  688:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         }
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  2512              	.L117:
  703:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         }
  2513              		.loc 1 703 57 is_stmt 1 discriminator 1 view .LVU809
-ARM GAS  /tmp/cc9C7swH.s 			page 93
+ARM GAS  /tmp/cck6mppU.s 			page 93
 
 
  703:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         }
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  2562              		.cfi_offset 14, -4
  2563 0002 0546     		mov	r5, r0
 1080:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     uint32_t i;
-ARM GAS  /tmp/cc9C7swH.s 			page 94
+ARM GAS  /tmp/cck6mppU.s 			page 94
 
 
  2564              		.loc 1 1080 5 is_stmt 1 view .LVU817
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  2609              	.LVL266:
  2610              	.LFB187:
  312:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     LV_TRACE_OBJ_CREATE("begin");
-ARM GAS  /tmp/cc9C7swH.s 			page 95
+ARM GAS  /tmp/cck6mppU.s 			page 95
 
 
  2611              		.loc 1 312 1 is_stmt 1 view -0
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  2652              		.syntax unified
  2653              		.thumb
  2654              		.thumb_func
-ARM GAS  /tmp/cc9C7swH.s 			page 96
+ARM GAS  /tmp/cck6mppU.s 			page 96
 
 
  2656              	allocate_button_areas_and_controls:
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  2696              		.loc 1 771 26 view .LVU860
  2697 0012 0133     		adds	r3, r3, #1
  2698 0014 EB63     		str	r3, [r5, #60]
-ARM GAS  /tmp/cc9C7swH.s 			page 97
+ARM GAS  /tmp/cck6mppU.s 			page 97
 
 
  2699              	.L132:
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  779:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         lv_free(btnm->button_areas);
  2736              		.loc 1 779 12 is_stmt 0 view .LVU878
  2737 0036 286B     		ldr	r0, [r5, #48]
-ARM GAS  /tmp/cc9C7swH.s 			page 98
+ARM GAS  /tmp/cck6mppU.s 			page 98
 
 
  779:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         lv_free(btnm->button_areas);
@@ -5878,7 +5878,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  790:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     LV_ASSERT_MALLOC(btnm->ctrl_bits);
  2774              		.loc 1 790 23 is_stmt 0 view .LVU897
  2775 0058 7800     		lsls	r0, r7, #1
-ARM GAS  /tmp/cc9C7swH.s 			page 99
+ARM GAS  /tmp/cck6mppU.s 			page 99
 
 
  2776 005a FFF7FEFF 		bl	lv_malloc
@@ -5938,7 +5938,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
   26:Drivers/lvgl/src/widgets/buttonmatrix/../../core/../misc/../font/../draw/../misc/../stdlib/lv_string.h **** 
   27:Drivers/lvgl/src/widgets/buttonmatrix/../../core/../misc/../font/../draw/../misc/../stdlib/lv_string.h **** /**********************
   28:Drivers/lvgl/src/widgets/buttonmatrix/../../core/../misc/../font/../draw/../misc/../stdlib/lv_string.h ****  * GLOBAL PROTOTYPES
-ARM GAS  /tmp/cc9C7swH.s 			page 100
+ARM GAS  /tmp/cck6mppU.s 			page 100
 
 
   29:Drivers/lvgl/src/widgets/buttonmatrix/../../core/../misc/../font/../draw/../misc/../stdlib/lv_string.h ****  **********************/
@@ -5998,7 +5998,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  2803 006a FFF7FEFF 		bl	lv_memset
  2804              	.LVL284:
  2805              		.loc 5 75 5 view .LVU910
-ARM GAS  /tmp/cc9C7swH.s 			page 101
+ARM GAS  /tmp/cck6mppU.s 			page 101
 
 
  2806              	.LBE133:
@@ -6058,7 +6058,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  2846              		.thumb
  2847              		.thumb_func
  2849              	lv_buttonmatrix_create:
-ARM GAS  /tmp/cc9C7swH.s 			page 102
+ARM GAS  /tmp/cck6mppU.s 			page 102
 
 
  2850              	.LVL287:
@@ -6118,7 +6118,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  2892              		.section	.text.lv_buttonmatrix_set_map,"ax",%progbits
  2893              		.align	1
  2894              		.global	lv_buttonmatrix_set_map
-ARM GAS  /tmp/cc9C7swH.s 			page 103
+ARM GAS  /tmp/cck6mppU.s 			page 103
 
 
  2895              		.syntax unified
@@ -6178,7 +6178,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  2936 0014 95F84430 		ldrb	r3, [r5, #68]	@ zero_extendqisi2
  2937 0018 23F00203 		bic	r3, r3, #2
  2938 001c 85F84430 		strb	r3, [r5, #68]
-ARM GAS  /tmp/cc9C7swH.s 			page 104
+ARM GAS  /tmp/cck6mppU.s 			page 104
 
 
  112:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     btnm->map_p = map;
@@ -6238,7 +6238,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  2981              		.cfi_endproc
  2982              	.LFE172:
  2984              		.section	.text.lv_buttonmatrix_constructor,"ax",%progbits
-ARM GAS  /tmp/cc9C7swH.s 			page 105
+ARM GAS  /tmp/cck6mppU.s 			page 105
 
 
  2985              		.align	1
@@ -6298,7 +6298,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  300:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     btnm->one_check      = 0;
  3025              		.loc 1 300 5 is_stmt 1 view .LVU980
  300:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     btnm->one_check      = 0;
-ARM GAS  /tmp/cc9C7swH.s 			page 106
+ARM GAS  /tmp/cck6mppU.s 			page 106
 
 
  3026              		.loc 1 300 26 is_stmt 0 view .LVU981
@@ -6358,7 +6358,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  119:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     LV_ASSERT_OBJ(obj, MY_CLASS);
  3071              		.loc 1 119 1 is_stmt 0 view .LVU993
  3072 0002 10B5     		push	{r4, lr}
-ARM GAS  /tmp/cc9C7swH.s 			page 107
+ARM GAS  /tmp/cck6mppU.s 			page 107
 
 
  3073              	.LCFI33:
@@ -6418,7 +6418,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  3114              		.align	1
  3115              		.global	lv_buttonmatrix_set_selected_button
  3116              		.syntax unified
-ARM GAS  /tmp/cc9C7swH.s 			page 108
+ARM GAS  /tmp/cck6mppU.s 			page 108
 
 
  3117              		.thumb
@@ -6478,7 +6478,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  3159 0018 2846     		mov	r0, r5
  3160              	.LVL314:
  136:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     btnm->btn_id_sel = btn_id;
-ARM GAS  /tmp/cc9C7swH.s 			page 109
+ARM GAS  /tmp/cck6mppU.s 			page 109
 
 
  3161              		.loc 1 136 5 view .LVU1021
@@ -6538,7 +6538,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  3206              		.loc 1 163 5 view .LVU1032
  163:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
  3207              		.loc 1 163 5 view .LVU1033
-ARM GAS  /tmp/cc9C7swH.s 			page 110
+ARM GAS  /tmp/cck6mppU.s 			page 110
 
 
  3208 0000 30B1     		cbz	r0, .L178
@@ -6598,7 +6598,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  3249              	.LCFI39:
  3250              		.cfi_def_cfa_offset 16
  3251              		.cfi_offset 3, -16
-ARM GAS  /tmp/cc9C7swH.s 			page 111
+ARM GAS  /tmp/cck6mppU.s 			page 111
 
 
  3252              		.cfi_offset 4, -12
@@ -6658,7 +6658,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  190:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
  3298              		.loc 1 190 5 view .LVU1057
  190:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
-ARM GAS  /tmp/cc9C7swH.s 			page 112
+ARM GAS  /tmp/cck6mppU.s 			page 112
 
 
  3299              		.loc 1 190 5 view .LVU1058
@@ -6718,7 +6718,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  3344              	.L184:
  194:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         lv_buttonmatrix_clear_button_ctrl(obj, i, ctrl);
  3345              		.loc 1 194 18 discriminator 1 view .LVU1068
-ARM GAS  /tmp/cc9C7swH.s 			page 113
+ARM GAS  /tmp/cck6mppU.s 			page 113
 
 
  194:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         lv_buttonmatrix_clear_button_ctrl(obj, i, ctrl);
@@ -6778,7 +6778,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  147:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
  3390              		.loc 1 147 22 is_stmt 0 view .LVU1081
  3391 000a 836B     		ldr	r3, [r0, #56]
-ARM GAS  /tmp/cc9C7swH.s 			page 114
+ARM GAS  /tmp/cck6mppU.s 			page 114
 
 
  147:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
@@ -6838,7 +6838,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  3433              		.cfi_restore 14
  143:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
  3434              		.loc 1 143 5 is_stmt 1 discriminator 1 view .LVU1095
-ARM GAS  /tmp/cc9C7swH.s 			page 115
+ARM GAS  /tmp/cck6mppU.s 			page 115
 
 
  143:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
@@ -6898,7 +6898,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  3480              		.loc 1 179 5 view .LVU1106
  3481 0000 20B1     		cbz	r0, .L201
  178:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     LV_ASSERT_OBJ(obj, MY_CLASS);
-ARM GAS  /tmp/cc9C7swH.s 			page 116
+ARM GAS  /tmp/cck6mppU.s 			page 116
 
 
  3482              		.loc 1 178 1 is_stmt 0 view .LVU1107
@@ -6958,7 +6958,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  183:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         lv_buttonmatrix_set_button_ctrl(obj, i, ctrl);
  3527              		.loc 1 183 24 is_stmt 0 discriminator 1 view .LVU1117
  3528 001a AB6B     		ldr	r3, [r5, #56]
-ARM GAS  /tmp/cc9C7swH.s 			page 117
+ARM GAS  /tmp/cck6mppU.s 			page 117
 
 
  183:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         lv_buttonmatrix_set_button_ctrl(obj, i, ctrl);
@@ -7018,7 +7018,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  3571              		.loc 1 201 5 discriminator 1 view .LVU1131
  201:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
  3572              		.loc 1 201 5 discriminator 1 view .LVU1132
-ARM GAS  /tmp/cc9C7swH.s 			page 118
+ARM GAS  /tmp/cck6mppU.s 			page 118
 
 
  201:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
@@ -7078,7 +7078,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  3615              		.thumb
  3616              		.thumb_func
  3618              	lv_buttonmatrix_get_map:
-ARM GAS  /tmp/cc9C7swH.s 			page 119
+ARM GAS  /tmp/cck6mppU.s 			page 119
 
 
  3619              	.LVL351:
@@ -7138,7 +7138,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  3660              		.loc 1 235 1 view -0
  3661              		.cfi_startproc
  3662              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/cc9C7swH.s 			page 120
+ARM GAS  /tmp/cck6mppU.s 			page 120
 
 
  3663              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -7198,7 +7198,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  244:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
  3704              		.loc 1 244 5 view .LVU1176
  3705 0000 68B1     		cbz	r0, .L223
-ARM GAS  /tmp/cc9C7swH.s 			page 121
+ARM GAS  /tmp/cck6mppU.s 			page 121
 
 
  243:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     LV_ASSERT_OBJ(obj, MY_CLASS);
@@ -7258,7 +7258,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  3748              		.loc 1 244 5 is_stmt 1 discriminator 1 view .LVU1188
  244:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
  3749              		.loc 1 244 5 discriminator 1 view .LVU1189
-ARM GAS  /tmp/cc9C7swH.s 			page 122
+ARM GAS  /tmp/cck6mppU.s 			page 122
 
 
  244:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
@@ -7318,7 +7318,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  3790              		.loc 1 259 54 is_stmt 1 discriminator 1 view .LVU1203
  259:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     }
  3791              		.loc 1 259 59 is_stmt 0 discriminator 1 view .LVU1204
-ARM GAS  /tmp/cc9C7swH.s 			page 123
+ARM GAS  /tmp/cck6mppU.s 			page 123
 
 
  3792 003c B41C     		adds	r4, r6, #2
@@ -7378,7 +7378,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  3833              		.align	2
  3834              	.L234:
  3835 0060 00000000 		.word	.LC0
-ARM GAS  /tmp/cc9C7swH.s 			page 124
+ARM GAS  /tmp/cck6mppU.s 			page 124
 
 
  3836              		.cfi_endproc
@@ -7438,7 +7438,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  3878              		.loc 1 274 45 view .LVU1231
  3879 0012 0CBF     		ite	eq
  3880 0014 0120     		moveq	r0, #1
-ARM GAS  /tmp/cc9C7swH.s 			page 125
+ARM GAS  /tmp/cck6mppU.s 			page 125
 
 
  3881 0016 0020     		movne	r0, #0
@@ -7498,7 +7498,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  3926 000a FFF7FEFF 		bl	lv_buttonmatrix_has_button_ctrl
  3927              	.LVL383:
  955:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
-ARM GAS  /tmp/cc9C7swH.s 			page 126
+ARM GAS  /tmp/cck6mppU.s 			page 126
 
 
  3928              		.loc 1 955 24 view .LVU1243
@@ -7558,7 +7558,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  3976              		.cfi_offset 8, -16
  3977              		.cfi_offset 9, -12
  3978              		.cfi_offset 10, -8
-ARM GAS  /tmp/cc9C7swH.s 			page 127
+ARM GAS  /tmp/cck6mppU.s 			page 127
 
 
  3979              		.cfi_offset 14, -4
@@ -7618,7 +7618,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  4020              		.loc 1 334 22 is_stmt 0 view .LVU1264
  4021 0020 2846     		mov	r0, r5
  4022              	.LVL396:
-ARM GAS  /tmp/cc9C7swH.s 			page 128
+ARM GAS  /tmp/cck6mppU.s 			page 128
 
 
  334:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****     lv_buttonmatrix_t * btnm = (lv_buttonmatrix_t *)obj;
@@ -7678,7 +7678,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  4070 0098 13000000 		.word	.L245+1
  4071 009c 13000000 		.word	.L245+1
  4072 00a0 13000000 		.word	.L245+1
-ARM GAS  /tmp/cc9C7swH.s 			page 129
+ARM GAS  /tmp/cck6mppU.s 			page 129
 
 
  4073 00a4 13000000 		.word	.L245+1
@@ -7738,7 +7738,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  4119              	.LVL404:
  342:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         }
  4120              		.loc 1 342 13 is_stmt 0 view .LVU1280
-ARM GAS  /tmp/cc9C7swH.s 			page 130
+ARM GAS  /tmp/cck6mppU.s 			page 130
 
 
  4121 0114 8AE7     		b	.L247
@@ -7798,7 +7798,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  4164              		.loc 1 355 9 is_stmt 1 view .LVU1291
  355:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         if(indev_type == LV_INDEV_TYPE_POINTER || indev_type == LV_INDEV_TYPE_BUTTON) {
  4165              		.loc 1 355 56 is_stmt 0 view .LVU1292
-ARM GAS  /tmp/cc9C7swH.s 			page 131
+ARM GAS  /tmp/cck6mppU.s 			page 131
 
 
  4166 0144 FFF7FEFF 		bl	lv_indev_active
@@ -7858,7 +7858,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  4207              	.LVL419:
  377:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****                button_is_inactive(btnm->ctrl_bits[btnm->btn_id_sel]) == false &&
  4208              		.loc 1 377 78 view .LVU1306
-ARM GAS  /tmp/cc9C7swH.s 			page 132
+ARM GAS  /tmp/cck6mppU.s 			page 132
 
 
  4209 0184 0028     		cmp	r0, #0
@@ -7918,7 +7918,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  4249 01ae 2946     		mov	r1, r5
  4250 01b0 3046     		mov	r0, r6
  4251 01b2 FFF7FEFF 		bl	get_button_from_point
-ARM GAS  /tmp/cc9C7swH.s 			page 133
+ARM GAS  /tmp/cck6mppU.s 			page 133
 
 
  4252              	.LVL426:
@@ -7978,7 +7978,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  4292              	.LVL432:
  4293              	.L260:
  367:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****                 }
-ARM GAS  /tmp/cc9C7swH.s 			page 134
+ARM GAS  /tmp/cck6mppU.s 			page 134
 
 
  4294              		.loc 1 367 21 is_stmt 0 view .LVU1335
@@ -8038,7 +8038,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  4334              		.loc 1 393 35 is_stmt 0 view .LVU1349
  4335 0214 2946     		mov	r1, r5
  4336 0216 3046     		mov	r0, r6
-ARM GAS  /tmp/cc9C7swH.s 			page 135
+ARM GAS  /tmp/cck6mppU.s 			page 135
 
 
  4337 0218 FFF7FEFF 		bl	get_button_from_point
@@ -8098,7 +8098,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  4376 0242 2846     		mov	r0, r5
  4377 0244 FFF7FEFF 		bl	button_is_checkable
  4378              	.LVL445:
-ARM GAS  /tmp/cc9C7swH.s 			page 136
+ARM GAS  /tmp/cck6mppU.s 			page 136
 
 
  404:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****                !button_is_inactive(btnm->ctrl_bits[btnm->btn_id_sel])) {
@@ -8158,7 +8158,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  4417              		.loc 1 415 13 is_stmt 1 view .LVU1380
  415:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****                 button_is_popover(btnm->ctrl_bits[btnm->btn_id_sel]) == true) &&
  4418              		.loc 1 415 42 is_stmt 0 view .LVU1381
-ARM GAS  /tmp/cc9C7swH.s 			page 137
+ARM GAS  /tmp/cck6mppU.s 			page 137
 
 
  4419 0280 736B     		ldr	r3, [r6, #52]
@@ -8218,7 +8218,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  4461 02b4 3046     		mov	r0, r6
  4462 02b6 FFF7FEFF 		bl	make_one_button_checked
  4463              	.LVL455:
-ARM GAS  /tmp/cc9C7swH.s 			page 138
+ARM GAS  /tmp/cck6mppU.s 			page 138
 
 
  4464 02ba E1E7     		b	.L265
@@ -8278,7 +8278,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  431:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****                button_is_inactive(btnm->ctrl_bits[btnm->btn_id_sel]) == false &&
  4504              		.loc 1 431 15 discriminator 1 view .LVU1408
  4505 02e8 0028     		cmp	r0, #0
-ARM GAS  /tmp/cc9C7swH.s 			page 139
+ARM GAS  /tmp/cck6mppU.s 			page 139
 
 
  4506 02ea 7FF492AE 		bne	.L245
@@ -8338,7 +8338,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  4547 0322 76E6     		b	.L245
  4548              	.L332:
  4549              		.align	2
-ARM GAS  /tmp/cc9C7swH.s 			page 140
+ARM GAS  /tmp/cck6mppU.s 			page 140
 
 
  4550              	.L331:
@@ -8398,7 +8398,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  4589 034a 326C     		ldr	r2, [r6, #64]
  458:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****             if(indev_type == LV_INDEV_TYPE_KEYPAD || (indev_type == LV_INDEV_TYPE_ENCODER && editin
  4590              		.loc 1 458 11 view .LVU1437
-ARM GAS  /tmp/cc9C7swH.s 			page 141
+ARM GAS  /tmp/cck6mppU.s 			page 141
 
 
  4591 034c 4FF6FF73 		movw	r3, #65535
@@ -8458,7 +8458,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  4631              		.loc 1 453 13 is_stmt 1 view .LVU1451
  453:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****         }
  4632              		.loc 1 453 26 is_stmt 0 view .LVU1452
-ARM GAS  /tmp/cc9C7swH.s 			page 142
+ARM GAS  /tmp/cck6mppU.s 			page 142
 
 
  4633 037c FFF7FEFF 		bl	lv_indev_get_type
@@ -8518,7 +8518,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  4674              	.LVL484:
  464:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****                            button_is_checked(btnm->ctrl_bits[b]) == false)) {
  4675              		.loc 1 464 67 view .LVU1466
-ARM GAS  /tmp/cc9C7swH.s 			page 143
+ARM GAS  /tmp/cck6mppU.s 			page 143
 
 
  4676 03ac 0028     		cmp	r0, #0
@@ -8578,7 +8578,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  4717              		.loc 1 477 17 is_stmt 1 view .LVU1479
  477:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****             }
  4718              		.loc 1 477 34 is_stmt 0 view .LVU1480
-ARM GAS  /tmp/cc9C7swH.s 			page 144
+ARM GAS  /tmp/cck6mppU.s 			page 144
 
 
  4719 03d8 3464     		str	r4, [r6, #64]
@@ -8638,7 +8638,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  4762 0404 4FF6FF72 		movw	r2, #65535
  4763 0408 9342     		cmp	r3, r2
  4764 040a 0AD0     		beq	.L325
-ARM GAS  /tmp/cc9C7swH.s 			page 145
+ARM GAS  /tmp/cck6mppU.s 			page 145
 
 
  496:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****             if(btnm->btn_id_sel >= btnm->btn_cnt) btnm->btn_id_sel = 0;
@@ -8698,7 +8698,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  502:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
  4803              		.loc 1 502 17 is_stmt 1 view .LVU1508
  502:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
-ARM GAS  /tmp/cc9C7swH.s 			page 146
+ARM GAS  /tmp/cck6mppU.s 			page 146
 
 
  4804              		.loc 1 502 19 is_stmt 0 view .LVU1509
@@ -8758,7 +8758,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  4844 045c 3364     		str	r3, [r6, #64]
  506:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****                 }
  4845              		.loc 1 506 21 is_stmt 1 view .LVU1524
-ARM GAS  /tmp/cc9C7swH.s 			page 147
+ARM GAS  /tmp/cck6mppU.s 			page 147
 
 
  4846              	.LVL500:
@@ -8818,7 +8818,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  517:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****                 if(btnm->btn_id_sel > 0) btnm->btn_id_sel--;
  4886              		.loc 1 517 13 is_stmt 1 view .LVU1539
  517:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****                 if(btnm->btn_id_sel > 0) btnm->btn_id_sel--;
-ARM GAS  /tmp/cc9C7swH.s 			page 148
+ARM GAS  /tmp/cck6mppU.s 			page 148
 
 
  4887              		.loc 1 517 18 is_stmt 0 view .LVU1540
@@ -8878,7 +8878,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  4925              		.loc 1 517 19 view .LVU1556
  4926 049c 33F81450 		ldrh	r5, [r3, r4, lsl #1]
  4927 04a0 2846     		mov	r0, r5
-ARM GAS  /tmp/cc9C7swH.s 			page 149
+ARM GAS  /tmp/cck6mppU.s 			page 149
 
 
  4928 04a2 FFF7FEFF 		bl	button_is_hidden
@@ -8938,7 +8938,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  186:Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
  4968              		.loc 3 186 26 is_stmt 0 view .LVU1571
  4969 04c6 1522     		movs	r2, #21
-ARM GAS  /tmp/cc9C7swH.s 			page 150
+ARM GAS  /tmp/cck6mppU.s 			page 150
 
 
  4970 04c8 0021     		movs	r1, #0
@@ -8998,7 +8998,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  5008 04ea 9C42     		cmp	r4, r3
  5009 04ec 0ED2     		bcs	.L329
  5010              	.L299:
-ARM GAS  /tmp/cc9C7swH.s 			page 151
+ARM GAS  /tmp/cck6mppU.s 			page 151
 
 
  532:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****                     btnm->btn_id_sel++;
@@ -9058,7 +9058,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  5050 0518 8458     		ldr	r4, [r0, r2]
  5051              	.LVL517:
  543:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
-ARM GAS  /tmp/cc9C7swH.s 			page 152
+ARM GAS  /tmp/cck6mppU.s 			page 152
 
 
  5052              		.loc 1 543 64 view .LVU1603
@@ -9118,7 +9118,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  546:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****                        pr_center >= btnm->button_areas[area_below].x1 &&
  5091              		.loc 1 546 23 view .LVU1619
  5092 0546 8842     		cmp	r0, r1
-ARM GAS  /tmp/cc9C7swH.s 			page 153
+ARM GAS  /tmp/cck6mppU.s 			page 153
 
 
  5093 0548 F0DD     		ble	.L302
@@ -9178,7 +9178,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  5133              	.L284:
  555:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****             }
  5134              		.loc 1 555 65 discriminator 1 view .LVU1634
-ARM GAS  /tmp/cc9C7swH.s 			page 154
+ARM GAS  /tmp/cck6mppU.s 			page 154
 
 
  5135              	.LBE151:
@@ -9238,7 +9238,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  5174              	.LVL529:
  5175              	.L307:
  564:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****                     if(btnm->btn_id_sel >= btnm->btn_cnt) {
-ARM GAS  /tmp/cc9C7swH.s 			page 155
+ARM GAS  /tmp/cck6mppU.s 			page 155
 
 
  5176              		.loc 1 564 21 is_stmt 1 view .LVU1650
@@ -9298,7 +9298,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  5216              	.L305:
  5217              	.LBB155:
  572:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****                 int32_t pr_center =
-ARM GAS  /tmp/cc9C7swH.s 			page 156
+ARM GAS  /tmp/cck6mppU.s 			page 156
 
 
  5218              		.loc 1 572 17 view .LVU1665
@@ -9358,7 +9358,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  577:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****                        pr_center >= btnm->button_areas[area_above].x1 - col_gap &&
  5257              		.loc 1 577 42 view .LVU1681
  5258 05ee 4FEA041C 		lsl	ip, r4, #4
-ARM GAS  /tmp/cc9C7swH.s 			page 157
+ARM GAS  /tmp/cck6mppU.s 			page 157
 
 
  5259 05f2 03EB0412 		add	r2, r3, r4, lsl #4
@@ -9418,7 +9418,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  585:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****             }
  5299              		.loc 1 585 17 is_stmt 1 view .LVU1696
  585:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c ****             }
-ARM GAS  /tmp/cc9C7swH.s 			page 158
+ARM GAS  /tmp/cck6mppU.s 			page 158
 
 
  5300              		.loc 1 585 19 is_stmt 0 view .LVU1697
@@ -9478,7 +9478,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  213:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
  5347              		.loc 1 213 5 view .LVU1707
  213:Drivers/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c **** 
-ARM GAS  /tmp/cc9C7swH.s 			page 159
+ARM GAS  /tmp/cck6mppU.s 			page 159
 
 
  5348              		.loc 1 213 5 view .LVU1708
@@ -9538,7 +9538,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  5389              		.align	1
  5390              		.global	lv_buttonmatrix_get_one_checked
  5391              		.syntax unified
-ARM GAS  /tmp/cc9C7swH.s 			page 160
+ARM GAS  /tmp/cck6mppU.s 			page 160
 
 
  5392              		.thumb
@@ -9598,7 +9598,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  5432      6E6D6174 
  5432      72697800 
  5433              		.section	.rodata.lv_buttonmatrix_class,"a"
-ARM GAS  /tmp/cc9C7swH.s 			page 161
+ARM GAS  /tmp/cck6mppU.s 			page 161
 
 
  5434              		.align	2
@@ -9658,7 +9658,7 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  5487              		.file 10 "Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_private.h"
  5488              		.file 11 "Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_class_private.h"
  5489              		.file 12 "Drivers/lvgl/src/widgets/buttonmatrix/../../core/../draw/lv_draw.h"
-ARM GAS  /tmp/cc9C7swH.s 			page 162
+ARM GAS  /tmp/cck6mppU.s 			page 162
 
 
  5490              		.file 13 "Drivers/lvgl/src/widgets/buttonmatrix/../../core/../misc/../font/lv_font.h"
@@ -9686,111 +9686,111 @@ ARM GAS  /tmp/cc9C7swH.s 			page 1
  5512              		.file 35 "Drivers/lvgl/src/widgets/buttonmatrix/../../core/../display/lv_display.h"
  5513              		.file 36 "Drivers/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_tree.h"
  5514              		.file 37 "Drivers/lvgl/src/widgets/buttonmatrix/../../misc/lv_area_private.h"
-ARM GAS  /tmp/cc9C7swH.s 			page 163
+ARM GAS  /tmp/cck6mppU.s 			page 163
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_buttonmatrix.c
-     /tmp/cc9C7swH.s:21     .text.get_button_width:00000000 $t
-     /tmp/cc9C7swH.s:26     .text.get_button_width:00000000 get_button_width
-     /tmp/cc9C7swH.s:51     .text.button_is_hidden:00000000 $t
-     /tmp/cc9C7swH.s:56     .text.button_is_hidden:00000000 button_is_hidden
-     /tmp/cc9C7swH.s:74     .text.button_is_checked:00000000 $t
-     /tmp/cc9C7swH.s:79     .text.button_is_checked:00000000 button_is_checked
-     /tmp/cc9C7swH.s:97     .text.button_is_repeat_disabled:00000000 $t
-     /tmp/cc9C7swH.s:102    .text.button_is_repeat_disabled:00000000 button_is_repeat_disabled
-     /tmp/cc9C7swH.s:120    .text.button_is_inactive:00000000 $t
-     /tmp/cc9C7swH.s:125    .text.button_is_inactive:00000000 button_is_inactive
-     /tmp/cc9C7swH.s:143    .text.button_is_click_trig:00000000 $t
-     /tmp/cc9C7swH.s:148    .text.button_is_click_trig:00000000 button_is_click_trig
-     /tmp/cc9C7swH.s:166    .text.button_is_popover:00000000 $t
-     /tmp/cc9C7swH.s:171    .text.button_is_popover:00000000 button_is_popover
-     /tmp/cc9C7swH.s:189    .text.button_is_checkable:00000000 $t
-     /tmp/cc9C7swH.s:194    .text.button_is_checkable:00000000 button_is_checkable
-     /tmp/cc9C7swH.s:212    .text.button_get_checked:00000000 $t
-     /tmp/cc9C7swH.s:217    .text.button_get_checked:00000000 button_get_checked
-     /tmp/cc9C7swH.s:235    .text.button_is_recolor:00000000 $t
-     /tmp/cc9C7swH.s:240    .text.button_is_recolor:00000000 button_is_recolor
-     /tmp/cc9C7swH.s:258    .rodata.has_popovers_in_top_row.str1.4:00000000 $d
-     /tmp/cc9C7swH.s:262    .text.has_popovers_in_top_row:00000000 $t
-     /tmp/cc9C7swH.s:267    .text.has_popovers_in_top_row:00000000 has_popovers_in_top_row
-     /tmp/cc9C7swH.s:369    .text.has_popovers_in_top_row:00000044 $d
-     /tmp/cc9C7swH.s:374    .text.lv_obj_get_style_space_left:00000000 $t
-     /tmp/cc9C7swH.s:379    .text.lv_obj_get_style_space_left:00000000 lv_obj_get_style_space_left
-     /tmp/cc9C7swH.s:486    .text.lv_obj_get_style_space_top:00000000 $t
-     /tmp/cc9C7swH.s:491    .text.lv_obj_get_style_space_top:00000000 lv_obj_get_style_space_top
-     /tmp/cc9C7swH.s:596    .text.update_map:00000000 $t
-     /tmp/cc9C7swH.s:601    .text.update_map:00000000 update_map
-     /tmp/cc9C7swH.s:1026   .text.update_map:00000178 $d
-     /tmp/cc9C7swH.s:1031   .text.get_button_from_point:00000000 $t
-     /tmp/cc9C7swH.s:1036   .text.get_button_from_point:00000000 get_button_from_point
-     /tmp/cc9C7swH.s:1483   .text.invalidate_button_area:00000000 $t
-     /tmp/cc9C7swH.s:1488   .text.invalidate_button_area:00000000 invalidate_button_area
-     /tmp/cc9C7swH.s:1728   .text.invalidate_button_area:000000c8 $d
-     /tmp/cc9C7swH.s:1733   .text.draw_main:00000000 $t
-     /tmp/cc9C7swH.s:1738   .text.draw_main:00000000 draw_main
-     /tmp/cc9C7swH.s:2529   .text.draw_main:000003d8 $d
-     /tmp/cc9C7swH.s:2532   .text.draw_main:000003dc $t
-     /tmp/cc9C7swH.s:2543   .text.free_map:00000000 $t
-     /tmp/cc9C7swH.s:2548   .text.free_map:00000000 free_map
-     /tmp/cc9C7swH.s:2603   .text.lv_buttonmatrix_destructor:00000000 $t
-     /tmp/cc9C7swH.s:2608   .text.lv_buttonmatrix_destructor:00000000 lv_buttonmatrix_destructor
-     /tmp/cc9C7swH.s:2651   .text.allocate_button_areas_and_controls:00000000 $t
-     /tmp/cc9C7swH.s:2656   .text.allocate_button_areas_and_controls:00000000 allocate_button_areas_and_controls
-     /tmp/cc9C7swH.s:2838   .text.allocate_button_areas_and_controls:0000007c $d
-     /tmp/cc9C7swH.s:2843   .text.lv_buttonmatrix_create:00000000 $t
-     /tmp/cc9C7swH.s:2849   .text.lv_buttonmatrix_create:00000000 lv_buttonmatrix_create
-     /tmp/cc9C7swH.s:2888   .text.lv_buttonmatrix_create:00000014 $d
-     /tmp/cc9C7swH.s:5437   .rodata.lv_buttonmatrix_class:00000000 lv_buttonmatrix_class
-     /tmp/cc9C7swH.s:2893   .text.lv_buttonmatrix_set_map:00000000 $t
-     /tmp/cc9C7swH.s:2899   .text.lv_buttonmatrix_set_map:00000000 lv_buttonmatrix_set_map
-     /tmp/cc9C7swH.s:2985   .text.lv_buttonmatrix_constructor:00000000 $t
-     /tmp/cc9C7swH.s:2990   .text.lv_buttonmatrix_constructor:00000000 lv_buttonmatrix_constructor
-ARM GAS  /tmp/cc9C7swH.s 			page 164
+     /tmp/cck6mppU.s:21     .text.get_button_width:00000000 $t
+     /tmp/cck6mppU.s:26     .text.get_button_width:00000000 get_button_width
+     /tmp/cck6mppU.s:51     .text.button_is_hidden:00000000 $t
+     /tmp/cck6mppU.s:56     .text.button_is_hidden:00000000 button_is_hidden
+     /tmp/cck6mppU.s:74     .text.button_is_checked:00000000 $t
+     /tmp/cck6mppU.s:79     .text.button_is_checked:00000000 button_is_checked
+     /tmp/cck6mppU.s:97     .text.button_is_repeat_disabled:00000000 $t
+     /tmp/cck6mppU.s:102    .text.button_is_repeat_disabled:00000000 button_is_repeat_disabled
+     /tmp/cck6mppU.s:120    .text.button_is_inactive:00000000 $t
+     /tmp/cck6mppU.s:125    .text.button_is_inactive:00000000 button_is_inactive
+     /tmp/cck6mppU.s:143    .text.button_is_click_trig:00000000 $t
+     /tmp/cck6mppU.s:148    .text.button_is_click_trig:00000000 button_is_click_trig
+     /tmp/cck6mppU.s:166    .text.button_is_popover:00000000 $t
+     /tmp/cck6mppU.s:171    .text.button_is_popover:00000000 button_is_popover
+     /tmp/cck6mppU.s:189    .text.button_is_checkable:00000000 $t
+     /tmp/cck6mppU.s:194    .text.button_is_checkable:00000000 button_is_checkable
+     /tmp/cck6mppU.s:212    .text.button_get_checked:00000000 $t
+     /tmp/cck6mppU.s:217    .text.button_get_checked:00000000 button_get_checked
+     /tmp/cck6mppU.s:235    .text.button_is_recolor:00000000 $t
+     /tmp/cck6mppU.s:240    .text.button_is_recolor:00000000 button_is_recolor
+     /tmp/cck6mppU.s:258    .rodata.has_popovers_in_top_row.str1.4:00000000 $d
+     /tmp/cck6mppU.s:262    .text.has_popovers_in_top_row:00000000 $t
+     /tmp/cck6mppU.s:267    .text.has_popovers_in_top_row:00000000 has_popovers_in_top_row
+     /tmp/cck6mppU.s:369    .text.has_popovers_in_top_row:00000044 $d
+     /tmp/cck6mppU.s:374    .text.lv_obj_get_style_space_left:00000000 $t
+     /tmp/cck6mppU.s:379    .text.lv_obj_get_style_space_left:00000000 lv_obj_get_style_space_left
+     /tmp/cck6mppU.s:486    .text.lv_obj_get_style_space_top:00000000 $t
+     /tmp/cck6mppU.s:491    .text.lv_obj_get_style_space_top:00000000 lv_obj_get_style_space_top
+     /tmp/cck6mppU.s:596    .text.update_map:00000000 $t
+     /tmp/cck6mppU.s:601    .text.update_map:00000000 update_map
+     /tmp/cck6mppU.s:1026   .text.update_map:00000178 $d
+     /tmp/cck6mppU.s:1031   .text.get_button_from_point:00000000 $t
+     /tmp/cck6mppU.s:1036   .text.get_button_from_point:00000000 get_button_from_point
+     /tmp/cck6mppU.s:1483   .text.invalidate_button_area:00000000 $t
+     /tmp/cck6mppU.s:1488   .text.invalidate_button_area:00000000 invalidate_button_area
+     /tmp/cck6mppU.s:1728   .text.invalidate_button_area:000000c8 $d
+     /tmp/cck6mppU.s:1733   .text.draw_main:00000000 $t
+     /tmp/cck6mppU.s:1738   .text.draw_main:00000000 draw_main
+     /tmp/cck6mppU.s:2529   .text.draw_main:000003d8 $d
+     /tmp/cck6mppU.s:2532   .text.draw_main:000003dc $t
+     /tmp/cck6mppU.s:2543   .text.free_map:00000000 $t
+     /tmp/cck6mppU.s:2548   .text.free_map:00000000 free_map
+     /tmp/cck6mppU.s:2603   .text.lv_buttonmatrix_destructor:00000000 $t
+     /tmp/cck6mppU.s:2608   .text.lv_buttonmatrix_destructor:00000000 lv_buttonmatrix_destructor
+     /tmp/cck6mppU.s:2651   .text.allocate_button_areas_and_controls:00000000 $t
+     /tmp/cck6mppU.s:2656   .text.allocate_button_areas_and_controls:00000000 allocate_button_areas_and_controls
+     /tmp/cck6mppU.s:2838   .text.allocate_button_areas_and_controls:0000007c $d
+     /tmp/cck6mppU.s:2843   .text.lv_buttonmatrix_create:00000000 $t
+     /tmp/cck6mppU.s:2849   .text.lv_buttonmatrix_create:00000000 lv_buttonmatrix_create
+     /tmp/cck6mppU.s:2888   .text.lv_buttonmatrix_create:00000014 $d
+     /tmp/cck6mppU.s:5437   .rodata.lv_buttonmatrix_class:00000000 lv_buttonmatrix_class
+     /tmp/cck6mppU.s:2893   .text.lv_buttonmatrix_set_map:00000000 $t
+     /tmp/cck6mppU.s:2899   .text.lv_buttonmatrix_set_map:00000000 lv_buttonmatrix_set_map
+     /tmp/cck6mppU.s:2985   .text.lv_buttonmatrix_constructor:00000000 $t
+     /tmp/cck6mppU.s:2990   .text.lv_buttonmatrix_constructor:00000000 lv_buttonmatrix_constructor
+ARM GAS  /tmp/cck6mppU.s 			page 164
 
 
-     /tmp/cc9C7swH.s:3050   .text.lv_buttonmatrix_constructor:00000034 $d
-     /tmp/cc9C7swH.s:5473   .rodata.lv_buttonmatrix_def_map:00000000 lv_buttonmatrix_def_map
-     /tmp/cc9C7swH.s:3055   .text.lv_buttonmatrix_set_ctrl_map:00000000 $t
-     /tmp/cc9C7swH.s:3061   .text.lv_buttonmatrix_set_ctrl_map:00000000 lv_buttonmatrix_set_ctrl_map
-     /tmp/cc9C7swH.s:3114   .text.lv_buttonmatrix_set_selected_button:00000000 $t
-     /tmp/cc9C7swH.s:3120   .text.lv_buttonmatrix_set_selected_button:00000000 lv_buttonmatrix_set_selected_button
-     /tmp/cc9C7swH.s:3193   .text.lv_buttonmatrix_clear_button_ctrl:00000000 $t
-     /tmp/cc9C7swH.s:3199   .text.lv_buttonmatrix_clear_button_ctrl:00000000 lv_buttonmatrix_clear_button_ctrl
-     /tmp/cc9C7swH.s:3285   .text.lv_buttonmatrix_clear_button_ctrl_all:00000000 $t
-     /tmp/cc9C7swH.s:3291   .text.lv_buttonmatrix_clear_button_ctrl_all:00000000 lv_buttonmatrix_clear_button_ctrl_all
-     /tmp/cc9C7swH.s:3358   .text.lv_buttonmatrix_set_button_ctrl:00000000 $t
-     /tmp/cc9C7swH.s:3364   .text.lv_buttonmatrix_set_button_ctrl:00000000 lv_buttonmatrix_set_button_ctrl
-     /tmp/cc9C7swH.s:3466   .text.lv_buttonmatrix_set_button_ctrl_all:00000000 $t
-     /tmp/cc9C7swH.s:3472   .text.lv_buttonmatrix_set_button_ctrl_all:00000000 lv_buttonmatrix_set_button_ctrl_all
-     /tmp/cc9C7swH.s:3539   .text.lv_buttonmatrix_set_button_width:00000000 $t
-     /tmp/cc9C7swH.s:3545   .text.lv_buttonmatrix_set_button_width:00000000 lv_buttonmatrix_set_button_width
-     /tmp/cc9C7swH.s:3612   .text.lv_buttonmatrix_get_map:00000000 $t
-     /tmp/cc9C7swH.s:3618   .text.lv_buttonmatrix_get_map:00000000 lv_buttonmatrix_get_map
-     /tmp/cc9C7swH.s:3651   .text.lv_buttonmatrix_get_selected_button:00000000 $t
-     /tmp/cc9C7swH.s:3657   .text.lv_buttonmatrix_get_selected_button:00000000 lv_buttonmatrix_get_selected_button
-     /tmp/cc9C7swH.s:3690   .text.lv_buttonmatrix_get_button_text:00000000 $t
-     /tmp/cc9C7swH.s:3696   .text.lv_buttonmatrix_get_button_text:00000000 lv_buttonmatrix_get_button_text
-     /tmp/cc9C7swH.s:3835   .text.lv_buttonmatrix_get_button_text:00000060 $d
-     /tmp/cc9C7swH.s:3840   .text.lv_buttonmatrix_has_button_ctrl:00000000 $t
-     /tmp/cc9C7swH.s:3846   .text.lv_buttonmatrix_has_button_ctrl:00000000 lv_buttonmatrix_has_button_ctrl
-     /tmp/cc9C7swH.s:3901   .text.make_one_button_checked:00000000 $t
-     /tmp/cc9C7swH.s:3906   .text.make_one_button_checked:00000000 make_one_button_checked
-     /tmp/cc9C7swH.s:3956   .text.lv_buttonmatrix_event:00000000 $t
-     /tmp/cc9C7swH.s:3961   .text.lv_buttonmatrix_event:00000000 lv_buttonmatrix_event
-     /tmp/cc9C7swH.s:4046   .text.lv_buttonmatrix_event:00000038 $d
-     /tmp/cc9C7swH.s:4097   .text.lv_buttonmatrix_event:00000100 $t
-     /tmp/cc9C7swH.s:4551   .text.lv_buttonmatrix_event:00000324 $d
-     /tmp/cc9C7swH.s:4556   .text.lv_buttonmatrix_event:00000328 $t
-     /tmp/cc9C7swH.s:4751   .text.lv_buttonmatrix_event:000003fe $d
-     /tmp/cc9C7swH.s:4755   .text.lv_buttonmatrix_event:00000402 $t
-     /tmp/cc9C7swH.s:5334   .text.lv_buttonmatrix_set_one_checked:00000000 $t
-     /tmp/cc9C7swH.s:5340   .text.lv_buttonmatrix_set_one_checked:00000000 lv_buttonmatrix_set_one_checked
-     /tmp/cc9C7swH.s:5389   .text.lv_buttonmatrix_get_one_checked:00000000 $t
-     /tmp/cc9C7swH.s:5395   .text.lv_buttonmatrix_get_one_checked:00000000 lv_buttonmatrix_get_one_checked
-     /tmp/cc9C7swH.s:5430   .rodata.str1.4:00000000 $d
-     /tmp/cc9C7swH.s:5434   .rodata.lv_buttonmatrix_class:00000000 $d
-     /tmp/cc9C7swH.s:5470   .rodata.lv_buttonmatrix_def_map:00000000 $d
+     /tmp/cck6mppU.s:3050   .text.lv_buttonmatrix_constructor:00000034 $d
+     /tmp/cck6mppU.s:5473   .rodata.lv_buttonmatrix_def_map:00000000 lv_buttonmatrix_def_map
+     /tmp/cck6mppU.s:3055   .text.lv_buttonmatrix_set_ctrl_map:00000000 $t
+     /tmp/cck6mppU.s:3061   .text.lv_buttonmatrix_set_ctrl_map:00000000 lv_buttonmatrix_set_ctrl_map
+     /tmp/cck6mppU.s:3114   .text.lv_buttonmatrix_set_selected_button:00000000 $t
+     /tmp/cck6mppU.s:3120   .text.lv_buttonmatrix_set_selected_button:00000000 lv_buttonmatrix_set_selected_button
+     /tmp/cck6mppU.s:3193   .text.lv_buttonmatrix_clear_button_ctrl:00000000 $t
+     /tmp/cck6mppU.s:3199   .text.lv_buttonmatrix_clear_button_ctrl:00000000 lv_buttonmatrix_clear_button_ctrl
+     /tmp/cck6mppU.s:3285   .text.lv_buttonmatrix_clear_button_ctrl_all:00000000 $t
+     /tmp/cck6mppU.s:3291   .text.lv_buttonmatrix_clear_button_ctrl_all:00000000 lv_buttonmatrix_clear_button_ctrl_all
+     /tmp/cck6mppU.s:3358   .text.lv_buttonmatrix_set_button_ctrl:00000000 $t
+     /tmp/cck6mppU.s:3364   .text.lv_buttonmatrix_set_button_ctrl:00000000 lv_buttonmatrix_set_button_ctrl
+     /tmp/cck6mppU.s:3466   .text.lv_buttonmatrix_set_button_ctrl_all:00000000 $t
+     /tmp/cck6mppU.s:3472   .text.lv_buttonmatrix_set_button_ctrl_all:00000000 lv_buttonmatrix_set_button_ctrl_all
+     /tmp/cck6mppU.s:3539   .text.lv_buttonmatrix_set_button_width:00000000 $t
+     /tmp/cck6mppU.s:3545   .text.lv_buttonmatrix_set_button_width:00000000 lv_buttonmatrix_set_button_width
+     /tmp/cck6mppU.s:3612   .text.lv_buttonmatrix_get_map:00000000 $t
+     /tmp/cck6mppU.s:3618   .text.lv_buttonmatrix_get_map:00000000 lv_buttonmatrix_get_map
+     /tmp/cck6mppU.s:3651   .text.lv_buttonmatrix_get_selected_button:00000000 $t
+     /tmp/cck6mppU.s:3657   .text.lv_buttonmatrix_get_selected_button:00000000 lv_buttonmatrix_get_selected_button
+     /tmp/cck6mppU.s:3690   .text.lv_buttonmatrix_get_button_text:00000000 $t
+     /tmp/cck6mppU.s:3696   .text.lv_buttonmatrix_get_button_text:00000000 lv_buttonmatrix_get_button_text
+     /tmp/cck6mppU.s:3835   .text.lv_buttonmatrix_get_button_text:00000060 $d
+     /tmp/cck6mppU.s:3840   .text.lv_buttonmatrix_has_button_ctrl:00000000 $t
+     /tmp/cck6mppU.s:3846   .text.lv_buttonmatrix_has_button_ctrl:00000000 lv_buttonmatrix_has_button_ctrl
+     /tmp/cck6mppU.s:3901   .text.make_one_button_checked:00000000 $t
+     /tmp/cck6mppU.s:3906   .text.make_one_button_checked:00000000 make_one_button_checked
+     /tmp/cck6mppU.s:3956   .text.lv_buttonmatrix_event:00000000 $t
+     /tmp/cck6mppU.s:3961   .text.lv_buttonmatrix_event:00000000 lv_buttonmatrix_event
+     /tmp/cck6mppU.s:4046   .text.lv_buttonmatrix_event:00000038 $d
+     /tmp/cck6mppU.s:4097   .text.lv_buttonmatrix_event:00000100 $t
+     /tmp/cck6mppU.s:4551   .text.lv_buttonmatrix_event:00000324 $d
+     /tmp/cck6mppU.s:4556   .text.lv_buttonmatrix_event:00000328 $t
+     /tmp/cck6mppU.s:4751   .text.lv_buttonmatrix_event:000003fe $d
+     /tmp/cck6mppU.s:4755   .text.lv_buttonmatrix_event:00000402 $t
+     /tmp/cck6mppU.s:5334   .text.lv_buttonmatrix_set_one_checked:00000000 $t
+     /tmp/cck6mppU.s:5340   .text.lv_buttonmatrix_set_one_checked:00000000 lv_buttonmatrix_set_one_checked
+     /tmp/cck6mppU.s:5389   .text.lv_buttonmatrix_get_one_checked:00000000 $t
+     /tmp/cck6mppU.s:5395   .text.lv_buttonmatrix_get_one_checked:00000000 lv_buttonmatrix_get_one_checked
+     /tmp/cck6mppU.s:5430   .rodata.str1.4:00000000 $d
+     /tmp/cck6mppU.s:5434   .rodata.lv_buttonmatrix_class:00000000 $d
+     /tmp/cck6mppU.s:5470   .rodata.lv_buttonmatrix_def_map:00000000 $d
 
 UNDEFINED SYMBOLS
 lv_strcmp
@@ -9806,7 +9806,7 @@ lv_obj_get_height
 lv_area_is_point_on
 lv_obj_get_display
 lv_display_get_dpi
-ARM GAS  /tmp/cc9C7swH.s 			page 165
+ARM GAS  /tmp/cck6mppU.s 			page 165
 
 
 lv_obj_invalidate_area

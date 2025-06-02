@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccjBr3gK.s 			page 1
+ARM GAS  /tmp/ccpETK7y.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccjBr3gK.s 			page 1
   28:Drivers/lvgl/src/widgets/spinner/lv_spinner.c **** static void arc_anim_start_angle(void * obj, int32_t v);
   29:Drivers/lvgl/src/widgets/spinner/lv_spinner.c **** static void arc_anim_end_angle(void * obj, int32_t v);
   30:Drivers/lvgl/src/widgets/spinner/lv_spinner.c **** 
-ARM GAS  /tmp/ccjBr3gK.s 			page 2
+ARM GAS  /tmp/ccpETK7y.s 			page 2
 
 
   31:Drivers/lvgl/src/widgets/spinner/lv_spinner.c **** /**********************
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccjBr3gK.s 			page 1
   85:Drivers/lvgl/src/widgets/spinner/lv_spinner.c **** static void lv_spinner_constructor(const lv_obj_class_t * class_p, lv_obj_t * obj)
   86:Drivers/lvgl/src/widgets/spinner/lv_spinner.c **** {
   87:Drivers/lvgl/src/widgets/spinner/lv_spinner.c ****     LV_TRACE_OBJ_CREATE("begin");
-ARM GAS  /tmp/ccjBr3gK.s 			page 3
+ARM GAS  /tmp/ccpETK7y.s 			page 3
 
 
   88:Drivers/lvgl/src/widgets/spinner/lv_spinner.c **** 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccjBr3gK.s 			page 1
  104:Drivers/lvgl/src/widgets/spinner/lv_spinner.c **** }
   69              		.loc 1 104 1 is_stmt 0 view .LVU7
   70 0006 08BD     		pop	{r3, pc}
-ARM GAS  /tmp/ccjBr3gK.s 			page 4
+ARM GAS  /tmp/ccpETK7y.s 			page 4
 
 
   71              		.cfi_endproc
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccjBr3gK.s 			page 1
  117 0014 00000000 		.word	lv_spinner_class
  118              		.cfi_endproc
  119              	.LFE178:
-ARM GAS  /tmp/ccjBr3gK.s 			page 5
+ARM GAS  /tmp/ccpETK7y.s 			page 5
 
 
  121              		.section	.text.lv_spinner_set_anim_params,"ax",%progbits
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccjBr3gK.s 			page 1
  168 0020 1F49     		ldr	r1, .L11
  169 0022 2046     		mov	r0, r4
  170 0024 FFF7FEFF 		bl	lv_anim_set_exec_cb
-ARM GAS  /tmp/ccjBr3gK.s 			page 6
+ARM GAS  /tmp/ccpETK7y.s 			page 6
 
 
  171              	.LVL15:
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccjBr3gK.s 			page 1
   75:Drivers/lvgl/src/widgets/spinner/lv_spinner.c **** 
  217              		.loc 1 75 5 view .LVU34
  218 007e 2046     		mov	r0, r4
-ARM GAS  /tmp/ccjBr3gK.s 			page 7
+ARM GAS  /tmp/ccpETK7y.s 			page 7
 
 
  219 0080 FFF7FEFF 		bl	lv_anim_start
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccjBr3gK.s 			page 1
   87:Drivers/lvgl/src/widgets/spinner/lv_spinner.c **** 
  269              		.loc 1 87 33 is_stmt 1 view .LVU41
   89:Drivers/lvgl/src/widgets/spinner/lv_spinner.c **** 
-ARM GAS  /tmp/ccjBr3gK.s 			page 8
+ARM GAS  /tmp/ccpETK7y.s 			page 8
 
 
  270              		.loc 1 89 5 view .LVU42
@@ -478,31 +478,31 @@ ARM GAS  /tmp/ccjBr3gK.s 			page 1
  315              		.file 8 "Drivers/lvgl/src/widgets/spinner/../../../src/core/lv_obj.h"
  316              		.file 9 "Drivers/lvgl/src/widgets/spinner/../../../src/widgets/bar/lv_bar.h"
  317              		.file 10 "Drivers/lvgl/src/widgets/spinner/../../../src/widgets/arc/lv_arc.h"
-ARM GAS  /tmp/ccjBr3gK.s 			page 9
+ARM GAS  /tmp/ccpETK7y.s 			page 9
 
 
  318              		.file 11 "Drivers/lvgl/src/widgets/spinner/../../../src/widgets/spinner/lv_spinner.h"
  319              		.file 12 "Drivers/lvgl/src/widgets/spinner/../../core/lv_obj_class.h"
-ARM GAS  /tmp/ccjBr3gK.s 			page 10
+ARM GAS  /tmp/ccpETK7y.s 			page 10
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_spinner.c
-     /tmp/ccjBr3gK.s:21     .text.arc_anim_start_angle:00000000 $t
-     /tmp/ccjBr3gK.s:26     .text.arc_anim_start_angle:00000000 arc_anim_start_angle
-     /tmp/ccjBr3gK.s:48     .text.arc_anim_end_angle:00000000 $t
-     /tmp/ccjBr3gK.s:53     .text.arc_anim_end_angle:00000000 arc_anim_end_angle
-     /tmp/ccjBr3gK.s:75     .text.lv_spinner_create:00000000 $t
-     /tmp/ccjBr3gK.s:81     .text.lv_spinner_create:00000000 lv_spinner_create
-     /tmp/ccjBr3gK.s:117    .text.lv_spinner_create:00000014 $d
-     /tmp/ccjBr3gK.s:301    .rodata.lv_spinner_class:00000000 lv_spinner_class
-     /tmp/ccjBr3gK.s:122    .text.lv_spinner_set_anim_params:00000000 $t
-     /tmp/ccjBr3gK.s:128    .text.lv_spinner_set_anim_params:00000000 lv_spinner_set_anim_params
-     /tmp/ccjBr3gK.s:243    .text.lv_spinner_set_anim_params:000000a0 $d
-     /tmp/ccjBr3gK.s:250    .text.lv_spinner_constructor:00000000 $t
-     /tmp/ccjBr3gK.s:255    .text.lv_spinner_constructor:00000000 lv_spinner_constructor
-     /tmp/ccjBr3gK.s:294    .rodata.str1.4:00000000 $d
-     /tmp/ccjBr3gK.s:298    .rodata.lv_spinner_class:00000000 $d
+     /tmp/ccpETK7y.s:21     .text.arc_anim_start_angle:00000000 $t
+     /tmp/ccpETK7y.s:26     .text.arc_anim_start_angle:00000000 arc_anim_start_angle
+     /tmp/ccpETK7y.s:48     .text.arc_anim_end_angle:00000000 $t
+     /tmp/ccpETK7y.s:53     .text.arc_anim_end_angle:00000000 arc_anim_end_angle
+     /tmp/ccpETK7y.s:75     .text.lv_spinner_create:00000000 $t
+     /tmp/ccpETK7y.s:81     .text.lv_spinner_create:00000000 lv_spinner_create
+     /tmp/ccpETK7y.s:117    .text.lv_spinner_create:00000014 $d
+     /tmp/ccpETK7y.s:301    .rodata.lv_spinner_class:00000000 lv_spinner_class
+     /tmp/ccpETK7y.s:122    .text.lv_spinner_set_anim_params:00000000 $t
+     /tmp/ccpETK7y.s:128    .text.lv_spinner_set_anim_params:00000000 lv_spinner_set_anim_params
+     /tmp/ccpETK7y.s:243    .text.lv_spinner_set_anim_params:000000a0 $d
+     /tmp/ccpETK7y.s:250    .text.lv_spinner_constructor:00000000 $t
+     /tmp/ccpETK7y.s:255    .text.lv_spinner_constructor:00000000 lv_spinner_constructor
+     /tmp/ccpETK7y.s:294    .rodata.str1.4:00000000 $d
+     /tmp/ccpETK7y.s:298    .rodata.lv_spinner_class:00000000 $d
 
 UNDEFINED SYMBOLS
 lv_arc_set_start_angle

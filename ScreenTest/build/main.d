@@ -458,7 +458,8 @@ build/main.o: Core/Src/main.c Core/Inc/main.h \
  Drivers/lvgl/src/drivers/uefi/lv_uefi_display.h \
  Drivers/lvgl/src/drivers/uefi/../../display/lv_display.h \
  Drivers/lvgl/src/lv_api_map_v8.h Drivers/lvgl/src/lv_api_map_v9_0.h \
- Drivers/lvgl/src/lv_api_map_v9_1.h Drivers/ui/ui.h Drivers/ui/screens.h
+ Drivers/lvgl/src/lv_api_map_v9_1.h Drivers/ui/ui.h Drivers/ui/screens.h \
+ Drivers/CMSIS/DSP/Include/arm_math.h
 Core/Inc/main.h:
 Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:
 Core/Inc/stm32f7xx_hal_conf.h:
@@ -950,3 +951,4 @@ Drivers/lvgl/src/lv_api_map_v9_0.h:
 Drivers/lvgl/src/lv_api_map_v9_1.h:
 Drivers/ui/ui.h:
 Drivers/ui/screens.h:
+Drivers/CMSIS/DSP/Include/arm_math.h:

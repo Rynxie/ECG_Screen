@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccl62m64.s 			page 1
+ARM GAS  /tmp/cc9zc1ZV.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
   28:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
   29:Drivers/lvgl/src/themes/default/lv_theme_default.c **** /*SCREEN*/
   30:Drivers/lvgl/src/themes/default/lv_theme_default.c **** #define LIGHT_COLOR_SCR        lv_palette_lighten(LV_PALETTE_GREY, 4)
-ARM GAS  /tmp/ccl62m64.s 			page 2
+ARM GAS  /tmp/cc9zc1ZV.s 			page 2
 
 
   31:Drivers/lvgl/src/themes/default/lv_theme_default.c **** #define LIGHT_COLOR_CARD       lv_color_white()
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
   85:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_t anim_fast;
   86:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
   87:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     /*Parts*/
-ARM GAS  /tmp/ccl62m64.s 			page 3
+ARM GAS  /tmp/cc9zc1ZV.s 			page 3
 
 
   88:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_t knob;
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  142:Drivers/lvgl/src/themes/default/lv_theme_default.c **** #endif
  143:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
  144:Drivers/lvgl/src/themes/default/lv_theme_default.c **** #if LV_USE_TABVIEW
-ARM GAS  /tmp/ccl62m64.s 			page 4
+ARM GAS  /tmp/cc9zc1ZV.s 			page 4
 
 
  145:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_t tab_bg_focus, tab_btn;
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  199:Drivers/lvgl/src/themes/default/lv_theme_default.c **** #if TRANSITION_TIME
  200:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     static const lv_style_prop_t trans_props[] = {
  201:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         LV_STYLE_BG_OPA, LV_STYLE_BG_COLOR,
-ARM GAS  /tmp/ccl62m64.s 			page 5
+ARM GAS  /tmp/cc9zc1ZV.s 			page 5
 
 
  202:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         LV_STYLE_TRANSFORM_WIDTH, LV_STYLE_TRANSFORM_HEIGHT,
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  256:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_bg_color(&theme->styles.card, theme->color_card);
  257:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_border_color(&theme->styles.card, theme->color_grey);
  258:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_border_width(&theme->styles.card, BORDER_WIDTH);
-ARM GAS  /tmp/ccl62m64.s 			page 6
+ARM GAS  /tmp/cc9zc1ZV.s 			page 6
 
 
  259:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_border_post(&theme->styles.card, true);
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  313:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_column(&theme->styles.pad_normal, PAD_DEF);
  314:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
  315:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     style_init_reset(&theme->styles.pad_small);
-ARM GAS  /tmp/ccl62m64.s 			page 7
+ARM GAS  /tmp/cc9zc1ZV.s 			page 7
 
 
  316:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_all(&theme->styles.pad_small, PAD_SMALL);
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  370:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_radius(&theme->styles.circle, LV_RADIUS_CIRCLE);
  371:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
  372:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     style_init_reset(&theme->styles.no_radius);
-ARM GAS  /tmp/ccl62m64.s 			page 8
+ARM GAS  /tmp/cc9zc1ZV.s 			page 8
 
 
  373:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_radius(&theme->styles.no_radius, 0);
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  427:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_all(&theme->styles.switch_knob, - LV_DPX_CALC(theme->disp_dpi, 4));
  428:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_bg_color(&theme->styles.switch_knob, lv_color_white());
  429:Drivers/lvgl/src/themes/default/lv_theme_default.c **** #endif
-ARM GAS  /tmp/ccl62m64.s 			page 9
+ARM GAS  /tmp/cc9zc1ZV.s 			page 9
 
 
  430:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  484:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_gap(&theme->styles.menu_sidebar_cont, 0);
  485:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_border_width(&theme->styles.menu_sidebar_cont, LV_DPX_CALC(theme->disp_dpi, 1));
  486:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_border_opa(&theme->styles.menu_sidebar_cont, LV_OPA_10);
-ARM GAS  /tmp/ccl62m64.s 			page 10
+ARM GAS  /tmp/cc9zc1ZV.s 			page 10
 
 
  487:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_border_color(&theme->styles.menu_sidebar_cont, theme->color_text);
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  541:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     style_init_reset(&theme->styles.calendar_btnm_bg);
  542:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_all(&theme->styles.calendar_btnm_bg, PAD_SMALL);
  543:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_gap(&theme->styles.calendar_btnm_bg, PAD_SMALL / 2);
-ARM GAS  /tmp/ccl62m64.s 			page 11
+ARM GAS  /tmp/cc9zc1ZV.s 			page 11
 
 
  544:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  598:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
  599:Drivers/lvgl/src/themes/default/lv_theme_default.c **** #if LV_USE_LED
  600:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     style_init_reset(&theme->styles.led);
-ARM GAS  /tmp/ccl62m64.s 			page 12
+ARM GAS  /tmp/cc9zc1ZV.s 			page 12
 
 
  601:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_bg_opa(&theme->styles.led, LV_OPA_COVER);
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  655:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     }
  656:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
  657:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     theme->disp_size = new_size;
-ARM GAS  /tmp/ccl62m64.s 			page 13
+ARM GAS  /tmp/cc9zc1ZV.s 			page 13
 
 
  658:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     theme->disp_dpi = new_dpi;
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
   29              		.loc 1 711 1 view -0
   30              		.cfi_startproc
   31              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccl62m64.s 			page 14
+ARM GAS  /tmp/cc9zc1ZV.s 			page 14
 
 
   32              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  725:Drivers/lvgl/src/themes/default/lv_theme_default.c **** #if LV_USE_TABVIEW
  726:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         /*Tabview content area*/
  727:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         if(lv_obj_check_type(parent, &lv_tabview_class) && lv_obj_get_child(parent, 1) == obj) {
-ARM GAS  /tmp/ccl62m64.s 			page 15
+ARM GAS  /tmp/cc9zc1ZV.s 			page 15
 
 
   73              		.loc 1 727 9 is_stmt 1 view .LVU14
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  116              		.loc 1 738 16 discriminator 2 view .LVU27
  117 005c 0028     		cmp	r0, #0
  118 005e 55D1     		bne	.L63
-ARM GAS  /tmp/ccl62m64.s 			page 16
+ARM GAS  /tmp/cc9zc1ZV.s 			page 16
 
 
  739:Drivers/lvgl/src/themes/default/lv_theme_default.c ****             lv_obj_add_style(obj, &theme->styles.pad_normal, 0);
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  759:Drivers/lvgl/src/themes/default/lv_theme_default.c ****             lv_obj_add_style(obj, &theme->styles.scrollbar_scrolled, LV_PART_SCROLLBAR | LV_STATE_S
  760:Drivers/lvgl/src/themes/default/lv_theme_default.c ****             return;
  761:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         }
-ARM GAS  /tmp/ccl62m64.s 			page 17
+ARM GAS  /tmp/cc9zc1ZV.s 			page 17
 
 
  762:Drivers/lvgl/src/themes/default/lv_theme_default.c **** #endif
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  192 00ce 05F14C01 		add	r1, r5, #76
  193 00d2 2046     		mov	r0, r4
  194 00d4 FFF7FEFF 		bl	lv_obj_add_style
-ARM GAS  /tmp/ccl62m64.s 			page 18
+ARM GAS  /tmp/cc9zc1ZV.s 			page 18
 
 
  195              	.LVL23:
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  817:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.line, 0);
  818:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     }
  819:Drivers/lvgl/src/themes/default/lv_theme_default.c **** #endif
-ARM GAS  /tmp/ccl62m64.s 			page 19
+ARM GAS  /tmp/cc9zc1ZV.s 			page 19
 
 
  820:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  874:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     }
  875:Drivers/lvgl/src/themes/default/lv_theme_default.c **** #endif
  876:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
-ARM GAS  /tmp/ccl62m64.s 			page 20
+ARM GAS  /tmp/cc9zc1ZV.s 			page 20
 
 
  877:Drivers/lvgl/src/themes/default/lv_theme_default.c **** #if LV_USE_TABLE
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  931:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     else if(lv_obj_check_type(obj, &lv_chart_class)) {
  932:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.card, 0);
  933:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.pad_small, 0);
-ARM GAS  /tmp/ccl62m64.s 			page 21
+ARM GAS  /tmp/cc9zc1ZV.s 			page 21
 
 
  934:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.chart_bg, 0);
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  988:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
  989:Drivers/lvgl/src/themes/default/lv_theme_default.c **** #if LV_USE_SPINNER
  990:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     else if(lv_obj_check_type(obj, &lv_spinner_class)) {
-ARM GAS  /tmp/ccl62m64.s 			page 22
+ARM GAS  /tmp/cc9zc1ZV.s 			page 22
 
 
  991:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.arc_indic, 0);
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
 1045:Drivers/lvgl/src/themes/default/lv_theme_default.c **** #endif
 1046:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
 1047:Drivers/lvgl/src/themes/default/lv_theme_default.c **** #if LV_USE_LABEL && LV_USE_TEXTAREA
-ARM GAS  /tmp/ccl62m64.s 			page 23
+ARM GAS  /tmp/cc9zc1ZV.s 			page 23
 
 
 1048:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     else if(lv_obj_check_type(obj, &lv_label_class) && lv_obj_check_type(parent, &lv_textarea_class
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
 1102:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.menu_page, 0);
 1103:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.scrollbar, LV_PART_SCROLLBAR);
 1104:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.scrollbar_scrolled, LV_PART_SCROLLBAR | LV_STATE_SCROL
-ARM GAS  /tmp/ccl62m64.s 			page 24
+ARM GAS  /tmp/cc9zc1ZV.s 			page 24
 
 
 1105:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     }
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
 1159:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.outline_secondary, LV_STATE_EDITED);
 1160:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.bg_color_primary, LV_PART_CURSOR);
 1161:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     }
-ARM GAS  /tmp/ccl62m64.s 			page 25
+ARM GAS  /tmp/cc9zc1ZV.s 			page 25
 
 
 1162:Drivers/lvgl/src/themes/default/lv_theme_default.c **** #endif
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  216 00f4 05F59871 		add	r1, r5, #304
  217 00f8 2046     		mov	r0, r4
  218 00fa FFF7FEFF 		bl	lv_obj_add_style
-ARM GAS  /tmp/ccl62m64.s 			page 26
+ARM GAS  /tmp/cc9zc1ZV.s 			page 26
 
 
  219              	.LVL27:
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  264 014e 05F1E801 		add	r1, r5, #232
  265 0152 2046     		mov	r0, r4
  266 0154 FFF7FEFF 		bl	lv_obj_add_style
-ARM GAS  /tmp/ccl62m64.s 			page 27
+ARM GAS  /tmp/cc9zc1ZV.s 			page 27
 
 
  267              	.LVL34:
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  310 019c 3046     		mov	r0, r6
  311 019e FFF7FEFF 		bl	lv_obj_get_parent
  312              	.LVL40:
-ARM GAS  /tmp/ccl62m64.s 			page 28
+ARM GAS  /tmp/cc9zc1ZV.s 			page 28
 
 
  780:Drivers/lvgl/src/themes/default/lv_theme_default.c ****             if(lv_obj_check_type(tv, &lv_tabview_class)) {
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  357 01ee 05F59871 		add	r1, r5, #304
  358 01f2 2046     		mov	r0, r4
  359 01f4 FFF7FEFF 		bl	lv_obj_add_style
-ARM GAS  /tmp/ccl62m64.s 			page 29
+ARM GAS  /tmp/cc9zc1ZV.s 			page 29
 
 
  360              	.LVL47:
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  404 0242 05F53871 		add	r1, r5, #736
  405 0246 2046     		mov	r0, r4
  406 0248 FFF7FEFF 		bl	lv_obj_add_style
-ARM GAS  /tmp/ccl62m64.s 			page 30
+ARM GAS  /tmp/cc9zc1ZV.s 			page 30
 
 
  407              	.LVL54:
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  452 029c 2046     		mov	r0, r4
  453 029e FFF7FEFF 		bl	lv_obj_add_style
  454              	.LVL61:
-ARM GAS  /tmp/ccl62m64.s 			page 31
+ARM GAS  /tmp/cc9zc1ZV.s 			page 31
 
 
  788:Drivers/lvgl/src/themes/default/lv_theme_default.c ****             }
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  496 02d6 0022     		movs	r2, #0
  497 02d8 05F16401 		add	r1, r5, #100
  498 02dc 2046     		mov	r0, r4
-ARM GAS  /tmp/ccl62m64.s 			page 32
+ARM GAS  /tmp/cc9zc1ZV.s 			page 32
 
 
  499 02de FFF7FEFF 		bl	lv_obj_add_style
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  543              	.LVL74:
  844:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.outline_secondary, LV_PART_ITEMS | LV_STATE_EDITED);
  544              		.loc 1 844 9 view .LVU124
-ARM GAS  /tmp/ccl62m64.s 			page 33
+ARM GAS  /tmp/cc9zc1ZV.s 			page 33
 
 
  545 0330 134A     		ldr	r2, .L71+56
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  593              		.loc 1 828 13 is_stmt 1 view .LVU130
  828:Drivers/lvgl/src/themes/default/lv_theme_default.c ****             lv_obj_add_style(obj, &theme->styles.calendar_btnm_day, LV_PART_ITEMS);
  594              		.loc 1 828 35 is_stmt 0 view .LVU131
-ARM GAS  /tmp/ccl62m64.s 			page 34
+ARM GAS  /tmp/cc9zc1ZV.s 			page 34
 
 
  595 03a2 05F59E76 		add	r6, r5, #316
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  640 03ee 2046     		mov	r0, r4
  641 03f0 FFF7FEFF 		bl	lv_obj_check_type
  642              	.LVL88:
-ARM GAS  /tmp/ccl62m64.s 			page 35
+ARM GAS  /tmp/cc9zc1ZV.s 			page 35
 
 
  850:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.bg_color_primary_muted, 0);
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  861:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.bg_color_primary_muted, 0);
  688              		.loc 1 861 10 view .LVU150
  861:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.bg_color_primary_muted, 0);
-ARM GAS  /tmp/ccl62m64.s 			page 36
+ARM GAS  /tmp/cc9zc1ZV.s 			page 36
 
 
  689              		.loc 1 861 13 is_stmt 0 view .LVU151
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  734 0496 2046     		mov	r0, r4
  735 0498 FFF7FEFF 		bl	lv_obj_add_style
  736              	.LVL104:
-ARM GAS  /tmp/ccl62m64.s 			page 37
+ARM GAS  /tmp/cc9zc1ZV.s 			page 37
 
 
  868:Drivers/lvgl/src/themes/default/lv_theme_default.c **** #if LV_THEME_DEFAULT_GROW
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  782 04ee 05F1DC01 		add	r1, r5, #220
  783 04f2 2046     		mov	r0, r4
  784 04f4 FFF7FEFF 		bl	lv_obj_add_style
-ARM GAS  /tmp/ccl62m64.s 			page 38
+ARM GAS  /tmp/cc9zc1ZV.s 			page 38
 
 
  785              	.LVL112:
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  831 055a 2046     		mov	r0, r4
  832 055c FFF7FEFF 		bl	lv_obj_add_style
  833              	.LVL120:
-ARM GAS  /tmp/ccl62m64.s 			page 39
+ARM GAS  /tmp/cc9zc1ZV.s 			page 39
 
 
  889:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.bg_color_primary, LV_PART_ITEMS | LV_STATE_FOCUS_KEY);
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  879 05b2 FFF7FEFF 		bl	lv_obj_add_style
  880              	.LVL127:
  900:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.bg_color_primary, LV_PART_INDICATOR | LV_STATE_CHECKED
-ARM GAS  /tmp/ccl62m64.s 			page 40
+ARM GAS  /tmp/cc9zc1ZV.s 			page 40
 
 
  881              		.loc 1 900 9 view .LVU187
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  928              	.LVL136:
  929              	.L19:
  913:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.bg_color_grey, 0);
-ARM GAS  /tmp/ccl62m64.s 			page 41
+ARM GAS  /tmp/cc9zc1ZV.s 			page 41
 
 
  930              		.loc 1 913 10 view .LVU195
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  974              	.LVL143:
  919:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.circle, LV_PART_INDICATOR);
  975              		.loc 1 919 9 is_stmt 0 view .LVU206
-ARM GAS  /tmp/ccl62m64.s 			page 42
+ARM GAS  /tmp/cc9zc1ZV.s 			page 42
 
 
  976 0660 3246     		mov	r2, r6
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  1022              	.LVL152:
  1023              	.L20:
  931:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.card, 0);
-ARM GAS  /tmp/ccl62m64.s 			page 43
+ARM GAS  /tmp/cc9zc1ZV.s 			page 43
 
 
  1024              		.loc 1 931 10 view .LVU215
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  1068 070c 4FF4A022 		mov	r2, #327680
  1069 0710 3146     		mov	r1, r6
  1070 0712 2046     		mov	r0, r4
-ARM GAS  /tmp/ccl62m64.s 			page 44
+ARM GAS  /tmp/cc9zc1ZV.s 			page 44
 
 
  1071 0714 FFF7FEFF 		bl	lv_obj_add_style
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  946:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.line_space_large, 0);
  1119              		.loc 1 946 9 view .LVU232
  1120 0782 0022     		movs	r2, #0
-ARM GAS  /tmp/ccl62m64.s 			page 45
+ARM GAS  /tmp/cc9zc1ZV.s 			page 45
 
 
  1121 0784 05F5CE71 		add	r1, r5, #412
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  1166 07d8 0022     		movs	r2, #0
  1167 07da 05F16401 		add	r1, r5, #100
  1168 07de 2046     		mov	r0, r4
-ARM GAS  /tmp/ccl62m64.s 			page 46
+ARM GAS  /tmp/cc9zc1ZV.s 			page 46
 
 
  1169 07e0 FFF7FEFF 		bl	lv_obj_add_style
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  1214 0834 2046     		mov	r0, r4
  1215 0836 FFF7FEFF 		bl	lv_obj_add_style
  1216              	.LVL181:
-ARM GAS  /tmp/ccl62m64.s 			page 47
+ARM GAS  /tmp/cc9zc1ZV.s 			page 47
 
 
  965:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     }
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  1262 088c FFF7FEFF 		bl	lv_obj_add_style
  1263              	.LVL189:
  973:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.bg_color_white, LV_PART_SELECTED);
-ARM GAS  /tmp/ccl62m64.s 			page 48
+ARM GAS  /tmp/cc9zc1ZV.s 			page 48
 
 
  1264              		.loc 1 973 9 view .LVU260
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  1308              		.loc 1 983 9 is_stmt 1 view .LVU270
  1309 08dc 4FF40032 		mov	r2, #131072
  1310 08e0 3146     		mov	r1, r6
-ARM GAS  /tmp/ccl62m64.s 			page 49
+ARM GAS  /tmp/cc9zc1ZV.s 			page 49
 
 
  1311 08e2 2046     		mov	r0, r4
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  1355 0930 05F5E671 		add	r1, r5, #460
  1356 0934 2046     		mov	r0, r4
  1357 0936 FFF7FEFF 		bl	lv_obj_add_style
-ARM GAS  /tmp/ccl62m64.s 			page 50
+ARM GAS  /tmp/cc9zc1ZV.s 			page 50
 
 
  1358              	.LVL205:
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  1403 098c 2046     		mov	r0, r4
  1404 098e FFF7FEFF 		bl	lv_obj_add_style
  1405              	.LVL213:
-ARM GAS  /tmp/ccl62m64.s 			page 51
+ARM GAS  /tmp/cc9zc1ZV.s 			page 51
 
 
 1005:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.ta_cursor, LV_PART_CURSOR | LV_STATE_FOCUSED);
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  1450 09e2 4549     		ldr	r1, .L75+44
  1451 09e4 2046     		mov	r0, r4
  1452 09e6 FFF7FEFF 		bl	lv_obj_check_type
-ARM GAS  /tmp/ccl62m64.s 			page 52
+ARM GAS  /tmp/cc9zc1ZV.s 			page 52
 
 
  1453              	.LVL220:
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
 1033:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.outline_primary, LV_STATE_FOCUS_KEY);
  1496              		.loc 1 1033 36 is_stmt 0 view .LVU311
  1497 0a2e 95F82830 		ldrb	r3, [r5, #40]	@ zero_extendqisi2
-ARM GAS  /tmp/ccl62m64.s 			page 53
+ARM GAS  /tmp/cc9zc1ZV.s 			page 53
 
 
 1033:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.outline_primary, LV_STATE_FOCUS_KEY);
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  1543 0a8c FFF7FEFF 		bl	lv_obj_add_style
  1544              	.LVL232:
 1040:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.bg_color_grey, LV_PART_ITEMS | LV_STATE_CHECKED);
-ARM GAS  /tmp/ccl62m64.s 			page 54
+ARM GAS  /tmp/cc9zc1ZV.s 			page 54
 
 
  1545              		.loc 1 1040 9 view .LVU321
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  1595 0b14 08000500 		.word	327688
  1596              	.L31:
 1048:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.bg_color_primary, LV_PART_SELECTED);
-ARM GAS  /tmp/ccl62m64.s 			page 55
+ARM GAS  /tmp/cc9zc1ZV.s 			page 55
 
 
  1597              		.loc 1 1048 10 is_stmt 1 view .LVU326
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  1639 0b54 FFF7FEFF 		bl	lv_obj_add_style
  1640              	.LVL242:
  1641 0b58 FFF7C4BA 		b	.L1
-ARM GAS  /tmp/ccl62m64.s 			page 56
+ARM GAS  /tmp/cc9zc1ZV.s 			page 56
 
 
  1642              	.L69:
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  1686              		.loc 1 1066 9 is_stmt 1 view .LVU348
  1687 0bae 0022     		movs	r2, #0
  1688 0bb0 05F1B801 		add	r1, r5, #184
-ARM GAS  /tmp/ccl62m64.s 			page 57
+ARM GAS  /tmp/cc9zc1ZV.s 			page 57
 
 
  1689 0bb4 2046     		mov	r0, r4
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  1734              	.LVL257:
 1076:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.card, 0);
  1735              		.loc 1 1076 12 discriminator 1 view .LVU358
-ARM GAS  /tmp/ccl62m64.s 			page 58
+ARM GAS  /tmp/cc9zc1ZV.s 			page 58
 
 
  1736 0c02 68B1     		cbz	r0, .L38
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  1780              		.loc 1 1085 13 is_stmt 0 view .LVU368
  1781 0c54 7A49     		ldr	r1, .L77+32
  1782 0c56 2046     		mov	r0, r4
-ARM GAS  /tmp/ccl62m64.s 			page 59
+ARM GAS  /tmp/cc9zc1ZV.s 			page 59
 
 
  1783 0c58 FFF7FEFF 		bl	lv_obj_check_type
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  1827              		.loc 1 1093 9 view .LVU378
 1093:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.bg_color_primary_muted, LV_STATE_CHECKED);
  1828              		.loc 1 1093 31 is_stmt 0 view .LVU379
-ARM GAS  /tmp/ccl62m64.s 			page 60
+ARM GAS  /tmp/cc9zc1ZV.s 			page 60
 
 
  1829 0caa 05F18806 		add	r6, r5, #136
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  1874 0cf2 FFF7F7B9 		b	.L1
  1875              	.L43:
 1101:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.menu_page, 0);
-ARM GAS  /tmp/ccl62m64.s 			page 61
+ARM GAS  /tmp/cc9zc1ZV.s 			page 61
 
 
  1876              		.loc 1 1101 10 view .LVU389
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  1920              		.loc 1 1109 10 view .LVU399
 1109:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.menu_separator, 0);
  1921              		.loc 1 1109 13 is_stmt 0 view .LVU400
-ARM GAS  /tmp/ccl62m64.s 			page 62
+ARM GAS  /tmp/cc9zc1ZV.s 			page 62
 
 
  1922 0d44 4449     		ldr	r1, .L77+56
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
 1120:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.msgbox_backdrop_bg, 0);
  1966              		.loc 1 1120 13 is_stmt 0 view .LVU411
  1967 0d90 3349     		ldr	r1, .L77+64
-ARM GAS  /tmp/ccl62m64.s 			page 63
+ARM GAS  /tmp/cc9zc1ZV.s 			page 63
 
 
  1968 0d92 2046     		mov	r0, r4
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
 1129:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.pad_tiny, 0);
  2011              		.loc 1 1129 12 discriminator 1 view .LVU423
  2012 0dd8 38B1     		cbz	r0, .L50
-ARM GAS  /tmp/ccl62m64.s 			page 64
+ARM GAS  /tmp/cc9zc1ZV.s 			page 64
 
 
 1130:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         return;
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  2058 0e30 40000100 		.word	65600
  2059 0e34 00000000 		.word	lv_list_button_class
  2060 0e38 00000000 		.word	lv_menu_class
-ARM GAS  /tmp/ccl62m64.s 			page 65
+ARM GAS  /tmp/cc9zc1ZV.s 			page 65
 
 
  2061 0e3c 00000000 		.word	lv_menu_sidebar_cont_class
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  2107 0ea4 FFF7FEFF 		bl	lv_obj_add_style
  2108              	.LVL306:
 1144:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.transition_normal, LV_STATE_PRESSED);
-ARM GAS  /tmp/ccl62m64.s 			page 66
+ARM GAS  /tmp/cc9zc1ZV.s 			page 66
 
 
  2109              		.loc 1 1144 9 view .LVU441
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  2154 0efa FFF7FEFF 		bl	lv_obj_add_style
  2155              	.LVL313:
 1157:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.outline_primary, LV_STATE_FOCUS_KEY);
-ARM GAS  /tmp/ccl62m64.s 			page 67
+ARM GAS  /tmp/cc9zc1ZV.s 			page 67
 
 
  2156              		.loc 1 1157 9 view .LVU451
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
 1167:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     }
  2202              		.loc 1 1167 9 view .LVU460
  2203 0f58 364A     		ldr	r2, .L79+16
-ARM GAS  /tmp/ccl62m64.s 			page 68
+ARM GAS  /tmp/cc9zc1ZV.s 			page 68
 
 
  2204 0f5a 05F15801 		add	r1, r5, #88
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  2248 0fa8 05F1DC01 		add	r1, r5, #220
  2249 0fac 2046     		mov	r0, r4
  2250 0fae FFF7FEFF 		bl	lv_obj_add_style
-ARM GAS  /tmp/ccl62m64.s 			page 69
+ARM GAS  /tmp/cc9zc1ZV.s 			page 69
 
 
  2251              	.LVL327:
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  2294 0ff4 3FF476A8 		beq	.L1
 1196:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.scale, LV_PART_INDICATOR);
  2295              		.loc 1 1196 9 is_stmt 1 view .LVU482
-ARM GAS  /tmp/ccl62m64.s 			page 70
+ARM GAS  /tmp/cc9zc1ZV.s 			page 70
 
 
 1196:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_obj_add_style(obj, &theme->styles.scale, LV_PART_INDICATOR);
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
    5:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h **** 
    6:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h **** #ifndef LV_STYLE_H
    7:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h **** #define LV_STYLE_H
-ARM GAS  /tmp/ccl62m64.s 			page 71
+ARM GAS  /tmp/cc9zc1ZV.s 			page 71
 
 
    8:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h **** 
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
   62:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****     const lv_style_t var_name = {                                       \
   63:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****         .values_and_props = (void*)prop_array,                          \
   64:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****         .has_group = 0xFFFFFFFF,                                        \
-ARM GAS  /tmp/ccl62m64.s 			page 72
+ARM GAS  /tmp/cc9zc1ZV.s 			page 72
 
 
   65:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****         .prop_cnt = 255,                                                \
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  119:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h **** } lv_border_side_t;
  120:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h **** 
  121:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h **** /**
-ARM GAS  /tmp/ccl62m64.s 			page 73
+ARM GAS  /tmp/cc9zc1ZV.s 			page 73
 
 
  122:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****  * A common type to handle all the property types in the same way.
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  176:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****     LV_STYLE_BG_MAIN_STOP           = 33,
  177:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****     LV_STYLE_BG_GRAD_STOP           = 34,
  178:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****     LV_STYLE_BG_GRAD_COLOR          = 35,
-ARM GAS  /tmp/ccl62m64.s 			page 74
+ARM GAS  /tmp/cc9zc1ZV.s 			page 74
 
 
  179:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h **** 
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  233:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****     LV_STYLE_TEXT_COLOR             = 88,
  234:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****     LV_STYLE_TEXT_OPA               = 89,
  235:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****     LV_STYLE_TEXT_FONT              = 90,
-ARM GAS  /tmp/ccl62m64.s 			page 75
+ARM GAS  /tmp/cc9zc1ZV.s 			page 75
 
 
  236:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h **** 
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  290:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h **** 
  291:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****     LV_STYLE_PROP_ANY                = 0xFF,
  292:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****     LV_STYLE_PROP_CONST             = 0xFF /* magic value for const styles */
-ARM GAS  /tmp/ccl62m64.s 			page 76
+ARM GAS  /tmp/cc9zc1ZV.s 			page 76
 
 
  293:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h **** };
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  347:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h **** /**
  348:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****  * Clear all properties from a style and free all allocated memories.
  349:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****  * @param style pointer to a style
-ARM GAS  /tmp/ccl62m64.s 			page 77
+ARM GAS  /tmp/cc9zc1ZV.s 			page 77
 
 
  350:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****  */
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  404:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****  * @param style pointer to a style
  405:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****  * @param prop  a style property ORed with a state.
  406:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****  * @return true: the property was found and removed; false: the property wasn't found
-ARM GAS  /tmp/ccl62m64.s 			page 78
+ARM GAS  /tmp/cc9zc1ZV.s 			page 78
 
 
  407:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****  */
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  461:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****  * @param value pointer to a `lv_style_value_t` variable to store the value
  462:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****  * @return LV_RESULT_INVALID: the property wasn't found in the style (`value` is unchanged)
  463:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****  *         LV_RESULT_OK: the property was fond, and `value` is set accordingly
-ARM GAS  /tmp/ccl62m64.s 			page 79
+ARM GAS  /tmp/cc9zc1ZV.s 			page 79
 
 
  464:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****  * @note For performance reasons there are no sanity check on `style`
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  518:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****  * @param prop a style property
  519:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****  * @return the flags of the property
  520:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****  */
-ARM GAS  /tmp/ccl62m64.s 			page 80
+ARM GAS  /tmp/cc9zc1ZV.s 			page 80
 
 
  521:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h **** uint8_t lv_style_prop_lookup_flags(lv_style_prop_t prop);
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  2364 000e FFF7FEFF 		bl	lv_style_set_pad_column
  2365              	.LVL339:
  555:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h **** }
-ARM GAS  /tmp/ccl62m64.s 			page 81
+ARM GAS  /tmp/cc9zc1ZV.s 			page 81
 
 
  2366              		.loc 2 555 1 is_stmt 0 view .LVU491
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  540:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****     lv_style_set_pad_left(style, value);
  2418              		.loc 2 540 1 is_stmt 1 view -0
  2419              		.cfi_startproc
-ARM GAS  /tmp/ccl62m64.s 			page 82
+ARM GAS  /tmp/cc9zc1ZV.s 			page 82
 
 
  2420              		@ args = 0, pretend = 0, frame = 0
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  533:Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style.h ****     lv_style_set_pad_right(style, value);
  2469              		.loc 2 533 5 is_stmt 1 view .LVU507
  2470 0006 FFF7FEFF 		bl	lv_style_set_pad_left
-ARM GAS  /tmp/ccl62m64.s 			page 83
+ARM GAS  /tmp/cc9zc1ZV.s 			page 83
 
 
  2471              	.LVL347:
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  2514 0002 064B     		ldr	r3, .L93
  2515 0004 D3F8BC31 		ldr	r3, [r3, #444]
  2516              		.loc 1 1209 17 view .LVU517
-ARM GAS  /tmp/ccl62m64.s 			page 84
+ARM GAS  /tmp/cc9zc1ZV.s 			page 84
 
 
  2517 0008 93F83C30 		ldrb	r3, [r3, #60]	@ zero_extendqisi2
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  2564              		.cfi_offset 7, -24
  2565              		.cfi_offset 8, -20
  2566              		.cfi_offset 9, -16
-ARM GAS  /tmp/ccl62m64.s 			page 85
+ARM GAS  /tmp/cc9zc1ZV.s 			page 85
 
 
  2567              		.cfi_offset 10, -12
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  2610              		.loc 1 213 5 is_stmt 1 view .LVU535
  213:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     theme->color_grey = theme->base.flags & MODE_DARK ? DARK_COLOR_GREY : LIGHT_COLOR_GREY;
  2611              		.loc 1 213 36 is_stmt 0 view .LVU536
-ARM GAS  /tmp/ccl62m64.s 			page 86
+ARM GAS  /tmp/cc9zc1ZV.s 			page 86
 
 
  2612 0052 636A     		ldr	r3, [r4, #36]
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  2657 00bc 0197     		str	r7, [sp, #4]
  2658 00be 4623     		movs	r3, #70
  2659 00c0 0093     		str	r3, [sp]
-ARM GAS  /tmp/ccl62m64.s 			page 87
+ARM GAS  /tmp/cc9zc1ZV.s 			page 87
 
 
  2660 00c2 5023     		movs	r3, #80
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  2706 011e 8DF80A00 		strb	r0, [sp, #10]
  2707              	.L105:
  231:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
-ARM GAS  /tmp/ccl62m64.s 			page 88
+ARM GAS  /tmp/cc9zc1ZV.s 			page 88
 
 
  2708              		.loc 1 231 5 is_stmt 1 view .LVU554
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  2750 016a C1EBA311 		rsb	r1, r1, r3, asr #6
  2751              	.L107:
  235:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_bg_opa(&theme->styles.scrollbar,  LV_OPA_40);
-ARM GAS  /tmp/ccl62m64.s 			page 89
+ARM GAS  /tmp/cc9zc1ZV.s 			page 89
 
 
  2752              		.loc 1 235 5 discriminator 4 view .LVU567
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  2798 01c6 FFF7FEFF 		bl	lv_style_set_text_color
  2799              	.LVL380:
  248:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_row(&theme->styles.scr, PAD_SMALL);
-ARM GAS  /tmp/ccl62m64.s 			page 90
+ARM GAS  /tmp/cc9zc1ZV.s 			page 90
 
 
  2800              		.loc 1 248 5 view .LVU576
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  2842 0212 01F01A83 		beq	.L398
  250:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_rotary_sensitivity(&theme->styles.scr, theme->disp_dpi / 4 * 256);
  2843              		.loc 1 250 49 discriminator 4 view .LVU589
-ARM GAS  /tmp/ccl62m64.s 			page 91
+ARM GAS  /tmp/cc9zc1ZV.s 			page 91
 
 
  2844 0216 0A23     		movs	r3, #10
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  2886 025a 01F00283 		beq	.L400
  254:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_bg_opa(&theme->styles.card, LV_OPA_COVER);
  2887              		.loc 1 254 46 discriminator 2 view .LVU602
-ARM GAS  /tmp/ccl62m64.s 			page 92
+ARM GAS  /tmp/cc9zc1ZV.s 			page 92
 
 
  2888 025e 0823     		movs	r3, #8
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  2931              		.loc 1 258 5 view .LVU613
  2932 02b2 7729     		cmp	r1, #119
  2933 02b4 41F3DB82 		ble	.L247
-ARM GAS  /tmp/ccl62m64.s 			page 93
+ARM GAS  /tmp/cc9zc1ZV.s 			page 93
 
 
  258:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_border_post(&theme->styles.card, true);
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  261:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_row(&theme->styles.card, PAD_SMALL);
  2977              		.loc 1 261 47 discriminator 18 view .LVU625
  2978 030c 5031     		adds	r1, r1, #80
-ARM GAS  /tmp/ccl62m64.s 			page 94
+ARM GAS  /tmp/cc9zc1ZV.s 			page 94
 
 
  261:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_row(&theme->styles.card, PAD_SMALL);
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  3020 0352 E16A     		ldr	r1, [r4, #44]
  3021 0354 94F82830 		ldrb	r3, [r4, #40]	@ zero_extendqisi2
  3022 0358 012B     		cmp	r3, #1
-ARM GAS  /tmp/ccl62m64.s 			page 95
+ARM GAS  /tmp/cc9zc1ZV.s 			page 95
 
 
  3023 035a 01F0A082 		beq	.L254
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  3068 03b8 0399     		ldr	r1, [sp, #12]
  3069 03ba 2846     		mov	r0, r5
  3070 03bc FFF7FEFF 		bl	lv_style_set_line_color
-ARM GAS  /tmp/ccl62m64.s 			page 96
+ARM GAS  /tmp/cc9zc1ZV.s 			page 96
 
 
  3071              	.LVL397:
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  3112 0402 C917     		asrs	r1, r1, #31
  3113 0404 C1EBA311 		rsb	r1, r1, r3, asr #6
  3114              	.L123:
-ARM GAS  /tmp/ccl62m64.s 			page 97
+ARM GAS  /tmp/cc9zc1ZV.s 			page 97
 
 
  269:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_outline_pad(&theme->styles.outline_primary, OUTLINE_WIDTH);
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  275:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_outline_opa(&theme->styles.outline_secondary, LV_OPA_50);
  3158              		.loc 1 275 66 is_stmt 0 view .LVU672
  3159 0454 E16A     		ldr	r1, [r4, #44]
-ARM GAS  /tmp/ccl62m64.s 			page 98
+ARM GAS  /tmp/cc9zc1ZV.s 			page 98
 
 
  3160 0456 01EB4101 		add	r1, r1, r1, lsl #1
@@ -5878,7 +5878,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  3202 04a0 41F31582 		ble	.L263
  280:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_bg_opa(&theme->styles.btn, LV_OPA_COVER);
  3203              		.loc 1 280 25 discriminator 16 view .LVU685
-ARM GAS  /tmp/ccl62m64.s 			page 99
+ARM GAS  /tmp/cc9zc1ZV.s 			page 99
 
 
  3204 04a4 5031     		adds	r1, r1, #80
@@ -5938,7 +5938,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  3248 0500 94F82830 		ldrb	r3, [r4, #40]	@ zero_extendqisi2
  3249 0504 012B     		cmp	r3, #1
  3250 0506 01F05B82 		beq	.L269
-ARM GAS  /tmp/ccl62m64.s 			page 100
+ARM GAS  /tmp/cc9zc1ZV.s 			page 100
 
 
  290:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_ver(&theme->styles.btn, PAD_SMALL);
@@ -5998,7 +5998,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  3291              		.loc 1 291 46 discriminator 18 view .LVU709
  3292 054e 5031     		adds	r1, r1, #80
  291:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_column(&theme->styles.btn, LV_DPX_CALC(theme->disp_dpi, 5));
-ARM GAS  /tmp/ccl62m64.s 			page 101
+ARM GAS  /tmp/cc9zc1ZV.s 			page 101
 
 
  3293              		.loc 1 291 5 discriminator 18 view .LVU710
@@ -6058,7 +6058,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  3335 0598 C1EBA311 		rsb	r1, r1, r3, asr #6
  3336              	.L139:
  293:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
-ARM GAS  /tmp/ccl62m64.s 			page 102
+ARM GAS  /tmp/cc9zc1ZV.s 			page 102
 
 
  3337              		.loc 1 293 5 discriminator 4 view .LVU723
@@ -6118,7 +6118,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  3381 05f2 FFF7FEFF 		bl	lv_palette_darken
  3382              	.LVL422:
  3383 05f6 8DF81800 		strb	r0, [sp, #24]
-ARM GAS  /tmp/ccl62m64.s 			page 103
+ARM GAS  /tmp/cc9zc1ZV.s 			page 103
 
 
  3384 05fa C0F30723 		ubfx	r3, r0, #8, #8
@@ -6178,7 +6178,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  3428              		.loc 1 311 53 discriminator 4 view .LVU743
  3429 0650 1023     		movs	r3, #16
  3430              	.L142:
-ARM GAS  /tmp/ccl62m64.s 			page 104
+ARM GAS  /tmp/cc9zc1ZV.s 			page 104
 
 
  311:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_row(&theme->styles.pad_normal, PAD_DEF);
@@ -6238,7 +6238,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  3472              	.L145:
  312:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_column(&theme->styles.pad_normal, PAD_DEF);
  3473              		.loc 1 312 5 discriminator 20 view .LVU757
-ARM GAS  /tmp/ccl62m64.s 			page 105
+ARM GAS  /tmp/cc9zc1ZV.s 			page 105
 
 
  3474 069c 2846     		mov	r0, r5
@@ -6298,7 +6298,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  3516 06e6 01F0B481 		beq	.L286
  316:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_gap(&theme->styles.pad_small, PAD_SMALL);
  3517              		.loc 1 316 52 discriminator 1 view .LVU770
-ARM GAS  /tmp/ccl62m64.s 			page 106
+ARM GAS  /tmp/cc9zc1ZV.s 			page 106
 
 
  3518 06ea 022B     		cmp	r3, #2
@@ -6358,7 +6358,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  317:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
  3559              		.loc 1 317 5 discriminator 18 view .LVU784
  3560 0730 034B     		ldr	r3, .L451
-ARM GAS  /tmp/ccl62m64.s 			page 107
+ARM GAS  /tmp/cc9zc1ZV.s 			page 107
 
 
  3561 0732 83FB0123 		smull	r2, r3, r3, r1
@@ -6418,7 +6418,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  3605 0780 5B00     		lsls	r3, r3, #1
  321:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
  3606              		.loc 1 321 5 view .LVU795
-ARM GAS  /tmp/ccl62m64.s 			page 108
+ARM GAS  /tmp/cc9zc1ZV.s 			page 108
 
 
  3607 0782 EF2B     		cmp	r3, #239
@@ -6478,7 +6478,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  3650              	.LVL440:
  327:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
  3651              		.loc 1 327 5 view .LVU807
-ARM GAS  /tmp/ccl62m64.s 			page 109
+ARM GAS  /tmp/cc9zc1ZV.s 			page 109
 
 
  3652 07d2 0221     		movs	r1, #2
@@ -6538,7 +6538,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  3695              		.loc 1 335 5 discriminator 8 view .LVU818
  3696 081e EF29     		cmp	r1, #239
  3697 0820 41F33581 		ble	.L297
-ARM GAS  /tmp/ccl62m64.s 			page 110
+ARM GAS  /tmp/cc9zc1ZV.s 			page 110
 
 
  335:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_row(&theme->styles.pad_tiny, PAD_TINY);
@@ -6598,7 +6598,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  3739              		.loc 1 337 5 is_stmt 1 view .LVU831
  337:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
  3740              		.loc 1 337 54 is_stmt 0 view .LVU832
-ARM GAS  /tmp/ccl62m64.s 			page 111
+ARM GAS  /tmp/cc9zc1ZV.s 			page 111
 
 
  3741 086a E16A     		ldr	r1, [r4, #44]
@@ -6658,7 +6658,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  3785 08c2 8DF82200 		strb	r0, [sp, #34]
  341:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_bg_opa(&theme->styles.bg_color_primary, LV_OPA_COVER);
  3786              		.loc 1 341 5 is_stmt 0 discriminator 1 view .LVU843
-ARM GAS  /tmp/ccl62m64.s 			page 112
+ARM GAS  /tmp/cc9zc1ZV.s 			page 112
 
 
  3787 08c6 0899     		ldr	r1, [sp, #32]
@@ -6718,7 +6718,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  3833 091a 8DF82400 		strb	r0, [sp, #36]
  3834 091e C0F30723 		ubfx	r3, r0, #8, #8
  3835 0922 8DF82530 		strb	r3, [sp, #37]
-ARM GAS  /tmp/ccl62m64.s 			page 113
+ARM GAS  /tmp/cc9zc1ZV.s 			page 113
 
 
  3836 0926 C0F30740 		ubfx	r0, r0, #16, #8
@@ -6778,7 +6778,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  3882 0982 94F83930 		ldrb	r3, [r4, #57]	@ zero_extendqisi2
  3883 0986 94F83A20 		ldrb	r2, [r4, #58]	@ zero_extendqisi2
  3884 098a 43EA0223 		orr	r3, r3, r2, lsl #8
-ARM GAS  /tmp/ccl62m64.s 			page 114
+ARM GAS  /tmp/cc9zc1ZV.s 			page 114
 
 
  3885 098e 94F83B10 		ldrb	r1, [r4, #59]	@ zero_extendqisi2
@@ -6838,7 +6838,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  3932 09fe 2846     		mov	r0, r5
  3933 0a00 FFF7FEFF 		bl	style_init_reset
  3934              	.LVL476:
-ARM GAS  /tmp/ccl62m64.s 			page 115
+ARM GAS  /tmp/cc9zc1ZV.s 			page 115
 
 
  370:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
@@ -6898,7 +6898,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  3977              		.loc 1 380 5 view .LVU878
  3978 0a4c EF29     		cmp	r1, #239
  3979 0a4e 41F33680 		ble	.L304
-ARM GAS  /tmp/ccl62m64.s 			page 116
+ARM GAS  /tmp/cc9zc1ZV.s 			page 116
 
 
  380:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_transform_height(&theme->styles.grow, LV_DPX_CALC(theme->disp_dpi, 3));
@@ -6958,7 +6958,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  4022 0a98 FF21     		movs	r1, #255
  4023 0a9a 2846     		mov	r0, r5
  4024 0a9c FFF7FEFF 		bl	lv_style_set_bg_opa
-ARM GAS  /tmp/ccl62m64.s 			page 117
+ARM GAS  /tmp/cc9zc1ZV.s 			page 117
 
 
  4025              	.LVL487:
@@ -7018,7 +7018,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  4069 0aea 2846     		mov	r0, r5
  4070 0aec FFF7FEFF 		bl	style_init_reset
  4071              	.LVL492:
-ARM GAS  /tmp/ccl62m64.s 			page 118
+ARM GAS  /tmp/cc9zc1ZV.s 			page 118
 
 
  394:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
@@ -7078,7 +7078,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  4115              		.loc 1 402 5 view .LVU911
  4116 0b44 04F5E675 		add	r5, r4, #460
  4117 0b48 2846     		mov	r0, r5
-ARM GAS  /tmp/ccl62m64.s 			page 119
+ARM GAS  /tmp/cc9zc1ZV.s 			page 119
 
 
  4118 0b4a FFF7FEFF 		bl	style_init_reset
@@ -7138,7 +7138,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  4160              		.loc 1 413 57 is_stmt 0 view .LVU923
  4161 0b94 E16A     		ldr	r1, [r4, #44]
  413:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_border_color(&theme->styles.cb_marker, theme->base.color_primary);
-ARM GAS  /tmp/ccl62m64.s 			page 120
+ARM GAS  /tmp/cc9zc1ZV.s 			page 120
 
 
  4162              		.loc 1 413 5 view .LVU924
@@ -7198,7 +7198,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  4205              		.loc 1 417 5 discriminator 4 view .LVU935
  4206 0be2 EF29     		cmp	r1, #239
  4207 0be4 40F38087 		ble	.L311
-ARM GAS  /tmp/ccl62m64.s 			page 121
+ARM GAS  /tmp/cc9zc1ZV.s 			page 121
 
 
  417:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_text_font(&theme->styles.cb_marker, theme->base.font_small);
@@ -7258,7 +7258,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  427:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_bg_color(&theme->styles.switch_knob, lv_color_white());
  4253              		.loc 1 427 5 view .LVU945
  427:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_bg_color(&theme->styles.switch_knob, lv_color_white());
-ARM GAS  /tmp/ccl62m64.s 			page 122
+ARM GAS  /tmp/cc9zc1ZV.s 			page 122
 
 
  4254              		.loc 1 427 56 is_stmt 0 view .LVU946
@@ -7318,7 +7318,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  4299 0c9e 43EA0141 		orr	r1, r3, r1, lsl #16
  4300 0ca2 2846     		mov	r0, r5
  4301 0ca4 FFF7FEFF 		bl	lv_style_set_line_color
-ARM GAS  /tmp/ccl62m64.s 			page 123
+ARM GAS  /tmp/cc9zc1ZV.s 			page 123
 
 
  4302              	.LVL520:
@@ -7378,7 +7378,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  4346              	.LVL525:
  444:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_radius(&theme->styles.chart_series, LV_DPX_CALC(theme->disp_dpi, 3));
  4347              		.loc 1 444 5 view .LVU966
-ARM GAS  /tmp/ccl62m64.s 			page 124
+ARM GAS  /tmp/cc9zc1ZV.s 			page 124
 
 
  444:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_radius(&theme->styles.chart_series, LV_DPX_CALC(theme->disp_dpi, 3));
@@ -7438,7 +7438,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  4389 0d44 40F3E086 		ble	.L316
  447:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_size(&theme->styles.chart_series, chart_size, chart_size);
  4390              		.loc 1 447 26 discriminator 1 view .LVU980
-ARM GAS  /tmp/ccl62m64.s 			page 125
+ARM GAS  /tmp/cc9zc1ZV.s 			page 125
 
 
  4391 0d48 0A35     		adds	r5, r5, #10
@@ -7498,7 +7498,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  451:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_radius(&theme->styles.chart_indic, LV_RADIUS_CIRCLE);
  4434              		.loc 1 451 5 is_stmt 1 view .LVU992
  4435 0d82 04F5F276 		add	r6, r4, #484
-ARM GAS  /tmp/ccl62m64.s 			page 126
+ARM GAS  /tmp/cc9zc1ZV.s 			page 126
 
 
  4436 0d86 3046     		mov	r0, r6
@@ -7558,7 +7558,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  4479              		.loc 1 460 5 is_stmt 1 view .LVU1003
  4480 0dc0 0021     		movs	r1, #0
  4481 0dc2 2846     		mov	r0, r5
-ARM GAS  /tmp/ccl62m64.s 			page 127
+ARM GAS  /tmp/cc9zc1ZV.s 			page 127
 
 
  4482 0dc4 FFF7FEFF 		bl	lv_style_set_pad_all
@@ -7618,7 +7618,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  467:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_clip_corner(&theme->styles.menu_section, true);
  4525              		.loc 1 467 5 discriminator 10 view .LVU1015
  4526 0e0c 2B4B     		ldr	r3, .L457
-ARM GAS  /tmp/ccl62m64.s 			page 128
+ARM GAS  /tmp/cc9zc1ZV.s 			page 128
 
 
  4527 0e0e 83FB0123 		smull	r2, r3, r3, r1
@@ -7678,7 +7678,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  4572              		.loc 1 474 52 discriminator 1 view .LVU1024
  4573 0e6e 022B     		cmp	r3, #2
  4574 0e70 00F05686 		beq	.L419
-ARM GAS  /tmp/ccl62m64.s 			page 129
+ARM GAS  /tmp/cc9zc1ZV.s 			page 129
 
 
  474:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_ver(&theme->styles.menu_cont, PAD_SMALL);
@@ -7738,7 +7738,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  4615 0eb4 014B     		ldr	r3, .L457
  4616 0eb6 83FB0123 		smull	r2, r3, r3, r1
  4617 0eba 03E0     		b	.L458
-ARM GAS  /tmp/ccl62m64.s 			page 130
+ARM GAS  /tmp/cc9zc1ZV.s 			page 130
 
 
  4618              	.L459:
@@ -7798,7 +7798,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  477:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_border_opa(&theme->styles.menu_cont, LV_OPA_10);
  4661              		.loc 1 477 57 is_stmt 0 view .LVU1050
  4662 0f02 E16A     		ldr	r1, [r4, #44]
-ARM GAS  /tmp/ccl62m64.s 			page 131
+ARM GAS  /tmp/cc9zc1ZV.s 			page 131
 
 
  477:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_border_opa(&theme->styles.menu_cont, LV_OPA_10);
@@ -7858,7 +7858,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  4707              		.loc 1 484 5 view .LVU1060
  4708 0f5a 0021     		movs	r1, #0
  4709 0f5c 2846     		mov	r0, r5
-ARM GAS  /tmp/ccl62m64.s 			page 132
+ARM GAS  /tmp/cc9zc1ZV.s 			page 132
 
 
  4710 0f5e FFF7FEFF 		bl	lv_style_set_pad_gap
@@ -7918,7 +7918,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  491:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_gap(&theme->styles.menu_main_cont, 0);
  4754              		.loc 1 491 5 view .LVU1071
  4755 0fb2 0021     		movs	r1, #0
-ARM GAS  /tmp/ccl62m64.s 			page 133
+ARM GAS  /tmp/cc9zc1ZV.s 			page 133
 
 
  4756 0fb4 2846     		mov	r0, r5
@@ -7978,7 +7978,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  4798              		.loc 1 496 5 is_stmt 1 view .LVU1083
  496:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_gap(&theme->styles.menu_header_cont, PAD_SMALL);
  4799              		.loc 1 496 59 is_stmt 0 view .LVU1084
-ARM GAS  /tmp/ccl62m64.s 			page 134
+ARM GAS  /tmp/cc9zc1ZV.s 			page 134
 
 
  4800 0ffe E16A     		ldr	r1, [r4, #44]
@@ -8038,7 +8038,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  4841              		.loc 1 497 5 discriminator 8 view .LVU1097
  4842 1048 EF29     		cmp	r1, #239
  4843 104a 40F3A285 		ble	.L339
-ARM GAS  /tmp/ccl62m64.s 			page 135
+ARM GAS  /tmp/cc9zc1ZV.s 			page 135
 
 
  497:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
@@ -8098,7 +8098,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  500:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_ver(&theme->styles.menu_header_btn, PAD_TINY);
  4886              		.loc 1 500 5 discriminator 20 view .LVU1110
  4887 1098 2846     		mov	r0, r5
-ARM GAS  /tmp/ccl62m64.s 			page 136
+ARM GAS  /tmp/cc9zc1ZV.s 			page 136
 
 
  4888 109a FFF7FEFF 		bl	lv_style_set_pad_hor
@@ -8158,7 +8158,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  4930 10e0 94F83330 		ldrb	r3, [r4, #51]	@ zero_extendqisi2
  4931 10e4 94F83420 		ldrb	r2, [r4, #52]	@ zero_extendqisi2
  4932 10e8 43EA0223 		orr	r3, r3, r2, lsl #8
-ARM GAS  /tmp/ccl62m64.s 			page 137
+ARM GAS  /tmp/cc9zc1ZV.s 			page 137
 
 
  4933 10ec 94F83510 		ldrb	r1, [r4, #53]	@ zero_extendqisi2
@@ -8218,7 +8218,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  4979 114c 2846     		mov	r0, r5
  4980 114e FFF7FEFF 		bl	style_init_reset
  4981              	.LVL586:
-ARM GAS  /tmp/ccl62m64.s 			page 138
+ARM GAS  /tmp/cc9zc1ZV.s 			page 138
 
 
  515:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_ver(&theme->styles.menu_separator, PAD_TINY);
@@ -8278,7 +8278,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  5023 1196 E16A     		ldr	r1, [r4, #44]
  521:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_border_color(&theme->styles.table_cell, theme->color_grey);
  5024              		.loc 1 521 5 view .LVU1144
-ARM GAS  /tmp/ccl62m64.s 			page 139
+ARM GAS  /tmp/cc9zc1ZV.s 			page 139
 
 
  5025 1198 EF29     		cmp	r1, #239
@@ -8338,7 +8338,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  529:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_left(&theme->styles.ta_cursor, - LV_DPX_CALC(theme->disp_dpi, 1));
  5070              		.loc 1 529 5 view .LVU1154
  5071 11fa 7729     		cmp	r1, #119
-ARM GAS  /tmp/ccl62m64.s 			page 140
+ARM GAS  /tmp/cc9zc1ZV.s 			page 140
 
 
  5072 11fc 40F3EA84 		ble	.L350
@@ -8398,7 +8398,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  5114 1242 04F51475 		add	r5, r4, #592
  5115 1246 2846     		mov	r0, r5
  5116 1248 FFF7FEFF 		bl	style_init_reset
-ARM GAS  /tmp/ccl62m64.s 			page 141
+ARM GAS  /tmp/cc9zc1ZV.s 			page 141
 
 
  5117              	.LVL599:
@@ -8458,7 +8458,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  5161 129c 0A23     		movs	r3, #10
  5162              	.L203:
  542:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_gap(&theme->styles.calendar_btnm_bg, PAD_SMALL / 2);
-ARM GAS  /tmp/ccl62m64.s 			page 142
+ARM GAS  /tmp/cc9zc1ZV.s 			page 142
 
 
  5163              		.loc 1 542 59 discriminator 8 view .LVU1177
@@ -8518,7 +8518,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  543:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
  5205              		.loc 1 543 5 discriminator 20 view .LVU1190
  5206 12e8 2846     		mov	r0, r5
-ARM GAS  /tmp/ccl62m64.s 			page 143
+ARM GAS  /tmp/cc9zc1ZV.s 			page 143
 
 
  5207 12ea FFF7FEFF 		bl	lv_style_set_pad_gap
@@ -8578,7 +8578,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  5251 1342 FFF7FEFF 		bl	lv_style_set_bg_opa
  5252              	.LVL609:
  551:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_hor(&theme->styles.calendar_header, PAD_SMALL);
-ARM GAS  /tmp/ccl62m64.s 			page 144
+ARM GAS  /tmp/cc9zc1ZV.s 			page 144
 
 
  5253              		.loc 1 551 5 view .LVU1201
@@ -8638,7 +8638,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  5295 1390 00F05584 		beq	.L431
  553:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_bottom(&theme->styles.calendar_header, PAD_TINY);
  5296              		.loc 1 553 58 discriminator 4 view .LVU1214
-ARM GAS  /tmp/ccl62m64.s 			page 145
+ARM GAS  /tmp/cc9zc1ZV.s 			page 145
 
 
  5297 1394 0A23     		movs	r3, #10
@@ -8698,7 +8698,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  5338 13da C917     		asrs	r1, r1, #31
  5339 13dc C1EBA311 		rsb	r1, r1, r3, asr #6
  5340              	.L213:
-ARM GAS  /tmp/ccl62m64.s 			page 146
+ARM GAS  /tmp/cc9zc1ZV.s 			page 146
 
 
  554:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_gap(&theme->styles.calendar_header, PAD_SMALL);
@@ -8758,7 +8758,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  5383 1428 8DF83800 		strb	r0, [sp, #56]
  5384 142c C0F30723 		ubfx	r3, r0, #8, #8
  5385 1430 8DF83930 		strb	r3, [sp, #57]
-ARM GAS  /tmp/ccl62m64.s 			page 147
+ARM GAS  /tmp/cc9zc1ZV.s 			page 147
 
 
  5386 1434 C0F30740 		ubfx	r0, r0, #16, #8
@@ -8818,7 +8818,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  5429 1484 C917     		asrs	r1, r1, #31
  5430 1486 C1EBA311 		rsb	r1, r1, r3, asr #6
  5431              	.L218:
-ARM GAS  /tmp/ccl62m64.s 			page 148
+ARM GAS  /tmp/cc9zc1ZV.s 			page 148
 
 
  566:Drivers/lvgl/src/themes/default/lv_theme_default.c ****                         theme->disp_size == DISP_SMALL ? RADIUS_DEFAULT / 2 : RADIUS_DEFAULT);
@@ -8878,7 +8878,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  5473              		.loc 1 575 5 view .LVU1263
  5474 14ca 772B     		cmp	r3, #119
  5475 14cc 40F3F083 		ble	.L376
-ARM GAS  /tmp/ccl62m64.s 			page 149
+ARM GAS  /tmp/cc9zc1ZV.s 			page 149
 
 
  575:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
@@ -8938,7 +8938,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  583:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_ver(&theme->styles.list_bg, 0);
  5518              		.loc 1 583 50 is_stmt 0 view .LVU1276
  5519 1516 E16A     		ldr	r1, [r4, #44]
-ARM GAS  /tmp/ccl62m64.s 			page 150
+ARM GAS  /tmp/cc9zc1ZV.s 			page 150
 
 
  5520 1518 94F82830 		ldrb	r3, [r4, #40]	@ zero_extendqisi2
@@ -8998,7 +8998,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  5563 1564 2846     		mov	r0, r5
  5564 1566 FFF7FEFF 		bl	style_init_reset
  5565              	.LVL634:
-ARM GAS  /tmp/ccl62m64.s 			page 151
+ARM GAS  /tmp/cc9zc1ZV.s 			page 151
 
 
  589:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_border_color(&theme->styles.list_btn, theme->color_grey);
@@ -9058,7 +9058,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  5608 15ba 0A23     		movs	r3, #10
  5609              	.L226:
  592:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_column(&theme->styles.list_btn, PAD_SMALL);
-ARM GAS  /tmp/ccl62m64.s 			page 152
+ARM GAS  /tmp/cc9zc1ZV.s 			page 152
 
 
  5610              		.loc 1 592 51 discriminator 8 view .LVU1300
@@ -9118,7 +9118,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  5652              	.L465:
  5653              		.align	2
  5654              	.L463:
-ARM GAS  /tmp/ccl62m64.s 			page 153
+ARM GAS  /tmp/cc9zc1ZV.s 			page 153
 
 
  5655 1608 67666666 		.word	1717986919
@@ -9178,7 +9178,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  5697 164e 04F55375 		add	r5, r4, #844
  5698 1652 2846     		mov	r0, r5
  5699 1654 FFF7FEFF 		bl	style_init_reset
-ARM GAS  /tmp/ccl62m64.s 			page 154
+ARM GAS  /tmp/cc9zc1ZV.s 			page 154
 
 
  5700              	.LVL642:
@@ -9238,7 +9238,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  605:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_shadow_color(&theme->styles.led, lv_color_white());
  5745              		.loc 1 605 51 discriminator 1 view .LVU1334
  5746 16b8 5031     		adds	r1, r1, #80
-ARM GAS  /tmp/ccl62m64.s 			page 155
+ARM GAS  /tmp/cc9zc1ZV.s 			page 155
 
 
  605:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_shadow_color(&theme->styles.led, lv_color_white());
@@ -9298,7 +9298,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  5790 170c 04F55675 		add	r5, r4, #856
  5791 1710 2846     		mov	r0, r5
  5792 1712 FFF7FEFF 		bl	style_init_reset
-ARM GAS  /tmp/ccl62m64.s 			page 156
+ARM GAS  /tmp/cc9zc1ZV.s 			page 156
 
 
  5793              	.LVL653:
@@ -9358,7 +9358,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  5836 176a 0121     		movs	r1, #1
  5837              	.L235:
  615:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_length(&theme->styles.scale, LV_DPX(6));
-ARM GAS  /tmp/ccl62m64.s 			page 157
+ARM GAS  /tmp/cc9zc1ZV.s 			page 157
 
 
  5838              		.loc 1 615 5 discriminator 4 view .LVU1357
@@ -9418,7 +9418,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  5883 17ae FEF73DBC 		b	.L97
  5884              	.L98:
  212:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     theme->color_card = theme->base.flags & MODE_DARK ? DARK_COLOR_CARD : LIGHT_COLOR_CARD;
-ARM GAS  /tmp/ccl62m64.s 			page 158
+ARM GAS  /tmp/cc9zc1ZV.s 			page 158
 
 
  5885              		.loc 1 212 75 discriminator 2 view .LVU1367
@@ -9478,7 +9478,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  5934              		.loc 1 235 5 discriminator 2 view .LVU1372
  5935 1832 0121     		movs	r1, #1
  5936 1834 FEF79BBC 		b	.L107
-ARM GAS  /tmp/ccl62m64.s 			page 159
+ARM GAS  /tmp/cc9zc1ZV.s 			page 159
 
 
  5937              	.L397:
@@ -9538,7 +9538,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  5980 1876 FEF744BD 		b	.L116
  5981              	.L248:
  261:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_row(&theme->styles.card, PAD_SMALL);
-ARM GAS  /tmp/ccl62m64.s 			page 160
+ARM GAS  /tmp/cc9zc1ZV.s 			page 160
 
 
  5982              		.loc 1 261 47 discriminator 2 view .LVU1384
@@ -9598,7 +9598,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  275:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_outline_opa(&theme->styles.outline_secondary, LV_OPA_50);
  6026              		.loc 1 275 5 discriminator 2 view .LVU1395
  6027 18bc 0121     		movs	r1, #1
-ARM GAS  /tmp/ccl62m64.s 			page 161
+ARM GAS  /tmp/cc9zc1ZV.s 			page 161
 
 
  6028 18be FEF7D6BD 		b	.L125
@@ -9658,7 +9658,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  6071 1908 FFF7FEFF 		bl	lv_style_set_shadow_width
  6072              	.LVL672:
  286:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_style_set_shadow_offset_y(&theme->styles.btn, LV_DPX_CALC(theme->disp_dpi, LV_DPX(4)));
-ARM GAS  /tmp/ccl62m64.s 			page 162
+ARM GAS  /tmp/cc9zc1ZV.s 			page 162
 
 
  6073              		.loc 1 286 9 is_stmt 1 view .LVU1407
@@ -9718,7 +9718,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  6116              	.LVL677:
  6117 1948 FEF7CCBD 		b	.L128
  6118              	.L443:
-ARM GAS  /tmp/ccl62m64.s 			page 163
+ARM GAS  /tmp/cc9zc1ZV.s 			page 163
 
 
  285:Drivers/lvgl/src/themes/default/lv_theme_default.c ****         lv_style_set_shadow_opa(&theme->styles.btn, LV_OPA_50);
@@ -9778,7 +9778,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  6164              		.loc 1 287 58 discriminator 11 view .LVU1427
  6165 19a0 0020     		movs	r0, #0
  6166 19a2 FFF7FEFF 		bl	lv_display_get_dpi
-ARM GAS  /tmp/ccl62m64.s 			page 164
+ARM GAS  /tmp/cc9zc1ZV.s 			page 164
 
 
  6167              	.LVL681:
@@ -9838,7 +9838,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  293:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
  6212              		.loc 1 293 5 discriminator 2 view .LVU1437
  6213 19e8 0121     		movs	r1, #1
-ARM GAS  /tmp/ccl62m64.s 			page 165
+ARM GAS  /tmp/cc9zc1ZV.s 			page 165
 
 
  6214 19ea FEF7D7BD 		b	.L139
@@ -9898,7 +9898,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  6259 1a3c FEF73BBE 		b	.L146
  6260              	.L283:
  313:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
-ARM GAS  /tmp/ccl62m64.s 			page 166
+ARM GAS  /tmp/cc9zc1ZV.s 			page 166
 
 
  6261              		.loc 1 313 56 discriminator 2 view .LVU1447
@@ -9958,7 +9958,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  335:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_row(&theme->styles.pad_tiny, PAD_TINY);
  6305              		.loc 1 335 51 discriminator 3 view .LVU1458
  6306 1a82 0623     		movs	r3, #6
-ARM GAS  /tmp/ccl62m64.s 			page 167
+ARM GAS  /tmp/cc9zc1ZV.s 			page 167
 
 
  6307 1a84 FEF7C9BE 		b	.L155
@@ -10018,7 +10018,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  6350 1ac4 0121     		movs	r1, #1
  6351 1ac6 FEF7DBBF 		b	.L163
  6352              	.L306:
-ARM GAS  /tmp/ccl62m64.s 			page 168
+ARM GAS  /tmp/cc9zc1ZV.s 			page 168
 
 
  387:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_radius(&theme->styles.knob, LV_RADIUS_CIRCLE);
@@ -10078,7 +10078,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  6396              	.LVL684:
  6397              	.L317:
  449:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
-ARM GAS  /tmp/ccl62m64.s 			page 169
+ARM GAS  /tmp/cc9zc1ZV.s 			page 169
 
 
  6398              		.loc 1 449 5 discriminator 2 view .LVU1481
@@ -10138,7 +10138,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  6442              	.L328:
  476:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_border_width(&theme->styles.menu_cont, LV_DPX_CALC(theme->disp_dpi, 1));
  6443              		.loc 1 476 5 discriminator 10 view .LVU1492
-ARM GAS  /tmp/ccl62m64.s 			page 170
+ARM GAS  /tmp/cc9zc1ZV.s 			page 170
 
 
  6444 1b50 0121     		movs	r1, #1
@@ -10198,7 +10198,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  6487              		.loc 1 497 5 discriminator 10 view .LVU1503
  6488 1b92 0121     		movs	r1, #1
  6489 1b94 FFF762BA 		b	.L191
-ARM GAS  /tmp/ccl62m64.s 			page 171
+ARM GAS  /tmp/cc9zc1ZV.s 			page 171
 
 
  6490              	.L425:
@@ -10258,7 +10258,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  6533 1bd6 FFF71ABB 		b	.L199
  6534              	.L351:
  530:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_border_side(&theme->styles.ta_cursor, LV_BORDER_SIDE_LEFT);
-ARM GAS  /tmp/ccl62m64.s 			page 172
+ARM GAS  /tmp/cc9zc1ZV.s 			page 172
 
 
  6535              		.loc 1 530 5 discriminator 2 view .LVU1515
@@ -10318,7 +10318,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  6580 1c2c 0C23     		movs	r3, #12
  6581 1c2e FFF799BB 		b	.L208
  6582              	.L359:
-ARM GAS  /tmp/ccl62m64.s 			page 173
+ARM GAS  /tmp/cc9zc1ZV.s 			page 173
 
 
  552:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     lv_style_set_pad_top(&theme->styles.calendar_header, PAD_SMALL);
@@ -10378,7 +10378,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  6626              	.L434:
  567:Drivers/lvgl/src/themes/default/lv_theme_default.c **** #endif
  6627              		.loc 1 567 58 view .LVU1536
-ARM GAS  /tmp/ccl62m64.s 			page 174
+ARM GAS  /tmp/cc9zc1ZV.s 			page 174
 
 
  6628 1c74 E16A     		ldr	r1, [r4, #44]
@@ -10438,7 +10438,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  6671              	.L377:
  578:Drivers/lvgl/src/themes/default/lv_theme_default.c **** #endif
  6672              		.loc 1 578 5 discriminator 2 view .LVU1548
-ARM GAS  /tmp/ccl62m64.s 			page 175
+ARM GAS  /tmp/cc9zc1ZV.s 			page 175
 
 
  6673 1cb4 4FF0FF31 		mov	r1, #-1
@@ -10498,7 +10498,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  6716              		.loc 1 596 65 discriminator 3 view .LVU1559
  6717 1ce2 1423     		movs	r3, #20
  6718 1ce4 A4E4     		b	.L230
-ARM GAS  /tmp/ccl62m64.s 			page 176
+ARM GAS  /tmp/cc9zc1ZV.s 			page 176
 
 
  6719              	.L388:
@@ -10558,7 +10558,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  6764 1d28 00EB4000 		add	r0, r0, r0, lsl #1
  6765 1d2c 4100     		lsls	r1, r0, #1
  6766 1d2e 5031     		adds	r1, r1, #80
-ARM GAS  /tmp/ccl62m64.s 			page 177
+ARM GAS  /tmp/cc9zc1ZV.s 			page 177
 
 
  616:Drivers/lvgl/src/themes/default/lv_theme_default.c **** #endif
@@ -10618,7 +10618,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  682:Drivers/lvgl/src/themes/default/lv_theme_default.c ****             uint32_t i;
  6814              		.loc 1 682 13 is_stmt 1 view .LVU1578
  682:Drivers/lvgl/src/themes/default/lv_theme_default.c ****             uint32_t i;
-ARM GAS  /tmp/ccl62m64.s 			page 178
+ARM GAS  /tmp/cc9zc1ZV.s 			page 178
 
 
  6815              		.loc 1 682 26 is_stmt 0 view .LVU1579
@@ -10678,7 +10678,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  6855              		.loc 1 692 1 view .LVU1593
  6856 0038 38BD     		pop	{r3, r4, r5, pc}
  6857              	.L477:
-ARM GAS  /tmp/ccl62m64.s 			page 179
+ARM GAS  /tmp/cc9zc1ZV.s 			page 179
 
 
  6858 003a 00BF     		.align	2
@@ -10738,7 +10738,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  6906              		.thumb
  6907              		.thumb_func
  6909              	lv_theme_default_init:
-ARM GAS  /tmp/ccl62m64.s 			page 180
+ARM GAS  /tmp/cc9zc1ZV.s 			page 180
 
 
  6910              	.LVL698:
@@ -10798,7 +10798,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  6954              	.LVL701:
  638:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     int32_t hor_res = lv_display_get_horizontal_resolution(new_disp);
  6955              		.loc 1 638 5 is_stmt 1 view .LVU1613
-ARM GAS  /tmp/ccl62m64.s 			page 181
+ARM GAS  /tmp/cc9zc1ZV.s 			page 181
 
 
  638:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     int32_t hor_res = lv_display_get_horizontal_resolution(new_disp);
@@ -10858,7 +10858,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  6996              	.LVL709:
  6997 0056 8146     		mov	r9, r0
  6998 0058 E3E7     		b	.L485
-ARM GAS  /tmp/ccl62m64.s 			page 182
+ARM GAS  /tmp/cc9zc1ZV.s 			page 182
 
 
  6999              	.LVL710:
@@ -10918,7 +10918,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  7037 0088 6375     		strb	r3, [r4, #21]
  662:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     theme->base.font_normal = font;
  7038              		.loc 1 662 5 is_stmt 1 view .LVU1644
-ARM GAS  /tmp/ccl62m64.s 			page 183
+ARM GAS  /tmp/cc9zc1ZV.s 			page 183
 
 
  662:Drivers/lvgl/src/themes/default/lv_theme_default.c ****     theme->base.font_normal = font;
@@ -10978,7 +10978,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  7076 00b4 0123     		movs	r3, #1
  7077 00b6 84F83C30 		strb	r3, [r4, #60]
  674:Drivers/lvgl/src/themes/default/lv_theme_default.c **** }
-ARM GAS  /tmp/ccl62m64.s 			page 184
+ARM GAS  /tmp/cc9zc1ZV.s 			page 184
 
 
  7078              		.loc 1 674 5 is_stmt 1 view .LVU1662
@@ -11038,7 +11038,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  7123 00f2 BAD0     		beq	.L487
  651:Drivers/lvgl/src/themes/default/lv_theme_default.c ****        theme->base.font_small == font) {
  7124              		.loc 1 651 20 view .LVU1672
-ARM GAS  /tmp/ccl62m64.s 			page 185
+ARM GAS  /tmp/cc9zc1ZV.s 			page 185
 
 
  7125 00f4 636A     		ldr	r3, [r4, #36]
@@ -11098,7 +11098,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  701:Drivers/lvgl/src/themes/default/lv_theme_default.c **** 
  7172              		.loc 1 701 1 view .LVU1682
  7173 000e 08BD     		pop	{r3, pc}
-ARM GAS  /tmp/ccl62m64.s 			page 186
+ARM GAS  /tmp/cc9zc1ZV.s 			page 186
 
 
  7174              	.L502:
@@ -11158,7 +11158,7 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  7228              		.file 38 "Drivers/lvgl/src/themes/default/../../../src/widgets/keyboard/lv_keyboard.h"
  7229              		.file 39 "Drivers/lvgl/src/themes/default/../../../src/widgets/led/lv_led.h"
  7230              		.file 40 "Drivers/lvgl/src/themes/default/../../../src/widgets/line/lv_line.h"
-ARM GAS  /tmp/ccl62m64.s 			page 187
+ARM GAS  /tmp/cc9zc1ZV.s 			page 187
 
 
  7231              		.file 41 "Drivers/lvgl/src/themes/default/../../../src/widgets/list/lv_list.h"
@@ -11186,67 +11186,67 @@ ARM GAS  /tmp/ccl62m64.s 			page 1
  7253              		.file 63 "Drivers/lvgl/src/themes/default/../../../src/core/../misc/lv_style_gen.h"
  7254              		.file 64 "Drivers/lvgl/src/themes/default/../../../src/core/lv_obj_tree.h"
  7255              		.file 65 "Drivers/lvgl/src/themes/default/../../../src/core/../display/lv_display.h"
-ARM GAS  /tmp/ccl62m64.s 			page 188
+ARM GAS  /tmp/cc9zc1ZV.s 			page 188
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_theme_default.c
-     /tmp/ccl62m64.s:21     .text.theme_apply:00000000 $t
-     /tmp/ccl62m64.s:26     .text.theme_apply:00000000 theme_apply
-     /tmp/ccl62m64.s:560    .text.theme_apply:00000348 $d
-     /tmp/ccl62m64.s:579    .text.theme_apply:00000388 $t
-     /tmp/ccl62m64.s:1089   .text.theme_apply:00000734 $d
-     /tmp/ccl62m64.s:1107   .text.theme_apply:0000076c $t
-     /tmp/ccl62m64.s:1577   .text.theme_apply:00000acc $d
-     /tmp/ccl62m64.s:1599   .text.theme_apply:00000b18 $t
-     /tmp/ccl62m64.s:2054   .text.theme_apply:00000e20 $d
-     /tmp/ccl62m64.s:2077   .text.theme_apply:00000e70 $t
-     /tmp/ccl62m64.s:2321   .text.theme_apply:00001024 $d
-     /tmp/ccl62m64.s:2335   .text.lv_style_set_pad_gap:00000000 $t
-     /tmp/ccl62m64.s:2340   .text.lv_style_set_pad_gap:00000000 lv_style_set_pad_gap
-     /tmp/ccl62m64.s:2373   .text.lv_style_set_pad_ver:00000000 $t
-     /tmp/ccl62m64.s:2378   .text.lv_style_set_pad_ver:00000000 lv_style_set_pad_ver
-     /tmp/ccl62m64.s:2410   .text.lv_style_set_pad_hor:00000000 $t
-     /tmp/ccl62m64.s:2415   .text.lv_style_set_pad_hor:00000000 lv_style_set_pad_hor
-     /tmp/ccl62m64.s:2447   .text.lv_style_set_pad_all:00000000 $t
-     /tmp/ccl62m64.s:2452   .text.lv_style_set_pad_all:00000000 lv_style_set_pad_all
-     /tmp/ccl62m64.s:2494   .text.style_init_reset:00000000 $t
-     /tmp/ccl62m64.s:2499   .text.style_init_reset:00000000 style_init_reset
-     /tmp/ccl62m64.s:2536   .text.style_init_reset:0000001c $d
-     /tmp/ccl62m64.s:2541   .rodata.style_init.str1.4:00000000 $d
-     /tmp/ccl62m64.s:2545   .text.style_init:00000000 $t
-     /tmp/ccl62m64.s:2550   .text.style_init:00000000 style_init
-     /tmp/ccl62m64.s:3046   .text.style_init:00000380 $d
-     /tmp/ccl62m64.s:7189   .rodata.trans_props.0:00000000 trans_props.0
-     /tmp/ccl62m64.s:3055   .text.style_init:00000398 $t
-     /tmp/ccl62m64.s:3568   .text.style_init:00000740 $d
-     /tmp/ccl62m64.s:3573   .text.style_init:00000748 $t
-     /tmp/ccl62m64.s:4045   .text.style_init:00000ac0 $d
-     /tmp/ccl62m64.s:4049   .text.style_init:00000ac4 $t
-     /tmp/ccl62m64.s:4621   .text.style_init:00000ebc $d
-     /tmp/ccl62m64.s:4624   .text.style_init:00000ec4 $t
-     /tmp/ccl62m64.s:5138   .text.style_init:00001274 $d
-     /tmp/ccl62m64.s:5142   .text.style_init:00001278 $t
-     /tmp/ccl62m64.s:5655   .text.style_init:00001608 $d
-     /tmp/ccl62m64.s:5659   .text.style_init:0000160c $t
-     /tmp/ccl62m64.s:6210   .text.style_init:000019e4 $d
-     /tmp/ccl62m64.s:6213   .text.style_init:000019e8 $t
-     /tmp/ccl62m64.s:6776   .text.style_init:00001d40 $d
-     /tmp/ccl62m64.s:6781   .text.lv_theme_default_deinit:00000000 $t
-     /tmp/ccl62m64.s:6787   .text.lv_theme_default_deinit:00000000 lv_theme_default_deinit
-     /tmp/ccl62m64.s:6860   .text.lv_theme_default_deinit:0000003c $d
-     /tmp/ccl62m64.s:6865   .text.lv_theme_default_is_inited:00000000 $t
-     /tmp/ccl62m64.s:6871   .text.lv_theme_default_is_inited:00000000 lv_theme_default_is_inited
-     /tmp/ccl62m64.s:6898   .text.lv_theme_default_is_inited:00000014 $d
-     /tmp/ccl62m64.s:6903   .text.lv_theme_default_init:00000000 $t
-     /tmp/ccl62m64.s:6909   .text.lv_theme_default_init:00000000 lv_theme_default_init
-     /tmp/ccl62m64.s:7138   .text.lv_theme_default_init:00000104 $d
-     /tmp/ccl62m64.s:7144   .text.lv_theme_default_get:00000000 $t
-     /tmp/ccl62m64.s:7150   .text.lv_theme_default_get:00000000 lv_theme_default_get
-     /tmp/ccl62m64.s:7181   .text.lv_theme_default_get:00000014 $d
-     /tmp/ccl62m64.s:7186   .rodata.trans_props.0:00000000 $d
+     /tmp/cc9zc1ZV.s:21     .text.theme_apply:00000000 $t
+     /tmp/cc9zc1ZV.s:26     .text.theme_apply:00000000 theme_apply
+     /tmp/cc9zc1ZV.s:560    .text.theme_apply:00000348 $d
+     /tmp/cc9zc1ZV.s:579    .text.theme_apply:00000388 $t
+     /tmp/cc9zc1ZV.s:1089   .text.theme_apply:00000734 $d
+     /tmp/cc9zc1ZV.s:1107   .text.theme_apply:0000076c $t
+     /tmp/cc9zc1ZV.s:1577   .text.theme_apply:00000acc $d
+     /tmp/cc9zc1ZV.s:1599   .text.theme_apply:00000b18 $t
+     /tmp/cc9zc1ZV.s:2054   .text.theme_apply:00000e20 $d
+     /tmp/cc9zc1ZV.s:2077   .text.theme_apply:00000e70 $t
+     /tmp/cc9zc1ZV.s:2321   .text.theme_apply:00001024 $d
+     /tmp/cc9zc1ZV.s:2335   .text.lv_style_set_pad_gap:00000000 $t
+     /tmp/cc9zc1ZV.s:2340   .text.lv_style_set_pad_gap:00000000 lv_style_set_pad_gap
+     /tmp/cc9zc1ZV.s:2373   .text.lv_style_set_pad_ver:00000000 $t
+     /tmp/cc9zc1ZV.s:2378   .text.lv_style_set_pad_ver:00000000 lv_style_set_pad_ver
+     /tmp/cc9zc1ZV.s:2410   .text.lv_style_set_pad_hor:00000000 $t
+     /tmp/cc9zc1ZV.s:2415   .text.lv_style_set_pad_hor:00000000 lv_style_set_pad_hor
+     /tmp/cc9zc1ZV.s:2447   .text.lv_style_set_pad_all:00000000 $t
+     /tmp/cc9zc1ZV.s:2452   .text.lv_style_set_pad_all:00000000 lv_style_set_pad_all
+     /tmp/cc9zc1ZV.s:2494   .text.style_init_reset:00000000 $t
+     /tmp/cc9zc1ZV.s:2499   .text.style_init_reset:00000000 style_init_reset
+     /tmp/cc9zc1ZV.s:2536   .text.style_init_reset:0000001c $d
+     /tmp/cc9zc1ZV.s:2541   .rodata.style_init.str1.4:00000000 $d
+     /tmp/cc9zc1ZV.s:2545   .text.style_init:00000000 $t
+     /tmp/cc9zc1ZV.s:2550   .text.style_init:00000000 style_init
+     /tmp/cc9zc1ZV.s:3046   .text.style_init:00000380 $d
+     /tmp/cc9zc1ZV.s:7189   .rodata.trans_props.0:00000000 trans_props.0
+     /tmp/cc9zc1ZV.s:3055   .text.style_init:00000398 $t
+     /tmp/cc9zc1ZV.s:3568   .text.style_init:00000740 $d
+     /tmp/cc9zc1ZV.s:3573   .text.style_init:00000748 $t
+     /tmp/cc9zc1ZV.s:4045   .text.style_init:00000ac0 $d
+     /tmp/cc9zc1ZV.s:4049   .text.style_init:00000ac4 $t
+     /tmp/cc9zc1ZV.s:4621   .text.style_init:00000ebc $d
+     /tmp/cc9zc1ZV.s:4624   .text.style_init:00000ec4 $t
+     /tmp/cc9zc1ZV.s:5138   .text.style_init:00001274 $d
+     /tmp/cc9zc1ZV.s:5142   .text.style_init:00001278 $t
+     /tmp/cc9zc1ZV.s:5655   .text.style_init:00001608 $d
+     /tmp/cc9zc1ZV.s:5659   .text.style_init:0000160c $t
+     /tmp/cc9zc1ZV.s:6210   .text.style_init:000019e4 $d
+     /tmp/cc9zc1ZV.s:6213   .text.style_init:000019e8 $t
+     /tmp/cc9zc1ZV.s:6776   .text.style_init:00001d40 $d
+     /tmp/cc9zc1ZV.s:6781   .text.lv_theme_default_deinit:00000000 $t
+     /tmp/cc9zc1ZV.s:6787   .text.lv_theme_default_deinit:00000000 lv_theme_default_deinit
+     /tmp/cc9zc1ZV.s:6860   .text.lv_theme_default_deinit:0000003c $d
+     /tmp/cc9zc1ZV.s:6865   .text.lv_theme_default_is_inited:00000000 $t
+     /tmp/cc9zc1ZV.s:6871   .text.lv_theme_default_is_inited:00000000 lv_theme_default_is_inited
+     /tmp/cc9zc1ZV.s:6898   .text.lv_theme_default_is_inited:00000014 $d
+     /tmp/cc9zc1ZV.s:6903   .text.lv_theme_default_init:00000000 $t
+     /tmp/cc9zc1ZV.s:6909   .text.lv_theme_default_init:00000000 lv_theme_default_init
+     /tmp/cc9zc1ZV.s:7138   .text.lv_theme_default_init:00000104 $d
+     /tmp/cc9zc1ZV.s:7144   .text.lv_theme_default_get:00000000 $t
+     /tmp/cc9zc1ZV.s:7150   .text.lv_theme_default_get:00000000 lv_theme_default_get
+     /tmp/cc9zc1ZV.s:7181   .text.lv_theme_default_get:00000014 $d
+     /tmp/cc9zc1ZV.s:7186   .rodata.trans_props.0:00000000 $d
 
-ARM GAS  /tmp/ccl62m64.s 			page 189
+ARM GAS  /tmp/cc9zc1ZV.s 			page 189
 
 
 UNDEFINED SYMBOLS
@@ -11306,7 +11306,7 @@ lv_style_set_pad_row
 lv_style_set_pad_column
 lv_style_set_pad_top
 lv_style_set_pad_bottom
-ARM GAS  /tmp/ccl62m64.s 			page 190
+ARM GAS  /tmp/cc9zc1ZV.s 			page 190
 
 
 lv_style_set_pad_left
@@ -11366,7 +11366,7 @@ lv_free
 lv_display_get_horizontal_resolution
 lv_malloc_zeroed
 lv_display_get_default
-ARM GAS  /tmp/ccl62m64.s 			page 191
+ARM GAS  /tmp/cc9zc1ZV.s 			page 191
 
 
 lv_display_get_theme

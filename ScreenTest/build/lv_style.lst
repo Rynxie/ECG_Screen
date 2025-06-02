@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccDPKal7.s 			page 1
+ARM GAS  /tmp/ccGhpQkH.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
   27:Drivers/lvgl/src/misc/lv_style.h **** /*********************
   28:Drivers/lvgl/src/misc/lv_style.h ****  *      DEFINES
   29:Drivers/lvgl/src/misc/lv_style.h ****  *********************/
-ARM GAS  /tmp/ccDPKal7.s 			page 2
+ARM GAS  /tmp/ccGhpQkH.s 			page 2
 
 
   30:Drivers/lvgl/src/misc/lv_style.h **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
   84:Drivers/lvgl/src/misc/lv_style.h ****  **********************/
   85:Drivers/lvgl/src/misc/lv_style.h **** 
   86:Drivers/lvgl/src/misc/lv_style.h **** /**
-ARM GAS  /tmp/ccDPKal7.s 			page 3
+ARM GAS  /tmp/ccGhpQkH.s 			page 3
 
 
   87:Drivers/lvgl/src/misc/lv_style.h ****  * Possible options for blending opaque drawings
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  141:Drivers/lvgl/src/misc/lv_style.h ****     LV_STYLE_LENGTH                 = 3,
  142:Drivers/lvgl/src/misc/lv_style.h **** 
  143:Drivers/lvgl/src/misc/lv_style.h ****     LV_STYLE_MIN_WIDTH              = 4,
-ARM GAS  /tmp/ccDPKal7.s 			page 4
+ARM GAS  /tmp/ccGhpQkH.s 			page 4
 
 
  144:Drivers/lvgl/src/misc/lv_style.h ****     LV_STYLE_MAX_WIDTH              = 5,
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  198:Drivers/lvgl/src/misc/lv_style.h ****     LV_STYLE_BORDER_SIDE            = 52,
  199:Drivers/lvgl/src/misc/lv_style.h ****     LV_STYLE_BORDER_POST            = 53,
  200:Drivers/lvgl/src/misc/lv_style.h **** 
-ARM GAS  /tmp/ccDPKal7.s 			page 5
+ARM GAS  /tmp/ccGhpQkH.s 			page 5
 
 
  201:Drivers/lvgl/src/misc/lv_style.h ****     LV_STYLE_OUTLINE_WIDTH          = 56,
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  255:Drivers/lvgl/src/misc/lv_style.h ****     LV_STYLE_TRANSLATE_X            = 108,
  256:Drivers/lvgl/src/misc/lv_style.h ****     LV_STYLE_TRANSLATE_Y            = 109,
  257:Drivers/lvgl/src/misc/lv_style.h ****     LV_STYLE_TRANSFORM_SCALE_X      = 110,
-ARM GAS  /tmp/ccDPKal7.s 			page 6
+ARM GAS  /tmp/ccGhpQkH.s 			page 6
 
 
  258:Drivers/lvgl/src/misc/lv_style.h ****     LV_STYLE_TRANSFORM_SCALE_Y      = 111,
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  312:Drivers/lvgl/src/misc/lv_style.h ****  * Descriptor of a constant style property.
  313:Drivers/lvgl/src/misc/lv_style.h ****  */
  314:Drivers/lvgl/src/misc/lv_style.h **** typedef struct {
-ARM GAS  /tmp/ccDPKal7.s 			page 7
+ARM GAS  /tmp/ccGhpQkH.s 			page 7
 
 
  315:Drivers/lvgl/src/misc/lv_style.h ****     lv_style_prop_t prop;
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  369:Drivers/lvgl/src/misc/lv_style.h ****  * @param style     pointer to a style
  370:Drivers/lvgl/src/misc/lv_style.h ****  * @return          true: the style is constant
  371:Drivers/lvgl/src/misc/lv_style.h ****  */
-ARM GAS  /tmp/ccDPKal7.s 			page 8
+ARM GAS  /tmp/ccGhpQkH.s 			page 8
 
 
  372:Drivers/lvgl/src/misc/lv_style.h **** static inline bool lv_style_is_const(const lv_style_t * style)
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  426:Drivers/lvgl/src/misc/lv_style.h ****  *         LV_RESULT_OK: the property was fond, and `value` is set accordingly
  427:Drivers/lvgl/src/misc/lv_style.h ****  * @note For performance reasons there are no sanity check on `style`
  428:Drivers/lvgl/src/misc/lv_style.h ****  */
-ARM GAS  /tmp/ccDPKal7.s 			page 9
+ARM GAS  /tmp/ccGhpQkH.s 			page 9
 
 
  429:Drivers/lvgl/src/misc/lv_style.h **** lv_style_res_t lv_style_get_prop(const lv_style_t * style, lv_style_prop_t prop, lv_style_value_t *
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
   42              	.LBB27:
   43              	.LBI27:
  372:Drivers/lvgl/src/misc/lv_style.h **** {
-ARM GAS  /tmp/ccDPKal7.s 			page 10
+ARM GAS  /tmp/ccGhpQkH.s 			page 10
 
 
   44              		.loc 2 372 20 view .LVU3
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
   79              		.loc 2 483 42 is_stmt 1 discriminator 2 view .LVU18
   80 0022 0133     		adds	r3, r3, #1
   81              	.LVL5:
-ARM GAS  /tmp/ccDPKal7.s 			page 11
+ARM GAS  /tmp/ccGhpQkH.s 			page 11
 
 
  483:Drivers/lvgl/src/misc/lv_style.h ****         for(i = 0; i < style->prop_cnt; i++) {
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  119              		.loc 2 473 57 is_stmt 0 discriminator 2 view .LVU35
  120 003a F6E7     		b	.L4
  121              	.LVL10:
-ARM GAS  /tmp/ccDPKal7.s 			page 12
+ARM GAS  /tmp/ccGhpQkH.s 			page 12
 
 
  122              	.L13:
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  162              	.LFE6:
  164              		.section	.text.lv_style_init,"ax",%progbits
  165              		.align	1
-ARM GAS  /tmp/ccDPKal7.s 			page 13
+ARM GAS  /tmp/ccGhpQkH.s 			page 13
 
 
  166              		.global	lv_style_init
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
   48:Drivers/lvgl/src/misc/lv_style.c ****     [LV_STYLE_TRANSFORM_WIDTH] =           LV_STYLE_PROP_FLAG_EXT_DRAW_UPDATE | LV_STYLE_PROP_FLAG_
   49:Drivers/lvgl/src/misc/lv_style.c ****     [LV_STYLE_TRANSFORM_HEIGHT] =          LV_STYLE_PROP_FLAG_EXT_DRAW_UPDATE | LV_STYLE_PROP_FLAG_
   50:Drivers/lvgl/src/misc/lv_style.c ****     [LV_STYLE_TRANSLATE_X] =               LV_STYLE_PROP_FLAG_LAYOUT_UPDATE | LV_STYLE_PROP_FLAG_PA
-ARM GAS  /tmp/ccDPKal7.s 			page 14
+ARM GAS  /tmp/ccGhpQkH.s 			page 14
 
 
   51:Drivers/lvgl/src/misc/lv_style.c ****     [LV_STYLE_TRANSLATE_Y] =               LV_STYLE_PROP_FLAG_LAYOUT_UPDATE | LV_STYLE_PROP_FLAG_PA
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  105:Drivers/lvgl/src/misc/lv_style.c ****     [LV_STYLE_IMAGE_RECOLOR_OPA] = 0,
  106:Drivers/lvgl/src/misc/lv_style.c **** 
  107:Drivers/lvgl/src/misc/lv_style.c ****     [LV_STYLE_LINE_WIDTH] =                LV_STYLE_PROP_FLAG_EXT_DRAW_UPDATE,
-ARM GAS  /tmp/ccDPKal7.s 			page 15
+ARM GAS  /tmp/ccGhpQkH.s 			page 15
 
 
  108:Drivers/lvgl/src/misc/lv_style.c ****     [LV_STYLE_LINE_DASH_WIDTH] = 0,
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  162:Drivers/lvgl/src/misc/lv_style.c **** #endif
  163:Drivers/lvgl/src/misc/lv_style.c **** 
  164:Drivers/lvgl/src/misc/lv_style.c **** };
-ARM GAS  /tmp/ccDPKal7.s 			page 16
+ARM GAS  /tmp/ccGhpQkH.s 			page 16
 
 
  165:Drivers/lvgl/src/misc/lv_style.c **** 
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
   18:Drivers/lvgl/src/misc/../font/../draw/../misc/../stdlib/lv_string.h **** 
   19:Drivers/lvgl/src/misc/../font/../draw/../misc/../stdlib/lv_string.h **** /*********************
   20:Drivers/lvgl/src/misc/../font/../draw/../misc/../stdlib/lv_string.h ****  *      DEFINES
-ARM GAS  /tmp/ccDPKal7.s 			page 17
+ARM GAS  /tmp/ccGhpQkH.s 			page 17
 
 
   21:Drivers/lvgl/src/misc/../font/../draw/../misc/../stdlib/lv_string.h ****  *********************/
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  190              	.LBB36:
   74:Drivers/lvgl/src/misc/../font/../draw/../misc/../stdlib/lv_string.h **** {
   75:Drivers/lvgl/src/misc/../font/../draw/../misc/../stdlib/lv_string.h ****     lv_memset(dst, 0x00, len);
-ARM GAS  /tmp/ccDPKal7.s 			page 18
+ARM GAS  /tmp/ccGhpQkH.s 			page 18
 
 
  191              		.loc 3 75 5 view .LVU55
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  236              		.loc 1 197 5 is_stmt 1 view .LVU66
  237              	.LBB37:
  238              	.LBI37:
-ARM GAS  /tmp/ccDPKal7.s 			page 19
+ARM GAS  /tmp/ccGhpQkH.s 			page 19
 
 
   73:Drivers/lvgl/src/misc/../font/../draw/../misc/../stdlib/lv_string.h **** {
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  216:Drivers/lvgl/src/misc/lv_style.c **** 
  217:Drivers/lvgl/src/misc/lv_style.c ****     int32_t i;
  218:Drivers/lvgl/src/misc/lv_style.c ****     if(lv_style_is_const(src)) {
-ARM GAS  /tmp/ccDPKal7.s 			page 20
+ARM GAS  /tmp/ccGhpQkH.s 			page 20
 
 
  219:Drivers/lvgl/src/misc/lv_style.c ****         lv_style_const_prop_t * props_and_values = (lv_style_const_prop_t *)src->values_and_props;
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  298 000c D36A     		ldr	r3, [r2, #44]
  299              		.loc 1 248 12 view .LVU80
  300 000e A3F18801 		sub	r1, r3, #136
-ARM GAS  /tmp/ccDPKal7.s 			page 21
+ARM GAS  /tmp/ccGhpQkH.s 			page 21
 
 
  301              	.LVL27:
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  345              		.loc 1 254 27 is_stmt 0 view .LVU102
  346 002c 2146     		mov	r1, r4
  347 002e FFF7FEFF 		bl	lv_realloc
-ARM GAS  /tmp/ccDPKal7.s 			page 22
+ARM GAS  /tmp/ccGhpQkH.s 			page 22
 
 
  348              	.LVL32:
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  264:Drivers/lvgl/src/misc/lv_style.c ****     lv_style_custom_prop_flag_lookup_table[last_custom_prop_id - LV_STYLE_NUM_BUILT_IN_PROPS] = fla
  389              		.loc 1 264 5 is_stmt 1 discriminator 1 view .LVU122
  264:Drivers/lvgl/src/misc/lv_style.c ****     lv_style_custom_prop_flag_lookup_table[last_custom_prop_id - LV_STYLE_NUM_BUILT_IN_PROPS] = fla
-ARM GAS  /tmp/ccDPKal7.s 			page 23
+ARM GAS  /tmp/ccGhpQkH.s 			page 23
 
 
  390              		.loc 1 264 5 discriminator 1 view .LVU123
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  436              	.L34:
  437 000c 00000000 		.word	lv_global
  438              		.cfi_endproc
-ARM GAS  /tmp/ccDPKal7.s 			page 24
+ARM GAS  /tmp/ccGhpQkH.s 			page 24
 
 
  439              	.LFE190:
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  484              		.loc 2 374 7 view .LVU144
  485              	.LBE43:
  486              	.LBE42:
-ARM GAS  /tmp/ccDPKal7.s 			page 25
+ARM GAS  /tmp/ccGhpQkH.s 			page 25
 
 
  279:Drivers/lvgl/src/misc/lv_style.c ****         LV_LOG_ERROR("Cannot remove prop from const style");
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  523              		.loc 1 294 44 is_stmt 0 view .LVU163
  524 0028 0138     		subs	r0, r0, #1
  525              	.LVL45:
-ARM GAS  /tmp/ccDPKal7.s 			page 26
+ARM GAS  /tmp/ccGhpQkH.s 			page 26
 
 
  295:Drivers/lvgl/src/misc/lv_style.c ****             uint8_t * new_values_and_props = lv_malloc(size);
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  564              		.loc 1 310 18 is_stmt 1 view .LVU183
  565 0048 0133     		adds	r3, r3, #1
  566              	.LVL51:
-ARM GAS  /tmp/ccDPKal7.s 			page 27
+ARM GAS  /tmp/ccGhpQkH.s 			page 27
 
 
  567              	.L40:
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  609              	.LVL56:
  610              	.L48:
  611              		.loc 1 319 20 view .LVU203
-ARM GAS  /tmp/ccDPKal7.s 			page 28
+ARM GAS  /tmp/ccGhpQkH.s 			page 28
 
 
  612              	.LBE44:
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  655              		.loc 1 328 1 is_stmt 0 view .LVU211
  656 0000 30B5     		push	{r4, r5, lr}
  657              	.LCFI5:
-ARM GAS  /tmp/ccDPKal7.s 			page 29
+ARM GAS  /tmp/ccGhpQkH.s 			page 29
 
 
  658              		.cfi_def_cfa_offset 12
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  699              		.loc 1 336 5 discriminator 2 view .LVU228
  337:Drivers/lvgl/src/misc/lv_style.c ****     LV_PROFILER_STYLE_BEGIN;
  700              		.loc 1 337 28 view .LVU229
-ARM GAS  /tmp/ccDPKal7.s 			page 30
+ARM GAS  /tmp/ccGhpQkH.s 			page 30
 
 
  338:Drivers/lvgl/src/misc/lv_style.c ****     lv_style_prop_t * props;
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  742              		.loc 1 348 17 view .LVU249
  743 0036 2AE0     		b	.L51
  744              	.LVL71:
-ARM GAS  /tmp/ccDPKal7.s 			page 31
+ARM GAS  /tmp/ccGhpQkH.s 			page 31
 
 
  745              	.L55:
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  782 0052 191D     		adds	r1, r3, #4
  783              		.loc 1 365 78 view .LVU268
  784 0054 D05C     		ldrb	r0, [r2, r3]	@ zero_extendqisi2
-ARM GAS  /tmp/ccDPKal7.s 			page 32
+ARM GAS  /tmp/ccGhpQkH.s 			page 32
 
 
  785              		.loc 1 365 71 view .LVU269
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  825              	.LBI49:
  493:Drivers/lvgl/src/misc/lv_style.h **** 
  494:Drivers/lvgl/src/misc/lv_style.h **** /**
-ARM GAS  /tmp/ccDPKal7.s 			page 33
+ARM GAS  /tmp/ccGhpQkH.s 			page 33
 
 
  495:Drivers/lvgl/src/misc/lv_style.h ****  * Checks if a style is empty (has no properties)
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  860 0090 30BD     		pop	{r4, r5, pc}
  861              	.LVL87:
  862              	.L65:
-ARM GAS  /tmp/ccDPKal7.s 			page 34
+ARM GAS  /tmp/ccGhpQkH.s 			page 34
 
 
  863              	.LCFI8:
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  910              		.cfi_offset 6, -16
  911              		.cfi_offset 7, -12
  912              		.cfi_offset 8, -8
-ARM GAS  /tmp/ccDPKal7.s 			page 35
+ARM GAS  /tmp/ccGhpQkH.s 			page 35
 
 
  913              		.cfi_offset 14, -4
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  227:Drivers/lvgl/src/misc/lv_style.c ****             lv_style_set_prop(dst, props[i], values[i]);
  951              		.loc 1 227 9 view .LVU323
  227:Drivers/lvgl/src/misc/lv_style.c ****             lv_style_set_prop(dst, props[i], values[i]);
-ARM GAS  /tmp/ccDPKal7.s 			page 36
+ARM GAS  /tmp/ccGhpQkH.s 			page 36
 
 
  952              		.loc 1 227 15 is_stmt 0 view .LVU324
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  993 0046 55F82420 		ldr	r2, [r5, r4, lsl #2]
  994 004a E95C     		ldrb	r1, [r5, r3]	@ zero_extendqisi2
  995 004c 3046     		mov	r0, r6
-ARM GAS  /tmp/ccDPKal7.s 			page 37
+ARM GAS  /tmp/ccGhpQkH.s 			page 37
 
 
  996 004e FFF7FEFF 		bl	lv_style_set_prop
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  1042              		@ frame_needed = 0, uses_anonymous_args = 0
  1043              		.loc 1 383 1 is_stmt 0 view .LVU346
  1044 0000 08B5     		push	{r3, lr}
-ARM GAS  /tmp/ccDPKal7.s 			page 38
+ARM GAS  /tmp/ccGhpQkH.s 			page 38
 
 
  1045              	.LCFI11:
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  1093 000a 1422     		movs	r2, #20
  1094              	.LVL108:
  1095              		.loc 3 75 5 is_stmt 0 view .LVU355
-ARM GAS  /tmp/ccDPKal7.s 			page 39
+ARM GAS  /tmp/ccGhpQkH.s 			page 39
 
 
  1096 000c 0021     		movs	r1, #0
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  1143              		.global	lv_style_prop_get_default
  1144              		.syntax unified
  1145              		.thumb
-ARM GAS  /tmp/ccDPKal7.s 			page 40
+ARM GAS  /tmp/ccGhpQkH.s 			page 40
 
 
  1146              		.thumb_func
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  1195 0036 1F       		.byte	(.L89-.L95)/2
  1196 0037 1F       		.byte	(.L89-.L95)/2
  1197 0038 1F       		.byte	(.L89-.L95)/2
-ARM GAS  /tmp/ccDPKal7.s 			page 41
+ARM GAS  /tmp/ccGhpQkH.s 			page 41
 
 
  1198 0039 1F       		.byte	(.L89-.L95)/2
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  418:Drivers/lvgl/src/misc/lv_style.c ****         case LV_STYLE_TEXT_COLOR:
  419:Drivers/lvgl/src/misc/lv_style.c ****         case LV_STYLE_IMAGE_RECOLOR:
  420:Drivers/lvgl/src/misc/lv_style.c ****         case LV_STYLE_RECOLOR:
-ARM GAS  /tmp/ccDPKal7.s 			page 42
+ARM GAS  /tmp/ccGhpQkH.s 			page 42
 
 
  421:Drivers/lvgl/src/misc/lv_style.c ****             return (lv_style_value_t) {
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  1246              	.LCFI14:
  1247              		.cfi_remember_state
  1248              		.cfi_def_cfa_offset 0
-ARM GAS  /tmp/ccDPKal7.s 			page 43
+ARM GAS  /tmp/ccGhpQkH.s 			page 43
 
 
  1249              		@ sp needed
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  1295 00aa 0193     		str	r3, [sp, #4]
  1296 00ac DEE7     		b	.L103
  1297              	.L109:
-ARM GAS  /tmp/ccDPKal7.s 			page 44
+ARM GAS  /tmp/ccGhpQkH.s 			page 44
 
 
  1298              	.LBE64:
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  1341              		.loc 1 440 20 is_stmt 0 view .LVU402
  1342 00e6 FF23     		movs	r3, #255
  1343 00e8 0193     		str	r3, [sp, #4]
-ARM GAS  /tmp/ccDPKal7.s 			page 45
+ARM GAS  /tmp/ccGhpQkH.s 			page 45
 
 
  1344 00ea BFE7     		b	.L103
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  1390 0000 007A     		ldrb	r0, [r0, #8]	@ zero_extendqisi2
  1391              	.LVL125:
  472:Drivers/lvgl/src/misc/lv_style.c **** }
-ARM GAS  /tmp/ccDPKal7.s 			page 46
+ARM GAS  /tmp/ccGhpQkH.s 			page 46
 
 
  1392              		.loc 1 472 1 view .LVU413
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  1438              		.loc 1 482 65 discriminator 1 view .LVU427
  1439 0014 074A     		ldr	r2, .L122
  1440 0016 926A     		ldr	r2, [r2, #40]
-ARM GAS  /tmp/ccDPKal7.s 			page 47
+ARM GAS  /tmp/ccGhpQkH.s 			page 47
 
 
  1441              		.loc 1 482 55 discriminator 1 view .LVU428
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  1482 0032 00BF     		.align	2
  1483              	.L122:
  1484 0034 00000000 		.word	lv_global
-ARM GAS  /tmp/ccDPKal7.s 			page 48
+ARM GAS  /tmp/ccGhpQkH.s 			page 48
 
 
  1485 0038 00000000 		.word	lv_style_builtin_prop_flag_lookup_table
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  1513 0087 040400   		.ascii	"\004\004\000"
  1514              		.global	lv_style_const_prop_id_inv
  1515              		.section	.rodata.lv_style_const_prop_id_inv,"a"
-ARM GAS  /tmp/ccDPKal7.s 			page 49
+ARM GAS  /tmp/ccGhpQkH.s 			page 49
 
 
  1518              	lv_style_const_prop_id_inv:
@@ -2912,51 +2912,51 @@ ARM GAS  /tmp/ccDPKal7.s 			page 1
  1546              		.file 28 "Drivers/lvgl/src/misc/../core/../layouts/lv_layout_private.h"
  1547              		.file 29 "Drivers/lvgl/src/misc/../core/lv_global.h"
  1548              		.file 30 "Drivers/lvgl/src/misc/../font/../draw/../misc/../stdlib/lv_mem.h"
-ARM GAS  /tmp/ccDPKal7.s 			page 50
+ARM GAS  /tmp/ccGhpQkH.s 			page 50
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_style.c
-     /tmp/ccDPKal7.s:21     .text.lv_style_get_prop_inlined:00000000 $t
-     /tmp/ccDPKal7.s:26     .text.lv_style_get_prop_inlined:00000000 lv_style_get_prop_inlined
-     /tmp/ccDPKal7.s:165    .text.lv_style_init:00000000 $t
-     /tmp/ccDPKal7.s:171    .text.lv_style_init:00000000 lv_style_init
-     /tmp/ccDPKal7.s:205    .text.lv_style_reset:00000000 $t
-     /tmp/ccDPKal7.s:211    .text.lv_style_reset:00000000 lv_style_reset
-     /tmp/ccDPKal7.s:265    .text.lv_style_register_prop:00000000 $t
-     /tmp/ccDPKal7.s:271    .text.lv_style_register_prop:00000000 lv_style_register_prop
-     /tmp/ccDPKal7.s:406    .text.lv_style_register_prop:00000058 $d
-     /tmp/ccDPKal7.s:412    .text.lv_style_get_num_custom_props:00000000 $t
-     /tmp/ccDPKal7.s:418    .text.lv_style_get_num_custom_props:00000000 lv_style_get_num_custom_props
-     /tmp/ccDPKal7.s:437    .text.lv_style_get_num_custom_props:0000000c $d
-     /tmp/ccDPKal7.s:442    .text.lv_style_remove_prop:00000000 $t
-     /tmp/ccDPKal7.s:448    .text.lv_style_remove_prop:00000000 lv_style_remove_prop
-     /tmp/ccDPKal7.s:642    .text.lv_style_set_prop:00000000 $t
-     /tmp/ccDPKal7.s:648    .text.lv_style_set_prop:00000000 lv_style_set_prop
-     /tmp/ccDPKal7.s:878    .text.lv_style_copy:00000000 $t
-     /tmp/ccDPKal7.s:884    .text.lv_style_copy:00000000 lv_style_copy
-     /tmp/ccDPKal7.s:1030   .text.lv_style_get_prop:00000000 $t
-     /tmp/ccDPKal7.s:1036   .text.lv_style_get_prop:00000000 lv_style_get_prop
-     /tmp/ccDPKal7.s:1059   .text.lv_style_transition_dsc_init:00000000 $t
-     /tmp/ccDPKal7.s:1065   .text.lv_style_transition_dsc_init:00000000 lv_style_transition_dsc_init
-     /tmp/ccDPKal7.s:1137   .text.lv_style_transition_dsc_init:00000028 $d
-     /tmp/ccDPKal7.s:1142   .text.lv_style_prop_get_default:00000000 $t
-     /tmp/ccDPKal7.s:1148   .text.lv_style_prop_get_default:00000000 lv_style_prop_get_default
-     /tmp/ccDPKal7.s:1183   .text.lv_style_prop_get_default:0000002a $d
-     /tmp/ccDPKal7.s:1360   .text.lv_style_prop_get_default:000000fc $d
-     /tmp/ccDPKal7.s:1493   .rodata.white.0:00000000 white.0
-     /tmp/ccDPKal7.s:1371   .text.lv_style_is_empty:00000000 $t
-     /tmp/ccDPKal7.s:1377   .text.lv_style_is_empty:00000000 lv_style_is_empty
-     /tmp/ccDPKal7.s:1400   .text.lv_style_prop_lookup_flags:00000000 $t
-     /tmp/ccDPKal7.s:1406   .text.lv_style_prop_lookup_flags:00000000 lv_style_prop_lookup_flags
-     /tmp/ccDPKal7.s:1484   .text.lv_style_prop_lookup_flags:00000034 $d
-     /tmp/ccDPKal7.s:1502   .rodata.lv_style_builtin_prop_flag_lookup_table:00000000 lv_style_builtin_prop_flag_lookup_table
-     /tmp/ccDPKal7.s:1490   .rodata.white.0:00000000 $d
-     /tmp/ccDPKal7.s:1499   .rodata.lv_style_builtin_prop_flag_lookup_table:00000000 $d
-     /tmp/ccDPKal7.s:1518   .rodata.lv_style_const_prop_id_inv:00000000 lv_style_const_prop_id_inv
-     /tmp/ccDPKal7.s:1519   .rodata.lv_style_const_prop_id_inv:00000000 $d
-     /tmp/ccDPKal7.s:1217   .text.lv_style_prop_get_default:0000004b $d
-     /tmp/ccDPKal7.s:1217   .text.lv_style_prop_get_default:0000004c $t
+     /tmp/ccGhpQkH.s:21     .text.lv_style_get_prop_inlined:00000000 $t
+     /tmp/ccGhpQkH.s:26     .text.lv_style_get_prop_inlined:00000000 lv_style_get_prop_inlined
+     /tmp/ccGhpQkH.s:165    .text.lv_style_init:00000000 $t
+     /tmp/ccGhpQkH.s:171    .text.lv_style_init:00000000 lv_style_init
+     /tmp/ccGhpQkH.s:205    .text.lv_style_reset:00000000 $t
+     /tmp/ccGhpQkH.s:211    .text.lv_style_reset:00000000 lv_style_reset
+     /tmp/ccGhpQkH.s:265    .text.lv_style_register_prop:00000000 $t
+     /tmp/ccGhpQkH.s:271    .text.lv_style_register_prop:00000000 lv_style_register_prop
+     /tmp/ccGhpQkH.s:406    .text.lv_style_register_prop:00000058 $d
+     /tmp/ccGhpQkH.s:412    .text.lv_style_get_num_custom_props:00000000 $t
+     /tmp/ccGhpQkH.s:418    .text.lv_style_get_num_custom_props:00000000 lv_style_get_num_custom_props
+     /tmp/ccGhpQkH.s:437    .text.lv_style_get_num_custom_props:0000000c $d
+     /tmp/ccGhpQkH.s:442    .text.lv_style_remove_prop:00000000 $t
+     /tmp/ccGhpQkH.s:448    .text.lv_style_remove_prop:00000000 lv_style_remove_prop
+     /tmp/ccGhpQkH.s:642    .text.lv_style_set_prop:00000000 $t
+     /tmp/ccGhpQkH.s:648    .text.lv_style_set_prop:00000000 lv_style_set_prop
+     /tmp/ccGhpQkH.s:878    .text.lv_style_copy:00000000 $t
+     /tmp/ccGhpQkH.s:884    .text.lv_style_copy:00000000 lv_style_copy
+     /tmp/ccGhpQkH.s:1030   .text.lv_style_get_prop:00000000 $t
+     /tmp/ccGhpQkH.s:1036   .text.lv_style_get_prop:00000000 lv_style_get_prop
+     /tmp/ccGhpQkH.s:1059   .text.lv_style_transition_dsc_init:00000000 $t
+     /tmp/ccGhpQkH.s:1065   .text.lv_style_transition_dsc_init:00000000 lv_style_transition_dsc_init
+     /tmp/ccGhpQkH.s:1137   .text.lv_style_transition_dsc_init:00000028 $d
+     /tmp/ccGhpQkH.s:1142   .text.lv_style_prop_get_default:00000000 $t
+     /tmp/ccGhpQkH.s:1148   .text.lv_style_prop_get_default:00000000 lv_style_prop_get_default
+     /tmp/ccGhpQkH.s:1183   .text.lv_style_prop_get_default:0000002a $d
+     /tmp/ccGhpQkH.s:1360   .text.lv_style_prop_get_default:000000fc $d
+     /tmp/ccGhpQkH.s:1493   .rodata.white.0:00000000 white.0
+     /tmp/ccGhpQkH.s:1371   .text.lv_style_is_empty:00000000 $t
+     /tmp/ccGhpQkH.s:1377   .text.lv_style_is_empty:00000000 lv_style_is_empty
+     /tmp/ccGhpQkH.s:1400   .text.lv_style_prop_lookup_flags:00000000 $t
+     /tmp/ccGhpQkH.s:1406   .text.lv_style_prop_lookup_flags:00000000 lv_style_prop_lookup_flags
+     /tmp/ccGhpQkH.s:1484   .text.lv_style_prop_lookup_flags:00000034 $d
+     /tmp/ccGhpQkH.s:1502   .rodata.lv_style_builtin_prop_flag_lookup_table:00000000 lv_style_builtin_prop_flag_lookup_table
+     /tmp/ccGhpQkH.s:1490   .rodata.white.0:00000000 $d
+     /tmp/ccGhpQkH.s:1499   .rodata.lv_style_builtin_prop_flag_lookup_table:00000000 $d
+     /tmp/ccGhpQkH.s:1518   .rodata.lv_style_const_prop_id_inv:00000000 lv_style_const_prop_id_inv
+     /tmp/ccGhpQkH.s:1519   .rodata.lv_style_const_prop_id_inv:00000000 $d
+     /tmp/ccGhpQkH.s:1217   .text.lv_style_prop_get_default:0000004b $d
+     /tmp/ccGhpQkH.s:1217   .text.lv_style_prop_get_default:0000004c $t
 
 UNDEFINED SYMBOLS
 lv_memset

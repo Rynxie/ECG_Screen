@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccpQad6v.s 			page 1
+ARM GAS  /tmp/ccbUR8Ph.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
   28:Drivers/lvgl/src/indev/lv_indev_scroll.c **** static int32_t find_snap_point_x(const lv_obj_t * obj, int32_t min, int32_t max, int32_t ofs);
   29:Drivers/lvgl/src/indev/lv_indev_scroll.c **** static int32_t find_snap_point_y(const lv_obj_t * obj, int32_t min, int32_t max, int32_t ofs);
   30:Drivers/lvgl/src/indev/lv_indev_scroll.c **** static void scroll_limit_diff(lv_indev_t * indev, int32_t * diff_x, int32_t * diff_y);
-ARM GAS  /tmp/ccpQad6v.s 			page 2
+ARM GAS  /tmp/ccbUR8Ph.s 			page 2
 
 
   31:Drivers/lvgl/src/indev/lv_indev_scroll.c **** static int32_t elastic_diff(lv_obj_t * scroll_obj, int32_t diff, int32_t scroll_start, int32_t scro
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
   85:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         scale_y = 1;
   86:Drivers/lvgl/src/indev/lv_indev_scroll.c ****     }
   87:Drivers/lvgl/src/indev/lv_indev_scroll.c **** 
-ARM GAS  /tmp/ccpQad6v.s 			page 3
+ARM GAS  /tmp/ccbUR8Ph.s 			page 3
 
 
   88:Drivers/lvgl/src/indev/lv_indev_scroll.c ****     if(angle != 0 || scale_x != LV_SCALE_NONE || scale_y != LV_SCALE_NONE) {
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  142:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         /*If no snapping "throw"*/
  143:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         if(align_y == LV_SCROLL_SNAP_NONE) {
  144:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             indev->pointer.scroll_throw_vect.y =
-ARM GAS  /tmp/ccpQad6v.s 			page 4
+ARM GAS  /tmp/ccbUR8Ph.s 			page 4
 
 
  145:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                 indev->pointer.scroll_throw_vect.y * (100 - scroll_throw) / 100;
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  199:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             int32_t sb = lv_obj_get_scroll_bottom(scroll_obj);
  200:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             if(st > 0 || sb > 0) {
  201:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                 if(st < 0) {
-ARM GAS  /tmp/ccpQad6v.s 			page 5
+ARM GAS  /tmp/ccbUR8Ph.s 			page 5
 
 
  202:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                     lv_obj_scroll_by(scroll_obj, 0, st, LV_ANIM_ON);
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  256:Drivers/lvgl/src/indev/lv_indev_scroll.c ****     }
  257:Drivers/lvgl/src/indev/lv_indev_scroll.c **** 
  258:Drivers/lvgl/src/indev/lv_indev_scroll.c ****     return sum;
-ARM GAS  /tmp/ccpQad6v.s 			page 6
+ARM GAS  /tmp/ccbUR8Ph.s 			page 6
 
 
  259:Drivers/lvgl/src/indev/lv_indev_scroll.c **** }
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  313:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         if(angle != 0 || scale_x != LV_SCALE_NONE || scale_y != LV_SCALE_NONE) {
  314:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             angle = -angle;
  315:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             scale_x = (256 * 256) / scale_x;
-ARM GAS  /tmp/ccpQad6v.s 			page 7
+ARM GAS  /tmp/ccbUR8Ph.s 			page 7
 
 
  316:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             scale_y = (256 * 256) / scale_y;
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  370:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         int32_t sb = 0;
  371:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         lv_scroll_snap_t snap_y = lv_obj_get_scroll_snap_y(obj_act);
  372:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         if(snap_y == LV_SCROLL_SNAP_NONE) {
-ARM GAS  /tmp/ccpQad6v.s 			page 8
+ARM GAS  /tmp/ccbUR8Ph.s 			page 8
 
 
  373:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             st = lv_obj_get_scroll_top(obj_act);
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  427:Drivers/lvgl/src/indev/lv_indev_scroll.c ****     /*Use the last candidate*/
  428:Drivers/lvgl/src/indev/lv_indev_scroll.c ****     if(obj_candidate) {
  429:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         indev->pointer.scroll_dir = dir_candidate;
-ARM GAS  /tmp/ccpQad6v.s 			page 9
+ARM GAS  /tmp/ccbUR8Ph.s 			page 9
 
 
  430:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         indev->pointer.scroll_obj = obj_candidate;
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  484:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                     indev->pointer.scroll_area.x2 = find_snap_point_x(obj, LV_COORD_MIN, x_mid - 1,
  485:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                     break;
  486:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                 }
-ARM GAS  /tmp/ccpQad6v.s 			page 10
+ARM GAS  /tmp/ccbUR8Ph.s 			page 10
 
 
  487:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             default:
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  541:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                     x_parent = obj->coords.x2 - pad_right;
  542:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                     break;
  543:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                 case LV_SCROLL_SNAP_CENTER:
-ARM GAS  /tmp/ccpQad6v.s 			page 11
+ARM GAS  /tmp/ccbUR8Ph.s 			page 11
 
 
  544:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                     x_child = child->coords.x1 + lv_area_get_width(&child->coords) / 2;
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  598:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                     break;
  599:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                 case LV_SCROLL_SNAP_CENTER:
  600:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                     y_child = child->coords.y1 + lv_area_get_height(&child->coords) / 2;
-ARM GAS  /tmp/ccpQad6v.s 			page 12
+ARM GAS  /tmp/ccbUR8Ph.s 			page 12
 
 
  601:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                     y_parent = obj->coords.y1 + pad_top + (lv_area_get_height(&obj->coords) - pad_t
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
   61 0016 1C60     		str	r4, [r3]
   62              	.L3:
  623:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         }
-ARM GAS  /tmp/ccpQad6v.s 			page 13
+ARM GAS  /tmp/ccbUR8Ph.s 			page 13
 
 
  624:Drivers/lvgl/src/indev/lv_indev_scroll.c **** 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  105 003c 046D     		ldr	r4, [r0, #80]
  106              		.loc 1 635 42 view .LVU35
  107 003e 0B68     		ldr	r3, [r1]
-ARM GAS  /tmp/ccpQad6v.s 			page 14
+ARM GAS  /tmp/ccbUR8Ph.s 			page 14
 
 
  108              		.loc 1 635 40 view .LVU36
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  158              	.LCFI3:
  159              		.cfi_def_cfa_offset 64
  160 0006 0646     		mov	r6, r0
-ARM GAS  /tmp/ccpQad6v.s 			page 15
+ARM GAS  /tmp/ccbUR8Ph.s 			page 15
 
 
  161 0008 0091     		str	r1, [sp]
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
   31:Drivers/lvgl/src/indev/../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
   32:Drivers/lvgl/src/indev/../core/lv_obj_style_gen.h **** }
   33:Drivers/lvgl/src/indev/../core/lv_obj_style_gen.h **** 
-ARM GAS  /tmp/ccpQad6v.s 			page 16
+ARM GAS  /tmp/ccbUR8Ph.s 			page 16
 
 
   34:Drivers/lvgl/src/indev/../core/lv_obj_style_gen.h **** static inline int32_t lv_obj_get_style_max_width(const lv_obj_t * obj, lv_part_t part)
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
   88:Drivers/lvgl/src/indev/../core/lv_obj_style_gen.h **** static inline int32_t lv_obj_get_style_transform_height(const lv_obj_t * obj, lv_part_t part)
   89:Drivers/lvgl/src/indev/../core/lv_obj_style_gen.h **** {
   90:Drivers/lvgl/src/indev/../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_TRANSFORM_HEIGHT);
-ARM GAS  /tmp/ccpQad6v.s 			page 17
+ARM GAS  /tmp/ccbUR8Ph.s 			page 17
 
 
   91:Drivers/lvgl/src/indev/../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  145:Drivers/lvgl/src/indev/../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
  146:Drivers/lvgl/src/indev/../core/lv_obj_style_gen.h **** }
  147:Drivers/lvgl/src/indev/../core/lv_obj_style_gen.h **** 
-ARM GAS  /tmp/ccpQad6v.s 			page 18
+ARM GAS  /tmp/ccbUR8Ph.s 			page 18
 
 
  148:Drivers/lvgl/src/indev/../core/lv_obj_style_gen.h **** static inline int32_t lv_obj_get_style_transform_skew_y(const lv_obj_t * obj, lv_part_t part)
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  216              	.LBE71:
  217              	.LBE70:
  582:Drivers/lvgl/src/indev/lv_indev_scroll.c ****     uint32_t child_cnt = lv_obj_get_child_count(obj);
-ARM GAS  /tmp/ccpQad6v.s 			page 19
+ARM GAS  /tmp/ccbUR8Ph.s 			page 19
 
 
  218              		.loc 1 582 5 is_stmt 1 view .LVU64
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  256              		.loc 1 600 44 is_stmt 0 view .LVU80
  257 0050 D5F818B0 		ldr	fp, [r5, #24]
  600:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                     y_parent = obj->coords.y1 + pad_top + (lv_area_get_height(&obj->coords) - pad_t
-ARM GAS  /tmp/ccpQad6v.s 			page 20
+ARM GAS  /tmp/ccbUR8Ph.s 			page 20
 
 
  258              		.loc 1 600 50 view .LVU81
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  300              	.LVL25:
  301              	.L10:
  601:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                     break;
-ARM GAS  /tmp/ccpQad6v.s 			page 21
+ARM GAS  /tmp/ccbUR8Ph.s 			page 21
 
 
  302              		.loc 1 601 117 discriminator 1 view .LVU94
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  342              		.loc 1 589 13 view .LVU108
  590:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                 case LV_SCROLL_SNAP_START:
  343              		.loc 1 590 13 view .LVU109
-ARM GAS  /tmp/ccpQad6v.s 			page 22
+ARM GAS  /tmp/ccbUR8Ph.s 			page 22
 
 
  344 00b2 B8F1020F 		cmp	r8, #2
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  385              	.LVL34:
  610:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             }
  386              		.loc 1 610 17 is_stmt 1 view .LVU123
-ARM GAS  /tmp/ccpQad6v.s 			page 23
+ARM GAS  /tmp/ccbUR8Ph.s 			page 23
 
 
  610:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             }
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  575:Drivers/lvgl/src/indev/lv_indev_scroll.c **** 
  430              		.loc 1 575 45 discriminator 1 view .LVU135
  431 0116 6FF06049 		mvn	r9, #-536870912
-ARM GAS  /tmp/ccpQad6v.s 			page 24
+ARM GAS  /tmp/ccbUR8Ph.s 			page 24
 
 
  432 011a F8E7     		b	.L7
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  521:Drivers/lvgl/src/indev/lv_indev_scroll.c **** 
  482              		.loc 1 521 5 is_stmt 1 view .LVU142
  483              	.LVL42:
-ARM GAS  /tmp/ccpQad6v.s 			page 25
+ARM GAS  /tmp/ccbUR8Ph.s 			page 25
 
 
  523:Drivers/lvgl/src/indev/lv_indev_scroll.c ****     int32_t pad_right = lv_obj_get_style_pad_right(obj, LV_PART_MAIN);
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  524              	.LBE80:
  525              	.LBE79:
  526:Drivers/lvgl/src/indev/lv_indev_scroll.c ****     uint32_t child_cnt = lv_obj_get_child_count(obj);
-ARM GAS  /tmp/ccpQad6v.s 			page 26
+ARM GAS  /tmp/ccbUR8Ph.s 			page 26
 
 
  526              		.loc 1 526 5 is_stmt 1 view .LVU157
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  564              		.loc 1 544 44 is_stmt 0 view .LVU173
  565 0050 3846     		mov	r0, r7
  566 0052 50F8147F 		ldr	r7, [r0, #20]!
-ARM GAS  /tmp/ccpQad6v.s 			page 27
+ARM GAS  /tmp/ccbUR8Ph.s 			page 27
 
 
  567              	.LVL56:
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  608 0086 F8E7     		b	.L33
  609              	.LVL63:
  610              	.L28:
-ARM GAS  /tmp/ccpQad6v.s 			page 28
+ARM GAS  /tmp/ccbUR8Ph.s 			page 28
 
 
  545:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                     break;
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  533:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             switch(align) {
  651              		.loc 1 533 13 view .LVU201
  534:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                 case LV_SCROLL_SNAP_START:
-ARM GAS  /tmp/ccpQad6v.s 			page 29
+ARM GAS  /tmp/ccbUR8Ph.s 			page 29
 
 
  652              		.loc 1 534 13 view .LVU202
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  693 00e4 A7EB0807 		sub	r7, r7, r8
  694              	.LVL72:
  554:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             }
-ARM GAS  /tmp/ccpQad6v.s 			page 30
+ARM GAS  /tmp/ccbUR8Ph.s 			page 30
 
 
  695              		.loc 1 554 17 is_stmt 1 view .LVU216
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  738              		.cfi_restore_state
  519:Drivers/lvgl/src/indev/lv_indev_scroll.c **** 
  739              		.loc 1 519 45 discriminator 1 view .LVU228
-ARM GAS  /tmp/ccpQad6v.s 			page 31
+ARM GAS  /tmp/ccbUR8Ph.s 			page 31
 
 
  740 0114 6FF0604A 		mvn	r10, #-536870912
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  447:Drivers/lvgl/src/indev/lv_indev_scroll.c ****     }
  788              		.loc 1 447 9 is_stmt 1 view .LVU237
  789 0012 6C49     		ldr	r1, .L66
-ARM GAS  /tmp/ccpQad6v.s 			page 32
+ARM GAS  /tmp/ccbUR8Ph.s 			page 32
 
 
  790 0014 6FF06043 		mvn	r3, #-536870912
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  501:Drivers/lvgl/src/indev/lv_indev_scroll.c ****     if(indev->pointer.scroll_area.y1 == 0) indev->pointer.scroll_area.y1 = LV_COORD_MIN;
  829              		.loc 1 501 74 is_stmt 0 discriminator 1 view .LVU253
  830 004c 6FF06043 		mvn	r3, #-536870912
-ARM GAS  /tmp/ccpQad6v.s 			page 33
+ARM GAS  /tmp/ccbUR8Ph.s 			page 33
 
 
  831 0050 C4F88430 		str	r3, [r4, #132]
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  871 007a 30D0     		beq	.L46
  872 007c 0328     		cmp	r0, #3
  873 007e 40D0     		beq	.L47
-ARM GAS  /tmp/ccpQad6v.s 			page 34
+ARM GAS  /tmp/ccbUR8Ph.s 			page 34
 
 
  874 0080 0128     		cmp	r0, #1
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  474:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                 indev->pointer.scroll_area.x2 = find_snap_point_x(obj, LV_COORD_MIN, obj->coords.x1
  915              		.loc 1 474 49 is_stmt 0 view .LVU281
  916 00bc 0023     		movs	r3, #0
-ARM GAS  /tmp/ccpQad6v.s 			page 35
+ARM GAS  /tmp/ccbUR8Ph.s 			page 35
 
 
  917 00be 6FF06042 		mvn	r2, #-536870912
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  959              	.L47:
  960              	.LBB86:
  461:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                     indev->pointer.scroll_area.y1 = find_snap_point_y(obj, y_mid + 1, LV_COORD_MAX,
-ARM GAS  /tmp/ccpQad6v.s 			page 36
+ARM GAS  /tmp/ccbUR8Ph.s 			page 36
 
 
  961              		.loc 1 461 21 view .LVU294
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  461:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                     indev->pointer.scroll_area.y1 = find_snap_point_y(obj, y_mid + 1, LV_COORD_MAX,
  1003              		.loc 1 461 87 discriminator 1 view .LVU307
  1004              	.LBE86:
-ARM GAS  /tmp/ccpQad6v.s 			page 37
+ARM GAS  /tmp/ccbUR8Ph.s 			page 37
 
 
  467:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                 indev->pointer.scroll_area.y2 = LV_COORD_MAX;
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  1044              		.loc 1 482 54 view .LVU322
  1045 0174 FFF7FEFF 		bl	lv_area_get_width
  1046              	.LVL99:
-ARM GAS  /tmp/ccpQad6v.s 			page 38
+ARM GAS  /tmp/ccbUR8Ph.s 			page 38
 
 
  482:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                     indev->pointer.scroll_area.x1 = find_snap_point_x(obj, x_mid + 1, LV_COORD_MAX,
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  489:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                 break;
  1088              		.loc 1 489 17 is_stmt 1 view .LVU336
  489:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                 break;
-ARM GAS  /tmp/ccpQad6v.s 			page 39
+ARM GAS  /tmp/ccbUR8Ph.s 			page 39
 
 
  1089              		.loc 1 489 47 is_stmt 0 view .LVU337
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  658:Drivers/lvgl/src/indev/lv_indev_scroll.c ****     /*Handle elastic scrolling*/
  659:Drivers/lvgl/src/indev/lv_indev_scroll.c ****     else {
  660:Drivers/lvgl/src/indev/lv_indev_scroll.c **** 
-ARM GAS  /tmp/ccpQad6v.s 			page 40
+ARM GAS  /tmp/ccbUR8Ph.s 			page 40
 
 
  661:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         lv_scroll_snap_t snap;
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  1126              		.loc 1 710 1 is_stmt 0 view .LVU344
  1127 0000 2DE9F043 		push	{r4, r5, r6, r7, r8, r9, lr}
  1128              	.LCFI14:
-ARM GAS  /tmp/ccpQad6v.s 			page 41
+ARM GAS  /tmp/ccbUR8Ph.s 			page 41
 
 
  1129              		.cfi_def_cfa_offset 28
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  727:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             case LV_SCROLL_SNAP_START:
  728:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                 x = scroll_obj->coords.x1 + lv_obj_get_style_pad_left(scroll_obj, 0);
  729:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                 break;
-ARM GAS  /tmp/ccpQad6v.s 			page 42
+ARM GAS  /tmp/ccbUR8Ph.s 			page 42
 
 
  730:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             case LV_SCROLL_SNAP_END:
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  1202              	.L75:
  736:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         d = find_snap_point_x(scroll_obj, x + 1, LV_COORD_MAX, 0);
  1203              		.loc 1 736 9 view .LVU364
-ARM GAS  /tmp/ccpQad6v.s 			page 43
+ARM GAS  /tmp/ccbUR8Ph.s 			page 43
 
 
  737:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         if(d == LV_COORD_MAX) *has_end_snap = false;
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  1245              	.LBB102:
  168:Drivers/lvgl/src/indev/../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
  1246              		.loc 2 168 5 view .LVU378
-ARM GAS  /tmp/ccpQad6v.s 			page 44
+ARM GAS  /tmp/ccbUR8Ph.s 			page 44
 
 
  168:Drivers/lvgl/src/indev/../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  1289              	.LVL124:
  723:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                     x += pad_left;
  1290              		.loc 1 723 21 is_stmt 1 view .LVU393
-ARM GAS  /tmp/ccpQad6v.s 			page 45
+ARM GAS  /tmp/ccbUR8Ph.s 			page 45
 
 
  723:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                     x += pad_left;
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  1330 00b6 1222     		movs	r2, #18
  1331 00b8 0021     		movs	r1, #0
  1332 00ba 2046     		mov	r0, r4
-ARM GAS  /tmp/ccpQad6v.s 			page 46
+ARM GAS  /tmp/ccbUR8Ph.s 			page 46
 
 
  1333              	.LVL130:
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  1375              	.LVL139:
  732:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             default:
  1376              		.loc 1 732 17 is_stmt 1 view .LVU423
-ARM GAS  /tmp/ccpQad6v.s 			page 47
+ARM GAS  /tmp/ccbUR8Ph.s 			page 47
 
 
  1377 00d6 B7E7     		b	.L75
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  1417              		.loc 2 162 5 view .LVU436
  162:Drivers/lvgl/src/indev/../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
  1418              		.loc 2 162 26 is_stmt 0 view .LVU437
-ARM GAS  /tmp/ccpQad6v.s 			page 48
+ARM GAS  /tmp/ccbUR8Ph.s 			page 48
 
 
  1419 00ec 1122     		movs	r2, #17
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  757:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                 y = scroll_obj->coords.y2 - lv_obj_get_style_pad_bottom(scroll_obj, 0);
  758:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                 break;
  759:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             default:
-ARM GAS  /tmp/ccpQad6v.s 			page 49
+ARM GAS  /tmp/ccbUR8Ph.s 			page 49
 
 
  760:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                 break;
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  1506              	.LBB111:
  1507              	.LBB94:
  749:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                     y += pad_top;
-ARM GAS  /tmp/ccpQad6v.s 			page 50
+ARM GAS  /tmp/ccbUR8Ph.s 			page 50
 
 
  1508              		.loc 1 749 91 discriminator 1 view .LVU465
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  1549              	.LBB97:
  1550              	.LBI97:
  160:Drivers/lvgl/src/indev/../core/lv_obj_style_gen.h **** {
-ARM GAS  /tmp/ccpQad6v.s 			page 51
+ARM GAS  /tmp/ccbUR8Ph.s 			page 51
 
 
  1551              		.loc 2 160 23 is_stmt 1 view .LVU479
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  1595              		.section	.text.elastic_diff,"ax",%progbits
  1596              		.align	1
  1597              		.syntax unified
-ARM GAS  /tmp/ccpQad6v.s 			page 52
+ARM GAS  /tmp/ccbUR8Ph.s 			page 52
 
 
  1598              		.thumb
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  1645              		.loc 1 647 9 is_stmt 0 view .LVU499
  1646 001c 2021     		movs	r1, #32
  1647              	.LVL174:
-ARM GAS  /tmp/ccpQad6v.s 			page 53
+ARM GAS  /tmp/ccbUR8Ph.s 			page 53
 
 
  647:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         /*
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  1686 003c 0CD0     		beq	.L114
  662:Drivers/lvgl/src/indev/lv_indev_scroll.c **** 
  1687              		.loc 1 662 75 discriminator 2 view .LVU516
-ARM GAS  /tmp/ccpQad6v.s 			page 54
+ARM GAS  /tmp/ccbUR8Ph.s 			page 54
 
 
  1688 003e 3846     		mov	r0, r7
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  1727              	.L104:
  670:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             }
  1728              		.loc 1 670 17 view .LVU532
-ARM GAS  /tmp/ccpQad6v.s 			page 55
+ARM GAS  /tmp/ccbUR8Ph.s 			page 55
 
 
  670:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             }
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  685:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             if(diff > 0) diff += ELASTIC_SLOWNESS_FACTOR / 2;
  1769              		.loc 1 685 13 is_stmt 1 view .LVU547
  685:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             if(diff > 0) diff += ELASTIC_SLOWNESS_FACTOR / 2;
-ARM GAS  /tmp/ccpQad6v.s 			page 56
+ARM GAS  /tmp/ccbUR8Ph.s 			page 56
 
 
  1770              		.loc 1 685 15 is_stmt 0 view .LVU548
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  1810              	.L110:
  687:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         }
  1811              		.loc 1 687 25 view .LVU563
-ARM GAS  /tmp/ccpQad6v.s 			page 57
+ARM GAS  /tmp/ccbUR8Ph.s 			page 57
 
 
  1812              	.LBE113:
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  1856 000e 92F82510 		ldrb	r1, [r2, #37]	@ zero_extendqisi2
  1857              	.LVL200:
  252:Drivers/lvgl/src/indev/lv_indev_scroll.c ****     while(v) {
-ARM GAS  /tmp/ccpQad6v.s 			page 58
+ARM GAS  /tmp/ccbUR8Ph.s 			page 58
 
 
  1858              		.loc 1 252 5 is_stmt 1 view .LVU576
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  1898              	.L125:
  238:Drivers/lvgl/src/indev/lv_indev_scroll.c ****     int32_t v;
  1899              		.loc 1 238 30 is_stmt 0 discriminator 1 view .LVU591
-ARM GAS  /tmp/ccpQad6v.s 			page 59
+ARM GAS  /tmp/ccbUR8Ph.s 			page 59
 
 
  1900 0036 0020     		movs	r0, #0
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  127:Drivers/lvgl/src/indev/lv_indev_scroll.c ****     if(indev->pointer.scroll_dir == LV_DIR_NONE) return;
  1949              		.loc 1 127 5 is_stmt 1 view .LVU599
  127:Drivers/lvgl/src/indev/lv_indev_scroll.c ****     if(indev->pointer.scroll_dir == LV_DIR_NONE) return;
-ARM GAS  /tmp/ccpQad6v.s 			page 60
+ARM GAS  /tmp/ccbUR8Ph.s 			page 60
 
 
  1950              		.loc 1 127 7 is_stmt 0 view .LVU600
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  134:Drivers/lvgl/src/indev/lv_indev_scroll.c ****     }
  1991              		.loc 1 134 44 is_stmt 0 view .LVU614
  1992 002e A365     		str	r3, [r4, #88]
-ARM GAS  /tmp/ccpQad6v.s 			page 61
+ARM GAS  /tmp/ccbUR8Ph.s 			page 61
 
 
  1993              	.L131:
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  2032              		.loc 1 197 9 is_stmt 1 view .LVU629
  197:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             int32_t st = lv_obj_get_scroll_top(scroll_obj);
  2033              		.loc 1 197 11 is_stmt 0 view .LVU630
-ARM GAS  /tmp/ccpQad6v.s 			page 62
+ARM GAS  /tmp/ccbUR8Ph.s 			page 62
 
 
  2034 005c 002E     		cmp	r6, #0
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  228:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         if(indev->reset_query) return;
  2074              		.loc 1 228 9 is_stmt 1 view .LVU645
  2075 008a 2246     		mov	r2, r4
-ARM GAS  /tmp/ccpQad6v.s 			page 63
+ARM GAS  /tmp/ccbUR8Ph.s 			page 63
 
 
  2076 008c 0E21     		movs	r1, #14
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  2114              		.loc 1 145 75 view .LVU661
  2115 00be 664A     		ldr	r2, .L150
  2116 00c0 82FB0312 		smull	r1, r2, r2, r3
-ARM GAS  /tmp/ccpQad6v.s 			page 64
+ARM GAS  /tmp/ccbUR8Ph.s 			page 64
 
 
  2117 00c4 DB17     		asrs	r3, r3, #31
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  2158              	.LVL240:
  154:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         }
  2159              		.loc 1 154 13 view .LVU675
-ARM GAS  /tmp/ccpQad6v.s 			page 65
+ARM GAS  /tmp/ccbUR8Ph.s 			page 65
 
 
  154:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         }
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  162:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             if(indev->reset_query) return;
  2201              		.loc 1 162 13 is_stmt 1 view .LVU689
  2202 0126 0123     		movs	r3, #1
-ARM GAS  /tmp/ccpQad6v.s 			page 66
+ARM GAS  /tmp/ccbUR8Ph.s 			page 66
 
 
  2203 0128 039A     		ldr	r2, [sp, #12]
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  2243 015a C3EB6213 		rsb	r3, r3, r2, asr #5
  170:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                 indev->pointer.scroll_throw_vect.x * (100 - scroll_throw) / 100;
  2244              		.loc 1 170 48 view .LVU704
-ARM GAS  /tmp/ccpQad6v.s 			page 67
+ARM GAS  /tmp/ccbUR8Ph.s 			page 67
 
 
  2245 015e A365     		str	r3, [r4, #88]
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  2285              		.loc 1 180 16 is_stmt 0 view .LVU718
  2286 018a E37A     		ldrb	r3, [r4, #11]	@ zero_extendqisi2
  180:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         }
-ARM GAS  /tmp/ccpQad6v.s 			page 68
+ARM GAS  /tmp/ccbUR8Ph.s 			page 68
 
 
  2287              		.loc 1 180 15 view .LVU719
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  2329 01c0 0399     		ldr	r1, [sp, #12]
  2330 01c2 0144     		add	r1, r1, r0
  2331 01c4 2846     		mov	r0, r5
-ARM GAS  /tmp/ccpQad6v.s 			page 69
+ARM GAS  /tmp/ccbUR8Ph.s 			page 69
 
 
  2332              	.LVL266:
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  205:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                     lv_obj_scroll_by(scroll_obj, 0, -sb, LV_ANIM_ON);
  2372              		.loc 1 205 22 is_stmt 1 view .LVU746
  205:Drivers/lvgl/src/indev/lv_indev_scroll.c ****                     lv_obj_scroll_by(scroll_obj, 0, -sb, LV_ANIM_ON);
-ARM GAS  /tmp/ccpQad6v.s 			page 70
+ARM GAS  /tmp/ccbUR8Ph.s 			page 70
 
 
  2373              		.loc 1 205 24 is_stmt 0 view .LVU747
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  2415              		.loc 1 218 21 is_stmt 1 view .LVU759
  2416 0228 0123     		movs	r3, #1
  2417 022a 0022     		movs	r2, #0
-ARM GAS  /tmp/ccpQad6v.s 			page 71
+ARM GAS  /tmp/ccbUR8Ph.s 			page 71
 
 
  2418 022c 3146     		mov	r1, r6
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  2465              	lv_indev_scroll_get_snap_dist:
  2466              	.LVL284:
  2467              	.LFB174:
-ARM GAS  /tmp/ccpQad6v.s 			page 72
+ARM GAS  /tmp/ccbUR8Ph.s 			page 72
 
 
  262:Drivers/lvgl/src/indev/lv_indev_scroll.c ****     p->x = find_snap_point_x(obj, obj->coords.x1, obj->coords.x2, 0);
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  2512              		.syntax unified
  2513              		.thumb
  2514              		.thumb_func
-ARM GAS  /tmp/ccpQad6v.s 			page 73
+ARM GAS  /tmp/ccbUR8Ph.s 			page 73
 
 
  2516              	lv_indev_find_scroll_obj:
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  2557 0010 816C     		ldr	r1, [r0, #72]
  285:Drivers/lvgl/src/indev/lv_indev_scroll.c ****     indev->pointer.scroll_sum.y += indev->pointer.vect.y;
  2558              		.loc 1 285 33 view .LVU793
-ARM GAS  /tmp/ccpQad6v.s 			page 74
+ARM GAS  /tmp/ccbUR8Ph.s 			page 74
 
 
  2559 0012 0A44     		add	r2, r2, r1
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  2598              		.loc 2 127 5 is_stmt 1 view .LVU808
  2599              	.LVL294:
  127:Drivers/lvgl/src/indev/../core/lv_obj_style_gen.h **** }
-ARM GAS  /tmp/ccpQad6v.s 			page 75
+ARM GAS  /tmp/ccbUR8Ph.s 			page 75
 
 
  2600              		.loc 2 127 5 is_stmt 0 view .LVU809
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
   42:Drivers/lvgl/src/indev/../core/lv_obj_style.h ****  * Add a style to an object.
   43:Drivers/lvgl/src/indev/../core/lv_obj_style.h ****  * @param obj       pointer to an object
   44:Drivers/lvgl/src/indev/../core/lv_obj_style.h ****  * @param style     pointer to a style to add
-ARM GAS  /tmp/ccpQad6v.s 			page 76
+ARM GAS  /tmp/ccbUR8Ph.s 			page 76
 
 
   45:Drivers/lvgl/src/indev/../core/lv_obj_style.h ****  * @param selector  OR-ed value of parts and state to which the style should be added
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
   99:Drivers/lvgl/src/indev/../core/lv_obj_style.h ****  *                  (NULL to notify all objects)
  100:Drivers/lvgl/src/indev/../core/lv_obj_style.h ****  */
  101:Drivers/lvgl/src/indev/../core/lv_obj_style.h **** void lv_obj_report_style_change(lv_style_t * style);
-ARM GAS  /tmp/ccpQad6v.s 			page 77
+ARM GAS  /tmp/ccbUR8Ph.s 			page 77
 
 
  102:Drivers/lvgl/src/indev/../core/lv_obj_style.h **** 
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  156:Drivers/lvgl/src/indev/../core/lv_obj_style.h ****  * @param obj       pointer to an object
  157:Drivers/lvgl/src/indev/../core/lv_obj_style.h ****  * @param prop      a style property to remove.
  158:Drivers/lvgl/src/indev/../core/lv_obj_style.h ****  * @param selector  OR-ed value of parts and state for which the style should be removed
-ARM GAS  /tmp/ccpQad6v.s 			page 78
+ARM GAS  /tmp/ccbUR8Ph.s 			page 78
 
 
  159:Drivers/lvgl/src/indev/../core/lv_obj_style.h ****  * @return true     the property was found and removed; false: the property was not found
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  213:Drivers/lvgl/src/indev/../core/lv_obj_style.h ****     lv_obj_set_style_pad_bottom(obj, value, selector);
  214:Drivers/lvgl/src/indev/../core/lv_obj_style.h **** }
  215:Drivers/lvgl/src/indev/../core/lv_obj_style.h **** 
-ARM GAS  /tmp/ccpQad6v.s 			page 79
+ARM GAS  /tmp/ccbUR8Ph.s 			page 79
 
 
  216:Drivers/lvgl/src/indev/../core/lv_obj_style.h **** static inline void lv_obj_set_style_margin_all(lv_obj_t * obj, int32_t value, lv_style_selector_t s
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  270:Drivers/lvgl/src/indev/../core/lv_obj_style.h **** }
  271:Drivers/lvgl/src/indev/../core/lv_obj_style.h **** 
  272:Drivers/lvgl/src/indev/../core/lv_obj_style.h **** static inline int32_t lv_obj_get_style_space_top(const lv_obj_t * obj, lv_part_t part)
-ARM GAS  /tmp/ccpQad6v.s 			page 80
+ARM GAS  /tmp/ccbUR8Ph.s 			page 80
 
 
  273:Drivers/lvgl/src/indev/../core/lv_obj_style.h **** {
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  2639              	.LBE127:
  2640              	.LBE126:
  298:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             scale_x = (scale_x * zoom_act_x) >> 8;
-ARM GAS  /tmp/ccpQad6v.s 			page 81
+ARM GAS  /tmp/ccbUR8Ph.s 			page 81
 
 
  2641              		.loc 1 298 13 is_stmt 1 view .LVU822
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  299:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             scale_y = (scale_y * zoom_act_y) >> 8;
  2680              		.loc 1 299 21 view .LVU837
  2681 0070 4FEA272A 		asr	r10, r7, #8
-ARM GAS  /tmp/ccpQad6v.s 			page 82
+ARM GAS  /tmp/ccbUR8Ph.s 			page 82
 
 
  2682              	.LVL304:
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  2721              	.LVL312:
  2722              	.L159:
  312:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         if(angle != 0 || scale_x != LV_SCALE_NONE || scale_y != LV_SCALE_NONE) {
-ARM GAS  /tmp/ccpQad6v.s 			page 83
+ARM GAS  /tmp/ccbUR8Ph.s 			page 83
 
 
  2723              		.loc 1 312 9 is_stmt 1 view .LVU853
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  2764              	.L161:
  320:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             hor_en = true;
  2765              		.loc 1 320 9 is_stmt 1 view .LVU867
-ARM GAS  /tmp/ccpQad6v.s 			page 84
+ARM GAS  /tmp/ccbUR8Ph.s 			page 84
 
 
  320:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             hor_en = true;
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  2807 0110 FFF7FEFF 		bl	lv_obj_has_flag
  2808              	.LVL321:
  330:Drivers/lvgl/src/indev/lv_indev_scroll.c **** 
-ARM GAS  /tmp/ccpQad6v.s 			page 85
+ARM GAS  /tmp/ccbUR8Ph.s 			page 85
 
 
  2809              		.loc 1 330 15 discriminator 1 view .LVU881
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  2849              	.LVL324:
  2850              	.L224:
  2851              	.LCFI30:
-ARM GAS  /tmp/ccpQad6v.s 			page 86
+ARM GAS  /tmp/ccbUR8Ph.s 			page 86
 
 
  2852              		.cfi_restore_state
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  345:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         if((scroll_dir & LV_DIR_TOP) == 0) up_en = false;
  2891              		.loc 1 345 11 is_stmt 0 view .LVU911
  2892 0162 10F0020F 		tst	r0, #2
-ARM GAS  /tmp/ccpQad6v.s 			page 87
+ARM GAS  /tmp/ccbUR8Ph.s 			page 87
 
 
  2893 0166 3BD0     		beq	.L203
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  2931 0188 2046     		mov	r0, r4
  2932              	.LVL337:
  354:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             sr = lv_obj_get_scroll_right(obj_act);
-ARM GAS  /tmp/ccpQad6v.s 			page 88
+ARM GAS  /tmp/ccbUR8Ph.s 			page 88
 
 
  2933              		.loc 1 354 18 view .LVU928
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  2972              		.loc 1 374 18 view .LVU943
  2973 01ac FFF7FEFF 		bl	lv_obj_get_scroll_bottom
  2974              	.LVL348:
-ARM GAS  /tmp/ccpQad6v.s 			page 89
+ARM GAS  /tmp/ccbUR8Ph.s 			page 89
 
 
  2975              	.L177:
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  345:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         if((scroll_dir & LV_DIR_TOP) == 0) up_en = false;
  3017              		.loc 1 345 55 discriminator 1 view .LVU956
  3018 01e0 0023     		movs	r3, #0
-ARM GAS  /tmp/ccpQad6v.s 			page 90
+ARM GAS  /tmp/ccbUR8Ph.s 			page 90
 
 
  3019 01e2 0493     		str	r3, [sp, #16]
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  3060 020e 23B1     		cbz	r3, .L207
  365:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         }
  3061              		.loc 1 365 35 discriminator 1 view .LVU970
-ARM GAS  /tmp/ccpQad6v.s 			page 91
+ARM GAS  /tmp/ccbUR8Ph.s 			page 91
 
 
  3062 0210 0126     		movs	r6, #1
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  3102              		.loc 1 384 35 view .LVU984
  3103 023e 23B1     		cbz	r3, .L209
  384:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         }
-ARM GAS  /tmp/ccpQad6v.s 			page 92
+ARM GAS  /tmp/ccbUR8Ph.s 			page 92
 
 
  3104              		.loc 1 384 35 discriminator 1 view .LVU985
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  400:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             obj_candidate = obj_act;
  3147              		.loc 1 400 47 view .LVU997
  3148 026e 6B42     		rsbs	r3, r5, #0
-ARM GAS  /tmp/ccpQad6v.s 			page 93
+ARM GAS  /tmp/ccbUR8Ph.s 			page 93
 
 
  400:Drivers/lvgl/src/indev/lv_indev_scroll.c ****             obj_candidate = obj_act;
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  3190              		.loc 1 408 9 is_stmt 1 view .LVU1010
  408:Drivers/lvgl/src/indev/lv_indev_scroll.c **** 
  3191              		.loc 1 408 11 is_stmt 0 view .LVU1011
-ARM GAS  /tmp/ccpQad6v.s 			page 94
+ARM GAS  /tmp/ccbUR8Ph.s 			page 94
 
 
  3192 0292 002E     		cmp	r6, #0
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  3233 02c2 2FDD     		ble	.L189
  3234              	.L192:
  420:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         if(lv_obj_has_flag(obj_act, LV_OBJ_FLAG_SCROLL_CHAIN_VER) == false && ver_en) break;
-ARM GAS  /tmp/ccpQad6v.s 			page 95
+ARM GAS  /tmp/ccbUR8Ph.s 			page 95
 
 
  3235              		.loc 1 420 9 is_stmt 1 view .LVU1025
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  290:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         int32_t scale_x = 256;
  3277              		.loc 1 290 9 view .LVU1038
  3278              	.LVL384:
-ARM GAS  /tmp/ccpQad6v.s 			page 96
+ARM GAS  /tmp/ccbUR8Ph.s 			page 96
 
 
  291:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         int32_t scale_y = 256;
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  3317              		.loc 1 407 29 discriminator 1 view .LVU1054
  3318 0318 4FF00009 		mov	r9, #0
  3319              	.LVL391:
-ARM GAS  /tmp/ccpQad6v.s 			page 97
+ARM GAS  /tmp/ccbUR8Ph.s 			page 97
 
 
  407:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         if(sr <= 0) right_en = false;
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  3366              		@ frame_needed = 0, uses_anonymous_args = 0
   48:Drivers/lvgl/src/indev/lv_indev_scroll.c ****     if(indev->pointer.vect.x == 0 && indev->pointer.vect.y == 0) {
  3367              		.loc 1 48 1 is_stmt 0 view .LVU1065
-ARM GAS  /tmp/ccpQad6v.s 			page 98
+ARM GAS  /tmp/ccbUR8Ph.s 			page 98
 
 
  3368 0000 2DE9F047 		push	{r4, r5, r6, r7, r8, r9, r10, lr}
@@ -5878,7 +5878,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  3408              		.loc 1 71 5 view .LVU1079
   70:Drivers/lvgl/src/indev/lv_indev_scroll.c ****     while(parent) {
  3409              		.loc 1 70 16 is_stmt 0 view .LVU1080
-ARM GAS  /tmp/ccpQad6v.s 			page 99
+ARM GAS  /tmp/ccbUR8Ph.s 			page 99
 
 
  3410 001e 4D46     		mov	r5, r9
@@ -5938,7 +5938,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  3450              		.loc 1 63 9 view .LVU1094
   63:Drivers/lvgl/src/indev/lv_indev_scroll.c ****     }
  3451              		.loc 1 63 12 is_stmt 0 view .LVU1095
-ARM GAS  /tmp/ccpQad6v.s 			page 100
+ARM GAS  /tmp/ccbUR8Ph.s 			page 100
 
 
  3452 0052 98F80B30 		ldrb	r3, [r8, #11]	@ zero_extendqisi2
@@ -5998,7 +5998,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  114:Drivers/lvgl/src/indev/../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
  3493              		.loc 2 114 26 is_stmt 0 view .LVU1109
  3494 006e 6E22     		movs	r2, #110
-ARM GAS  /tmp/ccpQad6v.s 			page 101
+ARM GAS  /tmp/ccbUR8Ph.s 			page 101
 
 
  3495 0070 0021     		movs	r1, #0
@@ -6058,7 +6058,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  121:Drivers/lvgl/src/indev/../core/lv_obj_style_gen.h **** }
  3536              		.loc 2 121 5 is_stmt 1 view .LVU1123
  3537              	.LVL414:
-ARM GAS  /tmp/ccpQad6v.s 			page 102
+ARM GAS  /tmp/ccbUR8Ph.s 			page 102
 
 
  121:Drivers/lvgl/src/indev/../core/lv_obj_style_gen.h **** }
@@ -6118,7 +6118,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
   80:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         scale_x = 1;
  3579              		.loc 1 80 5 view .LVU1140
   80:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         scale_x = 1;
-ARM GAS  /tmp/ccpQad6v.s 			page 103
+ARM GAS  /tmp/ccbUR8Ph.s 			page 103
 
 
  3580              		.loc 1 80 7 is_stmt 0 view .LVU1141
@@ -6178,7 +6178,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  3619              		.loc 1 92 20 is_stmt 0 view .LVU1156
  3620 00dc 0020     		movs	r0, #0
  3621 00de 0290     		str	r0, [sp, #8]
-ARM GAS  /tmp/ccpQad6v.s 			page 104
+ARM GAS  /tmp/ccbUR8Ph.s 			page 104
 
 
  3622 00e0 0390     		str	r0, [sp, #12]
@@ -6238,7 +6238,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  3661              		.loc 1 105 9 is_stmt 1 view .LVU1171
  105:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         diff_y = elastic_diff(scroll_obj, indev->pointer.vect.y, st, sb, LV_DIR_VER);
  3662              		.loc 1 105 22 is_stmt 0 view .LVU1172
-ARM GAS  /tmp/ccpQad6v.s 			page 105
+ARM GAS  /tmp/ccbUR8Ph.s 			page 105
 
 
  3663 0110 4846     		mov	r0, r9
@@ -6298,7 +6298,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  3703 013c 0023     		movs	r3, #0
  3704 013e 0593     		str	r3, [sp, #20]
  3705              	.L241:
-ARM GAS  /tmp/ccpQad6v.s 			page 106
+ARM GAS  /tmp/ccbUR8Ph.s 			page 106
 
 
  111:Drivers/lvgl/src/indev/lv_indev_scroll.c ****     if((scroll_dir & LV_DIR_TOP)    == 0 && diff_y > 0) diff_y = 0;
@@ -6358,7 +6358,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  116:Drivers/lvgl/src/indev/lv_indev_scroll.c **** 
  3745              		.loc 1 116 5 is_stmt 0 view .LVU1202
  3746 016e FFF7FEFF 		bl	scroll_limit_diff
-ARM GAS  /tmp/ccpQad6v.s 			page 107
+ARM GAS  /tmp/ccbUR8Ph.s 			page 107
 
 
  3747              	.LVL438:
@@ -6418,7 +6418,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
   99:Drivers/lvgl/src/indev/lv_indev_scroll.c ****         int32_t sl = lv_obj_get_scroll_left(scroll_obj);
  3789              		.loc 1 99 22 is_stmt 0 view .LVU1215
  3790 01a4 4846     		mov	r0, r9
-ARM GAS  /tmp/ccpQad6v.s 			page 108
+ARM GAS  /tmp/ccbUR8Ph.s 			page 108
 
 
  3791 01a6 FFF7FEFF 		bl	lv_obj_get_scroll_right
@@ -6478,7 +6478,7 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  3835              		.text
  3836              	.Letext0:
  3837              		.file 4 "/usr/arm-none-eabi/include/machine/_default_types.h"
-ARM GAS  /tmp/ccpQad6v.s 			page 109
+ARM GAS  /tmp/ccbUR8Ph.s 			page 109
 
 
  3838              		.file 5 "/usr/arm-none-eabi/include/sys/_stdint.h"
@@ -6497,39 +6497,39 @@ ARM GAS  /tmp/ccpQad6v.s 			page 1
  3851              		.file 18 "Drivers/lvgl/src/indev/../core/lv_obj_tree.h"
  3852              		.file 19 "Drivers/lvgl/src/indev/../core/lv_obj_scroll_private.h"
  3853              		.file 20 "Drivers/lvgl/src/indev/../core/lv_obj_event.h"
-ARM GAS  /tmp/ccpQad6v.s 			page 110
+ARM GAS  /tmp/ccbUR8Ph.s 			page 110
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_indev_scroll.c
-     /tmp/ccpQad6v.s:21     .text.scroll_limit_diff:00000000 $t
-     /tmp/ccpQad6v.s:26     .text.scroll_limit_diff:00000000 scroll_limit_diff
-     /tmp/ccpQad6v.s:132    .text.find_snap_point_y:00000000 $t
-     /tmp/ccpQad6v.s:137    .text.find_snap_point_y:00000000 find_snap_point_y
-     /tmp/ccpQad6v.s:436    .text.find_snap_point_y:0000011c $d
-     /tmp/ccpQad6v.s:441    .text.find_snap_point_x:00000000 $t
-     /tmp/ccpQad6v.s:446    .text.find_snap_point_x:00000000 find_snap_point_x
-     /tmp/ccpQad6v.s:745    .text.find_snap_point_x:0000011c $d
-     /tmp/ccpQad6v.s:750    .text.init_scroll_limits:00000000 $t
-     /tmp/ccpQad6v.s:755    .text.init_scroll_limits:00000000 init_scroll_limits
-     /tmp/ccpQad6v.s:1109   .text.init_scroll_limits:000001c4 $d
-     /tmp/ccpQad6v.s:1114   .text.has_more_snap_points:00000000 $t
-     /tmp/ccpQad6v.s:1119   .text.has_more_snap_points:00000000 has_more_snap_points
-     /tmp/ccpQad6v.s:1591   .text.has_more_snap_points:00000178 $d
-     /tmp/ccpQad6v.s:1596   .text.elastic_diff:00000000 $t
-     /tmp/ccpQad6v.s:1601   .text.elastic_diff:00000000 elastic_diff
-     /tmp/ccpQad6v.s:1824   .text.lv_indev_scroll_throw_predict:00000000 $t
-     /tmp/ccpQad6v.s:1830   .text.lv_indev_scroll_throw_predict:00000000 lv_indev_scroll_throw_predict
-     /tmp/ccpQad6v.s:1914   .text.lv_indev_scroll_throw_predict:00000040 $d
-     /tmp/ccpQad6v.s:1919   .text.lv_indev_scroll_throw_handler:00000000 $t
-     /tmp/ccpQad6v.s:1925   .text.lv_indev_scroll_throw_handler:00000000 lv_indev_scroll_throw_handler
-     /tmp/ccpQad6v.s:2452   .text.lv_indev_scroll_throw_handler:00000258 $d
-     /tmp/ccpQad6v.s:2459   .text.lv_indev_scroll_get_snap_dist:00000000 $t
-     /tmp/ccpQad6v.s:2465   .text.lv_indev_scroll_get_snap_dist:00000000 lv_indev_scroll_get_snap_dist
-     /tmp/ccpQad6v.s:2510   .text.lv_indev_find_scroll_obj:00000000 $t
-     /tmp/ccpQad6v.s:2516   .text.lv_indev_find_scroll_obj:00000000 lv_indev_find_scroll_obj
-     /tmp/ccpQad6v.s:3354   .text.lv_indev_scroll_handler:00000000 $t
-     /tmp/ccpQad6v.s:3360   .text.lv_indev_scroll_handler:00000000 lv_indev_scroll_handler
+     /tmp/ccbUR8Ph.s:21     .text.scroll_limit_diff:00000000 $t
+     /tmp/ccbUR8Ph.s:26     .text.scroll_limit_diff:00000000 scroll_limit_diff
+     /tmp/ccbUR8Ph.s:132    .text.find_snap_point_y:00000000 $t
+     /tmp/ccbUR8Ph.s:137    .text.find_snap_point_y:00000000 find_snap_point_y
+     /tmp/ccbUR8Ph.s:436    .text.find_snap_point_y:0000011c $d
+     /tmp/ccbUR8Ph.s:441    .text.find_snap_point_x:00000000 $t
+     /tmp/ccbUR8Ph.s:446    .text.find_snap_point_x:00000000 find_snap_point_x
+     /tmp/ccbUR8Ph.s:745    .text.find_snap_point_x:0000011c $d
+     /tmp/ccbUR8Ph.s:750    .text.init_scroll_limits:00000000 $t
+     /tmp/ccbUR8Ph.s:755    .text.init_scroll_limits:00000000 init_scroll_limits
+     /tmp/ccbUR8Ph.s:1109   .text.init_scroll_limits:000001c4 $d
+     /tmp/ccbUR8Ph.s:1114   .text.has_more_snap_points:00000000 $t
+     /tmp/ccbUR8Ph.s:1119   .text.has_more_snap_points:00000000 has_more_snap_points
+     /tmp/ccbUR8Ph.s:1591   .text.has_more_snap_points:00000178 $d
+     /tmp/ccbUR8Ph.s:1596   .text.elastic_diff:00000000 $t
+     /tmp/ccbUR8Ph.s:1601   .text.elastic_diff:00000000 elastic_diff
+     /tmp/ccbUR8Ph.s:1824   .text.lv_indev_scroll_throw_predict:00000000 $t
+     /tmp/ccbUR8Ph.s:1830   .text.lv_indev_scroll_throw_predict:00000000 lv_indev_scroll_throw_predict
+     /tmp/ccbUR8Ph.s:1914   .text.lv_indev_scroll_throw_predict:00000040 $d
+     /tmp/ccbUR8Ph.s:1919   .text.lv_indev_scroll_throw_handler:00000000 $t
+     /tmp/ccbUR8Ph.s:1925   .text.lv_indev_scroll_throw_handler:00000000 lv_indev_scroll_throw_handler
+     /tmp/ccbUR8Ph.s:2452   .text.lv_indev_scroll_throw_handler:00000258 $d
+     /tmp/ccbUR8Ph.s:2459   .text.lv_indev_scroll_get_snap_dist:00000000 $t
+     /tmp/ccbUR8Ph.s:2465   .text.lv_indev_scroll_get_snap_dist:00000000 lv_indev_scroll_get_snap_dist
+     /tmp/ccbUR8Ph.s:2510   .text.lv_indev_find_scroll_obj:00000000 $t
+     /tmp/ccbUR8Ph.s:2516   .text.lv_indev_find_scroll_obj:00000000 lv_indev_find_scroll_obj
+     /tmp/ccbUR8Ph.s:3354   .text.lv_indev_scroll_handler:00000000 $t
+     /tmp/ccbUR8Ph.s:3360   .text.lv_indev_scroll_handler:00000000 lv_indev_scroll_handler
 
 UNDEFINED SYMBOLS
 lv_obj_get_scroll_snap_y

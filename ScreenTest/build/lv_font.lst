@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccu5p2pu.s 			page 1
+ARM GAS  /tmp/ccHcPRWm.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccu5p2pu.s 			page 1
   27:Drivers/lvgl/src/font/../misc/lv_text_private.h **** /**********************
   28:Drivers/lvgl/src/font/../misc/lv_text_private.h ****  * GLOBAL PROTOTYPES
   29:Drivers/lvgl/src/font/../misc/lv_text_private.h ****  **********************/
-ARM GAS  /tmp/ccu5p2pu.s 			page 2
+ARM GAS  /tmp/ccHcPRWm.s 			page 2
 
 
   30:Drivers/lvgl/src/font/../misc/lv_text_private.h **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccu5p2pu.s 			page 1
   84:Drivers/lvgl/src/font/../misc/lv_text_private.h **** 
   85:Drivers/lvgl/src/font/../misc/lv_text_private.h **** /**
   86:Drivers/lvgl/src/font/../misc/lv_text_private.h ****  * Test if char is break char or not (a text can broken here or not)
-ARM GAS  /tmp/ccu5p2pu.s 			page 3
+ARM GAS  /tmp/ccHcPRWm.s 			page 3
 
 
   87:Drivers/lvgl/src/font/../misc/lv_text_private.h ****  * @param letter a letter
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccu5p2pu.s 			page 1
  141:Drivers/lvgl/src/font/../misc/lv_text_private.h ****     /*Hiragana and Katakana*/
  142:Drivers/lvgl/src/font/../misc/lv_text_private.h ****     if(letter >= 0x3040 && letter <= 0x30FF) {
  143:Drivers/lvgl/src/font/../misc/lv_text_private.h ****         return true;
-ARM GAS  /tmp/ccu5p2pu.s 			page 4
+ARM GAS  /tmp/ccHcPRWm.s 			page 4
 
 
  144:Drivers/lvgl/src/font/../misc/lv_text_private.h ****     }
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccu5p2pu.s 			page 1
   51 0014 B0F58B5F 		cmp	r0, #4448
   52 0018 1FD0     		beq	.L6
  177:Drivers/lvgl/src/font/../misc/lv_text_private.h **** 
-ARM GAS  /tmp/ccu5p2pu.s 			page 5
+ARM GAS  /tmp/ccHcPRWm.s 			page 5
 
 
  178:Drivers/lvgl/src/font/../misc/lv_text_private.h ****     /*See https://www.compart.com/en/unicode/block/U+1800*/
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccu5p2pu.s 			page 1
   93              	.LVL1:
   94              		.loc 2 191 12 view .LVU26
   95 004c 7047     		bx	lr
-ARM GAS  /tmp/ccu5p2pu.s 			page 6
+ARM GAS  /tmp/ccHcPRWm.s 			page 6
 
 
   96              	.LVL2:
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccu5p2pu.s 			page 1
  138              	.LVL14:
  139              	.L9:
  183:Drivers/lvgl/src/font/../misc/lv_text_private.h ****     if(letter >= 0x205F && letter <= 0x206F) return true;
-ARM GAS  /tmp/ccu5p2pu.s 			page 7
+ARM GAS  /tmp/ccHcPRWm.s 			page 7
 
 
  140              		.loc 2 183 53 discriminator 1 view .LVU39
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccu5p2pu.s 			page 1
    4:Drivers/lvgl/src/font/lv_font.c ****  */
    5:Drivers/lvgl/src/font/lv_font.c **** 
    6:Drivers/lvgl/src/font/lv_font.c **** /*********************
-ARM GAS  /tmp/ccu5p2pu.s 			page 8
+ARM GAS  /tmp/ccHcPRWm.s 			page 8
 
 
    7:Drivers/lvgl/src/font/lv_font.c ****  *      INCLUDES
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccu5p2pu.s 			page 1
   51:Drivers/lvgl/src/font/lv_font.c ****     const lv_font_t * font_p = g_dsc->resolved_font;
  196              		.loc 1 51 5 is_stmt 1 view .LVU49
  197              		.loc 1 51 23 is_stmt 0 view .LVU50
-ARM GAS  /tmp/ccu5p2pu.s 			page 9
+ARM GAS  /tmp/ccHcPRWm.s 			page 9
 
 
  198 0002 0368     		ldr	r3, [r0]
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccu5p2pu.s 			page 1
   57:Drivers/lvgl/src/font/lv_font.c ****     LV_ASSERT_NULL(g_dsc);
  242              		.loc 1 57 1 is_stmt 0 view .LVU67
  243 0002 08B5     		push	{r3, lr}
-ARM GAS  /tmp/ccu5p2pu.s 			page 10
+ARM GAS  /tmp/ccHcPRWm.s 			page 10
 
 
  244              	.LCFI1:
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccu5p2pu.s 			page 1
  283              		.loc 1 58 5 discriminator 1 view .LVU85
  284 0016 FEE7     		b	.L21
  285              		.cfi_endproc
-ARM GAS  /tmp/ccu5p2pu.s 			page 11
+ARM GAS  /tmp/ccHcPRWm.s 			page 11
 
 
  286              	.LFE8:
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccu5p2pu.s 			page 1
   80:Drivers/lvgl/src/font/lv_font.c **** 
   81:Drivers/lvgl/src/font/lv_font.c ****     const lv_font_t * f = font_p;
  330              		.loc 1 81 5 view .LVU97
-ARM GAS  /tmp/ccu5p2pu.s 			page 12
+ARM GAS  /tmp/ccHcPRWm.s 			page 12
 
 
   82:Drivers/lvgl/src/font/lv_font.c **** 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccu5p2pu.s 			page 1
   49:Drivers/lvgl/src/font/../draw/../misc/../stdlib/lv_string.h **** 
   50:Drivers/lvgl/src/font/../draw/../misc/../stdlib/lv_string.h **** /**
   51:Drivers/lvgl/src/font/../draw/../misc/../stdlib/lv_string.h ****  * @brief Move a block of memory from source to destination
-ARM GAS  /tmp/ccu5p2pu.s 			page 13
+ARM GAS  /tmp/ccHcPRWm.s 			page 13
 
 
   52:Drivers/lvgl/src/font/../draw/../misc/../stdlib/lv_string.h ****  * @param dst Pointer to the destination array where the content is to be copied.
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccu5p2pu.s 			page 1
  360 0020 06E0     		b	.L30
  361              	.LVL37:
  362              	.L27:
-ARM GAS  /tmp/ccu5p2pu.s 			page 14
+ARM GAS  /tmp/ccHcPRWm.s 			page 14
 
 
  363              	.LCFI4:
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccu5p2pu.s 			page 1
  406              	.L45:
   87:Drivers/lvgl/src/font/lv_font.c ****         if(found) {
   88:Drivers/lvgl/src/font/lv_font.c ****             if(!dsc_out->is_placeholder) {
-ARM GAS  /tmp/ccu5p2pu.s 			page 15
+ARM GAS  /tmp/ccHcPRWm.s 			page 15
 
 
   89:Drivers/lvgl/src/font/lv_font.c ****                 dsc_out->resolved_font = f;
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccu5p2pu.s 			page 1
   87:Drivers/lvgl/src/font/lv_font.c ****             if(!dsc_out->is_placeholder) {
  443              		.loc 1 87 11 is_stmt 0 view .LVU136
  444 0046 0346     		mov	r3, r0
-ARM GAS  /tmp/ccu5p2pu.s 			page 16
+ARM GAS  /tmp/ccHcPRWm.s 			page 16
 
 
  445 0048 0028     		cmp	r0, #0
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccu5p2pu.s 			page 1
  103:Drivers/lvgl/src/font/lv_font.c ****         placeholder_font->get_glyph_dsc(placeholder_font, dsc_out, letter,
  483              		.loc 1 103 9 discriminator 4 view .LVU152
  484 0076 4346     		mov	r3, r8
-ARM GAS  /tmp/ccu5p2pu.s 			page 17
+ARM GAS  /tmp/ccHcPRWm.s 			page 17
 
 
  485 0078 3A46     		mov	r2, r7
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccu5p2pu.s 			page 1
  512              		.loc 1 112 5 is_stmt 1 view .LVU162
  112:Drivers/lvgl/src/font/lv_font.c **** #else
  513              		.loc 1 112 37 is_stmt 0 view .LVU163
-ARM GAS  /tmp/ccu5p2pu.s 			page 18
+ARM GAS  /tmp/ccHcPRWm.s 			page 18
 
 
  514 009a 0233     		adds	r3, r3, #2
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccu5p2pu.s 			page 1
  552              		.align	1
  553              		.global	lv_font_get_glyph_width
  554              		.syntax unified
-ARM GAS  /tmp/ccu5p2pu.s 			page 19
+ARM GAS  /tmp/ccHcPRWm.s 			page 19
 
 
  555              		.thumb
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccu5p2pu.s 			page 1
  597              		.loc 1 138 1 view .LVU193
  598 0016 08B0     		add	sp, sp, #32
  599              	.LCFI8:
-ARM GAS  /tmp/ccu5p2pu.s 			page 20
+ARM GAS  /tmp/ccHcPRWm.s 			page 20
 
 
  600              		.cfi_def_cfa_offset 16
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccu5p2pu.s 			page 1
  648              	.LFB11:
  139:Drivers/lvgl/src/font/lv_font.c **** 
  140:Drivers/lvgl/src/font/lv_font.c **** void lv_font_set_kerning(lv_font_t * font, lv_font_kerning_t kerning)
-ARM GAS  /tmp/ccu5p2pu.s 			page 21
+ARM GAS  /tmp/ccHcPRWm.s 			page 21
 
 
  141:Drivers/lvgl/src/font/lv_font.c **** {
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccu5p2pu.s 			page 1
  149:Drivers/lvgl/src/font/lv_font.c **** }
  692              		.loc 1 149 1 is_stmt 0 view .LVU217
  693 0000 C068     		ldr	r0, [r0, #12]
-ARM GAS  /tmp/ccu5p2pu.s 			page 22
+ARM GAS  /tmp/ccHcPRWm.s 			page 22
 
 
  694              	.LVL57:
@@ -1304,29 +1304,29 @@ ARM GAS  /tmp/ccu5p2pu.s 			page 1
  731              		.file 8 "Drivers/lvgl/src/font/lv_font.h"
  732              		.file 9 "Drivers/lvgl/src/font/../draw/lv_draw_buf.h"
  733              		.file 10 "Drivers/lvgl/src/font/../draw/lv_image_dsc.h"
-ARM GAS  /tmp/ccu5p2pu.s 			page 23
+ARM GAS  /tmp/ccHcPRWm.s 			page 23
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_font.c
-     /tmp/ccu5p2pu.s:21     .text.lv_text_is_marker:00000000 $t
-     /tmp/ccu5p2pu.s:26     .text.lv_text_is_marker:00000000 lv_text_is_marker
-     /tmp/ccu5p2pu.s:169    .text.lv_text_is_marker:00000078 $d
-     /tmp/ccu5p2pu.s:177    .text.lv_font_get_glyph_bitmap:00000000 $t
-     /tmp/ccu5p2pu.s:183    .text.lv_font_get_glyph_bitmap:00000000 lv_font_get_glyph_bitmap
-     /tmp/ccu5p2pu.s:226    .text.lv_font_glyph_release_draw_data:00000000 $t
-     /tmp/ccu5p2pu.s:232    .text.lv_font_glyph_release_draw_data:00000000 lv_font_glyph_release_draw_data
-     /tmp/ccu5p2pu.s:289    .text.lv_font_get_glyph_dsc:00000000 $t
-     /tmp/ccu5p2pu.s:295    .text.lv_font_get_glyph_dsc:00000000 lv_font_get_glyph_dsc
-     /tmp/ccu5p2pu.s:552    .text.lv_font_get_glyph_width:00000000 $t
-     /tmp/ccu5p2pu.s:558    .text.lv_font_get_glyph_width:00000000 lv_font_get_glyph_width
-     /tmp/ccu5p2pu.s:640    .text.lv_font_set_kerning:00000000 $t
-     /tmp/ccu5p2pu.s:646    .text.lv_font_set_kerning:00000000 lv_font_set_kerning
-     /tmp/ccu5p2pu.s:677    .text.lv_font_get_line_height:00000000 $t
-     /tmp/ccu5p2pu.s:683    .text.lv_font_get_line_height:00000000 lv_font_get_line_height
-     /tmp/ccu5p2pu.s:701    .text.lv_font_get_default:00000000 $t
-     /tmp/ccu5p2pu.s:707    .text.lv_font_get_default:00000000 lv_font_get_default
-     /tmp/ccu5p2pu.s:721    .text.lv_font_get_default:00000004 $d
+     /tmp/ccHcPRWm.s:21     .text.lv_text_is_marker:00000000 $t
+     /tmp/ccHcPRWm.s:26     .text.lv_text_is_marker:00000000 lv_text_is_marker
+     /tmp/ccHcPRWm.s:169    .text.lv_text_is_marker:00000078 $d
+     /tmp/ccHcPRWm.s:177    .text.lv_font_get_glyph_bitmap:00000000 $t
+     /tmp/ccHcPRWm.s:183    .text.lv_font_get_glyph_bitmap:00000000 lv_font_get_glyph_bitmap
+     /tmp/ccHcPRWm.s:226    .text.lv_font_glyph_release_draw_data:00000000 $t
+     /tmp/ccHcPRWm.s:232    .text.lv_font_glyph_release_draw_data:00000000 lv_font_glyph_release_draw_data
+     /tmp/ccHcPRWm.s:289    .text.lv_font_get_glyph_dsc:00000000 $t
+     /tmp/ccHcPRWm.s:295    .text.lv_font_get_glyph_dsc:00000000 lv_font_get_glyph_dsc
+     /tmp/ccHcPRWm.s:552    .text.lv_font_get_glyph_width:00000000 $t
+     /tmp/ccHcPRWm.s:558    .text.lv_font_get_glyph_width:00000000 lv_font_get_glyph_width
+     /tmp/ccHcPRWm.s:640    .text.lv_font_set_kerning:00000000 $t
+     /tmp/ccHcPRWm.s:646    .text.lv_font_set_kerning:00000000 lv_font_set_kerning
+     /tmp/ccHcPRWm.s:677    .text.lv_font_get_line_height:00000000 $t
+     /tmp/ccHcPRWm.s:683    .text.lv_font_get_line_height:00000000 lv_font_get_line_height
+     /tmp/ccHcPRWm.s:701    .text.lv_font_get_default:00000000 $t
+     /tmp/ccHcPRWm.s:707    .text.lv_font_get_default:00000000 lv_font_get_default
+     /tmp/ccHcPRWm.s:721    .text.lv_font_get_default:00000004 $d
 
 UNDEFINED SYMBOLS
 lv_memset

@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc9zRcx4.s 			page 1
+ARM GAS  /tmp/cc81hcSl.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
   28:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     #include "arm2d/lv_draw_sw_helium.h"
   29:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c **** #elif LV_USE_DRAW_SW_ASM == LV_DRAW_SW_ASM_CUSTOM
   30:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     #include LV_DRAW_SW_ASM_CUSTOM_INCLUDE
-ARM GAS  /tmp/cc9zRcx4.s 			page 2
+ARM GAS  /tmp/cc81hcSl.s 			page 2
 
 
   31:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c **** #endif
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
   85:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c **** /**********************
   86:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****  *  STATIC VARIABLES
   87:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****  **********************/
-ARM GAS  /tmp/cc9zRcx4.s 			page 3
+ARM GAS  /tmp/cc81hcSl.s 			page 3
 
 
   88:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c **** #define _draw_info LV_GLOBAL_DEFAULT()->draw_info
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  142:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c **** 
  143:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     lv_draw_border_dsc_t border_dsc;
  144:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     lv_draw_border_dsc_init(&border_dsc);
-ARM GAS  /tmp/cc9zRcx4.s 			page 4
+ARM GAS  /tmp/cc81hcSl.s 			page 4
 
 
  145:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     border_dsc.color = fill_dsc.color;
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  199:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     }
  200:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c **** }
  201:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c **** 
-ARM GAS  /tmp/cc9zRcx4.s 			page 5
+ARM GAS  /tmp/cc81hcSl.s 			page 5
 
 
  202:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c **** /**********************
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  256:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         blend_dsc.mask_res = LV_DRAW_SW_MASK_RES_CHANGED;
  257:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         blend_dsc.src_color_format = LV_COLOR_FORMAT_RGB565;
  258:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         lv_draw_sw_blend(t, &blend_dsc);
-ARM GAS  /tmp/cc9zRcx4.s 			page 6
+ARM GAS  /tmp/cc81hcSl.s 			page 6
 
 
  259:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     }
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  313:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     blend_dsc.blend_mode = draw_dsc->blend_mode;
  314:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     blend_dsc.src_stride = img_stride;
  315:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     blend_dsc.src_area = img_coords;
-ARM GAS  /tmp/cc9zRcx4.s 			page 7
+ARM GAS  /tmp/cc81hcSl.s 			page 7
 
 
  316:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     blend_dsc.src_buf = decoded->data;
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  370:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         blend_area.y2 ++;
  371:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     }
  372:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     lv_free(mask_buf);
-ARM GAS  /tmp/cc9zRcx4.s 			page 8
+ARM GAS  /tmp/cc81hcSl.s 			page 8
 
 
  373:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c **** 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  427:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         blend_area.y2 = blend_area.y1 + buf_h - 1;
  428:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         if(blend_area.y2 > y_last) {
  429:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****             blend_area.y2 = y_last;
-ARM GAS  /tmp/cc9zRcx4.s 			page 9
+ARM GAS  /tmp/cc81hcSl.s 			page 9
 
 
  430:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         }
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  484:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     LV_ASSERT_MALLOC(transformed_buf);
  485:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c **** 
  486:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     blend_dsc.src_buf = transformed_buf;
-ARM GAS  /tmp/cc9zRcx4.s 			page 10
+ARM GAS  /tmp/cc81hcSl.s 			page 10
 
 
  487:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     blend_dsc.src_color_format = cf_final;
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  541:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c **** 
  542:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     lv_free(transformed_buf);
  543:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c **** }
-ARM GAS  /tmp/cc9zRcx4.s 			page 11
+ARM GAS  /tmp/cc81hcSl.s 			page 11
 
 
  544:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c **** 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  598:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****             src_buf += src_stride * relative_area.y1 + relative_area.x1 * px_size;
  599:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****             if(mix >= LV_OPA_MAX) {
  600:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****                 int32_t y;
-ARM GAS  /tmp/cc9zRcx4.s 			page 12
+ARM GAS  /tmp/cc81hcSl.s 			page 12
 
 
  601:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****                 for(y = 0; y < h; y++) {
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  655:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****                         uint8_t g = (src_buf[1] * reciprocal) >> 8;
  656:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****                         uint8_t b = (src_buf[0] * reciprocal) >> 8;
  657:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c **** 
-ARM GAS  /tmp/cc9zRcx4.s 			page 13
+ARM GAS  /tmp/cc81hcSl.s 			page 13
 
 
  658:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****                         /* Step 2: Apply recoloring */
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
   52 0008 C669     		ldr	r6, [r0, #28]
   53              	.LVL1:
  689:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     lv_draw_buf_t * image_draw_buf = layer_to_draw->draw_buf;
-ARM GAS  /tmp/cc9zRcx4.s 			page 14
+ARM GAS  /tmp/cc81hcSl.s 			page 14
 
 
   54              		.loc 1 689 5 is_stmt 1 view .LVU4
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  708:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c **** 
  709:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     const lv_draw_buf_t * mask_draw_buf = mask_decoder_dsc.decoded;
   90              		.loc 1 709 5 is_stmt 1 view .LVU19
-ARM GAS  /tmp/cc9zRcx4.s 			page 15
+ARM GAS  /tmp/cc81hcSl.s 			page 15
 
 
   91              	.LVL5:
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  136 0078 0FCB     		ldm	r3, {r0, r1, r2, r3}
  137 007a 85E80F00 		stm	r5, {r0, r1, r2, r3}
  719:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         layer_to_draw->buf_area; /*The image can be smaller if only a part was rendered. Use this a
-ARM GAS  /tmp/cc9zRcx4.s 			page 16
+ARM GAS  /tmp/cc81hcSl.s 			page 16
 
 
  720:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c **** 
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  734:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     lv_draw_buf_clear(layer_to_draw->draw_buf, &side_area);
  178              		.loc 1 734 5 is_stmt 1 view .LVU53
  179 00b6 2146     		mov	r1, r4
-ARM GAS  /tmp/cc9zRcx4.s 			page 17
+ARM GAS  /tmp/cc81hcSl.s 			page 17
 
 
  180 00b8 3068     		ldr	r0, [r6]
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  224 00e8 0593     		str	r3, [sp, #20]
  745:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     lv_draw_buf_clear(layer_to_draw->draw_buf, &side_area);
  225              		.loc 1 745 5 is_stmt 1 view .LVU76
-ARM GAS  /tmp/cc9zRcx4.s 			page 18
+ARM GAS  /tmp/cc81hcSl.s 			page 18
 
 
  226 00ea 2146     		mov	r1, r4
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  269              		.loc 1 756 28 is_stmt 0 view .LVU92
  270 0120 089A     		ldr	r2, [sp, #32]
  271 0122 109B     		ldr	r3, [sp, #64]
-ARM GAS  /tmp/cc9zRcx4.s 			page 19
+ARM GAS  /tmp/cc81hcSl.s 			page 19
 
 
  272 0124 D21A     		subs	r2, r2, r3
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  315              	.L2:
  697:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         return true;
  316              		.loc 1 697 9 is_stmt 1 view .LVU107
-ARM GAS  /tmp/cc9zRcx4.s 			page 20
+ARM GAS  /tmp/cc81hcSl.s 			page 20
 
 
  697:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         return true;
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  348              	.LVL34:
  349              	.L14:
  725:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         return false;
-ARM GAS  /tmp/cc9zRcx4.s 			page 21
+ARM GAS  /tmp/cc81hcSl.s 			page 21
 
 
  350              		.loc 1 725 9 is_stmt 1 view .LVU120
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  390              	.LBE25:
  764:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         int32_t x;
  391              		.loc 1 764 24 is_stmt 1 discriminator 2 view .LVU135
-ARM GAS  /tmp/cc9zRcx4.s 			page 22
+ARM GAS  /tmp/cc81hcSl.s 			page 22
 
 
  392 018a 0CF1010C 		add	ip, ip, #1
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  440              		.cfi_offset 11, -8
  441              		.cfi_offset 14, -4
  442 0004 8BB0     		sub	sp, sp, #44
-ARM GAS  /tmp/cc9zRcx4.s 			page 23
+ARM GAS  /tmp/cc81hcSl.s 			page 23
 
 
  443              	.LCFI5:
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  485 0048 DFE813F0 		tbh	[pc, r3, lsl #1]
  486              	.L19:
  487 004c 7300     		.2byte	(.L21-.L19)/2
-ARM GAS  /tmp/cc9zRcx4.s 			page 24
+ARM GAS  /tmp/cc81hcSl.s 			page 24
 
 
  488 004e 7300     		.2byte	(.L21-.L19)/2
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  563:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****             if(mix >= LV_OPA_MAX) {
  530              		.loc 1 563 32 view .LVU168
  531 0082 FFF7FEFF 		bl	lv_color_to_u16
-ARM GAS  /tmp/cc9zRcx4.s 			page 25
+ARM GAS  /tmp/cc81hcSl.s 			page 25
 
 
  532              	.LVL54:
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  568 00ba 4FF00009 		mov	r9, #0
  569              	.LVL57:
  582:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****                     int32_t x;
-ARM GAS  /tmp/cc9zRcx4.s 			page 26
+ARM GAS  /tmp/cc81hcSl.s 			page 26
 
 
  570              		.loc 1 582 17 view .LVU187
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  566:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****                     int32_t x;
  612              		.loc 1 566 23 view .LVU200
  613 00dc 0022     		movs	r2, #0
-ARM GAS  /tmp/cc9zRcx4.s 			page 27
+ARM GAS  /tmp/cc81hcSl.s 			page 27
 
 
  614 00de F8E7     		b	.L23
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  652              		.loc 1 588 25 is_stmt 1 view .LVU216
  584:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****                         *buf16_dest = (((c_mult[2] + ((buf16_src[x] >> 11) & 0x1F) * mix_inv) << 3)
  653              		.loc 1 584 40 discriminator 3 view .LVU217
-ARM GAS  /tmp/cc9zRcx4.s 			page 28
+ARM GAS  /tmp/cc81hcSl.s 			page 28
 
 
  654 011a 0131     		adds	r1, r1, #1
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  694 0138 029B     		ldr	r3, [sp, #8]
  598:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****             if(mix >= LV_OPA_MAX) {
  695              		.loc 1 598 73 view .LVU232
-ARM GAS  /tmp/cc9zRcx4.s 			page 29
+ARM GAS  /tmp/cc81hcSl.s 			page 29
 
 
  696 013a 00FB03F3 		mul	r3, r0, r3
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  732              		.loc 1 619 17 is_stmt 1 view .LVU250
  620:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****                     int32_t x;
  733              		.loc 1 620 17 view .LVU251
-ARM GAS  /tmp/cc9zRcx4.s 			page 30
+ARM GAS  /tmp/cc81hcSl.s 			page 30
 
 
  734              	.LVL73:
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  605:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****                         dest_buf[2] = color.red;
  773              		.loc 1 605 25 is_stmt 1 view .LVU267
  605:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****                         dest_buf[2] = color.red;
-ARM GAS  /tmp/cc9zRcx4.s 			page 31
+ARM GAS  /tmp/cc81hcSl.s 			page 31
 
 
  774              		.loc 1 605 44 is_stmt 0 view .LVU268
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  813              		.loc 1 601 23 view .LVU283
  814 01b8 0025     		movs	r5, #0
  815              	.LVL83:
-ARM GAS  /tmp/cc9zRcx4.s 			page 32
+ARM GAS  /tmp/cc81hcSl.s 			page 32
 
 
  601:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****                     int32_t x;
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  854              		.loc 1 624 25 is_stmt 1 view .LVU299
  624:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****                         dest_buf[2] = (c_mult[2] + (src_buf[2] * mix_inv)) >> 8;
  855              		.loc 1 624 60 is_stmt 0 view .LVU300
-ARM GAS  /tmp/cc9zRcx4.s 			page 33
+ARM GAS  /tmp/cc81hcSl.s 			page 33
 
 
  856 01d8 5A78     		ldrb	r2, [r3, #1]	@ zero_extendqisi2
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  622:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****                         dest_buf[0] = (c_mult[0] + (src_buf[0] * mix_inv)) >> 8;
  894              		.loc 1 622 27 is_stmt 0 view .LVU317
  895 0202 0021     		movs	r1, #0
-ARM GAS  /tmp/cc9zRcx4.s 			page 34
+ARM GAS  /tmp/cc81hcSl.s 			page 34
 
 
  896 0204 E1E7     		b	.L38
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  642:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****             c_mult[2] = color.red * mix;
  935              		.loc 1 642 13 is_stmt 1 view .LVU333
  642:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****             c_mult[2] = color.red * mix;
-ARM GAS  /tmp/cc9zRcx4.s 			page 35
+ARM GAS  /tmp/cc81hcSl.s 			page 35
 
 
  936              		.loc 1 642 30 is_stmt 0 view .LVU334
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  672:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****                     }
  974              		.loc 1 672 25 is_stmt 1 view .LVU351
  672:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****                     }
-ARM GAS  /tmp/cc9zRcx4.s 			page 36
+ARM GAS  /tmp/cc81hcSl.s 			page 36
 
 
  975              		.loc 1 672 37 is_stmt 0 view .LVU352
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  1013 026e 9A78     		ldrb	r2, [r3, #2]	@ zero_extendqisi2
  1014 0270 4FF47F4E 		mov	lr, #65280
  1015 0274 9EFBF7FE 		sdiv	lr, lr, r7
-ARM GAS  /tmp/cc9zRcx4.s 			page 37
+ARM GAS  /tmp/cc81hcSl.s 			page 37
 
 
  1016              	.LVL103:
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  1053              		.loc 1 664 25 is_stmt 1 view .LVU385
  664:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****                         dest_buf[1] = (g * alpha) >> 8;
  1054              		.loc 1 664 42 is_stmt 0 view .LVU386
-ARM GAS  /tmp/cc9zRcx4.s 			page 38
+ARM GAS  /tmp/cc81hcSl.s 			page 38
 
 
  1055 02a0 C0F30720 		ubfx	r0, r0, #8, #8
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  680:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****             }
  1093              		.loc 1 680 39 is_stmt 0 view .LVU403
  1094 02ca 169A     		ldr	r2, [sp, #88]
-ARM GAS  /tmp/cc9zRcx4.s 			page 39
+ARM GAS  /tmp/cc81hcSl.s 			page 39
 
 
  1095 02cc 08FB1622 		mls	r2, r8, r6, r2
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  378:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     lv_area_t blend_area = *clipped_img_area;
  1143              		.loc 1 378 1 is_stmt 1 view -0
  1144              		.cfi_startproc
-ARM GAS  /tmp/cc9zRcx4.s 			page 40
+ARM GAS  /tmp/cc81hcSl.s 			page 40
 
 
  1145              		@ args = 4, pretend = 0, frame = 96
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  384:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     int32_t src_h = lv_area_get_height(img_coords);
  1189              		.loc 1 384 5 is_stmt 1 view .LVU423
  384:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     int32_t src_h = lv_area_get_height(img_coords);
-ARM GAS  /tmp/cc9zRcx4.s 			page 41
+ARM GAS  /tmp/cc81hcSl.s 			page 41
 
 
  1190              		.loc 1 384 24 is_stmt 0 view .LVU424
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  391:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         buf_stride = 1;
  1230              		.loc 1 391 5 is_stmt 1 view .LVU439
  391:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         buf_stride = 1;
-ARM GAS  /tmp/cc9zRcx4.s 			page 42
+ARM GAS  /tmp/cc81hcSl.s 			page 42
 
 
  1231              		.loc 1 391 7 is_stmt 0 view .LVU440
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  1271              		.loc 1 396 15 is_stmt 0 view .LVU454
  1272 0076 08FB07F0 		mul	r0, r8, r7
  1273 007a FFF7FEFF 		bl	lv_malloc
-ARM GAS  /tmp/cc9zRcx4.s 			page 43
+ARM GAS  /tmp/cc81hcSl.s 			page 43
 
 
  1274              	.LVL149:
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
   45:Drivers/lvgl/src/draw/sw/blend/../../../misc/../stdlib/lv_string.h ****  *          the block of memory using the unsigned char conversion of this value.
   46:Drivers/lvgl/src/draw/sw/blend/../../../misc/../stdlib/lv_string.h ****  * @param len Number of bytes to be set to the value.
   47:Drivers/lvgl/src/draw/sw/blend/../../../misc/../stdlib/lv_string.h ****  */
-ARM GAS  /tmp/cc9zRcx4.s 			page 44
+ARM GAS  /tmp/cc81hcSl.s 			page 44
 
 
   48:Drivers/lvgl/src/draw/sw/blend/../../../misc/../stdlib/lv_string.h **** void lv_memset(void * dst, uint8_t v, size_t len);
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  1303 0096 C3F30303 		ubfx	r3, r3, #0, #4
  401:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     blend_dsc.src_stride = blend_w * px_size;
  1304              		.loc 1 401 26 view .LVU466
-ARM GAS  /tmp/cc9zRcx4.s 			page 45
+ARM GAS  /tmp/cc81hcSl.s 			page 45
 
 
  1305 009a 8DF86430 		strb	r3, [sp, #100]
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  1340 00bc 1D93     		str	r3, [sp, #116]
  417:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         lv_area_t relative_area;
  1341              		.loc 1 417 5 is_stmt 1 view .LVU486
-ARM GAS  /tmp/cc9zRcx4.s 			page 46
+ARM GAS  /tmp/cc81hcSl.s 			page 46
 
 
  1342              	.L67:
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
   36:Drivers/lvgl/src/draw/sw/../../misc/lv_area.h **** typedef struct {
   37:Drivers/lvgl/src/draw/sw/../../misc/lv_area.h ****     lv_value_precise_t x;
   38:Drivers/lvgl/src/draw/sw/../../misc/lv_area.h ****     lv_value_precise_t y;
-ARM GAS  /tmp/cc9zRcx4.s 			page 47
+ARM GAS  /tmp/cc81hcSl.s 			page 47
 
 
   39:Drivers/lvgl/src/draw/sw/../../misc/lv_area.h **** } lv_point_precise_t;
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
   93:Drivers/lvgl/src/draw/sw/../../misc/lv_area.h ****  * Initialize an area
   94:Drivers/lvgl/src/draw/sw/../../misc/lv_area.h ****  * @param area_p pointer to an area
   95:Drivers/lvgl/src/draw/sw/../../misc/lv_area.h ****  * @param x1 left coordinate of the area
-ARM GAS  /tmp/cc9zRcx4.s 			page 48
+ARM GAS  /tmp/cc81hcSl.s 			page 48
 
 
   96:Drivers/lvgl/src/draw/sw/../../misc/lv_area.h ****  * @param y1 top coordinate of the area
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  1389 00dc 2046     		mov	r0, r4
  1390 00de FFF7FEFF 		bl	lv_area_move
  1391              	.LVL156:
-ARM GAS  /tmp/cc9zRcx4.s 			page 49
+ARM GAS  /tmp/cc81hcSl.s 			page 49
 
 
  421:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c **** 
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  1430 011a 1D95     		str	r5, [sp, #116]
  1431 011c CFE7     		b	.L67
  1432              	.LVL159:
-ARM GAS  /tmp/cc9zRcx4.s 			page 50
+ARM GAS  /tmp/cc81hcSl.s 			page 50
 
 
  1433              	.L70:
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  1470              		.loc 1 433 5 is_stmt 1 view .LVU541
  1471 0146 4046     		mov	r0, r8
  1472 0148 FFF7FEFF 		bl	lv_free
-ARM GAS  /tmp/cc9zRcx4.s 			page 51
+ARM GAS  /tmp/cc81hcSl.s 			page 51
 
 
  1473              	.LVL163:
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  302:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     lv_color_format_t cf = decoded->header.cf;
  1522              		.loc 1 302 42 is_stmt 0 view .LVU549
  1523 0012 BAF808B0 		ldrh	fp, [r10, #8]
-ARM GAS  /tmp/cc9zRcx4.s 			page 52
+ARM GAS  /tmp/cc81hcSl.s 			page 52
 
 
  1524              	.LVL166:
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  1565              		.loc 1 313 5 is_stmt 1 view .LVU567
  313:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     blend_dsc.src_stride = img_stride;
  1566              		.loc 1 313 36 is_stmt 0 view .LVU568
-ARM GAS  /tmp/cc9zRcx4.s 			page 53
+ARM GAS  /tmp/cc81hcSl.s 			page 53
 
 
  1567 0034 92F85130 		ldrb	r3, [r2, #81]	@ zero_extendqisi2
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  324:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     uint8_t * mask_buf = lv_malloc(blend_w);
  1602              		.loc 1 324 23 is_stmt 0 view .LVU588
  1603 0066 4846     		mov	r0, r9
-ARM GAS  /tmp/cc9zRcx4.s 			page 54
+ARM GAS  /tmp/cc81hcSl.s 			page 54
 
 
  1604 0068 FFF7FEFF 		bl	lv_area_get_width
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  338:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     masks[0] = &mask_param;
  1643              		.loc 1 338 5 is_stmt 1 view .LVU604
  338:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     masks[0] = &mask_param;
-ARM GAS  /tmp/cc9zRcx4.s 			page 55
+ARM GAS  /tmp/cc81hcSl.s 			page 55
 
 
  1644              		.loc 1 338 12 is_stmt 0 view .LVU605
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  1685              	.LVL185:
  1686              	.L87:
  1687              	.LBB56:
-ARM GAS  /tmp/cc9zRcx4.s 			page 56
+ARM GAS  /tmp/cc81hcSl.s 			page 56
 
 
  344:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****             int32_t y_ofs = blend_area.y1 - img_coords->y1;
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  1726              	.LBE56:
  1727 00f0 24E0     		b	.L79
  1728              	.LVL194:
-ARM GAS  /tmp/cc9zRcx4.s 			page 57
+ARM GAS  /tmp/cc81hcSl.s 			page 57
 
 
  1729              	.L88:
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  369:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         blend_area.y2 ++;
  1769              		.loc 1 369 19 is_stmt 0 view .LVU649
  1770 0118 129B     		ldr	r3, [sp, #72]
-ARM GAS  /tmp/cc9zRcx4.s 			page 58
+ARM GAS  /tmp/cc81hcSl.s 			page 58
 
 
  369:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         blend_area.y2 ++;
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  359:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c **** 
  1811              		.loc 1 359 28 discriminator 1 view .LVU664
  1812 014a 8DF87000 		strb	r0, [sp, #112]
-ARM GAS  /tmp/cc9zRcx4.s 			page 59
+ARM GAS  /tmp/cc81hcSl.s 			page 59
 
 
  361:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****             blend_dsc.mask_res = LV_DRAW_SW_MASK_RES_CHANGED;
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  1860              		.cfi_offset 8, -20
  1861              		.cfi_offset 9, -16
  1862              		.cfi_offset 10, -12
-ARM GAS  /tmp/cc9zRcx4.s 			page 60
+ARM GAS  /tmp/cc81hcSl.s 			page 60
 
 
  1863              		.cfi_offset 11, -8
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  1907              	.LBE59:
  1908              	.LBE58:
  448:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     blend_dsc.blend_mode = draw_dsc->blend_mode;
-ARM GAS  /tmp/cc9zRcx4.s 			page 61
+ARM GAS  /tmp/cc81hcSl.s 			page 61
 
 
  1909              		.loc 1 448 5 is_stmt 1 view .LVU689
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  1947              	.LVL219:
  456:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     int32_t blend_h = lv_area_get_height(&blend_area);
  1948              		.loc 1 456 23 view .LVU706
-ARM GAS  /tmp/cc9zRcx4.s 			page 62
+ARM GAS  /tmp/cc81hcSl.s 			page 62
 
 
  1949 005a FFF7FEFF 		bl	lv_area_get_width
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  465:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     if(cf_final == LV_COLOR_FORMAT_RGB888 || cf_final == LV_COLOR_FORMAT_XRGB8888) cf_final = LV_CO
  1991              		.loc 1 465 5 is_stmt 1 view .LVU719
  466:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     else if(cf_final == LV_COLOR_FORMAT_RGB565) cf_final = LV_COLOR_FORMAT_RGB565A8;
-ARM GAS  /tmp/cc9zRcx4.s 			page 63
+ARM GAS  /tmp/cc81hcSl.s 			page 63
 
 
  1992              		.loc 1 466 5 view .LVU720
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  2038              		.loc 1 480 9 is_stmt 1 view .LVU728
  480:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         if(buf_h > blend_h) buf_h = blend_h;
  2039              		.loc 1 480 17 is_stmt 0 view .LVU729
-ARM GAS  /tmp/cc9zRcx4.s 			page 64
+ARM GAS  /tmp/cc81hcSl.s 			page 64
 
 
  2040 00c6 FFF7FEFF 		bl	lv_refr_get_disp_refreshing
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  2080              		.loc 1 484 5 view .LVU743
  2081 00f6 002C     		cmp	r4, #0
  2082 00f8 40D0     		beq	.L101
-ARM GAS  /tmp/cc9zRcx4.s 			page 65
+ARM GAS  /tmp/cc81hcSl.s 			page 65
 
 
  484:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c **** 
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  2117              		.loc 1 502 10 is_stmt 1 view .LVU763
  502:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         blend_dsc.mask_buf = transformed_buf;
  2118              		.loc 1 502 12 is_stmt 0 view .LVU764
-ARM GAS  /tmp/cc9zRcx4.s 			page 66
+ARM GAS  /tmp/cc81hcSl.s 			page 66
 
 
  2119 011a BBF10E0F 		cmp	fp, #14
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  2157 013e FFF7FEFF 		bl	lv_refr_get_disp_refreshing
  2158              	.LVL247:
  474:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         if(buf_h > blend_h) buf_h = blend_h;
-ARM GAS  /tmp/cc9zRcx4.s 			page 67
+ARM GAS  /tmp/cc81hcSl.s 			page 67
 
 
  2159              		.loc 1 474 17 discriminator 1 view .LVU781
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  2201 0174 A1E7     		b	.L96
  2202              	.L109:
  2203 0176 4FF0150B 		mov	fp, #21
-ARM GAS  /tmp/cc9zRcx4.s 			page 68
+ARM GAS  /tmp/cc81hcSl.s 			page 68
 
 
  2204 017a 9EE7     		b	.L96
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  2240              		.loc 1 500 9 is_stmt 1 view .LVU811
  500:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     }
  2241              		.loc 1 500 36 is_stmt 0 view .LVU812
-ARM GAS  /tmp/cc9zRcx4.s 			page 69
+ARM GAS  /tmp/cc81hcSl.s 			page 69
 
 
  2242 0198 1223     		movs	r3, #18
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  517:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         lv_draw_sw_transform(&relative_area, src_buf, src_w, src_h, img_stride,
  2282              		.loc 1 517 9 is_stmt 1 view .LVU831
  517:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         lv_draw_sw_transform(&relative_area, src_buf, src_w, src_h, img_stride,
-ARM GAS  /tmp/cc9zRcx4.s 			page 70
+ARM GAS  /tmp/cc81hcSl.s 			page 70
 
 
  2283              		.loc 1 517 49 is_stmt 0 view .LVU832
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  533:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         if(blend_area.y2 > y_last) {
  2326              		.loc 1 533 39 is_stmt 0 view .LVU844
  2327 01f2 4344     		add	r3, r3, r8
-ARM GAS  /tmp/cc9zRcx4.s 			page 71
+ARM GAS  /tmp/cc81hcSl.s 			page 71
 
 
  533:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         if(blend_area.y2 > y_last) {
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  2365              		.loc 1 510 40 discriminator 1 view .LVU861
  2366 021e 0D9B     		ldr	r3, [sp, #52]
  2367 0220 03FB00F0 		mul	r0, r3, r0
-ARM GAS  /tmp/cc9zRcx4.s 			page 72
+ARM GAS  /tmp/cc81hcSl.s 			page 72
 
 
  510:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     }
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  2408 023e 4942     		rsbs	r1, r1, #0
  2409 0240 5046     		mov	r0, r10
  2410 0242 FFF7FEFF 		bl	lv_area_move
-ARM GAS  /tmp/cc9zRcx4.s 			page 73
+ARM GAS  /tmp/cc81hcSl.s 			page 73
 
 
  2411              	.LVL272:
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  2460              		.cfi_offset 6, -28
  2461              		.cfi_offset 7, -24
  2462              		.cfi_offset 8, -20
-ARM GAS  /tmp/cc9zRcx4.s 			page 74
+ARM GAS  /tmp/cc81hcSl.s 			page 74
 
 
  2463              		.cfi_offset 9, -16
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  213:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c **** 
  2506              		.loc 1 213 5 is_stmt 1 view .LVU898
  213:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c **** 
-ARM GAS  /tmp/cc9zRcx4.s 			page 75
+ARM GAS  /tmp/cc81hcSl.s 			page 75
 
 
  2507              		.loc 1 213 27 is_stmt 0 view .LVU899
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  2548              		.loc 2 75 5 view .LVU916
  2549 0058 FFF7FEFF 		bl	lv_memset
  2550              	.LVL288:
-ARM GAS  /tmp/cc9zRcx4.s 			page 76
+ARM GAS  /tmp/cc81hcSl.s 			page 76
 
 
  2551              		.loc 2 75 5 view .LVU917
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  2589              	.L121:
  260:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         blend_dsc.src_area = img_coords;
  2590              		.loc 1 260 10 is_stmt 1 view .LVU934
-ARM GAS  /tmp/cc9zRcx4.s 			page 77
+ARM GAS  /tmp/cc81hcSl.s 			page 77
 
 
  260:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         blend_dsc.src_area = img_coords;
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  2629 00c4 219B     		ldr	r3, [sp, #132]
  2630 00c6 0193     		str	r3, [sp, #4]
  2631 00c8 209B     		ldr	r3, [sp, #128]
-ARM GAS  /tmp/cc9zRcx4.s 			page 78
+ARM GAS  /tmp/cc81hcSl.s 			page 78
 
 
  2632 00ca 0093     		str	r3, [sp]
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  233:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         blend_dsc.src_buf = NULL;
  2675              		.loc 1 233 31 is_stmt 0 view .LVU962
  2676 00f8 CDF850A0 		str	r10, [sp, #80]
-ARM GAS  /tmp/cc9zRcx4.s 			page 79
+ARM GAS  /tmp/cc81hcSl.s 			page 79
 
 
  234:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         blend_dsc.color = draw_dsc->recolor;
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  2717              	.LVL297:
  243:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         blend_dsc.src_area = img_coords;
  2718              		.loc 1 243 9 is_stmt 1 view .LVU977
-ARM GAS  /tmp/cc9zRcx4.s 			page 80
+ARM GAS  /tmp/cc81hcSl.s 			page 80
 
 
  243:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         blend_dsc.src_area = img_coords;
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  2754              		.loc 1 254 30 is_stmt 0 view .LVU996
  2755 015a 209B     		ldr	r3, [sp, #128]
  2756 015c 0B93     		str	r3, [sp, #44]
-ARM GAS  /tmp/cc9zRcx4.s 			page 81
+ARM GAS  /tmp/cc81hcSl.s 			page 81
 
 
  255:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         blend_dsc.mask_res = LV_DRAW_SW_MASK_RES_CHANGED;
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  2794 0182 8DF83880 		strb	r8, [sp, #56]
  265:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****     }
  2795              		.loc 1 265 9 is_stmt 1 view .LVU1014
-ARM GAS  /tmp/cc9zRcx4.s 			page 82
+ARM GAS  /tmp/cc81hcSl.s 			page 82
 
 
  2796 0186 0BA9     		add	r1, sp, #44
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  2839 01c2 3246     		mov	r2, r6
  2840 01c4 2146     		mov	r1, r4
  2841 01c6 0398     		ldr	r0, [sp, #12]
-ARM GAS  /tmp/cc9zRcx4.s 			page 83
+ARM GAS  /tmp/cc81hcSl.s 			page 83
 
 
  2842 01c8 FFF7FEFF 		bl	radius_only
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  2889              	.L141:
  2890              		.align	2
  2891              	.L140:
-ARM GAS  /tmp/cc9zRcx4.s 			page 84
+ARM GAS  /tmp/cc81hcSl.s 			page 84
 
 
  2892 001c 00000000 		.word	img_draw_core
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  2938              		.loc 1 106 7 view .LVU1044
  2939 0014 1BB1     		cbz	r3, .L144
  2940              	.LBB75:
-ARM GAS  /tmp/cc9zRcx4.s 			page 85
+ARM GAS  /tmp/cc81hcSl.s 			page 85
 
 
  107:Drivers/lvgl/src/draw/sw/lv_draw_sw_img.c ****         if(!visible) return;
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  2981              		.loc 1 189 1 view .LVU1058
  2982              		.cfi_endproc
  2983              	.LFE186:
-ARM GAS  /tmp/cc9zRcx4.s 			page 86
+ARM GAS  /tmp/cc81hcSl.s 			page 86
 
 
  2985              		.text
@@ -5137,34 +5137,34 @@ ARM GAS  /tmp/cc9zRcx4.s 			page 1
  3018              		.file 35 "Drivers/lvgl/src/draw/sw/../../misc/lv_area_private.h"
  3019              		.file 36 "Drivers/lvgl/src/draw/sw/../../core/lv_refr_private.h"
  3020              		.file 37 "<built-in>"
-ARM GAS  /tmp/cc9zRcx4.s 			page 87
+ARM GAS  /tmp/cc81hcSl.s 			page 87
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_draw_sw_img.c
-     /tmp/cc9zRcx4.s:21     .text.apply_mask:00000000 $t
-     /tmp/cc9zRcx4.s:26     .text.apply_mask:00000000 apply_mask
-     /tmp/cc9zRcx4.s:417    .text.recolor:00000000 $t
-     /tmp/cc9zRcx4.s:422    .text.recolor:00000000 recolor
-     /tmp/cc9zRcx4.s:487    .text.recolor:0000004c $d
-     /tmp/cc9zRcx4.s:499    .text.recolor:00000064 $t
-     /tmp/cc9zRcx4.s:1130   .text.recolor:000002ec $d
-     /tmp/cc9zRcx4.s:1135   .text.recolor_only:00000000 $t
-     /tmp/cc9zRcx4.s:1140   .text.recolor_only:00000000 recolor_only
-     /tmp/cc9zRcx4.s:1485   .text.radius_only:00000000 $t
-     /tmp/cc9zRcx4.s:1490   .text.radius_only:00000000 radius_only
-     /tmp/cc9zRcx4.s:1840   .text.transform_and_recolor:00000000 $t
-     /tmp/cc9zRcx4.s:1845   .text.transform_and_recolor:00000000 transform_and_recolor
-     /tmp/cc9zRcx4.s:1998   .text.transform_and_recolor:000000a2 $d
-     /tmp/cc9zRcx4.s:2442   .text.img_draw_core:00000000 $t
-     /tmp/cc9zRcx4.s:2447   .text.img_draw_core:00000000 img_draw_core
-     /tmp/cc9zRcx4.s:2849   .text.lv_draw_sw_image:00000000 $t
-     /tmp/cc9zRcx4.s:2855   .text.lv_draw_sw_image:00000000 lv_draw_sw_image
-     /tmp/cc9zRcx4.s:2892   .text.lv_draw_sw_image:0000001c $d
-     /tmp/cc9zRcx4.s:2897   .text.lv_draw_sw_layer:00000000 $t
-     /tmp/cc9zRcx4.s:2903   .text.lv_draw_sw_layer:00000000 lv_draw_sw_layer
-     /tmp/cc9zRcx4.s:2013   .text.transform_and_recolor:000000b1 $d
-     /tmp/cc9zRcx4.s:2013   .text.transform_and_recolor:000000b2 $t
+     /tmp/cc81hcSl.s:21     .text.apply_mask:00000000 $t
+     /tmp/cc81hcSl.s:26     .text.apply_mask:00000000 apply_mask
+     /tmp/cc81hcSl.s:417    .text.recolor:00000000 $t
+     /tmp/cc81hcSl.s:422    .text.recolor:00000000 recolor
+     /tmp/cc81hcSl.s:487    .text.recolor:0000004c $d
+     /tmp/cc81hcSl.s:499    .text.recolor:00000064 $t
+     /tmp/cc81hcSl.s:1130   .text.recolor:000002ec $d
+     /tmp/cc81hcSl.s:1135   .text.recolor_only:00000000 $t
+     /tmp/cc81hcSl.s:1140   .text.recolor_only:00000000 recolor_only
+     /tmp/cc81hcSl.s:1485   .text.radius_only:00000000 $t
+     /tmp/cc81hcSl.s:1490   .text.radius_only:00000000 radius_only
+     /tmp/cc81hcSl.s:1840   .text.transform_and_recolor:00000000 $t
+     /tmp/cc81hcSl.s:1845   .text.transform_and_recolor:00000000 transform_and_recolor
+     /tmp/cc81hcSl.s:1998   .text.transform_and_recolor:000000a2 $d
+     /tmp/cc81hcSl.s:2442   .text.img_draw_core:00000000 $t
+     /tmp/cc81hcSl.s:2447   .text.img_draw_core:00000000 img_draw_core
+     /tmp/cc81hcSl.s:2849   .text.lv_draw_sw_image:00000000 $t
+     /tmp/cc81hcSl.s:2855   .text.lv_draw_sw_image:00000000 lv_draw_sw_image
+     /tmp/cc81hcSl.s:2892   .text.lv_draw_sw_image:0000001c $d
+     /tmp/cc81hcSl.s:2897   .text.lv_draw_sw_layer:00000000 $t
+     /tmp/cc81hcSl.s:2903   .text.lv_draw_sw_layer:00000000 lv_draw_sw_layer
+     /tmp/cc81hcSl.s:2013   .text.transform_and_recolor:000000b1 $d
+     /tmp/cc81hcSl.s:2013   .text.transform_and_recolor:000000b2 $t
 
 UNDEFINED SYMBOLS
 lv_image_decoder_open

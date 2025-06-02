@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccPNmdt6.s 			page 1
+ARM GAS  /tmp/ccRdAAjN.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
   27:Drivers/lvgl/src/core/../misc/lv_style.h **** /*********************
   28:Drivers/lvgl/src/core/../misc/lv_style.h ****  *      DEFINES
   29:Drivers/lvgl/src/core/../misc/lv_style.h ****  *********************/
-ARM GAS  /tmp/ccPNmdt6.s 			page 2
+ARM GAS  /tmp/ccRdAAjN.s 			page 2
 
 
   30:Drivers/lvgl/src/core/../misc/lv_style.h **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
   84:Drivers/lvgl/src/core/../misc/lv_style.h ****  **********************/
   85:Drivers/lvgl/src/core/../misc/lv_style.h **** 
   86:Drivers/lvgl/src/core/../misc/lv_style.h **** /**
-ARM GAS  /tmp/ccPNmdt6.s 			page 3
+ARM GAS  /tmp/ccRdAAjN.s 			page 3
 
 
   87:Drivers/lvgl/src/core/../misc/lv_style.h ****  * Possible options for blending opaque drawings
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  141:Drivers/lvgl/src/core/../misc/lv_style.h ****     LV_STYLE_LENGTH                 = 3,
  142:Drivers/lvgl/src/core/../misc/lv_style.h **** 
  143:Drivers/lvgl/src/core/../misc/lv_style.h ****     LV_STYLE_MIN_WIDTH              = 4,
-ARM GAS  /tmp/ccPNmdt6.s 			page 4
+ARM GAS  /tmp/ccRdAAjN.s 			page 4
 
 
  144:Drivers/lvgl/src/core/../misc/lv_style.h ****     LV_STYLE_MAX_WIDTH              = 5,
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  198:Drivers/lvgl/src/core/../misc/lv_style.h ****     LV_STYLE_BORDER_SIDE            = 52,
  199:Drivers/lvgl/src/core/../misc/lv_style.h ****     LV_STYLE_BORDER_POST            = 53,
  200:Drivers/lvgl/src/core/../misc/lv_style.h **** 
-ARM GAS  /tmp/ccPNmdt6.s 			page 5
+ARM GAS  /tmp/ccRdAAjN.s 			page 5
 
 
  201:Drivers/lvgl/src/core/../misc/lv_style.h ****     LV_STYLE_OUTLINE_WIDTH          = 56,
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  255:Drivers/lvgl/src/core/../misc/lv_style.h ****     LV_STYLE_TRANSLATE_X            = 108,
  256:Drivers/lvgl/src/core/../misc/lv_style.h ****     LV_STYLE_TRANSLATE_Y            = 109,
  257:Drivers/lvgl/src/core/../misc/lv_style.h ****     LV_STYLE_TRANSFORM_SCALE_X      = 110,
-ARM GAS  /tmp/ccPNmdt6.s 			page 6
+ARM GAS  /tmp/ccRdAAjN.s 			page 6
 
 
  258:Drivers/lvgl/src/core/../misc/lv_style.h ****     LV_STYLE_TRANSFORM_SCALE_Y      = 111,
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  312:Drivers/lvgl/src/core/../misc/lv_style.h ****  * Descriptor of a constant style property.
  313:Drivers/lvgl/src/core/../misc/lv_style.h ****  */
  314:Drivers/lvgl/src/core/../misc/lv_style.h **** typedef struct {
-ARM GAS  /tmp/ccPNmdt6.s 			page 7
+ARM GAS  /tmp/ccRdAAjN.s 			page 7
 
 
  315:Drivers/lvgl/src/core/../misc/lv_style.h ****     lv_style_prop_t prop;
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  369:Drivers/lvgl/src/core/../misc/lv_style.h ****  * @param style     pointer to a style
  370:Drivers/lvgl/src/core/../misc/lv_style.h ****  * @return          true: the style is constant
  371:Drivers/lvgl/src/core/../misc/lv_style.h ****  */
-ARM GAS  /tmp/ccPNmdt6.s 			page 8
+ARM GAS  /tmp/ccRdAAjN.s 			page 8
 
 
  372:Drivers/lvgl/src/core/../misc/lv_style.h **** static inline bool lv_style_is_const(const lv_style_t * style)
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  426:Drivers/lvgl/src/core/../misc/lv_style.h ****  *         LV_RESULT_OK: the property was fond, and `value` is set accordingly
  427:Drivers/lvgl/src/core/../misc/lv_style.h ****  * @note For performance reasons there are no sanity check on `style`
  428:Drivers/lvgl/src/core/../misc/lv_style.h ****  */
-ARM GAS  /tmp/ccPNmdt6.s 			page 9
+ARM GAS  /tmp/ccRdAAjN.s 			page 9
 
 
  429:Drivers/lvgl/src/core/../misc/lv_style.h **** lv_style_res_t lv_style_get_prop(const lv_style_t * style, lv_style_prop_t prop, lv_style_value_t *
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
   42              	.LBB126:
   43              	.LBI126:
  372:Drivers/lvgl/src/core/../misc/lv_style.h **** {
-ARM GAS  /tmp/ccPNmdt6.s 			page 10
+ARM GAS  /tmp/ccRdAAjN.s 			page 10
 
 
   44              		.loc 2 372 20 view .LVU3
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
   79              		.loc 2 483 42 is_stmt 1 discriminator 2 view .LVU18
   80 0022 0133     		adds	r3, r3, #1
   81              	.LVL5:
-ARM GAS  /tmp/ccPNmdt6.s 			page 11
+ARM GAS  /tmp/ccRdAAjN.s 			page 11
 
 
  483:Drivers/lvgl/src/core/../misc/lv_style.h ****         for(i = 0; i < style->prop_cnt; i++) {
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  119              		.loc 2 473 57 is_stmt 0 discriminator 2 view .LVU35
  120 003a F6E7     		b	.L4
  121              	.LVL10:
-ARM GAS  /tmp/ccPNmdt6.s 			page 12
+ARM GAS  /tmp/ccRdAAjN.s 			page 12
 
 
  122              	.L13:
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  162              	.LFE6:
  164              		.section	.text.get_prop_core,"ax",%progbits
  165              		.align	1
-ARM GAS  /tmp/ccPNmdt6.s 			page 13
+ARM GAS  /tmp/ccRdAAjN.s 			page 13
 
 
  166              		.syntax unified
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
   49:Drivers/lvgl/src/core/lv_obj_style.c ****  **********************/
   50:Drivers/lvgl/src/core/lv_obj_style.c **** 
   51:Drivers/lvgl/src/core/lv_obj_style.c **** /**********************
-ARM GAS  /tmp/ccPNmdt6.s 			page 14
+ARM GAS  /tmp/ccRdAAjN.s 			page 14
 
 
   52:Drivers/lvgl/src/core/lv_obj_style.c ****  *  STATIC PROTOTYPES
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  106:Drivers/lvgl/src/core/lv_obj_style.c ****     if(style && part == LV_PART_MAIN && style_has_flag(style, LV_STYLE_PROP_FLAG_TRANSFORM)) {
  107:Drivers/lvgl/src/core/lv_obj_style.c ****         lv_obj_invalidate(obj);
  108:Drivers/lvgl/src/core/lv_obj_style.c ****     }
-ARM GAS  /tmp/ccPNmdt6.s 			page 15
+ARM GAS  /tmp/ccRdAAjN.s 			page 15
 
 
  109:Drivers/lvgl/src/core/lv_obj_style.c **** 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  163:Drivers/lvgl/src/core/lv_obj_style.c ****     /*All objects must exist*/
  164:Drivers/lvgl/src/core/lv_obj_style.c ****     if(!obj || !old_style || !new_style || (old_style == new_style)) {
  165:Drivers/lvgl/src/core/lv_obj_style.c ****         return false;
-ARM GAS  /tmp/ccPNmdt6.s 			page 16
+ARM GAS  /tmp/ccRdAAjN.s 			page 16
 
 
  166:Drivers/lvgl/src/core/lv_obj_style.c ****     }
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  220:Drivers/lvgl/src/core/lv_obj_style.c ****            (part != LV_PART_ANY && part_act != part) ||
  221:Drivers/lvgl/src/core/lv_obj_style.c ****            (style != NULL && style != obj->styles[i].style)) {
  222:Drivers/lvgl/src/core/lv_obj_style.c ****             i++;
-ARM GAS  /tmp/ccPNmdt6.s 			page 17
+ARM GAS  /tmp/ccRdAAjN.s 			page 17
 
 
  223:Drivers/lvgl/src/core/lv_obj_style.c ****             continue;
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  277:Drivers/lvgl/src/core/lv_obj_style.c ****     LV_ASSERT_OBJ(obj, MY_CLASS);
  278:Drivers/lvgl/src/core/lv_obj_style.c **** 
  279:Drivers/lvgl/src/core/lv_obj_style.c ****     if(!style_refr) return;
-ARM GAS  /tmp/ccPNmdt6.s 			page 18
+ARM GAS  /tmp/ccRdAAjN.s 			page 18
 
 
  280:Drivers/lvgl/src/core/lv_obj_style.c **** 
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  334:Drivers/lvgl/src/core/lv_obj_style.c ****     lv_style_selector_t selector = part | obj->state;
  335:Drivers/lvgl/src/core/lv_obj_style.c ****     lv_style_value_t value_act = { .ptr = NULL };
  336:Drivers/lvgl/src/core/lv_obj_style.c ****     lv_style_res_t found;
-ARM GAS  /tmp/ccPNmdt6.s 			page 19
+ARM GAS  /tmp/ccRdAAjN.s 			page 19
 
 
  337:Drivers/lvgl/src/core/lv_obj_style.c **** 
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  391:Drivers/lvgl/src/core/lv_obj_style.c ****         if(obj->styles[i].is_local &&
  392:Drivers/lvgl/src/core/lv_obj_style.c ****            obj->styles[i].selector == selector) {
  393:Drivers/lvgl/src/core/lv_obj_style.c ****             return lv_style_get_prop(obj->styles[i].style, prop, value);
-ARM GAS  /tmp/ccPNmdt6.s 			page 20
+ARM GAS  /tmp/ccRdAAjN.s 			page 20
 
 
  394:Drivers/lvgl/src/core/lv_obj_style.c ****         }
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  448:Drivers/lvgl/src/core/lv_obj_style.c ****         if(v1.num == LV_RADIUS_CIRCLE || v2.num == LV_RADIUS_CIRCLE) {
  449:Drivers/lvgl/src/core/lv_obj_style.c ****             int32_t whalf = lv_obj_get_width(obj) / 2;
  450:Drivers/lvgl/src/core/lv_obj_style.c ****             int32_t hhalf = lv_obj_get_height(obj) / 2;
-ARM GAS  /tmp/ccPNmdt6.s 			page 21
+ARM GAS  /tmp/ccRdAAjN.s 			page 21
 
 
  451:Drivers/lvgl/src/core/lv_obj_style.c ****             if(v1.num == LV_RADIUS_CIRCLE) v1.num = LV_MIN(whalf + 1, hhalf + 1);
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  505:Drivers/lvgl/src/core/lv_obj_style.c **** 
  506:Drivers/lvgl/src/core/lv_obj_style.c ****         lv_state_t state_act = lv_obj_style_get_selector_state(obj->styles[i].selector);
  507:Drivers/lvgl/src/core/lv_obj_style.c ****         /*The style is valid for a state but not the other*/
-ARM GAS  /tmp/ccPNmdt6.s 			page 22
+ARM GAS  /tmp/ccRdAAjN.s 			page 22
 
 
  508:Drivers/lvgl/src/core/lv_obj_style.c ****         bool valid1 = state_act & (~state1) ? false : true;
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  562:Drivers/lvgl/src/core/lv_obj_style.c ****     lv_anim_set_var(&a, obj);
  563:Drivers/lvgl/src/core/lv_obj_style.c ****     lv_anim_set_values(&a, 0, LV_OPA_COVER);
  564:Drivers/lvgl/src/core/lv_obj_style.c ****     lv_anim_set_exec_cb(&a, fade_anim_cb);
-ARM GAS  /tmp/ccPNmdt6.s 			page 23
+ARM GAS  /tmp/ccRdAAjN.s 			page 23
 
 
  565:Drivers/lvgl/src/core/lv_obj_style.c ****     lv_anim_set_completed_cb(&a, fade_in_anim_completed);
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  619:Drivers/lvgl/src/core/lv_obj_style.c ****             opa_final = LV_OPA_MIX2(opa_final, opa_obj);
  620:Drivers/lvgl/src/core/lv_obj_style.c ****         }
  621:Drivers/lvgl/src/core/lv_obj_style.c **** 
-ARM GAS  /tmp/ccPNmdt6.s 			page 24
+ARM GAS  /tmp/ccRdAAjN.s 			page 24
 
 
  622:Drivers/lvgl/src/core/lv_obj_style.c ****         obj = lv_obj_get_parent(obj);
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  676:Drivers/lvgl/src/core/lv_obj_style.c ****     while(obj) {
  677:Drivers/lvgl/src/core/lv_obj_style.c ****         result = lv_obj_style_apply_recolor(obj, part, result);
  678:Drivers/lvgl/src/core/lv_obj_style.c ****         obj = lv_obj_get_parent(obj);
-ARM GAS  /tmp/ccPNmdt6.s 			page 25
+ARM GAS  /tmp/ccRdAAjN.s 			page 25
 
 
  679:Drivers/lvgl/src/core/lv_obj_style.c ****     }
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  733:Drivers/lvgl/src/core/lv_obj_style.c **** static lv_obj_style_t * get_trans_style(lv_obj_t * obj,  lv_style_selector_t selector)
  734:Drivers/lvgl/src/core/lv_obj_style.c **** {
  735:Drivers/lvgl/src/core/lv_obj_style.c ****     uint32_t i;
-ARM GAS  /tmp/ccPNmdt6.s 			page 26
+ARM GAS  /tmp/ccRdAAjN.s 			page 26
 
 
  736:Drivers/lvgl/src/core/lv_obj_style.c ****     for(i = 0; i < obj->style_cnt; i++) {
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  198              	.LBB134:
  199              	.LBI134:
  493:Drivers/lvgl/src/core/../misc/lv_style.h **** 
-ARM GAS  /tmp/ccPNmdt6.s 			page 27
+ARM GAS  /tmp/ccRdAAjN.s 			page 27
 
 
  494:Drivers/lvgl/src/core/../misc/lv_style.h **** /**
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
   12:Drivers/lvgl/src/core/lv_obj_style.h **** 
   13:Drivers/lvgl/src/core/lv_obj_style.h **** /*********************
   14:Drivers/lvgl/src/core/lv_obj_style.h ****  *      INCLUDES
-ARM GAS  /tmp/ccPNmdt6.s 			page 28
+ARM GAS  /tmp/ccRdAAjN.s 			page 28
 
 
   15:Drivers/lvgl/src/core/lv_obj_style.h ****  *********************/
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
   69:Drivers/lvgl/src/core/lv_obj_style.h ****  */
   70:Drivers/lvgl/src/core/lv_obj_style.h **** bool lv_obj_replace_style(lv_obj_t * obj, const lv_style_t * old_style, const lv_style_t * new_styl
   71:Drivers/lvgl/src/core/lv_obj_style.h ****                           lv_style_selector_t selector);
-ARM GAS  /tmp/ccPNmdt6.s 			page 29
+ARM GAS  /tmp/ccRdAAjN.s 			page 29
 
 
   72:Drivers/lvgl/src/core/lv_obj_style.h **** 
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  126:Drivers/lvgl/src/core/lv_obj_style.h ****  * @param prop      the property to get
  127:Drivers/lvgl/src/core/lv_obj_style.h ****  * @return          the value of the property.
  128:Drivers/lvgl/src/core/lv_obj_style.h ****  *                  Should be read from the correct field of the `lv_style_value_t` according to th
-ARM GAS  /tmp/ccPNmdt6.s 			page 30
+ARM GAS  /tmp/ccRdAAjN.s 			page 30
 
 
  129:Drivers/lvgl/src/core/lv_obj_style.h ****  */
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  183:Drivers/lvgl/src/core/lv_obj_style.h **** 
  184:Drivers/lvgl/src/core/lv_obj_style.h **** static inline lv_state_t lv_obj_style_get_selector_state(lv_style_selector_t selector)
  185:Drivers/lvgl/src/core/lv_obj_style.h **** {
-ARM GAS  /tmp/ccPNmdt6.s 			page 31
+ARM GAS  /tmp/ccRdAAjN.s 			page 31
 
 
  186:Drivers/lvgl/src/core/lv_obj_style.h ****     return selector & 0xFFFF;
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  261 002e 0024     		movs	r4, #0
  262 0030 3346     		mov	r3, r6
  263              	.LVL25:
-ARM GAS  /tmp/ccPNmdt6.s 			page 32
+ARM GAS  /tmp/ccRdAAjN.s 			page 32
 
 
  264              		.loc 1 772 11 view .LVU81
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  312 0056 002E     		cmp	r6, #0
  313 0058 F0D1     		bne	.L18
  776:Drivers/lvgl/src/core/lv_obj_style.c **** 
-ARM GAS  /tmp/ccPNmdt6.s 			page 33
+ARM GAS  /tmp/ccRdAAjN.s 			page 33
 
 
  777:Drivers/lvgl/src/core/lv_obj_style.c ****         lv_part_t part_act = lv_obj_style_get_selector_part(obj->styles[i].selector);
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  361              		.loc 1 782 11 view .LVU117
  362 0080 4FF0FF3B 		mov	fp, #-1
  363 0084 00E0     		b	.L22
-ARM GAS  /tmp/ccPNmdt6.s 			page 34
+ARM GAS  /tmp/ccRdAAjN.s 			page 34
 
 
  364              	.LVL40:
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  408              		.loc 1 791 9 is_stmt 1 view .LVU135
  409              		.loc 1 791 11 is_stmt 0 view .LVU136
  410 00ac 9F42     		cmp	r7, r3
-ARM GAS  /tmp/ccPNmdt6.s 			page 35
+ARM GAS  /tmp/ccRdAAjN.s 			page 35
 
 
  411 00ae EAD1     		bne	.L21
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  805:Drivers/lvgl/src/core/lv_obj_style.c ****             }
  806:Drivers/lvgl/src/core/lv_obj_style.c ****             weight = state_act;
  448              		.loc 1 806 20 view .LVU152
-ARM GAS  /tmp/ccPNmdt6.s 			page 36
+ARM GAS  /tmp/ccRdAAjN.s 			page 36
 
 
  449 00d0 C346     		mov	fp, r8
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  498              	.LVL55:
  499              	.LFB224:
  813:Drivers/lvgl/src/core/lv_obj_style.c **** 
-ARM GAS  /tmp/ccPNmdt6.s 			page 37
+ARM GAS  /tmp/ccRdAAjN.s 			page 37
 
 
  814:Drivers/lvgl/src/core/lv_obj_style.c **** /**
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  868:Drivers/lvgl/src/core/lv_obj_style.c ****     bool removed = false;
  869:Drivers/lvgl/src/core/lv_obj_style.c ****     tr = lv_ll_get_tail(style_trans_ll_p);
  870:Drivers/lvgl/src/core/lv_obj_style.c ****     while(tr != NULL) {
-ARM GAS  /tmp/ccPNmdt6.s 			page 38
+ARM GAS  /tmp/ccRdAAjN.s 			page 38
 
 
  871:Drivers/lvgl/src/core/lv_obj_style.c ****         if(tr == tr_limit) break;
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  925:Drivers/lvgl/src/core/lv_obj_style.c ****                 else value_final.ptr = tr->end_value.ptr;
  926:Drivers/lvgl/src/core/lv_obj_style.c ****                 break;
  927:Drivers/lvgl/src/core/lv_obj_style.c ****             case LV_STYLE_BG_COLOR:
-ARM GAS  /tmp/ccPNmdt6.s 			page 39
+ARM GAS  /tmp/ccRdAAjN.s 			page 39
 
 
  928:Drivers/lvgl/src/core/lv_obj_style.c ****             case LV_STYLE_BG_GRAD_COLOR:
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  982:Drivers/lvgl/src/core/lv_obj_style.c **** 
  983:Drivers/lvgl/src/core/lv_obj_style.c **** }
  984:Drivers/lvgl/src/core/lv_obj_style.c **** 
-ARM GAS  /tmp/ccPNmdt6.s 			page 40
+ARM GAS  /tmp/ccRdAAjN.s 			page 40
 
 
  985:Drivers/lvgl/src/core/lv_obj_style.c **** static void trans_anim_completed_cb(lv_anim_t * a)
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
 1039:Drivers/lvgl/src/core/lv_obj_style.c **** static void full_cache_refresh(lv_obj_t * obj, lv_part_t part)
 1040:Drivers/lvgl/src/core/lv_obj_style.c **** {
 1041:Drivers/lvgl/src/core/lv_obj_style.c **** #if LV_OBJ_STYLE_CACHE
-ARM GAS  /tmp/ccPNmdt6.s 			page 41
+ARM GAS  /tmp/ccRdAAjN.s 			page 41
 
 
 1042:Drivers/lvgl/src/core/lv_obj_style.c ****     uint32_t i;
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
 1096:Drivers/lvgl/src/core/lv_obj_style.c ****     lv_obj_remove_local_style_prop(a->var, LV_STYLE_OPA, 0);
 1097:Drivers/lvgl/src/core/lv_obj_style.c **** }
 1098:Drivers/lvgl/src/core/lv_obj_style.c **** 
-ARM GAS  /tmp/ccPNmdt6.s 			page 42
+ARM GAS  /tmp/ccRdAAjN.s 			page 42
 
 
 1099:Drivers/lvgl/src/core/lv_obj_style.c **** static bool style_has_flag(const lv_style_t * style, uint32_t flag)
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  525              		.loc 3 191 21 is_stmt 0 view .LVU168
  526 0008 01F47F07 		and	r7, r1, #16711680
  527              	.LVL57:
-ARM GAS  /tmp/ccPNmdt6.s 			page 43
+ARM GAS  /tmp/ccRdAAjN.s 			page 43
 
 
  528              		.loc 3 191 21 view .LVU169
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
 1152:Drivers/lvgl/src/core/lv_obj_style.c ****         if(part != LV_PART_MAIN) part = LV_PART_MAIN;
  557              		.loc 1 1152 9 is_stmt 1 view .LVU183
  558              		.loc 1 1152 11 is_stmt 0 view .LVU184
-ARM GAS  /tmp/ccPNmdt6.s 			page 44
+ARM GAS  /tmp/ccRdAAjN.s 			page 44
 
 
  559 0022 07B9     		cbnz	r7, .L39
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  597              		.loc 1 1144 11 view .LVU200
  598 0040 3BB1     		cbz	r3, .L37
 1145:Drivers/lvgl/src/core/lv_obj_style.c ****                           LV_STYLE_PROP_FLAG_INHERITABLE;
-ARM GAS  /tmp/ccPNmdt6.s 			page 45
+ARM GAS  /tmp/ccRdAAjN.s 			page 45
 
 
  599              		.loc 1 1145 13 is_stmt 1 view .LVU201
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  621              		.loc 1 1171 33 discriminator 1 view .LVU209
  622 0058 012B     		cmp	r3, #1
  623 005a 01D9     		bls	.L49
-ARM GAS  /tmp/ccPNmdt6.s 			page 46
+ARM GAS  /tmp/ccRdAAjN.s 			page 46
 
 
  624              		.loc 1 1191 12 view .LVU210
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
 1182:Drivers/lvgl/src/core/lv_obj_style.c ****                         return LV_STYLE_RES_FOUND;
  663              		.loc 1 1182 25 is_stmt 1 view .LVU227
 1182:Drivers/lvgl/src/core/lv_obj_style.c ****                         return LV_STYLE_RES_FOUND;
-ARM GAS  /tmp/ccPNmdt6.s 			page 47
+ARM GAS  /tmp/ccRdAAjN.s 			page 47
 
 
  664              		.loc 1 1182 40 is_stmt 0 view .LVU228
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  708 0090 00000000 		.word	lv_global
  709              		.cfi_endproc
  710              	.LFE224:
-ARM GAS  /tmp/ccPNmdt6.s 			page 48
+ARM GAS  /tmp/ccRdAAjN.s 			page 48
 
 
  712              		.section	.text.trans_delete,"ax",%progbits
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  756              		.loc 1 868 10 is_stmt 0 view .LVU253
  757 0014 0027     		movs	r7, #0
  870:Drivers/lvgl/src/core/lv_obj_style.c ****         if(tr == tr_limit) break;
-ARM GAS  /tmp/ccPNmdt6.s 			page 49
+ARM GAS  /tmp/ccRdAAjN.s 			page 49
 
 
  758              		.loc 1 870 10 view .LVU254
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  799 003a B042     		cmp	r0, r6
  800 003c F2D1     		bne	.L58
  876:Drivers/lvgl/src/core/lv_obj_style.c ****             /*Remove any transitioned properties from the trans. style
-ARM GAS  /tmp/ccPNmdt6.s 			page 50
+ARM GAS  /tmp/ccRdAAjN.s 			page 50
 
 
  801              		.loc 1 876 41 discriminator 1 view .LVU268
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  842 0070 B9F5702F 		cmp	r9, #983040
  843 0074 EAD0     		beq	.L62
  881:Drivers/lvgl/src/core/lv_obj_style.c ****                     lv_style_remove_prop((lv_style_t *)obj->styles[i].style, tr->prop);
-ARM GAS  /tmp/ccPNmdt6.s 			page 51
+ARM GAS  /tmp/ccRdAAjN.s 			page 51
 
 
  844              		.loc 1 881 85 discriminator 2 view .LVU282
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  887              		.loc 1 890 21 view .LVU293
  888 00a2 BFE7     		b	.L58
  889              	.LVL106:
-ARM GAS  /tmp/ccPNmdt6.s 			page 52
+ARM GAS  /tmp/ccRdAAjN.s 			page 52
 
 
  890              	.L57:
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  938              	.LBB158:
  374:Drivers/lvgl/src/core/../misc/lv_style.h ****     return false;
  939              		.loc 2 374 5 view .LVU302
-ARM GAS  /tmp/ccPNmdt6.s 			page 53
+ARM GAS  /tmp/ccRdAAjN.s 			page 53
 
 
  374:Drivers/lvgl/src/core/../misc/lv_style.h ****     return false;
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  515:Drivers/lvgl/src/core/../misc/lv_style.h **** /**
  516:Drivers/lvgl/src/core/../misc/lv_style.h ****  * Get the flags of a built-in or custom property.
  517:Drivers/lvgl/src/core/../misc/lv_style.h ****  *
-ARM GAS  /tmp/ccPNmdt6.s 			page 54
+ARM GAS  /tmp/ccRdAAjN.s 			page 54
 
 
  518:Drivers/lvgl/src/core/../misc/lv_style.h ****  * @param prop a style property
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  572:Drivers/lvgl/src/core/../misc/lv_style.h ****     lv_style_set_margin_right(style, value);
  573:Drivers/lvgl/src/core/../misc/lv_style.h ****     lv_style_set_margin_top(style, value);
  574:Drivers/lvgl/src/core/../misc/lv_style.h ****     lv_style_set_margin_bottom(style, value);
-ARM GAS  /tmp/ccPNmdt6.s 			page 55
+ARM GAS  /tmp/ccRdAAjN.s 			page 55
 
 
  575:Drivers/lvgl/src/core/../misc/lv_style.h **** }
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  1003              	.LBE163:
  1004              	.LBB164:
 1102:Drivers/lvgl/src/core/lv_obj_style.c ****         uint32_t i;
-ARM GAS  /tmp/ccPNmdt6.s 			page 56
+ARM GAS  /tmp/ccRdAAjN.s 			page 56
 
 
  1005              		.loc 1 1102 9 is_stmt 1 view .LVU328
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  1045              		.loc 1 1104 57 discriminator 2 view .LVU345
  1046              	.LBE164:
 1119:Drivers/lvgl/src/core/lv_obj_style.c **** }
-ARM GAS  /tmp/ccPNmdt6.s 			page 57
+ARM GAS  /tmp/ccRdAAjN.s 			page 57
 
 
  1047              		.loc 1 1119 12 view .LVU346
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  844:Drivers/lvgl/src/core/lv_obj_style.c ****     for(i = 0; i < child_cnt; i++) {
  1096              		.loc 1 844 5 view .LVU354
  844:Drivers/lvgl/src/core/lv_obj_style.c ****     for(i = 0; i < child_cnt; i++) {
-ARM GAS  /tmp/ccPNmdt6.s 			page 58
+ARM GAS  /tmp/ccRdAAjN.s 			page 58
 
 
  1097              		.loc 1 844 26 is_stmt 0 view .LVU355
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  845:Drivers/lvgl/src/core/lv_obj_style.c ****         lv_obj_t * child = obj->spec_attr->children[i];
  1139              		.loc 1 845 32 discriminator 3 view .LVU368
  1140 0034 0134     		adds	r4, r4, #1
-ARM GAS  /tmp/ccPNmdt6.s 			page 59
+ARM GAS  /tmp/ccRdAAjN.s 			page 59
 
 
  1141              	.LVL135:
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  1187 000c 0132     		adds	r2, r2, #1
  1188              	.LVL140:
  1189              	.L90:
-ARM GAS  /tmp/ccPNmdt6.s 			page 60
+ARM GAS  /tmp/ccRdAAjN.s 			page 60
 
 
  698:Drivers/lvgl/src/core/lv_obj_style.c ****         if(obj->styles[i].is_local &&
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  1228              		.loc 1 705 19 view .LVU394
  1229 0040 63F30912 		bfi	r2, r3, #4, #6
  1230 0044 6285     		strh	r2, [r4, #42]	@ movhi
-ARM GAS  /tmp/ccPNmdt6.s 			page 61
+ARM GAS  /tmp/ccRdAAjN.s 			page 61
 
 
  706:Drivers/lvgl/src/core/lv_obj_style.c ****     obj->styles = lv_realloc(obj->styles, obj->style_cnt * sizeof(lv_obj_style_t));
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  1266 0062 96B1     		cbz	r6, .L99
  713:Drivers/lvgl/src/core/lv_obj_style.c ****         obj->styles[i] = obj->styles[i - 1];
  1267              		.loc 1 713 9 view .LVU414
-ARM GAS  /tmp/ccPNmdt6.s 			page 62
+ARM GAS  /tmp/ccRdAAjN.s 			page 62
 
 
  713:Drivers/lvgl/src/core/lv_obj_style.c ****         obj->styles[i] = obj->styles[i - 1];
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  1305              	.LVL149:
  1306              	.LBB170:
  1307              	.LBI170:
-ARM GAS  /tmp/ccPNmdt6.s 			page 63
+ARM GAS  /tmp/ccRdAAjN.s 			page 63
 
 
  1308              		.file 4 "Drivers/lvgl/src/core/../misc/../font/../draw/../misc/../stdlib/lv_string.h"
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
   54:Drivers/lvgl/src/core/../misc/../font/../draw/../misc/../stdlib/lv_string.h ****  * @param len Number of bytes to copy
   55:Drivers/lvgl/src/core/../misc/../font/../draw/../misc/../stdlib/lv_string.h ****  * @return Pointer to the destination array.
   56:Drivers/lvgl/src/core/../misc/../font/../draw/../misc/../stdlib/lv_string.h ****  */
-ARM GAS  /tmp/ccPNmdt6.s 			page 64
+ARM GAS  /tmp/ccRdAAjN.s 			page 64
 
 
   57:Drivers/lvgl/src/core/../misc/../font/../draw/../misc/../stdlib/lv_string.h **** void * lv_memmove(void * dst, const void * src, size_t len);
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  1337              	.LVL153:
  721:Drivers/lvgl/src/core/lv_obj_style.c ****     obj->styles[i].selector = selector;
  1338              		.loc 1 721 5 is_stmt 1 view .LVU443
-ARM GAS  /tmp/ccPNmdt6.s 			page 65
+ARM GAS  /tmp/ccRdAAjN.s 			page 65
 
 
  721:Drivers/lvgl/src/core/lv_obj_style.c ****     obj->styles[i].selector = selector;
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  1382              	.LCFI10:
  1383              		.cfi_def_cfa_offset 16
  1384              		.cfi_offset 4, -16
-ARM GAS  /tmp/ccPNmdt6.s 			page 66
+ARM GAS  /tmp/ccRdAAjN.s 			page 66
 
 
  1385              		.cfi_offset 5, -12
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  1424              		.loc 1 737 36 discriminator 1 view .LVU471
  1425 002a AA42     		cmp	r2, r5
  1426 002c EDD1     		bne	.L105
-ARM GAS  /tmp/ccPNmdt6.s 			page 67
+ARM GAS  /tmp/ccRdAAjN.s 			page 67
 
 
  1427              	.L106:
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  745:Drivers/lvgl/src/core/lv_obj_style.c **** 
  1464              		.loc 1 745 19 is_stmt 0 view .LVU489
  1465 0050 D900     		lsls	r1, r3, #3
-ARM GAS  /tmp/ccPNmdt6.s 			page 68
+ARM GAS  /tmp/ccRdAAjN.s 			page 68
 
 
  1466              	.LVL162:
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
   73:Drivers/lvgl/src/core/../misc/../font/../draw/../misc/../stdlib/lv_string.h **** {
  1506              		.loc 4 73 20 view .LVU504
  1507              	.LBB173:
-ARM GAS  /tmp/ccPNmdt6.s 			page 69
+ARM GAS  /tmp/ccRdAAjN.s 			page 69
 
 
  1508              		.loc 4 75 5 view .LVU505
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  1548              		.loc 1 756 29 view .LVU520
  1549 00b0 5A60     		str	r2, [r3, #4]
  757:Drivers/lvgl/src/core/lv_obj_style.c **** }
-ARM GAS  /tmp/ccPNmdt6.s 			page 70
+ARM GAS  /tmp/ccRdAAjN.s 			page 70
 
 
  1550              		.loc 1 757 5 is_stmt 1 view .LVU521
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  1601 0000 08B5     		push	{r3, lr}
  1602              	.LCFI12:
  1603              		.cfi_def_cfa_offset 8
-ARM GAS  /tmp/ccPNmdt6.s 			page 71
+ARM GAS  /tmp/ccRdAAjN.s 			page 71
 
 
  1604              		.cfi_offset 3, -8
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  1651              		.loc 1 94 9 view .LVU537
   94:Drivers/lvgl/src/core/lv_obj_style.c ****     }
  1652              		.loc 1 94 46 is_stmt 0 view .LVU538
-ARM GAS  /tmp/ccPNmdt6.s 			page 72
+ARM GAS  /tmp/ccRdAAjN.s 			page 72
 
 
  1653 0012 A4F11803 		sub	r3, r4, #24
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  1705              		.cfi_startproc
  1706              		@ args = 0, pretend = 0, frame = 8
  1707              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/ccPNmdt6.s 			page 73
+ARM GAS  /tmp/ccRdAAjN.s 			page 73
 
 
  332:Drivers/lvgl/src/core/lv_obj_style.c **** 
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  1746              		.loc 1 341 12 is_stmt 0 view .LVU560
  1747 001e 2046     		mov	r0, r4
  1748              	.LVL183:
-ARM GAS  /tmp/ccPNmdt6.s 			page 74
+ARM GAS  /tmp/ccRdAAjN.s 			page 74
 
 
  341:Drivers/lvgl/src/core/lv_obj_style.c **** }
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  1795              	.LVL187:
  1796              	.LFB219:
 1024:Drivers/lvgl/src/core/lv_obj_style.c **** #if LV_DRAW_TRANSFORM_USE_MATRIX
-ARM GAS  /tmp/ccPNmdt6.s 			page 75
+ARM GAS  /tmp/ccRdAAjN.s 			page 75
 
 
  1797              		.loc 1 1024 1 is_stmt 1 view -0
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
   34:Drivers/lvgl/src/core/lv_obj_style_gen.h **** static inline int32_t lv_obj_get_style_max_width(const lv_obj_t * obj, lv_part_t part)
   35:Drivers/lvgl/src/core/lv_obj_style_gen.h **** {
   36:Drivers/lvgl/src/core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_MAX_WIDTH);
-ARM GAS  /tmp/ccPNmdt6.s 			page 76
+ARM GAS  /tmp/ccRdAAjN.s 			page 76
 
 
   37:Drivers/lvgl/src/core/lv_obj_style_gen.h ****     return (int32_t)v.num;
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
   91:Drivers/lvgl/src/core/lv_obj_style_gen.h ****     return (int32_t)v.num;
   92:Drivers/lvgl/src/core/lv_obj_style_gen.h **** }
   93:Drivers/lvgl/src/core/lv_obj_style_gen.h **** 
-ARM GAS  /tmp/ccPNmdt6.s 			page 77
+ARM GAS  /tmp/ccRdAAjN.s 			page 77
 
 
   94:Drivers/lvgl/src/core/lv_obj_style_gen.h **** static inline int32_t lv_obj_get_style_translate_x(const lv_obj_t * obj, lv_part_t part)
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  1834              		.loc 1 1029 5 is_stmt 1 view .LVU581
  1835              	.LVL191:
  1836              	.LBB176:
-ARM GAS  /tmp/ccPNmdt6.s 			page 78
+ARM GAS  /tmp/ccRdAAjN.s 			page 78
 
 
  1837              	.LBI176:
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  1878              	.LBE178:
 1030:Drivers/lvgl/src/core/lv_obj_style.c ****     if(lv_obj_get_style_transform_skew_x(obj, 0) != 0) return LV_LAYER_TYPE_TRANSFORM;
  1879              		.loc 1 1030 7 discriminator 1 view .LVU595
-ARM GAS  /tmp/ccPNmdt6.s 			page 79
+ARM GAS  /tmp/ccRdAAjN.s 			page 79
 
 
  1880 0036 B0F5807F 		cmp	r0, #256
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  147:Drivers/lvgl/src/core/lv_obj_style_gen.h **** 
  148:Drivers/lvgl/src/core/lv_obj_style_gen.h **** static inline int32_t lv_obj_get_style_transform_skew_y(const lv_obj_t * obj, lv_part_t part)
  1911              		.loc 5 148 23 view .LVU605
-ARM GAS  /tmp/ccPNmdt6.s 			page 80
+ARM GAS  /tmp/ccRdAAjN.s 			page 80
 
 
  1912              	.LBB183:
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  181:Drivers/lvgl/src/core/lv_obj_style_gen.h ****     return (int32_t)v.num;
  182:Drivers/lvgl/src/core/lv_obj_style_gen.h **** }
  183:Drivers/lvgl/src/core/lv_obj_style_gen.h **** 
-ARM GAS  /tmp/ccPNmdt6.s 			page 81
+ARM GAS  /tmp/ccRdAAjN.s 			page 81
 
 
  184:Drivers/lvgl/src/core/lv_obj_style_gen.h **** static inline int32_t lv_obj_get_style_pad_column(const lv_obj_t * obj, lv_part_t part)
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  238:Drivers/lvgl/src/core/lv_obj_style_gen.h **** static inline lv_color_t lv_obj_get_style_bg_grad_color(const lv_obj_t * obj, lv_part_t part)
  239:Drivers/lvgl/src/core/lv_obj_style_gen.h **** {
  240:Drivers/lvgl/src/core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_BG_GRAD_COLOR);
-ARM GAS  /tmp/ccPNmdt6.s 			page 82
+ARM GAS  /tmp/ccRdAAjN.s 			page 82
 
 
  241:Drivers/lvgl/src/core/lv_obj_style_gen.h ****     return v.color;
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  295:Drivers/lvgl/src/core/lv_obj_style_gen.h ****     return (lv_opa_t)v.num;
  296:Drivers/lvgl/src/core/lv_obj_style_gen.h **** }
  297:Drivers/lvgl/src/core/lv_obj_style_gen.h **** 
-ARM GAS  /tmp/ccPNmdt6.s 			page 83
+ARM GAS  /tmp/ccRdAAjN.s 			page 83
 
 
  298:Drivers/lvgl/src/core/lv_obj_style_gen.h **** static inline lv_color_t lv_obj_get_style_bg_image_recolor(const lv_obj_t * obj, lv_part_t part)
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  352:Drivers/lvgl/src/core/lv_obj_style_gen.h **** static inline bool lv_obj_get_style_border_post(const lv_obj_t * obj, lv_part_t part)
  353:Drivers/lvgl/src/core/lv_obj_style_gen.h **** {
  354:Drivers/lvgl/src/core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_BORDER_POST);
-ARM GAS  /tmp/ccPNmdt6.s 			page 84
+ARM GAS  /tmp/ccRdAAjN.s 			page 84
 
 
  355:Drivers/lvgl/src/core/lv_obj_style_gen.h ****     return (bool)v.num;
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  409:Drivers/lvgl/src/core/lv_obj_style_gen.h ****     return (int32_t)v.num;
  410:Drivers/lvgl/src/core/lv_obj_style_gen.h **** }
  411:Drivers/lvgl/src/core/lv_obj_style_gen.h **** 
-ARM GAS  /tmp/ccPNmdt6.s 			page 85
+ARM GAS  /tmp/ccRdAAjN.s 			page 85
 
 
  412:Drivers/lvgl/src/core/lv_obj_style_gen.h **** static inline lv_color_t lv_obj_get_style_shadow_color(const lv_obj_t * obj, lv_part_t part)
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  466:Drivers/lvgl/src/core/lv_obj_style_gen.h **** static inline int32_t lv_obj_get_style_line_dash_gap(const lv_obj_t * obj, lv_part_t part)
  467:Drivers/lvgl/src/core/lv_obj_style_gen.h **** {
  468:Drivers/lvgl/src/core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_LINE_DASH_GAP);
-ARM GAS  /tmp/ccPNmdt6.s 			page 86
+ARM GAS  /tmp/ccRdAAjN.s 			page 86
 
 
  469:Drivers/lvgl/src/core/lv_obj_style_gen.h ****     return (int32_t)v.num;
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  523:Drivers/lvgl/src/core/lv_obj_style_gen.h ****     return (lv_opa_t)v.num;
  524:Drivers/lvgl/src/core/lv_obj_style_gen.h **** }
  525:Drivers/lvgl/src/core/lv_obj_style_gen.h **** 
-ARM GAS  /tmp/ccPNmdt6.s 			page 87
+ARM GAS  /tmp/ccRdAAjN.s 			page 87
 
 
  526:Drivers/lvgl/src/core/lv_obj_style_gen.h **** static inline const void * lv_obj_get_style_arc_image_src(const lv_obj_t * obj, lv_part_t part)
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  580:Drivers/lvgl/src/core/lv_obj_style_gen.h **** static inline lv_color_t lv_obj_get_style_text_outline_stroke_color(const lv_obj_t * obj, lv_part_t
  581:Drivers/lvgl/src/core/lv_obj_style_gen.h **** {
  582:Drivers/lvgl/src/core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_TEXT_OUTLINE_STROKE_COLOR);
-ARM GAS  /tmp/ccPNmdt6.s 			page 88
+ARM GAS  /tmp/ccRdAAjN.s 			page 88
 
 
  583:Drivers/lvgl/src/core/lv_obj_style_gen.h ****     return v.color;
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  1938 0060 2046     		mov	r0, r4
  1939 0062 FFF7FEFF 		bl	lv_obj_get_style_prop
  1940              	.LVL204:
-ARM GAS  /tmp/ccPNmdt6.s 			page 89
+ARM GAS  /tmp/ccRdAAjN.s 			page 89
 
 
  1941 0066 0190     		str	r0, [sp, #4]
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  663:Drivers/lvgl/src/core/lv_obj_style_gen.h **** 
  664:Drivers/lvgl/src/core/lv_obj_style_gen.h **** static inline uint32_t lv_obj_get_style_anim_duration(const lv_obj_t * obj, lv_part_t part)
  665:Drivers/lvgl/src/core/lv_obj_style_gen.h **** {
-ARM GAS  /tmp/ccPNmdt6.s 			page 90
+ARM GAS  /tmp/ccRdAAjN.s 			page 90
 
 
  666:Drivers/lvgl/src/core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_ANIM_DURATION);
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  1980              	.L151:
 1035:Drivers/lvgl/src/core/lv_obj_style.c ****     return LV_LAYER_TYPE_NONE;
  1981              		.loc 1 1035 5 is_stmt 1 view .LVU628
-ARM GAS  /tmp/ccPNmdt6.s 			page 91
+ARM GAS  /tmp/ccRdAAjN.s 			page 91
 
 
  1982              	.LVL209:
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  2025              		.loc 1 1032 63 discriminator 1 view .LVU639
  2026 00a4 0220     		movs	r0, #2
  2027 00a6 F9E7     		b	.L138
-ARM GAS  /tmp/ccPNmdt6.s 			page 92
+ARM GAS  /tmp/ccRdAAjN.s 			page 92
 
 
  2028              		.cfi_endproc
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  2071              		.loc 1 354 12 view .LVU652
  2072 0014 0020     		movs	r0, #0
  2073              	.LVL215:
-ARM GAS  /tmp/ccPNmdt6.s 			page 93
+ARM GAS  /tmp/ccRdAAjN.s 			page 93
 
 
  2074              	.L155:
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  2120 0000 38B5     		push	{r3, r4, r5, lr}
  2121              	.LCFI28:
  2122              		.cfi_def_cfa_offset 16
-ARM GAS  /tmp/ccPNmdt6.s 			page 94
+ARM GAS  /tmp/ccRdAAjN.s 			page 94
 
 
  2123              		.cfi_offset 3, -16
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  2162 0032 E9D1     		bne	.L161
  393:Drivers/lvgl/src/core/lv_obj_style.c ****         }
  2163              		.loc 1 393 13 is_stmt 1 view .LVU678
-ARM GAS  /tmp/ccPNmdt6.s 			page 95
+ARM GAS  /tmp/ccRdAAjN.s 			page 95
 
 
  393:Drivers/lvgl/src/core/lv_obj_style.c ****         }
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  2208 0004 1046     		mov	r0, r2
  2209              	.LVL228:
  494:Drivers/lvgl/src/core/lv_obj_style.c **** }
-ARM GAS  /tmp/ccPNmdt6.s 			page 96
+ARM GAS  /tmp/ccRdAAjN.s 			page 96
 
 
  2210              		.loc 1 494 12 view .LVU691
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  2258              		.loc 1 499 26 view .LVU699
  2259 000e A046     		mov	r8, r4
  503:Drivers/lvgl/src/core/lv_obj_style.c ****         if(obj->styles[i].is_trans) continue;
-ARM GAS  /tmp/ccPNmdt6.s 			page 97
+ARM GAS  /tmp/ccRdAAjN.s 			page 97
 
 
  2260              		.loc 1 503 5 view .LVU700
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  503:Drivers/lvgl/src/core/lv_obj_style.c ****         if(obj->styles[i].is_trans) continue;
  2305              		.loc 1 503 37 is_stmt 1 discriminator 2 view .LVU710
  2306 0032 0134     		adds	r4, r4, #1
-ARM GAS  /tmp/ccPNmdt6.s 			page 98
+ARM GAS  /tmp/ccRdAAjN.s 			page 98
 
 
  2307              	.LVL236:
@@ -5878,7 +5878,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  2345 0056 5209     		lsrs	r2, r2, #5
  2346              	.LVL239:
  509:Drivers/lvgl/src/core/lv_obj_style.c ****         if(valid1 != valid2) {
-ARM GAS  /tmp/ccPNmdt6.s 			page 99
+ARM GAS  /tmp/ccRdAAjN.s 			page 99
 
 
  2347              		.loc 1 509 9 is_stmt 1 view .LVU727
@@ -5938,7 +5938,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  2386              	.LVL246:
  516:Drivers/lvgl/src/core/lv_obj_style.c ****             else if(lv_style_get_prop(style, LV_STYLE_PAD_LEFT, &v)) layout_diff = true;
  2387              		.loc 1 516 20 discriminator 1 view .LVU743
-ARM GAS  /tmp/ccPNmdt6.s 			page 100
+ARM GAS  /tmp/ccRdAAjN.s 			page 100
 
 
  2388 0082 0028     		cmp	r0, #0
@@ -5998,7 +5998,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  521:Drivers/lvgl/src/core/lv_obj_style.c ****             else if(lv_style_get_prop(style, LV_STYLE_TRANSLATE_X, &v)) layout_diff = true;
  2430              		.loc 1 521 18 is_stmt 1 view .LVU756
  521:Drivers/lvgl/src/core/lv_obj_style.c ****             else if(lv_style_get_prop(style, LV_STYLE_TRANSLATE_X, &v)) layout_diff = true;
-ARM GAS  /tmp/ccPNmdt6.s 			page 101
+ARM GAS  /tmp/ccRdAAjN.s 			page 101
 
 
  2431              		.loc 1 521 21 is_stmt 0 view .LVU757
@@ -6058,7 +6058,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  2473 00f8 0221     		movs	r1, #2
  2474 00fa 4846     		mov	r0, r9
  2475 00fc FFF7FEFF 		bl	lv_style_get_prop
-ARM GAS  /tmp/ccPNmdt6.s 			page 102
+ARM GAS  /tmp/ccRdAAjN.s 			page 102
 
 
  2476              	.LVL255:
@@ -6118,7 +6118,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  2517              		.loc 1 529 20 discriminator 1 view .LVU782
  2518 013e 0028     		cmp	r0, #0
  2519 0140 7FF467AF 		bne	.L171
-ARM GAS  /tmp/ccPNmdt6.s 			page 103
+ARM GAS  /tmp/ccRdAAjN.s 			page 103
 
 
  530:Drivers/lvgl/src/core/lv_obj_style.c **** 
@@ -6178,7 +6178,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  2560              		.loc 1 539 84 discriminator 1 view .LVU796
  2561 017a 5AE7     		b	.L170
  2562              	.LVL266:
-ARM GAS  /tmp/ccPNmdt6.s 			page 104
+ARM GAS  /tmp/ccRdAAjN.s 			page 104
 
 
  2563              	.L195:
@@ -6238,7 +6238,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  2604 01aa 10B1     		cbz	r0, .L198
  542:Drivers/lvgl/src/core/lv_obj_style.c ****             else if(lv_style_get_prop(style, LV_STYLE_OUTLINE_PAD, &v)) res = LV_STYLE_STATE_CMP_DI
  2605              		.loc 1 542 77 discriminator 1 view .LVU810
-ARM GAS  /tmp/ccPNmdt6.s 			page 105
+ARM GAS  /tmp/ccRdAAjN.s 			page 105
 
 
  2606 01ac 4FF00208 		mov	r8, #2
@@ -6298,7 +6298,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  2647 01d8 3C21     		movs	r1, #60
  2648 01da 4846     		mov	r0, r9
  2649 01dc FFF7FEFF 		bl	lv_style_get_prop
-ARM GAS  /tmp/ccPNmdt6.s 			page 106
+ARM GAS  /tmp/ccRdAAjN.s 			page 106
 
 
  2650              	.LVL282:
@@ -6358,7 +6358,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  2691              	.L203:
  548:Drivers/lvgl/src/core/lv_obj_style.c ****             else if(lv_style_get_prop(style, LV_STYLE_SHADOW_SPREAD, &v)) res = LV_STYLE_STATE_CMP_
  2692              		.loc 1 548 18 is_stmt 1 view .LVU837
-ARM GAS  /tmp/ccPNmdt6.s 			page 107
+ARM GAS  /tmp/ccRdAAjN.s 			page 107
 
 
  548:Drivers/lvgl/src/core/lv_obj_style.c ****             else if(lv_style_get_prop(style, LV_STYLE_SHADOW_SPREAD, &v)) res = LV_STYLE_STATE_CMP_
@@ -6418,7 +6418,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  551:Drivers/lvgl/src/core/lv_obj_style.c ****         }
  2734              		.loc 1 551 20 is_stmt 0 view .LVU851
  2735 023c B8F1000F 		cmp	r8, #0
-ARM GAS  /tmp/ccPNmdt6.s 			page 108
+ARM GAS  /tmp/ccRdAAjN.s 			page 108
 
 
  2736 0240 7FF4F7AE 		bne	.L170
@@ -6478,7 +6478,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  2784              		.loc 1 561 5 view .LVU859
  2785 000a 6846     		mov	r0, sp
  2786              	.LVL302:
-ARM GAS  /tmp/ccPNmdt6.s 			page 109
+ARM GAS  /tmp/ccRdAAjN.s 			page 109
 
 
  561:Drivers/lvgl/src/core/lv_obj_style.c ****     lv_anim_set_var(&a, obj);
@@ -6538,7 +6538,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  2832              	.L209:
  569:Drivers/lvgl/src/core/lv_obj_style.c **** 
  2833              		.loc 1 569 1 view .LVU869
-ARM GAS  /tmp/ccPNmdt6.s 			page 110
+ARM GAS  /tmp/ccRdAAjN.s 			page 110
 
 
  2834              		.align	2
@@ -6598,7 +6598,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  2883              		.loc 1 576 5 view .LVU876
  2884              	.LBB198:
  2885              	.LBI198:
-ARM GAS  /tmp/ccPNmdt6.s 			page 111
+ARM GAS  /tmp/ccRdAAjN.s 			page 111
 
 
  622:Drivers/lvgl/src/core/lv_obj_style_gen.h **** {
@@ -6658,7 +6658,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  2929              		.cfi_def_cfa_offset 20
  2930              		@ sp needed
  2931 0050 F0BD     		pop	{r4, r5, r6, r7, pc}
-ARM GAS  /tmp/ccPNmdt6.s 			page 112
+ARM GAS  /tmp/ccRdAAjN.s 			page 112
 
 
  2932              	.LVL323:
@@ -6718,7 +6718,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  2980              	.LVL327:
  576:Drivers/lvgl/src/core/lv_obj_style_gen.h ****     return (lv_text_align_t)v.num;
  2981              		.loc 5 576 26 view .LVU896
-ARM GAS  /tmp/ccPNmdt6.s 			page 113
+ARM GAS  /tmp/ccRdAAjN.s 			page 113
 
 
  2982 000e 0190     		str	r0, [sp, #4]
@@ -6778,7 +6778,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
   15:Drivers/lvgl/src/core/../misc/lv_bidi.h ****  *********************/
   16:Drivers/lvgl/src/core/../misc/lv_bidi.h **** #include "../lv_conf_internal.h"
   17:Drivers/lvgl/src/core/../misc/lv_bidi.h **** #include "lv_types.h"
-ARM GAS  /tmp/ccPNmdt6.s 			page 114
+ARM GAS  /tmp/ccRdAAjN.s 			page 114
 
 
   18:Drivers/lvgl/src/core/../misc/lv_bidi.h **** #include "lv_text.h"
@@ -6838,7 +6838,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  3012              		.loc 6 71 20 view .LVU907
  3013              	.LBB205:
   72:Drivers/lvgl/src/core/../misc/lv_bidi.h **** {
-ARM GAS  /tmp/ccPNmdt6.s 			page 115
+ARM GAS  /tmp/ccRdAAjN.s 			page 115
 
 
   73:Drivers/lvgl/src/core/../misc/lv_bidi.h ****     LV_UNUSED(txt);
@@ -6898,7 +6898,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  3062              		.cfi_def_cfa_offset 24
  3063 0004 0446     		mov	r4, r0
  3064 0006 0E46     		mov	r6, r1
-ARM GAS  /tmp/ccPNmdt6.s 			page 116
+ARM GAS  /tmp/ccRdAAjN.s 			page 116
 
 
  593:Drivers/lvgl/src/core/lv_obj_style.c ****     lv_opa_t opa_obj = lv_obj_get_style_opa(obj, part);
@@ -6958,7 +6958,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  3102              	.L220:
  605:Drivers/lvgl/src/core/lv_obj_style.c ****         part = LV_PART_MAIN;
  3103              		.loc 1 605 5 is_stmt 1 view .LVU936
-ARM GAS  /tmp/ccPNmdt6.s 			page 117
+ARM GAS  /tmp/ccRdAAjN.s 			page 117
 
 
  605:Drivers/lvgl/src/core/lv_obj_style.c ****         part = LV_PART_MAIN;
@@ -7018,7 +7018,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  3143              		.loc 5 624 26 is_stmt 0 view .LVU951
  3144 003c 6222     		movs	r2, #98
  3145 003e 0021     		movs	r1, #0
-ARM GAS  /tmp/ccPNmdt6.s 			page 118
+ARM GAS  /tmp/ccRdAAjN.s 			page 118
 
 
  3146 0040 2046     		mov	r0, r4
@@ -7078,7 +7078,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  3184              		.loc 1 632 16 view .LVU967
  3185 0064 FF25     		movs	r5, #255
  3186              	.LVL351:
-ARM GAS  /tmp/ccPNmdt6.s 			page 119
+ARM GAS  /tmp/ccRdAAjN.s 			page 119
 
 
  632:Drivers/lvgl/src/core/lv_obj_style.c ****     }
@@ -7138,7 +7138,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  3235              		@ frame_needed = 0, uses_anonymous_args = 0
  640:Drivers/lvgl/src/core/lv_obj_style.c ****     lv_layer_type_t layer_type = calculate_layer_type(obj);
  3236              		.loc 1 640 1 is_stmt 0 view .LVU976
-ARM GAS  /tmp/ccPNmdt6.s 			page 120
+ARM GAS  /tmp/ccRdAAjN.s 			page 120
 
 
  3237 0000 38B5     		push	{r3, r4, r5, lr}
@@ -7198,7 +7198,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  3277 0022 FFF7FEFF 		bl	lv_obj_allocate_spec_attr
  3278              	.LVL364:
  645:Drivers/lvgl/src/core/lv_obj_style.c ****     }
-ARM GAS  /tmp/ccPNmdt6.s 			page 121
+ARM GAS  /tmp/ccRdAAjN.s 			page 121
 
 
  3279              		.loc 1 645 9 is_stmt 1 view .LVU991
@@ -7258,7 +7258,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  3327 000a 1546     		mov	r5, r2
  3328 000c 0746     		mov	r7, r0
  277:Drivers/lvgl/src/core/lv_obj_style.c **** 
-ARM GAS  /tmp/ccPNmdt6.s 			page 122
+ARM GAS  /tmp/ccRdAAjN.s 			page 122
 
 
  3329              		.loc 1 277 5 is_stmt 1 discriminator 2 view .LVU1000
@@ -7318,7 +7318,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  3373              		.cfi_offset 10, -12
  3374              		.cfi_offset 11, -8
  3375              		.cfi_offset 14, -4
-ARM GAS  /tmp/ccPNmdt6.s 			page 123
+ARM GAS  /tmp/ccRdAAjN.s 			page 123
 
 
  281:Drivers/lvgl/src/core/lv_obj_style.c **** 
@@ -7378,7 +7378,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  3422 003e 0193     		str	r3, [sp, #4]
  3423              		.loc 2 595 45 discriminator 1 view .LVU1030
  3424 0040 C0F34006 		ubfx	r6, r0, #1, #1
-ARM GAS  /tmp/ccPNmdt6.s 			page 124
+ARM GAS  /tmp/ccRdAAjN.s 			page 124
 
 
  3425              	.LVL374:
@@ -7438,7 +7438,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  3471 0068 09D0     		beq	.L241
  3472              	.LVL379:
  3473              	.LBB220:
-ARM GAS  /tmp/ccPNmdt6.s 			page 125
+ARM GAS  /tmp/ccRdAAjN.s 			page 125
 
 
  3474              	.LBI220:
@@ -7498,7 +7498,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  3517 00a4 14BF     		ite	ne
  3518 00a6 4346     		movne	r3, r8
  3519 00a8 48F00103 		orreq	r3, r8, #1
-ARM GAS  /tmp/ccPNmdt6.s 			page 126
+ARM GAS  /tmp/ccRdAAjN.s 			page 126
 
 
  301:Drivers/lvgl/src/core/lv_obj_style.c ****         lv_obj_t * parent = lv_obj_get_parent(obj);
@@ -7558,7 +7558,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  318:Drivers/lvgl/src/core/lv_obj_style.c ****         }
  3560              		.loc 1 318 13 is_stmt 1 view .LVU1073
  3561 00e0 3846     		mov	r0, r7
-ARM GAS  /tmp/ccPNmdt6.s 			page 127
+ARM GAS  /tmp/ccRdAAjN.s 			page 127
 
 
  3562 00e2 FFF7FEFF 		bl	refresh_children_style
@@ -7618,7 +7618,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  303:Drivers/lvgl/src/core/lv_obj_style.c ****     }
  3604              		.loc 1 303 20 is_stmt 0 discriminator 1 view .LVU1086
  3605 010c CFE7     		b	.L242
-ARM GAS  /tmp/ccPNmdt6.s 			page 128
+ARM GAS  /tmp/ccRdAAjN.s 			page 128
 
 
  3606              	.LVL392:
@@ -7678,7 +7678,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  3657              	.LCFI55:
  3658              		.cfi_def_cfa_offset 48
  3659 0006 0192     		str	r2, [sp, #4]
-ARM GAS  /tmp/ccPNmdt6.s 			page 129
+ARM GAS  /tmp/ccRdAAjN.s 			page 129
 
 
  160:Drivers/lvgl/src/core/lv_obj_style.c ****     lv_part_t part = lv_obj_style_get_selector_part(selector);
@@ -7738,7 +7738,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  3704              	.LVL399:
  169:Drivers/lvgl/src/core/lv_obj_style.c **** 
  3705              		.loc 1 169 5 is_stmt 0 view .LVU1104
-ARM GAS  /tmp/ccPNmdt6.s 			page 130
+ARM GAS  /tmp/ccRdAAjN.s 			page 130
 
 
  3706 0038 FF22     		movs	r2, #255
@@ -7798,7 +7798,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  3744 005c 4368     		ldr	r3, [r0, #4]
  3745              	.LVL405:
  3746              	.LBB230:
-ARM GAS  /tmp/ccPNmdt6.s 			page 131
+ARM GAS  /tmp/ccRdAAjN.s 			page 131
 
 
  3747              	.LBI230:
@@ -7858,7 +7858,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  3788 0084 52F83430 		ldr	r3, [r2, r4, lsl #3]
  3789              	.LVL408:
  184:Drivers/lvgl/src/core/lv_obj_style.c ****            (old_style != obj->styles[i].style)) {
-ARM GAS  /tmp/ccPNmdt6.s 			page 132
+ARM GAS  /tmp/ccRdAAjN.s 			page 132
 
 
  3790              		.loc 1 184 54 view .LVU1137
@@ -7918,7 +7918,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  3831              		.loc 1 196 5 is_stmt 1 view .LVU1152
  196:Drivers/lvgl/src/core/lv_obj_style.c ****         full_cache_refresh(obj, part);
  3832              		.loc 1 196 7 is_stmt 0 view .LVU1153
-ARM GAS  /tmp/ccPNmdt6.s 			page 133
+ARM GAS  /tmp/ccRdAAjN.s 			page 133
 
 
  3833 00ae BAF1000F 		cmp	r10, #0
@@ -7978,7 +7978,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  3883              		.cfi_offset 10, -8
  3884              		.cfi_offset 14, -4
  3885 0004 0446     		mov	r4, r0
-ARM GAS  /tmp/ccPNmdt6.s 			page 134
+ARM GAS  /tmp/ccRdAAjN.s 			page 134
 
 
  205:Drivers/lvgl/src/core/lv_obj_style.c ****     lv_part_t part = lv_obj_style_get_selector_part(selector);
@@ -8038,7 +8038,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  210:Drivers/lvgl/src/core/lv_obj_style.c ****         lv_obj_invalidate(obj);
  3926              		.loc 1 210 14 is_stmt 0 view .LVU1177
  3927 001e B8F10003 		subs	r3, r8, #0
-ARM GAS  /tmp/ccPNmdt6.s 			page 135
+ARM GAS  /tmp/ccRdAAjN.s 			page 135
 
 
  3928 0022 18BF     		it	ne
@@ -8098,7 +8098,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  222:Drivers/lvgl/src/core/lv_obj_style.c ****             continue;
  3972              		.loc 1 222 14 is_stmt 0 view .LVU1188
  3973 004e 0135     		adds	r5, r5, #1
-ARM GAS  /tmp/ccPNmdt6.s 			page 136
+ARM GAS  /tmp/ccRdAAjN.s 			page 136
 
 
  3974              	.LVL429:
@@ -8158,7 +8158,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  4013              		.loc 3 191 21 is_stmt 0 view .LVU1205
  4014 006a 03F47F03 		and	r3, r3, #16711680
  4015              	.LVL432:
-ARM GAS  /tmp/ccPNmdt6.s 			page 137
+ARM GAS  /tmp/ccRdAAjN.s 			page 137
 
 
  4016              		.loc 3 191 21 view .LVU1206
@@ -8218,7 +8218,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  4056              		.loc 1 230 11 view .LVU1220
  4057 00a2 12F0030F 		tst	r2, #3
  4058 00a6 0DD0     		beq	.L270
-ARM GAS  /tmp/ccPNmdt6.s 			page 138
+ARM GAS  /tmp/ccRdAAjN.s 			page 138
 
 
  231:Drivers/lvgl/src/core/lv_obj_style.c ****             lv_free((lv_style_t *)obj->styles[i].style);
@@ -8278,7 +8278,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  4098              		.loc 1 227 13 view .LVU1235
  4099 00d0 FFF7FEFF 		bl	trans_delete
  4100              	.LVL440:
-ARM GAS  /tmp/ccPNmdt6.s 			page 139
+ARM GAS  /tmp/ccRdAAjN.s 			page 139
 
 
  227:Drivers/lvgl/src/core/lv_obj_style.c ****         }
@@ -8338,7 +8338,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  4139              		.loc 1 243 23 is_stmt 0 view .LVU1251
  4140 0106 C900     		lsls	r1, r1, #3
  4141 0108 E068     		ldr	r0, [r4, #12]
-ARM GAS  /tmp/ccPNmdt6.s 			page 140
+ARM GAS  /tmp/ccRdAAjN.s 			page 140
 
 
  4142 010a FFF7FEFF 		bl	lv_realloc
@@ -8398,7 +8398,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  4186              		.thumb_func
  4188              	lv_obj_remove_style_all:
  4189              	.LVL450:
-ARM GAS  /tmp/ccPNmdt6.s 			page 141
+ARM GAS  /tmp/ccRdAAjN.s 			page 141
 
 
  4190              	.LFB191:
@@ -8458,7 +8458,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  987:Drivers/lvgl/src/core/lv_obj_style.c ****     lv_obj_t * obj = tr->obj;
  4239              		.loc 1 987 15 is_stmt 0 view .LVU1270
  4240 0004 0468     		ldr	r4, [r0]
-ARM GAS  /tmp/ccPNmdt6.s 			page 142
+ARM GAS  /tmp/ccRdAAjN.s 			page 142
 
 
  4241              	.LVL453:
@@ -8518,7 +8518,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  997:Drivers/lvgl/src/core/lv_obj_style.c ****             running = true;
  4280              		.loc 1 997 41 discriminator 1 view .LVU1286
  4281 0024 2368     		ldr	r3, [r4]
-ARM GAS  /tmp/ccPNmdt6.s 			page 143
+ARM GAS  /tmp/ccRdAAjN.s 			page 143
 
 
  997:Drivers/lvgl/src/core/lv_obj_style.c ****             running = true;
@@ -8578,7 +8578,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  4321 004a 22F07F42 		bic	r2, r2, #-16777216
  4322 004e 54F83510 		ldr	r1, [r4, r5, lsl #3]
  4323 0052 3046     		mov	r0, r6
-ARM GAS  /tmp/ccPNmdt6.s 			page 144
+ARM GAS  /tmp/ccRdAAjN.s 			page 144
 
 
  4324 0054 FFF7FEFF 		bl	lv_obj_remove_style
@@ -8638,7 +8638,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  4364              	.LVL467:
 1007:Drivers/lvgl/src/core/lv_obj_style.c ****                 lv_free(tr);
  4365              		.loc 1 1007 17 is_stmt 0 view .LVU1316
-ARM GAS  /tmp/ccPNmdt6.s 			page 145
+ARM GAS  /tmp/ccRdAAjN.s 			page 145
 
 
  4366 0086 0B48     		ldr	r0, .L300
@@ -8698,7 +8698,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  4408              		.cfi_endproc
  4409              	.LFE218:
  4411              		.section	.text.lv_obj_add_style,"ax",%progbits
-ARM GAS  /tmp/ccPNmdt6.s 			page 146
+ARM GAS  /tmp/ccRdAAjN.s 			page 146
 
 
  4412              		.align	1
@@ -8758,7 +8758,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  4456              	.LVL477:
  102:Drivers/lvgl/src/core/lv_obj_style.c **** 
  4457              		.loc 1 102 5 is_stmt 0 view .LVU1340
-ARM GAS  /tmp/ccPNmdt6.s 			page 147
+ARM GAS  /tmp/ccRdAAjN.s 			page 147
 
 
  4458 001c 3146     		mov	r1, r6
@@ -8818,7 +8818,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  106:Drivers/lvgl/src/core/lv_obj_style.c ****         lv_obj_invalidate(obj);
  4501              		.loc 1 106 41 discriminator 1 view .LVU1355
  4502 0042 2021     		movs	r1, #32
-ARM GAS  /tmp/ccPNmdt6.s 			page 148
+ARM GAS  /tmp/ccRdAAjN.s 			page 148
 
 
  4503 0044 3846     		mov	r0, r7
@@ -8878,7 +8878,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  124:Drivers/lvgl/src/core/lv_obj_style.c ****     LV_ASSERT(obj->style_cnt != 0);
  4543              		.loc 1 124 19 is_stmt 0 view .LVU1370
  4544 0076 0133     		adds	r3, r3, #1
-ARM GAS  /tmp/ccPNmdt6.s 			page 149
+ARM GAS  /tmp/ccRdAAjN.s 			page 149
 
 
  4545 0078 03F03F03 		and	r3, r3, #63
@@ -8938,7 +8938,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  4580              		.loc 1 130 28 view .LVU1389
  4581 00a0 0CF1FF3C 		add	ip, ip, #-1
  4582              	.LVL489:
-ARM GAS  /tmp/ccPNmdt6.s 			page 150
+ARM GAS  /tmp/ccRdAAjN.s 			page 150
 
 
  130:Drivers/lvgl/src/core/lv_obj_style.c ****         obj->styles[j] = obj->styles[j - 1];
@@ -8998,7 +8998,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  4621              	.LBI253:
   73:Drivers/lvgl/src/core/../misc/../font/../draw/../misc/../stdlib/lv_string.h **** {
  4622              		.loc 4 73 20 is_stmt 1 view .LVU1406
-ARM GAS  /tmp/ccPNmdt6.s 			page 151
+ARM GAS  /tmp/ccRdAAjN.s 			page 151
 
 
  4623              	.LBB254:
@@ -9058,7 +9058,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  4667              		.thumb_func
  4669              	report_style_change_core:
  4670              	.LVL498:
-ARM GAS  /tmp/ccPNmdt6.s 			page 152
+ARM GAS  /tmp/ccRdAAjN.s 			page 152
 
 
  4671              	.LFB213:
@@ -9118,7 +9118,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  823:Drivers/lvgl/src/core/lv_obj_style.c ****             full_cache_refresh(obj, lv_obj_style_get_selector_part(obj->styles[i].selector));
  4712              		.loc 1 823 32 discriminator 1 view .LVU1434
  4713 0018 E368     		ldr	r3, [r4, #12]
-ARM GAS  /tmp/ccPNmdt6.s 			page 153
+ARM GAS  /tmp/ccRdAAjN.s 			page 153
 
 
  823:Drivers/lvgl/src/core/lv_obj_style.c ****             full_cache_refresh(obj, lv_obj_style_get_selector_part(obj->styles[i].selector));
@@ -9178,7 +9178,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  832:Drivers/lvgl/src/core/lv_obj_style.c ****     }
  4753              		.loc 1 832 9 view .LVU1450
  4754 0040 53F82610 		ldr	r1, [r3, r6, lsl #2]
-ARM GAS  /tmp/ccPNmdt6.s 			page 154
+ARM GAS  /tmp/ccRdAAjN.s 			page 154
 
 
  4755 0044 2846     		mov	r0, r5
@@ -9238,7 +9238,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  264:Drivers/lvgl/src/core/lv_obj_style.c **** 
  4802              		.loc 1 264 5 is_stmt 1 view .LVU1460
  264:Drivers/lvgl/src/core/lv_obj_style.c **** 
-ARM GAS  /tmp/ccPNmdt6.s 			page 155
+ARM GAS  /tmp/ccRdAAjN.s 			page 155
 
 
  4803              		.loc 1 264 24 is_stmt 0 view .LVU1461
@@ -9298,7 +9298,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  4844              	.LBE255:
  266:Drivers/lvgl/src/core/lv_obj_style.c ****         uint32_t i;
  4845              		.loc 1 266 11 is_stmt 1 view .LVU1475
-ARM GAS  /tmp/ccPNmdt6.s 			page 156
+ARM GAS  /tmp/ccRdAAjN.s 			page 156
 
 
  4846 0038 0DB1     		cbz	r5, .L340
@@ -9358,7 +9358,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  4895              		.loc 1 363 5 view .LVU1482
  4896              	.LVL522:
  4897              	.LBB257:
-ARM GAS  /tmp/ccPNmdt6.s 			page 157
+ARM GAS  /tmp/ccRdAAjN.s 			page 157
 
 
  4898              	.LBI257:
@@ -9418,7 +9418,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  384:Drivers/lvgl/src/core/lv_obj_style.c **** 
  4941              		.loc 1 384 1 is_stmt 0 view .LVU1496
  4942 0038 03B0     		add	sp, sp, #12
-ARM GAS  /tmp/ccPNmdt6.s 			page 158
+ARM GAS  /tmp/ccRdAAjN.s 			page 158
 
 
  4943              	.LCFI65:
@@ -9478,7 +9478,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  4993 0000 30B1     		cbz	r0, .L349
  401:Drivers/lvgl/src/core/lv_obj_style.c ****     LV_ASSERT_OBJ(obj, MY_CLASS);
  4994              		.loc 1 401 1 is_stmt 0 view .LVU1507
-ARM GAS  /tmp/ccPNmdt6.s 			page 159
+ARM GAS  /tmp/ccRdAAjN.s 			page 159
 
 
  4995 0002 F8B5     		push	{r3, r4, r5, r6, r7, lr}
@@ -9538,7 +9538,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  5040              		.loc 1 406 23 is_stmt 0 discriminator 1 view .LVU1516
  5041 0016 608D     		ldrh	r0, [r4, #42]
  5042 0018 C0F30510 		ubfx	r0, r0, #4, #6
-ARM GAS  /tmp/ccPNmdt6.s 			page 160
+ARM GAS  /tmp/ccRdAAjN.s 			page 160
 
 
  406:Drivers/lvgl/src/core/lv_obj_style.c ****         if(obj->styles[i].is_local &&
@@ -9598,7 +9598,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  5081              	.LVL540:
  5082              	.L353:
  423:Drivers/lvgl/src/core/lv_obj_style.c **** 
-ARM GAS  /tmp/ccPNmdt6.s 			page 161
+ARM GAS  /tmp/ccRdAAjN.s 			page 161
 
 
  5083              		.loc 1 423 1 view .LVU1533
@@ -9658,7 +9658,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  5131 0008 FFF7FEFF 		bl	lv_obj_remove_local_style_prop
  5132              	.LVL547:
 1097:Drivers/lvgl/src/core/lv_obj_style.c **** 
-ARM GAS  /tmp/ccPNmdt6.s 			page 162
+ARM GAS  /tmp/ccRdAAjN.s 			page 162
 
 
  5133              		.loc 1 1097 1 view .LVU1542
@@ -9718,7 +9718,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  5181 001c 0285     		strh	r2, [r0, #40]	@ movhi
  433:Drivers/lvgl/src/core/lv_obj_style.c ****     obj->state = new_state;
  5182              		.loc 1 433 5 is_stmt 1 view .LVU1551
-ARM GAS  /tmp/ccPNmdt6.s 			page 163
+ARM GAS  /tmp/ccRdAAjN.s 			page 163
 
 
  433:Drivers/lvgl/src/core/lv_obj_style.c ****     obj->state = new_state;
@@ -9778,7 +9778,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  5221 0050 3146     		mov	r1, r6
  5222 0052 2046     		mov	r0, r4
  5223 0054 FFF7FEFF 		bl	lv_obj_get_style_prop
-ARM GAS  /tmp/ccPNmdt6.s 			page 164
+ARM GAS  /tmp/ccRdAAjN.s 			page 164
 
 
  5224              	.LVL553:
@@ -9838,7 +9838,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  5264 0086 0746     		mov	r7, r0
  5265 0088 0028     		cmp	r0, #0
  5266 008a 72D0     		beq	.L374
-ARM GAS  /tmp/ccPNmdt6.s 			page 165
+ARM GAS  /tmp/ccRdAAjN.s 			page 165
 
 
  457:Drivers/lvgl/src/core/lv_obj_style.c ****     if(tr == NULL) return;
@@ -9898,7 +9898,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  5302 00aa 3349     		ldr	r1, .L381+4
  5303 00ac 6846     		mov	r0, sp
  5304 00ae FFF7FEFF 		bl	lv_anim_set_exec_cb
-ARM GAS  /tmp/ccPNmdt6.s 			page 166
+ARM GAS  /tmp/ccRdAAjN.s 			page 166
 
 
  5305              	.LVL563:
@@ -9958,7 +9958,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  5350              	.LVL572:
  5351              	.L361:
  478:Drivers/lvgl/src/core/lv_obj_style.c **** 
-ARM GAS  /tmp/ccPNmdt6.s 			page 167
+ARM GAS  /tmp/ccRdAAjN.s 			page 167
 
 
  5352              		.loc 1 478 1 is_stmt 0 view .LVU1610
@@ -10018,7 +10018,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  5396              	.L366:
  5397 012a 4FEA6008 		asr	r8, r0, #1
  5398              	.LVL577:
-ARM GAS  /tmp/ccPNmdt6.s 			page 168
+ARM GAS  /tmp/ccRdAAjN.s 			page 168
 
 
  450:Drivers/lvgl/src/core/lv_obj_style.c ****             if(v1.num == LV_RADIUS_CIRCLE) v1.num = LV_MIN(whalf + 1, hhalf + 1);
@@ -10078,7 +10078,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  5440 015a 0130     		adds	r0, r0, #1
  5441 015c ECE7     		b	.L367
  5442              	.LVL583:
-ARM GAS  /tmp/ccPNmdt6.s 			page 169
+ARM GAS  /tmp/ccRdAAjN.s 			page 169
 
 
  5443              	.L380:
@@ -10138,7 +10138,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  5485              		.align	1
  5486              		.syntax unified
  5487              		.thumb
-ARM GAS  /tmp/ccPNmdt6.s 			page 170
+ARM GAS  /tmp/ccRdAAjN.s 			page 170
 
 
  5488              		.thumb_func
@@ -10198,7 +10198,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  5533 0014 E060     		str	r0, [r4, #12]
  970:Drivers/lvgl/src/core/lv_obj_style.c ****     tr->prop = LV_STYLE_PROP_INV;
  5534              		.loc 1 970 5 is_stmt 1 view .LVU1660
-ARM GAS  /tmp/ccPNmdt6.s 			page 171
+ARM GAS  /tmp/ccRdAAjN.s 			page 171
 
 
  970:Drivers/lvgl/src/core/lv_obj_style.c ****     tr->prop = LV_STYLE_PROP_INV;
@@ -10258,7 +10258,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  5576              	.LFE217:
  5578              		.section	.text.trans_anim_cb,"ax",%progbits
  5579              		.align	1
-ARM GAS  /tmp/ccPNmdt6.s 			page 172
+ARM GAS  /tmp/ccRdAAjN.s 			page 172
 
 
  5580              		.syntax unified
@@ -10318,7 +10318,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  5624              	.LVL602:
  5625              	.L386:
  904:Drivers/lvgl/src/core/lv_obj_style.c ****         if(obj->styles[i].is_trans == 0 || obj->styles[i].selector != tr->selector) continue;
-ARM GAS  /tmp/ccPNmdt6.s 			page 173
+ARM GAS  /tmp/ccRdAAjN.s 			page 173
 
 
  5626              		.loc 1 904 18 discriminator 1 view .LVU1685
@@ -10378,7 +10378,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  5665 004a 0CD3     		bcc	.L420
  5666 004c 5A3B     		subs	r3, r3, #90
  5667 004e 0F2B     		cmp	r3, #15
-ARM GAS  /tmp/ccPNmdt6.s 			page 174
+ARM GAS  /tmp/ccRdAAjN.s 			page 174
 
 
  5668 0050 65D8     		bhi	.L389
@@ -10438,7 +10438,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  5716 0090 45D8     		bhi	.L389
  5717 0092 3D2B     		cmp	r3, #61
  5718 0094 43D3     		bcc	.L389
-ARM GAS  /tmp/ccPNmdt6.s 			page 175
+ARM GAS  /tmp/ccRdAAjN.s 			page 175
 
 
  5719 0096 3D3B     		subs	r3, r3, #61
@@ -10498,7 +10498,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  5759              	.L401:
  919:Drivers/lvgl/src/core/lv_obj_style.c ****                 break;
  5760              		.loc 1 919 22 is_stmt 1 view .LVU1721
-ARM GAS  /tmp/ccPNmdt6.s 			page 176
+ARM GAS  /tmp/ccRdAAjN.s 			page 176
 
 
  919:Drivers/lvgl/src/core/lv_obj_style.c ****                 break;
@@ -10558,7 +10558,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  925:Drivers/lvgl/src/core/lv_obj_style.c ****                 break;
  5798              		.loc 1 925 22 is_stmt 1 view .LVU1739
  925:Drivers/lvgl/src/core/lv_obj_style.c ****                 break;
-ARM GAS  /tmp/ccPNmdt6.s 			page 177
+ARM GAS  /tmp/ccRdAAjN.s 			page 177
 
 
  5799              		.loc 1 925 38 is_stmt 0 view .LVU1740
@@ -10618,7 +10618,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  5841 0126 0193     		str	r3, [sp, #4]
  947:Drivers/lvgl/src/core/lv_obj_style.c ****         if(lv_style_get_prop(obj->styles[i].style, tr->prop, &old_value)) {
  5842              		.loc 1 947 9 is_stmt 1 view .LVU1753
-ARM GAS  /tmp/ccPNmdt6.s 			page 178
+ARM GAS  /tmp/ccRdAAjN.s 			page 178
 
 
  5843              	.LVL608:
@@ -10678,7 +10678,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  942:Drivers/lvgl/src/core/lv_obj_style.c ****                 break;
  5881              		.loc 1 942 60 view .LVU1770
  5882 0152 02EB2322 		add	r2, r2, r3, asr #8
-ARM GAS  /tmp/ccPNmdt6.s 			page 179
+ARM GAS  /tmp/ccRdAAjN.s 			page 179
 
 
  942:Drivers/lvgl/src/core/lv_obj_style.c ****                 break;
@@ -10738,7 +10738,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  5924              	.LVL614:
  955:Drivers/lvgl/src/core/lv_obj_style.c ****         break;
  5925              		.loc 1 955 9 is_stmt 1 view .LVU1784
-ARM GAS  /tmp/ccPNmdt6.s 			page 180
+ARM GAS  /tmp/ccRdAAjN.s 			page 180
 
 
  955:Drivers/lvgl/src/core/lv_obj_style.c ****         break;
@@ -10798,7 +10798,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  650:Drivers/lvgl/src/core/lv_obj_style.c ****     lv_opa_t opa = lv_obj_get_style_recolor_opa(obj, part);
  5976              		.loc 1 650 1 view -0
  5977              		.cfi_startproc
-ARM GAS  /tmp/ccPNmdt6.s 			page 181
+ARM GAS  /tmp/ccRdAAjN.s 			page 181
 
 
  5978              		@ args = 0, pretend = 0, frame = 24
@@ -10858,7 +10858,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  6020 0018 019B     		ldr	r3, [sp, #4]
  6021 001a 0493     		str	r3, [sp, #16]
  657:Drivers/lvgl/src/core/lv_obj_style.c **** }
-ARM GAS  /tmp/ccPNmdt6.s 			page 182
+ARM GAS  /tmp/ccRdAAjN.s 			page 182
 
 
  6022              		.loc 1 657 12 discriminator 1 view .LVU1804
@@ -10918,7 +10918,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  6067 005e 1B0C     		lsrs	r3, r3, #16
  6068 0060 8DF80A30 		strb	r3, [sp, #10]
  6069              	.LVL627:
-ARM GAS  /tmp/ccPNmdt6.s 			page 183
+ARM GAS  /tmp/ccRdAAjN.s 			page 183
 
 
  649:Drivers/lvgl/src/core/lv_obj_style_gen.h **** }
@@ -10978,7 +10978,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  6118              		.loc 1 664 5 view .LVU1821
  6119              	.LVL631:
  6120              	.LBB272:
-ARM GAS  /tmp/ccPNmdt6.s 			page 184
+ARM GAS  /tmp/ccRdAAjN.s 			page 184
 
 
  6121              	.LBI272:
@@ -11038,7 +11038,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  667:Drivers/lvgl/src/core/lv_obj_style.c **** 
  6162              		.loc 1 667 5 is_stmt 1 view .LVU1835
  667:Drivers/lvgl/src/core/lv_obj_style.c **** 
-ARM GAS  /tmp/ccPNmdt6.s 			page 185
+ARM GAS  /tmp/ccRdAAjN.s 			page 185
 
 
  6163              		.loc 1 667 14 is_stmt 0 view .LVU1836
@@ -11098,7 +11098,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  681:Drivers/lvgl/src/core/lv_obj_style.c **** }
  6205              		.loc 1 681 5 view .LVU1849
  681:Drivers/lvgl/src/core/lv_obj_style.c **** }
-ARM GAS  /tmp/ccPNmdt6.s 			page 186
+ARM GAS  /tmp/ccRdAAjN.s 			page 186
 
 
  6206              		.loc 1 681 12 is_stmt 0 view .LVU1850
@@ -11158,7 +11158,7 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  6259              		.file 36 "Drivers/lvgl/src/core/../core/../draw/sw/../../osal/lv_os_none.h"
  6260              		.file 37 "Drivers/lvgl/src/core/../core/../tick/lv_tick_private.h"
  6261              		.file 38 "Drivers/lvgl/src/core/../core/../draw/sw/lv_draw_sw_mask_private.h"
-ARM GAS  /tmp/ccPNmdt6.s 			page 187
+ARM GAS  /tmp/ccRdAAjN.s 			page 187
 
 
  6262              		.file 39 "Drivers/lvgl/src/core/../core/../layouts/lv_layout_private.h"
@@ -11168,107 +11168,107 @@ ARM GAS  /tmp/ccPNmdt6.s 			page 1
  6266              		.file 43 "Drivers/lvgl/src/core/lv_obj_pos.h"
  6267              		.file 44 "Drivers/lvgl/src/core/lv_obj_tree.h"
  6268              		.file 45 "Drivers/lvgl/src/core/lv_obj_event.h"
-ARM GAS  /tmp/ccPNmdt6.s 			page 188
+ARM GAS  /tmp/ccRdAAjN.s 			page 188
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_obj_style.c
-     /tmp/ccPNmdt6.s:21     .text.lv_style_get_prop_inlined:00000000 $t
-     /tmp/ccPNmdt6.s:26     .text.lv_style_get_prop_inlined:00000000 lv_style_get_prop_inlined
-     /tmp/ccPNmdt6.s:165    .text.get_prop_core:00000000 $t
-     /tmp/ccPNmdt6.s:170    .text.get_prop_core:00000000 get_prop_core
-     /tmp/ccPNmdt6.s:492    .text.get_selector_style_prop:00000000 $t
-     /tmp/ccPNmdt6.s:497    .text.get_selector_style_prop:00000000 get_selector_style_prop
-     /tmp/ccPNmdt6.s:707    .text.get_selector_style_prop:0000008c $d
-     /tmp/ccPNmdt6.s:713    .text.trans_delete:00000000 $t
-     /tmp/ccPNmdt6.s:718    .text.trans_delete:00000000 trans_delete
-     /tmp/ccPNmdt6.s:902    .text.trans_delete:000000ac $d
-     /tmp/ccPNmdt6.s:907    .text.style_has_flag:00000000 $t
-     /tmp/ccPNmdt6.s:912    .text.style_has_flag:00000000 style_has_flag
-     /tmp/ccPNmdt6.s:1072   .text.refresh_children_style:00000000 $t
-     /tmp/ccPNmdt6.s:1077   .text.refresh_children_style:00000000 refresh_children_style
-     /tmp/ccPNmdt6.s:1153   .text.get_local_style:00000000 $t
-     /tmp/ccPNmdt6.s:1158   .text.get_local_style:00000000 get_local_style
-     /tmp/ccPNmdt6.s:1368   .text.get_trans_style:00000000 $t
-     /tmp/ccPNmdt6.s:1373   .text.get_trans_style:00000000 get_trans_style
-     /tmp/ccPNmdt6.s:1558   .text.fade_anim_cb:00000000 $t
-     /tmp/ccPNmdt6.s:1563   .text.fade_anim_cb:00000000 fade_anim_cb
-     /tmp/ccPNmdt6.s:1589   .text.lv_obj_style_init:00000000 $t
-     /tmp/ccPNmdt6.s:1595   .text.lv_obj_style_init:00000000 lv_obj_style_init
-     /tmp/ccPNmdt6.s:1616   .text.lv_obj_style_init:0000000c $d
-     /tmp/ccPNmdt6.s:1621   .text.lv_obj_style_deinit:00000000 $t
-     /tmp/ccPNmdt6.s:1627   .text.lv_obj_style_deinit:00000000 lv_obj_style_deinit
-     /tmp/ccPNmdt6.s:1662   .text.lv_obj_style_deinit:0000001c $d
-     /tmp/ccPNmdt6.s:1667   .text.lv_obj_enable_style_refresh:00000000 $t
-     /tmp/ccPNmdt6.s:1673   .text.lv_obj_enable_style_refresh:00000000 lv_obj_enable_style_refresh
-     /tmp/ccPNmdt6.s:1690   .text.lv_obj_enable_style_refresh:00000008 $d
-     /tmp/ccPNmdt6.s:1695   .text.lv_obj_get_style_prop:00000000 $t
-     /tmp/ccPNmdt6.s:1701   .text.lv_obj_get_style_prop:00000000 lv_obj_get_style_prop
-     /tmp/ccPNmdt6.s:1789   .text.calculate_layer_type:00000000 $t
-     /tmp/ccPNmdt6.s:1794   .text.calculate_layer_type:00000000 calculate_layer_type
-     /tmp/ccPNmdt6.s:2032   .text.lv_obj_has_style_prop:00000000 $t
-     /tmp/ccPNmdt6.s:2038   .text.lv_obj_has_style_prop:00000000 lv_obj_has_style_prop
-     /tmp/ccPNmdt6.s:2106   .text.lv_obj_get_local_style_prop:00000000 $t
-     /tmp/ccPNmdt6.s:2112   .text.lv_obj_get_local_style_prop:00000000 lv_obj_get_local_style_prop
-     /tmp/ccPNmdt6.s:2184   .text.lv_obj_style_apply_color_filter:00000000 $t
-     /tmp/ccPNmdt6.s:2190   .text.lv_obj_style_apply_color_filter:00000000 lv_obj_style_apply_color_filter
-     /tmp/ccPNmdt6.s:2222   .text.lv_obj_style_state_compare:00000000 $t
-     /tmp/ccPNmdt6.s:2228   .text.lv_obj_style_state_compare:00000000 lv_obj_style_state_compare
-     /tmp/ccPNmdt6.s:2755   .text.lv_obj_fade_in:00000000 $t
-     /tmp/ccPNmdt6.s:2761   .text.lv_obj_fade_in:00000000 lv_obj_fade_in
-     /tmp/ccPNmdt6.s:2836   .text.lv_obj_fade_in:0000004c $d
-     /tmp/ccPNmdt6.s:5112   .text.fade_in_anim_completed:00000000 fade_in_anim_completed
-     /tmp/ccPNmdt6.s:2842   .text.lv_obj_fade_out:00000000 $t
-     /tmp/ccPNmdt6.s:2848   .text.lv_obj_fade_out:00000000 lv_obj_fade_out
-     /tmp/ccPNmdt6.s:2937   .text.lv_obj_fade_out:00000054 $d
-     /tmp/ccPNmdt6.s:2942   .text.lv_obj_calculate_style_text_align:00000000 $t
-     /tmp/ccPNmdt6.s:2948   .text.lv_obj_calculate_style_text_align:00000000 lv_obj_calculate_style_text_align
-     /tmp/ccPNmdt6.s:3039   .text.lv_obj_get_style_opa_recursive:00000000 $t
-     /tmp/ccPNmdt6.s:3045   .text.lv_obj_get_style_opa_recursive:00000000 lv_obj_get_style_opa_recursive
-     /tmp/ccPNmdt6.s:3223   .text.lv_obj_update_layer_type:00000000 $t
-     /tmp/ccPNmdt6.s:3229   .text.lv_obj_update_layer_type:00000000 lv_obj_update_layer_type
-     /tmp/ccPNmdt6.s:3294   .text.lv_obj_refresh_style:00000000 $t
-ARM GAS  /tmp/ccPNmdt6.s 			page 189
+     /tmp/ccRdAAjN.s:21     .text.lv_style_get_prop_inlined:00000000 $t
+     /tmp/ccRdAAjN.s:26     .text.lv_style_get_prop_inlined:00000000 lv_style_get_prop_inlined
+     /tmp/ccRdAAjN.s:165    .text.get_prop_core:00000000 $t
+     /tmp/ccRdAAjN.s:170    .text.get_prop_core:00000000 get_prop_core
+     /tmp/ccRdAAjN.s:492    .text.get_selector_style_prop:00000000 $t
+     /tmp/ccRdAAjN.s:497    .text.get_selector_style_prop:00000000 get_selector_style_prop
+     /tmp/ccRdAAjN.s:707    .text.get_selector_style_prop:0000008c $d
+     /tmp/ccRdAAjN.s:713    .text.trans_delete:00000000 $t
+     /tmp/ccRdAAjN.s:718    .text.trans_delete:00000000 trans_delete
+     /tmp/ccRdAAjN.s:902    .text.trans_delete:000000ac $d
+     /tmp/ccRdAAjN.s:907    .text.style_has_flag:00000000 $t
+     /tmp/ccRdAAjN.s:912    .text.style_has_flag:00000000 style_has_flag
+     /tmp/ccRdAAjN.s:1072   .text.refresh_children_style:00000000 $t
+     /tmp/ccRdAAjN.s:1077   .text.refresh_children_style:00000000 refresh_children_style
+     /tmp/ccRdAAjN.s:1153   .text.get_local_style:00000000 $t
+     /tmp/ccRdAAjN.s:1158   .text.get_local_style:00000000 get_local_style
+     /tmp/ccRdAAjN.s:1368   .text.get_trans_style:00000000 $t
+     /tmp/ccRdAAjN.s:1373   .text.get_trans_style:00000000 get_trans_style
+     /tmp/ccRdAAjN.s:1558   .text.fade_anim_cb:00000000 $t
+     /tmp/ccRdAAjN.s:1563   .text.fade_anim_cb:00000000 fade_anim_cb
+     /tmp/ccRdAAjN.s:1589   .text.lv_obj_style_init:00000000 $t
+     /tmp/ccRdAAjN.s:1595   .text.lv_obj_style_init:00000000 lv_obj_style_init
+     /tmp/ccRdAAjN.s:1616   .text.lv_obj_style_init:0000000c $d
+     /tmp/ccRdAAjN.s:1621   .text.lv_obj_style_deinit:00000000 $t
+     /tmp/ccRdAAjN.s:1627   .text.lv_obj_style_deinit:00000000 lv_obj_style_deinit
+     /tmp/ccRdAAjN.s:1662   .text.lv_obj_style_deinit:0000001c $d
+     /tmp/ccRdAAjN.s:1667   .text.lv_obj_enable_style_refresh:00000000 $t
+     /tmp/ccRdAAjN.s:1673   .text.lv_obj_enable_style_refresh:00000000 lv_obj_enable_style_refresh
+     /tmp/ccRdAAjN.s:1690   .text.lv_obj_enable_style_refresh:00000008 $d
+     /tmp/ccRdAAjN.s:1695   .text.lv_obj_get_style_prop:00000000 $t
+     /tmp/ccRdAAjN.s:1701   .text.lv_obj_get_style_prop:00000000 lv_obj_get_style_prop
+     /tmp/ccRdAAjN.s:1789   .text.calculate_layer_type:00000000 $t
+     /tmp/ccRdAAjN.s:1794   .text.calculate_layer_type:00000000 calculate_layer_type
+     /tmp/ccRdAAjN.s:2032   .text.lv_obj_has_style_prop:00000000 $t
+     /tmp/ccRdAAjN.s:2038   .text.lv_obj_has_style_prop:00000000 lv_obj_has_style_prop
+     /tmp/ccRdAAjN.s:2106   .text.lv_obj_get_local_style_prop:00000000 $t
+     /tmp/ccRdAAjN.s:2112   .text.lv_obj_get_local_style_prop:00000000 lv_obj_get_local_style_prop
+     /tmp/ccRdAAjN.s:2184   .text.lv_obj_style_apply_color_filter:00000000 $t
+     /tmp/ccRdAAjN.s:2190   .text.lv_obj_style_apply_color_filter:00000000 lv_obj_style_apply_color_filter
+     /tmp/ccRdAAjN.s:2222   .text.lv_obj_style_state_compare:00000000 $t
+     /tmp/ccRdAAjN.s:2228   .text.lv_obj_style_state_compare:00000000 lv_obj_style_state_compare
+     /tmp/ccRdAAjN.s:2755   .text.lv_obj_fade_in:00000000 $t
+     /tmp/ccRdAAjN.s:2761   .text.lv_obj_fade_in:00000000 lv_obj_fade_in
+     /tmp/ccRdAAjN.s:2836   .text.lv_obj_fade_in:0000004c $d
+     /tmp/ccRdAAjN.s:5112   .text.fade_in_anim_completed:00000000 fade_in_anim_completed
+     /tmp/ccRdAAjN.s:2842   .text.lv_obj_fade_out:00000000 $t
+     /tmp/ccRdAAjN.s:2848   .text.lv_obj_fade_out:00000000 lv_obj_fade_out
+     /tmp/ccRdAAjN.s:2937   .text.lv_obj_fade_out:00000054 $d
+     /tmp/ccRdAAjN.s:2942   .text.lv_obj_calculate_style_text_align:00000000 $t
+     /tmp/ccRdAAjN.s:2948   .text.lv_obj_calculate_style_text_align:00000000 lv_obj_calculate_style_text_align
+     /tmp/ccRdAAjN.s:3039   .text.lv_obj_get_style_opa_recursive:00000000 $t
+     /tmp/ccRdAAjN.s:3045   .text.lv_obj_get_style_opa_recursive:00000000 lv_obj_get_style_opa_recursive
+     /tmp/ccRdAAjN.s:3223   .text.lv_obj_update_layer_type:00000000 $t
+     /tmp/ccRdAAjN.s:3229   .text.lv_obj_update_layer_type:00000000 lv_obj_update_layer_type
+     /tmp/ccRdAAjN.s:3294   .text.lv_obj_refresh_style:00000000 $t
+ARM GAS  /tmp/ccRdAAjN.s 			page 189
 
 
-     /tmp/ccPNmdt6.s:3300   .text.lv_obj_refresh_style:00000000 lv_obj_refresh_style
-     /tmp/ccPNmdt6.s:3625   .text.lv_obj_refresh_style:00000120 $d
-     /tmp/ccPNmdt6.s:3630   .text.lv_obj_replace_style:00000000 $t
-     /tmp/ccPNmdt6.s:3636   .text.lv_obj_replace_style:00000000 lv_obj_replace_style
-     /tmp/ccPNmdt6.s:3860   .text.lv_obj_remove_style:00000000 $t
-     /tmp/ccPNmdt6.s:3866   .text.lv_obj_remove_style:00000000 lv_obj_remove_style
-     /tmp/ccPNmdt6.s:4182   .text.lv_obj_remove_style_all:00000000 $t
-     /tmp/ccPNmdt6.s:4188   .text.lv_obj_remove_style_all:00000000 lv_obj_remove_style_all
-     /tmp/ccPNmdt6.s:4211   .text.lv_obj_remove_style_all:0000000c $d
-     /tmp/ccPNmdt6.s:4216   .text.trans_anim_completed_cb:00000000 $t
-     /tmp/ccPNmdt6.s:4221   .text.trans_anim_completed_cb:00000000 trans_anim_completed_cb
-     /tmp/ccPNmdt6.s:4407   .text.trans_anim_completed_cb:000000b4 $d
-     /tmp/ccPNmdt6.s:4412   .text.lv_obj_add_style:00000000 $t
-     /tmp/ccPNmdt6.s:4418   .text.lv_obj_add_style:00000000 lv_obj_add_style
-     /tmp/ccPNmdt6.s:4664   .text.report_style_change_core:00000000 $t
-     /tmp/ccPNmdt6.s:4669   .text.report_style_change_core:00000000 report_style_change_core
-     /tmp/ccPNmdt6.s:4772   .text.lv_obj_report_style_change:00000000 $t
-     /tmp/ccPNmdt6.s:4778   .text.lv_obj_report_style_change:00000000 lv_obj_report_style_change
-     /tmp/ccPNmdt6.s:4860   .text.lv_obj_report_style_change:00000040 $d
-     /tmp/ccPNmdt6.s:4865   .text.lv_obj_set_local_style_prop:00000000 $t
-     /tmp/ccPNmdt6.s:4871   .text.lv_obj_set_local_style_prop:00000000 lv_obj_set_local_style_prop
-     /tmp/ccPNmdt6.s:4978   .text.lv_obj_remove_local_style_prop:00000000 $t
-     /tmp/ccPNmdt6.s:4984   .text.lv_obj_remove_local_style_prop:00000000 lv_obj_remove_local_style_prop
-     /tmp/ccPNmdt6.s:5107   .text.fade_in_anim_completed:00000000 $t
-     /tmp/ccPNmdt6.s:5139   .text.lv_obj_style_create_transition:00000000 $t
-     /tmp/ccPNmdt6.s:5145   .text.lv_obj_style_create_transition:00000000 lv_obj_style_create_transition
-     /tmp/ccPNmdt6.s:5477   .text.lv_obj_style_create_transition:00000174 $d
-     /tmp/ccPNmdt6.s:5584   .text.trans_anim_cb:00000000 trans_anim_cb
-     /tmp/ccPNmdt6.s:5490   .text.trans_anim_start_cb:00000000 trans_anim_start_cb
-     /tmp/ccPNmdt6.s:5485   .text.trans_anim_start_cb:00000000 $t
-     /tmp/ccPNmdt6.s:5579   .text.trans_anim_cb:00000000 $t
-     /tmp/ccPNmdt6.s:5671   .text.trans_anim_cb:00000056 $d
-     /tmp/ccPNmdt6.s:5687   .text.trans_anim_cb:00000066 $t
-     /tmp/ccPNmdt6.s:5960   .text.trans_anim_cb:0000019c $d
-     /tmp/ccPNmdt6.s:5967   .text.lv_obj_style_apply_recolor:00000000 $t
-     /tmp/ccPNmdt6.s:5973   .text.lv_obj_style_apply_recolor:00000000 lv_obj_style_apply_recolor
-     /tmp/ccPNmdt6.s:6092   .text.lv_obj_get_style_recolor_recursive:00000000 $t
-     /tmp/ccPNmdt6.s:6098   .text.lv_obj_get_style_recolor_recursive:00000000 lv_obj_get_style_recolor_recursive
+     /tmp/ccRdAAjN.s:3300   .text.lv_obj_refresh_style:00000000 lv_obj_refresh_style
+     /tmp/ccRdAAjN.s:3625   .text.lv_obj_refresh_style:00000120 $d
+     /tmp/ccRdAAjN.s:3630   .text.lv_obj_replace_style:00000000 $t
+     /tmp/ccRdAAjN.s:3636   .text.lv_obj_replace_style:00000000 lv_obj_replace_style
+     /tmp/ccRdAAjN.s:3860   .text.lv_obj_remove_style:00000000 $t
+     /tmp/ccRdAAjN.s:3866   .text.lv_obj_remove_style:00000000 lv_obj_remove_style
+     /tmp/ccRdAAjN.s:4182   .text.lv_obj_remove_style_all:00000000 $t
+     /tmp/ccRdAAjN.s:4188   .text.lv_obj_remove_style_all:00000000 lv_obj_remove_style_all
+     /tmp/ccRdAAjN.s:4211   .text.lv_obj_remove_style_all:0000000c $d
+     /tmp/ccRdAAjN.s:4216   .text.trans_anim_completed_cb:00000000 $t
+     /tmp/ccRdAAjN.s:4221   .text.trans_anim_completed_cb:00000000 trans_anim_completed_cb
+     /tmp/ccRdAAjN.s:4407   .text.trans_anim_completed_cb:000000b4 $d
+     /tmp/ccRdAAjN.s:4412   .text.lv_obj_add_style:00000000 $t
+     /tmp/ccRdAAjN.s:4418   .text.lv_obj_add_style:00000000 lv_obj_add_style
+     /tmp/ccRdAAjN.s:4664   .text.report_style_change_core:00000000 $t
+     /tmp/ccRdAAjN.s:4669   .text.report_style_change_core:00000000 report_style_change_core
+     /tmp/ccRdAAjN.s:4772   .text.lv_obj_report_style_change:00000000 $t
+     /tmp/ccRdAAjN.s:4778   .text.lv_obj_report_style_change:00000000 lv_obj_report_style_change
+     /tmp/ccRdAAjN.s:4860   .text.lv_obj_report_style_change:00000040 $d
+     /tmp/ccRdAAjN.s:4865   .text.lv_obj_set_local_style_prop:00000000 $t
+     /tmp/ccRdAAjN.s:4871   .text.lv_obj_set_local_style_prop:00000000 lv_obj_set_local_style_prop
+     /tmp/ccRdAAjN.s:4978   .text.lv_obj_remove_local_style_prop:00000000 $t
+     /tmp/ccRdAAjN.s:4984   .text.lv_obj_remove_local_style_prop:00000000 lv_obj_remove_local_style_prop
+     /tmp/ccRdAAjN.s:5107   .text.fade_in_anim_completed:00000000 $t
+     /tmp/ccRdAAjN.s:5139   .text.lv_obj_style_create_transition:00000000 $t
+     /tmp/ccRdAAjN.s:5145   .text.lv_obj_style_create_transition:00000000 lv_obj_style_create_transition
+     /tmp/ccRdAAjN.s:5477   .text.lv_obj_style_create_transition:00000174 $d
+     /tmp/ccRdAAjN.s:5584   .text.trans_anim_cb:00000000 trans_anim_cb
+     /tmp/ccRdAAjN.s:5490   .text.trans_anim_start_cb:00000000 trans_anim_start_cb
+     /tmp/ccRdAAjN.s:5485   .text.trans_anim_start_cb:00000000 $t
+     /tmp/ccRdAAjN.s:5579   .text.trans_anim_cb:00000000 $t
+     /tmp/ccRdAAjN.s:5671   .text.trans_anim_cb:00000056 $d
+     /tmp/ccRdAAjN.s:5687   .text.trans_anim_cb:00000066 $t
+     /tmp/ccRdAAjN.s:5960   .text.trans_anim_cb:0000019c $d
+     /tmp/ccRdAAjN.s:5967   .text.lv_obj_style_apply_recolor:00000000 $t
+     /tmp/ccRdAAjN.s:5973   .text.lv_obj_style_apply_recolor:00000000 lv_obj_style_apply_recolor
+     /tmp/ccRdAAjN.s:6092   .text.lv_obj_get_style_recolor_recursive:00000000 $t
+     /tmp/ccRdAAjN.s:6098   .text.lv_obj_get_style_recolor_recursive:00000000 lv_obj_get_style_recolor_recursive
 
 UNDEFINED SYMBOLS
 lv_style_builtin_prop_flag_lookup_table
@@ -11288,7 +11288,7 @@ lv_memset
 lv_malloc_zeroed
 lv_style_init
 lv_malloc
-ARM GAS  /tmp/ccPNmdt6.s 			page 190
+ARM GAS  /tmp/ccRdAAjN.s 			page 190
 
 
 lv_obj_set_style_opa

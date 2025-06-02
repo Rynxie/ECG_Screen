@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccDBRchF.s 			page 1
+ARM GAS  /tmp/ccP7ll6F.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccDBRchF.s 			page 1
   28:Drivers/ui/ui.c **** #else
   29:Drivers/ui/ui.c **** 
   30:Drivers/ui/ui.c **** #include <string.h>
-ARM GAS  /tmp/ccDBRchF.s 			page 2
+ARM GAS  /tmp/ccP7ll6F.s 			page 2
 
 
   31:Drivers/ui/ui.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccDBRchF.s 			page 1
   73              		.loc 1 41 44 is_stmt 0 view .LVU9
   74 0000 00B5     		push	{lr}
   75              	.LCFI0:
-ARM GAS  /tmp/ccDBRchF.s 			page 3
+ARM GAS  /tmp/ccP7ll6F.s 			page 3
 
 
   76              		.cfi_def_cfa_offset 4
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccDBRchF.s 			page 1
  126              		@ args = 0, pretend = 0, frame = 0
  127              		@ frame_needed = 0, uses_anonymous_args = 0
  128 0000 08B5     		push	{r3, lr}
-ARM GAS  /tmp/ccDBRchF.s 			page 4
+ARM GAS  /tmp/ccP7ll6F.s 			page 4
 
 
  129              	.LCFI3:
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccDBRchF.s 			page 1
  178              		.align	1
  181              	currentScreen:
  182 0000 FFFF     		.short	-1
-ARM GAS  /tmp/ccDBRchF.s 			page 5
+ARM GAS  /tmp/ccP7ll6F.s 			page 5
 
 
  183              		.text
@@ -251,24 +251,24 @@ ARM GAS  /tmp/ccDBRchF.s 			page 1
  190              		.file 7 "Drivers/lvgl/src/core/lv_obj.h"
  191              		.file 8 "Drivers/lvgl/src/widgets/bar/lv_bar.h"
  192              		.file 9 "Drivers/ui/screens.h"
-ARM GAS  /tmp/ccDBRchF.s 			page 6
+ARM GAS  /tmp/ccP7ll6F.s 			page 6
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 ui.c
-     /tmp/ccDBRchF.s:21     .text.getLvglObjectFromIndex:00000000 $t
-     /tmp/ccDBRchF.s:26     .text.getLvglObjectFromIndex:00000000 getLvglObjectFromIndex
-     /tmp/ccDBRchF.s:55     .text.getLvglObjectFromIndex:00000014 $d
-     /tmp/ccDBRchF.s:60     .text.loadScreen:00000000 $t
-     /tmp/ccDBRchF.s:66     .text.loadScreen:00000000 loadScreen
-     /tmp/ccDBRchF.s:111    .text.loadScreen:00000024 $d
-     /tmp/ccDBRchF.s:181    .data.currentScreen:00000000 currentScreen
-     /tmp/ccDBRchF.s:116    .text.ui_init:00000000 $t
-     /tmp/ccDBRchF.s:122    .text.ui_init:00000000 ui_init
-     /tmp/ccDBRchF.s:146    .text.ui_tick:00000000 $t
-     /tmp/ccDBRchF.s:152    .text.ui_tick:00000000 ui_tick
-     /tmp/ccDBRchF.s:173    .text.ui_tick:00000010 $d
-     /tmp/ccDBRchF.s:178    .data.currentScreen:00000000 $d
+     /tmp/ccP7ll6F.s:21     .text.getLvglObjectFromIndex:00000000 $t
+     /tmp/ccP7ll6F.s:26     .text.getLvglObjectFromIndex:00000000 getLvglObjectFromIndex
+     /tmp/ccP7ll6F.s:55     .text.getLvglObjectFromIndex:00000014 $d
+     /tmp/ccP7ll6F.s:60     .text.loadScreen:00000000 $t
+     /tmp/ccP7ll6F.s:66     .text.loadScreen:00000000 loadScreen
+     /tmp/ccP7ll6F.s:111    .text.loadScreen:00000024 $d
+     /tmp/ccP7ll6F.s:181    .data.currentScreen:00000000 currentScreen
+     /tmp/ccP7ll6F.s:116    .text.ui_init:00000000 $t
+     /tmp/ccP7ll6F.s:122    .text.ui_init:00000000 ui_init
+     /tmp/ccP7ll6F.s:146    .text.ui_tick:00000000 $t
+     /tmp/ccP7ll6F.s:152    .text.ui_tick:00000000 ui_tick
+     /tmp/ccP7ll6F.s:173    .text.ui_tick:00000010 $d
+     /tmp/ccP7ll6F.s:178    .data.currentScreen:00000000 $d
 
 UNDEFINED SYMBOLS
 objects

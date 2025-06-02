@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccwNEvaq.s 			page 1
+ARM GAS  /tmp/cc65RJFx.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
   28:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   */
   29:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** 
   30:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** /** @defgroup USBH_CTLREQ
-ARM GAS  /tmp/ccwNEvaq.s 			page 2
+ARM GAS  /tmp/cc65RJFx.s 			page 2
 
 
   31:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   * @brief This file implements the standard requests for device enumeration
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
   85:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   */
   86:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** 
   87:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** 
-ARM GAS  /tmp/ccwNEvaq.s 			page 3
+ARM GAS  /tmp/cc65RJFx.s 			page 3
 
 
   88:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** /**
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  142:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** 
  143:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   if (status == USBH_OK)
  144:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   {
-ARM GAS  /tmp/ccwNEvaq.s 			page 4
+ARM GAS  /tmp/cc65RJFx.s 			page 4
 
 
  145:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****     /* Commands successfully sent and Response Received  */
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  199:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** USBH_StatusTypeDef USBH_GetDescriptor(USBH_HandleTypeDef *phost, uint8_t req_type, uint16_t value_i
  200:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****                                       uint8_t *buff, uint16_t length)
  201:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** {
-ARM GAS  /tmp/ccwNEvaq.s 			page 5
+ARM GAS  /tmp/cc65RJFx.s 			page 5
 
 
  202:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   if (phost->RequestState == CMD_SEND)
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  256:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** USBH_StatusTypeDef USBH_SetCfg(USBH_HandleTypeDef *phost, uint16_t cfg_idx)
  257:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** {
  258:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   if (phost->RequestState == CMD_SEND)
-ARM GAS  /tmp/ccwNEvaq.s 			page 6
+ARM GAS  /tmp/cc65RJFx.s 			page 6
 
 
  259:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   {
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  313:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****     phost->Control.setup.b.wIndex.w = 0U;
  314:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****     phost->Control.setup.b.wLength.w = 0U;
  315:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   }
-ARM GAS  /tmp/ccwNEvaq.s 			page 7
+ARM GAS  /tmp/cc65RJFx.s 			page 7
 
 
  316:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  360:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   if (buf == NULL)
   39              		.loc 1 360 3 view .LVU4
   40              		.loc 1 360 6 is_stmt 0 view .LVU5
-ARM GAS  /tmp/ccwNEvaq.s 			page 8
+ARM GAS  /tmp/cc65RJFx.s 			page 8
 
 
   41 0002 8C46     		mov	ip, r1
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
   82              		.loc 1 373 6 view .LVU25
   83 004a 0128     		cmp	r0, #1
   84 004c 2DD9     		bls	.L12
-ARM GAS  /tmp/ccwNEvaq.s 			page 9
+ARM GAS  /tmp/cc65RJFx.s 			page 9
 
 
  374:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****       (phost->device.speed == (uint8_t)USBH_SPEED_FULL))
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  104              		.loc 1 408 34 view .LVU34
  105 0064 A3F82E23 		strh	r2, [r3, #814]	@ movhi
  409:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****     dev_desc->idProduct          = LE16(buf + 10U);
-ARM GAS  /tmp/ccwNEvaq.s 			page 10
+ARM GAS  /tmp/cc65RJFx.s 			page 10
 
 
  106              		.loc 1 409 5 is_stmt 1 view .LVU35
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  154 00c8 0BD0     		beq	.L9
  155              	.L5:
  387:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****         break;
-ARM GAS  /tmp/ccwNEvaq.s 			page 11
+ARM GAS  /tmp/cc65RJFx.s 			page 11
 
 
  156              		.loc 1 387 9 view .LVU50
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  194 00ee 00BF     		.align	2
  195              	.L14:
  196 00f0 01010001 		.word	16777473
-ARM GAS  /tmp/ccwNEvaq.s 			page 12
+ARM GAS  /tmp/cc65RJFx.s 			page 12
 
 
  197              		.cfi_endproc
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  463:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   if (length > USB_CONFIGURATION_DESC_SIZE)
  464:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   {
  465:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****     ptr = USB_LEN_CFG_DESC;
-ARM GAS  /tmp/ccwNEvaq.s 			page 13
+ARM GAS  /tmp/cc65RJFx.s 			page 13
 
 
  466:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****     pif = (USBH_InterfaceDescTypeDef *)NULL;
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  520:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****         }
  521:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** 
  522:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****         if_ix++;
-ARM GAS  /tmp/ccwNEvaq.s 			page 14
+ARM GAS  /tmp/cc65RJFx.s 			page 14
 
 
  523:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****       }
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  551:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   if_descriptor->bInterfaceClass    = *(uint8_t *)(buf + 5U);
  235              		.loc 1 551 3 is_stmt 1 view .LVU76
  236              		.loc 1 551 37 is_stmt 0 view .LVU77
-ARM GAS  /tmp/ccwNEvaq.s 			page 15
+ARM GAS  /tmp/cc65RJFx.s 			page 15
 
 
  237 0014 4B79     		ldrb	r3, [r1, #5]	@ zero_extendqisi2
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  276              		.loc 1 568 3 is_stmt 1 view .LVU87
  277              	.LVL11:
  569:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** 
-ARM GAS  /tmp/ccwNEvaq.s 			page 16
+ARM GAS  /tmp/cc65RJFx.s 			page 16
 
 
  570:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   ep_descriptor->bLength          = *(uint8_t *)(buf + 0U);
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  320              	.LVL14:
  580:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****       (ep_descriptor->wMaxPacketSize > USBH_MAX_DATA_BUFFER))
  581:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   {
-ARM GAS  /tmp/ccwNEvaq.s 			page 17
+ARM GAS  /tmp/cc65RJFx.s 			page 17
 
 
  582:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****     status = USBH_NOT_SUPPORTED;
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  597:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****       {
  598:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****         status = USBH_NOT_SUPPORTED;
  359              		.loc 1 598 16 view .LVU119
-ARM GAS  /tmp/ccwNEvaq.s 			page 18
+ARM GAS  /tmp/cc65RJFx.s 			page 18
 
 
  360 005c 0320     		movs	r0, #3
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  629:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****           (ep_descriptor->bInterval > 0x10U) ||
  630:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****           (ep_descriptor->wMaxPacketSize > 64U))
  631:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****       {
-ARM GAS  /tmp/ccwNEvaq.s 			page 19
+ARM GAS  /tmp/cc65RJFx.s 			page 19
 
 
  632:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****         status = USBH_NOT_SUPPORTED;
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  393              		.loc 1 676 1 is_stmt 0 view .LVU132
  394 0076 10BD     		pop	{r4, pc}
  395              	.L48:
-ARM GAS  /tmp/ccwNEvaq.s 			page 20
+ARM GAS  /tmp/cc65RJFx.s 			page 20
 
 
  617:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****         ((ep_descriptor->bmAttributes & EP_TYPE_MSK) == EP_TYPE_CTRL))
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  437              		.loc 1 638 10 is_stmt 0 view .LVU145
  438 00a2 DCB1     		cbz	r4, .L40
  638:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****       {
-ARM GAS  /tmp/ccwNEvaq.s 			page 21
+ARM GAS  /tmp/cc65RJFx.s 			page 21
 
 
  439              		.loc 1 638 44 discriminator 1 view .LVU146
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  478              		.loc 1 660 44 discriminator 1 view .LVU161
  479 00c8 082B     		cmp	r3, #8
  480 00ca D4D9     		bls	.L20
-ARM GAS  /tmp/ccwNEvaq.s 			page 22
+ARM GAS  /tmp/cc65RJFx.s 			page 22
 
 
  662:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****       }
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  524              		.section	.text.USBH_ParseStringDesc,"ax",%progbits
  525              		.align	1
  526              		.syntax unified
-ARM GAS  /tmp/ccwNEvaq.s 			page 23
+ARM GAS  /tmp/cc65RJFx.s 			page 23
 
 
  527              		.thumb
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  711:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****       /* Copy Only the string and ignore the UNICODE ID, hence add the src */
  712:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****       *pdest =  psrc[idx];
  713:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****       pdest++;
-ARM GAS  /tmp/ccwNEvaq.s 			page 24
+ARM GAS  /tmp/cc65RJFx.s 			page 24
 
 
  714:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****     }
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  709:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****     {
  584              		.loc 1 709 41 is_stmt 0 discriminator 3 view .LVU195
  585 0026 9BB2     		uxth	r3, r3
-ARM GAS  /tmp/ccwNEvaq.s 			page 25
+ARM GAS  /tmp/cc65RJFx.s 			page 25
 
 
  586              	.LVL53:
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  745:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   * @param  buff: data buffer address to store the response
  746:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   * @param  length: length of the response
  747:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   * @retval USBH Status
-ARM GAS  /tmp/ccwNEvaq.s 			page 26
+ARM GAS  /tmp/cc65RJFx.s 			page 26
 
 
  748:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   */
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  802:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   *         Handles the USB control transfer state machine
  803:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   * @param  phost: Host Handle
  804:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   * @retval USBH Status
-ARM GAS  /tmp/ccwNEvaq.s 			page 27
+ARM GAS  /tmp/cc65RJFx.s 			page 27
 
 
  805:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   */
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  653              		.loc 1 816 13 is_stmt 0 view .LVU210
  654 0020 4279     		ldrb	r2, [r0, #5]	@ zero_extendqisi2
  655 0022 00F11001 		add	r1, r0, #16
-ARM GAS  /tmp/ccwNEvaq.s 			page 28
+ARM GAS  /tmp/cc65RJFx.s 			page 28
 
 
  656 0026 FFF7FEFF 		bl	USBH_CtlSendSetup
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  862:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** #endif /* (USBH_USE_OS == 1U) */
  863:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****       }
  864:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****       else
-ARM GAS  /tmp/ccwNEvaq.s 			page 29
+ARM GAS  /tmp/cc65RJFx.s 			page 29
 
 
  865:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****       {
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  919:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** #endif /* defined (USBH_IN_NAK_PROCESS) && (USBH_IN_NAK_PROCESS == 1U) */
  920:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****       /* manage error cases */
  921:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****       else if (URB_Status == USBH_URB_STALL)
-ARM GAS  /tmp/ccwNEvaq.s 			page 30
+ARM GAS  /tmp/cc65RJFx.s 			page 30
 
 
  922:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****       {
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  976:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** #endif /* (USBH_USE_OS == 1U) */
  977:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****       }
  978:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****       else if (URB_Status == USBH_URB_NOTREADY)
-ARM GAS  /tmp/ccwNEvaq.s 			page 31
+ARM GAS  /tmp/cc65RJFx.s 			page 31
 
 
  979:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****       {
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
 1033:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** 
 1034:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****         if ((phost->Timer - phost->NakTimer) > phost->NakTimeout)
 1035:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****         {
-ARM GAS  /tmp/ccwNEvaq.s 			page 32
+ARM GAS  /tmp/cc65RJFx.s 			page 32
 
 
 1036:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****           phost->NakTimer = phost->Timer;
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
 1090:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****         USBH_OS_PutMessage(phost, USBH_CONTROL_EVENT, 0U, 0U);
 1091:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** #endif /* (USBH_USE_OS == 1U) */
 1092:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****       }
-ARM GAS  /tmp/ccwNEvaq.s 			page 33
+ARM GAS  /tmp/cc65RJFx.s 			page 33
 
 
 1093:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****       else
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  670              		.cfi_remember_state
  671              		.cfi_def_cfa_offset 12
  672              		@ sp needed
-ARM GAS  /tmp/ccwNEvaq.s 			page 34
+ARM GAS  /tmp/cc65RJFx.s 			page 34
 
 
  673 0032 30BD     		pop	{r4, r5, pc}
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  712 0056 42B1     		cbz	r2, .L71
  833:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****           {
  713              		.loc 1 833 11 is_stmt 1 view .LVU231
-ARM GAS  /tmp/ccwNEvaq.s 			page 35
+ARM GAS  /tmp/cc65RJFx.s 			page 35
 
 
  833:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****           {
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  753 0078 2376     		strb	r3, [r4, #24]
  754 007a D8E7     		b	.L57
  755              	.LVL70:
-ARM GAS  /tmp/ccwNEvaq.s 			page 36
+ARM GAS  /tmp/cc65RJFx.s 			page 36
 
 
  756              	.L67:
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  793              		.loc 1 921 15 is_stmt 0 view .LVU263
  794 00a0 0528     		cmp	r0, #5
  795 00a2 00F09580 		beq	.L87
-ARM GAS  /tmp/ccwNEvaq.s 			page 37
+ARM GAS  /tmp/cc65RJFx.s 			page 37
 
 
  932:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****         {
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  835 00d0 0623     		movs	r3, #6
  836 00d2 2376     		strb	r3, [r4, #24]
  951:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** 
-ARM GAS  /tmp/ccwNEvaq.s 			page 38
+ARM GAS  /tmp/cc65RJFx.s 			page 38
 
 
  837              		.loc 1 951 7 is_stmt 1 view .LVU279
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  981:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** 
  880              		.loc 1 981 30 is_stmt 0 view .LVU291
  881 00fc 0523     		movs	r3, #5
-ARM GAS  /tmp/ccwNEvaq.s 			page 39
+ARM GAS  /tmp/cc65RJFx.s 			page 39
 
 
  882 00fe 2376     		strb	r3, [r4, #24]
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
 1017:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** 
  921              		.loc 1 1017 7 is_stmt 1 view .LVU307
 1017:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** 
-ARM GAS  /tmp/ccwNEvaq.s 			page 40
+ARM GAS  /tmp/cc65RJFx.s 			page 40
 
 
  922              		.loc 1 1017 20 is_stmt 0 view .LVU308
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
 1068:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** 
  962              		.loc 1 1068 7 is_stmt 1 view .LVU323
 1068:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** 
-ARM GAS  /tmp/ccwNEvaq.s 			page 41
+ARM GAS  /tmp/cc65RJFx.s 			page 41
 
 
  963              		.loc 1 1068 13 is_stmt 0 view .LVU324
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  1002 0176 0125     		movs	r5, #1
  1003 0178 59E7     		b	.L57
  1004              	.L100:
-ARM GAS  /tmp/ccwNEvaq.s 			page 42
+ARM GAS  /tmp/cc65RJFx.s 			page 42
 
 
 1078:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****         phost->Control.state = CTRL_COMPLETE;
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
 1118:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****         phost->RequestState = CMD_SEND;
  1044              		.loc 1 1118 30 is_stmt 0 view .LVU355
  1045 019e 0125     		movs	r5, #1
-ARM GAS  /tmp/ccwNEvaq.s 			page 43
+ARM GAS  /tmp/cc65RJFx.s 			page 43
 
 
  1046 01a0 0576     		strb	r5, [r0, #24]
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
 1132:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****       }
  1083              		.loc 1 1132 16 is_stmt 0 view .LVU373
  1084 01c4 0225     		movs	r5, #2
-ARM GAS  /tmp/ccwNEvaq.s 			page 44
+ARM GAS  /tmp/cc65RJFx.s 			page 44
 
 
  1085 01c6 32E7     		b	.L57
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  1131              		.loc 1 731 8 view .LVU383
  1132 0004 1344     		add	r3, r3, r2
  1133 0006 0B80     		strh	r3, [r1]	@ movhi
-ARM GAS  /tmp/ccwNEvaq.s 			page 45
+ARM GAS  /tmp/cc65RJFx.s 			page 45
 
 
  732:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****                                         ((USBH_DescHeader_t *)(void *)pbuf)->bLength);
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  435:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   uint16_t                     ptr;
  1179              		.loc 1 435 3 view .LVU395
  436:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   uint8_t                      if_ix = 0U;
-ARM GAS  /tmp/ccwNEvaq.s 			page 46
+ARM GAS  /tmp/cc65RJFx.s 			page 46
 
 
  1180              		.loc 1 436 3 view .LVU396
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  1216              		.loc 1 456 35 view .LVU414
  1217 002a 43EA0123 		orr	r3, r3, r1, lsl #8
  1218 002e B3F5807F 		cmp	r3, #256
-ARM GAS  /tmp/ccwNEvaq.s 			page 47
+ARM GAS  /tmp/cc65RJFx.s 			page 47
 
 
  1219 0032 28BF     		it	cs
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  1255 0066 0026     		movs	r6, #0
  432:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   USBH_InterfaceDescTypeDef    *pif;
  1256              		.loc 1 432 32 view .LVU433
-ARM GAS  /tmp/ccwNEvaq.s 			page 48
+ARM GAS  /tmp/cc65RJFx.s 			page 48
 
 
  1257 0068 3746     		mov	r7, r6
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  479:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****         USBH_ParseInterfaceDesc(pif, (uint8_t *)(void *)pdesc);
  1296              		.loc 1 479 34 is_stmt 0 view .LVU449
  1297 0096 B146     		mov	r9, r6
-ARM GAS  /tmp/ccwNEvaq.s 			page 49
+ARM GAS  /tmp/cc65RJFx.s 			page 49
 
 
  479:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****         USBH_ParseInterfaceDesc(pif, (uint8_t *)(void *)pdesc);
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  1337 00c2 03FB09F3 		mul	r3, r3, r9
  1338              	.LVL120:
  508:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** 
-ARM GAS  /tmp/ccwNEvaq.s 			page 50
+ARM GAS  /tmp/cc65RJFx.s 			page 50
 
 
  1339              		.loc 1 508 17 view .LVU465
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  1379              		.loc 1 485 89 discriminator 2 view .LVU479
  1380 00f6 BDF80630 		ldrh	r3, [sp, #6]
  485:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****         {
-ARM GAS  /tmp/ccwNEvaq.s 			page 51
+ARM GAS  /tmp/cc65RJFx.s 			page 51
 
 
  1381              		.loc 1 485 81 discriminator 2 view .LVU480
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  492:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****                 ((pif->bInterfaceSubClass == 0x02U) || (pif->bInterfaceSubClass == 0x03U)))
  1421              		.loc 1 492 49 discriminator 1 view .LVU495
  1422 012c 012B     		cmp	r3, #1
-ARM GAS  /tmp/ccwNEvaq.s 			page 52
+ARM GAS  /tmp/cc65RJFx.s 			page 52
 
 
  1423 012e C1D8     		bhi	.L112
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  1462              	.LVL140:
  522:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****       }
  1463              		.loc 1 522 14 view .LVU511
-ARM GAS  /tmp/ccwNEvaq.s 			page 53
+ARM GAS  /tmp/cc65RJFx.s 			page 53
 
 
  1464 015a F6B2     		uxtb	r6, r6
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  1508 017e 0327     		movs	r7, #3
  1509              	.LVL148:
  519:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****         }
-ARM GAS  /tmp/ccwNEvaq.s 			page 54
+ARM GAS  /tmp/cc65RJFx.s 			page 54
 
 
  1510              		.loc 1 519 18 view .LVU522
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  1555              		.loc 1 760 29 is_stmt 0 view .LVU533
  1556 0014 A281     		strh	r2, [r4, #12]	@ movhi
  761:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****       phost->RequestState = CMD_WAIT;
-ARM GAS  /tmp/ccwNEvaq.s 			page 55
+ARM GAS  /tmp/cc65RJFx.s 			page 55
 
 
  1557              		.loc 1 761 7 is_stmt 1 view .LVU534
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  1595              		.loc 1 778 12 is_stmt 1 view .LVU550
  778:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****       {
  1596              		.loc 1 778 15 is_stmt 0 view .LVU551
-ARM GAS  /tmp/ccwNEvaq.s 			page 56
+ARM GAS  /tmp/cc65RJFx.s 			page 56
 
 
  1597 0038 0228     		cmp	r0, #2
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  219:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** }
  1644              		.loc 1 219 10 is_stmt 0 view .LVU561
  1645 0012 FFF7FEFF 		bl	USBH_CtlReq
-ARM GAS  /tmp/ccwNEvaq.s 			page 57
+ARM GAS  /tmp/cc65RJFx.s 			page 57
 
 
  1646              	.LVL160:
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  1686              		.align	1
  1687              		.global	USBH_Get_DevDesc
  1688              		.syntax unified
-ARM GAS  /tmp/ccwNEvaq.s 			page 58
+ARM GAS  /tmp/cc65RJFx.s 			page 58
 
 
  1689              		.thumb
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  1733              	.LVL165:
  117:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** 
  1734              		.loc 1 117 1 view .LVU588
-ARM GAS  /tmp/ccwNEvaq.s 			page 59
+ARM GAS  /tmp/cc65RJFx.s 			page 59
 
 
  1735 0022 02B0     		add	sp, sp, #8
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  1784              		@ args = 0, pretend = 0, frame = 0
  1785              		@ frame_needed = 0, uses_anonymous_args = 0
  131:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   uint8_t *pData = phost->device.CfgDesc_Raw;
-ARM GAS  /tmp/ccwNEvaq.s 			page 60
+ARM GAS  /tmp/cc65RJFx.s 			page 60
 
 
  1786              		.loc 1 131 3 view .LVU596
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  1830              	.L151:
  1831              	.LCFI19:
  1832              		.cfi_restore_state
-ARM GAS  /tmp/ccwNEvaq.s 			page 61
+ARM GAS  /tmp/cc65RJFx.s 			page 61
 
 
  146:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   }
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  1881              		.cfi_offset 7, -8
  1882              		.cfi_offset 14, -4
  1883 0002 83B0     		sub	sp, sp, #12
-ARM GAS  /tmp/ccwNEvaq.s 			page 62
+ARM GAS  /tmp/cc65RJFx.s 			page 62
 
 
  1884              	.LCFI22:
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  1924 0038 03B0     		add	sp, sp, #12
  1925              	.LCFI23:
  1926              		.cfi_remember_state
-ARM GAS  /tmp/ccwNEvaq.s 			page 63
+ARM GAS  /tmp/cc65RJFx.s 			page 63
 
 
  1927              		.cfi_def_cfa_offset 20
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  1975 0004 012B     		cmp	r3, #1
  1976 0006 04D0     		beq	.L160
  1977              	.L158:
-ARM GAS  /tmp/ccwNEvaq.s 			page 64
+ARM GAS  /tmp/cc65RJFx.s 			page 64
 
 
  245:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** }
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  2020              	.LFB149:
  257:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   if (phost->RequestState == CMD_SEND)
  2021              		.loc 1 257 1 is_stmt 1 view -0
-ARM GAS  /tmp/ccwNEvaq.s 			page 65
+ARM GAS  /tmp/cc65RJFx.s 			page 65
 
 
  2022              		.cfi_startproc
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  2061              		.loc 1 265 5 is_stmt 1 view .LVU666
  265:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****     phost->Control.setup.b.wLength.w = 0U;
  2062              		.loc 1 265 37 is_stmt 0 view .LVU667
-ARM GAS  /tmp/ccwNEvaq.s 			page 66
+ARM GAS  /tmp/cc65RJFx.s 			page 66
 
 
  2063 001c 8382     		strh	r3, [r0, #20]	@ movhi
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  294:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c **** 
  2108              		.loc 1 294 1 view .LVU679
  2109 0010 08BD     		pop	{r3, pc}
-ARM GAS  /tmp/ccwNEvaq.s 			page 67
+ARM GAS  /tmp/cc65RJFx.s 			page 67
 
 
  2110              	.LVL203:
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  2153              		.loc 1 306 3 is_stmt 1 view .LVU692
  306:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****   {
  2154              		.loc 1 306 12 is_stmt 0 view .LVU693
-ARM GAS  /tmp/ccwNEvaq.s 			page 68
+ARM GAS  /tmp/cc65RJFx.s 			page 68
 
 
  2155 0002 8378     		ldrb	r3, [r0, #2]	@ zero_extendqisi2
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  2195              		.global	USBH_ClrFeature
  2196              		.syntax unified
  2197              		.thumb
-ARM GAS  /tmp/ccwNEvaq.s 			page 69
+ARM GAS  /tmp/cc65RJFx.s 			page 69
 
 
  2198              		.thumb_func
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  337:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****     phost->Control.setup.b.wIndex.w = ep_num;
  2240              		.loc 1 337 5 is_stmt 1 view .LVU722
  337:Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c ****     phost->Control.setup.b.wIndex.w = ep_num;
-ARM GAS  /tmp/ccwNEvaq.s 			page 70
+ARM GAS  /tmp/cc65RJFx.s 			page 70
 
 
  2241              		.loc 1 337 37 is_stmt 0 view .LVU723
@@ -4165,56 +4165,56 @@ ARM GAS  /tmp/ccwNEvaq.s 			page 1
  2259              		.file 5 "Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_pipes.h"
  2260              		.file 6 "Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ioreq.h"
  2261              		.file 7 "Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_core.h"
-ARM GAS  /tmp/ccwNEvaq.s 			page 71
+ARM GAS  /tmp/cc65RJFx.s 			page 71
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 usbh_ctlreq.c
-     /tmp/ccwNEvaq.s:21     .text.USBH_ParseDevDesc:00000000 $t
-     /tmp/ccwNEvaq.s:26     .text.USBH_ParseDevDesc:00000000 USBH_ParseDevDesc
-     /tmp/ccwNEvaq.s:196    .text.USBH_ParseDevDesc:000000f0 $d
-     /tmp/ccwNEvaq.s:201    .text.USBH_ParseInterfaceDesc:00000000 $t
-     /tmp/ccwNEvaq.s:206    .text.USBH_ParseInterfaceDesc:00000000 USBH_ParseInterfaceDesc
-     /tmp/ccwNEvaq.s:257    .text.USBH_ParseEPDesc:00000000 $t
-     /tmp/ccwNEvaq.s:262    .text.USBH_ParseEPDesc:00000000 USBH_ParseEPDesc
-     /tmp/ccwNEvaq.s:332    .text.USBH_ParseEPDesc:00000046 $d
-     /tmp/ccwNEvaq.s:337    .text.USBH_ParseEPDesc:0000004a $t
-     /tmp/ccwNEvaq.s:402    .text.USBH_ParseEPDesc:00000086 $d
-     /tmp/ccwNEvaq.s:406    .text.USBH_ParseEPDesc:0000008a $t
-     /tmp/ccwNEvaq.s:525    .text.USBH_ParseStringDesc:00000000 $t
-     /tmp/ccwNEvaq.s:530    .text.USBH_ParseStringDesc:00000000 USBH_ParseStringDesc
-     /tmp/ccwNEvaq.s:603    .text.USBH_HandleControl:00000000 $t
-     /tmp/ccwNEvaq.s:608    .text.USBH_HandleControl:00000000 USBH_HandleControl
-     /tmp/ccwNEvaq.s:639    .text.USBH_HandleControl:00000014 $d
-     /tmp/ccwNEvaq.s:855    .text.USBH_HandleControl:000000e8 $d
-     /tmp/ccwNEvaq.s:1112   .text.USBH_GetNextDesc:00000000 $t
-     /tmp/ccwNEvaq.s:1118   .text.USBH_GetNextDesc:00000000 USBH_GetNextDesc
-     /tmp/ccwNEvaq.s:1148   .text.USBH_ParseCfgDesc:00000000 $t
-     /tmp/ccwNEvaq.s:1153   .text.USBH_ParseCfgDesc:00000000 USBH_ParseCfgDesc
-     /tmp/ccwNEvaq.s:1516   .text.USBH_CtlReq:00000000 $t
-     /tmp/ccwNEvaq.s:1522   .text.USBH_CtlReq:00000000 USBH_CtlReq
-     /tmp/ccwNEvaq.s:1608   .text.USBH_GetDescriptor:00000000 $t
-     /tmp/ccwNEvaq.s:1614   .text.USBH_GetDescriptor:00000000 USBH_GetDescriptor
-     /tmp/ccwNEvaq.s:1686   .text.USBH_Get_DevDesc:00000000 $t
-     /tmp/ccwNEvaq.s:1692   .text.USBH_Get_DevDesc:00000000 USBH_Get_DevDesc
-     /tmp/ccwNEvaq.s:1773   .text.USBH_Get_CfgDesc:00000000 $t
-     /tmp/ccwNEvaq.s:1779   .text.USBH_Get_CfgDesc:00000000 USBH_Get_CfgDesc
-     /tmp/ccwNEvaq.s:1861   .text.USBH_Get_StringDesc:00000000 $t
-     /tmp/ccwNEvaq.s:1867   .text.USBH_Get_StringDesc:00000000 USBH_Get_StringDesc
-     /tmp/ccwNEvaq.s:1952   .text.USBH_SetAddress:00000000 $t
-     /tmp/ccwNEvaq.s:1958   .text.USBH_SetAddress:00000000 USBH_SetAddress
-     /tmp/ccwNEvaq.s:2012   .text.USBH_SetCfg:00000000 $t
-     /tmp/ccwNEvaq.s:2018   .text.USBH_SetCfg:00000000 USBH_SetCfg
-     /tmp/ccwNEvaq.s:2072   .text.USBH_SetInterface:00000000 $t
-     /tmp/ccwNEvaq.s:2078   .text.USBH_SetInterface:00000000 USBH_SetInterface
-     /tmp/ccwNEvaq.s:2134   .text.USBH_SetFeature:00000000 $t
-     /tmp/ccwNEvaq.s:2140   .text.USBH_SetFeature:00000000 USBH_SetFeature
-     /tmp/ccwNEvaq.s:2194   .text.USBH_ClrFeature:00000000 $t
-     /tmp/ccwNEvaq.s:2200   .text.USBH_ClrFeature:00000000 USBH_ClrFeature
-     /tmp/ccwNEvaq.s:650    .text.USBH_HandleControl:0000001f $d
-     /tmp/ccwNEvaq.s:650    .text.USBH_HandleControl:00000020 $t
-     /tmp/ccwNEvaq.s:860    .text.USBH_HandleControl:000000ed $d
-     /tmp/ccwNEvaq.s:860    .text.USBH_HandleControl:000000ee $t
+     /tmp/cc65RJFx.s:21     .text.USBH_ParseDevDesc:00000000 $t
+     /tmp/cc65RJFx.s:26     .text.USBH_ParseDevDesc:00000000 USBH_ParseDevDesc
+     /tmp/cc65RJFx.s:196    .text.USBH_ParseDevDesc:000000f0 $d
+     /tmp/cc65RJFx.s:201    .text.USBH_ParseInterfaceDesc:00000000 $t
+     /tmp/cc65RJFx.s:206    .text.USBH_ParseInterfaceDesc:00000000 USBH_ParseInterfaceDesc
+     /tmp/cc65RJFx.s:257    .text.USBH_ParseEPDesc:00000000 $t
+     /tmp/cc65RJFx.s:262    .text.USBH_ParseEPDesc:00000000 USBH_ParseEPDesc
+     /tmp/cc65RJFx.s:332    .text.USBH_ParseEPDesc:00000046 $d
+     /tmp/cc65RJFx.s:337    .text.USBH_ParseEPDesc:0000004a $t
+     /tmp/cc65RJFx.s:402    .text.USBH_ParseEPDesc:00000086 $d
+     /tmp/cc65RJFx.s:406    .text.USBH_ParseEPDesc:0000008a $t
+     /tmp/cc65RJFx.s:525    .text.USBH_ParseStringDesc:00000000 $t
+     /tmp/cc65RJFx.s:530    .text.USBH_ParseStringDesc:00000000 USBH_ParseStringDesc
+     /tmp/cc65RJFx.s:603    .text.USBH_HandleControl:00000000 $t
+     /tmp/cc65RJFx.s:608    .text.USBH_HandleControl:00000000 USBH_HandleControl
+     /tmp/cc65RJFx.s:639    .text.USBH_HandleControl:00000014 $d
+     /tmp/cc65RJFx.s:855    .text.USBH_HandleControl:000000e8 $d
+     /tmp/cc65RJFx.s:1112   .text.USBH_GetNextDesc:00000000 $t
+     /tmp/cc65RJFx.s:1118   .text.USBH_GetNextDesc:00000000 USBH_GetNextDesc
+     /tmp/cc65RJFx.s:1148   .text.USBH_ParseCfgDesc:00000000 $t
+     /tmp/cc65RJFx.s:1153   .text.USBH_ParseCfgDesc:00000000 USBH_ParseCfgDesc
+     /tmp/cc65RJFx.s:1516   .text.USBH_CtlReq:00000000 $t
+     /tmp/cc65RJFx.s:1522   .text.USBH_CtlReq:00000000 USBH_CtlReq
+     /tmp/cc65RJFx.s:1608   .text.USBH_GetDescriptor:00000000 $t
+     /tmp/cc65RJFx.s:1614   .text.USBH_GetDescriptor:00000000 USBH_GetDescriptor
+     /tmp/cc65RJFx.s:1686   .text.USBH_Get_DevDesc:00000000 $t
+     /tmp/cc65RJFx.s:1692   .text.USBH_Get_DevDesc:00000000 USBH_Get_DevDesc
+     /tmp/cc65RJFx.s:1773   .text.USBH_Get_CfgDesc:00000000 $t
+     /tmp/cc65RJFx.s:1779   .text.USBH_Get_CfgDesc:00000000 USBH_Get_CfgDesc
+     /tmp/cc65RJFx.s:1861   .text.USBH_Get_StringDesc:00000000 $t
+     /tmp/cc65RJFx.s:1867   .text.USBH_Get_StringDesc:00000000 USBH_Get_StringDesc
+     /tmp/cc65RJFx.s:1952   .text.USBH_SetAddress:00000000 $t
+     /tmp/cc65RJFx.s:1958   .text.USBH_SetAddress:00000000 USBH_SetAddress
+     /tmp/cc65RJFx.s:2012   .text.USBH_SetCfg:00000000 $t
+     /tmp/cc65RJFx.s:2018   .text.USBH_SetCfg:00000000 USBH_SetCfg
+     /tmp/cc65RJFx.s:2072   .text.USBH_SetInterface:00000000 $t
+     /tmp/cc65RJFx.s:2078   .text.USBH_SetInterface:00000000 USBH_SetInterface
+     /tmp/cc65RJFx.s:2134   .text.USBH_SetFeature:00000000 $t
+     /tmp/cc65RJFx.s:2140   .text.USBH_SetFeature:00000000 USBH_SetFeature
+     /tmp/cc65RJFx.s:2194   .text.USBH_ClrFeature:00000000 $t
+     /tmp/cc65RJFx.s:2200   .text.USBH_ClrFeature:00000000 USBH_ClrFeature
+     /tmp/cc65RJFx.s:650    .text.USBH_HandleControl:0000001f $d
+     /tmp/cc65RJFx.s:650    .text.USBH_HandleControl:00000020 $t
+     /tmp/cc65RJFx.s:860    .text.USBH_HandleControl:000000ed $d
+     /tmp/cc65RJFx.s:860    .text.USBH_HandleControl:000000ee $t
 
 UNDEFINED SYMBOLS
 USBH_CtlSendSetup

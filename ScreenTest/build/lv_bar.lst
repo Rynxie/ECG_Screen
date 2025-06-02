@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc1kxWTq.s 			page 1
+ARM GAS  /tmp/ccBaLCE0.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
   28:Drivers/lvgl/src/widgets/bar/lv_bar.c **** 
   29:Drivers/lvgl/src/widgets/bar/lv_bar.c **** #define LV_BAR_IS_ANIMATING(anim_struct) (((anim_struct).anim_state) != LV_BAR_ANIM_STATE_INV)
   30:Drivers/lvgl/src/widgets/bar/lv_bar.c **** #define LV_BAR_GET_ANIM_VALUE(orig_value, anim_struct) (LV_BAR_IS_ANIMATING(anim_struct) ? ((anim_s
-ARM GAS  /tmp/cc1kxWTq.s 			page 2
+ARM GAS  /tmp/ccBaLCE0.s 			page 2
 
 
   31:Drivers/lvgl/src/widgets/bar/lv_bar.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
   85:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     LV_LOG_INFO("begin");
   86:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     lv_obj_t * obj = lv_obj_class_create_obj(MY_CLASS, parent);
   87:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     lv_obj_class_init_obj(obj);
-ARM GAS  /tmp/cc1kxWTq.s 			page 3
+ARM GAS  /tmp/ccBaLCE0.s 			page 3
 
 
   88:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     return obj;
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  142:Drivers/lvgl/src/widgets/bar/lv_bar.c **** 
  143:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     if(lv_bar_get_mode(obj) != LV_BAR_MODE_RANGE)
  144:Drivers/lvgl/src/widgets/bar/lv_bar.c ****         bar->start_value = real_min;
-ARM GAS  /tmp/cc1kxWTq.s 			page 4
+ARM GAS  /tmp/ccBaLCE0.s 			page 4
 
 
  145:Drivers/lvgl/src/widgets/bar/lv_bar.c **** 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  199:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     return LV_BAR_GET_ANIM_VALUE(bar->start_value, bar->start_value_anim);
  200:Drivers/lvgl/src/widgets/bar/lv_bar.c **** }
  201:Drivers/lvgl/src/widgets/bar/lv_bar.c **** 
-ARM GAS  /tmp/cc1kxWTq.s 			page 5
+ARM GAS  /tmp/ccBaLCE0.s 			page 5
 
 
  202:Drivers/lvgl/src/widgets/bar/lv_bar.c **** int32_t lv_bar_get_min_value(const lv_obj_t * obj)
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  256:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     bar->indic_area.x1 = 0;
  257:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     bar->indic_area.x2 = 0;
  258:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     bar->indic_area.y1 = 0;
-ARM GAS  /tmp/cc1kxWTq.s 			page 6
+ARM GAS  /tmp/ccBaLCE0.s 			page 6
 
 
  259:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     bar->indic_area.y2 = 0;
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  313:Drivers/lvgl/src/widgets/bar/lv_bar.c ****         case LV_BAR_ORIENTATION_AUTO:
  314:Drivers/lvgl/src/widgets/bar/lv_bar.c ****         default:
  315:Drivers/lvgl/src/widgets/bar/lv_bar.c ****             hor = (barw >= barh);
-ARM GAS  /tmp/cc1kxWTq.s 			page 7
+ARM GAS  /tmp/ccBaLCE0.s 			page 7
 
 
  316:Drivers/lvgl/src/widgets/bar/lv_bar.c ****             break;
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  370:Drivers/lvgl/src/widgets/bar/lv_bar.c ****         anim_start_value_x = (((anim_start_value_end_x - anim_start_value_start_x) * bar->start_val
  371:Drivers/lvgl/src/widgets/bar/lv_bar.c ****                               LV_BAR_ANIM_STATE_END);
  372:Drivers/lvgl/src/widgets/bar/lv_bar.c **** 
-ARM GAS  /tmp/cc1kxWTq.s 			page 8
+ARM GAS  /tmp/ccBaLCE0.s 			page 8
 
 
  373:Drivers/lvgl/src/widgets/bar/lv_bar.c ****         anim_start_value_x += anim_start_value_start_x;
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  427:Drivers/lvgl/src/widgets/bar/lv_bar.c ****             int32_t * right = reversed ? axis1 : axis2;
  428:Drivers/lvgl/src/widgets/bar/lv_bar.c ****             if(reversed)
  429:Drivers/lvgl/src/widgets/bar/lv_bar.c ****                 zero = *axis1 - shift + 1;
-ARM GAS  /tmp/cc1kxWTq.s 			page 9
+ARM GAS  /tmp/ccBaLCE0.s 			page 9
 
 
  430:Drivers/lvgl/src/widgets/bar/lv_bar.c ****             else
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  484:Drivers/lvgl/src/widgets/bar/lv_bar.c ****      * Simple:
  485:Drivers/lvgl/src/widgets/bar/lv_bar.c ****      *   - indicator area is the same or smaller then the bg
  486:Drivers/lvgl/src/widgets/bar/lv_bar.c ****      *   - indicator has the same or larger radius than the bg
-ARM GAS  /tmp/cc1kxWTq.s 			page 10
+ARM GAS  /tmp/ccBaLCE0.s 			page 10
 
 
  487:Drivers/lvgl/src/widgets/bar/lv_bar.c ****      *   - what to do? just draw the indicator
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  541:Drivers/lvgl/src/widgets/bar/lv_bar.c ****         lv_area_t indic_draw_area = indic_area;
  542:Drivers/lvgl/src/widgets/bar/lv_bar.c ****         if(mask_needed) {
  543:Drivers/lvgl/src/widgets/bar/lv_bar.c ****             if(hor) {
-ARM GAS  /tmp/cc1kxWTq.s 			page 11
+ARM GAS  /tmp/ccBaLCE0.s 			page 11
 
 
  544:Drivers/lvgl/src/widgets/bar/lv_bar.c ****                 indic_draw_area.x1 = bar_coords.x1 + bg_left;
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  598:Drivers/lvgl/src/widgets/bar/lv_bar.c **** 
  599:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     lv_event_code_t code = lv_event_get_code(e);
  600:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     lv_obj_t * obj = lv_event_get_current_target(e);
-ARM GAS  /tmp/cc1kxWTq.s 			page 12
+ARM GAS  /tmp/ccBaLCE0.s 			page 12
 
 
  601:Drivers/lvgl/src/widgets/bar/lv_bar.c **** 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  655:Drivers/lvgl/src/widgets/bar/lv_bar.c ****         lv_anim_delete(anim_info, NULL);
  656:Drivers/lvgl/src/widgets/bar/lv_bar.c ****         anim_info->anim_state = LV_BAR_ANIM_STATE_INV;
  657:Drivers/lvgl/src/widgets/bar/lv_bar.c ****         *value_ptr = new_value;
-ARM GAS  /tmp/cc1kxWTq.s 			page 13
+ARM GAS  /tmp/ccBaLCE0.s 			page 13
 
 
  658:Drivers/lvgl/src/widgets/bar/lv_bar.c ****         lv_obj_invalidate((lv_obj_t *)obj);
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
   44              		.loc 1 696 5 is_stmt 1 view .LVU7
   45              		.loc 1 696 26 is_stmt 0 view .LVU8
   46 0008 4FF0FF33 		mov	r3, #-1
-ARM GAS  /tmp/cc1kxWTq.s 			page 14
+ARM GAS  /tmp/ccBaLCE0.s 			page 14
 
 
   47 000c CB60     		str	r3, [r1, #12]
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
   92              		.loc 1 281 1 view .LVU19
   93              		.cfi_endproc
   94              	.LFE185:
-ARM GAS  /tmp/cc1kxWTq.s 			page 15
+ARM GAS  /tmp/ccBaLCE0.s 			page 15
 
 
   96              		.section	.text.lv_bar_anim_completed,"ax",%progbits
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  646:Drivers/lvgl/src/widgets/bar/lv_bar.c ****         bar->start_value = var->anim_end;
  137              		.loc 1 646 12 view .LVU34
  138 0018 9942     		cmp	r1, r3
-ARM GAS  /tmp/cc1kxWTq.s 			page 16
+ARM GAS  /tmp/ccBaLCE0.s 			page 16
 
 
  139 001a 06D0     		beq	.L9
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  184              		.cfi_offset 3, -8
  185              		.cfi_offset 14, -4
  632:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     bar_anim->anim_state    = value;
-ARM GAS  /tmp/cc1kxWTq.s 			page 17
+ARM GAS  /tmp/ccBaLCE0.s 			page 17
 
 
  186              		.loc 1 632 5 is_stmt 1 view .LVU46
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  654:Drivers/lvgl/src/widgets/bar/lv_bar.c ****         lv_anim_delete(anim_info, NULL);
  234              		.loc 1 654 7 is_stmt 0 view .LVU55
  235 0010 83B3     		cbz	r3, .L18
-ARM GAS  /tmp/cc1kxWTq.s 			page 18
+ARM GAS  /tmp/ccBaLCE0.s 			page 18
 
 
  236              	.LBB43:
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  273 0032 2146     		mov	r1, r4
  274 0034 2846     		mov	r0, r5
  275 0036 FFF7FEFF 		bl	lv_anim_set_var
-ARM GAS  /tmp/cc1kxWTq.s 			page 19
+ARM GAS  /tmp/ccBaLCE0.s 			page 19
 
 
  276              	.LVL24:
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
   30:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_MIN_WIDTH);
   31:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
   32:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** }
-ARM GAS  /tmp/cc1kxWTq.s 			page 20
+ARM GAS  /tmp/ccBaLCE0.s 			page 20
 
 
   33:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** 
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
   87:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** 
   88:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** static inline int32_t lv_obj_get_style_transform_height(const lv_obj_t * obj, lv_part_t part)
   89:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** {
-ARM GAS  /tmp/cc1kxWTq.s 			page 21
+ARM GAS  /tmp/ccBaLCE0.s 			page 21
 
 
   90:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_TRANSFORM_HEIGHT);
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  144:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_TRANSFORM_SKEW_X);
  145:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
  146:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** }
-ARM GAS  /tmp/cc1kxWTq.s 			page 22
+ARM GAS  /tmp/ccBaLCE0.s 			page 22
 
 
  147:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** 
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  201:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** 
  202:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** static inline int32_t lv_obj_get_style_margin_bottom(const lv_obj_t * obj, lv_part_t part)
  203:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** {
-ARM GAS  /tmp/cc1kxWTq.s 			page 23
+ARM GAS  /tmp/ccBaLCE0.s 			page 23
 
 
  204:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_MARGIN_BOTTOM);
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  258:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_BG_MAIN_STOP);
  259:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
  260:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** }
-ARM GAS  /tmp/cc1kxWTq.s 			page 24
+ARM GAS  /tmp/ccBaLCE0.s 			page 24
 
 
  261:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** 
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  315:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** 
  316:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** static inline bool lv_obj_get_style_bg_image_tiled(const lv_obj_t * obj, lv_part_t part)
  317:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** {
-ARM GAS  /tmp/cc1kxWTq.s 			page 25
+ARM GAS  /tmp/ccBaLCE0.s 			page 25
 
 
  318:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_BG_IMAGE_TILED);
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  372:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_style_apply_color_filter(obj, part, lv_obj_get_style_prop(obj, part
  373:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h ****     return v.color;
  374:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** }
-ARM GAS  /tmp/cc1kxWTq.s 			page 26
+ARM GAS  /tmp/ccBaLCE0.s 			page 26
 
 
  375:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** 
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  429:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** 
  430:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** static inline lv_opa_t lv_obj_get_style_image_opa(const lv_obj_t * obj, lv_part_t part)
  431:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** {
-ARM GAS  /tmp/cc1kxWTq.s 			page 27
+ARM GAS  /tmp/ccBaLCE0.s 			page 27
 
 
  432:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_IMAGE_OPA);
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  486:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_style_apply_color_filter(obj, part, lv_obj_get_style_prop(obj, part
  487:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h ****     return v.color;
  488:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** }
-ARM GAS  /tmp/cc1kxWTq.s 			page 28
+ARM GAS  /tmp/ccBaLCE0.s 			page 28
 
 
  489:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** 
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  543:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** 
  544:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** static inline lv_opa_t lv_obj_get_style_text_opa(const lv_obj_t * obj, lv_part_t part)
  545:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** {
-ARM GAS  /tmp/cc1kxWTq.s 			page 29
+ARM GAS  /tmp/ccBaLCE0.s 			page 29
 
 
  546:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_TEXT_OPA);
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  600:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_TEXT_OUTLINE_STROKE_OPA);
  601:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h ****     return (lv_opa_t)v.num;
  602:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** }
-ARM GAS  /tmp/cc1kxWTq.s 			page 30
+ARM GAS  /tmp/ccBaLCE0.s 			page 30
 
 
  603:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** 
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  657:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** 
  658:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** static inline const lv_anim_t * lv_obj_get_style_anim(const lv_obj_t * obj, lv_part_t part)
  659:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h **** {
-ARM GAS  /tmp/cc1kxWTq.s 			page 31
+ARM GAS  /tmp/ccBaLCE0.s 			page 31
 
 
  660:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_ANIM);
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  655:Drivers/lvgl/src/widgets/bar/lv_bar.c ****         anim_info->anim_state = LV_BAR_ANIM_STATE_INV;
  338              		.loc 1 655 9 is_stmt 0 view .LVU87
  339 0076 2046     		mov	r0, r4
-ARM GAS  /tmp/cc1kxWTq.s 			page 32
+ARM GAS  /tmp/ccBaLCE0.s 			page 32
 
 
  340              	.LVL34:
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  381 00a4 00000000 		.word	lv_bar_anim
  382 00a8 00000000 		.word	lv_bar_anim_completed
  383              	.LBE46:
-ARM GAS  /tmp/cc1kxWTq.s 			page 33
+ARM GAS  /tmp/ccBaLCE0.s 			page 33
 
 
  384              		.cfi_endproc
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  428              	.LVL45:
  429              	.L25:
   89:Drivers/lvgl/src/widgets/bar/lv_bar.c **** 
-ARM GAS  /tmp/cc1kxWTq.s 			page 34
+ARM GAS  /tmp/ccBaLCE0.s 			page 34
 
 
  430              		.loc 1 89 1 view .LVU113
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  102:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     value = value < bar->start_value ? bar->start_value : value; /*Can't be smaller than the left v
  474              		.loc 1 102 13 view .LVU126
  475 0012 DCF83000 		ldr	r0, [ip, #48]
-ARM GAS  /tmp/cc1kxWTq.s 			page 35
+ARM GAS  /tmp/ccBaLCE0.s 			page 35
 
 
  102:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     value = value < bar->start_value ? bar->start_value : value; /*Can't be smaller than the left v
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  520              		.cfi_restore 14
   97:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     lv_bar_t * bar = (lv_bar_t *)obj;
  521              		.loc 1 97 5 is_stmt 1 discriminator 1 view .LVU137
-ARM GAS  /tmp/cc1kxWTq.s 			page 36
+ARM GAS  /tmp/ccBaLCE0.s 			page 36
 
 
   97:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     lv_bar_t * bar = (lv_bar_t *)obj;
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  253:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     bar->start_value = 0;
  565              		.loc 1 253 20 is_stmt 0 view .LVU151
  566 0008 6423     		movs	r3, #100
-ARM GAS  /tmp/cc1kxWTq.s 			page 37
+ARM GAS  /tmp/ccBaLCE0.s 			page 37
 
 
  567 000a 4B63     		str	r3, [r1, #52]
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  264:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     lv_bar_init_anim(obj, &bar->start_value_anim);
  602              		.loc 1 264 5 is_stmt 0 view .LVU171
  603 0034 2046     		mov	r0, r4
-ARM GAS  /tmp/cc1kxWTq.s 			page 38
+ARM GAS  /tmp/ccBaLCE0.s 			page 38
 
 
  604              	.LVL59:
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  650              		.loc 1 112 5 view .LVU181
  112:Drivers/lvgl/src/widgets/bar/lv_bar.c **** 
  651              		.loc 1 112 5 view .LVU182
-ARM GAS  /tmp/cc1kxWTq.s 			page 39
+ARM GAS  /tmp/ccBaLCE0.s 			page 39
 
 
  652 0000 00B3     		cbz	r0, .L38
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  690 0028 8B42     		cmp	r3, r1
  691 002a 0CD0     		beq	.L41
  111:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     LV_ASSERT_OBJ(obj, MY_CLASS);
-ARM GAS  /tmp/cc1kxWTq.s 			page 40
+ARM GAS  /tmp/ccBaLCE0.s 			page 40
 
 
  692              		.loc 1 111 1 view .LVU199
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  739              	lv_bar_set_mode:
  740              	.LVL74:
  741              	.LFB175:
-ARM GAS  /tmp/cc1kxWTq.s 			page 41
+ARM GAS  /tmp/ccBaLCE0.s 			page 41
 
 
  159:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     LV_ASSERT_OBJ(obj, MY_CLASS);
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  780              	.LVL76:
  168:Drivers/lvgl/src/widgets/bar/lv_bar.c **** }
  781              		.loc 1 168 5 is_stmt 0 view .LVU225
-ARM GAS  /tmp/cc1kxWTq.s 			page 42
+ARM GAS  /tmp/ccBaLCE0.s 			page 42
 
 
  782 0022 FFF7FEFF 		bl	lv_obj_invalidate
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  174:Drivers/lvgl/src/widgets/bar/lv_bar.c **** 
  826              		.loc 1 174 5 view .LVU238
  827              	.LVL80:
-ARM GAS  /tmp/cc1kxWTq.s 			page 43
+ARM GAS  /tmp/ccBaLCE0.s 			page 43
 
 
  176:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     lv_obj_invalidate(obj);
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  871              		.loc 1 186 5 discriminator 2 view .LVU251
  186:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     lv_bar_t * bar = (lv_bar_t *)obj;
  872              		.loc 1 186 33 discriminator 2 view .LVU252
-ARM GAS  /tmp/cc1kxWTq.s 			page 44
+ARM GAS  /tmp/ccBaLCE0.s 			page 44
 
 
  187:Drivers/lvgl/src/widgets/bar/lv_bar.c **** 
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  916              		@ frame_needed = 0, uses_anonymous_args = 0
  917              		@ link register save eliminated.
  194:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     lv_bar_t * bar = (lv_bar_t *)obj;
-ARM GAS  /tmp/cc1kxWTq.s 			page 45
+ARM GAS  /tmp/ccBaLCE0.s 			page 45
 
 
  918              		.loc 1 194 5 view .LVU266
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  954 001c 806E     		ldr	r0, [r0, #104]
  955              	.LVL94:
  199:Drivers/lvgl/src/widgets/bar/lv_bar.c **** }
-ARM GAS  /tmp/cc1kxWTq.s 			page 46
+ARM GAS  /tmp/ccBaLCE0.s 			page 46
 
 
  956              		.loc 1 199 12 discriminator 1 view .LVU285
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  999 000a 7047     		bx	lr
  1000              	.LVL100:
  1001              	.L68:
-ARM GAS  /tmp/cc1kxWTq.s 			page 47
+ARM GAS  /tmp/ccBaLCE0.s 			page 47
 
 
  204:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     lv_bar_t * bar = (lv_bar_t *)obj;
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  214:Drivers/lvgl/src/widgets/bar/lv_bar.c **** }
  1043              		.loc 1 214 47 view .LVU314
  1044 0006 12B1     		cbz	r2, .L74
-ARM GAS  /tmp/cc1kxWTq.s 			page 48
+ARM GAS  /tmp/ccBaLCE0.s 			page 48
 
 
  214:Drivers/lvgl/src/widgets/bar/lv_bar.c **** }
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  1087              		.loc 1 219 33 discriminator 2 view .LVU328
  220:Drivers/lvgl/src/widgets/bar/lv_bar.c **** 
  1088              		.loc 1 220 5 view .LVU329
-ARM GAS  /tmp/cc1kxWTq.s 			page 49
+ARM GAS  /tmp/ccBaLCE0.s 			page 49
 
 
  1089              	.LVL110:
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  1133 0004 1546     		mov	r5, r2
  1134 0006 0446     		mov	r4, r0
  130:Drivers/lvgl/src/widgets/bar/lv_bar.c **** 
-ARM GAS  /tmp/cc1kxWTq.s 			page 50
+ARM GAS  /tmp/ccBaLCE0.s 			page 50
 
 
  1135              		.loc 1 130 5 is_stmt 1 discriminator 2 view .LVU342
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  1173              		.loc 1 140 5 is_stmt 1 view .LVU358
  140:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     bar->min_value = real_min;
  1174              		.loc 1 140 20 is_stmt 0 view .LVU359
-ARM GAS  /tmp/cc1kxWTq.s 			page 51
+ARM GAS  /tmp/ccBaLCE0.s 			page 51
 
 
  1175 002a 6563     		str	r5, [r4, #52]
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  1213 004c 70BD     		pop	{r4, r5, r6, pc}
  1214              	.LVL120:
  1215              	.L81:
-ARM GAS  /tmp/cc1kxWTq.s 			page 52
+ARM GAS  /tmp/ccBaLCE0.s 			page 52
 
 
  1216              	.LCFI22:
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  1258 0068 2046     		mov	r0, r4
  1259 006a FFF7FEFF 		bl	lv_bar_set_value
  1260              	.LVL124:
-ARM GAS  /tmp/cc1kxWTq.s 			page 53
+ARM GAS  /tmp/ccBaLCE0.s 			page 53
 
 
  1261 006e EAE7     		b	.L88
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  1303              	.LFE182:
  1305              		.section	.text.lv_bar_is_symmetrical,"ax",%progbits
  1306              		.align	1
-ARM GAS  /tmp/cc1kxWTq.s 			page 54
+ARM GAS  /tmp/ccBaLCE0.s 			page 54
 
 
  1307              		.global	lv_bar_is_symmetrical
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  1346 0012 FEE7     		b	.L99
  1347              	.LVL133:
  1348              	.L105:
-ARM GAS  /tmp/cc1kxWTq.s 			page 55
+ARM GAS  /tmp/ccBaLCE0.s 			page 55
 
 
  238:Drivers/lvgl/src/widgets/bar/lv_bar.c ****             bar->start_value == bar->min_value;
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  1389 0034 7047     		bx	lr
  1390              		.cfi_endproc
  1391              	.LFE183:
-ARM GAS  /tmp/cc1kxWTq.s 			page 56
+ARM GAS  /tmp/ccBaLCE0.s 			page 56
 
 
  1393              		.section	.text.draw_indic,"ax",%progbits
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  1439              	.LVL146:
  290:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     lv_obj_get_coords(obj, &bar_coords);
  1440              		.loc 1 290 5 is_stmt 1 view .LVU441
-ARM GAS  /tmp/cc1kxWTq.s 			page 57
+ARM GAS  /tmp/ccBaLCE0.s 			page 57
 
 
  291:Drivers/lvgl/src/widgets/bar/lv_bar.c **** 
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  1481              		.loc 2 90 26 view .LVU455
  1482 0034 FFF7FEFF 		bl	lv_obj_get_style_prop
  1483              	.LVL153:
-ARM GAS  /tmp/cc1kxWTq.s 			page 58
+ARM GAS  /tmp/ccBaLCE0.s 			page 58
 
 
  1484 0038 0246     		mov	r2, r0
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  301:Drivers/lvgl/src/widgets/bar/lv_bar.c ****         range = 1;
  1524              		.loc 1 301 7 view .LVU470
  1525 005a 00D1     		bne	.L108
-ARM GAS  /tmp/cc1kxWTq.s 			page 59
+ARM GAS  /tmp/ccBaLCE0.s 			page 59
 
 
  302:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     }
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  168:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
  1566              		.loc 2 168 26 is_stmt 0 view .LVU485
  1567 008a 1222     		movs	r2, #18
-ARM GAS  /tmp/cc1kxWTq.s 			page 60
+ARM GAS  /tmp/ccBaLCE0.s 			page 60
 
 
  1568 008c 0021     		movs	r1, #0
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  156:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
  1609              		.loc 2 156 26 is_stmt 0 view .LVU499
  1610 00a8 1022     		movs	r2, #16
-ARM GAS  /tmp/cc1kxWTq.s 			page 61
+ARM GAS  /tmp/ccBaLCE0.s 			page 61
 
 
  1611 00aa 0021     		movs	r1, #0
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
    4:Drivers/lvgl/src/widgets/bar/../../core/../misc/../font/../draw/../misc/lv_area.h ****  */
    5:Drivers/lvgl/src/widgets/bar/../../core/../misc/../font/../draw/../misc/lv_area.h **** 
    6:Drivers/lvgl/src/widgets/bar/../../core/../misc/../font/../draw/../misc/lv_area.h **** #ifndef LV_AREA_H
-ARM GAS  /tmp/cc1kxWTq.s 			page 62
+ARM GAS  /tmp/ccBaLCE0.s 			page 62
 
 
    7:Drivers/lvgl/src/widgets/bar/../../core/../misc/../font/../draw/../misc/lv_area.h **** #define LV_AREA_H
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
   61:Drivers/lvgl/src/widgets/bar/../../core/../misc/../font/../draw/../misc/lv_area.h ****     LV_ALIGN_CENTER,
   62:Drivers/lvgl/src/widgets/bar/../../core/../misc/../font/../draw/../misc/lv_area.h **** 
   63:Drivers/lvgl/src/widgets/bar/../../core/../misc/../font/../draw/../misc/lv_area.h ****     LV_ALIGN_OUT_TOP_LEFT,
-ARM GAS  /tmp/cc1kxWTq.s 			page 63
+ARM GAS  /tmp/ccBaLCE0.s 			page 63
 
 
   64:Drivers/lvgl/src/widgets/bar/../../core/../misc/../font/../draw/../misc/lv_area.h ****     LV_ALIGN_OUT_TOP_MID,
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  1658              	.LVL182:
  110:Drivers/lvgl/src/widgets/bar/../../core/../misc/../font/../draw/../misc/lv_area.h ****     dest->y1 = src->y1;
  1659              		.loc 3 110 5 is_stmt 1 view .LVU516
-ARM GAS  /tmp/cc1kxWTq.s 			page 64
+ARM GAS  /tmp/ccBaLCE0.s 			page 64
 
 
  1660              		.loc 3 110 19 is_stmt 0 view .LVU517
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  1701              		.loc 1 334 15 discriminator 1 view .LVU536
  1702 00f2 04F13C00 		add	r0, r4, #60
  1703 00f6 FFF7FEFF 		bl	lv_area_get_height
-ARM GAS  /tmp/cc1kxWTq.s 			page 65
+ARM GAS  /tmp/ccBaLCE0.s 			page 65
 
 
  1704              	.LVL184:
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  1742              		.loc 1 343 27 view .LVU552
  1743 0124 FFF7FEFF 		bl	lv_area_get_height
  1744              	.LVL188:
-ARM GAS  /tmp/cc1kxWTq.s 			page 66
+ARM GAS  /tmp/ccBaLCE0.s 			page 66
 
 
  346:Drivers/lvgl/src/widgets/bar/lv_bar.c **** 
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  1780              		.loc 1 366 80 view .LVU571
  1781 0148 6D1A     		subs	r5, r5, r1
  366:Drivers/lvgl/src/widgets/bar/lv_bar.c ****         int32_t anim_start_value_end_x =
-ARM GAS  /tmp/cc1kxWTq.s 			page 67
+ARM GAS  /tmp/ccBaLCE0.s 			page 67
 
 
  1782              		.loc 1 366 13 view .LVU572
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  1820 0170 E26D     		ldr	r2, [r4, #92]
  379:Drivers/lvgl/src/widgets/bar/lv_bar.c ****         int32_t anim_cur_value_start_x =
  1821              		.loc 1 379 7 view .LVU589
-ARM GAS  /tmp/cc1kxWTq.s 			page 68
+ARM GAS  /tmp/ccBaLCE0.s 			page 68
 
 
  1822 0172 B2F1FF3F 		cmp	r2, #-1
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  1860 01a2 06EB2226 		add	r6, r6, r2, asr #8
  1861              	.LVL203:
  1862              	.L121:
-ARM GAS  /tmp/cc1kxWTq.s 			page 69
+ARM GAS  /tmp/ccBaLCE0.s 			page 69
 
 
  385:Drivers/lvgl/src/widgets/bar/lv_bar.c ****                                                       bar->cur_value_anim.anim_state) /
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  1889 01b8 0022     		movne	r2, #0
  1890 01ba 09F00102 		andeq	r2, r9, #1
  1891              	.LVL206:
-ARM GAS  /tmp/cc1kxWTq.s 			page 70
+ARM GAS  /tmp/ccBaLCE0.s 			page 70
 
 
  399:Drivers/lvgl/src/widgets/bar/lv_bar.c **** 
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  1928 01d4 00F09480 		beq	.L123
  413:Drivers/lvgl/src/widgets/bar/lv_bar.c ****         *axis1 += anim_start_value_x;
  1929              		.loc 1 413 9 is_stmt 1 view .LVU634
-ARM GAS  /tmp/cc1kxWTq.s 			page 71
+ARM GAS  /tmp/ccBaLCE0.s 			page 71
 
 
  413:Drivers/lvgl/src/widgets/bar/lv_bar.c ****         *axis1 += anim_start_value_x;
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  1968 0200 E36B     		ldr	r3, [r4, #60]
  109:Drivers/lvgl/src/widgets/bar/../../core/../misc/../font/../draw/../misc/lv_area.h ****     dest->y1 = src->y1;
  1969              		.loc 3 109 14 view .LVU651
-ARM GAS  /tmp/cc1kxWTq.s 			page 72
+ARM GAS  /tmp/ccBaLCE0.s 			page 72
 
 
  1970 0202 6E93     		str	r3, [sp, #440]
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  606:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
  2011              		.loc 2 606 5 view .LVU669
  606:Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style_gen.h ****     return (int32_t)v.num;
-ARM GAS  /tmp/cc1kxWTq.s 			page 73
+ARM GAS  /tmp/ccBaLCE0.s 			page 73
 
 
  2012              		.loc 2 606 26 is_stmt 0 view .LVU670
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  2053 0250 0546     		mov	r5, r0
  480:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     if(indic_radius > short_side >> 1) indic_radius = short_side >> 1;
  2054              		.loc 1 480 18 discriminator 1 view .LVU684
-ARM GAS  /tmp/cc1kxWTq.s 			page 74
+ARM GAS  /tmp/ccBaLCE0.s 			page 74
 
 
  2055 0252 5046     		mov	r0, r10
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  2096              	.L160:
  311:Drivers/lvgl/src/widgets/bar/lv_bar.c ****             break;
  2097              		.loc 1 311 17 view .LVU698
-ARM GAS  /tmp/cc1kxWTq.s 			page 75
+ARM GAS  /tmp/ccBaLCE0.s 			page 75
 
 
  2098 0290 4FF00009 		mov	r9, #0
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  2138 02c0 4A1C     		adds	r2, r1, #1
  2139 02c2 F6E7     		b	.L113
  2140              	.LVL234:
-ARM GAS  /tmp/cc1kxWTq.s 			page 76
+ARM GAS  /tmp/ccBaLCE0.s 			page 76
 
 
  2141              	.L114:
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  2178 02dc ED1A     		subs	r5, r5, r3
  376:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     }
  2179              		.loc 1 376 30 view .LVU730
-ARM GAS  /tmp/cc1kxWTq.s 			page 77
+ARM GAS  /tmp/ccBaLCE0.s 			page 77
 
 
  2180 02de 019B     		ldr	r3, [sp, #4]
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  418:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     }
  2220              		.loc 1 418 9 is_stmt 1 view .LVU745
  2221 030c DBF80030 		ldr	r3, [fp]
-ARM GAS  /tmp/cc1kxWTq.s 			page 78
+ARM GAS  /tmp/ccBaLCE0.s 			page 78
 
 
  418:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     }
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  2260 0336 4046     		mov	r0, r8
  2261              	.L130:
  2262              	.LVL247:
-ARM GAS  /tmp/cc1kxWTq.s 			page 79
+ARM GAS  /tmp/ccBaLCE0.s 			page 79
 
 
  428:Drivers/lvgl/src/widgets/bar/lv_bar.c ****                 zero = *axis1 - shift + 1;
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  2301              		.loc 1 427 48 discriminator 2 view .LVU777
  2302 0356 5846     		mov	r0, fp
  2303 0358 EEE7     		b	.L130
-ARM GAS  /tmp/cc1kxWTq.s 			page 80
+ARM GAS  /tmp/ccBaLCE0.s 			page 80
 
 
  2304              	.LVL255:
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  2343 0372 4046     		mov	r0, r8
  2344              	.L135:
  2345              	.LVL262:
-ARM GAS  /tmp/cc1kxWTq.s 			page 81
+ARM GAS  /tmp/ccBaLCE0.s 			page 81
 
 
  445:Drivers/lvgl/src/widgets/bar/lv_bar.c ****                 zero = *axis2 + shift;
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  2385              	.L136:
  448:Drivers/lvgl/src/widgets/bar/lv_bar.c **** 
  2386              		.loc 1 448 17 is_stmt 1 view .LVU808
-ARM GAS  /tmp/cc1kxWTq.s 			page 82
+ARM GAS  /tmp/ccBaLCE0.s 			page 82
 
 
  448:Drivers/lvgl/src/widgets/bar/lv_bar.c **** 
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  2429 03b8 4C46     		mov	r4, r9
  2430 03ba 0AE0     		b	.L145
  2431              	.L181:
-ARM GAS  /tmp/cc1kxWTq.s 			page 83
+ARM GAS  /tmp/ccBaLCE0.s 			page 83
 
 
  2432              		.align	2
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  2472              		.loc 1 516 12 is_stmt 0 view .LVU834
  2473 03ec 5745     		cmp	r7, r10
  2474 03ee 5FDC     		bgt	.L176
-ARM GAS  /tmp/cc1kxWTq.s 			page 84
+ARM GAS  /tmp/ccBaLCE0.s 			page 84
 
 
  2475              	.LVL281:
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  539:Drivers/lvgl/src/widgets/bar/lv_bar.c ****         draw_tmp_dsc.shadow_opa = 0;
  2514              		.loc 1 539 9 is_stmt 1 view .LVU850
  539:Drivers/lvgl/src/widgets/bar/lv_bar.c ****         draw_tmp_dsc.shadow_opa = 0;
-ARM GAS  /tmp/cc1kxWTq.s 			page 85
+ARM GAS  /tmp/ccBaLCE0.s 			page 85
 
 
  2515              		.loc 1 539 34 is_stmt 0 view .LVU851
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  2552              	.L152:
  554:Drivers/lvgl/src/widgets/bar/lv_bar.c **** 
  2553              		.loc 1 554 9 is_stmt 1 view .LVU869
-ARM GAS  /tmp/cc1kxWTq.s 			page 86
+ARM GAS  /tmp/ccBaLCE0.s 			page 86
 
 
  554:Drivers/lvgl/src/widgets/bar/lv_bar.c **** 
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  2595 047c 2146     		mov	r1, r4
  2596 047e 029D     		ldr	r5, [sp, #8]
  2597              	.LVL291:
-ARM GAS  /tmp/cc1kxWTq.s 			page 87
+ARM GAS  /tmp/ccBaLCE0.s 			page 87
 
 
  575:Drivers/lvgl/src/widgets/bar/lv_bar.c **** 
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  2640 04ac 0124     		movs	r4, #1
  2641 04ae 90E7     		b	.L145
  2642              	.LVL297:
-ARM GAS  /tmp/cc1kxWTq.s 			page 88
+ARM GAS  /tmp/ccBaLCE0.s 			page 88
 
 
  2643              	.L176:
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  526:Drivers/lvgl/src/widgets/bar/lv_bar.c ****             lv_draw_rect(layer, &draw_tmp_dsc, &indic_area);
  2683              		.loc 1 526 13 is_stmt 1 view .LVU909
  526:Drivers/lvgl/src/widgets/bar/lv_bar.c ****             lv_draw_rect(layer, &draw_tmp_dsc, &indic_area);
-ARM GAS  /tmp/cc1kxWTq.s 			page 89
+ARM GAS  /tmp/ccBaLCE0.s 			page 89
 
 
  2684              		.loc 1 526 39 is_stmt 0 view .LVU910
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  563:Drivers/lvgl/src/widgets/bar/lv_bar.c ****         }
  2725              		.loc 1 563 13 is_stmt 1 view .LVU924
  2726 0512 6146     		mov	r1, ip
-ARM GAS  /tmp/cc1kxWTq.s 			page 90
+ARM GAS  /tmp/ccBaLCE0.s 			page 90
 
 
  2727 0514 2846     		mov	r0, r5
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  2774              		.cfi_startproc
  2775              		@ args = 0, pretend = 0, frame = 8
  2776              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/cc1kxWTq.s 			page 91
+ARM GAS  /tmp/ccBaLCE0.s 			page 91
 
 
  590:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     LV_UNUSED(class_p);
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  2820              	.LVL316:
  599:Drivers/lvgl/src/widgets/bar/lv_bar.c ****     lv_obj_t * obj = lv_event_get_current_target(e);
  2821              		.loc 1 599 28 view .LVU945
-ARM GAS  /tmp/cc1kxWTq.s 			page 92
+ARM GAS  /tmp/ccBaLCE0.s 			page 92
 
 
  2822 001a FFF7FEFF 		bl	lv_event_get_code
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  2872              		.p2align 1
  2873              	.L186:
  2874              	.LBB78:
-ARM GAS  /tmp/cc1kxWTq.s 			page 93
+ARM GAS  /tmp/ccBaLCE0.s 			page 93
 
 
  603:Drivers/lvgl/src/widgets/bar/lv_bar.c ****         indic_size = lv_obj_calculate_ext_draw_size(obj, LV_PART_INDICATOR);
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  2914              		.loc 2 168 26 view .LVU964
  2915 00ca FFF7FEFF 		bl	lv_obj_get_style_prop
  2916              	.LVL330:
-ARM GAS  /tmp/cc1kxWTq.s 			page 94
+ARM GAS  /tmp/ccBaLCE0.s 			page 94
 
 
  2917 00ce 0746     		mov	r7, r0
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  2957 00e6 FFF7FEFF 		bl	lv_obj_get_style_prop
  2958              	.LVL336:
  2959 00ea 8046     		mov	r8, r0
-ARM GAS  /tmp/cc1kxWTq.s 			page 95
+ARM GAS  /tmp/ccBaLCE0.s 			page 95
 
 
  2960 00ec 0190     		str	r0, [sp, #4]
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  3001              		.loc 1 617 9 is_stmt 1 view .LVU991
  617:Drivers/lvgl/src/widgets/bar/lv_bar.c ****             *s = *s - pad;
  3002              		.loc 1 617 11 is_stmt 0 view .LVU992
-ARM GAS  /tmp/cc1kxWTq.s 			page 96
+ARM GAS  /tmp/ccBaLCE0.s 			page 96
 
 
  3003 010e 002B     		cmp	r3, #0
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  3047              		.section	.rodata.lv_bar_class,"a"
  3048              		.align	2
  3051              	lv_bar_class:
-ARM GAS  /tmp/cc1kxWTq.s 			page 97
+ARM GAS  /tmp/ccBaLCE0.s 			page 97
 
 
  3052 0000 00000000 		.word	lv_obj_class
@@ -5806,67 +5806,67 @@ ARM GAS  /tmp/cc1kxWTq.s 			page 1
  3094              		.file 32 "Drivers/lvgl/src/widgets/bar/../../core/lv_obj_event.h"
  3095              		.file 33 "Drivers/lvgl/src/widgets/bar/../../core/lv_obj_style.h"
  3096              		.file 34 "<built-in>"
-ARM GAS  /tmp/cc1kxWTq.s 			page 98
+ARM GAS  /tmp/ccBaLCE0.s 			page 98
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_bar.c
-     /tmp/cc1kxWTq.s:21     .text.lv_bar_init_anim:00000000 $t
-     /tmp/cc1kxWTq.s:26     .text.lv_bar_init_anim:00000000 lv_bar_init_anim
-     /tmp/cc1kxWTq.s:54     .text.lv_bar_destructor:00000000 $t
-     /tmp/cc1kxWTq.s:59     .text.lv_bar_destructor:00000000 lv_bar_destructor
-     /tmp/cc1kxWTq.s:97     .text.lv_bar_anim_completed:00000000 $t
-     /tmp/cc1kxWTq.s:102    .text.lv_bar_anim_completed:00000000 lv_bar_anim_completed
-     /tmp/cc1kxWTq.s:168    .text.lv_bar_anim:00000000 $t
-     /tmp/cc1kxWTq.s:173    .text.lv_bar_anim:00000000 lv_bar_anim
-     /tmp/cc1kxWTq.s:203    .text.lv_bar_set_value_with_anim:00000000 $t
-     /tmp/cc1kxWTq.s:208    .text.lv_bar_set_value_with_anim:00000000 lv_bar_set_value_with_anim
-     /tmp/cc1kxWTq.s:381    .text.lv_bar_set_value_with_anim:000000a4 $d
-     /tmp/cc1kxWTq.s:388    .text.lv_bar_create:00000000 $t
-     /tmp/cc1kxWTq.s:394    .text.lv_bar_create:00000000 lv_bar_create
-     /tmp/cc1kxWTq.s:433    .text.lv_bar_create:00000014 $d
-     /tmp/cc1kxWTq.s:3051   .rodata.lv_bar_class:00000000 lv_bar_class
-     /tmp/cc1kxWTq.s:438    .text.lv_bar_set_value:00000000 $t
-     /tmp/cc1kxWTq.s:444    .text.lv_bar_set_value:00000000 lv_bar_set_value
-     /tmp/cc1kxWTq.s:535    .text.lv_bar_constructor:00000000 $t
-     /tmp/cc1kxWTq.s:540    .text.lv_bar_constructor:00000000 lv_bar_constructor
-     /tmp/cc1kxWTq.s:637    .text.lv_bar_set_start_value:00000000 $t
-     /tmp/cc1kxWTq.s:643    .text.lv_bar_set_start_value:00000000 lv_bar_set_start_value
-     /tmp/cc1kxWTq.s:733    .text.lv_bar_set_mode:00000000 $t
-     /tmp/cc1kxWTq.s:739    .text.lv_bar_set_mode:00000000 lv_bar_set_mode
-     /tmp/cc1kxWTq.s:802    .text.lv_bar_set_orientation:00000000 $t
-     /tmp/cc1kxWTq.s:808    .text.lv_bar_set_orientation:00000000 lv_bar_set_orientation
-     /tmp/cc1kxWTq.s:854    .text.lv_bar_get_value:00000000 $t
-     /tmp/cc1kxWTq.s:860    .text.lv_bar_get_value:00000000 lv_bar_get_value
-     /tmp/cc1kxWTq.s:904    .text.lv_bar_get_start_value:00000000 $t
-     /tmp/cc1kxWTq.s:910    .text.lv_bar_get_start_value:00000000 lv_bar_get_start_value
-     /tmp/cc1kxWTq.s:969    .text.lv_bar_get_min_value:00000000 $t
-     /tmp/cc1kxWTq.s:975    .text.lv_bar_get_min_value:00000000 lv_bar_get_min_value
-     /tmp/cc1kxWTq.s:1019   .text.lv_bar_get_max_value:00000000 $t
-     /tmp/cc1kxWTq.s:1025   .text.lv_bar_get_max_value:00000000 lv_bar_get_max_value
-     /tmp/cc1kxWTq.s:1069   .text.lv_bar_get_mode:00000000 $t
-     /tmp/cc1kxWTq.s:1075   .text.lv_bar_get_mode:00000000 lv_bar_get_mode
-     /tmp/cc1kxWTq.s:1109   .text.lv_bar_set_range:00000000 $t
-     /tmp/cc1kxWTq.s:1115   .text.lv_bar_set_range:00000000 lv_bar_set_range
-     /tmp/cc1kxWTq.s:1266   .text.lv_bar_get_orientation:00000000 $t
-     /tmp/cc1kxWTq.s:1272   .text.lv_bar_get_orientation:00000000 lv_bar_get_orientation
-     /tmp/cc1kxWTq.s:1306   .text.lv_bar_is_symmetrical:00000000 $t
-     /tmp/cc1kxWTq.s:1312   .text.lv_bar_is_symmetrical:00000000 lv_bar_is_symmetrical
-     /tmp/cc1kxWTq.s:1394   .text.draw_indic:00000000 $t
-     /tmp/cc1kxWTq.s:1399   .text.draw_indic:00000000 draw_indic
-     /tmp/cc1kxWTq.s:2434   .text.draw_indic:000003bc $d
-     /tmp/cc1kxWTq.s:2438   .text.draw_indic:000003c4 $t
-     /tmp/cc1kxWTq.s:2765   .text.lv_bar_event:00000000 $t
-     /tmp/cc1kxWTq.s:2770   .text.lv_bar_event:00000000 lv_bar_event
-     /tmp/cc1kxWTq.s:2843   .text.lv_bar_event:00000034 $d
-     /tmp/cc1kxWTq.s:2872   .text.lv_bar_event:000000a8 $t
-     /tmp/cc1kxWTq.s:3038   .text.lv_bar_event:00000130 $d
-     /tmp/cc1kxWTq.s:3044   .rodata.str1.4:00000000 $d
-     /tmp/cc1kxWTq.s:3048   .rodata.lv_bar_class:00000000 $d
+     /tmp/ccBaLCE0.s:21     .text.lv_bar_init_anim:00000000 $t
+     /tmp/ccBaLCE0.s:26     .text.lv_bar_init_anim:00000000 lv_bar_init_anim
+     /tmp/ccBaLCE0.s:54     .text.lv_bar_destructor:00000000 $t
+     /tmp/ccBaLCE0.s:59     .text.lv_bar_destructor:00000000 lv_bar_destructor
+     /tmp/ccBaLCE0.s:97     .text.lv_bar_anim_completed:00000000 $t
+     /tmp/ccBaLCE0.s:102    .text.lv_bar_anim_completed:00000000 lv_bar_anim_completed
+     /tmp/ccBaLCE0.s:168    .text.lv_bar_anim:00000000 $t
+     /tmp/ccBaLCE0.s:173    .text.lv_bar_anim:00000000 lv_bar_anim
+     /tmp/ccBaLCE0.s:203    .text.lv_bar_set_value_with_anim:00000000 $t
+     /tmp/ccBaLCE0.s:208    .text.lv_bar_set_value_with_anim:00000000 lv_bar_set_value_with_anim
+     /tmp/ccBaLCE0.s:381    .text.lv_bar_set_value_with_anim:000000a4 $d
+     /tmp/ccBaLCE0.s:388    .text.lv_bar_create:00000000 $t
+     /tmp/ccBaLCE0.s:394    .text.lv_bar_create:00000000 lv_bar_create
+     /tmp/ccBaLCE0.s:433    .text.lv_bar_create:00000014 $d
+     /tmp/ccBaLCE0.s:3051   .rodata.lv_bar_class:00000000 lv_bar_class
+     /tmp/ccBaLCE0.s:438    .text.lv_bar_set_value:00000000 $t
+     /tmp/ccBaLCE0.s:444    .text.lv_bar_set_value:00000000 lv_bar_set_value
+     /tmp/ccBaLCE0.s:535    .text.lv_bar_constructor:00000000 $t
+     /tmp/ccBaLCE0.s:540    .text.lv_bar_constructor:00000000 lv_bar_constructor
+     /tmp/ccBaLCE0.s:637    .text.lv_bar_set_start_value:00000000 $t
+     /tmp/ccBaLCE0.s:643    .text.lv_bar_set_start_value:00000000 lv_bar_set_start_value
+     /tmp/ccBaLCE0.s:733    .text.lv_bar_set_mode:00000000 $t
+     /tmp/ccBaLCE0.s:739    .text.lv_bar_set_mode:00000000 lv_bar_set_mode
+     /tmp/ccBaLCE0.s:802    .text.lv_bar_set_orientation:00000000 $t
+     /tmp/ccBaLCE0.s:808    .text.lv_bar_set_orientation:00000000 lv_bar_set_orientation
+     /tmp/ccBaLCE0.s:854    .text.lv_bar_get_value:00000000 $t
+     /tmp/ccBaLCE0.s:860    .text.lv_bar_get_value:00000000 lv_bar_get_value
+     /tmp/ccBaLCE0.s:904    .text.lv_bar_get_start_value:00000000 $t
+     /tmp/ccBaLCE0.s:910    .text.lv_bar_get_start_value:00000000 lv_bar_get_start_value
+     /tmp/ccBaLCE0.s:969    .text.lv_bar_get_min_value:00000000 $t
+     /tmp/ccBaLCE0.s:975    .text.lv_bar_get_min_value:00000000 lv_bar_get_min_value
+     /tmp/ccBaLCE0.s:1019   .text.lv_bar_get_max_value:00000000 $t
+     /tmp/ccBaLCE0.s:1025   .text.lv_bar_get_max_value:00000000 lv_bar_get_max_value
+     /tmp/ccBaLCE0.s:1069   .text.lv_bar_get_mode:00000000 $t
+     /tmp/ccBaLCE0.s:1075   .text.lv_bar_get_mode:00000000 lv_bar_get_mode
+     /tmp/ccBaLCE0.s:1109   .text.lv_bar_set_range:00000000 $t
+     /tmp/ccBaLCE0.s:1115   .text.lv_bar_set_range:00000000 lv_bar_set_range
+     /tmp/ccBaLCE0.s:1266   .text.lv_bar_get_orientation:00000000 $t
+     /tmp/ccBaLCE0.s:1272   .text.lv_bar_get_orientation:00000000 lv_bar_get_orientation
+     /tmp/ccBaLCE0.s:1306   .text.lv_bar_is_symmetrical:00000000 $t
+     /tmp/ccBaLCE0.s:1312   .text.lv_bar_is_symmetrical:00000000 lv_bar_is_symmetrical
+     /tmp/ccBaLCE0.s:1394   .text.draw_indic:00000000 $t
+     /tmp/ccBaLCE0.s:1399   .text.draw_indic:00000000 draw_indic
+     /tmp/ccBaLCE0.s:2434   .text.draw_indic:000003bc $d
+     /tmp/ccBaLCE0.s:2438   .text.draw_indic:000003c4 $t
+     /tmp/ccBaLCE0.s:2765   .text.lv_bar_event:00000000 $t
+     /tmp/ccBaLCE0.s:2770   .text.lv_bar_event:00000000 lv_bar_event
+     /tmp/ccBaLCE0.s:2843   .text.lv_bar_event:00000034 $d
+     /tmp/ccBaLCE0.s:2872   .text.lv_bar_event:000000a8 $t
+     /tmp/ccBaLCE0.s:3038   .text.lv_bar_event:00000130 $d
+     /tmp/ccBaLCE0.s:3044   .rodata.str1.4:00000000 $d
+     /tmp/ccBaLCE0.s:3048   .rodata.lv_bar_class:00000000 $d
 
 UNDEFINED SYMBOLS
 lv_anim_delete
-ARM GAS  /tmp/cc1kxWTq.s 			page 99
+ARM GAS  /tmp/ccBaLCE0.s 			page 99
 
 
 lv_obj_invalidate

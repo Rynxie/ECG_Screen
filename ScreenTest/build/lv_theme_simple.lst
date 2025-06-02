@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccElsdgc.s 			page 1
+ARM GAS  /tmp/ccFdPeTq.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
   28:Drivers/lvgl/src/themes/simple/lv_theme_simple.c **** #define COLOR_LIGHT   lv_palette_lighten(LV_PALETTE_GREY, 2)
   29:Drivers/lvgl/src/themes/simple/lv_theme_simple.c **** #define COLOR_DARK    lv_palette_main(LV_PALETTE_GREY)
   30:Drivers/lvgl/src/themes/simple/lv_theme_simple.c **** #define COLOR_DIM     lv_palette_darken(LV_PALETTE_GREY, 2)
-ARM GAS  /tmp/ccElsdgc.s 			page 2
+ARM GAS  /tmp/ccFdPeTq.s 			page 2
 
 
   31:Drivers/lvgl/src/themes/simple/lv_theme_simple.c **** #define SCROLLBAR_WIDTH     2
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
   85:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****     lv_style_set_bg_opa(&theme->styles.scr, LV_OPA_COVER);
   86:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****     lv_style_set_bg_color(&theme->styles.scr, COLOR_SCR);
   87:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****     lv_style_set_text_color(&theme->styles.scr, COLOR_DIM);
-ARM GAS  /tmp/ccElsdgc.s 			page 3
+ARM GAS  /tmp/ccFdPeTq.s 			page 3
 
 
   88:Drivers/lvgl/src/themes/simple/lv_theme_simple.c **** 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  142:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****  *   GLOBAL FUNCTIONS
  143:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****  **********************/
  144:Drivers/lvgl/src/themes/simple/lv_theme_simple.c **** 
-ARM GAS  /tmp/ccElsdgc.s 			page 4
+ARM GAS  /tmp/ccFdPeTq.s 			page 4
 
 
  145:Drivers/lvgl/src/themes/simple/lv_theme_simple.c **** bool lv_theme_simple_is_inited(void)
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  199:Drivers/lvgl/src/themes/simple/lv_theme_simple.c **** 
  200:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****     theme->inited = true;
  201:Drivers/lvgl/src/themes/simple/lv_theme_simple.c **** 
-ARM GAS  /tmp/ccElsdgc.s 			page 5
+ARM GAS  /tmp/ccFdPeTq.s 			page 5
 
 
  202:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****     return (lv_theme_t *)theme_def;
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
   66              	.LVL5:
   67              		.loc 1 218 7 discriminator 1 view .LVU13
   68 001c 0028     		cmp	r0, #0
-ARM GAS  /tmp/ccElsdgc.s 			page 6
+ARM GAS  /tmp/ccFdPeTq.s 			page 6
 
 
   69 001e 67D0     		beq	.L4
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  236:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****             lv_obj_add_style(obj, &theme->styles.light, 0);
  237:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****             return;
  238:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****         }
-ARM GAS  /tmp/ccElsdgc.s 			page 7
+ARM GAS  /tmp/ccFdPeTq.s 			page 7
 
 
  239:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****         /*Content*/
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  148 0090 05F17001 		add	r1, r5, #112
  149 0094 2046     		mov	r0, r4
  150 0096 FFF7FEFF 		bl	lv_obj_add_style
-ARM GAS  /tmp/ccElsdgc.s 			page 8
+ARM GAS  /tmp/ccFdPeTq.s 			page 8
 
 
  151              	.LVL18:
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  195              		.loc 1 242 13 view .LVU45
  196 00e0 4FF48032 		mov	r2, #65536
  197 00e4 05F17001 		add	r1, r5, #112
-ARM GAS  /tmp/ccElsdgc.s 			page 9
+ARM GAS  /tmp/ccFdPeTq.s 			page 9
 
 
  198 00e8 2046     		mov	r0, r4
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  280:Drivers/lvgl/src/themes/simple/lv_theme_simple.c **** 
  281:Drivers/lvgl/src/themes/simple/lv_theme_simple.c **** #if LV_USE_SLIDER
  282:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****     else if(lv_obj_check_type(obj, &lv_slider_class)) {
-ARM GAS  /tmp/ccElsdgc.s 			page 10
+ARM GAS  /tmp/ccFdPeTq.s 			page 10
 
 
  283:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****         lv_obj_add_style(obj, &theme->styles.light, 0);
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  337:Drivers/lvgl/src/themes/simple/lv_theme_simple.c **** 
  338:Drivers/lvgl/src/themes/simple/lv_theme_simple.c **** #if LV_USE_ARC
  339:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****     else if(lv_obj_check_type(obj, &lv_arc_class)) {
-ARM GAS  /tmp/ccElsdgc.s 			page 11
+ARM GAS  /tmp/ccFdPeTq.s 			page 11
 
 
  340:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****         lv_obj_add_style(obj, &theme->styles.light, 0);
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  394:Drivers/lvgl/src/themes/simple/lv_theme_simple.c **** #endif
  395:Drivers/lvgl/src/themes/simple/lv_theme_simple.c **** #if LV_USE_MSGBOX
  396:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****     else if(lv_obj_check_type(obj, &lv_msgbox_class)) {
-ARM GAS  /tmp/ccElsdgc.s 			page 12
+ARM GAS  /tmp/ccFdPeTq.s 			page 12
 
 
  397:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****         lv_obj_add_style(obj, &theme->styles.light, 0);
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  264:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****             lv_obj_add_style(obj, &theme->styles.light, LV_PART_ITEMS);
  240              		.loc 1 264 12 is_stmt 0 view .LVU59
  241 011c 7749     		ldr	r1, .L43+8
-ARM GAS  /tmp/ccElsdgc.s 			page 13
+ARM GAS  /tmp/ccFdPeTq.s 			page 13
 
 
  242 011e 3046     		mov	r0, r6
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  286 016a 68B1     		cbz	r0, .L13
  276:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****         lv_obj_add_style(obj, &theme->styles.dark, LV_PART_INDICATOR);
  287              		.loc 1 276 9 is_stmt 1 view .LVU70
-ARM GAS  /tmp/ccElsdgc.s 			page 14
+ARM GAS  /tmp/ccFdPeTq.s 			page 14
 
 
  288 016c 0022     		movs	r2, #0
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  333 01c0 FFF7FEFF 		bl	lv_obj_check_type
  334              	.LVL43:
  290:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****         lv_obj_add_style(obj, &theme->styles.scrollbar, LV_PART_SCROLLBAR);
-ARM GAS  /tmp/ccElsdgc.s 			page 15
+ARM GAS  /tmp/ccFdPeTq.s 			page 15
 
 
  335              		.loc 1 290 12 discriminator 1 view .LVU80
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  379              		.loc 1 304 12 discriminator 1 view .LVU90
  380 0212 68B1     		cbz	r0, .L17
  305:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****         lv_obj_add_style(obj, &theme->styles.dim, LV_PART_KNOB);
-ARM GAS  /tmp/ccElsdgc.s 			page 16
+ARM GAS  /tmp/ccFdPeTq.s 			page 16
 
 
  381              		.loc 1 305 9 is_stmt 1 view .LVU91
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  427 0270 49E7     		b	.L1
  428              	.L18:
  320:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****         lv_obj_add_style(obj, &theme->styles.light, 0);
-ARM GAS  /tmp/ccElsdgc.s 			page 17
+ARM GAS  /tmp/ccFdPeTq.s 			page 17
 
 
  429              		.loc 1 320 10 view .LVU100
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  330:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****         lv_obj_add_style(obj, &theme->styles.white, 0);
  473              		.loc 1 330 12 discriminator 1 view .LVU111
  474 02b8 0028     		cmp	r0, #0
-ARM GAS  /tmp/ccElsdgc.s 			page 18
+ARM GAS  /tmp/ccFdPeTq.s 			page 18
 
 
  475 02ba 3FD0     		beq	.L21
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  339:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****         lv_obj_add_style(obj, &theme->styles.light, 0);
  524              		.loc 1 339 13 is_stmt 0 view .LVU117
  525 033c 8549     		ldr	r1, .L45
-ARM GAS  /tmp/ccElsdgc.s 			page 19
+ARM GAS  /tmp/ccFdPeTq.s 			page 19
 
 
  526 033e 2046     		mov	r0, r4
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  346:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****     }
  571              		.loc 1 346 9 view .LVU127
  572 0394 4FF44032 		mov	r2, #196608
-ARM GAS  /tmp/ccElsdgc.s 			page 20
+ARM GAS  /tmp/ccFdPeTq.s 			page 20
 
 
  573 0398 05F18801 		add	r1, r5, #136
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  617 03e2 4FF40032 		mov	r2, #131072
  618 03e6 3146     		mov	r1, r6
  619 03e8 2046     		mov	r0, r4
-ARM GAS  /tmp/ccElsdgc.s 			page 21
+ARM GAS  /tmp/ccFdPeTq.s 			page 21
 
 
  620 03ea FFF7FEFF 		bl	lv_obj_add_style
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  664 0432 2046     		mov	r0, r4
  665 0434 FFF7FEFF 		bl	lv_obj_add_style
  666              	.LVL90:
-ARM GAS  /tmp/ccElsdgc.s 			page 22
+ARM GAS  /tmp/ccFdPeTq.s 			page 22
 
 
  667 0438 65E6     		b	.L1
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  710              	.LVL96:
  387:Drivers/lvgl/src/themes/simple/lv_theme_simple.c **** 
  711              		.loc 1 387 12 discriminator 1 view .LVU159
-ARM GAS  /tmp/ccElsdgc.s 			page 23
+ARM GAS  /tmp/ccFdPeTq.s 			page 23
 
 
  712 047e 0028     		cmp	r0, #0
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  754              		.loc 1 402 13 is_stmt 0 view .LVU171
  755 04c2 2F49     		ldr	r1, .L45+44
  756 04c4 2046     		mov	r0, r4
-ARM GAS  /tmp/ccElsdgc.s 			page 24
+ARM GAS  /tmp/ccFdPeTq.s 			page 24
 
 
  757 04c6 FFF7FEFF 		bl	lv_obj_check_type
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  801 0514 2046     		mov	r0, r4
  802 0516 FFF7FEFF 		bl	lv_obj_add_style
  803              	.LVL108:
-ARM GAS  /tmp/ccElsdgc.s 			page 25
+ARM GAS  /tmp/ccFdPeTq.s 			page 25
 
 
  804 051a F4E5     		b	.L1
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  850 0578 00000000 		.word	lv_list_button_class
  851 057c 00000000 		.word	lv_msgbox_class
  852 0580 00000000 		.word	lv_spinbox_class
-ARM GAS  /tmp/ccElsdgc.s 			page 26
+ARM GAS  /tmp/ccFdPeTq.s 			page 26
 
 
  853 0584 00000000 		.word	lv_tileview_class
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
   41:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h **** #define LV_STYLE_PROP_FLAG_LAYER_UPDATE             (1 << 4)  /**< Affects layer handling */
   42:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h **** #define LV_STYLE_PROP_FLAG_TRANSFORM                (1 << 5)  /**< Affects the object's transformat
   43:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h **** #define LV_STYLE_PROP_FLAG_ALL                      (0x3F)    /**< Indicating all flags */
-ARM GAS  /tmp/ccElsdgc.s 			page 27
+ARM GAS  /tmp/ccFdPeTq.s 			page 27
 
 
   44:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h **** 
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
   98:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h ****  * Some options to apply decorations on texts.
   99:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h ****  * 'OR'ed values can be used.
  100:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h ****  */
-ARM GAS  /tmp/ccElsdgc.s 			page 28
+ARM GAS  /tmp/ccFdPeTq.s 			page 28
 
 
  101:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h **** typedef enum {
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  155:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h **** 
  156:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h ****     /*Group 1*/
  157:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h ****     LV_STYLE_PAD_TOP                = 16,
-ARM GAS  /tmp/ccElsdgc.s 			page 29
+ARM GAS  /tmp/ccFdPeTq.s 			page 29
 
 
  158:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h ****     LV_STYLE_PAD_BOTTOM             = 17,
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  212:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h ****     LV_STYLE_SHADOW_OFFSET_Y        = 65,
  213:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h ****     LV_STYLE_SHADOW_SPREAD          = 66,
  214:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h **** 
-ARM GAS  /tmp/ccElsdgc.s 			page 30
+ARM GAS  /tmp/ccFdPeTq.s 			page 30
 
 
  215:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h ****     LV_STYLE_IMAGE_OPA                = 68,
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  269:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h **** 
  270:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h ****     LV_STYLE_FLEX_FLOW              = 122,
  271:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h ****     LV_STYLE_FLEX_MAIN_PLACE        = 123,
-ARM GAS  /tmp/ccElsdgc.s 			page 31
+ARM GAS  /tmp/ccFdPeTq.s 			page 31
 
 
  272:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h ****     LV_STYLE_FLEX_CROSS_PLACE       = 124,
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  326:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h **** #endif
  327:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h **** 
  328:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h ****     void * values_and_props;
-ARM GAS  /tmp/ccElsdgc.s 			page 32
+ARM GAS  /tmp/ccFdPeTq.s 			page 32
 
 
  329:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h **** 
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  383:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h ****  * Example:
  384:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h ****  * @code
  385:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h ****  * lv_style_prop_t MY_PROP;
-ARM GAS  /tmp/ccElsdgc.s 			page 33
+ARM GAS  /tmp/ccFdPeTq.s 			page 33
 
 
  386:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h ****  * static inline void lv_style_set_my_prop(lv_style_t * style, lv_color_t value) {
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  440:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h ****  * Example:
  441:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h ****  * @code
  442:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h ****  * const static lv_style_prop_t trans_props[] = { LV_STYLE_BG_OPA, LV_STYLE_BG_COLOR, 0 };
-ARM GAS  /tmp/ccElsdgc.s 			page 34
+ARM GAS  /tmp/ccFdPeTq.s 			page 34
 
 
  443:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h ****  * static lv_style_transition_dsc_t trans1;
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  497:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h ****  * @return true if the style is empty
  498:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h ****  */
  499:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h **** bool lv_style_is_empty(const lv_style_t * style);
-ARM GAS  /tmp/ccElsdgc.s 			page 35
+ARM GAS  /tmp/ccFdPeTq.s 			page 35
 
 
  500:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h **** 
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  888 000c 2046     		mov	r0, r4
  889 000e FFF7FEFF 		bl	lv_style_set_pad_right
  890              	.LVL115:
-ARM GAS  /tmp/ccElsdgc.s 			page 36
+ARM GAS  /tmp/ccFdPeTq.s 			page 36
 
 
  535:Drivers/lvgl/src/themes/simple/../../core/../misc/lv_style.h ****     lv_style_set_pad_top(style, value);
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  150:Drivers/lvgl/src/themes/simple/lv_theme_simple.c **** 
  936              		.loc 1 150 1 view .LVU206
  937 0010 7047     		bx	lr
-ARM GAS  /tmp/ccElsdgc.s 			page 37
+ARM GAS  /tmp/ccFdPeTq.s 			page 37
 
 
  938              	.L53:
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  434:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****     }
  980              		.loc 1 434 9 is_stmt 1 view .LVU214
  981 0012 2046     		mov	r0, r4
-ARM GAS  /tmp/ccElsdgc.s 			page 38
+ARM GAS  /tmp/ccFdPeTq.s 			page 38
 
 
  982 0014 FFF7FEFF 		bl	lv_style_init
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  1032 002a C0F30740 		ubfx	r0, r0, #16, #8
  1033 002e 8DF80200 		strb	r0, [sp, #2]
   81:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****     lv_style_set_width(&theme->styles.scrollbar,  SCROLLBAR_WIDTH);
-ARM GAS  /tmp/ccElsdgc.s 			page 39
+ARM GAS  /tmp/ccFdPeTq.s 			page 39
 
 
  1034              		.loc 1 81 5 is_stmt 0 discriminator 1 view .LVU222
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  1081 0096 2846     		mov	r0, r5
  1082 0098 FFF7FEFF 		bl	lv_style_set_text_color
  1083              	.LVL136:
-ARM GAS  /tmp/ccElsdgc.s 			page 40
+ARM GAS  /tmp/ccFdPeTq.s 			page 40
 
 
   89:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****     lv_style_set_bg_opa(&theme->styles.transp, LV_OPA_TRANSP);
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
   96:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****     lv_style_set_arc_width(&theme->styles.white, 2);
  1130              		.loc 1 96 5 is_stmt 0 discriminator 1 view .LVU238
  1131 0100 0499     		ldr	r1, [sp, #16]
-ARM GAS  /tmp/ccElsdgc.s 			page 41
+ARM GAS  /tmp/ccFdPeTq.s 			page 41
 
 
  1132 0102 2846     		mov	r0, r5
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  1178              		.loc 1 103 5 is_stmt 1 view .LVU246
  1179 0166 0121     		movs	r1, #1
  1180 0168 2846     		mov	r0, r5
-ARM GAS  /tmp/ccElsdgc.s 			page 42
+ARM GAS  /tmp/ccFdPeTq.s 			page 42
 
 
  1181 016a FFF7FEFF 		bl	lv_style_set_line_width
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  110:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****     lv_style_set_line_width(&theme->styles.dark, 1);
  1228              		.loc 1 110 5 view .LVU254
  1229 01d0 1220     		movs	r0, #18
-ARM GAS  /tmp/ccElsdgc.s 			page 43
+ARM GAS  /tmp/ccFdPeTq.s 			page 43
 
 
  1230 01d2 FFF7FEFF 		bl	lv_palette_main
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  1277 0240 2846     		mov	r0, r5
  1278 0242 FFF7FEFF 		bl	lv_style_set_arc_color
  1279              	.LVL168:
-ARM GAS  /tmp/ccElsdgc.s 			page 44
+ARM GAS  /tmp/ccFdPeTq.s 			page 44
 
 
  116:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****     lv_style_set_bg_opa(&theme->styles.dim, LV_OPA_COVER);
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  1326 02a8 0221     		movs	r1, #2
  1327 02aa 2846     		mov	r0, r5
  1328 02ac FFF7FEFF 		bl	lv_style_set_arc_width
-ARM GAS  /tmp/ccElsdgc.s 			page 45
+ARM GAS  /tmp/ccFdPeTq.s 			page 45
 
 
  1329              	.LVL176:
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  1374 0302 2046     		mov	r0, r4
  1375 0304 FFF7FEFF 		bl	lv_style_set_border_side
  1376              	.LVL185:
-ARM GAS  /tmp/ccElsdgc.s 			page 46
+ARM GAS  /tmp/ccFdPeTq.s 			page 46
 
 
  134:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****     lv_style_set_border_width(&theme->styles.ta_cursor, 2);
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  153:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****     if(!lv_theme_simple_is_inited()) {
  1426              		.loc 1 153 1 is_stmt 1 view -0
  1427              		.cfi_startproc
-ARM GAS  /tmp/ccElsdgc.s 			page 47
+ARM GAS  /tmp/ccFdPeTq.s 			page 47
 
 
  1428              		@ args = 0, pretend = 0, frame = 0
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  1476              		.cfi_offset 4, -12
  1477              		.cfi_offset 5, -8
  1478              		.cfi_offset 14, -4
-ARM GAS  /tmp/ccElsdgc.s 			page 48
+ARM GAS  /tmp/ccFdPeTq.s 			page 48
 
 
  163:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****     if(theme) {
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  1516              	.L69:
  168:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****                 lv_style_reset(theme_styles + i);
  1517              		.loc 1 168 26 discriminator 1 view .LVU312
-ARM GAS  /tmp/ccElsdgc.s 			page 49
+ARM GAS  /tmp/ccFdPeTq.s 			page 49
 
 
  1518 0024 092C     		cmp	r4, #9
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  1566              		.loc 1 182 5 is_stmt 1 view .LVU320
  182:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****         theme_def  = lv_malloc_zeroed(sizeof(my_theme_t));
  1567              		.loc 1 182 9 is_stmt 0 view .LVU321
-ARM GAS  /tmp/ccElsdgc.s 			page 50
+ARM GAS  /tmp/ccFdPeTq.s 			page 50
 
 
  1568 0004 FFF7FEFF 		bl	lv_theme_simple_is_inited
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  1605              	.LVL203:
  196:Drivers/lvgl/src/themes/simple/lv_theme_simple.c ****         lv_obj_report_style_change(NULL);
  1606              		.loc 1 196 21 discriminator 1 view .LVU339
-ARM GAS  /tmp/ccElsdgc.s 			page 51
+ARM GAS  /tmp/ccFdPeTq.s 			page 51
 
 
  1607 002c 8442     		cmp	r4, r0
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  1654              		.file 11 "Drivers/lvgl/src/themes/simple/../../core/../misc/../font/lv_font.h"
  1655              		.file 12 "Drivers/lvgl/src/themes/simple/../../core/../draw/../misc/cache/lv_cache_private.h"
  1656              		.file 13 "Drivers/lvgl/src/themes/simple/../../core/../draw/lv_draw_buf_private.h"
-ARM GAS  /tmp/ccElsdgc.s 			page 52
+ARM GAS  /tmp/ccFdPeTq.s 			page 52
 
 
  1657              		.file 14 "Drivers/lvgl/src/themes/simple/../../core/../misc/../font/../draw/lv_draw_buf.h"
@@ -3105,34 +3105,34 @@ ARM GAS  /tmp/ccElsdgc.s 			page 1
  1698              		.file 55 "Drivers/lvgl/src/themes/simple/../../core/lv_obj_tree.h"
  1699              		.file 56 "Drivers/lvgl/src/themes/simple/../../core/../display/lv_display.h"
  1700              		.file 57 "Drivers/lvgl/src/themes/simple/../../core/../misc/../font/../draw/../misc/../stdlib/lv_m
-ARM GAS  /tmp/ccElsdgc.s 			page 53
+ARM GAS  /tmp/ccFdPeTq.s 			page 53
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_theme_simple.c
-     /tmp/ccElsdgc.s:21     .text.theme_apply:00000000 $t
-     /tmp/ccElsdgc.s:26     .text.theme_apply:00000000 theme_apply
-     /tmp/ccElsdgc.s:504    .text.theme_apply:000002f4 $d
-     /tmp/ccElsdgc.s:525    .text.theme_apply:0000033c $t
-     /tmp/ccElsdgc.s:841    .text.theme_apply:00000554 $d
-     /tmp/ccElsdgc.s:860    .text.lv_style_set_pad_all:00000000 $t
-     /tmp/ccElsdgc.s:865    .text.lv_style_set_pad_all:00000000 lv_style_set_pad_all
-     /tmp/ccElsdgc.s:908    .text.lv_theme_simple_is_inited:00000000 $t
-     /tmp/ccElsdgc.s:914    .text.lv_theme_simple_is_inited:00000000 lv_theme_simple_is_inited
-     /tmp/ccElsdgc.s:941    .text.lv_theme_simple_is_inited:00000014 $d
-     /tmp/ccElsdgc.s:946    .text.style_init_reset:00000000 $t
-     /tmp/ccElsdgc.s:951    .text.style_init_reset:00000000 style_init_reset
-     /tmp/ccElsdgc.s:990    .text.style_init:00000000 $t
-     /tmp/ccElsdgc.s:995    .text.style_init:00000000 style_init
-     /tmp/ccElsdgc.s:1418   .text.lv_theme_simple_get:00000000 $t
-     /tmp/ccElsdgc.s:1424   .text.lv_theme_simple_get:00000000 lv_theme_simple_get
-     /tmp/ccElsdgc.s:1455   .text.lv_theme_simple_get:00000014 $d
-     /tmp/ccElsdgc.s:1460   .text.lv_theme_simple_deinit:00000000 $t
-     /tmp/ccElsdgc.s:1466   .text.lv_theme_simple_deinit:00000000 lv_theme_simple_deinit
-     /tmp/ccElsdgc.s:1539   .text.lv_theme_simple_deinit:0000003c $d
-     /tmp/ccElsdgc.s:1544   .text.lv_theme_simple_init:00000000 $t
-     /tmp/ccElsdgc.s:1550   .text.lv_theme_simple_init:00000000 lv_theme_simple_init
-     /tmp/ccElsdgc.s:1638   .text.lv_theme_simple_init:00000054 $d
+     /tmp/ccFdPeTq.s:21     .text.theme_apply:00000000 $t
+     /tmp/ccFdPeTq.s:26     .text.theme_apply:00000000 theme_apply
+     /tmp/ccFdPeTq.s:504    .text.theme_apply:000002f4 $d
+     /tmp/ccFdPeTq.s:525    .text.theme_apply:0000033c $t
+     /tmp/ccFdPeTq.s:841    .text.theme_apply:00000554 $d
+     /tmp/ccFdPeTq.s:860    .text.lv_style_set_pad_all:00000000 $t
+     /tmp/ccFdPeTq.s:865    .text.lv_style_set_pad_all:00000000 lv_style_set_pad_all
+     /tmp/ccFdPeTq.s:908    .text.lv_theme_simple_is_inited:00000000 $t
+     /tmp/ccFdPeTq.s:914    .text.lv_theme_simple_is_inited:00000000 lv_theme_simple_is_inited
+     /tmp/ccFdPeTq.s:941    .text.lv_theme_simple_is_inited:00000014 $d
+     /tmp/ccFdPeTq.s:946    .text.style_init_reset:00000000 $t
+     /tmp/ccFdPeTq.s:951    .text.style_init_reset:00000000 style_init_reset
+     /tmp/ccFdPeTq.s:990    .text.style_init:00000000 $t
+     /tmp/ccFdPeTq.s:995    .text.style_init:00000000 style_init
+     /tmp/ccFdPeTq.s:1418   .text.lv_theme_simple_get:00000000 $t
+     /tmp/ccFdPeTq.s:1424   .text.lv_theme_simple_get:00000000 lv_theme_simple_get
+     /tmp/ccFdPeTq.s:1455   .text.lv_theme_simple_get:00000014 $d
+     /tmp/ccFdPeTq.s:1460   .text.lv_theme_simple_deinit:00000000 $t
+     /tmp/ccFdPeTq.s:1466   .text.lv_theme_simple_deinit:00000000 lv_theme_simple_deinit
+     /tmp/ccFdPeTq.s:1539   .text.lv_theme_simple_deinit:0000003c $d
+     /tmp/ccFdPeTq.s:1544   .text.lv_theme_simple_init:00000000 $t
+     /tmp/ccFdPeTq.s:1550   .text.lv_theme_simple_init:00000000 lv_theme_simple_init
+     /tmp/ccFdPeTq.s:1638   .text.lv_theme_simple_init:00000054 $d
 
 UNDEFINED SYMBOLS
 lv_obj_get_parent
@@ -3165,7 +3165,7 @@ lv_list_text_class
 lv_list_button_class
 lv_spinbox_class
 lv_tileview_class
-ARM GAS  /tmp/ccElsdgc.s 			page 54
+ARM GAS  /tmp/ccFdPeTq.s 			page 54
 
 
 lv_tileview_tile_class

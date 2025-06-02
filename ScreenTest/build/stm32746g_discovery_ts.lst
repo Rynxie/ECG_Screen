@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc2fmVVN.s 			page 1
+ARM GAS  /tmp/cctN4fdd.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc2fmVVN.s 			page 1
   27:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c ****    2. Driver description:
   28:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c ****    ---------------------
   29:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c ****      + Initialization steps:
-ARM GAS  /tmp/cc2fmVVN.s 			page 2
+ARM GAS  /tmp/cctN4fdd.s 			page 2
 
 
   30:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c ****         o Initialize the TS module using the BSP_TS_Init() function. This 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc2fmVVN.s 			page 1
   84:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c **** /**
   85:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c ****   * @}
   86:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c ****   */ 
-ARM GAS  /tmp/cc2fmVVN.s 			page 3
+ARM GAS  /tmp/cctN4fdd.s 			page 3
 
 
   87:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c **** 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc2fmVVN.s 			page 1
   38              		.cfi_offset 4, -8
   39              		.cfi_offset 14, -4
  133:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c ****   uint8_t status = TS_OK;
-ARM GAS  /tmp/cc2fmVVN.s 			page 4
+ARM GAS  /tmp/cctN4fdd.s 			page 4
 
 
   40              		.loc 1 133 3 is_stmt 1 view .LVU2
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc2fmVVN.s 			page 1
  154:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c ****   return status;
   74              		.loc 1 154 3 is_stmt 1 view .LVU16
  155:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c **** }
-ARM GAS  /tmp/cc2fmVVN.s 			page 5
+ARM GAS  /tmp/cctN4fdd.s 			page 5
 
 
   75              		.loc 1 155 1 is_stmt 0 view .LVU17
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc2fmVVN.s 			page 1
  121              	BSP_TS_DeInit:
  122              	.LFB142:
  156:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c **** 
-ARM GAS  /tmp/cc2fmVVN.s 			page 6
+ARM GAS  /tmp/cctN4fdd.s 			page 6
 
 
  157:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c **** /**
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc2fmVVN.s 			page 1
  159 0004 4FF40053 		mov	r3, #8192
  160 0008 0193     		str	r3, [sp, #4]
  177:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c ****   gpio_init_structure.Pull = GPIO_NOPULL;
-ARM GAS  /tmp/cc2fmVVN.s 			page 7
+ARM GAS  /tmp/cctN4fdd.s 			page 7
 
 
  161              		.loc 1 177 3 is_stmt 1 view .LVU35
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc2fmVVN.s 			page 1
  202              	.LCFI3:
  203              		.cfi_def_cfa_offset 8
  204              		@ sp needed
-ARM GAS  /tmp/cc2fmVVN.s 			page 8
+ARM GAS  /tmp/cctN4fdd.s 			page 8
 
 
  205 0040 10BD     		pop	{r4, pc}
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc2fmVVN.s 			page 1
  251              	.LFE144:
  253              		.section	.text.BSP_TS_Get_GestureId,"ax",%progbits
  254              		.align	1
-ARM GAS  /tmp/cc2fmVVN.s 			page 9
+ARM GAS  /tmp/cctN4fdd.s 			page 9
 
 
  255              		.global	BSP_TS_Get_GestureId
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc2fmVVN.s 			page 1
  248:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c ****         y[index] = 4096 - brute_y[index];
  249:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c ****       }
  250:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c **** 
-ARM GAS  /tmp/cc2fmVVN.s 			page 10
+ARM GAS  /tmp/cctN4fdd.s 			page 10
 
 
  251:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c ****       if(tsOrientation & TS_SWAP_XY)
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc2fmVVN.s 			page 1
  305:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c ****       } /* of switch(event) */
  306:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c **** 
  307:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c **** #endif /* TS_MULTI_TOUCH_SUPPORTED == 1 */
-ARM GAS  /tmp/cc2fmVVN.s 			page 11
+ARM GAS  /tmp/cctN4fdd.s 			page 11
 
 
  308:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c **** 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc2fmVVN.s 			page 1
  334:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c **** 
  335:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c ****   /* Remap gesture Id to a TS_GestureIdTypeDef value */
  336:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c ****   switch(gestureId)
-ARM GAS  /tmp/cc2fmVVN.s 			page 12
+ARM GAS  /tmp/cctN4fdd.s 			page 12
 
 
  291              		.loc 1 336 3 is_stmt 1 view .LVU61
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc2fmVVN.s 			page 1
  348:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c ****       TS_State->gestureId = GEST_ID_MOVE_DOWN;
  349:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c ****       break;
  350:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c ****     case FT5336_GEST_ID_MOVE_LEFT :
-ARM GAS  /tmp/cc2fmVVN.s 			page 13
+ARM GAS  /tmp/cctN4fdd.s 			page 13
 
 
  351:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c ****       TS_State->gestureId = GEST_ID_MOVE_LEFT;
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc2fmVVN.s 			page 1
  368 0064 A362     		str	r3, [r4, #40]
  346:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c ****     case FT5336_GEST_ID_MOVE_DOWN :
  369              		.loc 1 346 7 is_stmt 1 view .LVU78
-ARM GAS  /tmp/cc2fmVVN.s 			page 14
+ARM GAS  /tmp/cctN4fdd.s 			page 14
 
 
  330:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c **** 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc2fmVVN.s 			page 1
  406 0082 0120     		movs	r0, #1
  407              	.L19:
  408              	.LVL17:
-ARM GAS  /tmp/cc2fmVVN.s 			page 15
+ARM GAS  /tmp/cctN4fdd.s 			page 15
 
 
  359:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c ****     default :
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cc2fmVVN.s 			page 1
  453              		.loc 1 211 3 view .LVU104
  454              	.LVL20:
  212:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c ****   uint16_t y[TS_MAX_NB_TOUCH];
-ARM GAS  /tmp/cc2fmVVN.s 			page 16
+ARM GAS  /tmp/cctN4fdd.s 			page 16
 
 
  455              		.loc 1 212 3 view .LVU105
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cc2fmVVN.s 			page 1
  490              	.LVL23:
  491              	.L35:
  318:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c **** }
-ARM GAS  /tmp/cc2fmVVN.s 			page 17
+ARM GAS  /tmp/cctN4fdd.s 			page 17
 
 
  492              		.loc 1 318 3 is_stmt 1 view .LVU125
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cc2fmVVN.s 			page 1
  534              		.loc 1 268 9 is_stmt 1 view .LVU137
  268:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c ****         TS_State->touchY[index] = y[index];
  535              		.loc 1 268 33 is_stmt 0 view .LVU138
-ARM GAS  /tmp/cc2fmVVN.s 			page 18
+ARM GAS  /tmp/cctN4fdd.s 			page 18
 
 
  536 004e 05EB4403 		add	r3, r5, r4, lsl #1
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cc2fmVVN.s 			page 1
  577              		.loc 1 235 7 is_stmt 1 view .LVU151
  235:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c ****       {
  578              		.loc 1 235 24 is_stmt 0 view .LVU152
-ARM GAS  /tmp/cc2fmVVN.s 			page 19
+ARM GAS  /tmp/cctN4fdd.s 			page 19
 
 
  579 0086 4D4B     		ldr	r3, .L60+8
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cc2fmVVN.s 			page 1
  617              		.loc 1 253 9 is_stmt 1 view .LVU168
  253:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c ****         x[index] = brute_y[index];
  618              		.loc 1 253 27 is_stmt 0 view .LVU169
-ARM GAS  /tmp/cc2fmVVN.s 			page 20
+ARM GAS  /tmp/cctN4fdd.s 			page 20
 
 
  619 00c4 12AB     		add	r3, sp, #72
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cc2fmVVN.s 			page 1
  258:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c **** 
  659              		.loc 1 258 48 discriminator 1 view .LVU184
  660 0108 92B2     		uxth	r2, r2
-ARM GAS  /tmp/cc2fmVVN.s 			page 21
+ARM GAS  /tmp/cctN4fdd.s 			page 21
 
 
  258:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c **** 
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cc2fmVVN.s 			page 1
  274:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c ****         TS_State->touchY[index] = (tsYBoundary * _y[index]) >> 12;
  700              		.loc 1 274 33 view .LVU200
  701 0138 05EB4402 		add	r2, r5, r4, lsl #1
-ARM GAS  /tmp/cc2fmVVN.s 			page 22
+ARM GAS  /tmp/cctN4fdd.s 			page 22
 
 
  702 013c 5380     		strh	r3, [r2, #2]	@ movhi
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cc2fmVVN.s 			page 1
  745 0188 99010000 		.word	.L50+1
  746 018c A1010000 		.word	.L48+1
  747              		.p2align 1
-ARM GAS  /tmp/cc2fmVVN.s 			page 23
+ARM GAS  /tmp/cctN4fdd.s 			page 23
 
 
  748              	.L51:
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cc2fmVVN.s 			page 1
  790 01bc 00000000 		.word	tsOrientation
  791 01c0 00000000 		.word	_x.1
  792 01c4 00000000 		.word	_y.0
-ARM GAS  /tmp/cc2fmVVN.s 			page 24
+ARM GAS  /tmp/cctN4fdd.s 			page 24
 
 
  793 01c8 00000000 		.word	tsXBoundary
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/cc2fmVVN.s 			page 1
  840              		.thumb
  841              		.thumb_func
  843              	BSP_TS_ResetTouchData:
-ARM GAS  /tmp/cc2fmVVN.s 			page 25
+ARM GAS  /tmp/cctN4fdd.s 			page 25
 
 
  844              	.LVL39:
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/cc2fmVVN.s 			page 1
  872 000c 0CEB4301 		add	r1, ip, r3, lsl #1
  873 0010 0022     		movs	r2, #0
  874 0012 4A80     		strh	r2, [r1, #2]	@ movhi
-ARM GAS  /tmp/cc2fmVVN.s 			page 26
+ARM GAS  /tmp/cctN4fdd.s 			page 26
 
 
  402:Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.c ****       TS_State->touchY[index]       = 0;
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/cc2fmVVN.s 			page 1
  917              	_y.0:
  918 0000 00000000 		.space	20
  918      00000000 
-ARM GAS  /tmp/cc2fmVVN.s 			page 27
+ARM GAS  /tmp/cctN4fdd.s 			page 27
 
 
  918      00000000 
@@ -1600,52 +1600,52 @@ ARM GAS  /tmp/cc2fmVVN.s 			page 1
  960              		.file 7 "Drivers/BSP/STM32746G-Discovery/stm32746g_discovery_ts.h"
  961              		.file 8 "Drivers/BSP/STM32746G-Discovery/../Components/ft5336/ft5336.h"
  962              		.file 9 "Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h"
-ARM GAS  /tmp/cc2fmVVN.s 			page 28
+ARM GAS  /tmp/cctN4fdd.s 			page 28
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32746g_discovery_ts.c
-     /tmp/cc2fmVVN.s:21     .text.BSP_TS_Init:00000000 $t
-     /tmp/cc2fmVVN.s:27     .text.BSP_TS_Init:00000000 BSP_TS_Init
-     /tmp/cc2fmVVN.s:105    .text.BSP_TS_Init:00000038 $d
-     /tmp/cc2fmVVN.s:945    .bss.tsXBoundary:00000000 tsXBoundary
-     /tmp/cc2fmVVN.s:939    .bss.tsYBoundary:00000000 tsYBoundary
-     /tmp/cc2fmVVN.s:951    .bss.tsDriver:00000000 tsDriver
-     /tmp/cc2fmVVN.s:928    .bss.I2cAddress:00000000 I2cAddress
-     /tmp/cc2fmVVN.s:933    .bss.tsOrientation:00000000 tsOrientation
-     /tmp/cc2fmVVN.s:115    .text.BSP_TS_DeInit:00000000 $t
-     /tmp/cc2fmVVN.s:121    .text.BSP_TS_DeInit:00000000 BSP_TS_DeInit
-     /tmp/cc2fmVVN.s:136    .text.BSP_TS_ITConfig:00000000 $t
-     /tmp/cc2fmVVN.s:142    .text.BSP_TS_ITConfig:00000000 BSP_TS_ITConfig
-     /tmp/cc2fmVVN.s:209    .text.BSP_TS_ITConfig:00000044 $d
-     /tmp/cc2fmVVN.s:216    .text.BSP_TS_ITGetStatus:00000000 $t
-     /tmp/cc2fmVVN.s:222    .text.BSP_TS_ITGetStatus:00000000 BSP_TS_ITGetStatus
-     /tmp/cc2fmVVN.s:248    .text.BSP_TS_ITGetStatus:00000010 $d
-     /tmp/cc2fmVVN.s:254    .text.BSP_TS_Get_GestureId:00000000 $t
-     /tmp/cc2fmVVN.s:260    .text.BSP_TS_Get_GestureId:00000000 BSP_TS_Get_GestureId
-     /tmp/cc2fmVVN.s:299    .text.BSP_TS_Get_GestureId:00000022 $d
-     /tmp/cc2fmVVN.s:421    .text.BSP_TS_Get_GestureId:00000088 $d
-     /tmp/cc2fmVVN.s:426    .text.BSP_TS_GetState:00000000 $t
-     /tmp/cc2fmVVN.s:432    .text.BSP_TS_GetState:00000000 BSP_TS_GetState
-     /tmp/cc2fmVVN.s:743    .text.BSP_TS_GetState:00000180 $d
-     /tmp/cc2fmVVN.s:747    .text.BSP_TS_GetState:00000190 $t
-     /tmp/cc2fmVVN.s:788    .text.BSP_TS_GetState:000001b4 $d
-     /tmp/cc2fmVVN.s:923    .bss._x.1:00000000 _x.1
-     /tmp/cc2fmVVN.s:917    .bss._y.0:00000000 _y.0
-     /tmp/cc2fmVVN.s:799    .text.BSP_TS_ITClear:00000000 $t
-     /tmp/cc2fmVVN.s:805    .text.BSP_TS_ITClear:00000000 BSP_TS_ITClear
-     /tmp/cc2fmVVN.s:831    .text.BSP_TS_ITClear:00000010 $d
-     /tmp/cc2fmVVN.s:837    .text.BSP_TS_ResetTouchData:00000000 $t
-     /tmp/cc2fmVVN.s:843    .text.BSP_TS_ResetTouchData:00000000 BSP_TS_ResetTouchData
-     /tmp/cc2fmVVN.s:914    .bss._y.0:00000000 $d
-     /tmp/cc2fmVVN.s:920    .bss._x.1:00000000 $d
-     /tmp/cc2fmVVN.s:929    .bss.I2cAddress:00000000 $d
-     /tmp/cc2fmVVN.s:934    .bss.tsOrientation:00000000 $d
-     /tmp/cc2fmVVN.s:936    .bss.tsYBoundary:00000000 $d
-     /tmp/cc2fmVVN.s:942    .bss.tsXBoundary:00000000 $d
-     /tmp/cc2fmVVN.s:948    .bss.tsDriver:00000000 $d
-     /tmp/cc2fmVVN.s:328    .text.BSP_TS_Get_GestureId:0000003f $d
-     /tmp/cc2fmVVN.s:328    .text.BSP_TS_Get_GestureId:00000040 $t
+     /tmp/cctN4fdd.s:21     .text.BSP_TS_Init:00000000 $t
+     /tmp/cctN4fdd.s:27     .text.BSP_TS_Init:00000000 BSP_TS_Init
+     /tmp/cctN4fdd.s:105    .text.BSP_TS_Init:00000038 $d
+     /tmp/cctN4fdd.s:945    .bss.tsXBoundary:00000000 tsXBoundary
+     /tmp/cctN4fdd.s:939    .bss.tsYBoundary:00000000 tsYBoundary
+     /tmp/cctN4fdd.s:951    .bss.tsDriver:00000000 tsDriver
+     /tmp/cctN4fdd.s:928    .bss.I2cAddress:00000000 I2cAddress
+     /tmp/cctN4fdd.s:933    .bss.tsOrientation:00000000 tsOrientation
+     /tmp/cctN4fdd.s:115    .text.BSP_TS_DeInit:00000000 $t
+     /tmp/cctN4fdd.s:121    .text.BSP_TS_DeInit:00000000 BSP_TS_DeInit
+     /tmp/cctN4fdd.s:136    .text.BSP_TS_ITConfig:00000000 $t
+     /tmp/cctN4fdd.s:142    .text.BSP_TS_ITConfig:00000000 BSP_TS_ITConfig
+     /tmp/cctN4fdd.s:209    .text.BSP_TS_ITConfig:00000044 $d
+     /tmp/cctN4fdd.s:216    .text.BSP_TS_ITGetStatus:00000000 $t
+     /tmp/cctN4fdd.s:222    .text.BSP_TS_ITGetStatus:00000000 BSP_TS_ITGetStatus
+     /tmp/cctN4fdd.s:248    .text.BSP_TS_ITGetStatus:00000010 $d
+     /tmp/cctN4fdd.s:254    .text.BSP_TS_Get_GestureId:00000000 $t
+     /tmp/cctN4fdd.s:260    .text.BSP_TS_Get_GestureId:00000000 BSP_TS_Get_GestureId
+     /tmp/cctN4fdd.s:299    .text.BSP_TS_Get_GestureId:00000022 $d
+     /tmp/cctN4fdd.s:421    .text.BSP_TS_Get_GestureId:00000088 $d
+     /tmp/cctN4fdd.s:426    .text.BSP_TS_GetState:00000000 $t
+     /tmp/cctN4fdd.s:432    .text.BSP_TS_GetState:00000000 BSP_TS_GetState
+     /tmp/cctN4fdd.s:743    .text.BSP_TS_GetState:00000180 $d
+     /tmp/cctN4fdd.s:747    .text.BSP_TS_GetState:00000190 $t
+     /tmp/cctN4fdd.s:788    .text.BSP_TS_GetState:000001b4 $d
+     /tmp/cctN4fdd.s:923    .bss._x.1:00000000 _x.1
+     /tmp/cctN4fdd.s:917    .bss._y.0:00000000 _y.0
+     /tmp/cctN4fdd.s:799    .text.BSP_TS_ITClear:00000000 $t
+     /tmp/cctN4fdd.s:805    .text.BSP_TS_ITClear:00000000 BSP_TS_ITClear
+     /tmp/cctN4fdd.s:831    .text.BSP_TS_ITClear:00000010 $d
+     /tmp/cctN4fdd.s:837    .text.BSP_TS_ResetTouchData:00000000 $t
+     /tmp/cctN4fdd.s:843    .text.BSP_TS_ResetTouchData:00000000 BSP_TS_ResetTouchData
+     /tmp/cctN4fdd.s:914    .bss._y.0:00000000 $d
+     /tmp/cctN4fdd.s:920    .bss._x.1:00000000 $d
+     /tmp/cctN4fdd.s:929    .bss.I2cAddress:00000000 $d
+     /tmp/cctN4fdd.s:934    .bss.tsOrientation:00000000 $d
+     /tmp/cctN4fdd.s:936    .bss.tsYBoundary:00000000 $d
+     /tmp/cctN4fdd.s:942    .bss.tsXBoundary:00000000 $d
+     /tmp/cctN4fdd.s:948    .bss.tsDriver:00000000 $d
+     /tmp/cctN4fdd.s:328    .text.BSP_TS_Get_GestureId:0000003f $d
+     /tmp/cctN4fdd.s:328    .text.BSP_TS_Get_GestureId:00000040 $t
 
 UNDEFINED SYMBOLS
 ft5336_ts_drv

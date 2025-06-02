@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccdzwLnu.s 			page 1
+ARM GAS  /tmp/ccnWWFvL.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
   28:Drivers/lvgl/src/font/lv_binfont_loader.c ****     uint16_t font_size;
   29:Drivers/lvgl/src/font/lv_binfont_loader.c ****     uint16_t ascent;
   30:Drivers/lvgl/src/font/lv_binfont_loader.c ****     int16_t descent;
-ARM GAS  /tmp/ccdzwLnu.s 			page 2
+ARM GAS  /tmp/ccnWWFvL.s 			page 2
 
 
   31:Drivers/lvgl/src/font/lv_binfont_loader.c ****     uint16_t typo_ascent;
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
   85:Drivers/lvgl/src/font/lv_binfont_loader.c ****     lv_fs_res_t fs_res = lv_fs_open(&file, path, LV_FS_MODE_RD);
   86:Drivers/lvgl/src/font/lv_binfont_loader.c ****     if(fs_res != LV_FS_RES_OK) return NULL;
   87:Drivers/lvgl/src/font/lv_binfont_loader.c **** 
-ARM GAS  /tmp/ccdzwLnu.s 			page 3
+ARM GAS  /tmp/ccnWWFvL.s 			page 3
 
 
   88:Drivers/lvgl/src/font/lv_binfont_loader.c ****     lv_font_t * font = lv_malloc_zeroed(sizeof(lv_font_t));
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  142:Drivers/lvgl/src/font/lv_binfont_loader.c ****     const lv_font_fmt_txt_cmap_t * cmaps = dsc->cmaps;
  143:Drivers/lvgl/src/font/lv_binfont_loader.c ****     if(NULL != cmaps) {
  144:Drivers/lvgl/src/font/lv_binfont_loader.c ****         for(int i = 0; i < dsc->cmap_num; ++i) {
-ARM GAS  /tmp/ccdzwLnu.s 			page 4
+ARM GAS  /tmp/ccnWWFvL.s 			page 4
 
 
  145:Drivers/lvgl/src/font/lv_binfont_loader.c ****             lv_free((void *)cmaps[i].glyph_id_ofs_list);
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  169:Drivers/lvgl/src/font/lv_binfont_loader.c **** 
  170:Drivers/lvgl/src/font/lv_binfont_loader.c **** static unsigned int read_bits(bit_iterator_t * it, int n_bits, lv_fs_res_t * res)
  171:Drivers/lvgl/src/font/lv_binfont_loader.c **** {
-ARM GAS  /tmp/ccdzwLnu.s 			page 5
+ARM GAS  /tmp/ccnWWFvL.s 			page 5
 
 
   61              		.loc 1 171 1 is_stmt 1 view -0
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
   99              	.LVL6:
  100              		.loc 1 186 15 view .LVU22
  101              	.LBE2:
-ARM GAS  /tmp/ccdzwLnu.s 			page 6
+ARM GAS  /tmp/ccnWWFvL.s 			page 6
 
 
  173:Drivers/lvgl/src/font/lv_binfont_loader.c ****         it->byte_value = it->byte_value << 1;
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  138              		.loc 1 179 20 view .LVU40
  139 0032 51F8050B 		ldr	r0, [r1], #5
  140 0036 0023     		movs	r3, #0
-ARM GAS  /tmp/ccdzwLnu.s 			page 7
+ARM GAS  /tmp/ccnWWFvL.s 			page 7
 
 
  141 0038 0122     		movs	r2, #1
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  184              		@ args = 0, pretend = 0, frame = 0
  185              		@ frame_needed = 0, uses_anonymous_args = 0
  186              		.loc 1 193 1 is_stmt 0 view .LVU53
-ARM GAS  /tmp/ccdzwLnu.s 			page 8
+ARM GAS  /tmp/ccnWWFvL.s 			page 8
 
 
  187 0000 10B5     		push	{r4, lr}
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  207:Drivers/lvgl/src/font/lv_binfont_loader.c **** 
  208:Drivers/lvgl/src/font/lv_binfont_loader.c ****     if(lv_fs_read(fp, &length, 4, NULL) != LV_FS_RES_OK
  209:Drivers/lvgl/src/font/lv_binfont_loader.c ****        || lv_fs_read(fp, buf, 4, NULL) != LV_FS_RES_OK
-ARM GAS  /tmp/ccdzwLnu.s 			page 9
+ARM GAS  /tmp/ccnWWFvL.s 			page 9
 
 
  210:Drivers/lvgl/src/font/lv_binfont_loader.c ****        || lv_memcmp(label, buf, 4) != 0) {
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  222:Drivers/lvgl/src/font/lv_binfont_loader.c ****         return false;
  223:Drivers/lvgl/src/font/lv_binfont_loader.c ****     }
  224:Drivers/lvgl/src/font/lv_binfont_loader.c **** 
-ARM GAS  /tmp/ccdzwLnu.s 			page 10
+ARM GAS  /tmp/ccnWWFvL.s 			page 10
 
 
  225:Drivers/lvgl/src/font/lv_binfont_loader.c ****     for(unsigned int i = 0; i < font_dsc->cmap_num; ++i) {
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  305 003a 0028     		cmp	r0, #0
  306 003c 5DD1     		bne	.L24
  246:Drivers/lvgl/src/font/lv_binfont_loader.c ****                         return false;
-ARM GAS  /tmp/ccdzwLnu.s 			page 11
+ARM GAS  /tmp/ccnWWFvL.s 			page 11
 
 
  247:Drivers/lvgl/src/font/lv_binfont_loader.c ****                     }
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  345 005c 5A46     		mov	r2, fp
  346 005e 4846     		mov	r0, r9
  347              	.LVL33:
-ARM GAS  /tmp/ccdzwLnu.s 			page 12
+ARM GAS  /tmp/ccnWWFvL.s 			page 12
 
 
  348              		.loc 1 262 24 view .LVU105
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  389              		.loc 1 227 9 is_stmt 1 view .LVU119
  227:Drivers/lvgl/src/font/lv_binfont_loader.c ****             return false;
  390              		.loc 1 227 11 is_stmt 0 view .LVU120
-ARM GAS  /tmp/ccdzwLnu.s 			page 13
+ARM GAS  /tmp/ccnWWFvL.s 			page 13
 
 
  391 008e 0028     		cmp	r0, #0
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  428 00b8 25000000 		.word	.L19+1
  429 00bc 45000000 		.word	.L16+1
  430 00c0 6F000000 		.word	.L18+1
-ARM GAS  /tmp/ccdzwLnu.s 			page 14
+ARM GAS  /tmp/ccnWWFvL.s 			page 14
 
 
  431 00c4 45000000 		.word	.L16+1
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  279:Drivers/lvgl/src/font/lv_binfont_loader.c ****                 return false;
  280:Drivers/lvgl/src/font/lv_binfont_loader.c ****         }
  281:Drivers/lvgl/src/font/lv_binfont_loader.c ****     }
-ARM GAS  /tmp/ccdzwLnu.s 			page 15
+ARM GAS  /tmp/ccnWWFvL.s 			page 15
 
 
  282:Drivers/lvgl/src/font/lv_binfont_loader.c ****     return true;
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  517              	.LBE13:
  518              	.LBE15:
  519              		.cfi_endproc
-ARM GAS  /tmp/ccdzwLnu.s 			page 16
+ARM GAS  /tmp/ccnWWFvL.s 			page 16
 
 
  520              	.LFE184:
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  566 001e 0023     		movs	r3, #0
  567 0020 0422     		movs	r2, #4
  568 0022 6946     		mov	r1, sp
-ARM GAS  /tmp/ccdzwLnu.s 			page 17
+ARM GAS  /tmp/ccnWWFvL.s 			page 17
 
 
  569 0024 2046     		mov	r0, r4
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  612              		.align	1
  613              		.syntax unified
  614              		.thumb
-ARM GAS  /tmp/ccdzwLnu.s 			page 18
+ARM GAS  /tmp/ccnWWFvL.s 			page 18
 
 
  615              		.thumb_func
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  660 0020 3846     		mov	r0, r7
  661              	.LVL63:
  662              		.loc 1 293 8 view .LVU193
-ARM GAS  /tmp/ccdzwLnu.s 			page 19
+ARM GAS  /tmp/ccnWWFvL.s 			page 19
 
 
  663 0022 FFF7FEFF 		bl	lv_fs_read
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  307:Drivers/lvgl/src/font/lv_binfont_loader.c ****     bool success = load_cmaps_tables(fp, font_dsc, cmaps_start, cmaps_tables);
  704              		.loc 1 307 5 is_stmt 1 view .LVU208
  705              		.loc 1 307 20 is_stmt 0 view .LVU209
-ARM GAS  /tmp/ccdzwLnu.s 			page 20
+ARM GAS  /tmp/ccnWWFvL.s 			page 20
 
 
  706 005e 0346     		mov	r3, r0
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  751 0088 4FF0FF35 		mov	r5, #-1
  752              	.LVL79:
  311:Drivers/lvgl/src/font/lv_binfont_loader.c **** }
-ARM GAS  /tmp/ccdzwLnu.s 			page 21
+ARM GAS  /tmp/ccnWWFvL.s 			page 21
 
 
  753              		.loc 1 311 35 discriminator 2 view .LVU220
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  803              		.loc 1 317 5 is_stmt 1 view .LVU224
  804              		.loc 1 317 28 is_stmt 0 view .LVU225
  805 0012 A64A     		ldr	r2, .L75
-ARM GAS  /tmp/ccdzwLnu.s 			page 22
+ARM GAS  /tmp/ccnWWFvL.s 			page 22
 
 
  806              	.LVL82:
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  845 003c CDF81090 		str	r9, [sp, #16]
  846              	.LBB20:
  847              		.loc 1 331 5 view .LVU241
-ARM GAS  /tmp/ccdzwLnu.s 			page 23
+ARM GAS  /tmp/ccnWWFvL.s 			page 23
 
 
  848 0040 20E0     		b	.L47
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  355:Drivers/lvgl/src/font/lv_binfont_loader.c ****         gdsc->ofs_x = read_bits_signed(&bit_it, header->xy_bits, &res);
  356:Drivers/lvgl/src/font/lv_binfont_loader.c ****         if(res != LV_FS_RES_OK) {
  357:Drivers/lvgl/src/font/lv_binfont_loader.c ****             return -1;
-ARM GAS  /tmp/ccdzwLnu.s 			page 24
+ARM GAS  /tmp/ccnWWFvL.s 			page 24
 
 
  358:Drivers/lvgl/src/font/lv_binfont_loader.c ****         }
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  412:Drivers/lvgl/src/font/lv_binfont_loader.c **** 
  413:Drivers/lvgl/src/font/lv_binfont_loader.c ****         if(glyph_dsc[i].box_w * glyph_dsc[i].box_h == 0) {
  414:Drivers/lvgl/src/font/lv_binfont_loader.c ****             continue;
-ARM GAS  /tmp/ccdzwLnu.s 			page 25
+ARM GAS  /tmp/ccnWWFvL.s 			page 25
 
 
  415:Drivers/lvgl/src/font/lv_binfont_loader.c ****         }
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  897              		.loc 1 380 25 is_stmt 0 view .LVU253
  898 006e 6388     		ldrh	r3, [r4, #2]
  899              	.LVL94:
-ARM GAS  /tmp/ccdzwLnu.s 			page 26
+ARM GAS  /tmp/ccnWWFvL.s 			page 26
 
 
  380:Drivers/lvgl/src/font/lv_binfont_loader.c ****             gdsc->box_w = 0;
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  334:Drivers/lvgl/src/font/lv_binfont_loader.c ****         if(res != LV_FS_RES_OK) {
  938              		.loc 1 334 62 is_stmt 0 view .LVU270
  939 0092 4FEA860B 		lsl	fp, r6, #2
-ARM GAS  /tmp/ccdzwLnu.s 			page 27
+ARM GAS  /tmp/ccnWWFvL.s 			page 27
 
 
  940 0096 58F82610 		ldr	r1, [r8, r6, lsl #2]
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  352:Drivers/lvgl/src/font/lv_binfont_loader.c ****         }
  979              		.loc 1 352 13 is_stmt 1 view .LVU286
  352:Drivers/lvgl/src/font/lv_binfont_loader.c ****         }
-ARM GAS  /tmp/ccdzwLnu.s 			page 28
+ARM GAS  /tmp/ccnWWFvL.s 			page 28
 
 
  980              		.loc 1 352 17 is_stmt 0 view .LVU287
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  365:Drivers/lvgl/src/font/lv_binfont_loader.c ****         if(res != LV_FS_RES_OK) {
  1020              		.loc 1 365 23 is_stmt 0 view .LVU302
  1021 010a 0DF11F02 		add	r2, sp, #31
-ARM GAS  /tmp/ccdzwLnu.s 			page 29
+ARM GAS  /tmp/ccnWWFvL.s 			page 29
 
 
  1022 010e E97F     		ldrb	r1, [r5, #31]	@ zero_extendqisi2
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  1060              	.LVL105:
  376:Drivers/lvgl/src/font/lv_binfont_loader.c ****         int bmp_size = next_offset - glyph_offset[i] - nbits / 8;
  1061              		.loc 1 376 9 is_stmt 1 view .LVU319
-ARM GAS  /tmp/ccdzwLnu.s 			page 30
+ARM GAS  /tmp/ccnWWFvL.s 			page 30
 
 
  376:Drivers/lvgl/src/font/lv_binfont_loader.c ****         int bmp_size = next_offset - glyph_offset[i] - nbits / 8;
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  1100              		.loc 1 388 24 view .LVU335
  1101 0172 01FB03F3 		mul	r3, r1, r3
  388:Drivers/lvgl/src/font/lv_binfont_loader.c ****             cur_bmp_size += bmp_size;
-ARM GAS  /tmp/ccdzwLnu.s 			page 31
+ARM GAS  /tmp/ccnWWFvL.s 			page 31
 
 
  1102              		.loc 1 388 11 view .LVU336
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  417:Drivers/lvgl/src/font/lv_binfont_loader.c ****         int bmp_size = next_offset - glyph_offset[i] - nbits / 8;
  1142              		.loc 1 417 70 discriminator 2 view .LVU351
  1143 019a 039B     		ldr	r3, [sp, #12]
-ARM GAS  /tmp/ccdzwLnu.s 			page 32
+ARM GAS  /tmp/ccnWWFvL.s 			page 32
 
 
  1144              	.L61:
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  399:Drivers/lvgl/src/font/lv_binfont_loader.c ****         lv_fs_res_t res = lv_fs_seek(fp, start + glyph_offset[i], LV_FS_SEEK_SET);
  1184              		.loc 1 399 31 discriminator 1 view .LVU366
  1185 01c6 149B     		ldr	r3, [sp, #80]
-ARM GAS  /tmp/ccdzwLnu.s 			page 33
+ARM GAS  /tmp/ccnWWFvL.s 			page 33
 
 
  1186 01c8 9A45     		cmp	r10, r3
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  408:Drivers/lvgl/src/font/lv_binfont_loader.c ****         if(res != LV_FS_RES_OK) {
  1226              		.loc 1 408 9 is_stmt 1 view .LVU381
  1227 0206 0DF11F02 		add	r2, sp, #31
-ARM GAS  /tmp/ccdzwLnu.s 			page 34
+ARM GAS  /tmp/ccnWWFvL.s 			page 34
 
 
  1228 020a 3146     		mov	r1, r6
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  1268              	.LVL126:
  426:Drivers/lvgl/src/font/lv_binfont_loader.c ****                 glyph_bmp[cur_bmp_size + k] = read_bits(&bit_it, 8, &res);
  1269              		.loc 1 426 30 is_stmt 1 discriminator 1 view .LVU396
-ARM GAS  /tmp/ccdzwLnu.s 			page 35
+ARM GAS  /tmp/ccnWWFvL.s 			page 35
 
 
  426:Drivers/lvgl/src/font/lv_binfont_loader.c ****                 glyph_bmp[cur_bmp_size + k] = read_bits(&bit_it, 8, &res);
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  1309 027a 08A8     		add	r0, sp, #32
  1310 027c FFF7FEFF 		bl	read_bits
  1311              	.LVL129:
-ARM GAS  /tmp/ccdzwLnu.s 			page 36
+ARM GAS  /tmp/ccnWWFvL.s 			page 36
 
 
  432:Drivers/lvgl/src/font/lv_binfont_loader.c ****             if(res != LV_FS_RES_OK) {
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  1354              		.section	.text.lv_binfont_destroy,"ax",%progbits
  1355              		.align	1
  1356              		.global	lv_binfont_destroy
-ARM GAS  /tmp/ccdzwLnu.s 			page 37
+ARM GAS  /tmp/ccnWWFvL.s 			page 37
 
 
  1357              		.syntax unified
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  1399              		.loc 1 125 45 is_stmt 0 view .LVU437
  1400 0018 F468     		ldr	r4, [r6, #12]
  1401              	.LVL134:
-ARM GAS  /tmp/ccdzwLnu.s 			page 38
+ARM GAS  /tmp/ccnWWFvL.s 			page 38
 
 
  126:Drivers/lvgl/src/font/lv_binfont_loader.c ****             lv_free((void *)kern_dsc->glyph_ids);
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  145:Drivers/lvgl/src/font/lv_binfont_loader.c ****             lv_free((void *)cmaps[i].unicode_list);
  1441              		.loc 1 145 13 is_stmt 1 view .LVU453
  145:Drivers/lvgl/src/font/lv_binfont_loader.c ****             lv_free((void *)cmaps[i].unicode_list);
-ARM GAS  /tmp/ccdzwLnu.s 			page 39
+ARM GAS  /tmp/ccnWWFvL.s 			page 39
 
 
  1442              		.loc 1 145 34 is_stmt 0 view .LVU454
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  1483 006a FFF7FEFF 		bl	lv_free
  1484              	.LVL149:
  138:Drivers/lvgl/src/font/lv_binfont_loader.c ****         }
-ARM GAS  /tmp/ccdzwLnu.s 			page 40
+ARM GAS  /tmp/ccnWWFvL.s 			page 40
 
 
  1485              		.loc 1 138 13 view .LVU468
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  1531              	.LFE179:
  1533              		.section	.rodata.load_kern.str1.4,"aMS",%progbits,1
  1534              		.align	2
-ARM GAS  /tmp/ccdzwLnu.s 			page 41
+ARM GAS  /tmp/ccnWWFvL.s 			page 41
 
 
  1535              	.LC2:
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  488:Drivers/lvgl/src/font/lv_binfont_loader.c ****     font_dsc->kern_scale = font_header.kerning_scale;
  489:Drivers/lvgl/src/font/lv_binfont_loader.c ****     font_dsc->bitmap_format = font_header.compression_id;
  490:Drivers/lvgl/src/font/lv_binfont_loader.c **** 
-ARM GAS  /tmp/ccdzwLnu.s 			page 42
+ARM GAS  /tmp/ccnWWFvL.s 			page 42
 
 
  491:Drivers/lvgl/src/font/lv_binfont_loader.c ****     /*cmaps*/
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  545:Drivers/lvgl/src/font/lv_binfont_loader.c ****     if(glyph_length < 0) {
  546:Drivers/lvgl/src/font/lv_binfont_loader.c ****         return false;
  547:Drivers/lvgl/src/font/lv_binfont_loader.c ****     }
-ARM GAS  /tmp/ccdzwLnu.s 			page 43
+ARM GAS  /tmp/ccnWWFvL.s 			page 43
 
 
  548:Drivers/lvgl/src/font/lv_binfont_loader.c **** 
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  1581 0014 071E     		subs	r7, r0, #0
  1582 0016 C0F2C880 		blt	.L103
  568:Drivers/lvgl/src/font/lv_binfont_loader.c ****         return -1;
-ARM GAS  /tmp/ccdzwLnu.s 			page 44
+ARM GAS  /tmp/ccnWWFvL.s 			page 44
 
 
  569:Drivers/lvgl/src/font/lv_binfont_loader.c ****     }
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  591:Drivers/lvgl/src/font/lv_binfont_loader.c ****         int ids_size;
  592:Drivers/lvgl/src/font/lv_binfont_loader.c ****         if(format == 0) {
  593:Drivers/lvgl/src/font/lv_binfont_loader.c ****             ids_size = sizeof(int8_t) * 2 * glyph_entries;
-ARM GAS  /tmp/ccdzwLnu.s 			page 45
+ARM GAS  /tmp/ccnWWFvL.s 			page 45
 
 
  594:Drivers/lvgl/src/font/lv_binfont_loader.c ****         }
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  623:Drivers/lvgl/src/font/lv_binfont_loader.c **** 
  624:Drivers/lvgl/src/font/lv_binfont_loader.c ****         uint16_t kern_class_mapping_length;
  1639              		.loc 1 624 9 is_stmt 1 view .LVU505
-ARM GAS  /tmp/ccdzwLnu.s 			page 46
+ARM GAS  /tmp/ccnWWFvL.s 			page 46
 
 
  625:Drivers/lvgl/src/font/lv_binfont_loader.c ****         uint8_t kern_table_rows;
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  1680              		.loc 1 636 9 is_stmt 1 view .LVU518
  1681              		.loc 1 636 31 is_stmt 0 view .LVU519
  1682 00aa BDF80400 		ldrh	r0, [sp, #4]
-ARM GAS  /tmp/ccdzwLnu.s 			page 47
+ARM GAS  /tmp/ccnWWFvL.s 			page 47
 
 
  1683 00ae FFF7FEFF 		bl	lv_malloc
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  1727 00e2 2046     		mov	r0, r4
  1728              	.LVL180:
  1729              		.loc 1 646 12 view .LVU538
-ARM GAS  /tmp/ccdzwLnu.s 			page 48
+ARM GAS  /tmp/ccnWWFvL.s 			page 48
 
 
  1730 00e4 FFF7FEFF 		bl	lv_fs_read
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  1769              	.LCFI20:
  1770              		.cfi_restore_state
  575:Drivers/lvgl/src/font/lv_binfont_loader.c ****     }
-ARM GAS  /tmp/ccdzwLnu.s 			page 49
+ARM GAS  /tmp/ccnWWFvL.s 			page 49
 
 
  1771              		.loc 1 575 9 is_stmt 1 view .LVU546
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  1811              		.loc 1 591 9 is_stmt 1 view .LVU560
  592:Drivers/lvgl/src/font/lv_binfont_loader.c ****             ids_size = sizeof(int8_t) * 2 * glyph_entries;
  1812              		.loc 1 592 9 view .LVU561
-ARM GAS  /tmp/ccdzwLnu.s 			page 50
+ARM GAS  /tmp/ccnWWFvL.s 			page 50
 
 
  592:Drivers/lvgl/src/font/lv_binfont_loader.c ****             ids_size = sizeof(int8_t) * 2 * glyph_entries;
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  1852              		.loc 1 604 30 is_stmt 0 view .LVU576
  1853 0174 3560     		str	r5, [r6]
  605:Drivers/lvgl/src/font/lv_binfont_loader.c **** 
-ARM GAS  /tmp/ccdzwLnu.s 			page 51
+ARM GAS  /tmp/ccnWWFvL.s 			page 51
 
 
  1854              		.loc 1 605 9 is_stmt 1 view .LVU577
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  596:Drivers/lvgl/src/font/lv_binfont_loader.c ****         }
  1896              		.loc 1 596 44 view .LVU590
  1897              	.LBE31:
-ARM GAS  /tmp/ccdzwLnu.s 			page 52
+ARM GAS  /tmp/ccnWWFvL.s 			page 52
 
 
  1898              	.LBB32:
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  460:Drivers/lvgl/src/font/lv_binfont_loader.c ****     lv_font_fmt_txt_dsc_t * font_dsc = (lv_font_fmt_txt_dsc_t *)
  1945              		.loc 1 460 1 is_stmt 0 view .LVU598
  1946 0000 2DE9F043 		push	{r4, r5, r6, r7, r8, r9, lr}
-ARM GAS  /tmp/ccdzwLnu.s 			page 53
+ARM GAS  /tmp/ccnWWFvL.s 			page 53
 
 
  1947              	.LCFI21:
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  474:Drivers/lvgl/src/font/lv_binfont_loader.c ****     if(lv_fs_read(fp, &font_header, sizeof(font_header_bin_t), NULL) != LV_FS_RES_OK) {
  1990              		.loc 1 474 5 is_stmt 1 view .LVU610
  475:Drivers/lvgl/src/font/lv_binfont_loader.c ****         return false;
-ARM GAS  /tmp/ccdzwLnu.s 			page 54
+ARM GAS  /tmp/ccnWWFvL.s 			page 54
 
 
  1991              		.loc 1 475 5 view .LVU611
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  483:Drivers/lvgl/src/font/lv_binfont_loader.c ****     font->underline_position = (int8_t) font_header.underline_position;
  2029              		.loc 1 483 5 is_stmt 1 view .LVU628
  483:Drivers/lvgl/src/font/lv_binfont_loader.c ****     font->underline_position = (int8_t) font_header.underline_position;
-ARM GAS  /tmp/ccdzwLnu.s 			page 55
+ARM GAS  /tmp/ccnWWFvL.s 			page 55
 
 
  2030              		.loc 1 483 30 is_stmt 0 view .LVU629
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  493:Drivers/lvgl/src/font/lv_binfont_loader.c ****     if(cmaps_length < 0) {
  2067              		.loc 1 493 5 view .LVU647
  493:Drivers/lvgl/src/font/lv_binfont_loader.c ****     if(cmaps_length < 0) {
-ARM GAS  /tmp/ccdzwLnu.s 			page 56
+ARM GAS  /tmp/ccnWWFvL.s 			page 56
 
 
  2068              		.loc 1 493 28 is_stmt 0 view .LVU648
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  2107              		.loc 1 506 7 discriminator 1 view .LVU663
  2108 00b8 08B1     		cbz	r0, .L128
  507:Drivers/lvgl/src/font/lv_binfont_loader.c ****     }
-ARM GAS  /tmp/ccdzwLnu.s 			page 57
+ARM GAS  /tmp/ccnWWFvL.s 			page 57
 
 
  2109              		.loc 1 507 16 view .LVU664
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  2150              	.L111:
  514:Drivers/lvgl/src/font/lv_binfont_loader.c ****             uint16_t offset;
  2151              		.loc 1 514 35 is_stmt 1 discriminator 1 view .LVU678
-ARM GAS  /tmp/ccdzwLnu.s 			page 58
+ARM GAS  /tmp/ccnWWFvL.s 			page 58
 
 
  2152 00e0 039B     		ldr	r3, [sp, #12]
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  2193              		.loc 1 524 11 discriminator 1 view .LVU691
  2194 0112 0028     		cmp	r0, #0
  2195 0114 DED1     		bne	.L114
-ARM GAS  /tmp/ccdzwLnu.s 			page 59
+ARM GAS  /tmp/ccnWWFvL.s 			page 59
 
 
  2196              	.LVL237:
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  2236              		.loc 1 552 9 is_stmt 1 view .LVU705
  552:Drivers/lvgl/src/font/lv_binfont_loader.c ****         font_dsc->kern_scale = 0;
  2237              		.loc 1 552 32 is_stmt 0 view .LVU706
-ARM GAS  /tmp/ccdzwLnu.s 			page 60
+ARM GAS  /tmp/ccnWWFvL.s 			page 60
 
 
  2238 0144 F27C     		ldrb	r2, [r6, #19]	@ zero_extendqisi2
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  2278              	.LCFI23:
  2279              		.cfi_remember_state
  2280              		.cfi_def_cfa_offset 28
-ARM GAS  /tmp/ccdzwLnu.s 			page 61
+ARM GAS  /tmp/ccnWWFvL.s 			page 61
 
 
  2281              		@ sp needed
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  2329              		.loc 1 82 5 view .LVU728
  2330 0000 B8B1     		cbz	r0, .L134
   81:Drivers/lvgl/src/font/lv_binfont_loader.c ****     LV_ASSERT_NULL(path);
-ARM GAS  /tmp/ccdzwLnu.s 			page 62
+ARM GAS  /tmp/ccnWWFvL.s 			page 62
 
 
  2331              		.loc 1 81 1 is_stmt 0 view .LVU729
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
   91:Drivers/lvgl/src/font/lv_binfont_loader.c ****         LV_LOG_WARN("Error loading font file: %s", path);
  2369              		.loc 1 91 9 is_stmt 0 view .LVU746
  2370 001c 0146     		mov	r1, r0
-ARM GAS  /tmp/ccdzwLnu.s 			page 63
+ARM GAS  /tmp/ccnWWFvL.s 			page 63
 
 
  2371 001e 01A8     		add	r0, sp, #4
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
   89:Drivers/lvgl/src/font/lv_binfont_loader.c **** 
  2413              		.loc 1 89 5 discriminator 1 view .LVU759
   89:Drivers/lvgl/src/font/lv_binfont_loader.c **** 
-ARM GAS  /tmp/ccdzwLnu.s 			page 64
+ARM GAS  /tmp/ccnWWFvL.s 			page 64
 
 
  2414              		.loc 1 89 5 discriminator 1 view .LVU760
@@ -3826,43 +3826,43 @@ ARM GAS  /tmp/ccdzwLnu.s 			page 1
  2449              		.file 11 "Drivers/lvgl/src/font/../../src/core/../draw/../misc/lv_fs.h"
  2450              		.file 12 "Drivers/lvgl/src/font/../draw/../misc/../stdlib/lv_string.h"
  2451              		.file 13 "Drivers/lvgl/src/font/../draw/../misc/../stdlib/lv_mem.h"
-ARM GAS  /tmp/ccdzwLnu.s 			page 65
+ARM GAS  /tmp/ccnWWFvL.s 			page 65
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_binfont_loader.c
-     /tmp/ccdzwLnu.s:21     .text.init_bit_iterator:00000000 $t
-     /tmp/ccdzwLnu.s:26     .text.init_bit_iterator:00000000 init_bit_iterator
-     /tmp/ccdzwLnu.s:53     .text.read_bits:00000000 $t
-     /tmp/ccdzwLnu.s:58     .text.read_bits:00000000 read_bits
-     /tmp/ccdzwLnu.s:174    .text.read_bits_signed:00000000 $t
-     /tmp/ccdzwLnu.s:179    .text.read_bits_signed:00000000 read_bits_signed
-     /tmp/ccdzwLnu.s:222    .text.load_cmaps_tables:00000000 $t
-     /tmp/ccdzwLnu.s:227    .text.load_cmaps_tables:00000000 load_cmaps_tables
-     /tmp/ccdzwLnu.s:428    .text.load_cmaps_tables:000000b8 $d
-     /tmp/ccdzwLnu.s:433    .text.load_cmaps_tables:000000c8 $t
-     /tmp/ccdzwLnu.s:523    .text.read_label:00000000 $t
-     /tmp/ccdzwLnu.s:528    .text.read_label:00000000 read_label
-     /tmp/ccdzwLnu.s:608    .rodata.load_cmaps.str1.4:00000000 $d
-     /tmp/ccdzwLnu.s:612    .text.load_cmaps:00000000 $t
-     /tmp/ccdzwLnu.s:617    .text.load_cmaps:00000000 load_cmaps
-     /tmp/ccdzwLnu.s:758    .text.load_cmaps:00000090 $d
-     /tmp/ccdzwLnu.s:763    .rodata.load_glyph.str1.4:00000000 $d
-     /tmp/ccdzwLnu.s:767    .text.load_glyph:00000000 $t
-     /tmp/ccdzwLnu.s:772    .text.load_glyph:00000000 load_glyph
-     /tmp/ccdzwLnu.s:1350   .text.load_glyph:000002ac $d
-     /tmp/ccdzwLnu.s:1355   .text.lv_binfont_destroy:00000000 $t
-     /tmp/ccdzwLnu.s:1361   .text.lv_binfont_destroy:00000000 lv_binfont_destroy
-     /tmp/ccdzwLnu.s:1534   .rodata.load_kern.str1.4:00000000 $d
-     /tmp/ccdzwLnu.s:1538   .text.load_kern:00000000 $t
-     /tmp/ccdzwLnu.s:1544   .text.load_kern:00000000 load_kern
-     /tmp/ccdzwLnu.s:1921   .text.load_kern:000001b8 $d
-     /tmp/ccdzwLnu.s:1926   .rodata.lvgl_load_font.str1.4:00000000 $d
-     /tmp/ccdzwLnu.s:1933   .text.lvgl_load_font:00000000 $t
-     /tmp/ccdzwLnu.s:1938   .text.lvgl_load_font:00000000 lvgl_load_font
-     /tmp/ccdzwLnu.s:2307   .text.lvgl_load_font:0000017c $d
-     /tmp/ccdzwLnu.s:2315   .text.lv_binfont_create:00000000 $t
-     /tmp/ccdzwLnu.s:2321   .text.lv_binfont_create:00000000 lv_binfont_create
+     /tmp/ccnWWFvL.s:21     .text.init_bit_iterator:00000000 $t
+     /tmp/ccnWWFvL.s:26     .text.init_bit_iterator:00000000 init_bit_iterator
+     /tmp/ccnWWFvL.s:53     .text.read_bits:00000000 $t
+     /tmp/ccnWWFvL.s:58     .text.read_bits:00000000 read_bits
+     /tmp/ccnWWFvL.s:174    .text.read_bits_signed:00000000 $t
+     /tmp/ccnWWFvL.s:179    .text.read_bits_signed:00000000 read_bits_signed
+     /tmp/ccnWWFvL.s:222    .text.load_cmaps_tables:00000000 $t
+     /tmp/ccnWWFvL.s:227    .text.load_cmaps_tables:00000000 load_cmaps_tables
+     /tmp/ccnWWFvL.s:428    .text.load_cmaps_tables:000000b8 $d
+     /tmp/ccnWWFvL.s:433    .text.load_cmaps_tables:000000c8 $t
+     /tmp/ccnWWFvL.s:523    .text.read_label:00000000 $t
+     /tmp/ccnWWFvL.s:528    .text.read_label:00000000 read_label
+     /tmp/ccnWWFvL.s:608    .rodata.load_cmaps.str1.4:00000000 $d
+     /tmp/ccnWWFvL.s:612    .text.load_cmaps:00000000 $t
+     /tmp/ccnWWFvL.s:617    .text.load_cmaps:00000000 load_cmaps
+     /tmp/ccnWWFvL.s:758    .text.load_cmaps:00000090 $d
+     /tmp/ccnWWFvL.s:763    .rodata.load_glyph.str1.4:00000000 $d
+     /tmp/ccnWWFvL.s:767    .text.load_glyph:00000000 $t
+     /tmp/ccnWWFvL.s:772    .text.load_glyph:00000000 load_glyph
+     /tmp/ccnWWFvL.s:1350   .text.load_glyph:000002ac $d
+     /tmp/ccnWWFvL.s:1355   .text.lv_binfont_destroy:00000000 $t
+     /tmp/ccnWWFvL.s:1361   .text.lv_binfont_destroy:00000000 lv_binfont_destroy
+     /tmp/ccnWWFvL.s:1534   .rodata.load_kern.str1.4:00000000 $d
+     /tmp/ccnWWFvL.s:1538   .text.load_kern:00000000 $t
+     /tmp/ccnWWFvL.s:1544   .text.load_kern:00000000 load_kern
+     /tmp/ccnWWFvL.s:1921   .text.load_kern:000001b8 $d
+     /tmp/ccnWWFvL.s:1926   .rodata.lvgl_load_font.str1.4:00000000 $d
+     /tmp/ccnWWFvL.s:1933   .text.lvgl_load_font:00000000 $t
+     /tmp/ccnWWFvL.s:1938   .text.lvgl_load_font:00000000 lvgl_load_font
+     /tmp/ccnWWFvL.s:2307   .text.lvgl_load_font:0000017c $d
+     /tmp/ccnWWFvL.s:2315   .text.lv_binfont_create:00000000 $t
+     /tmp/ccnWWFvL.s:2321   .text.lv_binfont_create:00000000 lv_binfont_create
 
 UNDEFINED SYMBOLS
 lv_fs_read

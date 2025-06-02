@@ -122,7 +122,7 @@ void ref_cofact(float32_t *pSrc, float32_t *pDst, float32_t *temp, uint32_t size
 float64_t ref_detrm64(float64_t *pSrc, float64_t *temp, uint32_t size);
 
 void ref_cofact64(float64_t *pSrc, float64_t *pDst, float64_t *temp, uint32_t size);
-
+void arm_bitreversal_32(uint32_t *pSrc, uint32_t bitRevLen, uint32_t *pBitRevTab);
 	/*
 	 * Basic Math Functions
 	 */

@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccd9mSbz.s 			page 1
+ARM GAS  /tmp/ccU3ofsi.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
   28:Drivers/lvgl/src/widgets/menu/lv_menu.c ****  **********************/
   29:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
   30:Drivers/lvgl/src/widgets/menu/lv_menu.c **** /**********************
-ARM GAS  /tmp/ccd9mSbz.s 			page 2
+ARM GAS  /tmp/ccU3ofsi.s 			page 2
 
 
   31:Drivers/lvgl/src/widgets/menu/lv_menu.c ****  *  STATIC PROTOTYPES
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
   85:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
   86:Drivers/lvgl/src/widgets/menu/lv_menu.c **** const lv_obj_class_t lv_menu_main_cont_class = {
   87:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     .base_class = &lv_obj_class,
-ARM GAS  /tmp/ccd9mSbz.s 			page 3
+ARM GAS  /tmp/ccU3ofsi.s 			page 3
 
 
   88:Drivers/lvgl/src/widgets/menu/lv_menu.c **** };
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  142:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
  143:Drivers/lvgl/src/widgets/menu/lv_menu.c **** lv_obj_t * lv_menu_cont_create(lv_obj_t * parent)
  144:Drivers/lvgl/src/widgets/menu/lv_menu.c **** {
-ARM GAS  /tmp/ccd9mSbz.s 			page 4
+ARM GAS  /tmp/ccU3ofsi.s 			page 4
 
 
  145:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     LV_ASSERT_OBJ(parent, &lv_menu_page_class);
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  199:Drivers/lvgl/src/widgets/menu/lv_menu.c ****  *====================*/
  200:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
  201:Drivers/lvgl/src/widgets/menu/lv_menu.c **** void lv_menu_set_page(lv_obj_t * obj, lv_obj_t * page)
-ARM GAS  /tmp/ccd9mSbz.s 			page 5
+ARM GAS  /tmp/ccU3ofsi.s 			page 5
 
 
  202:Drivers/lvgl/src/widgets/menu/lv_menu.c **** {
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  256:Drivers/lvgl/src/widgets/menu/lv_menu.c ****             lv_obj_remove_flag(menu->main_header_back_btn, LV_OBJ_FLAG_HIDDEN);
  257:Drivers/lvgl/src/widgets/menu/lv_menu.c ****             lv_obj_add_flag(menu->main_header_back_btn, LV_OBJ_FLAG_CLICKABLE);
  258:Drivers/lvgl/src/widgets/menu/lv_menu.c ****         }
-ARM GAS  /tmp/ccd9mSbz.s 			page 6
+ARM GAS  /tmp/ccU3ofsi.s 			page 6
 
 
  259:Drivers/lvgl/src/widgets/menu/lv_menu.c ****         else {
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  313:Drivers/lvgl/src/widgets/menu/lv_menu.c ****             lv_obj_set_flex_flow(sidebar_header_back_btn, LV_FLEX_FLOW_ROW);
  314:Drivers/lvgl/src/widgets/menu/lv_menu.c ****             menu->sidebar_header_back_btn = sidebar_header_back_btn;
  315:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
-ARM GAS  /tmp/ccd9mSbz.s 			page 7
+ARM GAS  /tmp/ccU3ofsi.s 			page 7
 
 
  316:Drivers/lvgl/src/widgets/menu/lv_menu.c ****             lv_obj_t * sidebar_header_back_icon = lv_image_create(menu->sidebar_header_back_btn);
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  370:Drivers/lvgl/src/widgets/menu/lv_menu.c **** {
  371:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     LV_ASSERT_OBJ(menu, MY_CLASS);
  372:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
-ARM GAS  /tmp/ccd9mSbz.s 			page 8
+ARM GAS  /tmp/ccU3ofsi.s 			page 8
 
 
  373:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     lv_obj_add_flag(obj, LV_OBJ_FLAG_CLICKABLE);
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  427:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
  428:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     LV_LOG_INFO("begin");
  429:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     lv_menu_page_t * page = (lv_menu_page_t *)page_obj;
-ARM GAS  /tmp/ccd9mSbz.s 			page 9
+ARM GAS  /tmp/ccU3ofsi.s 			page 9
 
 
  430:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  484:Drivers/lvgl/src/widgets/menu/lv_menu.c **** {
  485:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     LV_ASSERT_OBJ(obj, MY_CLASS);
  486:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
-ARM GAS  /tmp/ccd9mSbz.s 			page 10
+ARM GAS  /tmp/ccU3ofsi.s 			page 10
 
 
  487:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     lv_menu_t * menu = (lv_menu_t *)obj;
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  541:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     menu->mode_root_back_btn = LV_MENU_ROOT_BACK_BUTTON_DISABLED;
  542:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     menu->cur_depth = 0;
  543:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     menu->prev_depth = 0;
-ARM GAS  /tmp/ccd9mSbz.s 			page 11
+ARM GAS  /tmp/ccU3ofsi.s 			page 11
 
 
  544:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     menu->sidebar_generated = false;
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  598:Drivers/lvgl/src/widgets/menu/lv_menu.c **** {
   29              		.loc 1 598 1 view -0
   30              		.cfi_startproc
-ARM GAS  /tmp/ccd9mSbz.s 			page 12
+ARM GAS  /tmp/ccU3ofsi.s 			page 12
 
 
   31              		@ args = 0, pretend = 0, frame = 0
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  621:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
  622:Drivers/lvgl/src/widgets/menu/lv_menu.c **** static void lv_menu_page_destructor(const lv_obj_class_t * class_p, lv_obj_t * obj)
  623:Drivers/lvgl/src/widgets/menu/lv_menu.c **** {
-ARM GAS  /tmp/ccd9mSbz.s 			page 13
+ARM GAS  /tmp/ccU3ofsi.s 			page 13
 
 
  624:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     LV_UNUSED(class_p);
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
   94              		.cfi_endproc
   95              	.LFE197:
   97              		.section	.text.lv_menu_cont_constructor,"ax",%progbits
-ARM GAS  /tmp/ccd9mSbz.s 			page 14
+ARM GAS  /tmp/ccU3ofsi.s 			page 14
 
 
   98              		.align	1
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  143              	.LFE196:
  145              		.section	.rodata.lv_menu_constructor.str1.4,"aMS",%progbits,1
  146              		.align	2
-ARM GAS  /tmp/ccd9mSbz.s 			page 15
+ARM GAS  /tmp/ccU3ofsi.s 			page 15
 
 
  147              	.LC0:
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  191              		.loc 1 540 23 is_stmt 0 view .LVU39
  192 0014 94F86A30 		ldrb	r3, [r4, #106]	@ zero_extendqisi2
  193 0018 23F00E03 		bic	r3, r3, #14
-ARM GAS  /tmp/ccd9mSbz.s 			page 16
+ARM GAS  /tmp/ccU3ofsi.s 			page 16
 
 
  194 001c 84F86A30 		strb	r3, [r4, #106]
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  552:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     menu->sidebar_header_back_btn = NULL;
  232              		.loc 1 552 26 is_stmt 0 view .LVU56
  233 0058 E564     		str	r5, [r4, #76]
-ARM GAS  /tmp/ccd9mSbz.s 			page 17
+ARM GAS  /tmp/ccU3ofsi.s 			page 17
 
 
  553:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     menu->sidebar_header_title = NULL;
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  563:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     menu->main = main_cont;
  275              		.loc 1 563 5 view .LVU70
  276 0092 0221     		movs	r1, #2
-ARM GAS  /tmp/ccd9mSbz.s 			page 18
+ARM GAS  /tmp/ccU3ofsi.s 			page 18
 
 
  277 0094 3046     		mov	r0, r6
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  321              	.LVL38:
  573:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
  322              		.loc 1 573 5 view .LVU81
-ARM GAS  /tmp/ccd9mSbz.s 			page 19
+ARM GAS  /tmp/ccU3ofsi.s 			page 19
 
 
  573:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  364              	.LVL46:
  365 0116 0646     		mov	r6, r0
  366              	.LVL47:
-ARM GAS  /tmp/ccd9mSbz.s 			page 20
+ARM GAS  /tmp/ccU3ofsi.s 			page 20
 
 
  586:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     menu->main_header_title = main_header_title;
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  412              	.LFB195:
  623:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     LV_UNUSED(class_p);
  413              		.loc 1 623 1 is_stmt 1 view -0
-ARM GAS  /tmp/ccd9mSbz.s 			page 21
+ARM GAS  /tmp/ccU3ofsi.s 			page 21
 
 
  414              		.cfi_startproc
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  454              		.section	.text.lv_menu_obj_delete_event_cb,"ax",%progbits
  455              		.align	1
  456              		.syntax unified
-ARM GAS  /tmp/ccd9mSbz.s 			page 22
+ARM GAS  /tmp/ccU3ofsi.s 			page 22
 
 
  457              		.thumb
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  698:Drivers/lvgl/src/widgets/menu/lv_menu.c ****             break;
  699:Drivers/lvgl/src/widgets/menu/lv_menu.c ****         case LV_MENU_HEADER_TOP_UNFIXED:
  700:Drivers/lvgl/src/widgets/menu/lv_menu.c ****             lv_obj_move_to_index(menu->main_header, 0);
-ARM GAS  /tmp/ccd9mSbz.s 			page 23
+ARM GAS  /tmp/ccU3ofsi.s 			page 23
 
 
  701:Drivers/lvgl/src/widgets/menu/lv_menu.c ****             lv_obj_set_flex_grow(menu->main_page, 0);
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  755:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
  756:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     if(lv_group_get_default() != NULL && menu->sidebar_page == NULL) {
  757:Drivers/lvgl/src/widgets/menu/lv_menu.c ****         /* Sidebar is not supported for now*/
-ARM GAS  /tmp/ccd9mSbz.s 			page 24
+ARM GAS  /tmp/ccU3ofsi.s 			page 24
 
 
  758:Drivers/lvgl/src/widgets/menu/lv_menu.c ****         lv_group_focus_next(lv_group_get_default());
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  506              		.loc 1 614 5 view .LVU131
  614:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
  507              		.loc 1 614 37 is_stmt 0 view .LVU132
-ARM GAS  /tmp/ccd9mSbz.s 			page 25
+ARM GAS  /tmp/ccU3ofsi.s 			page 25
 
 
  508 0004 0846     		mov	r0, r1
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  555              		@ frame_needed = 0, uses_anonymous_args = 0
  687:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
  556              		.loc 1 687 5 view .LVU142
-ARM GAS  /tmp/ccd9mSbz.s 			page 26
+ARM GAS  /tmp/ccU3ofsi.s 			page 26
 
 
  687:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  596 0028 606B     		ldr	r0, [r4, #52]
  597 002a FFF7FEFF 		bl	lv_obj_set_flex_grow
  598              	.LVL70:
-ARM GAS  /tmp/ccd9mSbz.s 			page 27
+ARM GAS  /tmp/ccU3ofsi.s 			page 27
 
 
  698:Drivers/lvgl/src/widgets/menu/lv_menu.c ****         case LV_MENU_HEADER_TOP_UNFIXED:
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  639 0052 FEE7     		b	.L20
  640              	.LVL77:
  641              	.L22:
-ARM GAS  /tmp/ccd9mSbz.s 			page 28
+ARM GAS  /tmp/ccU3ofsi.s 			page 28
 
 
  642              	.LCFI9:
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  690              		@ args = 0, pretend = 0, frame = 0
  691              		@ frame_needed = 0, uses_anonymous_args = 0
  652:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
-ARM GAS  /tmp/ccd9mSbz.s 			page 29
+ARM GAS  /tmp/ccU3ofsi.s 			page 29
 
 
  692              		.loc 1 652 5 view .LVU180
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  731 0026 0121     		movs	r1, #1
  732 0028 A06C     		ldr	r0, [r4, #72]
  733 002a FFF7FEFF 		bl	lv_obj_set_flex_grow
-ARM GAS  /tmp/ccd9mSbz.s 			page 30
+ARM GAS  /tmp/ccU3ofsi.s 			page 30
 
 
  734              	.LVL87:
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  775              		.cfi_def_cfa_offset 8
  776              		.cfi_offset 4, -8
  777              		.cfi_offset 14, -4
-ARM GAS  /tmp/ccd9mSbz.s 			page 31
+ARM GAS  /tmp/ccU3ofsi.s 			page 31
 
 
  665:Drivers/lvgl/src/widgets/menu/lv_menu.c ****             lv_obj_set_flex_grow(menu->sidebar_page, 0);
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  825              		.loc 1 119 1 is_stmt 0 view .LVU217
  826 0000 10B5     		push	{r4, lr}
  827              	.LCFI13:
-ARM GAS  /tmp/ccd9mSbz.s 			page 32
+ARM GAS  /tmp/ccU3ofsi.s 			page 32
 
 
  828              		.cfi_def_cfa_offset 8
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  872              		.cfi_startproc
  873              		@ args = 0, pretend = 0, frame = 0
  874              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/ccd9mSbz.s 			page 33
+ARM GAS  /tmp/ccU3ofsi.s 			page 33
 
 
  145:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  913              		.loc 1 145 5 is_stmt 1 discriminator 1 view .LVU245
  145:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
  914              		.loc 1 145 5 discriminator 1 view .LVU246
-ARM GAS  /tmp/ccd9mSbz.s 			page 34
+ARM GAS  /tmp/ccU3ofsi.s 			page 34
 
 
  145:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  957 0006 0448     		ldr	r0, .L54
  958              	.LVL112:
  158:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     lv_obj_class_init_obj(obj);
-ARM GAS  /tmp/ccd9mSbz.s 			page 35
+ARM GAS  /tmp/ccU3ofsi.s 			page 35
 
 
  959              		.loc 1 158 22 view .LVU261
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  165:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
  1005              		.loc 1 165 5 view .LVU272
  165:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
-ARM GAS  /tmp/ccd9mSbz.s 			page 36
+ARM GAS  /tmp/ccU3ofsi.s 			page 36
 
 
  1006              		.loc 1 165 5 view .LVU273
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  165:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
  1045              		.loc 1 165 5 discriminator 1 view .LVU289
  165:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
-ARM GAS  /tmp/ccd9mSbz.s 			page 37
+ARM GAS  /tmp/ccU3ofsi.s 			page 37
 
 
  1046              		.loc 1 165 5 discriminator 1 view .LVU290
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  1091              	.LVL125:
  1092              	.L63:
  355:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
-ARM GAS  /tmp/ccd9mSbz.s 			page 38
+ARM GAS  /tmp/ccU3ofsi.s 			page 38
 
 
  1093              		.loc 1 355 1 view .LVU302
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  1134              	.LFE179:
  1136              		.section	.text.lv_menu_set_load_page_event,"ax",%progbits
  1137              		.align	1
-ARM GAS  /tmp/ccd9mSbz.s 			page 39
+ARM GAS  /tmp/ccU3ofsi.s 			page 39
 
 
  1138              		.global	lv_menu_set_load_page_event
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  1182              		.loc 1 375 5 view .LVU326
  1183 001c 4FF48061 		mov	r1, #1024
  1184 0020 2846     		mov	r0, r5
-ARM GAS  /tmp/ccd9mSbz.s 			page 40
+ARM GAS  /tmp/ccU3ofsi.s 			page 40
 
 
  1185 0022 FFF7FEFF 		bl	lv_obj_add_flag
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  1226              	.LCFI24:
  1227              		.cfi_def_cfa_offset 0
  1228              		.cfi_restore 4
-ARM GAS  /tmp/ccd9mSbz.s 			page 41
+ARM GAS  /tmp/ccU3ofsi.s 			page 41
 
 
  1229              		.cfi_restore 5
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  1272              	.LVL147:
  390:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     event_data->page = page;
  1273              		.loc 1 390 5 is_stmt 1 view .LVU351
-ARM GAS  /tmp/ccd9mSbz.s 			page 42
+ARM GAS  /tmp/ccU3ofsi.s 			page 42
 
 
  390:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     event_data->page = page;
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  399:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
  1321              		.loc 1 399 5 view .LVU361
  399:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
-ARM GAS  /tmp/ccd9mSbz.s 			page 43
+ARM GAS  /tmp/ccU3ofsi.s 			page 43
 
 
  1322              		.loc 1 399 5 view .LVU362
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  410:Drivers/lvgl/src/widgets/menu/lv_menu.c ****         page->static_title = false;
  1360              		.loc 1 410 7 is_stmt 0 view .LVU379
  1361 001a 4CB1     		cbz	r4, .L86
-ARM GAS  /tmp/ccd9mSbz.s 			page 44
+ARM GAS  /tmp/ccU3ofsi.s 			page 44
 
 
  411:Drivers/lvgl/src/widgets/menu/lv_menu.c ****         page->title = lv_strdup(title);
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  1399              	.LCFI28:
  1400              		.cfi_def_cfa_offset 16
  1401              		.cfi_offset 3, -16
-ARM GAS  /tmp/ccd9mSbz.s 			page 45
+ARM GAS  /tmp/ccU3ofsi.s 			page 45
 
 
  1402              		.cfi_offset 4, -12
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  1447              		.loc 1 128 5 is_stmt 1 discriminator 2 view .LVU407
  128:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
  1448              		.loc 1 128 34 discriminator 2 view .LVU408
-ARM GAS  /tmp/ccd9mSbz.s 			page 46
+ARM GAS  /tmp/ccU3ofsi.s 			page 46
 
 
  130:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     lv_obj_t * obj = lv_obj_class_create_obj(&lv_menu_page_class, menu);
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  1487              		.cfi_restore 4
  1488              		.cfi_restore 5
  1489              		.cfi_restore 14
-ARM GAS  /tmp/ccd9mSbz.s 			page 47
+ARM GAS  /tmp/ccU3ofsi.s 			page 47
 
 
  128:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  1533              		.loc 1 428 5 view .LVU437
  428:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     lv_menu_page_t * page = (lv_menu_page_t *)page_obj;
  1534              		.loc 1 428 5 view .LVU438
-ARM GAS  /tmp/ccd9mSbz.s 			page 48
+ARM GAS  /tmp/ccU3ofsi.s 			page 48
 
 
  429:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  1573              		.cfi_restore 4
  1574              		.cfi_restore 5
  1575              		.cfi_restore 14
-ARM GAS  /tmp/ccd9mSbz.s 			page 49
+ARM GAS  /tmp/ccU3ofsi.s 			page 49
 
 
  426:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  1619 0000 08B1     		cbz	r0, .L108
  453:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
  1620              		.loc 1 453 5 discriminator 2 view .LVU468
-ARM GAS  /tmp/ccd9mSbz.s 			page 50
+ARM GAS  /tmp/ccU3ofsi.s 			page 50
 
 
  453:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  1661              		.loc 1 463 5 view .LVU484
  1662              	.LVL178:
  464:Drivers/lvgl/src/widgets/menu/lv_menu.c **** }
-ARM GAS  /tmp/ccd9mSbz.s 			page 51
+ARM GAS  /tmp/ccU3ofsi.s 			page 51
 
 
  1663              		.loc 1 464 5 view .LVU485
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  790:Drivers/lvgl/src/widgets/menu/lv_menu.c ****         if(prev_hist != NULL) {
  791:Drivers/lvgl/src/widgets/menu/lv_menu.c ****             /* Previous menu exists */
  792:Drivers/lvgl/src/widgets/menu/lv_menu.c ****             /* Delete the current item from the history */
-ARM GAS  /tmp/ccd9mSbz.s 			page 52
+ARM GAS  /tmp/ccU3ofsi.s 			page 52
 
 
  793:Drivers/lvgl/src/widgets/menu/lv_menu.c ****             lv_ll_remove(history_ll, act_hist);
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  1721              		.loc 1 814 21 is_stmt 0 view .LVU506
  1722 0014 D96A     		ldr	r1, [r3, #44]
  1723              		.loc 1 814 11 view .LVU507
-ARM GAS  /tmp/ccd9mSbz.s 			page 53
+ARM GAS  /tmp/ccU3ofsi.s 			page 53
 
 
  1724 0016 A9B1     		cbz	r1, .L114
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  831:Drivers/lvgl/src/widgets/menu/lv_menu.c ****         }
  832:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     }
  833:Drivers/lvgl/src/widgets/menu/lv_menu.c **** }
-ARM GAS  /tmp/ccd9mSbz.s 			page 54
+ARM GAS  /tmp/ccU3ofsi.s 			page 54
 
 
  1762              		.loc 1 833 1 is_stmt 0 view .LVU521
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  1807 0002 806B     		ldr	r0, [r0, #56]
  1808              	.LVL198:
  473:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
-ARM GAS  /tmp/ccd9mSbz.s 			page 55
+ARM GAS  /tmp/ccU3ofsi.s 			page 55
 
 
  1809              		.loc 1 473 1 view .LVU534
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  1851              	.L123:
  477:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
  1852              		.loc 1 477 5 is_stmt 1 discriminator 1 view .LVU549
-ARM GAS  /tmp/ccd9mSbz.s 			page 56
+ARM GAS  /tmp/ccU3ofsi.s 			page 56
 
 
  477:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  1893              		.loc 1 485 5 discriminator 1 view .LVU565
  485:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
  1894              		.loc 1 485 5 discriminator 1 view .LVU566
-ARM GAS  /tmp/ccd9mSbz.s 			page 57
+ARM GAS  /tmp/ccU3ofsi.s 			page 57
 
 
  485:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  1936              		.cfi_endproc
  1937              	.LFE189:
  1939              		.section	.text.lv_menu_back_button_is_root,"ax",%progbits
-ARM GAS  /tmp/ccd9mSbz.s 			page 58
+ARM GAS  /tmp/ccU3ofsi.s 			page 58
 
 
  1940              		.align	1
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  501:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
  1980              		.loc 1 501 5 discriminator 1 view .LVU597
  501:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
-ARM GAS  /tmp/ccd9mSbz.s 			page 59
+ARM GAS  /tmp/ccU3ofsi.s 			page 59
 
 
  1981              		.loc 1 501 5 discriminator 1 view .LVU598
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  2026              		.loc 1 516 5 view .LVU609
  516:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
  2027              		.loc 1 516 5 view .LVU610
-ARM GAS  /tmp/ccd9mSbz.s 			page 60
+ARM GAS  /tmp/ccU3ofsi.s 			page 60
 
 
  2028 0000 40B1     		cbz	r0, .L140
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  2068              		.section	.text.lv_menu_set_page,"ax",%progbits
  2069              		.align	1
  2070              		.global	lv_menu_set_page
-ARM GAS  /tmp/ccd9mSbz.s 			page 61
+ARM GAS  /tmp/ccU3ofsi.s 			page 61
 
 
  2071              		.syntax unified
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  2113              		.loc 1 212 5 is_stmt 1 view .LVU638
  212:Drivers/lvgl/src/widgets/menu/lv_menu.c ****         /* Add a new node */
  2114              		.loc 1 212 7 is_stmt 0 view .LVU639
-ARM GAS  /tmp/ccd9mSbz.s 			page 62
+ARM GAS  /tmp/ccU3ofsi.s 			page 62
 
 
  2115 0014 002D     		cmp	r5, #0
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  2152              		.loc 1 228 5 is_stmt 1 view .LVU656
  228:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
  2153              		.loc 1 228 21 is_stmt 0 view .LVU657
-ARM GAS  /tmp/ccd9mSbz.s 			page 63
+ARM GAS  /tmp/ccU3ofsi.s 			page 63
 
 
  2154 0038 6563     		str	r5, [r4, #52]
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  2191              		.loc 1 247 17 view .LVU674
  2192 0066 0221     		movs	r1, #2
  2193 0068 206D     		ldr	r0, [r4, #80]
-ARM GAS  /tmp/ccd9mSbz.s 			page 64
+ARM GAS  /tmp/ccU3ofsi.s 			page 64
 
 
  2194 006a FFF7FEFF 		bl	lv_obj_add_flag
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  203:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
  2237              		.loc 1 203 5 discriminator 1 view .LVU686
  203:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
-ARM GAS  /tmp/ccd9mSbz.s 			page 65
+ARM GAS  /tmp/ccU3ofsi.s 			page 65
 
 
  2238              		.loc 1 203 5 discriminator 1 view .LVU687
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  2282              	.L156:
  260:Drivers/lvgl/src/widgets/menu/lv_menu.c ****             lv_obj_remove_flag(menu->main_header_back_btn, LV_OBJ_FLAG_CLICKABLE);
  2283              		.loc 1 260 13 view .LVU698
-ARM GAS  /tmp/ccd9mSbz.s 			page 66
+ARM GAS  /tmp/ccU3ofsi.s 			page 66
 
 
  2284 00be 0121     		movs	r1, #1
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  2328              	.LVL254:
  2329 0104 BFE7     		b	.L157
  2330              		.cfi_endproc
-ARM GAS  /tmp/ccd9mSbz.s 			page 67
+ARM GAS  /tmp/ccU3ofsi.s 			page 67
 
 
  2331              	.LFE177:
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  2377 0010 FFF7FEFF 		bl	lv_event_get_current_target
  2378              	.LVL260:
  2379 0014 0546     		mov	r5, r0
-ARM GAS  /tmp/ccd9mSbz.s 			page 68
+ARM GAS  /tmp/ccU3ofsi.s 			page 68
 
 
  2380              	.LVL261:
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  2418              		.loc 1 782 9 is_stmt 1 view .LVU734
  782:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
  2419              		.loc 1 782 19 is_stmt 0 view .LVU735
-ARM GAS  /tmp/ccd9mSbz.s 			page 69
+ARM GAS  /tmp/ccU3ofsi.s 			page 69
 
 
  2420 003e 04F15C06 		add	r6, r4, #92
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  2460 0070 3946     		mov	r1, r7
  2461 0072 3046     		mov	r0, r6
  2462 0074 FFF7FEFF 		bl	lv_ll_remove
-ARM GAS  /tmp/ccd9mSbz.s 			page 70
+ARM GAS  /tmp/ccU3ofsi.s 			page 70
 
 
  2463              	.LVL275:
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  2510 0004 0446     		mov	r4, r0
  175:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
  2511              		.loc 1 175 5 is_stmt 1 discriminator 2 view .LVU759
-ARM GAS  /tmp/ccd9mSbz.s 			page 71
+ARM GAS  /tmp/ccU3ofsi.s 			page 71
 
 
  175:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  190:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     }
  2549              		.loc 1 190 24 view .LVU777
  2550 0028 013B     		subs	r3, r3, #1
-ARM GAS  /tmp/ccd9mSbz.s 			page 72
+ARM GAS  /tmp/ccU3ofsi.s 			page 72
 
 
  2551 002a 84F86830 		strb	r3, [r4, #104]
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  283:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
  2597              		.loc 1 283 5 view .LVU788
  2598 0000 A8B1     		cbz	r0, .L175
-ARM GAS  /tmp/ccd9mSbz.s 			page 73
+ARM GAS  /tmp/ccU3ofsi.s 			page 73
 
 
  282:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     LV_ASSERT_OBJ(obj, MY_CLASS);
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  341:Drivers/lvgl/src/widgets/menu/lv_menu.c **** }
  2640              		.loc 1 341 5 is_stmt 1 view .LVU802
  2641 0026 2046     		mov	r0, r4
-ARM GAS  /tmp/ccd9mSbz.s 			page 74
+ARM GAS  /tmp/ccU3ofsi.s 			page 74
 
 
  2642 0028 FFF7FEFF 		bl	lv_menu_refr
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  2685              		.loc 1 293 13 is_stmt 1 view .LVU813
  2686 003a FFF7FEFF 		bl	lv_obj_class_init_obj
  2687              	.LVL302:
-ARM GAS  /tmp/ccd9mSbz.s 			page 75
+ARM GAS  /tmp/ccU3ofsi.s 			page 75
 
 
  294:Drivers/lvgl/src/widgets/menu/lv_menu.c ****             lv_obj_set_size(sidebar_cont, LV_PCT(30), LV_PCT(100));
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  2731 0080 3946     		mov	r1, r7
  2732 0082 3046     		mov	r0, r6
  2733 0084 FFF7FEFF 		bl	lv_obj_set_size
-ARM GAS  /tmp/ccd9mSbz.s 			page 76
+ARM GAS  /tmp/ccU3ofsi.s 			page 76
 
 
  2734              	.LVL311:
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  313:Drivers/lvgl/src/widgets/menu/lv_menu.c ****             menu->sidebar_header_back_btn = sidebar_header_back_btn;
  2778              		.loc 1 313 13 view .LVU835
  2779 00cc 0021     		movs	r1, #0
-ARM GAS  /tmp/ccd9mSbz.s 			page 77
+ARM GAS  /tmp/ccU3ofsi.s 			page 77
 
 
  2780 00ce 3046     		mov	r0, r6
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  332:Drivers/lvgl/src/widgets/menu/lv_menu.c ****             lv_obj_set_parent(menu->sidebar_page, menu->storage);
  2820              		.loc 1 332 12 is_stmt 0 view .LVU850
  2821 0100 90F86A30 		ldrb	r3, [r0, #106]	@ zero_extendqisi2
-ARM GAS  /tmp/ccd9mSbz.s 			page 78
+ARM GAS  /tmp/ccU3ofsi.s 			page 78
 
 
  332:Drivers/lvgl/src/widgets/menu/lv_menu.c ****             lv_obj_set_parent(menu->sidebar_page, menu->storage);
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  359:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
  2870              		.loc 1 359 5 view .LVU859
  359:Drivers/lvgl/src/widgets/menu/lv_menu.c **** 
-ARM GAS  /tmp/ccd9mSbz.s 			page 79
+ARM GAS  /tmp/ccU3ofsi.s 			page 79
 
 
  2871              		.loc 1 359 5 view .LVU860
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  364:Drivers/lvgl/src/widgets/menu/lv_menu.c ****         lv_menu_refr(obj);
  2912              		.loc 1 364 9 view .LVU874
  364:Drivers/lvgl/src/widgets/menu/lv_menu.c ****         lv_menu_refr(obj);
-ARM GAS  /tmp/ccd9mSbz.s 			page 80
+ARM GAS  /tmp/ccU3ofsi.s 			page 80
 
 
  2913              		.loc 1 364 34 is_stmt 0 view .LVU875
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  2959 000c FFF7FEFF 		bl	lv_event_get_user_data
  2960              	.LVL341:
  725:Drivers/lvgl/src/widgets/menu/lv_menu.c ****     lv_obj_t * page = event_data->page;
-ARM GAS  /tmp/ccd9mSbz.s 			page 81
+ARM GAS  /tmp/ccU3ofsi.s 			page 81
 
 
  2961              		.loc 1 725 5 is_stmt 1 view .LVU886
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  736:Drivers/lvgl/src/widgets/menu/lv_menu.c ****                 break;
  2999              		.loc 1 736 25 view .LVU903
  3000 002c 0123     		movs	r3, #1
-ARM GAS  /tmp/ccd9mSbz.s 			page 82
+ARM GAS  /tmp/ccU3ofsi.s 			page 82
 
 
  3001 002e 00E0     		b	.L194
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  756:Drivers/lvgl/src/widgets/menu/lv_menu.c ****         /* Sidebar is not supported for now*/
  3041              		.loc 1 756 8 is_stmt 0 view .LVU918
  3042 0052 FFF7FEFF 		bl	lv_group_get_default
-ARM GAS  /tmp/ccd9mSbz.s 			page 83
+ARM GAS  /tmp/ccU3ofsi.s 			page 83
 
 
  3043              	.LVL353:
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  3089 0004 00000000 		.space	32
  3089      00000000 
  3089      00000000 
-ARM GAS  /tmp/ccd9mSbz.s 			page 84
+ARM GAS  /tmp/ccU3ofsi.s 			page 84
 
 
  3089      00000000 
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  3132 0000 00000000 		.word	lv_obj_class
  3133 0004 00000000 		.word	lv_menu_section_constructor
  3134 0008 00000000 		.space	12
-ARM GAS  /tmp/ccd9mSbz.s 			page 85
+ARM GAS  /tmp/ccU3ofsi.s 			page 85
 
 
  3134      00000000 
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  3181      656E7500 
  3182              		.section	.rodata.lv_menu_class,"a"
  3183              		.align	2
-ARM GAS  /tmp/ccd9mSbz.s 			page 86
+ARM GAS  /tmp/ccU3ofsi.s 			page 86
 
 
  3186              	lv_menu_class:
@@ -5142,108 +5142,108 @@ ARM GAS  /tmp/ccd9mSbz.s 			page 1
  3223              		.file 25 "Drivers/lvgl/src/widgets/menu/../image/lv_image.h"
  3224              		.file 26 "Drivers/lvgl/src/widgets/menu/../button/lv_button.h"
  3225              		.file 27 "Drivers/lvgl/src/widgets/menu/../../core/lv_obj_class.h"
-ARM GAS  /tmp/ccd9mSbz.s 			page 87
+ARM GAS  /tmp/ccU3ofsi.s 			page 87
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_menu.c
-     /tmp/ccd9mSbz.s:21     .text.lv_menu_destructor:00000000 $t
-     /tmp/ccd9mSbz.s:26     .text.lv_menu_destructor:00000000 lv_menu_destructor
-     /tmp/ccd9mSbz.s:57     .text.lv_menu_section_constructor:00000000 $t
-     /tmp/ccd9mSbz.s:62     .text.lv_menu_section_constructor:00000000 lv_menu_section_constructor
-     /tmp/ccd9mSbz.s:98     .text.lv_menu_cont_constructor:00000000 $t
-     /tmp/ccd9mSbz.s:103    .text.lv_menu_cont_constructor:00000000 lv_menu_cont_constructor
-     /tmp/ccd9mSbz.s:146    .rodata.lv_menu_constructor.str1.4:00000000 $d
-     /tmp/ccd9mSbz.s:150    .text.lv_menu_constructor:00000000 $t
-     /tmp/ccd9mSbz.s:155    .text.lv_menu_constructor:00000000 lv_menu_constructor
-     /tmp/ccd9mSbz.s:395    .text.lv_menu_constructor:00000134 $d
-     /tmp/ccd9mSbz.s:3095   .rodata.lv_menu_main_cont_class:00000000 lv_menu_main_cont_class
-     /tmp/ccd9mSbz.s:3087   .rodata.lv_menu_main_header_cont_class:00000000 lv_menu_main_header_cont_class
-     /tmp/ccd9mSbz.s:2339   .text.lv_menu_back_event_cb:00000000 lv_menu_back_event_cb
-     /tmp/ccd9mSbz.s:1686   .text.lv_menu_value_changed_event_cb:00000000 lv_menu_value_changed_event_cb
-     /tmp/ccd9mSbz.s:405    .text.lv_menu_page_destructor:00000000 $t
-     /tmp/ccd9mSbz.s:410    .text.lv_menu_page_destructor:00000000 lv_menu_page_destructor
-     /tmp/ccd9mSbz.s:455    .text.lv_menu_obj_delete_event_cb:00000000 $t
-     /tmp/ccd9mSbz.s:460    .text.lv_menu_obj_delete_event_cb:00000000 lv_menu_obj_delete_event_cb
-     /tmp/ccd9mSbz.s:486    .text.lv_menu_page_constructor:00000000 $t
-     /tmp/ccd9mSbz.s:491    .text.lv_menu_page_constructor:00000000 lv_menu_page_constructor
-     /tmp/ccd9mSbz.s:544    .text.lv_menu_refr_main_header_mode:00000000 $t
-     /tmp/ccd9mSbz.s:549    .text.lv_menu_refr_main_header_mode:00000000 lv_menu_refr_main_header_mode
-     /tmp/ccd9mSbz.s:680    .text.lv_menu_refr_sidebar_header_mode:00000000 $t
-     /tmp/ccd9mSbz.s:685    .text.lv_menu_refr_sidebar_header_mode:00000000 lv_menu_refr_sidebar_header_mode
-     /tmp/ccd9mSbz.s:812    .text.lv_menu_create:00000000 $t
-     /tmp/ccd9mSbz.s:818    .text.lv_menu_create:00000000 lv_menu_create
-     /tmp/ccd9mSbz.s:857    .text.lv_menu_create:00000014 $d
-     /tmp/ccd9mSbz.s:3186   .rodata.lv_menu_class:00000000 lv_menu_class
-     /tmp/ccd9mSbz.s:862    .text.lv_menu_cont_create:00000000 $t
-     /tmp/ccd9mSbz.s:868    .text.lv_menu_cont_create:00000000 lv_menu_cont_create
-     /tmp/ccd9mSbz.s:922    .text.lv_menu_cont_create:00000018 $d
-     /tmp/ccd9mSbz.s:3148   .rodata.lv_menu_cont_class:00000000 lv_menu_cont_class
-     /tmp/ccd9mSbz.s:927    .text.lv_menu_section_create:00000000 $t
-     /tmp/ccd9mSbz.s:933    .text.lv_menu_section_create:00000000 lv_menu_section_create
-     /tmp/ccd9mSbz.s:987    .text.lv_menu_section_create:00000018 $d
-     /tmp/ccd9mSbz.s:3131   .rodata.lv_menu_section_class:00000000 lv_menu_section_class
-     /tmp/ccd9mSbz.s:992    .text.lv_menu_separator_create:00000000 $t
-     /tmp/ccd9mSbz.s:998    .text.lv_menu_separator_create:00000000 lv_menu_separator_create
-     /tmp/ccd9mSbz.s:1052   .text.lv_menu_separator_create:00000018 $d
-     /tmp/ccd9mSbz.s:3115   .rodata.lv_menu_separator_class:00000000 lv_menu_separator_class
-     /tmp/ccd9mSbz.s:1057   .text.lv_menu_set_mode_header:00000000 $t
-     /tmp/ccd9mSbz.s:1063   .text.lv_menu_set_mode_header:00000000 lv_menu_set_mode_header
-     /tmp/ccd9mSbz.s:1137   .text.lv_menu_set_load_page_event:00000000 $t
-     /tmp/ccd9mSbz.s:1143   .text.lv_menu_set_load_page_event:00000000 lv_menu_set_load_page_event
-     /tmp/ccd9mSbz.s:1302   .text.lv_menu_set_load_page_event:00000088 $d
-     /tmp/ccd9mSbz.s:2931   .text.lv_menu_load_page_event_cb:00000000 lv_menu_load_page_event_cb
-     /tmp/ccd9mSbz.s:1308   .text.lv_menu_set_page_title:00000000 $t
-     /tmp/ccd9mSbz.s:1314   .text.lv_menu_set_page_title:00000000 lv_menu_set_page_title
-     /tmp/ccd9mSbz.s:1420   .text.lv_menu_page_create:00000000 $t
-     /tmp/ccd9mSbz.s:1426   .text.lv_menu_page_create:00000000 lv_menu_page_create
-     /tmp/ccd9mSbz.s:1499   .text.lv_menu_page_create:0000002c $d
-     /tmp/ccd9mSbz.s:3165   .rodata.lv_menu_page_class:00000000 lv_menu_page_class
-     /tmp/ccd9mSbz.s:1504   .text.lv_menu_set_page_title_static:00000000 $t
-     /tmp/ccd9mSbz.s:1510   .text.lv_menu_set_page_title_static:00000000 lv_menu_set_page_title_static
-     /tmp/ccd9mSbz.s:1603   .text.lv_menu_get_cur_main_page:00000000 $t
-ARM GAS  /tmp/ccd9mSbz.s 			page 88
+     /tmp/ccU3ofsi.s:21     .text.lv_menu_destructor:00000000 $t
+     /tmp/ccU3ofsi.s:26     .text.lv_menu_destructor:00000000 lv_menu_destructor
+     /tmp/ccU3ofsi.s:57     .text.lv_menu_section_constructor:00000000 $t
+     /tmp/ccU3ofsi.s:62     .text.lv_menu_section_constructor:00000000 lv_menu_section_constructor
+     /tmp/ccU3ofsi.s:98     .text.lv_menu_cont_constructor:00000000 $t
+     /tmp/ccU3ofsi.s:103    .text.lv_menu_cont_constructor:00000000 lv_menu_cont_constructor
+     /tmp/ccU3ofsi.s:146    .rodata.lv_menu_constructor.str1.4:00000000 $d
+     /tmp/ccU3ofsi.s:150    .text.lv_menu_constructor:00000000 $t
+     /tmp/ccU3ofsi.s:155    .text.lv_menu_constructor:00000000 lv_menu_constructor
+     /tmp/ccU3ofsi.s:395    .text.lv_menu_constructor:00000134 $d
+     /tmp/ccU3ofsi.s:3095   .rodata.lv_menu_main_cont_class:00000000 lv_menu_main_cont_class
+     /tmp/ccU3ofsi.s:3087   .rodata.lv_menu_main_header_cont_class:00000000 lv_menu_main_header_cont_class
+     /tmp/ccU3ofsi.s:2339   .text.lv_menu_back_event_cb:00000000 lv_menu_back_event_cb
+     /tmp/ccU3ofsi.s:1686   .text.lv_menu_value_changed_event_cb:00000000 lv_menu_value_changed_event_cb
+     /tmp/ccU3ofsi.s:405    .text.lv_menu_page_destructor:00000000 $t
+     /tmp/ccU3ofsi.s:410    .text.lv_menu_page_destructor:00000000 lv_menu_page_destructor
+     /tmp/ccU3ofsi.s:455    .text.lv_menu_obj_delete_event_cb:00000000 $t
+     /tmp/ccU3ofsi.s:460    .text.lv_menu_obj_delete_event_cb:00000000 lv_menu_obj_delete_event_cb
+     /tmp/ccU3ofsi.s:486    .text.lv_menu_page_constructor:00000000 $t
+     /tmp/ccU3ofsi.s:491    .text.lv_menu_page_constructor:00000000 lv_menu_page_constructor
+     /tmp/ccU3ofsi.s:544    .text.lv_menu_refr_main_header_mode:00000000 $t
+     /tmp/ccU3ofsi.s:549    .text.lv_menu_refr_main_header_mode:00000000 lv_menu_refr_main_header_mode
+     /tmp/ccU3ofsi.s:680    .text.lv_menu_refr_sidebar_header_mode:00000000 $t
+     /tmp/ccU3ofsi.s:685    .text.lv_menu_refr_sidebar_header_mode:00000000 lv_menu_refr_sidebar_header_mode
+     /tmp/ccU3ofsi.s:812    .text.lv_menu_create:00000000 $t
+     /tmp/ccU3ofsi.s:818    .text.lv_menu_create:00000000 lv_menu_create
+     /tmp/ccU3ofsi.s:857    .text.lv_menu_create:00000014 $d
+     /tmp/ccU3ofsi.s:3186   .rodata.lv_menu_class:00000000 lv_menu_class
+     /tmp/ccU3ofsi.s:862    .text.lv_menu_cont_create:00000000 $t
+     /tmp/ccU3ofsi.s:868    .text.lv_menu_cont_create:00000000 lv_menu_cont_create
+     /tmp/ccU3ofsi.s:922    .text.lv_menu_cont_create:00000018 $d
+     /tmp/ccU3ofsi.s:3148   .rodata.lv_menu_cont_class:00000000 lv_menu_cont_class
+     /tmp/ccU3ofsi.s:927    .text.lv_menu_section_create:00000000 $t
+     /tmp/ccU3ofsi.s:933    .text.lv_menu_section_create:00000000 lv_menu_section_create
+     /tmp/ccU3ofsi.s:987    .text.lv_menu_section_create:00000018 $d
+     /tmp/ccU3ofsi.s:3131   .rodata.lv_menu_section_class:00000000 lv_menu_section_class
+     /tmp/ccU3ofsi.s:992    .text.lv_menu_separator_create:00000000 $t
+     /tmp/ccU3ofsi.s:998    .text.lv_menu_separator_create:00000000 lv_menu_separator_create
+     /tmp/ccU3ofsi.s:1052   .text.lv_menu_separator_create:00000018 $d
+     /tmp/ccU3ofsi.s:3115   .rodata.lv_menu_separator_class:00000000 lv_menu_separator_class
+     /tmp/ccU3ofsi.s:1057   .text.lv_menu_set_mode_header:00000000 $t
+     /tmp/ccU3ofsi.s:1063   .text.lv_menu_set_mode_header:00000000 lv_menu_set_mode_header
+     /tmp/ccU3ofsi.s:1137   .text.lv_menu_set_load_page_event:00000000 $t
+     /tmp/ccU3ofsi.s:1143   .text.lv_menu_set_load_page_event:00000000 lv_menu_set_load_page_event
+     /tmp/ccU3ofsi.s:1302   .text.lv_menu_set_load_page_event:00000088 $d
+     /tmp/ccU3ofsi.s:2931   .text.lv_menu_load_page_event_cb:00000000 lv_menu_load_page_event_cb
+     /tmp/ccU3ofsi.s:1308   .text.lv_menu_set_page_title:00000000 $t
+     /tmp/ccU3ofsi.s:1314   .text.lv_menu_set_page_title:00000000 lv_menu_set_page_title
+     /tmp/ccU3ofsi.s:1420   .text.lv_menu_page_create:00000000 $t
+     /tmp/ccU3ofsi.s:1426   .text.lv_menu_page_create:00000000 lv_menu_page_create
+     /tmp/ccU3ofsi.s:1499   .text.lv_menu_page_create:0000002c $d
+     /tmp/ccU3ofsi.s:3165   .rodata.lv_menu_page_class:00000000 lv_menu_page_class
+     /tmp/ccU3ofsi.s:1504   .text.lv_menu_set_page_title_static:00000000 $t
+     /tmp/ccU3ofsi.s:1510   .text.lv_menu_set_page_title_static:00000000 lv_menu_set_page_title_static
+     /tmp/ccU3ofsi.s:1603   .text.lv_menu_get_cur_main_page:00000000 $t
+ARM GAS  /tmp/ccU3ofsi.s 			page 88
 
 
-     /tmp/ccd9mSbz.s:1609   .text.lv_menu_get_cur_main_page:00000000 lv_menu_get_cur_main_page
-     /tmp/ccd9mSbz.s:1642   .text.lv_menu_get_cur_sidebar_page:00000000 $t
-     /tmp/ccd9mSbz.s:1648   .text.lv_menu_get_cur_sidebar_page:00000000 lv_menu_get_cur_sidebar_page
-     /tmp/ccd9mSbz.s:1681   .text.lv_menu_value_changed_event_cb:00000000 $t
-     /tmp/ccd9mSbz.s:1784   .text.lv_menu_get_main_header:00000000 $t
-     /tmp/ccd9mSbz.s:1790   .text.lv_menu_get_main_header:00000000 lv_menu_get_main_header
-     /tmp/ccd9mSbz.s:1823   .text.lv_menu_get_main_header_back_button:00000000 $t
-     /tmp/ccd9mSbz.s:1829   .text.lv_menu_get_main_header_back_button:00000000 lv_menu_get_main_header_back_button
-     /tmp/ccd9mSbz.s:1862   .text.lv_menu_get_sidebar_header:00000000 $t
-     /tmp/ccd9mSbz.s:1868   .text.lv_menu_get_sidebar_header:00000000 lv_menu_get_sidebar_header
-     /tmp/ccd9mSbz.s:1901   .text.lv_menu_get_sidebar_header_back_button:00000000 $t
-     /tmp/ccd9mSbz.s:1907   .text.lv_menu_get_sidebar_header_back_button:00000000 lv_menu_get_sidebar_header_back_button
-     /tmp/ccd9mSbz.s:1940   .text.lv_menu_back_button_is_root:00000000 $t
-     /tmp/ccd9mSbz.s:1946   .text.lv_menu_back_button_is_root:00000000 lv_menu_back_button_is_root
-     /tmp/ccd9mSbz.s:2013   .text.lv_menu_clear_history:00000000 $t
-     /tmp/ccd9mSbz.s:2019   .text.lv_menu_clear_history:00000000 lv_menu_clear_history
-     /tmp/ccd9mSbz.s:2069   .text.lv_menu_set_page:00000000 $t
-     /tmp/ccd9mSbz.s:2075   .text.lv_menu_set_page:00000000 lv_menu_set_page
-     /tmp/ccd9mSbz.s:2334   .text.lv_menu_back_event_cb:00000000 $t
-     /tmp/ccd9mSbz.s:2485   .text.lv_menu_refr:00000000 $t
-     /tmp/ccd9mSbz.s:2490   .text.lv_menu_refr:00000000 lv_menu_refr
-     /tmp/ccd9mSbz.s:2583   .text.lv_menu_set_sidebar_page:00000000 $t
-     /tmp/ccd9mSbz.s:2589   .text.lv_menu_set_sidebar_page:00000000 lv_menu_set_sidebar_page
-     /tmp/ccd9mSbz.s:2847   .text.lv_menu_set_sidebar_page:00000128 $d
-     /tmp/ccd9mSbz.s:3103   .rodata.lv_menu_sidebar_cont_class:00000000 lv_menu_sidebar_cont_class
-     /tmp/ccd9mSbz.s:3079   .rodata.lv_menu_sidebar_header_cont_class:00000000 lv_menu_sidebar_header_cont_class
-     /tmp/ccd9mSbz.s:2857   .text.lv_menu_set_mode_root_back_button:00000000 $t
-     /tmp/ccd9mSbz.s:2863   .text.lv_menu_set_mode_root_back_button:00000000 lv_menu_set_mode_root_back_button
-     /tmp/ccd9mSbz.s:2926   .text.lv_menu_load_page_event_cb:00000000 $t
-     /tmp/ccd9mSbz.s:3076   .rodata.lv_menu_sidebar_header_cont_class:00000000 $d
-     /tmp/ccd9mSbz.s:3084   .rodata.lv_menu_main_header_cont_class:00000000 $d
-     /tmp/ccd9mSbz.s:3092   .rodata.lv_menu_main_cont_class:00000000 $d
-     /tmp/ccd9mSbz.s:3100   .rodata.lv_menu_sidebar_cont_class:00000000 $d
-     /tmp/ccd9mSbz.s:3108   .rodata.str1.4:00000000 $d
-     /tmp/ccd9mSbz.s:3112   .rodata.lv_menu_separator_class:00000000 $d
-     /tmp/ccd9mSbz.s:3128   .rodata.lv_menu_section_class:00000000 $d
-     /tmp/ccd9mSbz.s:3145   .rodata.lv_menu_cont_class:00000000 $d
-     /tmp/ccd9mSbz.s:3162   .rodata.lv_menu_page_class:00000000 $d
-     /tmp/ccd9mSbz.s:3183   .rodata.lv_menu_class:00000000 $d
+     /tmp/ccU3ofsi.s:1609   .text.lv_menu_get_cur_main_page:00000000 lv_menu_get_cur_main_page
+     /tmp/ccU3ofsi.s:1642   .text.lv_menu_get_cur_sidebar_page:00000000 $t
+     /tmp/ccU3ofsi.s:1648   .text.lv_menu_get_cur_sidebar_page:00000000 lv_menu_get_cur_sidebar_page
+     /tmp/ccU3ofsi.s:1681   .text.lv_menu_value_changed_event_cb:00000000 $t
+     /tmp/ccU3ofsi.s:1784   .text.lv_menu_get_main_header:00000000 $t
+     /tmp/ccU3ofsi.s:1790   .text.lv_menu_get_main_header:00000000 lv_menu_get_main_header
+     /tmp/ccU3ofsi.s:1823   .text.lv_menu_get_main_header_back_button:00000000 $t
+     /tmp/ccU3ofsi.s:1829   .text.lv_menu_get_main_header_back_button:00000000 lv_menu_get_main_header_back_button
+     /tmp/ccU3ofsi.s:1862   .text.lv_menu_get_sidebar_header:00000000 $t
+     /tmp/ccU3ofsi.s:1868   .text.lv_menu_get_sidebar_header:00000000 lv_menu_get_sidebar_header
+     /tmp/ccU3ofsi.s:1901   .text.lv_menu_get_sidebar_header_back_button:00000000 $t
+     /tmp/ccU3ofsi.s:1907   .text.lv_menu_get_sidebar_header_back_button:00000000 lv_menu_get_sidebar_header_back_button
+     /tmp/ccU3ofsi.s:1940   .text.lv_menu_back_button_is_root:00000000 $t
+     /tmp/ccU3ofsi.s:1946   .text.lv_menu_back_button_is_root:00000000 lv_menu_back_button_is_root
+     /tmp/ccU3ofsi.s:2013   .text.lv_menu_clear_history:00000000 $t
+     /tmp/ccU3ofsi.s:2019   .text.lv_menu_clear_history:00000000 lv_menu_clear_history
+     /tmp/ccU3ofsi.s:2069   .text.lv_menu_set_page:00000000 $t
+     /tmp/ccU3ofsi.s:2075   .text.lv_menu_set_page:00000000 lv_menu_set_page
+     /tmp/ccU3ofsi.s:2334   .text.lv_menu_back_event_cb:00000000 $t
+     /tmp/ccU3ofsi.s:2485   .text.lv_menu_refr:00000000 $t
+     /tmp/ccU3ofsi.s:2490   .text.lv_menu_refr:00000000 lv_menu_refr
+     /tmp/ccU3ofsi.s:2583   .text.lv_menu_set_sidebar_page:00000000 $t
+     /tmp/ccU3ofsi.s:2589   .text.lv_menu_set_sidebar_page:00000000 lv_menu_set_sidebar_page
+     /tmp/ccU3ofsi.s:2847   .text.lv_menu_set_sidebar_page:00000128 $d
+     /tmp/ccU3ofsi.s:3103   .rodata.lv_menu_sidebar_cont_class:00000000 lv_menu_sidebar_cont_class
+     /tmp/ccU3ofsi.s:3079   .rodata.lv_menu_sidebar_header_cont_class:00000000 lv_menu_sidebar_header_cont_class
+     /tmp/ccU3ofsi.s:2857   .text.lv_menu_set_mode_root_back_button:00000000 $t
+     /tmp/ccU3ofsi.s:2863   .text.lv_menu_set_mode_root_back_button:00000000 lv_menu_set_mode_root_back_button
+     /tmp/ccU3ofsi.s:2926   .text.lv_menu_load_page_event_cb:00000000 $t
+     /tmp/ccU3ofsi.s:3076   .rodata.lv_menu_sidebar_header_cont_class:00000000 $d
+     /tmp/ccU3ofsi.s:3084   .rodata.lv_menu_main_header_cont_class:00000000 $d
+     /tmp/ccU3ofsi.s:3092   .rodata.lv_menu_main_cont_class:00000000 $d
+     /tmp/ccU3ofsi.s:3100   .rodata.lv_menu_sidebar_cont_class:00000000 $d
+     /tmp/ccU3ofsi.s:3108   .rodata.str1.4:00000000 $d
+     /tmp/ccU3ofsi.s:3112   .rodata.lv_menu_separator_class:00000000 $d
+     /tmp/ccU3ofsi.s:3128   .rodata.lv_menu_section_class:00000000 $d
+     /tmp/ccU3ofsi.s:3145   .rodata.lv_menu_cont_class:00000000 $d
+     /tmp/ccU3ofsi.s:3162   .rodata.lv_menu_page_class:00000000 $d
+     /tmp/ccU3ofsi.s:3183   .rodata.lv_menu_class:00000000 $d
 
 UNDEFINED SYMBOLS
 lv_ll_clear
@@ -5262,7 +5262,7 @@ lv_obj_set_size
 lv_button_create
 lv_obj_add_event_cb
 lv_image_create
-ARM GAS  /tmp/ccd9mSbz.s 			page 89
+ARM GAS  /tmp/ccU3ofsi.s 			page 89
 
 
 lv_image_set_src

@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccKUplIl.s 			page 1
+ARM GAS  /tmp/ccABE5NB.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
   28:Drivers/lvgl/src/draw/lv_draw_image.c **** 
   29:Drivers/lvgl/src/draw/lv_draw_image.c **** /**********************
   30:Drivers/lvgl/src/draw/lv_draw_image.c ****  *  STATIC PROTOTYPES
-ARM GAS  /tmp/ccKUplIl.s 			page 2
+ARM GAS  /tmp/ccABE5NB.s 			page 2
 
 
   31:Drivers/lvgl/src/draw/lv_draw_image.c ****  **********************/
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
   85:Drivers/lvgl/src/draw/lv_draw_image.c ****     /*If the image_area is not set assume that it's the same as the rendering area */
   86:Drivers/lvgl/src/draw/lv_draw_image.c ****     if(new_image_dsc->image_area.x2 == LV_COORD_MIN) {
   87:Drivers/lvgl/src/draw/lv_draw_image.c ****         new_image_dsc->image_area = *coords;
-ARM GAS  /tmp/ccKUplIl.s 			page 3
+ARM GAS  /tmp/ccABE5NB.s 			page 3
 
 
   88:Drivers/lvgl/src/draw/lv_draw_image.c ****     }
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  142:Drivers/lvgl/src/draw/lv_draw_image.c ****         res = lv_image_decoder_open(&decoder_dsc, new_image_dsc.src, NULL);
  143:Drivers/lvgl/src/draw/lv_draw_image.c ****         if(res != LV_RESULT_OK) {
  144:Drivers/lvgl/src/draw/lv_draw_image.c ****             LV_LOG_ERROR("Failed to open image");
-ARM GAS  /tmp/ccKUplIl.s 			page 4
+ARM GAS  /tmp/ccABE5NB.s 			page 4
 
 
  145:Drivers/lvgl/src/draw/lv_draw_image.c ****             LV_PROFILER_DRAW_END;
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  199:Drivers/lvgl/src/draw/lv_draw_image.c ****     }
  200:Drivers/lvgl/src/draw/lv_draw_image.c ****     else {
  201:Drivers/lvgl/src/draw/lv_draw_image.c ****         return LV_IMAGE_SRC_VARIABLE; /*`lv_image_dsc_t` is draw to the first byte < 0x20*/
-ARM GAS  /tmp/ccKUplIl.s 			page 5
+ARM GAS  /tmp/ccABE5NB.s 			page 5
 
 
  202:Drivers/lvgl/src/draw/lv_draw_image.c ****     }
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  256:Drivers/lvgl/src/draw/lv_draw_image.c ****         LV_LOG_ERROR("Failed to open image");
  257:Drivers/lvgl/src/draw/lv_draw_image.c ****         return;
  258:Drivers/lvgl/src/draw/lv_draw_image.c ****     }
-ARM GAS  /tmp/ccKUplIl.s 			page 6
+ARM GAS  /tmp/ccABE5NB.s 			page 6
 
 
  259:Drivers/lvgl/src/draw/lv_draw_image.c **** 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  313:Drivers/lvgl/src/draw/lv_draw_image.c ****     }
  314:Drivers/lvgl/src/draw/lv_draw_image.c **** 
  315:Drivers/lvgl/src/draw/lv_draw_image.c ****     lv_point_t p[4] = {
-ARM GAS  /tmp/ccKUplIl.s 			page 7
+ARM GAS  /tmp/ccABE5NB.s 			page 7
 
 
  316:Drivers/lvgl/src/draw/lv_draw_image.c ****         {0, 0},
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
   57              		.loc 1 341 21 is_stmt 0 view .LVU4
   58 0014 CB6C     		ldr	r3, [r1, #76]
   59              	.LVL1:
-ARM GAS  /tmp/ccKUplIl.s 			page 8
+ARM GAS  /tmp/ccABE5NB.s 			page 8
 
 
   60              		.loc 1 341 21 view .LVU5
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  103              		.loc 1 352 77 view .LVU23
  104 0050 7268     		ldr	r2, [r6, #4]
  105              		.loc 1 352 9 view .LVU24
-ARM GAS  /tmp/ccKUplIl.s 			page 9
+ARM GAS  /tmp/ccABE5NB.s 			page 9
 
 
  106 0052 5242     		rsbs	r2, r2, #0
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  149 007a 0546     		mov	r5, r0
  150              	.LVL9:
  363:Drivers/lvgl/src/draw/lv_draw_image.c **** 
-ARM GAS  /tmp/ccKUplIl.s 			page 10
+ARM GAS  /tmp/ccABE5NB.s 			page 10
 
 
  364:Drivers/lvgl/src/draw/lv_draw_image.c ****             lv_area_t absolute_decoded_area = *relative_decoded_area;
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  197              		.loc 1 347 9 is_stmt 1 view .LVU53
  198 00ba CDF80490 		str	r9, [sp, #4]
  199 00be 0096     		str	r6, [sp]
-ARM GAS  /tmp/ccKUplIl.s 			page 11
+ARM GAS  /tmp/ccABE5NB.s 			page 11
 
 
  200 00c0 13AB     		add	r3, sp, #76
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  244              		.thumb_func
  246              	lv_draw_image_dsc_init:
  247              	.LVL20:
-ARM GAS  /tmp/ccKUplIl.s 			page 12
+ARM GAS  /tmp/ccABE5NB.s 			page 12
 
 
  248              	.LFB186:
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
   35:Drivers/lvgl/src/draw/../misc/../font/../draw/../misc/../stdlib/lv_string.h ****  * @param len Number of bytes to copy.
   36:Drivers/lvgl/src/draw/../misc/../font/../draw/../misc/../stdlib/lv_string.h ****  * @return Pointer to the destination array.
   37:Drivers/lvgl/src/draw/../misc/../font/../draw/../misc/../stdlib/lv_string.h ****  * @note The function does not check for any overlapping of the source and destination memory block
-ARM GAS  /tmp/ccKUplIl.s 			page 13
+ARM GAS  /tmp/ccABE5NB.s 			page 13
 
 
   38:Drivers/lvgl/src/draw/../misc/../font/../draw/../misc/../stdlib/lv_string.h ****  */
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  279 0010 84F84C00 		strb	r0, [r4, #76]
  280 0014 C0F30723 		ubfx	r3, r0, #8, #8
  281 0018 84F84D30 		strb	r3, [r4, #77]
-ARM GAS  /tmp/ccKUplIl.s 			page 14
+ARM GAS  /tmp/ccABE5NB.s 			page 14
 
 
  282 001c C0F30740 		ubfx	r0, r0, #16, #8
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  323              		.thumb
  324              		.thumb_func
  326              	lv_draw_task_get_image_dsc:
-ARM GAS  /tmp/ccKUplIl.s 			page 15
+ARM GAS  /tmp/ccABE5NB.s 			page 15
 
 
  327              	.LVL25:
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  372 0000 60B1     		cbz	r0, .L24
  191:Drivers/lvgl/src/draw/lv_draw_image.c **** 
  373              		.loc 1 191 5 is_stmt 1 view .LVU93
-ARM GAS  /tmp/ccKUplIl.s 			page 16
+ARM GAS  /tmp/ccABE5NB.s 			page 16
 
 
  374              	.LVL30:
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  414              		.cfi_endproc
  415              	.LFE190:
  417              		.section	.text.lv_draw_image_tiled_helper,"ax",%progbits
-ARM GAS  /tmp/ccKUplIl.s 			page 17
+ARM GAS  /tmp/ccABE5NB.s 			page 17
 
 
  418              		.align	1
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  464              	.LVL41:
  254:Drivers/lvgl/src/draw/lv_draw_image.c ****     if(res != LV_RESULT_OK) {
  465              		.loc 1 254 23 view .LVU117
-ARM GAS  /tmp/ccKUplIl.s 			page 18
+ARM GAS  /tmp/ccABE5NB.s 			page 18
 
 
  466 0018 FFF7FEFF 		bl	lv_image_decoder_open
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  506 0038 0DF1340C 		add	ip, sp, #52
  507 003c 06F15803 		add	r3, r6, #88
  508 0040 0FCB     		ldm	r3, {r0, r1, r2, r3}
-ARM GAS  /tmp/ccKUplIl.s 			page 19
+ARM GAS  /tmp/ccABE5NB.s 			page 19
 
 
  509 0042 8CE80F00 		stm	ip, {r0, r1, r2, r3}
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  550 007c 2B44     		add	r3, r3, r5
  551 007e 0D93     		str	r3, [sp, #52]
  292:Drivers/lvgl/src/draw/lv_draw_image.c ****         }
-ARM GAS  /tmp/ccKUplIl.s 			page 20
+ARM GAS  /tmp/ccABE5NB.s 			page 20
 
 
  552              		.loc 1 292 13 is_stmt 1 view .LVU145
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  594              		.loc 1 287 17 is_stmt 0 view .LVU157
  595              	.LBE14:
  295:Drivers/lvgl/src/draw/lv_draw_image.c ****         tile_area.y2 += img_h;
-ARM GAS  /tmp/ccKUplIl.s 			page 21
+ARM GAS  /tmp/ccABE5NB.s 			page 21
 
 
  596              		.loc 1 295 9 is_stmt 1 view .LVU158
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  635              		.cfi_restore 4
  636              		.cfi_restore 5
  637              		.cfi_restore 6
-ARM GAS  /tmp/ccKUplIl.s 			page 22
+ARM GAS  /tmp/ccABE5NB.s 			page 22
 
 
  638              		.cfi_restore 7
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  689 001a B6F5807F 		cmpeq	r6, #256
  690 001e 02D1     		bne	.L46
  307:Drivers/lvgl/src/draw/lv_draw_image.c ****         res->x1 = 0;
-ARM GAS  /tmp/ccKUplIl.s 			page 23
+ARM GAS  /tmp/ccABE5NB.s 			page 23
 
 
  691              		.loc 1 307 47 discriminator 1 view .LVU179
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  736 006c 3B46     		mov	r3, r7
  737 006e 3246     		mov	r2, r6
  738 0070 2946     		mov	r1, r5
-ARM GAS  /tmp/ccKUplIl.s 			page 24
+ARM GAS  /tmp/ccABE5NB.s 			page 24
 
 
  739 0072 06A8     		add	r0, sp, #24
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  326:Drivers/lvgl/src/draw/lv_draw_image.c ****     res->y1 = LV_MIN4(p[0].y, p[1].y, p[2].y, p[3].y);
  785              		.loc 1 326 13 view .LVU197
  786 00c0 A360     		str	r3, [r4, #8]
-ARM GAS  /tmp/ccKUplIl.s 			page 25
+ARM GAS  /tmp/ccABE5NB.s 			page 25
 
 
  327:Drivers/lvgl/src/draw/lv_draw_image.c ****     res->y2 = LV_MAX4(p[0].y, p[1].y, p[2].y, p[3].y) - 1;
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  308:Drivers/lvgl/src/draw/lv_draw_image.c ****         res->y1 = 0;
  833              		.loc 1 308 9 is_stmt 1 view .LVU206
  308:Drivers/lvgl/src/draw/lv_draw_image.c ****         res->y1 = 0;
-ARM GAS  /tmp/ccKUplIl.s 			page 26
+ARM GAS  /tmp/ccABE5NB.s 			page 26
 
 
  834              		.loc 1 308 17 is_stmt 0 view .LVU207
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  876              		.loc 1 69 7 view .LVU221
  877 0002 002B     		cmp	r3, #0
  878 0004 45DD     		ble	.L54
-ARM GAS  /tmp/ccKUplIl.s 			page 27
+ARM GAS  /tmp/ccABE5NB.s 			page 27
 
 
   68:Drivers/lvgl/src/draw/lv_draw_image.c ****     if(dsc->scale_x <= 0 || dsc->scale_y <= 0) {
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  921 0024 6C22     		movs	r2, #108
  922 0026 2146     		mov	r1, r4
  923 0028 3846     		mov	r0, r7
-ARM GAS  /tmp/ccKUplIl.s 			page 28
+ARM GAS  /tmp/ccABE5NB.s 			page 28
 
 
  924              	.LVL78:
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  968              	.LVL84:
  969              	.L52:
   90:Drivers/lvgl/src/draw/lv_draw_image.c ****     layer_to_draw->all_tasks_added = true;
-ARM GAS  /tmp/ccKUplIl.s 			page 29
+ARM GAS  /tmp/ccABE5NB.s 			page 29
 
 
  970              		.loc 1 90 5 is_stmt 1 view .LVU244
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  1015              		.cfi_restore 14
   87:Drivers/lvgl/src/draw/lv_draw_image.c ****     }
  1016              		.loc 1 87 35 view .LVU254
-ARM GAS  /tmp/ccKUplIl.s 			page 30
+ARM GAS  /tmp/ccABE5NB.s 			page 30
 
 
  1017 0092 7047     		bx	lr
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  1065              		.loc 1 104 7 view .LVU262
  1066 0018 022B     		cmp	r3, #2
  1067 001a 42D9     		bls	.L60
-ARM GAS  /tmp/ccKUplIl.s 			page 31
+ARM GAS  /tmp/ccABE5NB.s 			page 31
 
 
  106:Drivers/lvgl/src/draw/lv_draw_image.c ****         /* NOT draw if scale is negative or zero */
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  1106              	.LVL95:
  1107              	.L62:
  128:Drivers/lvgl/src/draw/lv_draw_image.c ****         lv_draw_task_t * t = lv_draw_add_task(layer, image_coords, LV_DRAW_TASK_TYPE_IMAGE);
-ARM GAS  /tmp/ccKUplIl.s 			page 32
+ARM GAS  /tmp/ccABE5NB.s 			page 32
 
 
  1108              		.loc 1 128 5 is_stmt 1 view .LVU279
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  1153 008c FFF7FEFF 		bl	lv_image_buf_get_transformed_area
  1154              	.LVL102:
  134:Drivers/lvgl/src/draw/lv_draw_image.c **** 
-ARM GAS  /tmp/ccKUplIl.s 			page 33
+ARM GAS  /tmp/ccABE5NB.s 			page 33
 
 
  1155              		.loc 1 134 9 is_stmt 1 view .LVU289
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  143:Drivers/lvgl/src/draw/lv_draw_image.c ****             LV_LOG_ERROR("Failed to open image");
  1199              		.loc 1 143 11 is_stmt 0 view .LVU300
  1200 00be 0128     		cmp	r0, #1
-ARM GAS  /tmp/ccKUplIl.s 			page 34
+ARM GAS  /tmp/ccABE5NB.s 			page 34
 
 
  1201 00c0 EFD1     		bne	.L60
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  1239 00f0 EBB1     		cbz	r3, .L67
  155:Drivers/lvgl/src/draw/lv_draw_image.c ****                     int32_t xpos = image_coords->x1 - draw_area.x1;
  1240              		.loc 1 155 17 is_stmt 1 view .LVU317
-ARM GAS  /tmp/ccKUplIl.s 			page 35
+ARM GAS  /tmp/ccABE5NB.s 			page 35
 
 
  155:Drivers/lvgl/src/draw/lv_draw_image.c ****                     int32_t xpos = image_coords->x1 - draw_area.x1;
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  1282 0128 3046     		mov	r0, r6
  1283 012a A847     		blx	r5
  1284              	.LVL114:
-ARM GAS  /tmp/ccKUplIl.s 			page 36
+ARM GAS  /tmp/ccABE5NB.s 			page 36
 
 
  1285 012c B9E7     		b	.L60
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  170:Drivers/lvgl/src/draw/lv_draw_image.c **** 
  1330              		.loc 1 170 21 is_stmt 1 view .LVU340
  1331 0174 6A68     		ldr	r2, [r5, #4]
-ARM GAS  /tmp/ccKUplIl.s 			page 37
+ARM GAS  /tmp/ccABE5NB.s 			page 37
 
 
  1332 0176 2968     		ldr	r1, [r5]
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  177:Drivers/lvgl/src/draw/lv_draw_image.c ****                     }
  1377              		.loc 1 177 44 view .LVU350
  1378 01c2 1C69     		ldr	r4, [r3, #16]
-ARM GAS  /tmp/ccKUplIl.s 			page 38
+ARM GAS  /tmp/ccABE5NB.s 			page 38
 
 
  1379              	.LVL126:
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  1429 0000 002B     		cmp	r3, #0
  1430 0002 5CD0     		beq	.L84
  207:Drivers/lvgl/src/draw/lv_draw_image.c ****     if(draw_core_cb == NULL) {
-ARM GAS  /tmp/ccKUplIl.s 			page 39
+ARM GAS  /tmp/ccABE5NB.s 			page 39
 
 
  1431              		.loc 1 207 1 view .LVU357
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
   30:Drivers/lvgl/src/draw/../misc/../font/../draw/../misc/lv_area.h ****  */
   31:Drivers/lvgl/src/draw/../misc/../font/../draw/../misc/lv_area.h **** typedef struct {
   32:Drivers/lvgl/src/draw/../misc/../font/../draw/../misc/lv_area.h ****     int32_t x;
-ARM GAS  /tmp/ccKUplIl.s 			page 40
+ARM GAS  /tmp/ccABE5NB.s 			page 40
 
 
   33:Drivers/lvgl/src/draw/../misc/../font/../draw/../misc/lv_area.h ****     int32_t y;
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
   87:Drivers/lvgl/src/draw/../misc/../font/../draw/../misc/lv_area.h **** 
   88:Drivers/lvgl/src/draw/../misc/../font/../draw/../misc/lv_area.h **** /**********************
   89:Drivers/lvgl/src/draw/../misc/../font/../draw/../misc/lv_area.h ****  * GLOBAL PROTOTYPES
-ARM GAS  /tmp/ccKUplIl.s 			page 41
+ARM GAS  /tmp/ccABE5NB.s 			page 41
 
 
   90:Drivers/lvgl/src/draw/../misc/../font/../draw/../misc/lv_area.h ****  **********************/
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  1483 0022 0B6B     		ldr	r3, [r1, #48]
  215:Drivers/lvgl/src/draw/lv_draw_image.c ****         int32_t w = lv_area_get_width(coords);
  1484              		.loc 1 215 7 view .LVU376
-ARM GAS  /tmp/ccKUplIl.s 			page 42
+ARM GAS  /tmp/ccABE5NB.s 			page 42
 
 
  1485 0024 1BB9     		cbnz	r3, .L80
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  222:Drivers/lvgl/src/draw/lv_draw_image.c ****         draw_area.y1 += coords->y1;
  1527              		.loc 1 222 31 is_stmt 0 view .LVU389
  1528 0056 2168     		ldr	r1, [r4]
-ARM GAS  /tmp/ccKUplIl.s 			page 43
+ARM GAS  /tmp/ccABE5NB.s 			page 43
 
 
  222:Drivers/lvgl/src/draw/lv_draw_image.c ****         draw_area.y1 += coords->y1;
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  1567              		.loc 1 243 1 view .LVU405
  1568 0080 20B0     		add	sp, sp, #128
  1569              	.LCFI26:
-ARM GAS  /tmp/ccKUplIl.s 			page 44
+ARM GAS  /tmp/ccABE5NB.s 			page 44
 
 
  1570              		.cfi_remember_state
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  1614 00b8 FFF7FEFF 		bl	lv_image_decoder_close
  1615              	.LVL148:
  1616 00bc E0E7     		b	.L78
-ARM GAS  /tmp/ccKUplIl.s 			page 45
+ARM GAS  /tmp/ccABE5NB.s 			page 45
 
 
  1617              	.LVL149:
@@ -2688,35 +2688,35 @@ ARM GAS  /tmp/ccKUplIl.s 			page 1
  1661              		.file 23 "Drivers/lvgl/src/draw/../display/../misc/lv_event.h"
  1662              		.file 24 "Drivers/lvgl/src/draw/../core/lv_obj.h"
  1663              		.file 25 "Drivers/lvgl/src/draw/../misc/lv_area_private.h"
-ARM GAS  /tmp/ccKUplIl.s 			page 46
+ARM GAS  /tmp/ccABE5NB.s 			page 46
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_draw_image.c
-     /tmp/ccKUplIl.s:21     .text.img_decode_and_draw:00000000 $t
-     /tmp/ccKUplIl.s:26     .text.img_decode_and_draw:00000000 img_decode_and_draw
-     /tmp/ccKUplIl.s:234    .text.img_decode_and_draw:000000d8 $d
-     /tmp/ccKUplIl.s:240    .text.lv_draw_image_dsc_init:00000000 $t
-     /tmp/ccKUplIl.s:246    .text.lv_draw_image_dsc_init:00000000 lv_draw_image_dsc_init
-     /tmp/ccKUplIl.s:315    .text.lv_draw_image_dsc_init:00000048 $d
-     /tmp/ccKUplIl.s:320    .text.lv_draw_task_get_image_dsc:00000000 $t
-     /tmp/ccKUplIl.s:326    .text.lv_draw_task_get_image_dsc:00000000 lv_draw_task_get_image_dsc
-     /tmp/ccKUplIl.s:356    .text.lv_image_src_get_type:00000000 $t
-     /tmp/ccKUplIl.s:362    .text.lv_image_src_get_type:00000000 lv_image_src_get_type
-     /tmp/ccKUplIl.s:418    .text.lv_draw_image_tiled_helper:00000000 $t
-     /tmp/ccKUplIl.s:424    .text.lv_draw_image_tiled_helper:00000000 lv_draw_image_tiled_helper
-     /tmp/ccKUplIl.s:648    .text.lv_draw_image_tiled_helper:000000e0 $d
-     /tmp/ccKUplIl.s:653    .text.lv_image_buf_get_transformed_area:00000000 $t
-     /tmp/ccKUplIl.s:659    .text.lv_image_buf_get_transformed_area:00000000 lv_image_buf_get_transformed_area
-     /tmp/ccKUplIl.s:860    .text.lv_draw_layer:00000000 $t
-     /tmp/ccKUplIl.s:866    .text.lv_draw_layer:00000000 lv_draw_layer
-     /tmp/ccKUplIl.s:1021   .text.lv_draw_layer:00000094 $d
-     /tmp/ccKUplIl.s:1026   .text.lv_draw_image:00000000 $t
-     /tmp/ccKUplIl.s:1032   .text.lv_draw_image:00000000 lv_draw_image
-     /tmp/ccKUplIl.s:1409   .text.lv_draw_image:000001d4 $d
-     /tmp/ccKUplIl.s:1414   .text.lv_draw_image_normal_helper:00000000 $t
-     /tmp/ccKUplIl.s:1420   .text.lv_draw_image_normal_helper:00000000 lv_draw_image_normal_helper
-     /tmp/ccKUplIl.s:1633   .rodata:00000000 $d
+     /tmp/ccABE5NB.s:21     .text.img_decode_and_draw:00000000 $t
+     /tmp/ccABE5NB.s:26     .text.img_decode_and_draw:00000000 img_decode_and_draw
+     /tmp/ccABE5NB.s:234    .text.img_decode_and_draw:000000d8 $d
+     /tmp/ccABE5NB.s:240    .text.lv_draw_image_dsc_init:00000000 $t
+     /tmp/ccABE5NB.s:246    .text.lv_draw_image_dsc_init:00000000 lv_draw_image_dsc_init
+     /tmp/ccABE5NB.s:315    .text.lv_draw_image_dsc_init:00000048 $d
+     /tmp/ccABE5NB.s:320    .text.lv_draw_task_get_image_dsc:00000000 $t
+     /tmp/ccABE5NB.s:326    .text.lv_draw_task_get_image_dsc:00000000 lv_draw_task_get_image_dsc
+     /tmp/ccABE5NB.s:356    .text.lv_image_src_get_type:00000000 $t
+     /tmp/ccABE5NB.s:362    .text.lv_image_src_get_type:00000000 lv_image_src_get_type
+     /tmp/ccABE5NB.s:418    .text.lv_draw_image_tiled_helper:00000000 $t
+     /tmp/ccABE5NB.s:424    .text.lv_draw_image_tiled_helper:00000000 lv_draw_image_tiled_helper
+     /tmp/ccABE5NB.s:648    .text.lv_draw_image_tiled_helper:000000e0 $d
+     /tmp/ccABE5NB.s:653    .text.lv_image_buf_get_transformed_area:00000000 $t
+     /tmp/ccABE5NB.s:659    .text.lv_image_buf_get_transformed_area:00000000 lv_image_buf_get_transformed_area
+     /tmp/ccABE5NB.s:860    .text.lv_draw_layer:00000000 $t
+     /tmp/ccABE5NB.s:866    .text.lv_draw_layer:00000000 lv_draw_layer
+     /tmp/ccABE5NB.s:1021   .text.lv_draw_layer:00000094 $d
+     /tmp/ccABE5NB.s:1026   .text.lv_draw_image:00000000 $t
+     /tmp/ccABE5NB.s:1032   .text.lv_draw_image:00000000 lv_draw_image
+     /tmp/ccABE5NB.s:1409   .text.lv_draw_image:000001d4 $d
+     /tmp/ccABE5NB.s:1414   .text.lv_draw_image_normal_helper:00000000 $t
+     /tmp/ccABE5NB.s:1420   .text.lv_draw_image_normal_helper:00000000 lv_draw_image_normal_helper
+     /tmp/ccABE5NB.s:1633   .rodata:00000000 $d
 
 UNDEFINED SYMBOLS
 lv_area_move

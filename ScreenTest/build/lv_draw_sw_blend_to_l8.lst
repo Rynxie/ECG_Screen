@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccB7ORwg.s 			page 1
+ARM GAS  /tmp/ccK4ASAU.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
   28:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c **** 
   29:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c **** /*********************
   30:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****  *      DEFINES
-ARM GAS  /tmp/ccB7ORwg.s 			page 2
+ARM GAS  /tmp/ccK4ASAU.s 			page 2
 
 
   31:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****  *********************/
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
   85:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c **** #ifndef LV_DRAW_SW_COLOR_BLEND_TO_L8_WITH_OPA
   86:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****     #define LV_DRAW_SW_COLOR_BLEND_TO_L8_WITH_OPA(...)                LV_RESULT_INVALID
   87:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c **** #endif
-ARM GAS  /tmp/ccB7ORwg.s 			page 3
+ARM GAS  /tmp/ccK4ASAU.s 			page 3
 
 
   88:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c **** 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  142:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****     #define LV_DRAW_SW_L8_BLEND_NORMAL_TO_L8_MIX_MASK_OPA(...)  LV_RESULT_INVALID
  143:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c **** #endif
  144:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c **** 
-ARM GAS  /tmp/ccB7ORwg.s 			page 4
+ARM GAS  /tmp/ccK4ASAU.s 			page 4
 
 
  145:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c **** #ifndef LV_DRAW_SW_AL88_BLEND_NORMAL_TO_L8
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  199:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****     LV_UNUSED(mask_stride);
  200:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****     LV_UNUSED(dest_stride);
  201:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c **** 
-ARM GAS  /tmp/ccB7ORwg.s 			page 5
+ARM GAS  /tmp/ccK4ASAU.s 			page 5
 
 
  202:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****     /*Simple fill*/
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  256:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****             uint8_t * dest_buf = dsc->dest_buf;
  257:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****             for(y = 0; y < h; y++) {
  258:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                 for(x = 0; x < w; x++) {
-ARM GAS  /tmp/ccB7ORwg.s 			page 6
+ARM GAS  /tmp/ccK4ASAU.s 			page 6
 
 
  259:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                     lv_color_8_8_mix(color8, &dest_buf[x], mask[x]);
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  313:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c **** #endif
  314:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c **** #if LV_DRAW_SW_SUPPORT_I1
  315:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****         case LV_COLOR_FORMAT_I1:
-ARM GAS  /tmp/ccB7ORwg.s 			page 7
+ARM GAS  /tmp/ccK4ASAU.s 			page 7
 
 
  316:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****             i1_image_blend(dsc);
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  370:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****         }
  371:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****         else if(mask_buf && opa >= LV_OPA_MAX) {
  372:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****             if(LV_RESULT_INVALID == LV_DRAW_SW_I1_BLEND_NORMAL_TO_L8_WITH_MASK(dsc)) {
-ARM GAS  /tmp/ccB7ORwg.s 			page 8
+ARM GAS  /tmp/ccK4ASAU.s 			page 8
 
 
  373:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                 for(y = 0; y < h; y++) {
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  427:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****     int32_t mask_stride = dsc->mask_stride;
  428:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c **** 
  429:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****     int32_t dest_x;
-ARM GAS  /tmp/ccB7ORwg.s 			page 9
+ARM GAS  /tmp/ccK4ASAU.s 			page 9
 
 
  430:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****     int32_t src_x;
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  484:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                 src_argb.green = src_buf_l8[src_x];
  485:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                 src_argb.blue = src_buf_l8[src_x];
  486:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                 if(mask_buf == NULL) src_argb.alpha = opa;
-ARM GAS  /tmp/ccB7ORwg.s 			page 10
+ARM GAS  /tmp/ccK4ASAU.s 			page 10
 
 
  487:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                 else src_argb.alpha = LV_OPA_MIX2(mask_buf[dest_x], opa);
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  541:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                     for(dest_x = 0, src_x = 0; src_x < w; dest_x++, src_x++) {
  542:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                         lv_color_8_8_mix(src_buf_al88[src_x].lumi, &dest_buf_l8[dest_x], LV_OPA_MIX
  543:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                                                                                                    
-ARM GAS  /tmp/ccB7ORwg.s 			page 11
+ARM GAS  /tmp/ccK4ASAU.s 			page 11
 
 
  544:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                     }
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  598:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c **** 
  599:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****     int32_t src_x;
  600:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****     int32_t dest_x;
-ARM GAS  /tmp/ccB7ORwg.s 			page 12
+ARM GAS  /tmp/ccK4ASAU.s 			page 12
 
 
  601:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****     int32_t y;
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  655:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                 src_argb.red = (src_buf_c16[src_x].red * 2106) >> 8;
  656:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                 src_argb.green = (src_buf_c16[src_x].green * 1037) >> 8;
  657:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                 src_argb.blue = (src_buf_c16[src_x].blue * 2106) >> 8;
-ARM GAS  /tmp/ccB7ORwg.s 			page 13
+ARM GAS  /tmp/ccK4ASAU.s 			page 13
 
 
  658:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                 if(mask_buf == NULL) src_argb.alpha = opa;
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  712:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****             }
  713:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****         }
  714:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****         if(mask_buf && opa >= LV_OPA_MAX) {
-ARM GAS  /tmp/ccB7ORwg.s 			page 14
+ARM GAS  /tmp/ccK4ASAU.s 			page 14
 
 
  715:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****             if(LV_RESULT_INVALID == LV_DRAW_SW_RGB888_BLEND_NORMAL_TO_L8_WITH_MASK(dsc, dest_px_siz
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  769:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****     uint8_t * dest_buf_l8 = dsc->dest_buf;
  770:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****     int32_t dest_stride = dsc->dest_stride;
  771:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****     const lv_color32_t * src_buf_c32 = dsc->src_buf;
-ARM GAS  /tmp/ccB7ORwg.s 			page 15
+ARM GAS  /tmp/ccK4ASAU.s 			page 15
 
 
  772:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****     int32_t src_stride = dsc->src_stride;
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  826:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****         }
  827:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****     }
  828:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****     else {
-ARM GAS  /tmp/ccB7ORwg.s 			page 16
+ARM GAS  /tmp/ccK4ASAU.s 			page 16
 
 
  829:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****         for(y = 0; y < h; y++) {
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
   56              	.LVL2:
   57              		.loc 1 855 58 view .LVU11
   58 0012 02FB03F3 		mul	r3, r2, r3
-ARM GAS  /tmp/ccB7ORwg.s 			page 17
+ARM GAS  /tmp/ccK4ASAU.s 			page 17
 
 
   59              	.LVL3:
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  100 0008 1546     		mov	r5, r2
  871:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****     uint8_t res;
  101              		.loc 1 871 5 is_stmt 1 view .LVU19
-ARM GAS  /tmp/ccB7ORwg.s 			page 18
+ARM GAS  /tmp/ccK4ASAU.s 			page 18
 
 
  872:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****     int32_t src_lumi = lv_color32_luminance(src);
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  137 002e 2146     		mov	r1, r4
  138 0030 FFF7FEFF 		bl	lv_color_8_8_mix
  139              	.LVL10:
-ARM GAS  /tmp/ccB7ORwg.s 			page 19
+ARM GAS  /tmp/ccK4ASAU.s 			page 19
 
 
  140              	.L4:
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  181 0052 1B1A     		subs	r3, r3, r0
  182 0054 002B     		cmp	r3, #0
  183 0056 B8BF     		it	lt
-ARM GAS  /tmp/ccB7ORwg.s 			page 20
+ARM GAS  /tmp/ccK4ASAU.s 			page 20
 
 
  184 0058 5B42     		rsblt	r3, r3, #0
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  231              		.loc 1 591 5 is_stmt 1 view .LVU51
  591:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****     uint8_t * dest_buf_u8 = dsc->dest_buf;
  232              		.loc 1 591 14 is_stmt 0 view .LVU52
-ARM GAS  /tmp/ccB7ORwg.s 			page 21
+ARM GAS  /tmp/ccK4ASAU.s 			page 21
 
 
  233 000c 90F82190 		ldrb	r9, [r0, #33]	@ zero_extendqisi2
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  603:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****         if(mask_buf == NULL && opa >= LV_OPA_MAX) {
  269              		.loc 1 603 11 is_stmt 0 view .LVU71
  270 0024 90F82230 		ldrb	r3, [r0, #34]	@ zero_extendqisi2
-ARM GAS  /tmp/ccB7ORwg.s 			page 22
+ARM GAS  /tmp/ccK4ASAU.s 			page 22
 
 
  271              	.LVL30:
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  312 006c 5D46     		mov	r5, fp
  313              	.LVL32:
  640:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                     for(src_x = 0, dest_x = 0; src_x < w; dest_x++, src_x++) {
-ARM GAS  /tmp/ccB7ORwg.s 			page 23
+ARM GAS  /tmp/ccK4ASAU.s 			page 23
 
 
  314              		.loc 1 640 23 view .LVU85
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  353              	.LVL39:
  354              		.loc 1 895 12 view .LVU100
  355              	.LBE125:
-ARM GAS  /tmp/ccB7ORwg.s 			page 24
+ARM GAS  /tmp/ccK4ASAU.s 			page 24
 
 
  356              	.LBE124:
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  398              	.L24:
  618:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                         lv_color_8_8_mix(lv_color16_luminance(src_buf_c16[src_x]), &dest_buf_u8[des
  399              		.loc 1 618 54 is_stmt 1 discriminator 1 view .LVU113
-ARM GAS  /tmp/ccB7ORwg.s 			page 25
+ARM GAS  /tmp/ccK4ASAU.s 			page 25
 
 
  400 00c2 BC42     		cmp	r4, r7
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  443 00e8 35F81400 		ldrh	r0, [r5, r4, lsl #1]
  444 00ec FFF7FEFF 		bl	lv_color16_luminance
  445              	.LVL55:
-ARM GAS  /tmp/ccB7ORwg.s 			page 26
+ARM GAS  /tmp/ccK4ASAU.s 			page 26
 
 
  630:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                     }
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  628:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                     for(src_x = 0, dest_x = 0; src_x < w; dest_x++, src_x++) {
  488              		.loc 1 628 30 discriminator 1 view .LVU143
  489 0112 049B     		ldr	r3, [sp, #16]
-ARM GAS  /tmp/ccB7ORwg.s 			page 27
+ARM GAS  /tmp/ccK4ASAU.s 			page 27
 
 
  490 0114 9945     		cmp	r9, r3
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  532 0146 BC42     		cmp	r4, r7
  533 0148 EFDB     		blt	.L29
  644:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                     src_buf_c16 = drawbuf_next_row(src_buf_c16, src_stride);
-ARM GAS  /tmp/ccB7ORwg.s 			page 28
+ARM GAS  /tmp/ccK4ASAU.s 			page 28
 
 
  534              		.loc 1 644 21 view .LVU156
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  577 016c 1B0A     		lsrs	r3, r3, #8
  659:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                 blend_non_normal_pixel(&dest_buf_u8[dest_x], src_argb, dsc->blend_mode);
  578              		.loc 1 659 37 view .LVU171
-ARM GAS  /tmp/ccB7ORwg.s 			page 29
+ARM GAS  /tmp/ccK4ASAU.s 			page 29
 
 
  579 016e 8DF81F30 		strb	r3, [sp, #31]
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  618              		.loc 1 656 68 view .LVU186
  619 01ae 1B12     		asrs	r3, r3, #8
  656:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                 src_argb.blue = (src_buf_c16[src_x].blue * 2106) >> 8;
-ARM GAS  /tmp/ccB7ORwg.s 			page 30
+ARM GAS  /tmp/ccK4ASAU.s 			page 30
 
 
  620              		.loc 1 656 32 view .LVU187
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  658 01e0 9A44     		add	r10, r10, r3
  659              	.LVL82:
  660              	.L34:
-ARM GAS  /tmp/ccB7ORwg.s 			page 31
+ARM GAS  /tmp/ccK4ASAU.s 			page 31
 
 
  663:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****             src_buf_c16 = drawbuf_next_row(src_buf_c16, src_stride);
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  653:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****             for(src_x = 0, dest_x = 0; src_x < w; src_x++, dest_x++) {
  704              		.loc 1 653 15 view .LVU218
  705 0202 0022     		movs	r2, #0
-ARM GAS  /tmp/ccB7ORwg.s 			page 32
+ARM GAS  /tmp/ccK4ASAU.s 			page 32
 
 
  706 0204 5B46     		mov	r3, fp
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  755 0004 89B0     		sub	sp, sp, #36
  756              	.LCFI8:
  757              		.cfi_def_cfa_offset 72
-ARM GAS  /tmp/ccB7ORwg.s 			page 33
+ARM GAS  /tmp/ccK4ASAU.s 			page 33
 
 
  501:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****     int32_t h = dsc->dest_h;
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  794              		.loc 1 508 22 is_stmt 0 view .LVU243
  795 001e D0F810B0 		ldr	fp, [r0, #16]
  796              	.LVL102:
-ARM GAS  /tmp/ccB7ORwg.s 			page 34
+ARM GAS  /tmp/ccK4ASAU.s 			page 34
 
 
  509:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c **** 
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  834              		.loc 1 538 14 is_stmt 1 view .LVU260
  538:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****             if(LV_RESULT_INVALID == LV_DRAW_SW_AL88_BLEND_NORMAL_TO_L8_WITH_MASK(dsc)) {
  835              		.loc 1 538 17 is_stmt 0 view .LVU261
-ARM GAS  /tmp/ccB7ORwg.s 			page 35
+ARM GAS  /tmp/ccK4ASAU.s 			page 35
 
 
  836 0050 BBF10003 		subs	r3, fp, #0
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  522:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                     src_buf_al88 = drawbuf_next_row(src_buf_al88, src_stride);
  879              		.loc 1 522 21 view .LVU273
  880              	.LVL111:
-ARM GAS  /tmp/ccB7ORwg.s 			page 36
+ARM GAS  /tmp/ccK4ASAU.s 			page 36
 
 
  881              	.LBB135:
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  518:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                     for(dest_x = 0, src_x = 0; src_x < w; dest_x++, src_x++) {
  926              		.loc 1 518 23 view .LVU289
  927 00a2 F3E7     		b	.L51
-ARM GAS  /tmp/ccB7ORwg.s 			page 37
+ARM GAS  /tmp/ccK4ASAU.s 			page 37
 
 
  928              	.LVL118:
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  970              		.loc 1 893 44 view .LVU304
  971              	.LBB142:
  972              		.loc 1 895 5 view .LVU305
-ARM GAS  /tmp/ccB7ORwg.s 			page 38
+ARM GAS  /tmp/ccK4ASAU.s 			page 38
 
 
  973              		.loc 1 895 12 is_stmt 0 view .LVU306
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  541:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                         lv_color_8_8_mix(src_buf_al88[src_x].lumi, &dest_buf_l8[dest_x], LV_OPA_MIX
  1016              		.loc 1 541 65 is_stmt 0 discriminator 3 view .LVU319
  1017 0100 0135     		adds	r5, r5, #1
-ARM GAS  /tmp/ccB7ORwg.s 			page 39
+ARM GAS  /tmp/ccK4ASAU.s 			page 39
 
 
  1018              	.LVL130:
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  1062 0116 049B     		ldr	r3, [sp, #16]
  1063 0118 9A45     		cmp	r10, r3
  1064 011a A2DA     		bge	.L49
-ARM GAS  /tmp/ccB7ORwg.s 			page 40
+ARM GAS  /tmp/ccK4ASAU.s 			page 40
 
 
  541:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                         lv_color_8_8_mix(src_buf_al88[src_x].lumi, &dest_buf_l8[dest_x], LV_OPA_MIX
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  1106 0152 0134     		adds	r4, r4, #1
  1107              	.LVL144:
  1108              	.L66:
-ARM GAS  /tmp/ccB7ORwg.s 			page 41
+ARM GAS  /tmp/ccK4ASAU.s 			page 41
 
 
  554:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                         lv_color_8_8_mix(src_buf_al88[src_x].lumi, &dest_buf_l8[dest_x], LV_OPA_MIX
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  1153 0170 0024     		movs	r4, #0
  554:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                         lv_color_8_8_mix(src_buf_al88[src_x].lumi, &dest_buf_l8[dest_x], LV_OPA_MIX
  1154              		.loc 1 554 32 view .LVU365
-ARM GAS  /tmp/ccB7ORwg.s 			page 42
+ARM GAS  /tmp/ccK4ASAU.s 			page 42
 
 
  1155 0172 2546     		mov	r5, r4
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  1197              		.loc 1 569 51 is_stmt 0 view .LVU377
  1198 01a6 19F81430 		ldrb	r3, [r9, r4, lsl #1]	@ zero_extendqisi2
  569:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                 src_argb.green = src_buf_al88[src_x].lumi;
-ARM GAS  /tmp/ccB7ORwg.s 			page 43
+ARM GAS  /tmp/ccK4ASAU.s 			page 43
 
 
  1199              		.loc 1 569 30 view .LVU378
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  1238              	.LBE153:
  1239              	.LBE152:
  578:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****         }
-ARM GAS  /tmp/ccB7ORwg.s 			page 44
+ARM GAS  /tmp/ccK4ASAU.s 			page 44
 
 
  1240              		.loc 1 578 13 is_stmt 1 view .LVU397
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  1284 01f8 EDE7     		b	.L50
  1285              	.LBE151:
  1286              		.cfi_endproc
-ARM GAS  /tmp/ccB7ORwg.s 			page 45
+ARM GAS  /tmp/ccK4ASAU.s 			page 45
 
 
  1287              	.LFE190:
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  1333 0010 D0F80090 		ldr	r9, [r0]
  1334              	.LVL168:
  336:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****     const uint8_t * src_buf_i1 = dsc->src_buf;
-ARM GAS  /tmp/ccB7ORwg.s 			page 46
+ARM GAS  /tmp/ccK4ASAU.s 			page 46
 
 
  1335              		.loc 1 336 5 is_stmt 1 view .LVU421
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  1371              		.loc 1 347 9 is_stmt 1 view .LVU439
  347:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****             if(LV_RESULT_INVALID == LV_DRAW_SW_I1_BLEND_NORMAL_TO_L8(dsc)) {
  1372              		.loc 1 347 21 is_stmt 0 view .LVU440
-ARM GAS  /tmp/ccB7ORwg.s 			page 47
+ARM GAS  /tmp/ccK4ASAU.s 			page 47
 
 
  1373 002e B7FA87F3 		clz	r3, r7
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  1415              	.LVL179:
  1416              	.L91:
  1417              	.LCFI14:
-ARM GAS  /tmp/ccB7ORwg.s 			page 48
+ARM GAS  /tmp/ccK4ASAU.s 			page 48
 
 
  1418              		.cfi_restore_state
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  1459              	.L93:
  350:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                         uint8_t chan_val = get_bit(src_buf_i1, src_x) * 255;
  1460              		.loc 1 350 54 is_stmt 1 discriminator 1 view .LVU466
-ARM GAS  /tmp/ccB7ORwg.s 			page 49
+ARM GAS  /tmp/ccK4ASAU.s 			page 49
 
 
  1461 0094 AC42     		cmp	r4, r5
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  1505 00a8 1E44     		add	r6, r6, r3
  1506              	.LVL188:
  1507              		.loc 1 895 12 view .LVU482
-ARM GAS  /tmp/ccB7ORwg.s 			page 50
+ARM GAS  /tmp/ccK4ASAU.s 			page 50
 
 
  1508              	.LBE165:
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  1551              		.loc 1 864 36 view .LVU493
  1552 00da C3F10703 		rsb	r3, r3, #7
  864:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c **** }
-ARM GAS  /tmp/ccB7ORwg.s 			page 51
+ARM GAS  /tmp/ccK4ASAU.s 			page 51
 
 
  1553              		.loc 1 864 30 view .LVU494
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  864:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c **** }
  1594              		.loc 1 864 25 view .LVU508
  1595 00fe E31D     		adds	r3, r4, #7
-ARM GAS  /tmp/ccB7ORwg.s 			page 52
+ARM GAS  /tmp/ccK4ASAU.s 			page 52
 
 
  1596 0100 E2E7     		b	.L97
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  1641              	.LVL204:
  1642              	.L118:
  361:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                     for(dest_x = 0, src_x = 0; src_x < w; dest_x++, src_x++) {
-ARM GAS  /tmp/ccB7ORwg.s 			page 53
+ARM GAS  /tmp/ccK4ASAU.s 			page 53
 
 
  1643              		.loc 1 361 23 view .LVU524
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  1686 014e FFF7FEFF 		bl	lv_color_8_8_mix
  1687              	.LVL210:
  376:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                     }
-ARM GAS  /tmp/ccB7ORwg.s 			page 54
+ARM GAS  /tmp/ccK4ASAU.s 			page 54
 
 
  1688              		.loc 1 376 25 view .LVU536
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  1730 0166 9B44     		add	fp, fp, r3
  1731              	.LVL215:
  1732              		.loc 1 895 12 view .LVU551
-ARM GAS  /tmp/ccB7ORwg.s 			page 55
+ARM GAS  /tmp/ccK4ASAU.s 			page 55
 
 
  1733              	.LBE183:
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  1776 018a 5746     		mov	r7, r10
  1777              	.LVL222:
  373:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                     for(dest_x = 0, src_x = 0; src_x < w; dest_x++, src_x++) {
-ARM GAS  /tmp/ccB7ORwg.s 			page 56
+ARM GAS  /tmp/ccK4ASAU.s 			page 56
 
 
  1778              		.loc 1 373 23 view .LVU566
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  389:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                     }
  1820              		.loc 1 389 25 view .LVU579
  1821              	.LBE186:
-ARM GAS  /tmp/ccB7ORwg.s 			page 57
+ARM GAS  /tmp/ccK4ASAU.s 			page 57
 
 
  387:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                         uint8_t chan_val = get_bit(src_buf_i1, src_x) * 255;
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  1864              		.loc 1 895 12 view .LVU594
  1865              	.LBE193:
  1866              	.LBE192:
-ARM GAS  /tmp/ccB7ORwg.s 			page 58
+ARM GAS  /tmp/ccK4ASAU.s 			page 58
 
 
  392:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                     mask_buf += mask_stride;
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  1910 01fa 0392     		str	r2, [sp, #12]
  1911 01fc 9946     		mov	r9, r3
  1912              	.LVL239:
-ARM GAS  /tmp/ccB7ORwg.s 			page 59
+ARM GAS  /tmp/ccK4ASAU.s 			page 59
 
 
  386:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                     for(dest_x = 0, src_x = 0; src_x < w; dest_x++, src_x++) {
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  406:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                 blend_non_normal_pixel(&dest_buf_l8[dest_x], src_argb, dsc->blend_mode);
  1952              		.loc 1 406 39 is_stmt 0 view .LVU624
  1953 022c 15F80830 		ldrb	r3, [r5, r8]	@ zero_extendqisi2
-ARM GAS  /tmp/ccB7ORwg.s 			page 60
+ARM GAS  /tmp/ccK4ASAU.s 			page 60
 
 
  1954 0230 03FB0BF3 		mul	r3, r3, fp
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  1995              		.loc 1 405 38 is_stmt 1 discriminator 1 view .LVU637
  405:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                 else src_argb.alpha = LV_OPA_MIX2(mask_buf[dest_x], opa);
  1996              		.loc 1 405 53 is_stmt 0 discriminator 1 view .LVU638
-ARM GAS  /tmp/ccB7ORwg.s 			page 61
+ARM GAS  /tmp/ccK4ASAU.s 			page 61
 
 
  1997 025c 8DF81FB0 		strb	fp, [sp, #31]
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  2040 027a 029B     		ldr	r3, [sp, #8]
  2041 027c 1F44     		add	r7, r7, r3
  2042              	.LVL252:
-ARM GAS  /tmp/ccB7ORwg.s 			page 62
+ARM GAS  /tmp/ccK4ASAU.s 			page 62
 
 
  2043              		.loc 1 895 12 view .LVU655
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  2088              		.syntax unified
  2089              		.thumb
  2090              		.thumb_func
-ARM GAS  /tmp/ccB7ORwg.s 			page 63
+ARM GAS  /tmp/ccK4ASAU.s 			page 63
 
 
  2092              	argb8888_image_blend:
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  2134 0014 C368     		ldr	r3, [r0, #12]
  2135 0016 0093     		str	r3, [sp]
  2136              	.LVL264:
-ARM GAS  /tmp/ccB7ORwg.s 			page 64
+ARM GAS  /tmp/ccK4ASAU.s 			page 64
 
 
  771:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****     int32_t src_stride = dsc->src_stride;
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  780:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****             if(LV_RESULT_INVALID == LV_DRAW_SW_L8_BLEND_NORMAL_TO_L8(dsc)) {
  2174              		.loc 1 780 11 view .LVU695
  2175 003e 1342     		tst	r3, r2
-ARM GAS  /tmp/ccB7ORwg.s 			page 65
+ARM GAS  /tmp/ccK4ASAU.s 			page 65
 
 
  2176 0040 2AD1     		bne	.L159
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  2217 006c 55F82400 		ldr	r0, [r5, r4, lsl #2]	@ unaligned
  2218 0070 FFF7FEFF 		bl	lv_color32_luminance
  2219              	.LVL274:
-ARM GAS  /tmp/ccB7ORwg.s 			page 66
+ARM GAS  /tmp/ccK4ASAU.s 			page 66
 
 
  784:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                     }
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  783:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                         lv_color_8_8_mix(lv_color32_luminance(src_buf_c32[x]), &dest_buf_l8[x], src
  2265              		.loc 1 783 27 is_stmt 0 view .LVU724
  2266 0094 0024     		movs	r4, #0
-ARM GAS  /tmp/ccB7ORwg.s 			page 67
+ARM GAS  /tmp/ccK4ASAU.s 			page 67
 
 
  2267 0096 F4E7     		b	.L140
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  2309              		.loc 1 895 12 is_stmt 0 view .LVU738
  2310 00c6 009B     		ldr	r3, [sp]
  2311 00c8 9844     		add	r8, r8, r3
-ARM GAS  /tmp/ccB7ORwg.s 			page 68
+ARM GAS  /tmp/ccK4ASAU.s 			page 68
 
 
  2312              	.LVL289:
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  2355              		.loc 1 806 97 discriminator 1 view .LVU753
  2356 00ec 9BF80320 		ldrb	r2, [fp, #3]	@ zero_extendqisi2
  2357 00f0 19F80430 		ldrb	r3, [r9, r4]	@ zero_extendqisi2
-ARM GAS  /tmp/ccB7ORwg.s 			page 69
+ARM GAS  /tmp/ccK4ASAU.s 			page 69
 
 
  2358 00f4 03FB02F2 		mul	r2, r3, r2
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  2404              		.loc 1 810 21 is_stmt 1 view .LVU768
  810:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                 }
  2405              		.loc 1 810 30 is_stmt 0 view .LVU769
-ARM GAS  /tmp/ccB7ORwg.s 			page 70
+ARM GAS  /tmp/ccK4ASAU.s 			page 70
 
 
  2406 0114 D144     		add	r9, r9, r10
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  2448 014c 120C     		lsrs	r2, r2, #16
  2449 014e 0AEB0401 		add	r1, r10, r4
  2450 0152 FFF7FEFF 		bl	lv_color_8_8_mix
-ARM GAS  /tmp/ccB7ORwg.s 			page 71
+ARM GAS  /tmp/ccK4ASAU.s 			page 71
 
 
  2451              	.LVL309:
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  816:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                     for(x = 0; x < w; x++) {
  2497              		.loc 1 816 36 is_stmt 1 discriminator 2 view .LVU797
  2498 016a 0136     		adds	r6, r6, #1
-ARM GAS  /tmp/ccB7ORwg.s 			page 72
+ARM GAS  /tmp/ccK4ASAU.s 			page 72
 
 
  2499              	.LVL315:
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  2542 01a2 0599     		ldr	r1, [sp, #20]
  2543 01a4 08EB0C00 		add	r0, r8, ip
  2544 01a8 FFF7FEFF 		bl	blend_non_normal_pixel
-ARM GAS  /tmp/ccB7ORwg.s 			page 73
+ARM GAS  /tmp/ccK4ASAU.s 			page 73
 
 
  2545              	.LVL322:
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  2584              	.L156:
  837:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****             src_buf_c32 = drawbuf_next_row(src_buf_c32, src_stride);
  2585              		.loc 1 837 13 is_stmt 1 view .LVU824
-ARM GAS  /tmp/ccB7ORwg.s 			page 74
+ARM GAS  /tmp/ccK4ASAU.s 			page 74
 
 
  2586              	.LBB227:
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  829:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****             for(x = 0; x < w; x++) {
  2632              		.loc 1 829 15 view .LVU839
  2633 01f4 0390     		str	r0, [sp, #12]
-ARM GAS  /tmp/ccB7ORwg.s 			page 75
+ARM GAS  /tmp/ccK4ASAU.s 			page 75
 
 
  2634 01f6 F3E7     		b	.L136
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  2681              		.loc 1 678 14 view .LVU848
  2682 0012 0091     		str	r1, [sp]
  2683              	.LVL335:
-ARM GAS  /tmp/ccB7ORwg.s 			page 76
+ARM GAS  /tmp/ccK4ASAU.s 			page 76
 
 
  679:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****     int32_t dest_stride = dsc->dest_stride;
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  690:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****         /*Special case*/
  2720              		.loc 1 690 5 view .LVU867
  690:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****         /*Special case*/
-ARM GAS  /tmp/ccB7ORwg.s 			page 77
+ARM GAS  /tmp/ccK4ASAU.s 			page 77
 
 
  2721              		.loc 1 690 11 is_stmt 0 view .LVU868
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  2763              		.loc 1 727 9 is_stmt 1 view .LVU880
  727:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****             if(LV_RESULT_INVALID == LV_DRAW_SW_RGB888_BLEND_NORMAL_TO_L8_MIX_MASK_OPA(dsc, dest_px_
  2764              		.loc 1 727 21 is_stmt 0 view .LVU881
-ARM GAS  /tmp/ccB7ORwg.s 			page 78
+ARM GAS  /tmp/ccK4ASAU.s 			page 78
 
 
  2765 006c B8F1000F 		cmp	r8, #0
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  2807 0098 019B     		ldr	r3, [sp, #4]
  2808 009a 9A44     		add	r10, r10, r3
  2809              	.LVL354:
-ARM GAS  /tmp/ccB7ORwg.s 			page 79
+ARM GAS  /tmp/ccK4ASAU.s 			page 79
 
 
  699:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                 }
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  2853              	.LVL362:
  707:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                     }
  2854              		.loc 1 707 25 is_stmt 0 discriminator 1 view .LVU905
-ARM GAS  /tmp/ccB7ORwg.s 			page 80
+ARM GAS  /tmp/ccK4ASAU.s 			page 80
 
 
  2855 00d6 4A46     		mov	r2, r9
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  2896 0100 4FF0000B 		mov	fp, #0
  2897 0104 0493     		str	r3, [sp, #16]
  2898 0106 CDF81890 		str	r9, [sp, #24]
-ARM GAS  /tmp/ccB7ORwg.s 			page 81
+ARM GAS  /tmp/ccK4ASAU.s 			page 81
 
 
  2899 010a 2346     		mov	r3, r4
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  2942              		.loc 1 718 98 discriminator 3 view .LVU929
  2943 0146 B344     		add	fp, fp, r6
  2944              	.LVL380:
-ARM GAS  /tmp/ccB7ORwg.s 			page 82
+ARM GAS  /tmp/ccK4ASAU.s 			page 82
 
 
  2945              	.L186:
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  2985 016e 0023     		movs	r3, #0
  2986 0170 CDF81890 		str	r9, [sp, #24]
  2987 0174 4246     		mov	r2, r8
-ARM GAS  /tmp/ccB7ORwg.s 			page 83
+ARM GAS  /tmp/ccK4ASAU.s 			page 83
 
 
  2988 0176 D046     		mov	r8, r10
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  731:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                         lv_color_8_8_mix(lv_color24_luminance(&src_buf_u8[src_x]), &dest_buf_l8[des
  3031              		.loc 1 731 90 is_stmt 1 discriminator 3 view .LVU955
  731:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                         lv_color_8_8_mix(lv_color24_luminance(&src_buf_u8[src_x]), &dest_buf_l8[des
-ARM GAS  /tmp/ccB7ORwg.s 			page 84
+ARM GAS  /tmp/ccK4ASAU.s 			page 84
 
 
  3032              		.loc 1 731 78 is_stmt 0 discriminator 3 view .LVU956
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  3072              		.loc 1 731 55 view .LVU970
  3073 01d0 CB46     		mov	fp, r9
  731:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                         lv_color_8_8_mix(lv_color24_luminance(&src_buf_u8[src_x]), &dest_buf_l8[des
-ARM GAS  /tmp/ccB7ORwg.s 			page 85
+ARM GAS  /tmp/ccK4ASAU.s 			page 85
 
 
  3074              		.loc 1 731 44 view .LVU971
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  3117              	.L195:
  744:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                 src_argb.red = src_buf_u8[src_x + 2];
  3118              		.loc 1 744 47 is_stmt 1 discriminator 1 view .LVU983
-ARM GAS  /tmp/ccB7ORwg.s 			page 86
+ARM GAS  /tmp/ccK4ASAU.s 			page 86
 
 
  3119 0202 AF42     		cmp	r7, r5
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  3155 0230 1E44     		add	r6, r6, r3
  3156              	.LVL410:
  3157              	.L194:
-ARM GAS  /tmp/ccB7ORwg.s 			page 87
+ARM GAS  /tmp/ccK4ASAU.s 			page 87
 
 
  754:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****             src_buf_u8 += src_stride;
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  3201              		.align	1
  3202              		.syntax unified
  3203              		.thumb
-ARM GAS  /tmp/ccB7ORwg.s 			page 88
+ARM GAS  /tmp/ccK4ASAU.s 			page 88
 
 
  3204              		.thumb_func
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  3247              		.loc 1 423 13 is_stmt 0 view .LVU1025
  3248 0014 C368     		ldr	r3, [r0, #12]
  3249              	.LVL422:
-ARM GAS  /tmp/ccB7ORwg.s 			page 89
+ARM GAS  /tmp/ccK4ASAU.s 			page 89
 
 
  423:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****     const uint8_t * src_buf_l8 = dsc->src_buf;
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  434:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****             if(LV_RESULT_INVALID == LV_DRAW_SW_L8_BLEND_NORMAL_TO_L8(dsc)) {
  3286              		.loc 1 434 36 view .LVU1044
  3287 0034 BBF1FC0F 		cmp	fp, #252
-ARM GAS  /tmp/ccB7ORwg.s 			page 90
+ARM GAS  /tmp/ccK4ASAU.s 			page 90
 
 
  3288 0038 94BF     		ite	ls
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  3329              	.LVL433:
  468:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                     for(dest_x = 0, src_x = 0; src_x < w; dest_x++, src_x++) {
  3330              		.loc 1 468 23 view .LVU1058
-ARM GAS  /tmp/ccB7ORwg.s 			page 91
+ARM GAS  /tmp/ccK4ASAU.s 			page 91
 
 
  3331 0070 5EE0     		b	.L225
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  3377              		.cfi_def_cfa_offset 36
  3378              		@ sp needed
  3379 0088 BDE8F08F 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
-ARM GAS  /tmp/ccB7ORwg.s 			page 92
+ARM GAS  /tmp/ccK4ASAU.s 			page 92
 
 
  3380              	.LVL440:
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  450:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                 }
  3425              		.loc 1 450 21 is_stmt 1 view .LVU1085
  3426              	.LBB240:
-ARM GAS  /tmp/ccB7ORwg.s 			page 93
+ARM GAS  /tmp/ccK4ASAU.s 			page 93
 
 
  3427              	.LBI240:
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  3470              		.loc 1 457 74 discriminator 3 view .LVU1099
  3471 00da 0134     		adds	r4, r4, #1
  3472              	.LVL455:
-ARM GAS  /tmp/ccB7ORwg.s 			page 94
+ARM GAS  /tmp/ccK4ASAU.s 			page 94
 
 
  3473              	.L224:
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  3517 00f4 0024     		movs	r4, #0
  457:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                         lv_color_8_8_mix(src_buf_l8[src_x], &dest_buf_l8[dest_x], mask_buf[src_x]);
  3518              		.loc 1 457 32 view .LVU1116
-ARM GAS  /tmp/ccB7ORwg.s 			page 95
+ARM GAS  /tmp/ccK4ASAU.s 			page 95
 
 
  3519 00f6 2546     		mov	r5, r4
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  3561              	.LBB247:
  3562              		.loc 1 895 5 view .LVU1129
  3563              		.loc 1 895 12 is_stmt 0 view .LVU1130
-ARM GAS  /tmp/ccB7ORwg.s 			page 96
+ARM GAS  /tmp/ccK4ASAU.s 			page 96
 
 
  3564 0120 029B     		ldr	r3, [sp, #8]
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  3608 0142 1B0A     		lsrs	r3, r3, #8
  487:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                 blend_non_normal_pixel(&dest_buf_l8[dest_x], src_argb, dsc->blend_mode);
  3609              		.loc 1 487 37 view .LVU1145
-ARM GAS  /tmp/ccB7ORwg.s 			page 97
+ARM GAS  /tmp/ccK4ASAU.s 			page 97
 
 
  3610 0144 8DF81F30 		strb	r3, [sp, #31]
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  3648              	.L246:
  490:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****             dest_buf_l8 = drawbuf_next_row(dest_buf_l8, dest_stride);
  3649              		.loc 1 490 15 view .LVU1162
-ARM GAS  /tmp/ccB7ORwg.s 			page 98
+ARM GAS  /tmp/ccK4ASAU.s 			page 98
 
 
  3650 0176 019A     		ldr	r2, [sp, #4]
@@ -5878,7 +5878,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  482:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                 src_argb.red = src_buf_l8[src_x];
  3694              		.loc 1 482 35 is_stmt 0 view .LVU1179
  3695 0190 0024     		movs	r4, #0
-ARM GAS  /tmp/ccB7ORwg.s 			page 99
+ARM GAS  /tmp/ccK4ASAU.s 			page 99
 
 
  482:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                 src_argb.red = src_buf_l8[src_x];
@@ -5938,7 +5938,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  3745              		.cfi_offset 14, -4
  3746 0004 83B0     		sub	sp, sp, #12
  3747              	.LCFI28:
-ARM GAS  /tmp/ccB7ORwg.s 			page 100
+ARM GAS  /tmp/ccK4ASAU.s 			page 100
 
 
  3748              		.cfi_def_cfa_offset 48
@@ -5998,7 +5998,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  3782              		.loc 1 198 5 view .LVU1206
  199:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****     LV_UNUSED(dest_stride);
  3783              		.loc 1 199 5 view .LVU1207
-ARM GAS  /tmp/ccB7ORwg.s 			page 101
+ARM GAS  /tmp/ccK4ASAU.s 			page 101
 
 
  200:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c **** 
@@ -6058,7 +6058,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  255:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****             uint8_t * dest_buf = dsc->dest_buf;
  3823              		.loc 1 255 30 view .LVU1223
  3824 004a FFF7FEFF 		bl	lv_color_luminance
-ARM GAS  /tmp/ccB7ORwg.s 			page 102
+ARM GAS  /tmp/ccK4ASAU.s 			page 102
 
 
  3825              	.LVL493:
@@ -6118,7 +6118,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  229:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                     dest_buf[x] = color8;
  3864              		.loc 1 229 25 is_stmt 1 discriminator 1 view .LVU1239
  3865 0066 A342     		cmp	r3, r4
-ARM GAS  /tmp/ccB7ORwg.s 			page 103
+ARM GAS  /tmp/ccK4ASAU.s 			page 103
 
 
  3866 0068 02DA     		bge	.L273
@@ -6178,7 +6178,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  209:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                     dest_buf[x + 1] = color8;
  3907              		.loc 1 209 37 is_stmt 0 view .LVU1256
  3908 0082 D154     		strb	r1, [r2, r3]
-ARM GAS  /tmp/ccB7ORwg.s 			page 104
+ARM GAS  /tmp/ccK4ASAU.s 			page 104
 
 
  210:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                     dest_buf[x + 2] = color8;
@@ -6238,7 +6238,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  3942              		.loc 1 217 37 view .LVU1277
  3943 009e 1154     		strb	r1, [r2, r0]
  219:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                     dest_buf[x + 9] = color8;
-ARM GAS  /tmp/ccB7ORwg.s 			page 105
+ARM GAS  /tmp/ccK4ASAU.s 			page 105
 
 
  3944              		.loc 1 219 21 is_stmt 1 view .LVU1278
@@ -6298,7 +6298,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  3978 00c8 1154     		strb	r1, [r2, r0]
  227:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                 }
  3979              		.loc 1 227 21 is_stmt 1 view .LVU1299
-ARM GAS  /tmp/ccB7ORwg.s 			page 106
+ARM GAS  /tmp/ccK4ASAU.s 			page 106
 
 
  227:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                 }
@@ -6358,7 +6358,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  4019 00ea FFF7FEFF 		bl	lv_color_8_8_mix
  4020              	.LVL515:
  244:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                     lv_color_8_8_mix(color8, &dest_buf[x], opa);
-ARM GAS  /tmp/ccB7ORwg.s 			page 107
+ARM GAS  /tmp/ccK4ASAU.s 			page 107
 
 
  4021              		.loc 1 244 36 discriminator 3 view .LVU1315
@@ -6418,7 +6418,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  258:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****                     lv_color_8_8_mix(color8, &dest_buf[x], mask[x]);
  4066              		.loc 1 258 30 discriminator 1 view .LVU1328
  4067 010e A542     		cmp	r5, r4
-ARM GAS  /tmp/ccB7ORwg.s 			page 108
+ARM GAS  /tmp/ccK4ASAU.s 			page 108
 
 
  4068 0110 F7DB     		blt	.L261
@@ -6478,7 +6478,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  4110 012a 8046     		mov	r8, r0
  4111              	.LVL530:
  271:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****             for(y = 0; y < h; y++) {
-ARM GAS  /tmp/ccB7ORwg.s 			page 109
+ARM GAS  /tmp/ccK4ASAU.s 			page 109
 
 
  4112              		.loc 1 271 13 is_stmt 1 view .LVU1344
@@ -6538,7 +6538,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  4153              		.loc 1 893 44 view .LVU1357
  4154              	.LBB267:
  4155              		.loc 1 895 5 view .LVU1358
-ARM GAS  /tmp/ccB7ORwg.s 			page 110
+ARM GAS  /tmp/ccK4ASAU.s 			page 110
 
 
  4156              		.loc 1 895 12 is_stmt 0 view .LVU1359
@@ -6598,7 +6598,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  4203              	.LFB187:
  284:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c ****     switch(dsc->src_color_format) {
  4204              		.loc 1 284 1 is_stmt 1 view -0
-ARM GAS  /tmp/ccB7ORwg.s 			page 111
+ARM GAS  /tmp/ccK4ASAU.s 			page 111
 
 
  4205              		.cfi_startproc
@@ -6658,7 +6658,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  4251 0026 0321     		movs	r1, #3
  4252 0028 FFF7FEFF 		bl	rgb888_image_blend
  4253              	.LVL547:
-ARM GAS  /tmp/ccB7ORwg.s 			page 112
+ARM GAS  /tmp/ccK4ASAU.s 			page 112
 
 
  294:Drivers/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c **** #endif
@@ -6718,7 +6718,7 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  4297              	.Letext0:
  4298              		.file 2 "/usr/arm-none-eabi/include/machine/_default_types.h"
  4299              		.file 3 "/usr/arm-none-eabi/include/sys/_stdint.h"
-ARM GAS  /tmp/ccB7ORwg.s 			page 113
+ARM GAS  /tmp/ccK4ASAU.s 			page 113
 
 
  4300              		.file 4 "/usr/lib/gcc/arm-none-eabi/14.2.0/include/stddef.h"
@@ -6728,35 +6728,35 @@ ARM GAS  /tmp/ccB7ORwg.s 			page 1
  4304              		.file 8 "Drivers/lvgl/src/draw/sw/blend/../../../misc/../font/../draw/../misc/lv_color.h"
  4305              		.file 9 "Drivers/lvgl/src/draw/sw/blend/../../../misc/lv_style.h"
  4306              		.file 10 "Drivers/lvgl/src/draw/sw/blend/../../../misc/../font/../draw/../misc/../stdlib/lv_string
-ARM GAS  /tmp/ccB7ORwg.s 			page 114
+ARM GAS  /tmp/ccK4ASAU.s 			page 114
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_draw_sw_blend_to_l8.c
-     /tmp/ccB7ORwg.s:21     .text.lv_color_8_8_mix:00000000 $t
-     /tmp/ccB7ORwg.s:26     .text.lv_color_8_8_mix:00000000 lv_color_8_8_mix
-     /tmp/ccB7ORwg.s:76     .text.blend_non_normal_pixel:00000000 $t
-     /tmp/ccB7ORwg.s:81     .text.blend_non_normal_pixel:00000000 blend_non_normal_pixel
-     /tmp/ccB7ORwg.s:115    .text.blend_non_normal_pixel:0000001a $d
-     /tmp/ccB7ORwg.s:119    .text.blend_non_normal_pixel:0000001e $t
-     /tmp/ccB7ORwg.s:194    .text.rgb565_image_blend:00000000 $t
-     /tmp/ccB7ORwg.s:199    .text.rgb565_image_blend:00000000 rgb565_image_blend
-     /tmp/ccB7ORwg.s:730    .text.al88_image_blend:00000000 $t
-     /tmp/ccB7ORwg.s:735    .text.al88_image_blend:00000000 al88_image_blend
-     /tmp/ccB7ORwg.s:1290   .text.i1_image_blend:00000000 $t
-     /tmp/ccB7ORwg.s:1295   .text.i1_image_blend:00000000 i1_image_blend
-     /tmp/ccB7ORwg.s:2087   .text.argb8888_image_blend:00000000 $t
-     /tmp/ccB7ORwg.s:2092   .text.argb8888_image_blend:00000000 argb8888_image_blend
-     /tmp/ccB7ORwg.s:2639   .text.rgb888_image_blend:00000000 $t
-     /tmp/ccB7ORwg.s:2644   .text.rgb888_image_blend:00000000 rgb888_image_blend
-     /tmp/ccB7ORwg.s:3201   .text.l8_image_blend:00000000 $t
-     /tmp/ccB7ORwg.s:3206   .text.l8_image_blend:00000000 l8_image_blend
-     /tmp/ccB7ORwg.s:3720   .text.lv_draw_sw_blend_color_to_l8:00000000 $t
-     /tmp/ccB7ORwg.s:3726   .text.lv_draw_sw_blend_color_to_l8:00000000 lv_draw_sw_blend_color_to_l8
-     /tmp/ccB7ORwg.s:4195   .text.lv_draw_sw_blend_image_to_l8:00000000 $t
-     /tmp/ccB7ORwg.s:4201   .text.lv_draw_sw_blend_image_to_l8:00000000 lv_draw_sw_blend_image_to_l8
-     /tmp/ccB7ORwg.s:4223   .text.lv_draw_sw_blend_image_to_l8:00000010 $d
-     /tmp/ccB7ORwg.s:4239   .text.lv_draw_sw_blend_image_to_l8:00000020 $t
+     /tmp/ccK4ASAU.s:21     .text.lv_color_8_8_mix:00000000 $t
+     /tmp/ccK4ASAU.s:26     .text.lv_color_8_8_mix:00000000 lv_color_8_8_mix
+     /tmp/ccK4ASAU.s:76     .text.blend_non_normal_pixel:00000000 $t
+     /tmp/ccK4ASAU.s:81     .text.blend_non_normal_pixel:00000000 blend_non_normal_pixel
+     /tmp/ccK4ASAU.s:115    .text.blend_non_normal_pixel:0000001a $d
+     /tmp/ccK4ASAU.s:119    .text.blend_non_normal_pixel:0000001e $t
+     /tmp/ccK4ASAU.s:194    .text.rgb565_image_blend:00000000 $t
+     /tmp/ccK4ASAU.s:199    .text.rgb565_image_blend:00000000 rgb565_image_blend
+     /tmp/ccK4ASAU.s:730    .text.al88_image_blend:00000000 $t
+     /tmp/ccK4ASAU.s:735    .text.al88_image_blend:00000000 al88_image_blend
+     /tmp/ccK4ASAU.s:1290   .text.i1_image_blend:00000000 $t
+     /tmp/ccK4ASAU.s:1295   .text.i1_image_blend:00000000 i1_image_blend
+     /tmp/ccK4ASAU.s:2087   .text.argb8888_image_blend:00000000 $t
+     /tmp/ccK4ASAU.s:2092   .text.argb8888_image_blend:00000000 argb8888_image_blend
+     /tmp/ccK4ASAU.s:2639   .text.rgb888_image_blend:00000000 $t
+     /tmp/ccK4ASAU.s:2644   .text.rgb888_image_blend:00000000 rgb888_image_blend
+     /tmp/ccK4ASAU.s:3201   .text.l8_image_blend:00000000 $t
+     /tmp/ccK4ASAU.s:3206   .text.l8_image_blend:00000000 l8_image_blend
+     /tmp/ccK4ASAU.s:3720   .text.lv_draw_sw_blend_color_to_l8:00000000 $t
+     /tmp/ccK4ASAU.s:3726   .text.lv_draw_sw_blend_color_to_l8:00000000 lv_draw_sw_blend_color_to_l8
+     /tmp/ccK4ASAU.s:4195   .text.lv_draw_sw_blend_image_to_l8:00000000 $t
+     /tmp/ccK4ASAU.s:4201   .text.lv_draw_sw_blend_image_to_l8:00000000 lv_draw_sw_blend_image_to_l8
+     /tmp/ccK4ASAU.s:4223   .text.lv_draw_sw_blend_image_to_l8:00000010 $d
+     /tmp/ccK4ASAU.s:4239   .text.lv_draw_sw_blend_image_to_l8:00000020 $t
 
 UNDEFINED SYMBOLS
 lv_color32_luminance

@@ -1,0 +1,1319 @@
+ARM GAS  /tmp/cc0P6QMt.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.arch armv7e-m
+   3              		.fpu fpv5-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"arm_biquad_cascade_df1_q31.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c"
+  20              		.section	.text.arm_biquad_cascade_df1_q31,"ax",%progbits
+  21              		.align	1
+  22              		.global	arm_biquad_cascade_df1_q31
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	arm_biquad_cascade_df1_q31:
+  28              	.LVL0:
+  29              	.LFB135:
+   1:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** /* ----------------------------------------------------------------------
+   2:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * Project:      CMSIS DSP Library
+   3:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * Title:        arm_biquad_cascade_df1_q31.c
+   4:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * Description:  Processing function for the Q31 Biquad cascade filter
+   5:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  *
+   6:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * $Date:        27. January 2017
+   7:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * $Revision:    V.1.5.1
+   8:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  *
+   9:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * Target Processor: Cortex-M cores
+  10:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * -------------------------------------------------------------------- */
+  11:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** /*
+  12:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * Copyright (C) 2010-2017 ARM Limited or its affiliates. All rights reserved.
+  13:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  *
+  14:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * SPDX-License-Identifier: Apache-2.0
+  15:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  *
+  16:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * Licensed under the Apache License, Version 2.0 (the License); you may
+  17:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * not use this file except in compliance with the License.
+  18:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * You may obtain a copy of the License at
+  19:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  *
+  20:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * www.apache.org/licenses/LICENSE-2.0
+  21:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  *
+  22:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * Unless required by applicable law or agreed to in writing, software
+  23:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * distributed under the License is distributed on an AS IS BASIS, WITHOUT
+  24:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  25:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * See the License for the specific language governing permissions and
+  26:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * limitations under the License.
+  27:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  */
+  28:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+  29:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** #include "arm_math.h"
+ARM GAS  /tmp/cc0P6QMt.s 			page 2
+
+
+  30:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+  31:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** /**
+  32:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * @ingroup groupFilters
+  33:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  */
+  34:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+  35:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** /**
+  36:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * @addtogroup BiquadCascadeDF1
+  37:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * @{
+  38:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  */
+  39:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+  40:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** /**
+  41:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * @brief Processing function for the Q31 Biquad cascade filter.
+  42:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * @param[in]  *S         points to an instance of the Q31 Biquad cascade structure.
+  43:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * @param[in]  *pSrc      points to the block of input data.
+  44:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * @param[out] *pDst      points to the block of output data.
+  45:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * @param[in]  blockSize  number of samples to process per call.
+  46:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * @return none.
+  47:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  *
+  48:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * <b>Scaling and Overflow Behavior:</b>
+  49:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * \par
+  50:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * The function is implemented using an internal 64-bit accumulator.
+  51:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * The accumulator has a 2.62 format and maintains full precision of the intermediate multiplicatio
+  52:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * Thus, if the accumulator result overflows it wraps around rather than clip.
+  53:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * In order to avoid overflows completely the input signal must be scaled down by 2 bits and lie in
+  54:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * After all 5 multiply-accumulates are performed, the 2.62 accumulator is shifted by <code>postShi
+  55:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * 1.31 format by discarding the low 32 bits.
+  56:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  *
+  57:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * \par
+  58:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  * Refer to the function <code>arm_biquad_cascade_df1_fast_q31()</code> for a faster but less preci
+  59:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****  */
+  60:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+  61:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** void arm_biquad_cascade_df1_q31(
+  62:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****   const arm_biquad_casd_df1_inst_q31 * S,
+  63:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****   q31_t * pSrc,
+  64:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****   q31_t * pDst,
+  65:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****   uint32_t blockSize)
+  66:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** {
+  30              		.loc 1 66 1 view -0
+  31              		.cfi_startproc
+  32              		@ args = 0, pretend = 0, frame = 88
+  33              		@ frame_needed = 0, uses_anonymous_args = 0
+  34              		.loc 1 66 1 is_stmt 0 view .LVU1
+  35 0000 2DE9F04F 		push	{r4, r5, r6, r7, r8, r9, r10, fp, lr}
+  36              	.LCFI0:
+  37              		.cfi_def_cfa_offset 36
+  38              		.cfi_offset 4, -36
+  39              		.cfi_offset 5, -32
+  40              		.cfi_offset 6, -28
+  41              		.cfi_offset 7, -24
+  42              		.cfi_offset 8, -20
+  43              		.cfi_offset 9, -16
+  44              		.cfi_offset 10, -12
+  45              		.cfi_offset 11, -8
+  46              		.cfi_offset 14, -4
+  47 0004 97B0     		sub	sp, sp, #92
+  48              	.LCFI1:
+  49              		.cfi_def_cfa_offset 128
+ARM GAS  /tmp/cc0P6QMt.s 			page 3
+
+
+  50 0006 0391     		str	r1, [sp, #12]
+  51 0008 1592     		str	r2, [sp, #84]
+  52 000a 1093     		str	r3, [sp, #64]
+  67:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****   q63_t acc;                                     /*  accumulator                   */
+  53              		.loc 1 67 3 is_stmt 1 view .LVU2
+  68:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****   uint32_t uShift = ((uint32_t) S->postShift + 1U);
+  54              		.loc 1 68 3 view .LVU3
+  55              		.loc 1 68 34 is_stmt 0 view .LVU4
+  56 000c 037B     		ldrb	r3, [r0, #12]	@ zero_extendqisi2
+  57              	.LVL1:
+  58              		.loc 1 68 12 view .LVU5
+  59 000e 5A1C     		adds	r2, r3, #1
+  60              	.LVL2:
+  61              		.loc 1 68 12 view .LVU6
+  62 0010 0C92     		str	r2, [sp, #48]
+  63              	.LVL3:
+  69:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****   uint32_t lShift = 32U - uShift;                /*  Shift to be applied to the output */
+  64              		.loc 1 69 3 is_stmt 1 view .LVU7
+  65              		.loc 1 69 12 is_stmt 0 view .LVU8
+  66 0012 C3F11F03 		rsb	r3, r3, #31
+  67 0016 0493     		str	r3, [sp, #16]
+  68              	.LVL4:
+  70:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****   q31_t *pIn = pSrc;                             /*  input pointer initialization  */
+  69              		.loc 1 70 3 is_stmt 1 view .LVU9
+  71:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****   q31_t *pOut = pDst;                            /*  output pointer initialization */
+  70              		.loc 1 71 3 view .LVU10
+  72:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****   q31_t *pState = S->pState;                     /*  pState pointer initialization */
+  71              		.loc 1 72 3 view .LVU11
+  72              		.loc 1 72 10 is_stmt 0 view .LVU12
+  73 0018 D0F804E0 		ldr	lr, [r0, #4]
+  74              	.LVL5:
+  73:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****   q31_t *pCoeffs = S->pCoeffs;                   /*  coeff pointer initialization  */
+  75              		.loc 1 73 3 is_stmt 1 view .LVU13
+  76              		.loc 1 73 10 is_stmt 0 view .LVU14
+  77 001c D0F808A0 		ldr	r10, [r0, #8]
+  78              	.LVL6:
+  74:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****   q31_t Xn1, Xn2, Yn1, Yn2;                      /*  Filter state variables        */
+  79              		.loc 1 74 3 is_stmt 1 view .LVU15
+  75:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****   q31_t b0, b1, b2, a1, a2;                      /*  Filter coefficients           */
+  80              		.loc 1 75 3 view .LVU16
+  76:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****   q31_t Xn;                                      /*  temporary input               */
+  81              		.loc 1 76 3 view .LVU17
+  77:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****   uint32_t sample, stage = S->numStages;         /*  loop counters                     */
+  82              		.loc 1 77 3 view .LVU18
+  83              		.loc 1 77 20 is_stmt 0 view .LVU19
+  84 0020 D0F800B0 		ldr	fp, [r0]
+  85              	.LVL7:
+  86              		.loc 1 77 20 view .LVU20
+  87 0024 7746     		mov	r7, lr
+  88 0026 5646     		mov	r6, r10
+  89 0028 CDF844B0 		str	fp, [sp, #68]
+  90 002c BCE1     		b	.L7
+  91              	.LVL8:
+  92              	.L3:
+  78:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+  79:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+  80:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** #if defined (ARM_MATH_DSP)
+ARM GAS  /tmp/cc0P6QMt.s 			page 4
+
+
+  81:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+  82:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****   q31_t acc_l, acc_h;                            /*  temporary output variables    */
+  83:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+  84:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****   /* Run the below code for Cortex-M4 and Cortex-M3 */
+  85:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+  86:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****   do
+  87:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****   {
+  88:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     /* Reading the coefficients */
+  89:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     b0 = *pCoeffs++;
+  90:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     b1 = *pCoeffs++;
+  91:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     b2 = *pCoeffs++;
+  92:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     a1 = *pCoeffs++;
+  93:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     a2 = *pCoeffs++;
+  94:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+  95:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     /* Reading the state values */
+  96:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     Xn1 = pState[0];
+  97:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     Xn2 = pState[1];
+  98:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     Yn1 = pState[2];
+  99:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     Yn2 = pState[3];
+ 100:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 101:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     /* Apply loop unrolling and compute 4 output values simultaneously. */
+ 102:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     /*      The variable acc hold output values that are being computed:
+ 103:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****      *
+ 104:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****      *    acc =  b0 * x[n] + b1 * x[n-1] + b2 * x[n-2] + a1 * y[n-1] + a2 * y[n-2]
+ 105:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****      */
+ 106:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 107:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     sample = blockSize >> 2U;
+ 108:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 109:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     /* First part of the processing with loop unrolling.  Compute 4 outputs at a time.
+ 110:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****      ** a second loop below computes the remaining 1 to 3 samples. */
+ 111:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     while (sample > 0U)
+ 112:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     {
+ 113:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Read the input */
+ 114:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       Xn = *pIn++;
+  93              		.loc 1 114 7 is_stmt 1 view .LVU21
+  94              		.loc 1 114 10 is_stmt 0 view .LVU22
+  95 002e 039B     		ldr	r3, [sp, #12]
+  96              	.LVL9:
+  97              		.loc 1 114 10 view .LVU23
+  98 0030 1E68     		ldr	r6, [r3]
+  99              	.LVL10:
+ 115:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 116:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc =  b0 * x[n] + b1 * x[n-1] + b2 * x[n-2] + a1 * y[n-1] + a2 * y[n-2] */
+ 117:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 118:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc =  b0 * x[n] */
+ 119:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc = (q63_t) b0 *Xn;
+ 100              		.loc 1 119 7 is_stmt 1 view .LVU24
+ 101              		.loc 1 119 13 is_stmt 0 view .LVU25
+ 102 0032 4FEAEE73 		asr	r3, lr, #31
+ 103              		.loc 1 119 24 view .LVU26
+ 104 0036 F017     		asrs	r0, r6, #31
+ 105              		.loc 1 119 11 view .LVU27
+ 106 0038 0D90     		str	r0, [sp, #52]
+ 107 003a 0EFB00F7 		mul	r7, lr, r0
+ 108 003e 0793     		str	r3, [sp, #28]
+ 109 0040 06FB0377 		mla	r7, r6, r3, r7
+ 110 0044 AEFB06A3 		umull	r10, r3, lr, r6
+ARM GAS  /tmp/cc0P6QMt.s 			page 5
+
+
+ 111 0048 1F44     		add	r7, r7, r3
+ 112              	.LVL11:
+ 120:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  b1 * x[n-1] */
+ 121:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc += (q63_t) b1 *Xn1;
+ 113              		.loc 1 121 7 is_stmt 1 view .LVU28
+ 114              		.loc 1 121 14 is_stmt 0 view .LVU29
+ 115 004a 4FEAE873 		asr	r3, r8, #31
+ 116              		.loc 1 121 25 view .LVU30
+ 117 004e 0698     		ldr	r0, [sp, #24]
+ 118 0050 4FEAE079 		asr	r9, r0, #31
+ 119 0054 08FB09FC 		mul	ip, r8, r9
+ 120 0058 0893     		str	r3, [sp, #32]
+ 121 005a 00FB03CC 		mla	ip, r0, r3, ip
+ 122 005e A8FB0035 		umull	r3, r5, r8, r0
+ 123 0062 6544     		add	r5, r5, ip
+ 124              		.loc 1 121 11 view .LVU31
+ 125 0064 13EB0A03 		adds	r3, r3, r10
+ 126 0068 47EB0505 		adc	r5, r7, r5
+ 127              	.LVL12:
+ 122:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  b[2] * x[n-2] */
+ 123:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc += (q63_t) b2 *Xn2;
+ 128              		.loc 1 123 7 is_stmt 1 view .LVU32
+ 129              		.loc 1 123 14 is_stmt 0 view .LVU33
+ 130 006c 4FEAEB7C 		asr	ip, fp, #31
+ 131              		.loc 1 123 25 view .LVU34
+ 132 0070 E717     		asrs	r7, r4, #31
+ 133 0072 CDF824C0 		str	ip, [sp, #36]
+ 134 0076 04FB0CFC 		mul	ip, r4, ip
+ 135 007a 0BFB07CC 		mla	ip, fp, r7, ip
+ 136 007e A4FB0B47 		umull	r4, r7, r4, fp
+ 137              	.LVL13:
+ 138              		.loc 1 123 25 view .LVU35
+ 139 0082 6744     		add	r7, r7, ip
+ 140              		.loc 1 123 11 view .LVU36
+ 141 0084 E418     		adds	r4, r4, r3
+ 142 0086 47EB0507 		adc	r7, r7, r5
+ 143              	.LVL14:
+ 124:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  a1 * y[n-1] */
+ 125:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc += (q63_t) a1 *Yn1;
+ 144              		.loc 1 125 7 is_stmt 1 view .LVU37
+ 145              		.loc 1 125 14 is_stmt 0 view .LVU38
+ 146 008a 019D     		ldr	r5, [sp, #4]
+ 147 008c EB17     		asrs	r3, r5, #31
+ 148              		.loc 1 125 25 view .LVU39
+ 149 008e 4FEAE17C 		asr	ip, r1, #31
+ 150 0092 05FB0CFA 		mul	r10, r5, ip
+ 151 0096 0A93     		str	r3, [sp, #40]
+ 152 0098 01FB03AA 		mla	r10, r1, r3, r10
+ 153 009c A5FB0135 		umull	r3, r5, r5, r1
+ 154 00a0 5544     		add	r5, r5, r10
+ 155              		.loc 1 125 11 view .LVU40
+ 156 00a2 1B19     		adds	r3, r3, r4
+ 157 00a4 45EB0705 		adc	r5, r5, r7
+ 158              	.LVL15:
+ 126:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  a2 * y[n-2] */
+ 127:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc += (q63_t) a2 *Yn2;
+ 159              		.loc 1 127 7 is_stmt 1 view .LVU41
+ARM GAS  /tmp/cc0P6QMt.s 			page 6
+
+
+ 160              		.loc 1 127 14 is_stmt 0 view .LVU42
+ 161 00a8 0098     		ldr	r0, [sp]
+ 162 00aa C417     		asrs	r4, r0, #31
+ 163              		.loc 1 127 25 view .LVU43
+ 164 00ac D717     		asrs	r7, r2, #31
+ 165 00ae 0B94     		str	r4, [sp, #44]
+ 166 00b0 02FB04F4 		mul	r4, r2, r4
+ 167 00b4 00FB0744 		mla	r4, r0, r7, r4
+ 168 00b8 A2FB0027 		umull	r2, r7, r2, r0
+ 169              	.LVL16:
+ 170              		.loc 1 127 25 view .LVU44
+ 171 00bc 3C44     		add	r4, r4, r7
+ 172              		.loc 1 127 11 view .LVU45
+ 173 00be D218     		adds	r2, r2, r3
+ 174 00c0 44EB0504 		adc	r4, r4, r5
+ 175              	.LVL17:
+ 128:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 129:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* The result is converted to 1.31 , Yn2 variable is reused */
+ 130:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 131:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Calc lower part of acc */
+ 132:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc_l = acc & 0xffffffff;
+ 176              		.loc 1 132 7 is_stmt 1 view .LVU46
+ 133:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 134:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Calc upper part of acc */
+ 135:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc_h = (acc >> 32) & 0xffffffff;
+ 177              		.loc 1 135 7 view .LVU47
+ 136:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 137:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Apply shift for lower part of acc and upper part of acc */
+ 138:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       Yn2 = (uint32_t) acc_l >> lShift | acc_h << uShift;
+ 178              		.loc 1 138 7 view .LVU48
+ 179              		.loc 1 138 30 is_stmt 0 view .LVU49
+ 180 00c4 049D     		ldr	r5, [sp, #16]
+ 181 00c6 EA40     		lsrs	r2, r2, r5
+ 182              	.LVL18:
+ 183              		.loc 1 138 48 view .LVU50
+ 184 00c8 0C9F     		ldr	r7, [sp, #48]
+ 185 00ca BC40     		lsls	r4, r4, r7
+ 186              	.LVL19:
+ 187              		.loc 1 138 11 view .LVU51
+ 188 00cc 42EA0403 		orr	r3, r2, r4
+ 189              	.LVL20:
+ 139:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 140:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Store the output in the destination buffer. */
+ 141:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       *pOut++ = Yn2;
+ 190              		.loc 1 141 7 is_stmt 1 view .LVU52
+ 191              		.loc 1 141 15 is_stmt 0 view .LVU53
+ 192 00d0 029A     		ldr	r2, [sp, #8]
+ 193 00d2 1360     		str	r3, [r2]
+ 142:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 143:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Read the second input */
+ 144:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       Xn2 = *pIn++;
+ 194              		.loc 1 144 7 is_stmt 1 view .LVU54
+ 195              	.LVL21:
+ 196              		.loc 1 144 11 is_stmt 0 view .LVU55
+ 197 00d4 039A     		ldr	r2, [sp, #12]
+ 198 00d6 5268     		ldr	r2, [r2, #4]
+ 199              	.LVL22:
+ARM GAS  /tmp/cc0P6QMt.s 			page 7
+
+
+ 145:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 146:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc =  b0 * x[n] + b1 * x[n-1] + b2 * x[n-2] + a1 * y[n-1] + a2 * y[n-2] */
+ 147:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 148:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc =  b0 * x[n] */
+ 149:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc = (q63_t) b0 *Xn2;
+ 200              		.loc 1 149 7 is_stmt 1 view .LVU56
+ 201              		.loc 1 149 24 is_stmt 0 view .LVU57
+ 202 00d8 D717     		asrs	r7, r2, #31
+ 203              		.loc 1 149 11 view .LVU58
+ 204 00da 0E97     		str	r7, [sp, #56]
+ 205 00dc 0EFB07F7 		mul	r7, lr, r7
+ 206 00e0 079C     		ldr	r4, [sp, #28]
+ 207 00e2 02FB0477 		mla	r7, r2, r4, r7
+ 208 00e6 0592     		str	r2, [sp, #20]
+ 209 00e8 AEFB02A2 		umull	r10, r2, lr, r2
+ 210              	.LVL23:
+ 211              		.loc 1 149 11 view .LVU59
+ 212 00ec 1744     		add	r7, r7, r2
+ 213              	.LVL24:
+ 150:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  b1 * x[n-1] */
+ 151:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc += (q63_t) b1 *Xn;
+ 214              		.loc 1 151 7 is_stmt 1 view .LVU60
+ 215              		.loc 1 151 25 is_stmt 0 view .LVU61
+ 216 00ee 089A     		ldr	r2, [sp, #32]
+ 217 00f0 06FB02F2 		mul	r2, r6, r2
+ 218 00f4 0D9C     		ldr	r4, [sp, #52]
+ 219 00f6 08FB0422 		mla	r2, r8, r4, r2
+ 220 00fa A6FB0840 		umull	r4, r0, r6, r8
+ 221              		.loc 1 151 25 view .LVU62
+ 222 00fe 0244     		add	r2, r2, r0
+ 223              		.loc 1 151 11 view .LVU63
+ 224 0100 14EB0A0A 		adds	r10, r4, r10
+ 225              	.LVL25:
+ 226              		.loc 1 151 11 view .LVU64
+ 227 0104 47EB0202 		adc	r2, r7, r2
+ 228              	.LVL26:
+ 152:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  b[2] * x[n-2] */
+ 153:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc += (q63_t) b2 *Xn1;
+ 229              		.loc 1 153 7 is_stmt 1 view .LVU65
+ 230              		.loc 1 153 25 is_stmt 0 view .LVU66
+ 231 0108 099F     		ldr	r7, [sp, #36]
+ 232 010a 0698     		ldr	r0, [sp, #24]
+ 233 010c 00FB07F7 		mul	r7, r0, r7
+ 234 0110 0BFB0977 		mla	r7, fp, r9, r7
+ 235 0114 A0FB0B04 		umull	r0, r4, r0, fp
+ 236 0118 3C44     		add	r4, r4, r7
+ 237              		.loc 1 153 11 view .LVU67
+ 238 011a 10EB0A00 		adds	r0, r0, r10
+ 239 011e 44EB0204 		adc	r4, r4, r2
+ 240              	.LVL27:
+ 154:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  a1 * y[n-1] */
+ 155:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc += (q63_t) a1 *Yn2;
+ 241              		.loc 1 155 7 is_stmt 1 view .LVU68
+ 242              		.loc 1 155 25 is_stmt 0 view .LVU69
+ 243 0122 DF17     		asrs	r7, r3, #31
+ 244 0124 3A46     		mov	r2, r7
+ 245 0126 019F     		ldr	r7, [sp, #4]
+ARM GAS  /tmp/cc0P6QMt.s 			page 8
+
+
+ 246 0128 0692     		str	r2, [sp, #24]
+ 247              	.LVL28:
+ 248              		.loc 1 155 25 view .LVU70
+ 249 012a 02FB07F7 		mul	r7, r2, r7
+ 250 012e 0A9A     		ldr	r2, [sp, #40]
+ 251 0130 03FB0277 		mla	r7, r3, r2, r7
+ 252 0134 019A     		ldr	r2, [sp, #4]
+ 253 0136 A2FB039A 		umull	r9, r10, r2, r3
+ 254 013a 5744     		add	r7, r7, r10
+ 255              		.loc 1 155 11 view .LVU71
+ 256 013c 19EB0009 		adds	r9, r9, r0
+ 257 0140 47EB0407 		adc	r7, r7, r4
+ 258              	.LVL29:
+ 156:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  a2 * y[n-2] */
+ 157:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc += (q63_t) a2 *Yn1;
+ 259              		.loc 1 157 7 is_stmt 1 view .LVU72
+ 260              		.loc 1 157 25 is_stmt 0 view .LVU73
+ 261 0144 0B9C     		ldr	r4, [sp, #44]
+ 262 0146 01FB04F0 		mul	r0, r1, r4
+ 263 014a 009C     		ldr	r4, [sp]
+ 264 014c 04FB0C00 		mla	r0, r4, ip, r0
+ 265 0150 A1FB0414 		umull	r1, r4, r1, r4
+ 266              	.LVL30:
+ 267              		.loc 1 157 25 view .LVU74
+ 268 0154 2044     		add	r0, r0, r4
+ 269              		.loc 1 157 11 view .LVU75
+ 270 0156 11EB0901 		adds	r1, r1, r9
+ 271 015a 40EB0700 		adc	r0, r0, r7
+ 272              	.LVL31:
+ 158:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 159:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 160:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* The result is converted to 1.31, Yn1 variable is reused  */
+ 161:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 162:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Calc lower part of acc */
+ 163:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc_l = acc & 0xffffffff;
+ 273              		.loc 1 163 7 is_stmt 1 view .LVU76
+ 164:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 165:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Calc upper part of acc */
+ 166:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc_h = (acc >> 32) & 0xffffffff;
+ 274              		.loc 1 166 7 view .LVU77
+ 167:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 168:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 169:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Apply shift for lower part of acc and upper part of acc */
+ 170:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       Yn1 = (uint32_t) acc_l >> lShift | acc_h << uShift;
+ 275              		.loc 1 170 7 view .LVU78
+ 276              		.loc 1 170 30 is_stmt 0 view .LVU79
+ 277 015e E940     		lsrs	r1, r1, r5
+ 278              	.LVL32:
+ 279              		.loc 1 170 48 view .LVU80
+ 280 0160 0C9F     		ldr	r7, [sp, #48]
+ 281 0162 B840     		lsls	r0, r0, r7
+ 282              	.LVL33:
+ 283              		.loc 1 170 11 view .LVU81
+ 284 0164 0143     		orrs	r1, r1, r0
+ 285              	.LVL34:
+ 171:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 172:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Store the output in the destination buffer. */
+ARM GAS  /tmp/cc0P6QMt.s 			page 9
+
+
+ 173:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       *pOut++ = Yn1;
+ 286              		.loc 1 173 7 is_stmt 1 view .LVU82
+ 287              		.loc 1 173 15 is_stmt 0 view .LVU83
+ 288 0166 0298     		ldr	r0, [sp, #8]
+ 289 0168 4160     		str	r1, [r0, #4]
+ 290              	.LVL35:
+ 174:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 175:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Read the third input  */
+ 176:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       Xn1 = *pIn++;
+ 291              		.loc 1 176 7 is_stmt 1 view .LVU84
+ 292              		.loc 1 176 11 is_stmt 0 view .LVU85
+ 293 016a 0398     		ldr	r0, [sp, #12]
+ 294 016c 8468     		ldr	r4, [r0, #8]
+ 295              	.LVL36:
+ 177:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 178:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc =  b0 * x[n] + b1 * x[n-1] + b2 * x[n-2] + a1 * y[n-1] + a2 * y[n-2] */
+ 179:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 180:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc =  b0 * x[n] */
+ 181:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc = (q63_t) b0 *Xn1;
+ 296              		.loc 1 181 7 is_stmt 1 view .LVU86
+ 297              		.loc 1 181 24 is_stmt 0 view .LVU87
+ 298 016e 4FEAE47C 		asr	ip, r4, #31
+ 299              		.loc 1 181 11 view .LVU88
+ 300 0172 0EFB0CF9 		mul	r9, lr, ip
+ 301 0176 079F     		ldr	r7, [sp, #28]
+ 302 0178 04FB0799 		mla	r9, r4, r7, r9
+ 303 017c AEFB0420 		umull	r2, r0, lr, r4
+ 304 0180 8144     		add	r9, r9, r0
+ 305              	.LVL37:
+ 182:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  b1 * x[n-1] */
+ 183:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc += (q63_t) b1 *Xn2;
+ 306              		.loc 1 183 7 is_stmt 1 view .LVU89
+ 307              		.loc 1 183 25 is_stmt 0 view .LVU90
+ 308 0182 0E98     		ldr	r0, [sp, #56]
+ 309 0184 08FB00FA 		mul	r10, r8, r0
+ 310 0188 089F     		ldr	r7, [sp, #32]
+ 311 018a 059D     		ldr	r5, [sp, #20]
+ 312 018c 05FB07AA 		mla	r10, r5, r7, r10
+ 313 0190 A8FB0507 		umull	r0, r7, r8, r5
+ 314 0194 5744     		add	r7, r7, r10
+ 315              		.loc 1 183 11 view .LVU91
+ 316 0196 8018     		adds	r0, r0, r2
+ 317              		.loc 1 183 11 view .LVU92
+ 318 0198 49EB0707 		adc	r7, r9, r7
+ 319              	.LVL38:
+ 184:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  b[2] * x[n-2] */
+ 185:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc += (q63_t) b2 *Xn;
+ 320              		.loc 1 185 7 is_stmt 1 view .LVU93
+ 321              		.loc 1 185 25 is_stmt 0 view .LVU94
+ 322 019c 099A     		ldr	r2, [sp, #36]
+ 323 019e 06FB02F9 		mul	r9, r6, r2
+ 324 01a2 0D9D     		ldr	r5, [sp, #52]
+ 325 01a4 0BFB0599 		mla	r9, fp, r5, r9
+ 326 01a8 A6FB0BA6 		umull	r10, r6, r6, fp
+ 327              	.LVL39:
+ 328              		.loc 1 185 25 view .LVU95
+ 329 01ac 4E44     		add	r6, r6, r9
+ARM GAS  /tmp/cc0P6QMt.s 			page 10
+
+
+ 330              		.loc 1 185 11 view .LVU96
+ 331 01ae 1AEB000A 		adds	r10, r10, r0
+ 332 01b2 46EB0706 		adc	r6, r6, r7
+ 333              	.LVL40:
+ 186:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  a1 * y[n-1] */
+ 187:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc += (q63_t) a1 *Yn1;
+ 334              		.loc 1 187 7 is_stmt 1 view .LVU97
+ 335              		.loc 1 187 25 is_stmt 0 view .LVU98
+ 336 01b6 CF17     		asrs	r7, r1, #31
+ 337 01b8 019D     		ldr	r5, [sp, #4]
+ 338 01ba 05FB07F0 		mul	r0, r5, r7
+ 339 01be 0A9A     		ldr	r2, [sp, #40]
+ 340 01c0 01FB0200 		mla	r0, r1, r2, r0
+ 341 01c4 A5FB0195 		umull	r9, r5, r5, r1
+ 342 01c8 2844     		add	r0, r0, r5
+ 343              		.loc 1 187 11 view .LVU99
+ 344 01ca 19EB0A09 		adds	r9, r9, r10
+ 345 01ce 40EB0600 		adc	r0, r0, r6
+ 346              	.LVL41:
+ 188:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  a2 * y[n-2] */
+ 189:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc += (q63_t) a2 *Yn2;
+ 347              		.loc 1 189 7 is_stmt 1 view .LVU100
+ 348              		.loc 1 189 25 is_stmt 0 view .LVU101
+ 349 01d2 009E     		ldr	r6, [sp]
+ 350 01d4 069A     		ldr	r2, [sp, #24]
+ 351 01d6 06FB02F2 		mul	r2, r6, r2
+ 352 01da 0B9D     		ldr	r5, [sp, #44]
+ 353 01dc 03FB0522 		mla	r2, r3, r5, r2
+ 354 01e0 A6FB0336 		umull	r3, r6, r6, r3
+ 355              	.LVL42:
+ 356              		.loc 1 189 25 view .LVU102
+ 357 01e4 3244     		add	r2, r2, r6
+ 358              		.loc 1 189 11 view .LVU103
+ 359 01e6 13EB0903 		adds	r3, r3, r9
+ 360 01ea 42EB0002 		adc	r2, r2, r0
+ 361              	.LVL43:
+ 190:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 191:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* The result is converted to 1.31, Yn2 variable is reused  */
+ 192:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Calc lower part of acc */
+ 193:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc_l = acc & 0xffffffff;
+ 362              		.loc 1 193 7 is_stmt 1 view .LVU104
+ 194:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 195:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Calc upper part of acc */
+ 196:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc_h = (acc >> 32) & 0xffffffff;
+ 363              		.loc 1 196 7 view .LVU105
+ 197:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 198:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 199:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Apply shift for lower part of acc and upper part of acc */
+ 200:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       Yn2 = (uint32_t) acc_l >> lShift | acc_h << uShift;
+ 364              		.loc 1 200 7 view .LVU106
+ 365              		.loc 1 200 30 is_stmt 0 view .LVU107
+ 366 01ee 049D     		ldr	r5, [sp, #16]
+ 367 01f0 EB40     		lsrs	r3, r3, r5
+ 368              	.LVL44:
+ 369              		.loc 1 200 48 view .LVU108
+ 370 01f2 0C9D     		ldr	r5, [sp, #48]
+ 371 01f4 AA40     		lsls	r2, r2, r5
+ARM GAS  /tmp/cc0P6QMt.s 			page 11
+
+
+ 372              	.LVL45:
+ 373              		.loc 1 200 11 view .LVU109
+ 374 01f6 1A43     		orrs	r2, r2, r3
+ 375              	.LVL46:
+ 201:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 202:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Store the output in the destination buffer. */
+ 203:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       *pOut++ = Yn2;
+ 376              		.loc 1 203 7 is_stmt 1 view .LVU110
+ 377              		.loc 1 203 15 is_stmt 0 view .LVU111
+ 378 01f8 029B     		ldr	r3, [sp, #8]
+ 379 01fa 9A60     		str	r2, [r3, #8]
+ 204:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 205:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Read the forth input */
+ 206:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       Xn = *pIn++;
+ 380              		.loc 1 206 7 is_stmt 1 view .LVU112
+ 381              	.LVL47:
+ 382              		.loc 1 206 10 is_stmt 0 view .LVU113
+ 383 01fc 039B     		ldr	r3, [sp, #12]
+ 384 01fe D868     		ldr	r0, [r3, #12]
+ 385              	.LVL48:
+ 386              		.loc 1 206 10 view .LVU114
+ 387 0200 0690     		str	r0, [sp, #24]
+ 388              	.LVL49:
+ 207:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 208:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc =  b0 * x[n] + b1 * x[n-1] + b2 * x[n-2] + a1 * y[n-1] + a2 * y[n-2] */
+ 209:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 210:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc =  b0 * x[n] */
+ 211:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc = (q63_t) b0 *Xn;
+ 389              		.loc 1 211 7 is_stmt 1 view .LVU115
+ 390              		.loc 1 211 24 is_stmt 0 view .LVU116
+ 391 0202 C317     		asrs	r3, r0, #31
+ 392              		.loc 1 211 11 view .LVU117
+ 393 0204 0EFB03F3 		mul	r3, lr, r3
+ 394 0208 079E     		ldr	r6, [sp, #28]
+ 395              		.loc 1 211 11 view .LVU118
+ 396 020a 00FB0633 		mla	r3, r0, r6, r3
+ 397 020e AEFB0096 		umull	r9, r6, lr, r0
+ 398              	.LVL50:
+ 399              		.loc 1 211 11 view .LVU119
+ 400 0212 3344     		add	r3, r3, r6
+ 401              	.LVL51:
+ 212:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  b1 * x[n-1] */
+ 213:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc += (q63_t) b1 *Xn1;
+ 402              		.loc 1 213 7 is_stmt 1 view .LVU120
+ 403              		.loc 1 213 25 is_stmt 0 view .LVU121
+ 404 0214 08FB0CFC 		mul	ip, r8, ip
+ 405 0218 089E     		ldr	r6, [sp, #32]
+ 406 021a 04FB06CC 		mla	ip, r4, r6, ip
+ 407 021e A8FB046A 		umull	r6, r10, r8, r4
+ 408              	.LVL52:
+ 409              		.loc 1 213 25 view .LVU122
+ 410 0222 E244     		add	r10, r10, ip
+ 411              		.loc 1 213 11 view .LVU123
+ 412 0224 16EB0906 		adds	r6, r6, r9
+ 413              		.loc 1 213 11 view .LVU124
+ 414 0228 43EB0A0A 		adc	r10, r3, r10
+ 415              	.LVL53:
+ARM GAS  /tmp/cc0P6QMt.s 			page 12
+
+
+ 214:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  b[2] * x[n-2] */
+ 215:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc += (q63_t) b2 *Xn2;
+ 416              		.loc 1 215 7 is_stmt 1 view .LVU125
+ 417              		.loc 1 215 25 is_stmt 0 view .LVU126
+ 418 022c 0E9B     		ldr	r3, [sp, #56]
+ 419 022e 0BFB03F3 		mul	r3, fp, r3
+ 420 0232 0998     		ldr	r0, [sp, #36]
+ 421              	.LVL54:
+ 422              		.loc 1 215 25 view .LVU127
+ 423 0234 059D     		ldr	r5, [sp, #20]
+ 424 0236 05FB0033 		mla	r3, r5, r0, r3
+ 425 023a ABFB05C5 		umull	ip, r5, fp, r5
+ 426 023e 1D44     		add	r5, r5, r3
+ 427              		.loc 1 215 11 view .LVU128
+ 428 0240 1CEB060C 		adds	ip, ip, r6
+ 429 0244 45EB0A05 		adc	r5, r5, r10
+ 430              	.LVL55:
+ 216:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  a1 * y[n-1] */
+ 217:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc += (q63_t) a1 *Yn2;
+ 431              		.loc 1 217 7 is_stmt 1 view .LVU129
+ 432              		.loc 1 217 25 is_stmt 0 view .LVU130
+ 433 0248 D617     		asrs	r6, r2, #31
+ 434 024a 0A98     		ldr	r0, [sp, #40]
+ 435 024c 02FB00F3 		mul	r3, r2, r0
+ 436 0250 0198     		ldr	r0, [sp, #4]
+ 437 0252 00FB0633 		mla	r3, r0, r6, r3
+ 438 0256 A2FB0069 		umull	r6, r9, r2, r0
+ 439 025a 4B44     		add	r3, r3, r9
+ 440              		.loc 1 217 11 view .LVU131
+ 441 025c 16EB0C06 		adds	r6, r6, ip
+ 442 0260 43EB0503 		adc	r3, r3, r5
+ 443              	.LVL56:
+ 218:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  a2 * y[n-2] */
+ 219:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc += (q63_t) a2 *Yn1;
+ 444              		.loc 1 219 7 is_stmt 1 view .LVU132
+ 445              		.loc 1 219 25 is_stmt 0 view .LVU133
+ 446 0264 0098     		ldr	r0, [sp]
+ 447 0266 00FB07F7 		mul	r7, r0, r7
+ 448 026a 0B9D     		ldr	r5, [sp, #44]
+ 449 026c 01FB0577 		mla	r7, r1, r5, r7
+ 450 0270 A0FB0115 		umull	r1, r5, r0, r1
+ 451              	.LVL57:
+ 452              		.loc 1 219 25 view .LVU134
+ 453 0274 2F44     		add	r7, r7, r5
+ 454              		.loc 1 219 11 view .LVU135
+ 455 0276 8919     		adds	r1, r1, r6
+ 456 0278 47EB0307 		adc	r7, r7, r3
+ 457              	.LVL58:
+ 220:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 221:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* The result is converted to 1.31, Yn1 variable is reused  */
+ 222:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Calc lower part of acc */
+ 223:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc_l = acc & 0xffffffff;
+ 458              		.loc 1 223 7 is_stmt 1 view .LVU136
+ 224:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 225:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Calc upper part of acc */
+ 226:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc_h = (acc >> 32) & 0xffffffff;
+ 459              		.loc 1 226 7 view .LVU137
+ARM GAS  /tmp/cc0P6QMt.s 			page 13
+
+
+ 227:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 228:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Apply shift for lower part of acc and upper part of acc */
+ 229:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       Yn1 = (uint32_t) acc_l >> lShift | acc_h << uShift;
+ 460              		.loc 1 229 7 view .LVU138
+ 461              		.loc 1 229 30 is_stmt 0 view .LVU139
+ 462 027c 049E     		ldr	r6, [sp, #16]
+ 463 027e F140     		lsrs	r1, r1, r6
+ 464              	.LVL59:
+ 465              		.loc 1 229 48 view .LVU140
+ 466 0280 0C9E     		ldr	r6, [sp, #48]
+ 467 0282 B740     		lsls	r7, r7, r6
+ 468              	.LVL60:
+ 469              		.loc 1 229 11 view .LVU141
+ 470 0284 3943     		orrs	r1, r1, r7
+ 471              	.LVL61:
+ 230:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 231:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Every time after the output is computed state should be updated. */
+ 232:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* The states should be updated as:  */
+ 233:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Xn2 = Xn1    */
+ 234:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Xn1 = Xn     */
+ 235:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Yn2 = Yn1    */
+ 236:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Yn1 = acc    */
+ 237:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       Xn2 = Xn1;
+ 472              		.loc 1 237 7 is_stmt 1 view .LVU142
+ 238:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       Xn1 = Xn;
+ 473              		.loc 1 238 7 view .LVU143
+ 239:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 240:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Store the output in the destination buffer. */
+ 241:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       *pOut++ = Yn1;
+ 474              		.loc 1 241 7 view .LVU144
+ 475              		.loc 1 241 15 is_stmt 0 view .LVU145
+ 476 0286 029D     		ldr	r5, [sp, #8]
+ 477              	.LVL62:
+ 478              		.loc 1 241 15 view .LVU146
+ 479 0288 E960     		str	r1, [r5, #12]
+ 242:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 243:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* decrement the loop counter */
+ 244:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       sample--;
+ 480              		.loc 1 244 7 is_stmt 1 view .LVU147
+ 481              		.loc 1 244 13 is_stmt 0 view .LVU148
+ 482 028a 0F9E     		ldr	r6, [sp, #60]
+ 483 028c 013E     		subs	r6, r6, #1
+ 484 028e 0F96     		str	r6, [sp, #60]
+ 485              	.LVL63:
+ 241:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 486              		.loc 1 241 12 view .LVU149
+ 487 0290 1035     		adds	r5, r5, #16
+ 488              	.LVL64:
+ 241:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 489              		.loc 1 241 12 view .LVU150
+ 490 0292 0295     		str	r5, [sp, #8]
+ 491              	.LVL65:
+ 206:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 492              		.loc 1 206 16 view .LVU151
+ 493 0294 039B     		ldr	r3, [sp, #12]
+ 494              	.LVL66:
+ 206:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ARM GAS  /tmp/cc0P6QMt.s 			page 14
+
+
+ 495              		.loc 1 206 16 view .LVU152
+ 496 0296 1033     		adds	r3, r3, #16
+ 497              	.LVL67:
+ 206:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 498              		.loc 1 206 16 view .LVU153
+ 499 0298 0393     		str	r3, [sp, #12]
+ 500              	.LVL68:
+ 501              	.L2:
+ 111:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     {
+ 502              		.loc 1 111 19 is_stmt 1 view .LVU154
+ 503 029a 0F9B     		ldr	r3, [sp, #60]
+ 504 029c 002B     		cmp	r3, #0
+ 505 029e 7FF4C6AE 		bne	.L3
+ 245:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     }
+ 246:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 247:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     /* If the blockSize is not a multiple of 4, compute any remaining output samples here.
+ 248:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****      ** No loop unrolling is used. */
+ 249:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     sample = (blockSize & 0x3U);
+ 506              		.loc 1 249 12 is_stmt 0 view .LVU155
+ 507 02a2 139F     		ldr	r7, [sp, #76]
+ 508 02a4 149E     		ldr	r6, [sp, #80]
+ 509 02a6 DDF81890 		ldr	r9, [sp, #24]
+ 510 02aa 2346     		mov	r3, r4
+ 511 02ac 8A46     		mov	r10, r1
+ 512              		.loc 1 249 5 is_stmt 1 view .LVU156
+ 513              		.loc 1 249 12 is_stmt 0 view .LVU157
+ 514 02ae 1099     		ldr	r1, [sp, #64]
+ 515              	.LVL69:
+ 516              		.loc 1 249 12 view .LVU158
+ 517 02b0 01F0030C 		and	ip, r1, #3
+ 518              	.LVL70:
+ 250:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 251:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     while (sample > 0U)
+ 519              		.loc 1 251 5 is_stmt 1 view .LVU159
+ 520 02b4 0597     		str	r7, [sp, #20]
+ 521 02b6 0696     		str	r6, [sp, #24]
+ 522              	.LVL71:
+ 523              		.loc 1 251 5 is_stmt 0 view .LVU160
+ 524 02b8 DDF848B0 		ldr	fp, [sp, #72]
+ 525              	.LVL72:
+ 526              		.loc 1 251 5 view .LVU161
+ 527 02bc 009F     		ldr	r7, [sp]
+ 528 02be 0399     		ldr	r1, [sp, #12]
+ 529              		.loc 1 251 11 view .LVU162
+ 530 02c0 0AE0     		b	.L4
+ 531              	.LVL73:
+ 532              	.L5:
+ 252:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     {
+ 253:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Read the input */
+ 254:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       Xn = *pIn++;
+ 255:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 256:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc =  b0 * x[n] + b1 * x[n-1] + b2 * x[n-2] + a1 * y[n-1] + a2 * y[n-2] */
+ 257:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 258:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc =  b0 * x[n] */
+ 259:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc = (q63_t) b0 *Xn;
+ 260:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  b1 * x[n-1] */
+ 261:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc += (q63_t) b1 *Xn1;
+ARM GAS  /tmp/cc0P6QMt.s 			page 15
+
+
+ 262:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  b[2] * x[n-2] */
+ 263:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc += (q63_t) b2 *Xn2;
+ 264:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  a1 * y[n-1] */
+ 265:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc += (q63_t) a1 *Yn1;
+ 266:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  a2 * y[n-2] */
+ 267:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc += (q63_t) a2 *Yn2;
+ 268:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 269:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* The result is converted to 1.31  */
+ 270:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc = acc >> lShift;
+ 271:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 272:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Every time after the output is computed state should be updated. */
+ 273:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* The states should be updated as:  */
+ 274:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Xn2 = Xn1    */
+ 275:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Xn1 = Xn     */
+ 276:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Yn2 = Yn1    */
+ 277:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Yn1 = acc    */
+ 278:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       Xn2 = Xn1;
+ 533              		.loc 1 278 7 is_stmt 1 view .LVU163
+ 279:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       Xn1 = Xn;
+ 534              		.loc 1 279 7 view .LVU164
+ 280:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       Yn2 = Yn1;
+ 535              		.loc 1 280 7 view .LVU165
+ 281:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       Yn1 = (q31_t) acc;
+ 536              		.loc 1 281 7 view .LVU166
+ 282:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 283:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Store the output in the destination buffer. */
+ 284:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       *pOut++ = (q31_t) acc;
+ 537              		.loc 1 284 7 view .LVU167
+ 538              		.loc 1 284 12 is_stmt 0 view .LVU168
+ 539 02c2 0299     		ldr	r1, [sp, #8]
+ 540              	.LVL74:
+ 541              		.loc 1 284 15 view .LVU169
+ 542 02c4 41F8043B 		str	r3, [r1], #4
+ 543              	.LVL75:
+ 285:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 286:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* decrement the loop counter */
+ 287:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       sample--;
+ 544              		.loc 1 287 7 is_stmt 1 view .LVU170
+ 545              		.loc 1 287 13 is_stmt 0 view .LVU171
+ 546 02c8 0CF1FF3C 		add	ip, ip, #-1
+ 547              	.LVL76:
+ 280:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       Yn1 = (q31_t) acc;
+ 548              		.loc 1 280 11 view .LVU172
+ 549 02cc 5246     		mov	r2, r10
+ 281:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 550              		.loc 1 281 11 view .LVU173
+ 551 02ce 9A46     		mov	r10, r3
+ 552              	.LVL77:
+ 278:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       Xn1 = Xn;
+ 553              		.loc 1 278 11 view .LVU174
+ 554 02d0 4B46     		mov	r3, r9
+ 555              	.LVL78:
+ 279:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       Yn2 = Yn1;
+ 556              		.loc 1 279 11 view .LVU175
+ 557 02d2 A946     		mov	r9, r5
+ 558              	.LVL79:
+ 284:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ARM GAS  /tmp/cc0P6QMt.s 			page 16
+
+
+ 559              		.loc 1 284 12 view .LVU176
+ 560 02d4 0291     		str	r1, [sp, #8]
+ 254:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 561              		.loc 1 254 16 view .LVU177
+ 562 02d6 0099     		ldr	r1, [sp]
+ 563              	.LVL80:
+ 564              	.L4:
+ 251:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     {
+ 565              		.loc 1 251 19 is_stmt 1 view .LVU178
+ 566 02d8 BCF1000F 		cmp	ip, #0
+ 567 02dc 53D0     		beq	.L10
+ 254:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 568              		.loc 1 254 7 view .LVU179
+ 569              	.LVL81:
+ 254:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 570              		.loc 1 254 10 is_stmt 0 view .LVU180
+ 571 02de 51F8045B 		ldr	r5, [r1], #4
+ 572              	.LVL82:
+ 254:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 573              		.loc 1 254 10 view .LVU181
+ 574 02e2 0091     		str	r1, [sp]
+ 575              	.LVL83:
+ 259:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  b1 * x[n-1] */
+ 576              		.loc 1 259 7 is_stmt 1 view .LVU182
+ 259:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  b1 * x[n-1] */
+ 577              		.loc 1 259 13 is_stmt 0 view .LVU183
+ 578 02e4 4FEAEE70 		asr	r0, lr, #31
+ 259:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  b1 * x[n-1] */
+ 579              		.loc 1 259 24 view .LVU184
+ 580 02e8 E917     		asrs	r1, r5, #31
+ 581              	.LVL84:
+ 259:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  b1 * x[n-1] */
+ 582              		.loc 1 259 11 view .LVU185
+ 583 02ea 0EFB01F1 		mul	r1, lr, r1
+ 584 02ee 05FB0011 		mla	r1, r5, r0, r1
+ 585 02f2 AEFB0540 		umull	r4, r0, lr, r5
+ 586 02f6 0394     		str	r4, [sp, #12]
+ 587 02f8 0144     		add	r1, r1, r0
+ 588              	.LVL85:
+ 261:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  b[2] * x[n-2] */
+ 589              		.loc 1 261 7 is_stmt 1 view .LVU186
+ 261:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  b[2] * x[n-2] */
+ 590              		.loc 1 261 14 is_stmt 0 view .LVU187
+ 591 02fa 4FEAE870 		asr	r0, r8, #31
+ 261:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  b[2] * x[n-2] */
+ 592              		.loc 1 261 25 view .LVU188
+ 593 02fe 4FEAE974 		asr	r4, r9, #31
+ 594              	.LVL86:
+ 261:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  b[2] * x[n-2] */
+ 595              		.loc 1 261 25 view .LVU189
+ 596 0302 09FB00F0 		mul	r0, r9, r0
+ 597 0306 08FB0400 		mla	r0, r8, r4, r0
+ 598 030a A9FB0846 		umull	r4, r6, r9, r8
+ 599 030e 0644     		add	r6, r6, r0
+ 261:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  b[2] * x[n-2] */
+ 600              		.loc 1 261 11 view .LVU190
+ 601 0310 0398     		ldr	r0, [sp, #12]
+ARM GAS  /tmp/cc0P6QMt.s 			page 17
+
+
+ 602 0312 2418     		adds	r4, r4, r0
+ 603 0314 41EB0606 		adc	r6, r1, r6
+ 604              	.LVL87:
+ 263:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  a1 * y[n-1] */
+ 605              		.loc 1 263 7 is_stmt 1 view .LVU191
+ 263:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  a1 * y[n-1] */
+ 606              		.loc 1 263 14 is_stmt 0 view .LVU192
+ 607 0318 4FEAEB71 		asr	r1, fp, #31
+ 263:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  a1 * y[n-1] */
+ 608              		.loc 1 263 25 view .LVU193
+ 609 031c D817     		asrs	r0, r3, #31
+ 610 031e 03FB01F1 		mul	r1, r3, r1
+ 611 0322 0BFB0011 		mla	r1, fp, r0, r1
+ 612 0326 A3FB0B30 		umull	r3, r0, r3, fp
+ 613              	.LVL88:
+ 263:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  a1 * y[n-1] */
+ 614              		.loc 1 263 25 view .LVU194
+ 615 032a 0144     		add	r1, r1, r0
+ 263:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  a1 * y[n-1] */
+ 616              		.loc 1 263 11 view .LVU195
+ 617 032c 1B19     		adds	r3, r3, r4
+ 618 032e 41EB0606 		adc	r6, r1, r6
+ 619              	.LVL89:
+ 265:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  a2 * y[n-2] */
+ 620              		.loc 1 265 7 is_stmt 1 view .LVU196
+ 265:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  a2 * y[n-2] */
+ 621              		.loc 1 265 14 is_stmt 0 view .LVU197
+ 622 0332 019C     		ldr	r4, [sp, #4]
+ 623 0334 E117     		asrs	r1, r4, #31
+ 265:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  a2 * y[n-2] */
+ 624              		.loc 1 265 25 view .LVU198
+ 625 0336 4FEAEA70 		asr	r0, r10, #31
+ 626 033a 0AFB01F1 		mul	r1, r10, r1
+ 627 033e 04FB0011 		mla	r1, r4, r0, r1
+ 628 0342 AAFB0404 		umull	r0, r4, r10, r4
+ 629 0346 0C44     		add	r4, r4, r1
+ 265:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  a2 * y[n-2] */
+ 630              		.loc 1 265 11 view .LVU199
+ 631 0348 C018     		adds	r0, r0, r3
+ 632 034a 44EB0604 		adc	r4, r4, r6
+ 633              	.LVL90:
+ 267:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 634              		.loc 1 267 7 is_stmt 1 view .LVU200
+ 267:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 635              		.loc 1 267 14 is_stmt 0 view .LVU201
+ 636 034e F917     		asrs	r1, r7, #31
+ 267:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 637              		.loc 1 267 25 view .LVU202
+ 638 0350 D317     		asrs	r3, r2, #31
+ 639 0352 02FB01F1 		mul	r1, r2, r1
+ 640 0356 07FB0311 		mla	r1, r7, r3, r1
+ 641 035a A2FB0732 		umull	r3, r2, r2, r7
+ 642              	.LVL91:
+ 267:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 643              		.loc 1 267 25 view .LVU203
+ 644 035e 0A44     		add	r2, r2, r1
+ 267:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ARM GAS  /tmp/cc0P6QMt.s 			page 18
+
+
+ 645              		.loc 1 267 11 view .LVU204
+ 646 0360 1B18     		adds	r3, r3, r0
+ 647 0362 42EB0402 		adc	r2, r2, r4
+ 648              	.LVL92:
+ 270:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 649              		.loc 1 270 7 is_stmt 1 view .LVU205
+ 270:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 650              		.loc 1 270 11 is_stmt 0 view .LVU206
+ 651 0366 049C     		ldr	r4, [sp, #16]
+ 652 0368 C4F12001 		rsb	r1, r4, #32
+ 653 036c B4F12000 		subs	r0, r4, #32
+ 654 0370 23FA04F3 		lsr	r3, r3, r4
+ 270:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 655              		.loc 1 270 11 view .LVU207
+ 656 0374 02FA01F1 		lsl	r1, r2, r1
+ 657 0378 43EA0103 		orr	r3, r3, r1
+ 658 037c A1D4     		bmi	.L5
+ 270:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 659              		.loc 1 270 11 view .LVU208
+ 660 037e 42FA00F0 		asr	r0, r2, r0
+ 661 0382 0343     		orrs	r3, r3, r0
+ 662 0384 9DE7     		b	.L5
+ 663              	.LVL93:
+ 664              	.L10:
+ 288:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     }
+ 289:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 290:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     /*  The first stage goes from the input buffer to the output buffer. */
+ 291:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     /*  Subsequent stages occur in-place in the output buffer */
+ 292:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     pIn = pDst;
+ 293:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 294:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     /* Reset to destination pointer */
+ 295:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     pOut = pDst;
+ 296:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 297:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     /*  Store the updated state variables back into the pState array */
+ 298:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     *pState++ = Xn1;
+ 665              		.loc 1 298 15 view .LVU209
+ 666 0386 059F     		ldr	r7, [sp, #20]
+ 667 0388 069E     		ldr	r6, [sp, #24]
+ 292:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 668              		.loc 1 292 5 is_stmt 1 view .LVU210
+ 669              	.LVL94:
+ 295:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 670              		.loc 1 295 5 view .LVU211
+ 671              		.loc 1 298 5 view .LVU212
+ 672              		.loc 1 298 15 is_stmt 0 view .LVU213
+ 673 038a C7F80090 		str	r9, [r7]
+ 299:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     *pState++ = Xn2;
+ 674              		.loc 1 299 5 is_stmt 1 view .LVU214
+ 675              	.LVL95:
+ 676              		.loc 1 299 15 is_stmt 0 view .LVU215
+ 677 038e 7B60     		str	r3, [r7, #4]
+ 300:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     *pState++ = Yn1;
+ 678              		.loc 1 300 5 is_stmt 1 view .LVU216
+ 679              	.LVL96:
+ 680              		.loc 1 300 15 is_stmt 0 view .LVU217
+ 681 0390 C7F808A0 		str	r10, [r7, #8]
+ 301:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     *pState++ = Yn2;
+ARM GAS  /tmp/cc0P6QMt.s 			page 19
+
+
+ 682              		.loc 1 301 5 is_stmt 1 view .LVU218
+ 683              		.loc 1 301 12 is_stmt 0 view .LVU219
+ 684 0394 07F11001 		add	r1, r7, #16
+ 685              	.LVL97:
+ 686              		.loc 1 301 15 view .LVU220
+ 687 0398 FA60     		str	r2, [r7, #12]
+ 302:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 303:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****   } while (--stage);
+ 688              		.loc 1 303 12 is_stmt 1 view .LVU221
+ 689              	.LVL98:
+ 690              		.loc 1 303 12 is_stmt 0 view .LVU222
+ 691 039a 119B     		ldr	r3, [sp, #68]
+ 692              	.LVL99:
+ 693              		.loc 1 303 12 view .LVU223
+ 694 039c 013B     		subs	r3, r3, #1
+ 695              	.LVL100:
+ 696              		.loc 1 303 12 view .LVU224
+ 697 039e 1193     		str	r3, [sp, #68]
+ 698 03a0 1FD0     		beq	.L11
+ 301:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     *pState++ = Yn2;
+ 699              		.loc 1 301 12 view .LVU225
+ 700 03a2 0F46     		mov	r7, r1
+ 701              	.LVL101:
+ 292:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 702              		.loc 1 292 9 view .LVU226
+ 703 03a4 159B     		ldr	r3, [sp, #84]
+ 704              	.LVL102:
+ 292:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 705              		.loc 1 292 9 view .LVU227
+ 706 03a6 0393     		str	r3, [sp, #12]
+ 707              	.LVL103:
+ 708              	.L7:
+  82:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 709              		.loc 1 82 3 is_stmt 1 view .LVU228
+  86:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****   {
+ 710              		.loc 1 86 3 view .LVU229
+  89:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     b1 = *pCoeffs++;
+ 711              		.loc 1 89 5 view .LVU230
+  89:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     b1 = *pCoeffs++;
+ 712              		.loc 1 89 8 is_stmt 0 view .LVU231
+ 713 03a8 D6F800E0 		ldr	lr, [r6]
+ 714              	.LVL104:
+  90:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     b2 = *pCoeffs++;
+ 715              		.loc 1 90 5 is_stmt 1 view .LVU232
+  90:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     b2 = *pCoeffs++;
+ 716              		.loc 1 90 8 is_stmt 0 view .LVU233
+ 717 03ac D6F80480 		ldr	r8, [r6, #4]
+ 718              	.LVL105:
+  91:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     a1 = *pCoeffs++;
+ 719              		.loc 1 91 5 is_stmt 1 view .LVU234
+  91:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     a1 = *pCoeffs++;
+ 720              		.loc 1 91 8 is_stmt 0 view .LVU235
+ 721 03b0 B368     		ldr	r3, [r6, #8]
+ 722 03b2 1293     		str	r3, [sp, #72]
+ 723              	.LVL106:
+  92:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     a2 = *pCoeffs++;
+ 724              		.loc 1 92 5 is_stmt 1 view .LVU236
+ARM GAS  /tmp/cc0P6QMt.s 			page 20
+
+
+  92:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     a2 = *pCoeffs++;
+ 725              		.loc 1 92 8 is_stmt 0 view .LVU237
+ 726 03b4 F268     		ldr	r2, [r6, #12]
+ 727 03b6 0192     		str	r2, [sp, #4]
+ 728              	.LVL107:
+  93:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 729              		.loc 1 93 5 is_stmt 1 view .LVU238
+  93:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 730              		.loc 1 93 8 is_stmt 0 view .LVU239
+ 731 03b8 3269     		ldr	r2, [r6, #16]
+ 732              	.LVL108:
+  93:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 733              		.loc 1 93 8 view .LVU240
+ 734 03ba 0092     		str	r2, [sp]
+ 735 03bc 1436     		adds	r6, r6, #20
+ 736              	.LVL109:
+  96:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     Xn2 = pState[1];
+ 737              		.loc 1 96 5 is_stmt 1 view .LVU241
+  96:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     Xn2 = pState[1];
+ 738              		.loc 1 96 9 is_stmt 0 view .LVU242
+ 739 03be D7F80090 		ldr	r9, [r7]
+ 740              	.LVL110:
+  97:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     Yn1 = pState[2];
+ 741              		.loc 1 97 5 is_stmt 1 view .LVU243
+  97:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     Yn1 = pState[2];
+ 742              		.loc 1 97 9 is_stmt 0 view .LVU244
+ 743 03c2 7C68     		ldr	r4, [r7, #4]
+ 744              	.LVL111:
+  98:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     Yn2 = pState[3];
+ 745              		.loc 1 98 5 is_stmt 1 view .LVU245
+  98:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     Yn2 = pState[3];
+ 746              		.loc 1 98 9 is_stmt 0 view .LVU246
+ 747 03c4 D7F808A0 		ldr	r10, [r7, #8]
+ 748              	.LVL112:
+  99:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 749              		.loc 1 99 5 is_stmt 1 view .LVU247
+  99:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 750              		.loc 1 99 9 is_stmt 0 view .LVU248
+ 751 03c8 FA68     		ldr	r2, [r7, #12]
+ 752              	.LVL113:
+ 107:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 753              		.loc 1 107 5 is_stmt 1 view .LVU249
+ 107:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 754              		.loc 1 107 12 is_stmt 0 view .LVU250
+ 755 03ca 1099     		ldr	r1, [sp, #64]
+ 756 03cc 8908     		lsrs	r1, r1, #2
+ 757 03ce 0F91     		str	r1, [sp, #60]
+ 758              	.LVL114:
+ 111:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     {
+ 759              		.loc 1 111 5 is_stmt 1 view .LVU251
+ 111:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     {
+ 760              		.loc 1 111 11 is_stmt 0 view .LVU252
+ 761 03d0 1599     		ldr	r1, [sp, #84]
+ 762              	.LVL115:
+ 111:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     {
+ 763              		.loc 1 111 11 view .LVU253
+ 764 03d2 0291     		str	r1, [sp, #8]
+ARM GAS  /tmp/cc0P6QMt.s 			page 21
+
+
+ 765 03d4 1397     		str	r7, [sp, #76]
+ 766 03d6 1496     		str	r6, [sp, #80]
+ 767 03d8 CDF81890 		str	r9, [sp, #24]
+ 768 03dc 5146     		mov	r1, r10
+ 769 03de 9B46     		mov	fp, r3
+ 770 03e0 5BE7     		b	.L2
+ 771              	.LVL116:
+ 772              	.L11:
+ 304:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 305:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** #else
+ 306:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 307:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****   /* Run the below code for Cortex-M0 */
+ 308:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 309:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****   do
+ 310:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****   {
+ 311:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     /* Reading the coefficients */
+ 312:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     b0 = *pCoeffs++;
+ 313:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     b1 = *pCoeffs++;
+ 314:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     b2 = *pCoeffs++;
+ 315:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     a1 = *pCoeffs++;
+ 316:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     a2 = *pCoeffs++;
+ 317:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 318:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     /* Reading the state values */
+ 319:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     Xn1 = pState[0];
+ 320:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     Xn2 = pState[1];
+ 321:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     Yn1 = pState[2];
+ 322:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     Yn2 = pState[3];
+ 323:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 324:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     /*      The variables acc holds the output value that is computed:
+ 325:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****      *    acc =  b0 * x[n] + b1 * x[n-1] + b2 * x[n-2] + a1 * y[n-1] + a2 * y[n-2]
+ 326:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****      */
+ 327:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 328:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     sample = blockSize;
+ 329:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 330:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     while (sample > 0U)
+ 331:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     {
+ 332:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Read the input */
+ 333:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       Xn = *pIn++;
+ 334:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 335:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc =  b0 * x[n] + b1 * x[n-1] + b2 * x[n-2] + a1 * y[n-1] + a2 * y[n-2] */
+ 336:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc =  b0 * x[n] */
+ 337:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc = (q63_t) b0 *Xn;
+ 338:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 339:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  b1 * x[n-1] */
+ 340:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc += (q63_t) b1 *Xn1;
+ 341:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  b[2] * x[n-2] */
+ 342:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc += (q63_t) b2 *Xn2;
+ 343:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  a1 * y[n-1] */
+ 344:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc += (q63_t) a1 *Yn1;
+ 345:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* acc +=  a2 * y[n-2] */
+ 346:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc += (q63_t) a2 *Yn2;
+ 347:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 348:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* The result is converted to 1.31  */
+ 349:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       acc = acc >> lShift;
+ 350:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 351:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Every time after the output is computed state should be updated. */
+ 352:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* The states should be updated as:  */
+ARM GAS  /tmp/cc0P6QMt.s 			page 22
+
+
+ 353:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Xn2 = Xn1    */
+ 354:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Xn1 = Xn     */
+ 355:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Yn2 = Yn1    */
+ 356:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Yn1 = acc    */
+ 357:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       Xn2 = Xn1;
+ 358:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       Xn1 = Xn;
+ 359:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       Yn2 = Yn1;
+ 360:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       Yn1 = (q31_t) acc;
+ 361:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 362:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* Store the output in the destination buffer. */
+ 363:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       *pOut++ = (q31_t) acc;
+ 364:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 365:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       /* decrement the loop counter */
+ 366:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****       sample--;
+ 367:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     }
+ 368:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 369:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     /*  The first stage goes from the input buffer to the output buffer. */
+ 370:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     /*  Subsequent stages occur in-place in the output buffer */
+ 371:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     pIn = pDst;
+ 372:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 373:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     /* Reset to destination pointer */
+ 374:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     pOut = pDst;
+ 375:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 376:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     /*  Store the updated state variables back into the pState array */
+ 377:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     *pState++ = Xn1;
+ 378:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     *pState++ = Xn2;
+ 379:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     *pState++ = Yn1;
+ 380:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****     *pState++ = Yn2;
+ 381:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 382:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c ****   } while (--stage);
+ 383:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** 
+ 384:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** #endif /*  #if defined (ARM_MATH_DSP) */
+ 385:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c **** }
+ 773              		.loc 1 385 1 view .LVU254
+ 774 03e2 17B0     		add	sp, sp, #92
+ 775              	.LCFI2:
+ 776              		.cfi_def_cfa_offset 36
+ 777              		@ sp needed
+ 778 03e4 BDE8F08F 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
+ 779              		.loc 1 385 1 view .LVU255
+ 780              		.cfi_endproc
+ 781              	.LFE135:
+ 783              		.text
+ 784              	.Letext0:
+ 785              		.file 2 "/usr/arm-none-eabi/include/machine/_default_types.h"
+ 786              		.file 3 "/usr/arm-none-eabi/include/sys/_stdint.h"
+ 787              		.file 4 "Drivers/CMSIS/DSP/Include/arm_math.h"
+ARM GAS  /tmp/cc0P6QMt.s 			page 23
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 arm_biquad_cascade_df1_q31.c
+     /tmp/cc0P6QMt.s:21     .text.arm_biquad_cascade_df1_q31:00000000 $t
+     /tmp/cc0P6QMt.s:27     .text.arm_biquad_cascade_df1_q31:00000000 arm_biquad_cascade_df1_q31
+
+NO UNDEFINED SYMBOLS

@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc8itxlk.s 			page 1
+ARM GAS  /tmp/ccel1P5D.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
   28:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****     The SPDIFRX HAL driver can be used as follow:
   29:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
   30:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****     (#) Declare SPDIFRX_HandleTypeDef handle structure.
-ARM GAS  /tmp/cc8itxlk.s 			page 2
+ARM GAS  /tmp/ccel1P5D.s 			page 2
 
 
   31:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****     (#) Initialize the SPDIFRX low level resources by implement the HAL_SPDIFRX_MspInit() API:
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
   85:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****      (+) At reception end of transfer HAL_SPDIFRX_RxCpltCallback is executed and user can
   86:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****          add his own code by customization of function pointer HAL_SPDIFRX_RxCpltCallback
   87:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****      (+) In case of transfer Error, HAL_SPDIFRX_ErrorCallback() function is executed and user can
-ARM GAS  /tmp/cc8itxlk.s 			page 3
+ARM GAS  /tmp/ccel1P5D.s 			page 3
 
 
   88:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****          add his own code by customization of function pointer HAL_SPDIFRX_ErrorCallback
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  142:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   these callbacks pointers are NULL (not registered beforehand).
  143:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   If not, MspInit or MspDeInit callbacks pointers are not null, the HAL_SPDIFRX_Init() / HAL_SPDIFR
  144:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   keep and use the user MspInit/MspDeInit functions (registered beforehand)
-ARM GAS  /tmp/cc8itxlk.s 			page 4
+ARM GAS  /tmp/ccel1P5D.s 			page 4
 
 
  145:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  199:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****                                                          FlagStatus Status, uint32_t Timeout, uint3
  200:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** /**
  201:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   * @}
-ARM GAS  /tmp/cc8itxlk.s 			page 5
+ARM GAS  /tmp/ccel1P5D.s 			page 5
 
 
  202:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   */
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  256:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   assert_param(IS_SPDIFRX_INPUT_SELECT(hspdif->Init.InputSelection));
  257:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   assert_param(IS_SPDIFRX_MAX_RETRIES(hspdif->Init.Retries));
  258:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   assert_param(IS_SPDIFRX_WAIT_FOR_ACTIVITY(hspdif->Init.WaitForActivity));
-ARM GAS  /tmp/cc8itxlk.s 			page 6
+ARM GAS  /tmp/ccel1P5D.s 			page 6
 
 
  259:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   assert_param(IS_SPDIFRX_CHANNEL(hspdif->Init.ChannelSelection));
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  313:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****              hspdif->Init.Retries |
  314:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****              hspdif->Init.WaitForActivity |
  315:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****              hspdif->Init.ChannelSelection |
-ARM GAS  /tmp/cc8itxlk.s 			page 7
+ARM GAS  /tmp/ccel1P5D.s 			page 7
 
 
  316:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****              hspdif->Init.DataFormat |
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  370:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   /* SPDIFRX peripheral state is RESET*/
  371:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   hspdif->State = HAL_SPDIFRX_STATE_RESET;
  372:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
-ARM GAS  /tmp/cc8itxlk.s 			page 8
+ARM GAS  /tmp/ccel1P5D.s 			page 8
 
 
  373:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   /* Release Lock */
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  427:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****                                                pSPDIFRX_CallbackTypeDef pCallback)
  428:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** {
  429:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   HAL_StatusTypeDef status = HAL_OK;
-ARM GAS  /tmp/cc8itxlk.s 			page 9
+ARM GAS  /tmp/ccel1P5D.s 			page 9
 
 
  430:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  484:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****       case HAL_SPDIFRX_MSPINIT_CB_ID :
  485:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****         hspdif->MspInitCallback = pCallback;
  486:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****         break;
-ARM GAS  /tmp/cc8itxlk.s 			page 10
+ARM GAS  /tmp/ccel1P5D.s 			page 10
 
 
  487:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  541:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****         hspdif->RxHalfCpltCallback = HAL_SPDIFRX_RxHalfCpltCallback;
  542:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****         break;
  543:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
-ARM GAS  /tmp/cc8itxlk.s 			page 11
+ARM GAS  /tmp/ccel1P5D.s 			page 11
 
 
  544:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****       case HAL_SPDIFRX_RX_CPLT_CB_ID :
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  598:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   return status;
  599:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** }
  600:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
-ARM GAS  /tmp/cc8itxlk.s 			page 12
+ARM GAS  /tmp/ccel1P5D.s 			page 12
 
 
  601:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** #endif /* USE_HAL_SPDIFRX_REGISTER_CALLBACKS */
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  655:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   */
  656:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
  657:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** /** @defgroup SPDIFRX_Exported_Functions_Group2 IO operation functions
-ARM GAS  /tmp/cc8itxlk.s 			page 13
+ARM GAS  /tmp/ccel1P5D.s 			page 13
 
 
  658:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   *  @brief Data transfers functions
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  712:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   uint16_t sizeCounter = Size;
  713:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   uint32_t *pTmpBuf = pData;
  714:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
-ARM GAS  /tmp/cc8itxlk.s 			page 14
+ARM GAS  /tmp/ccel1P5D.s 			page 14
 
 
  715:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   if ((pData == NULL) || (Size == 0U))
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  769:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****     return HAL_BUSY;
  770:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   }
  771:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** }
-ARM GAS  /tmp/cc8itxlk.s 			page 15
+ARM GAS  /tmp/ccel1P5D.s 			page 15
 
 
  772:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  826:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****       }
  827:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
  828:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****       (*pTmpBuf) = hspdif->Instance->CSR;
-ARM GAS  /tmp/cc8itxlk.s 			page 16
+ARM GAS  /tmp/ccel1P5D.s 			page 16
 
 
  829:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****       pTmpBuf++;
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  883:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****     __HAL_SPDIFRX_ENABLE_IT(hspdif, SPDIFRX_IT_OVRIE);
  884:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
  885:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****     /* Enable the SPDIFRX RXNE interrupt */
-ARM GAS  /tmp/cc8itxlk.s 			page 17
+ARM GAS  /tmp/ccel1P5D.s 			page 17
 
 
  886:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****     __HAL_SPDIFRX_ENABLE_IT(hspdif, SPDIFRX_IT_RXNE);
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  940:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** HAL_StatusTypeDef HAL_SPDIFRX_ReceiveControlFlow_IT(SPDIFRX_HandleTypeDef *hspdif, uint32_t *pData,
  941:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** {
  942:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   uint32_t count = SPDIFRX_TIMEOUT_VALUE * (SystemCoreClock / 24U / 1000U);
-ARM GAS  /tmp/cc8itxlk.s 			page 18
+ARM GAS  /tmp/ccel1P5D.s 			page 18
 
 
  943:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  997:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****           __HAL_UNLOCK(hspdif);
  998:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
  999:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****           return HAL_TIMEOUT;
-ARM GAS  /tmp/cc8itxlk.s 			page 19
+ARM GAS  /tmp/ccel1P5D.s 			page 19
 
 
 1000:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****         }
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
 1054:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
 1055:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****     /* Set the DMA error callback */
 1056:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****     hspdif->hdmaDrRx->XferErrorCallback = SPDIFRX_DMAError;
-ARM GAS  /tmp/cc8itxlk.s 			page 20
+ARM GAS  /tmp/ccel1P5D.s 			page 20
 
 
 1057:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
 1111:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****     /* Process Unlocked */
 1112:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****     __HAL_UNLOCK(hspdif);
 1113:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
-ARM GAS  /tmp/cc8itxlk.s 			page 21
+ARM GAS  /tmp/ccel1P5D.s 			page 21
 
 
 1114:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****     return HAL_OK;
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
 1168:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****       /* Set SPDIFRX state */
 1169:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****       hspdif->State = HAL_SPDIFRX_STATE_ERROR;
 1170:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
-ARM GAS  /tmp/cc8itxlk.s 			page 22
+ARM GAS  /tmp/ccel1P5D.s 			page 22
 
 
 1171:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****       /* Process Unlocked */
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
 1225:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** /**
 1226:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   * @brief stop the audio stream receive from the Media.
 1227:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   * @param hspdif SPDIFRX handle
-ARM GAS  /tmp/cc8itxlk.s 			page 23
+ARM GAS  /tmp/ccel1P5D.s 			page 23
 
 
 1228:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   * @retval None
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
 1282:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   }
 1283:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
 1284:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   /* SPDIFRX Overrun error interrupt occurred */
-ARM GAS  /tmp/cc8itxlk.s 			page 24
+ARM GAS  /tmp/ccel1P5D.s 			page 24
 
 
 1285:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   if (((itFlag & SPDIFRX_FLAG_OVR) == SPDIFRX_FLAG_OVR) && ((itSource &  SPDIFRX_IT_OVRIE) == SPDIF
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
 1339:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** /**
 1340:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   * @brief Rx (Control flow) Transfer half completed callbacks
 1341:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   * @param hspdif SPDIFRX handle
-ARM GAS  /tmp/cc8itxlk.s 			page 25
+ARM GAS  /tmp/ccel1P5D.s 			page 25
 
 
 1342:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   * @retval None
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
 1396:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** This subsection permit to get in run-time the status of the peripheral
 1397:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** and the data flow.
 1398:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
-ARM GAS  /tmp/cc8itxlk.s 			page 26
+ARM GAS  /tmp/ccel1P5D.s 			page 26
 
 
 1399:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** @endverbatim
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
 1453:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   * @retval None
 1454:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   */
 1455:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** static void SPDIFRX_DMARxHalfCplt(DMA_HandleTypeDef *hdma)
-ARM GAS  /tmp/cc8itxlk.s 			page 27
+ARM GAS  /tmp/ccel1P5D.s 			page 27
 
 
 1456:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** {
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
 1510:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** {
 1511:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   SPDIFRX_HandleTypeDef *hspdif = (SPDIFRX_HandleTypeDef *)((DMA_HandleTypeDef *)hdma)->Parent;
 1512:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
-ARM GAS  /tmp/cc8itxlk.s 			page 28
+ARM GAS  /tmp/ccel1P5D.s 			page 28
 
 
 1513:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   /* Disable Rx and Cb DMA Request */
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
 1567:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** {
 1568:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   /* Receive data */
 1569:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   (*hspdif->pCsBuffPtr) = hspdif->Instance->CSR;
-ARM GAS  /tmp/cc8itxlk.s 			page 29
+ARM GAS  /tmp/ccel1P5D.s 			page 29
 
 
 1570:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   hspdif->pCsBuffPtr++;
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
   48              	.LVL1:
   49              	.L3:
   50              		.loc 1 1604 47 view .LVU3
-ARM GAS  /tmp/cc8itxlk.s 			page 30
+ARM GAS  /tmp/ccel1P5D.s 			page 30
 
 
   51              		.loc 1 1604 10 is_stmt 0 view .LVU4
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
   94 0050 3268     		ldr	r2, [r6]
   95 0052 5368     		ldr	r3, [r2, #4]
   96 0054 23F00403 		bic	r3, r3, #4
-ARM GAS  /tmp/cc8itxlk.s 			page 31
+ARM GAS  /tmp/ccel1P5D.s 			page 31
 
 
   97 0058 1B04     		lsls	r3, r3, #16
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  140 00a4 00E0     		b	.L5
  141              	.L8:
 1627:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****       }
-ARM GAS  /tmp/cc8itxlk.s 			page 32
+ARM GAS  /tmp/ccel1P5D.s 			page 32
 
 
 1628:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****     }
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  188              		.loc 1 249 6 is_stmt 0 view .LVU36
  189 0000 0028     		cmp	r0, #0
  190 0002 30D0     		beq	.L13
-ARM GAS  /tmp/cc8itxlk.s 			page 33
+ARM GAS  /tmp/ccel1P5D.s 			page 33
 
 
  245:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   uint32_t tmpreg;
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  226 001e 2168     		ldr	r1, [r4]
  303:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
  227              		.loc 1 303 10 view .LVU56
-ARM GAS  /tmp/cc8itxlk.s 			page 34
+ARM GAS  /tmp/ccel1P5D.s 			page 34
 
 
  228 0020 0B68     		ldr	r3, [r1]
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  264              		.loc 1 317 44 view .LVU74
  265 0042 0343     		orrs	r3, r3, r0
  319:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****              hspdif->Init.ParityErrorMask
-ARM GAS  /tmp/cc8itxlk.s 			page 35
+ARM GAS  /tmp/ccel1P5D.s 			page 35
 
 
  266              		.loc 1 319 26 view .LVU75
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  303              	.LVL12:
  304              	.L13:
  305              	.LCFI2:
-ARM GAS  /tmp/cc8itxlk.s 			page 36
+ARM GAS  /tmp/ccel1P5D.s 			page 36
 
 
  306              		.cfi_def_cfa_offset 0
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  342:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   {
  357              		.loc 1 342 6 is_stmt 0 view .LVU100
  358 0000 90B1     		cbz	r0, .L24
-ARM GAS  /tmp/cc8itxlk.s 			page 37
+ARM GAS  /tmp/ccel1P5D.s 			page 37
 
 
  340:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   /* Check the SPDIFRX handle allocation */
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  398              		.cfi_restore 14
  344:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   }
  399              		.loc 1 344 12 view .LVU116
-ARM GAS  /tmp/cc8itxlk.s 			page 38
+ARM GAS  /tmp/ccel1P5D.s 			page 38
 
 
  400 0028 0120     		movs	r0, #1
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  441              		.loc 1 628 10 view .LVU131
  442 000e 0B68     		ldr	r3, [r1]
  443              	.LVL20:
-ARM GAS  /tmp/cc8itxlk.s 			page 39
+ARM GAS  /tmp/ccel1P5D.s 			page 39
 
 
  630:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****       (((tmpreg & SPDIFRX_CR_DRFMT) != sDataFormat.DataFormat) ||
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  648:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
  481              		.loc 1 648 24 is_stmt 0 view .LVU149
  482 0034 0B60     		str	r3, [r1]
-ARM GAS  /tmp/cc8itxlk.s 			page 40
+ARM GAS  /tmp/ccel1P5D.s 			page 40
 
 
  650:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** }
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  634:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   }
  525              		.loc 1 634 12 view .LVU162
  526 0058 0120     		movs	r0, #1
-ARM GAS  /tmp/cc8itxlk.s 			page 41
+ARM GAS  /tmp/ccel1P5D.s 			page 41
 
 
  527 005a EDE7     		b	.L30
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  574 0016 90F84530 		ldrb	r3, [r0, #69]	@ zero_extendqisi2
  575              	.LVL32:
  720:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   {
-ARM GAS  /tmp/cc8itxlk.s 			page 42
+ARM GAS  /tmp/ccel1P5D.s 			page 42
 
 
  576              		.loc 1 720 6 view .LVU172
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  616 0050 48BB     		cbnz	r0, .L44
  740:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
  617              		.loc 1 740 5 is_stmt 1 view .LVU187
-ARM GAS  /tmp/cc8itxlk.s 			page 43
+ARM GAS  /tmp/ccel1P5D.s 			page 43
 
 
  618 0052 2A68     		ldr	r2, [r5]
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  756:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****     }
  657              		.loc 1 756 18 view .LVU203
  658 007c A4B2     		uxth	r4, r4
-ARM GAS  /tmp/cc8itxlk.s 			page 44
+ARM GAS  /tmp/ccel1P5D.s 			page 44
 
 
  659              	.LVL43:
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  701              	.LVL48:
  702              	.L44:
  736:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****     }
-ARM GAS  /tmp/cc8itxlk.s 			page 45
+ARM GAS  /tmp/ccel1P5D.s 			page 45
 
 
  703              		.loc 1 736 14 view .LVU216
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  751 000e 0546     		mov	r5, r0
  752 0010 0E46     		mov	r6, r1
  753 0012 1446     		mov	r4, r2
-ARM GAS  /tmp/cc8itxlk.s 			page 46
+ARM GAS  /tmp/ccel1P5D.s 			page 46
 
 
  754 0014 1F46     		mov	r7, r3
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  793              	.LVL55:
  808:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****     {
  794              		.loc 1 808 9 view .LVU240
-ARM GAS  /tmp/cc8itxlk.s 			page 47
+ARM GAS  /tmp/ccel1P5D.s 			page 47
 
 
  795 004a FFF7FEFF 		bl	SPDIFRX_WaitOnFlagUntilTimeout
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  829:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****       sizeCounter--;
  835              		.loc 1 829 7 is_stmt 1 view .LVU255
  830:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****     }
-ARM GAS  /tmp/cc8itxlk.s 			page 48
+ARM GAS  /tmp/ccel1P5D.s 			page 48
 
 
  836              		.loc 1 830 7 view .LVU256
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  877              		.loc 1 843 12 view .LVU269
  878 009a 4FF00208 		mov	r8, #2
  879 009e F8E7     		b	.L49
-ARM GAS  /tmp/cc8itxlk.s 			page 49
+ARM GAS  /tmp/ccel1P5D.s 			page 49
 
 
  880              	.L54:
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  927              		.loc 1 858 3 is_stmt 1 view .LVU278
  858:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
  928              		.loc 1 858 34 is_stmt 0 view .LVU279
-ARM GAS  /tmp/cc8itxlk.s 			page 50
+ARM GAS  /tmp/ccel1P5D.s 			page 50
 
 
  929 0012 90F845C0 		ldrb	ip, [r0, #69]	@ zero_extendqisi2
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  874:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
  967              		.loc 1 874 23 view .LVU296
  968 0042 8264     		str	r2, [r0, #72]
-ARM GAS  /tmp/cc8itxlk.s 			page 51
+ARM GAS  /tmp/ccel1P5D.s 			page 51
 
 
  969              	.LVL75:
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  896:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****         {
  1010              		.loc 1 896 12 is_stmt 0 view .LVU310
  1011 007c 83B1     		cbz	r3, .L68
-ARM GAS  /tmp/cc8itxlk.s 			page 52
+ARM GAS  /tmp/ccel1P5D.s 			page 52
 
 
  915:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****       } while (__HAL_SPDIFRX_GET_FLAG(hspdif, SPDIFRX_FLAG_SYNCD) == RESET);
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  1052              		.loc 1 900 11 is_stmt 1 view .LVU324
  1053 00a0 0268     		ldr	r2, [r0]
  1054 00a2 5368     		ldr	r3, [r2, #4]
-ARM GAS  /tmp/cc8itxlk.s 			page 53
+ARM GAS  /tmp/ccel1P5D.s 			page 53
 
 
  1055              	.LVL84:
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  1102 0100 5360     		str	r3, [r2, #4]
  908:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
  1103              		.loc 1 908 11 view .LVU332
-ARM GAS  /tmp/cc8itxlk.s 			page 54
+ARM GAS  /tmp/ccel1P5D.s 			page 54
 
 
  908:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  1145              	.LFE148:
  1147              		.section	.text.HAL_SPDIFRX_ReceiveControlFlow_IT,"ax",%progbits
  1148              		.align	1
-ARM GAS  /tmp/cc8itxlk.s 			page 55
+ARM GAS  /tmp/ccel1P5D.s 			page 55
 
 
  1149              		.global	HAL_SPDIFRX_ReceiveControlFlow_IT
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  1193 0028 0029     		cmpne	r1, #0
  1194 002a 75D0     		beq	.L77
  954:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
-ARM GAS  /tmp/cc8itxlk.s 			page 56
+ARM GAS  /tmp/ccel1P5D.s 			page 56
 
 
  1195              		.loc 1 954 5 is_stmt 1 view .LVU357
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  1232              		.loc 1 969 5 is_stmt 1 view .LVU374
  1233 0054 0168     		ldr	r1, [r0]
  1234 0056 4A68     		ldr	r2, [r1, #4]
-ARM GAS  /tmp/cc8itxlk.s 			page 57
+ARM GAS  /tmp/ccel1P5D.s 			page 57
 
 
  1235 0058 42F00802 		orr	r2, r2, #8
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  1274 008c 1368     		ldr	r3, [r2]
  1275              	.LVL102:
 1005:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****     }
-ARM GAS  /tmp/cc8itxlk.s 			page 58
+ARM GAS  /tmp/ccel1P5D.s 			page 58
 
 
  1276              		.loc 1 1005 7 is_stmt 0 view .LVU390
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  1320 00c0 5368     		ldr	r3, [r2, #4]
  1321 00c2 23F00403 		bic	r3, r3, #4
  1322 00c6 1B04     		lsls	r3, r3, #16
-ARM GAS  /tmp/cc8itxlk.s 			page 59
+ARM GAS  /tmp/ccel1P5D.s 			page 59
 
 
  1323 00c8 1B0C     		lsrs	r3, r3, #16
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  999:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****         }
  1366              		.loc 1 999 18 view .LVU412
  1367 0112 C3E7     		b	.L72
-ARM GAS  /tmp/cc8itxlk.s 			page 60
+ARM GAS  /tmp/ccel1P5D.s 			page 60
 
 
  1368              	.LVL108:
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  1416              		.cfi_offset 4, -12
  1417              		.cfi_offset 5, -8
  1418              		.cfi_offset 14, -4
-ARM GAS  /tmp/cc8itxlk.s 			page 61
+ARM GAS  /tmp/ccel1P5D.s 			page 61
 
 
  1419 0002 1346     		mov	r3, r2
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  1459 0038 00F08280 		beq	.L91
 1040:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
  1460              		.loc 1 1040 5 is_stmt 1 discriminator 2 view .LVU435
-ARM GAS  /tmp/cc8itxlk.s 			page 62
+ARM GAS  /tmp/ccel1P5D.s 			page 62
 
 
  1461 003c 0122     		movs	r2, #1
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  1496              		.loc 1 1056 5 is_stmt 1 view .LVU454
 1056:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
  1497              		.loc 1 1056 11 is_stmt 0 view .LVU455
-ARM GAS  /tmp/cc8itxlk.s 			page 63
+ARM GAS  /tmp/ccel1P5D.s 			page 63
 
 
  1498 005e 026C     		ldr	r2, [r0, #64]
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  1537              	.LVL124:
  1538              	.L88:
 1083:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****       {
-ARM GAS  /tmp/cc8itxlk.s 			page 64
+ARM GAS  /tmp/ccel1P5D.s 			page 64
 
 
  1539              		.loc 1 1083 7 view .LVU471
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  1576 00b6 0723     		movs	r3, #7
  1577 00b8 85F84530 		strb	r3, [r5, #69]
 1069:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
-ARM GAS  /tmp/cc8itxlk.s 			page 65
+ARM GAS  /tmp/ccel1P5D.s 			page 65
 
 
  1578              		.loc 1 1069 7 is_stmt 1 view .LVU489
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
 1094:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****           __HAL_SPDIFRX_DISABLE_IT(hspdif, SPDIFRX_IT_IFEIE);
  1623              		.loc 1 1094 11 view .LVU499
  1624 010c 2A68     		ldr	r2, [r5]
-ARM GAS  /tmp/cc8itxlk.s 			page 66
+ARM GAS  /tmp/ccel1P5D.s 			page 66
 
 
  1625 010e 5368     		ldr	r3, [r2, #4]
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
 1040:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
  1667              		.loc 1 1040 5 discriminator 1 view .LVU512
  1668 0140 0220     		movs	r0, #2
-ARM GAS  /tmp/cc8itxlk.s 			page 67
+ARM GAS  /tmp/ccel1P5D.s 			page 67
 
 
  1669              	.LVL133:
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
 1133:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
  1718              		.loc 1 1133 3 is_stmt 1 view .LVU520
 1133:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
-ARM GAS  /tmp/cc8itxlk.s 			page 68
+ARM GAS  /tmp/ccel1P5D.s 			page 68
 
 
  1719              		.loc 1 1133 34 is_stmt 0 view .LVU521
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
 1147:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
  1758              		.loc 1 1147 5 view .LVU537
 1149:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****     hspdif->State = HAL_SPDIFRX_STATE_BUSY_CX;
-ARM GAS  /tmp/cc8itxlk.s 			page 69
+ARM GAS  /tmp/ccel1P5D.s 			page 69
 
 
  1759              		.loc 1 1149 5 view .LVU538
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  1796              		.loc 1 1162 9 view .LVU555
  1797 006a FFF7FEFF 		bl	HAL_DMA_Start_IT
  1798              	.LVL143:
-ARM GAS  /tmp/cc8itxlk.s 			page 70
+ARM GAS  /tmp/ccel1P5D.s 			page 70
 
 
 1162:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****         HAL_OK)
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  1836 0098 9A68     		ldr	r2, [r3, #8]
 1208:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
  1837              		.loc 1 1208 67 view .LVU573
-ARM GAS  /tmp/cc8itxlk.s 			page 71
+ARM GAS  /tmp/ccel1P5D.s 			page 71
 
 
  1838 009a 12F0200F 		tst	r2, #32
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  1876 00c6 5368     		ldr	r3, [r2, #4]
  1877 00c8 23F00103 		bic	r3, r3, #1
  1878 00cc 1B04     		lsls	r3, r3, #16
-ARM GAS  /tmp/cc8itxlk.s 			page 72
+ARM GAS  /tmp/ccel1P5D.s 			page 72
 
 
  1879 00ce 1B0C     		lsrs	r3, r3, #16
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  1925 0126 0123     		movs	r3, #1
  1926 0128 85F84530 		strb	r3, [r5, #69]
 1203:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
-ARM GAS  /tmp/cc8itxlk.s 			page 73
+ARM GAS  /tmp/ccel1P5D.s 			page 73
 
 
  1927              		.loc 1 1203 11 is_stmt 1 view .LVU598
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  1972              		.syntax unified
  1973              		.thumb
  1974              		.thumb_func
-ARM GAS  /tmp/cc8itxlk.s 			page 74
+ARM GAS  /tmp/ccel1P5D.s 			page 74
 
 
  1976              	HAL_SPDIFRX_DMAStop:
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  2015              		.loc 1 1240 3 is_stmt 1 view .LVU623
 1240:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   {
  2016              		.loc 1 1240 13 is_stmt 0 view .LVU624
-ARM GAS  /tmp/cc8itxlk.s 			page 75
+ARM GAS  /tmp/ccel1P5D.s 			page 75
 
 
  2017 002c 026C     		ldr	r2, [r0, #64]
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  2056              	.LVL156:
  2057              	.L115:
 1233:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
-ARM GAS  /tmp/cc8itxlk.s 			page 76
+ARM GAS  /tmp/ccel1P5D.s 			page 76
 
 
  2058              		.loc 1 1233 3 discriminator 1 view .LVU640
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  2108              		.loc 1 1462 3 view .LVU648
  2109 0002 806B     		ldr	r0, [r0, #56]
  2110              	.LVL161:
-ARM GAS  /tmp/cc8itxlk.s 			page 77
+ARM GAS  /tmp/ccel1P5D.s 			page 77
 
 
 1462:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** #endif /* USE_HAL_SPDIFRX_REGISTER_CALLBACKS */
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
 1434:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
  2161              		.loc 1 1434 26 is_stmt 0 view .LVU657
  2162 0004 806B     		ldr	r0, [r0, #56]
-ARM GAS  /tmp/cc8itxlk.s 			page 78
+ARM GAS  /tmp/ccel1P5D.s 			page 78
 
 
  2163              	.LVL165:
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  2206              	.LFB166:
 1537:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   /* Receive data */
  2207              		.loc 1 1537 1 is_stmt 1 view -0
-ARM GAS  /tmp/cc8itxlk.s 			page 79
+ARM GAS  /tmp/ccel1P5D.s 			page 79
 
 
  2208              		.cfi_startproc
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  2247              	.L123:
 1559:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
  2248              		.loc 1 1559 1 view .LVU687
-ARM GAS  /tmp/cc8itxlk.s 			page 80
+ARM GAS  /tmp/ccel1P5D.s 			page 80
 
 
  2249 0020 08BD     		pop	{r3, pc}
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  2294              		.cfi_endproc
  2295              	.LFE156:
  2297              		.section	.text.SPDIFRX_DMACxHalfCplt,"ax",%progbits
-ARM GAS  /tmp/cc8itxlk.s 			page 81
+ARM GAS  /tmp/ccel1P5D.s 			page 81
 
 
  2298              		.align	1
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  2346 0000 7047     		bx	lr
  2347              		.cfi_endproc
  2348              	.LFE157:
-ARM GAS  /tmp/cc8itxlk.s 			page 82
+ARM GAS  /tmp/ccel1P5D.s 			page 82
 
 
  2350              		.section	.text.SPDIFRX_DMACxCplt,"ax",%progbits
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  2392 001c FFF7FEFF 		bl	HAL_SPDIFRX_CxCpltCallback
  2393              	.LVL180:
 1486:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
-ARM GAS  /tmp/cc8itxlk.s 			page 83
+ARM GAS  /tmp/ccel1P5D.s 			page 83
 
 
  2394              		.loc 1 1486 1 is_stmt 0 view .LVU721
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  2437              		.loc 1 1571 22 view .LVU734
  2438 0014 013B     		subs	r3, r3, #1
  2439 0016 9BB2     		uxth	r3, r3
-ARM GAS  /tmp/cc8itxlk.s 			page 84
+ARM GAS  /tmp/ccel1P5D.s 			page 84
 
 
  2440 0018 4387     		strh	r3, [r0, #58]	@ movhi
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  2484              	HAL_SPDIFRX_ErrorCallback:
  2485              	.LVL185:
  2486              	.LFB158:
-ARM GAS  /tmp/cc8itxlk.s 			page 85
+ARM GAS  /tmp/ccel1P5D.s 			page 85
 
 
 1375:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   /* Prevent unused argument(s) compilation warning */
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
 1515:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
  2532              		.loc 1 1515 3 is_stmt 1 view .LVU758
 1515:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
-ARM GAS  /tmp/cc8itxlk.s 			page 86
+ARM GAS  /tmp/ccel1P5D.s 			page 86
 
 
  2533              		.loc 1 1515 23 is_stmt 0 view .LVU759
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  2578              		.loc 1 1267 29 is_stmt 0 view .LVU770
  2579 0004 0368     		ldr	r3, [r0]
 1267:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c ****   uint32_t itSource = hspdif->Instance->IMR;
-ARM GAS  /tmp/cc8itxlk.s 			page 87
+ARM GAS  /tmp/ccel1P5D.s 			page 87
 
 
  2580              		.loc 1 1267 12 view .LVU771
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
 1307:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
  2620              		.loc 1 1307 1 view .LVU786
  2621 003a 70BD     		pop	{r4, r5, r6, pc}
-ARM GAS  /tmp/cc8itxlk.s 			page 88
+ARM GAS  /tmp/ccel1P5D.s 			page 88
 
 
  2622              	.LVL193:
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
 1302:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
  2664              		.loc 1 1302 11 is_stmt 0 view .LVU799
  2665 0070 A36C     		ldr	r3, [r4, #72]
-ARM GAS  /tmp/cc8itxlk.s 			page 89
+ARM GAS  /tmp/ccel1P5D.s 			page 89
 
 
 1302:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** 
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  2716              		@ link register save eliminated.
 1420:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** }
  2717              		.loc 1 1420 3 view .LVU808
-ARM GAS  /tmp/cc8itxlk.s 			page 90
+ARM GAS  /tmp/ccel1P5D.s 			page 90
 
 
 1420:Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c **** }
@@ -5361,75 +5361,75 @@ ARM GAS  /tmp/cc8itxlk.s 			page 1
  2734              		.file 8 "Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spdifrx.h"
  2735              		.file 9 "Drivers/CMSIS/Device/ST/STM32F7xx/Include/system_stm32f7xx.h"
  2736              		.file 10 "Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h"
-ARM GAS  /tmp/cc8itxlk.s 			page 91
+ARM GAS  /tmp/ccel1P5D.s 			page 91
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f7xx_hal_spdifrx.c
-     /tmp/cc8itxlk.s:21     .text.SPDIFRX_WaitOnFlagUntilTimeout:00000000 $t
-     /tmp/cc8itxlk.s:26     .text.SPDIFRX_WaitOnFlagUntilTimeout:00000000 SPDIFRX_WaitOnFlagUntilTimeout
-     /tmp/cc8itxlk.s:152    .text.HAL_SPDIFRX_MspInit:00000000 $t
-     /tmp/cc8itxlk.s:158    .text.HAL_SPDIFRX_MspInit:00000000 HAL_SPDIFRX_MspInit
-     /tmp/cc8itxlk.s:173    .text.HAL_SPDIFRX_Init:00000000 $t
-     /tmp/cc8itxlk.s:179    .text.HAL_SPDIFRX_Init:00000000 HAL_SPDIFRX_Init
-     /tmp/cc8itxlk.s:317    .text.HAL_SPDIFRX_Init:0000006c $d
-     /tmp/cc8itxlk.s:322    .text.HAL_SPDIFRX_MspDeInit:00000000 $t
-     /tmp/cc8itxlk.s:328    .text.HAL_SPDIFRX_MspDeInit:00000000 HAL_SPDIFRX_MspDeInit
-     /tmp/cc8itxlk.s:343    .text.HAL_SPDIFRX_DeInit:00000000 $t
-     /tmp/cc8itxlk.s:349    .text.HAL_SPDIFRX_DeInit:00000000 HAL_SPDIFRX_DeInit
-     /tmp/cc8itxlk.s:408    .text.HAL_SPDIFRX_SetDataFormat:00000000 $t
-     /tmp/cc8itxlk.s:414    .text.HAL_SPDIFRX_SetDataFormat:00000000 HAL_SPDIFRX_SetDataFormat
-     /tmp/cc8itxlk.s:532    .text.HAL_SPDIFRX_ReceiveDataFlow:00000000 $t
-     /tmp/cc8itxlk.s:538    .text.HAL_SPDIFRX_ReceiveDataFlow:00000000 HAL_SPDIFRX_ReceiveDataFlow
-     /tmp/cc8itxlk.s:715    .text.HAL_SPDIFRX_ReceiveControlFlow:00000000 $t
-     /tmp/cc8itxlk.s:721    .text.HAL_SPDIFRX_ReceiveControlFlow:00000000 HAL_SPDIFRX_ReceiveControlFlow
-     /tmp/cc8itxlk.s:898    .text.HAL_SPDIFRX_ReceiveDataFlow_IT:00000000 $t
-     /tmp/cc8itxlk.s:904    .text.HAL_SPDIFRX_ReceiveDataFlow_IT:00000000 HAL_SPDIFRX_ReceiveDataFlow_IT
-     /tmp/cc8itxlk.s:1142   .text.HAL_SPDIFRX_ReceiveDataFlow_IT:00000120 $d
-     /tmp/cc8itxlk.s:1148   .text.HAL_SPDIFRX_ReceiveControlFlow_IT:00000000 $t
-     /tmp/cc8itxlk.s:1154   .text.HAL_SPDIFRX_ReceiveControlFlow_IT:00000000 HAL_SPDIFRX_ReceiveControlFlow_IT
-     /tmp/cc8itxlk.s:1392   .text.HAL_SPDIFRX_ReceiveControlFlow_IT:00000120 $d
-     /tmp/cc8itxlk.s:1398   .text.HAL_SPDIFRX_ReceiveDataFlow_DMA:00000000 $t
-     /tmp/cc8itxlk.s:1404   .text.HAL_SPDIFRX_ReceiveDataFlow_DMA:00000000 HAL_SPDIFRX_ReceiveDataFlow_DMA
-     /tmp/cc8itxlk.s:1675   .text.HAL_SPDIFRX_ReceiveDataFlow_DMA:00000144 $d
-     /tmp/cc8itxlk.s:2093   .text.SPDIFRX_DMARxHalfCplt:00000000 SPDIFRX_DMARxHalfCplt
-     /tmp/cc8itxlk.s:2146   .text.SPDIFRX_DMARxCplt:00000000 SPDIFRX_DMARxCplt
-     /tmp/cc8itxlk.s:2504   .text.SPDIFRX_DMAError:00000000 SPDIFRX_DMAError
-     /tmp/cc8itxlk.s:1684   .text.HAL_SPDIFRX_ReceiveControlFlow_DMA:00000000 $t
-     /tmp/cc8itxlk.s:1690   .text.HAL_SPDIFRX_ReceiveControlFlow_DMA:00000000 HAL_SPDIFRX_ReceiveControlFlow_DMA
-     /tmp/cc8itxlk.s:1961   .text.HAL_SPDIFRX_ReceiveControlFlow_DMA:00000144 $d
-     /tmp/cc8itxlk.s:2303   .text.SPDIFRX_DMACxHalfCplt:00000000 SPDIFRX_DMACxHalfCplt
-     /tmp/cc8itxlk.s:2356   .text.SPDIFRX_DMACxCplt:00000000 SPDIFRX_DMACxCplt
-     /tmp/cc8itxlk.s:1970   .text.HAL_SPDIFRX_DMAStop:00000000 $t
-     /tmp/cc8itxlk.s:1976   .text.HAL_SPDIFRX_DMAStop:00000000 HAL_SPDIFRX_DMAStop
-     /tmp/cc8itxlk.s:2067   .text.HAL_SPDIFRX_RxHalfCpltCallback:00000000 $t
-     /tmp/cc8itxlk.s:2073   .text.HAL_SPDIFRX_RxHalfCpltCallback:00000000 HAL_SPDIFRX_RxHalfCpltCallback
-     /tmp/cc8itxlk.s:2088   .text.SPDIFRX_DMARxHalfCplt:00000000 $t
-     /tmp/cc8itxlk.s:2120   .text.HAL_SPDIFRX_RxCpltCallback:00000000 $t
-     /tmp/cc8itxlk.s:2126   .text.HAL_SPDIFRX_RxCpltCallback:00000000 HAL_SPDIFRX_RxCpltCallback
-     /tmp/cc8itxlk.s:2141   .text.SPDIFRX_DMARxCplt:00000000 $t
-     /tmp/cc8itxlk.s:2199   .text.SPDIFRX_ReceiveDataFlow_IT:00000000 $t
-     /tmp/cc8itxlk.s:2204   .text.SPDIFRX_ReceiveDataFlow_IT:00000000 SPDIFRX_ReceiveDataFlow_IT
-     /tmp/cc8itxlk.s:2277   .text.HAL_SPDIFRX_CxHalfCpltCallback:00000000 $t
-     /tmp/cc8itxlk.s:2283   .text.HAL_SPDIFRX_CxHalfCpltCallback:00000000 HAL_SPDIFRX_CxHalfCpltCallback
-     /tmp/cc8itxlk.s:2298   .text.SPDIFRX_DMACxHalfCplt:00000000 $t
-     /tmp/cc8itxlk.s:2330   .text.HAL_SPDIFRX_CxCpltCallback:00000000 $t
-     /tmp/cc8itxlk.s:2336   .text.HAL_SPDIFRX_CxCpltCallback:00000000 HAL_SPDIFRX_CxCpltCallback
-     /tmp/cc8itxlk.s:2351   .text.SPDIFRX_DMACxCplt:00000000 $t
-     /tmp/cc8itxlk.s:2400   .text.SPDIFRX_ReceiveControlFlow_IT:00000000 $t
-     /tmp/cc8itxlk.s:2405   .text.SPDIFRX_ReceiveControlFlow_IT:00000000 SPDIFRX_ReceiveControlFlow_IT
-     /tmp/cc8itxlk.s:2478   .text.HAL_SPDIFRX_ErrorCallback:00000000 $t
-     /tmp/cc8itxlk.s:2484   .text.HAL_SPDIFRX_ErrorCallback:00000000 HAL_SPDIFRX_ErrorCallback
-     /tmp/cc8itxlk.s:2499   .text.SPDIFRX_DMAError:00000000 $t
-ARM GAS  /tmp/cc8itxlk.s 			page 92
+     /tmp/ccel1P5D.s:21     .text.SPDIFRX_WaitOnFlagUntilTimeout:00000000 $t
+     /tmp/ccel1P5D.s:26     .text.SPDIFRX_WaitOnFlagUntilTimeout:00000000 SPDIFRX_WaitOnFlagUntilTimeout
+     /tmp/ccel1P5D.s:152    .text.HAL_SPDIFRX_MspInit:00000000 $t
+     /tmp/ccel1P5D.s:158    .text.HAL_SPDIFRX_MspInit:00000000 HAL_SPDIFRX_MspInit
+     /tmp/ccel1P5D.s:173    .text.HAL_SPDIFRX_Init:00000000 $t
+     /tmp/ccel1P5D.s:179    .text.HAL_SPDIFRX_Init:00000000 HAL_SPDIFRX_Init
+     /tmp/ccel1P5D.s:317    .text.HAL_SPDIFRX_Init:0000006c $d
+     /tmp/ccel1P5D.s:322    .text.HAL_SPDIFRX_MspDeInit:00000000 $t
+     /tmp/ccel1P5D.s:328    .text.HAL_SPDIFRX_MspDeInit:00000000 HAL_SPDIFRX_MspDeInit
+     /tmp/ccel1P5D.s:343    .text.HAL_SPDIFRX_DeInit:00000000 $t
+     /tmp/ccel1P5D.s:349    .text.HAL_SPDIFRX_DeInit:00000000 HAL_SPDIFRX_DeInit
+     /tmp/ccel1P5D.s:408    .text.HAL_SPDIFRX_SetDataFormat:00000000 $t
+     /tmp/ccel1P5D.s:414    .text.HAL_SPDIFRX_SetDataFormat:00000000 HAL_SPDIFRX_SetDataFormat
+     /tmp/ccel1P5D.s:532    .text.HAL_SPDIFRX_ReceiveDataFlow:00000000 $t
+     /tmp/ccel1P5D.s:538    .text.HAL_SPDIFRX_ReceiveDataFlow:00000000 HAL_SPDIFRX_ReceiveDataFlow
+     /tmp/ccel1P5D.s:715    .text.HAL_SPDIFRX_ReceiveControlFlow:00000000 $t
+     /tmp/ccel1P5D.s:721    .text.HAL_SPDIFRX_ReceiveControlFlow:00000000 HAL_SPDIFRX_ReceiveControlFlow
+     /tmp/ccel1P5D.s:898    .text.HAL_SPDIFRX_ReceiveDataFlow_IT:00000000 $t
+     /tmp/ccel1P5D.s:904    .text.HAL_SPDIFRX_ReceiveDataFlow_IT:00000000 HAL_SPDIFRX_ReceiveDataFlow_IT
+     /tmp/ccel1P5D.s:1142   .text.HAL_SPDIFRX_ReceiveDataFlow_IT:00000120 $d
+     /tmp/ccel1P5D.s:1148   .text.HAL_SPDIFRX_ReceiveControlFlow_IT:00000000 $t
+     /tmp/ccel1P5D.s:1154   .text.HAL_SPDIFRX_ReceiveControlFlow_IT:00000000 HAL_SPDIFRX_ReceiveControlFlow_IT
+     /tmp/ccel1P5D.s:1392   .text.HAL_SPDIFRX_ReceiveControlFlow_IT:00000120 $d
+     /tmp/ccel1P5D.s:1398   .text.HAL_SPDIFRX_ReceiveDataFlow_DMA:00000000 $t
+     /tmp/ccel1P5D.s:1404   .text.HAL_SPDIFRX_ReceiveDataFlow_DMA:00000000 HAL_SPDIFRX_ReceiveDataFlow_DMA
+     /tmp/ccel1P5D.s:1675   .text.HAL_SPDIFRX_ReceiveDataFlow_DMA:00000144 $d
+     /tmp/ccel1P5D.s:2093   .text.SPDIFRX_DMARxHalfCplt:00000000 SPDIFRX_DMARxHalfCplt
+     /tmp/ccel1P5D.s:2146   .text.SPDIFRX_DMARxCplt:00000000 SPDIFRX_DMARxCplt
+     /tmp/ccel1P5D.s:2504   .text.SPDIFRX_DMAError:00000000 SPDIFRX_DMAError
+     /tmp/ccel1P5D.s:1684   .text.HAL_SPDIFRX_ReceiveControlFlow_DMA:00000000 $t
+     /tmp/ccel1P5D.s:1690   .text.HAL_SPDIFRX_ReceiveControlFlow_DMA:00000000 HAL_SPDIFRX_ReceiveControlFlow_DMA
+     /tmp/ccel1P5D.s:1961   .text.HAL_SPDIFRX_ReceiveControlFlow_DMA:00000144 $d
+     /tmp/ccel1P5D.s:2303   .text.SPDIFRX_DMACxHalfCplt:00000000 SPDIFRX_DMACxHalfCplt
+     /tmp/ccel1P5D.s:2356   .text.SPDIFRX_DMACxCplt:00000000 SPDIFRX_DMACxCplt
+     /tmp/ccel1P5D.s:1970   .text.HAL_SPDIFRX_DMAStop:00000000 $t
+     /tmp/ccel1P5D.s:1976   .text.HAL_SPDIFRX_DMAStop:00000000 HAL_SPDIFRX_DMAStop
+     /tmp/ccel1P5D.s:2067   .text.HAL_SPDIFRX_RxHalfCpltCallback:00000000 $t
+     /tmp/ccel1P5D.s:2073   .text.HAL_SPDIFRX_RxHalfCpltCallback:00000000 HAL_SPDIFRX_RxHalfCpltCallback
+     /tmp/ccel1P5D.s:2088   .text.SPDIFRX_DMARxHalfCplt:00000000 $t
+     /tmp/ccel1P5D.s:2120   .text.HAL_SPDIFRX_RxCpltCallback:00000000 $t
+     /tmp/ccel1P5D.s:2126   .text.HAL_SPDIFRX_RxCpltCallback:00000000 HAL_SPDIFRX_RxCpltCallback
+     /tmp/ccel1P5D.s:2141   .text.SPDIFRX_DMARxCplt:00000000 $t
+     /tmp/ccel1P5D.s:2199   .text.SPDIFRX_ReceiveDataFlow_IT:00000000 $t
+     /tmp/ccel1P5D.s:2204   .text.SPDIFRX_ReceiveDataFlow_IT:00000000 SPDIFRX_ReceiveDataFlow_IT
+     /tmp/ccel1P5D.s:2277   .text.HAL_SPDIFRX_CxHalfCpltCallback:00000000 $t
+     /tmp/ccel1P5D.s:2283   .text.HAL_SPDIFRX_CxHalfCpltCallback:00000000 HAL_SPDIFRX_CxHalfCpltCallback
+     /tmp/ccel1P5D.s:2298   .text.SPDIFRX_DMACxHalfCplt:00000000 $t
+     /tmp/ccel1P5D.s:2330   .text.HAL_SPDIFRX_CxCpltCallback:00000000 $t
+     /tmp/ccel1P5D.s:2336   .text.HAL_SPDIFRX_CxCpltCallback:00000000 HAL_SPDIFRX_CxCpltCallback
+     /tmp/ccel1P5D.s:2351   .text.SPDIFRX_DMACxCplt:00000000 $t
+     /tmp/ccel1P5D.s:2400   .text.SPDIFRX_ReceiveControlFlow_IT:00000000 $t
+     /tmp/ccel1P5D.s:2405   .text.SPDIFRX_ReceiveControlFlow_IT:00000000 SPDIFRX_ReceiveControlFlow_IT
+     /tmp/ccel1P5D.s:2478   .text.HAL_SPDIFRX_ErrorCallback:00000000 $t
+     /tmp/ccel1P5D.s:2484   .text.HAL_SPDIFRX_ErrorCallback:00000000 HAL_SPDIFRX_ErrorCallback
+     /tmp/ccel1P5D.s:2499   .text.SPDIFRX_DMAError:00000000 $t
+ARM GAS  /tmp/ccel1P5D.s 			page 92
 
 
-     /tmp/cc8itxlk.s:2555   .text.HAL_SPDIFRX_IRQHandler:00000000 $t
-     /tmp/cc8itxlk.s:2561   .text.HAL_SPDIFRX_IRQHandler:00000000 HAL_SPDIFRX_IRQHandler
-     /tmp/cc8itxlk.s:2679   .text.HAL_SPDIFRX_GetState:00000000 $t
-     /tmp/cc8itxlk.s:2685   .text.HAL_SPDIFRX_GetState:00000000 HAL_SPDIFRX_GetState
-     /tmp/cc8itxlk.s:2703   .text.HAL_SPDIFRX_GetError:00000000 $t
-     /tmp/cc8itxlk.s:2709   .text.HAL_SPDIFRX_GetError:00000000 HAL_SPDIFRX_GetError
+     /tmp/ccel1P5D.s:2555   .text.HAL_SPDIFRX_IRQHandler:00000000 $t
+     /tmp/ccel1P5D.s:2561   .text.HAL_SPDIFRX_IRQHandler:00000000 HAL_SPDIFRX_IRQHandler
+     /tmp/ccel1P5D.s:2679   .text.HAL_SPDIFRX_GetState:00000000 $t
+     /tmp/ccel1P5D.s:2685   .text.HAL_SPDIFRX_GetState:00000000 HAL_SPDIFRX_GetState
+     /tmp/ccel1P5D.s:2703   .text.HAL_SPDIFRX_GetError:00000000 $t
+     /tmp/ccel1P5D.s:2709   .text.HAL_SPDIFRX_GetError:00000000 HAL_SPDIFRX_GetError
 
 UNDEFINED SYMBOLS
 HAL_GetTick

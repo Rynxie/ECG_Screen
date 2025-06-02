@@ -34,7 +34,7 @@
 
 #include "lvgl.h"
 #include "ui.h"
-#include "math.h"
+#include "arm_math.h"
 
 #include <stdio.h>
 /* USER CODE END Includes */
@@ -54,6 +54,13 @@
 #define OFFSET      50
 #define FREQ        5.0f     // Sinüs frekansı
 #define GAP_EVERY   10       
+
+
+// for fir filter 
+#define NUM_TAPS 32 
+#define BLOCK_SIZE 1 
+
+#define FFT_SIZE 128 //fast fouirer transorm
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -123,6 +130,11 @@ SDRAM_HandleTypeDef hsdram1;
 
 /* USER CODE BEGIN PV */
 LTDC_LayerCfgTypeDef pLayerCfg;
+
+arm_fir_instance_f32 S;
+arm_rfft_fast_instance_f32 fft;
+
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -158,10 +170,33 @@ void MX_USB_HOST_Process(void);
 #define RX_BUFFER_SIZE 64
 
 char rxBuffer[RX_BUFFER_SIZE];
+float ecgBuffer[150];
+int sinCounter = 0;
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+
+float fir_coeffs_f32[NUM_TAPS] = {
+   -1.11951795e-04,  1.41887686e-03,  1.86592777e-03, -6.46433736e-04,
+   -6.09599105e-03, -9.31113805e-03, -3.11081339e-03,  1.16811347e-02,
+    2.04652487e-02,  5.35656673e-03, -3.23527615e-02, -6.03046484e-02,
+   -3.32833994e-02,  6.66737800e-02,  2.03186887e-01,  3.01656326e-01,
+    3.01656326e-01,  2.03186887e-01,  6.66737800e-02, -3.32833994e-02,
+   -6.03046484e-02, -3.23527615e-02,  5.35656673e-03,  2.04652487e-02,
+    1.16811347e-02, -3.11081339e-03, -9.31113805e-03, -6.09599105e-03,
+   -6.46433736e-04,  1.86592777e-03,  1.41887686e-03, -1.11951795e-04
+  };
+  
+  // fir filter 
+  float fir_state_f32[NUM_TAPS - BLOCK_SIZE -1];
+  float ecgBuffer[150];
+  float filtered_ecg[150];
+  float input128[128];
+  
+  //fft buffers 
+  float fft_output[FFT_SIZE];
+  float magnitude[FFT_SIZE/2];
 void my_flush_cb(lv_display_t * display, const lv_area_t * area, uint8_t * px_map)
 {
     
@@ -189,42 +224,13 @@ int x = 0;
 uint8_t buf[10];
 
 
-float getFloatBetweenNewlines(void) {
-  uint8_t ch;
-  int index = 0;
-  int started = 0;
-
-  while (1) {
-      HAL_UART_Receive(&huart1, &ch, 1, HAL_MAX_DELAY);
-
-      if (ch == '\n') {
-          if (!started) {
-              // İlk newline geldi, şimdi başla
-              started = 1;
-              index = 0; // sıfırdan başla
-              continue;
-          } else {
-              // İkinci newline geldi, bitti
-              rxBuffer[index] = '\0';
-              break;
-          }
-      }
-
-      if (started && index < RX_BUFFER_SIZE - 1) {
-          rxBuffer[index++] = ch;
-      }
-  }
-
-  // String'i float'a çevir
-  return strtof(rxBuffer, NULL);
-}
 void timer_cb(lv_timer_t * timer)
 {
 
 
     float rad = 2 * 3.14159265359 * FREQ * x / POINT_COUNT;
     /* float val = sinf(rad); */
-    float val = getFloatBetweenNewlines();
+    float val = ecgBuffer[sinCounter];
     printf("%f", val);
     //printf("%.2f\r\n",val);
     int16_t y = (int16_t)(val * AMPLITUDE + OFFSET);
@@ -282,6 +288,31 @@ int _write(int file, char *ptr, int len)
   HAL_UART_Transmit(&huart1,ptr,len,HAL_MAX_DELAY);
   return len;
 }
+int dataReady = 1;
+uint8_t ch;
+int started = 0;
+int indexUart = 0;
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
+  if (huart->Instance == USART1) {
+      if (ch == '\n') {
+          if (!started) {
+              started = 1;
+              indexUart = 0;
+          } else {
+              rxBuffer[indexUart] = '\0';
+              // işaretle: hazır
+              dataReady = 1;
+              indexUart = 0;
+              indexUart = 0;
+          }
+      } else if (started && indexUart < RX_BUFFER_SIZE - 1) {
+          rxBuffer[indexUart++] = ch;
+      }
+
+      // tekrar alımı başlat
+      HAL_UART_Receive_IT(&huart1, &ch, 1);
+  }
+}
 
 /* USER CODE END 0 */
 
@@ -293,7 +324,8 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-
+   int index;
+    float frequency; 
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -302,7 +334,30 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
+  arm_rfft_fast_init_f32(&fft, FFT_SIZE);
+  arm_fir_init_f32(&S, NUM_TAPS, fir_coeffs_f32, fir_state_f32, BLOCK_SIZE);
+  arm_fir_f32(&S, ecgBuffer, filtered_ecg, 1);
+  
 
+  for(int i = 0; i < 128; i++){
+      input128[i] = filtered_ecg[i];
+  }
+
+  arm_rfft_fast_f32(&fft, input128, fft_output, 0);
+  
+  for(int i = 0; i < FFT_SIZE/2; i++){
+      float real = fft_output[2*i];
+      float imag = fft_output[2*i+1];
+      magnitude[i] = sqrtf((real*real + imag*imag));
+  }
+
+  for (int i = 1; i < FFT_SIZE/2; i++){
+      index = 0;
+      if(magnitude[i-1] < magnitude[i]){
+          index = i; 
+      }
+  }
+  frequency = (index * 250) / 128;
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -346,7 +401,7 @@ int main(void)
 
   uint16_t* baseAddr = (uint16_t*) (pLayerCfg.FBStartAdress);
 
-  if (pLayerCfg.PixelFormat != LTDC_PIXEL_FORMAT_RGB565) Error_Handler ();
+  //if (pLayerCfg.PixelFormat != LTDC_PIXEL_FORMAT_RGB565) Error_Handler ();
   
   uint16_t xWidth = pLayerCfg.ImageWidth; //480.
   
@@ -406,25 +461,39 @@ int main(void)
   if ( (xWidth < 1)
   
   || (yWidth < 1)) Error_Handler ();
-  int sinCounter = 0;
+  
+  uint32_t timOld, timNew;
+  timOld = timNew = HAL_GetTick();
+  uint32_t time_till_next = 0;
   /* USER CODE END 2 */
-
+  HAL_UART_Receive_IT(&huart1, &ch, 1);
+  HAL_UART_Receive_IT(&huart1, &ch, 1);
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
     /* USER CODE END WHILE */
-    uint32_t time_till_next = lv_timer_handler();
-    if(time_till_next == LV_NO_TIMER_READY) time_till_next = LV_DEF_REFR_PERIOD;
-    
-    HAL_Delay(time_till_next);
+    MX_USB_HOST_Process();
 
-    /* float rad = (2 * 3.14 * sinCounter) / 100;            // 0–2π arası
-    float value = sinf(rad);                             // -1.0 ~ +1.0
-    int16_t y = (int16_t)(value * 50 + 25); // 0 ~ 100 arası ölçekle
-    lv_chart_set_next_value(objects.chart1, series1, y); */
-    
     /* USER CODE BEGIN 3 */
+
+    timNew = HAL_GetTick();
+    if(timNew - timOld >= time_till_next){
+
+      time_till_next = lv_timer_handler();
+      if(time_till_next == LV_NO_TIMER_READY) time_till_next = LV_DEF_REFR_PERIOD;
+      timOld = timNew;
+    }
+    if (dataReady) {
+      
+      float val = strtof(rxBuffer, NULL);
+      ecgBuffer[sinCounter] = val;
+      sinCounter = (sinCounter <= POINT_COUNT-1) ? sinCounter++ : 0; 
+      dataReady = 0;
+      // kullan val değişkenini
+  }
+    
+    
   }
   /* USER CODE END 3 */
 }
@@ -827,7 +896,7 @@ static void MX_LTDC_Init(void)
 
   /* USER CODE END LTDC_Init 0 */
 
-   
+
 
   /* USER CODE BEGIN LTDC_Init 1 */
 
@@ -1828,6 +1897,7 @@ void Error_Handler(void)
   __disable_irq();
   while (1)
   {
+    lv_label_set_text(objects.label1, "!!!"); 
   }
   /* USER CODE END Error_Handler_Debug */
 }

@@ -1,0 +1,1942 @@
+ARM GAS  /tmp/ccCOIZ3e.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.arch armv7e-m
+   3              		.fpu fpv5-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"arm_correlate_f32.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c"
+  20              		.section	.text.arm_correlate_f32,"ax",%progbits
+  21              		.align	1
+  22              		.global	arm_correlate_f32
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	arm_correlate_f32:
+  28              	.LVL0:
+  29              	.LFB135:
+   1:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** /* ----------------------------------------------------------------------
+   2:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * Project:      CMSIS DSP Library
+   3:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * Title:        arm_correlate_f32.c
+   4:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * Description:  Correlation of floating-point sequences
+   5:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  *
+   6:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * $Date:        27. January 2017
+   7:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * $Revision:    V.1.5.1
+   8:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  *
+   9:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * Target Processor: Cortex-M cores
+  10:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * -------------------------------------------------------------------- */
+  11:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** /*
+  12:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * Copyright (C) 2010-2017 ARM Limited or its affiliates. All rights reserved.
+  13:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  *
+  14:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * SPDX-License-Identifier: Apache-2.0
+  15:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  *
+  16:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * Licensed under the Apache License, Version 2.0 (the License); you may
+  17:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * not use this file except in compliance with the License.
+  18:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * You may obtain a copy of the License at
+  19:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  *
+  20:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * www.apache.org/licenses/LICENSE-2.0
+  21:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  *
+  22:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * Unless required by applicable law or agreed to in writing, software
+  23:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * distributed under the License is distributed on an AS IS BASIS, WITHOUT
+  24:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  25:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * See the License for the specific language governing permissions and
+  26:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * limitations under the License.
+  27:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  */
+  28:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+  29:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** #include "arm_math.h"
+ARM GAS  /tmp/ccCOIZ3e.s 			page 2
+
+
+  30:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+  31:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** /**
+  32:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * @ingroup groupFilters
+  33:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  */
+  34:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+  35:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** /**
+  36:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * @defgroup Corr Correlation
+  37:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  *
+  38:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * Correlation is a mathematical operation that is similar to convolution.
+  39:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * As with convolution, correlation uses two signals to produce a third signal.
+  40:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * The underlying algorithms in correlation and convolution are identical except that one of the in
+  41:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * Correlation is commonly used to measure the similarity between two signals.
+  42:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * It has applications in pattern recognition, cryptanalysis, and searching.
+  43:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * The CMSIS library provides correlation functions for Q7, Q15, Q31 and floating-point data types.
+  44:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * Fast versions of the Q15 and Q31 functions are also provided.
+  45:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  *
+  46:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * \par Algorithm
+  47:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * Let <code>a[n]</code> and <code>b[n]</code> be sequences of length <code>srcALen</code> and <cod
+  48:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * The convolution of the two signals is denoted by
+  49:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * <pre>
+  50:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  *                   c[n] = a[n] * b[n]
+  51:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * </pre>
+  52:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * In correlation, one of the signals is flipped in time
+  53:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * <pre>
+  54:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  *                   c[n] = a[n] * b[-n]
+  55:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * </pre>
+  56:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  *
+  57:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * \par
+  58:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * and this is mathematically defined as
+  59:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * \image html CorrelateEquation.gif
+  60:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * \par
+  61:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * The <code>pSrcA</code> points to the first input vector of length <code>srcALen</code> and <code
+  62:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * The result <code>c[n]</code> is of length <code>2 * max(srcALen, srcBLen) - 1</code> and is defi
+  63:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * The output result is written to <code>pDst</code> and the calling function must allocate <code>2
+  64:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  *
+  65:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * <b>Note</b>
+  66:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * \par
+  67:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * The <code>pDst</code> should be initialized to all zeros before being used.
+  68:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  *
+  69:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * <b>Fixed-Point Behavior</b>
+  70:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * \par
+  71:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * Correlation requires summing up a large number of intermediate products.
+  72:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * As such, the Q7, Q15, and Q31 functions run a risk of overflow and saturation.
+  73:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * Refer to the function specific documentation below for further details of the particular algorit
+  74:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  *
+  75:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  *
+  76:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * <b>Fast Versions</b>
+  77:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  *
+  78:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * \par
+  79:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * Fast versions are supported for Q31 and Q15.  Cycles for Fast versions are less compared to Q31 
+  80:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * the input signals should be scaled down to avoid intermediate overflows.
+  81:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  *
+  82:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  *
+  83:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * <b>Opt Versions</b>
+  84:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  *
+  85:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * \par
+  86:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * Opt versions are supported for Q15 and Q7.  Design uses internal scratch buffer for getting good
+ARM GAS  /tmp/ccCOIZ3e.s 			page 3
+
+
+  87:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * These versions are optimised in cycles and consumes more memory(Scratch memory) compared to Q15 
+  88:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  */
+  89:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+  90:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** /**
+  91:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * @addtogroup Corr
+  92:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * @{
+  93:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  */
+  94:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** /**
+  95:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * @brief Correlation of floating-point sequences.
+  96:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * @param[in]  *pSrcA points to the first input sequence.
+  97:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * @param[in]  srcALen length of the first input sequence.
+  98:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * @param[in]  *pSrcB points to the second input sequence.
+  99:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * @param[in]  srcBLen length of the second input sequence.
+ 100:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * @param[out] *pDst points to the location where the output result is written.  Length 2 * max(src
+ 101:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  * @return none.
+ 102:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****  */
+ 103:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 104:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** void arm_correlate_f32(
+ 105:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   float32_t * pSrcA,
+ 106:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   uint32_t srcALen,
+ 107:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   float32_t * pSrcB,
+ 108:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   uint32_t srcBLen,
+ 109:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   float32_t * pDst)
+ 110:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** {
+  30              		.loc 1 110 1 view -0
+  31              		.cfi_startproc
+  32              		@ args = 4, pretend = 0, frame = 0
+  33              		@ frame_needed = 0, uses_anonymous_args = 0
+  34              		.loc 1 110 1 is_stmt 0 view .LVU1
+  35 0000 2DE9F04F 		push	{r4, r5, r6, r7, r8, r9, r10, fp, lr}
+  36              	.LCFI0:
+  37              		.cfi_def_cfa_offset 36
+  38              		.cfi_offset 4, -36
+  39              		.cfi_offset 5, -32
+  40              		.cfi_offset 6, -28
+  41              		.cfi_offset 7, -24
+  42              		.cfi_offset 8, -20
+  43              		.cfi_offset 9, -16
+  44              		.cfi_offset 10, -12
+  45              		.cfi_offset 11, -8
+  46              		.cfi_offset 14, -4
+  47 0004 0546     		mov	r5, r0
+  48 0006 1046     		mov	r0, r2
+  49              	.LVL1:
+  50              		.loc 1 110 1 view .LVU2
+  51 0008 1E46     		mov	r6, r3
+ 111:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 112:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 113:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** #if defined (ARM_MATH_DSP)
+ 114:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 115:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* Run the below code for Cortex-M4 and Cortex-M3 */
+ 116:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 117:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   float32_t *pIn1;                               /* inputA pointer */
+  52              		.loc 1 117 3 is_stmt 1 view .LVU3
+ 118:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   float32_t *pIn2;                               /* inputB pointer */
+  53              		.loc 1 118 3 view .LVU4
+ 119:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   float32_t *pOut = pDst;                        /* output pointer */
+ARM GAS  /tmp/ccCOIZ3e.s 			page 4
+
+
+  54              		.loc 1 119 3 view .LVU5
+  55              	.LVL2:
+ 120:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   float32_t *px;                                 /* Intermediate inputA pointer */
+  56              		.loc 1 120 3 view .LVU6
+ 121:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   float32_t *py;                                 /* Intermediate inputB pointer */
+  57              		.loc 1 121 3 view .LVU7
+ 122:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   float32_t *pSrc1;                              /* Intermediate pointers */
+  58              		.loc 1 122 3 view .LVU8
+ 123:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   float32_t sum, acc0, acc1, acc2, acc3;         /* Accumulators */
+  59              		.loc 1 123 3 view .LVU9
+ 124:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   float32_t x0, x1, x2, x3, c0;                  /* temporary variables for holding input and coeff
+  60              		.loc 1 124 3 view .LVU10
+ 125:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   uint32_t j, k = 0U, count, blkCnt, outBlockSize, blockSize1, blockSize2, blockSize3;  /* loop cou
+  61              		.loc 1 125 3 view .LVU11
+ 126:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   int32_t inc = 1;                               /* Destination address modifier */
+  62              		.loc 1 126 3 view .LVU12
+ 127:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 128:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 129:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* The algorithm implementation is based on the lengths of the inputs. */
+ 130:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* srcB is always made to slide across srcA. */
+ 131:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* So srcBLen is always considered as shorter or equal to srcALen */
+ 132:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* But CORR(x, y) is reverse of CORR(y, x) */
+ 133:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* So, when srcBLen > srcALen, output pointer is made to point to the end of the output buffer */
+ 134:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* and the destination pointer modifier, inc is set to -1 */
+ 135:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* If srcALen > srcBLen, zero pad has to be done to srcB to make the two inputs of same length */
+ 136:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* But to improve the performance,
+ 137:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * we assume zeroes in the output instead of zero padding either of the the inputs*/
+ 138:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* If srcALen > srcBLen,
+ 139:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * (srcALen - srcBLen) zeroes has to included in the starting of the output buffer */
+ 140:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* If srcALen < srcBLen,
+ 141:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * (srcALen - srcBLen) zeroes has to included in the ending of the output buffer */
+ 142:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   if (srcALen >= srcBLen)
+  63              		.loc 1 142 3 view .LVU13
+  64              		.loc 1 142 6 is_stmt 0 view .LVU14
+  65 000a 9942     		cmp	r1, r3
+  66 000c 16D3     		bcc	.L2
+ 143:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   {
+ 144:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Initialization of inputA pointer */
+ 145:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     pIn1 = pSrcA;
+  67              		.loc 1 145 5 is_stmt 1 view .LVU15
+  68              	.LVL3:
+ 146:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 147:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Initialization of inputB pointer */
+ 148:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     pIn2 = pSrcB;
+  69              		.loc 1 148 5 view .LVU16
+ 149:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 150:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Number of output samples is calculated */
+ 151:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     outBlockSize = (2U * srcALen) - 1U;
+  70              		.loc 1 151 5 view .LVU17
+  71              		.loc 1 151 24 is_stmt 0 view .LVU18
+  72 000e 4B00     		lsls	r3, r1, #1
+  73              	.LVL4:
+  74              		.loc 1 151 18 view .LVU19
+  75 0010 013B     		subs	r3, r3, #1
+  76              	.LVL5:
+ 152:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 153:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* When srcALen > srcBLen, zero padding has to be done to srcB
+ARM GAS  /tmp/ccCOIZ3e.s 			page 5
+
+
+ 154:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****      * to make their lengths equal.
+ 155:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****      * Instead, (outBlockSize - (srcALen + srcBLen - 1))
+ 156:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****      * number of output samples are made zero */
+ 157:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     j = outBlockSize - (srcALen + (srcBLen - 1U));
+  77              		.loc 1 157 5 is_stmt 1 view .LVU20
+  78              		.loc 1 157 33 is_stmt 0 view .LVU21
+  79 0012 8A19     		adds	r2, r1, r6
+  80              	.LVL6:
+  81              		.loc 1 157 22 view .LVU22
+  82 0014 9B1A     		subs	r3, r3, r2
+  83              	.LVL7:
+  84              		.loc 1 157 7 view .LVU23
+  85 0016 0133     		adds	r3, r3, #1
+  86              	.LVL8:
+ 158:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 159:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Updating the pointer position to non zero value */
+ 160:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     pOut += j;
+  87              		.loc 1 160 5 is_stmt 1 view .LVU24
+  88              		.loc 1 160 10 is_stmt 0 view .LVU25
+  89 0018 099A     		ldr	r2, [sp, #36]
+  90 001a 02EB830E 		add	lr, r2, r3, lsl #2
+  91              	.LVL9:
+ 126:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+  92              		.loc 1 126 11 view .LVU26
+  93 001e 0122     		movs	r2, #1
+  94              	.LVL10:
+  95              	.L3:
+ 161:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 162:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     //while (j > 0U)
+ 163:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     //{
+ 164:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     //  /* Zero is stored in the destination buffer */
+ 165:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     //  *pOut++ = 0.0f;
+ 166:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 167:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     //  /* Decrement the loop counter */
+ 168:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     //  j--;
+ 169:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     //}
+ 170:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 171:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   }
+ 172:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   else
+ 173:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   {
+ 174:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Initialization of inputA pointer */
+ 175:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     pIn1 = pSrcB;
+ 176:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 177:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Initialization of inputB pointer */
+ 178:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     pIn2 = pSrcA;
+ 179:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 180:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* srcBLen is always considered as shorter or equal to srcALen */
+ 181:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     j = srcBLen;
+ 182:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     srcBLen = srcALen;
+ 183:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     srcALen = j;
+ 184:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 185:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* CORR(x, y) = Reverse order(CORR(y, x)) */
+ 186:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Hence set the destination pointer to point to the last output sample */
+ 187:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     pOut = pDst + ((srcALen + srcBLen) - 2U);
+ 188:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 189:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Destination address modifier is set to -1 */
+ 190:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     inc = -1;
+ARM GAS  /tmp/ccCOIZ3e.s 			page 6
+
+
+ 191:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 192:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   }
+ 193:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 194:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* The function is internally
+ 195:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * divided into three parts according to the number of multiplications that has to be
+ 196:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * taken place between inputA samples and inputB samples. In the first part of the
+ 197:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * algorithm, the multiplications increase by one for every iteration.
+ 198:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * In the second part of the algorithm, srcBLen number of multiplications are done.
+ 199:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * In the third part of the algorithm, the multiplications decrease by one
+ 200:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * for every iteration.*/
+ 201:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* The algorithm is implemented in three stages.
+ 202:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * The loop counters of each stage is initiated here. */
+ 203:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   blockSize1 = srcBLen - 1U;
+  96              		.loc 1 203 3 is_stmt 1 view .LVU27
+  97              		.loc 1 203 14 is_stmt 0 view .LVU28
+  98 0020 741E     		subs	r4, r6, #1
+  99              	.LVL11:
+ 204:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   blockSize2 = srcALen - (srcBLen - 1U);
+ 100              		.loc 1 204 3 is_stmt 1 view .LVU29
+ 101              		.loc 1 204 24 is_stmt 0 view .LVU30
+ 102 0022 891B     		subs	r1, r1, r6
+ 103              	.LVL12:
+ 104              		.loc 1 204 14 view .LVU31
+ 105 0024 01F1010B 		add	fp, r1, #1
+ 106              	.LVL13:
+ 205:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   blockSize3 = blockSize1;
+ 107              		.loc 1 205 3 is_stmt 1 view .LVU32
+ 206:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 207:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* --------------------------
+ 208:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * Initializations of stage1
+ 209:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * -------------------------*/
+ 210:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 211:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* sum = x[0] * y[srcBlen - 1]
+ 212:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * sum = x[0] * y[srcBlen-2] + x[1] * y[srcBlen - 1]
+ 213:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * ....
+ 214:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * sum = x[0] * y[0] + x[1] * y[1] +...+ x[srcBLen - 1] * y[srcBLen - 1]
+ 215:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    */
+ 216:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 217:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* In this stage the MAC operations are increased by 1 for every iteration.
+ 218:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****      The count variable holds the number of MAC operations performed */
+ 219:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   count = 1U;
+ 108              		.loc 1 219 3 view .LVU33
+ 220:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 221:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* Working pointer of inputA */
+ 222:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   px = pIn1;
+ 109              		.loc 1 222 3 view .LVU34
+ 223:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 224:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* Working pointer of inputB */
+ 225:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   pSrc1 = pIn2 + (srcBLen - 1U);
+ 110              		.loc 1 225 3 view .LVU35
+ 111              		.loc 1 225 16 is_stmt 0 view .LVU36
+ 112 0028 6FF0404A 		mvn	r10, #-1073741824
+ 113 002c B244     		add	r10, r10, r6
+ 114              		.loc 1 225 9 view .LVU37
+ 115 002e 00EB8A0A 		add	r10, r0, r10, lsl #2
+ 116              	.LVL14:
+ 226:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   py = pSrc1;
+ARM GAS  /tmp/ccCOIZ3e.s 			page 7
+
+
+ 117              		.loc 1 226 3 is_stmt 1 view .LVU38
+ 227:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 228:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* ------------------------
+ 229:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * Stage1 process
+ 230:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * ----------------------*/
+ 231:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 232:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* The first stage starts here */
+ 233:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   while (blockSize1 > 0U)
+ 118              		.loc 1 233 3 view .LVU39
+ 203:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   blockSize2 = srcALen - (srcBLen - 1U);
+ 119              		.loc 1 203 14 is_stmt 0 view .LVU40
+ 120 0032 2346     		mov	r3, r4
+ 226:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   py = pSrc1;
+ 121              		.loc 1 226 6 view .LVU41
+ 122 0034 5146     		mov	r1, r10
+ 219:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 123              		.loc 1 219 9 view .LVU42
+ 124 0036 4FF00109 		mov	r9, #1
+ 125              		.loc 1 233 9 view .LVU43
+ 126 003a 4BE0     		b	.L4
+ 127              	.LVL15:
+ 128              	.L2:
+ 175:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 129              		.loc 1 175 5 is_stmt 1 view .LVU44
+ 178:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 130              		.loc 1 178 5 view .LVU45
+ 181:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     srcBLen = srcALen;
+ 131              		.loc 1 181 5 view .LVU46
+ 182:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     srcALen = j;
+ 132              		.loc 1 182 5 view .LVU47
+ 183:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 133              		.loc 1 183 5 view .LVU48
+ 187:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 134              		.loc 1 187 5 view .LVU49
+ 187:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 135              		.loc 1 187 29 is_stmt 0 view .LVU50
+ 136 003c CA18     		adds	r2, r1, r3
+ 187:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 137              		.loc 1 187 17 view .LVU51
+ 138 003e D44B     		ldr	r3, .L37
+ 139              	.LVL16:
+ 187:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 140              		.loc 1 187 17 view .LVU52
+ 141 0040 1344     		add	r3, r3, r2
+ 187:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 142              		.loc 1 187 10 view .LVU53
+ 143 0042 099A     		ldr	r2, [sp, #36]
+ 144 0044 02EB830E 		add	lr, r2, r3, lsl #2
+ 145              	.LVL17:
+ 190:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 146              		.loc 1 190 5 is_stmt 1 view .LVU54
+ 187:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 147              		.loc 1 187 10 is_stmt 0 view .LVU55
+ 148 0048 2B46     		mov	r3, r5
+ 175:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 149              		.loc 1 175 10 view .LVU56
+ 150 004a 0546     		mov	r5, r0
+ARM GAS  /tmp/ccCOIZ3e.s 			page 8
+
+
+ 151              	.LVL18:
+ 178:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 152              		.loc 1 178 10 view .LVU57
+ 153 004c 1846     		mov	r0, r3
+ 154              	.LVL19:
+ 187:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 155              		.loc 1 187 10 view .LVU58
+ 156 004e 0B46     		mov	r3, r1
+ 157              	.LVL20:
+ 183:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 158              		.loc 1 183 13 view .LVU59
+ 159 0050 3146     		mov	r1, r6
+ 160              	.LVL21:
+ 182:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     srcALen = j;
+ 161              		.loc 1 182 13 view .LVU60
+ 162 0052 1E46     		mov	r6, r3
+ 163              	.LVL22:
+ 190:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 164              		.loc 1 190 9 view .LVU61
+ 165 0054 4FF0FF32 		mov	r2, #-1
+ 166 0058 E2E7     		b	.L3
+ 167              	.LVL23:
+ 168              	.L6:
+ 234:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   {
+ 235:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Accumulator is made zero for every iteration */
+ 236:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     sum = 0.0f;
+ 237:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 238:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Apply loop unrolling and compute 4 MACs simultaneously. */
+ 239:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     k = count >> 2U;
+ 240:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 241:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* First part of the processing with loop unrolling.  Compute 4 MACs at a time.
+ 242:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****      ** a second loop below computes MACs for the remaining 1 to 3 samples. */
+ 243:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     while (k > 0U)
+ 244:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     {
+ 245:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* x[0] * y[srcBLen - 4] */
+ 246:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       sum += *px++ * *py++;
+ 169              		.loc 1 246 7 is_stmt 1 view .LVU62
+ 170              		.loc 1 246 14 is_stmt 0 view .LVU63
+ 171 005a 9CED007A 		vldr.32	s14, [ip]
+ 172              	.LVL24:
+ 173              		.loc 1 246 22 view .LVU64
+ 174 005e D1ED006A 		vldr.32	s13, [r1]
+ 175              		.loc 1 246 20 view .LVU65
+ 176 0062 27EE267A 		vmul.f32	s14, s14, s13
+ 177              		.loc 1 246 11 view .LVU66
+ 178 0066 77EE877A 		vadd.f32	s15, s15, s14
+ 179              	.LVL25:
+ 247:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* x[1] * y[srcBLen - 3] */
+ 248:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       sum += *px++ * *py++;
+ 180              		.loc 1 248 7 is_stmt 1 view .LVU67
+ 181              		.loc 1 248 14 is_stmt 0 view .LVU68
+ 182 006a 9CED017A 		vldr.32	s14, [ip, #4]
+ 183              	.LVL26:
+ 184              		.loc 1 248 22 view .LVU69
+ 185 006e D1ED016A 		vldr.32	s13, [r1, #4]
+ 186              		.loc 1 248 20 view .LVU70
+ 187 0072 27EE267A 		vmul.f32	s14, s14, s13
+ARM GAS  /tmp/ccCOIZ3e.s 			page 9
+
+
+ 188              		.loc 1 248 11 view .LVU71
+ 189 0076 77EE877A 		vadd.f32	s15, s15, s14
+ 190              	.LVL27:
+ 249:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* x[2] * y[srcBLen - 2] */
+ 250:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       sum += *px++ * *py++;
+ 191              		.loc 1 250 7 is_stmt 1 view .LVU72
+ 192              		.loc 1 250 14 is_stmt 0 view .LVU73
+ 193 007a 9CED027A 		vldr.32	s14, [ip, #8]
+ 194              	.LVL28:
+ 195              		.loc 1 250 22 view .LVU74
+ 196 007e D1ED026A 		vldr.32	s13, [r1, #8]
+ 197              		.loc 1 250 20 view .LVU75
+ 198 0082 27EE267A 		vmul.f32	s14, s14, s13
+ 199              		.loc 1 250 11 view .LVU76
+ 200 0086 77EE877A 		vadd.f32	s15, s15, s14
+ 201              	.LVL29:
+ 251:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* x[3] * y[srcBLen - 1] */
+ 252:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       sum += *px++ * *py++;
+ 202              		.loc 1 252 7 is_stmt 1 view .LVU77
+ 203              		.loc 1 252 14 is_stmt 0 view .LVU78
+ 204 008a 9CED037A 		vldr.32	s14, [ip, #12]
+ 205              	.LVL30:
+ 206              		.loc 1 252 22 view .LVU79
+ 207 008e D1ED036A 		vldr.32	s13, [r1, #12]
+ 208              		.loc 1 252 20 view .LVU80
+ 209 0092 27EE267A 		vmul.f32	s14, s14, s13
+ 210              		.loc 1 252 11 view .LVU81
+ 211 0096 77EE877A 		vadd.f32	s15, s15, s14
+ 212              	.LVL31:
+ 253:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 254:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Decrement the loop counter */
+ 255:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       k--;
+ 213              		.loc 1 255 7 is_stmt 1 view .LVU82
+ 214              		.loc 1 255 8 is_stmt 0 view .LVU83
+ 215 009a 013F     		subs	r7, r7, #1
+ 216              	.LVL32:
+ 252:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 217              		.loc 1 252 25 view .LVU84
+ 218 009c 1031     		adds	r1, r1, #16
+ 219              	.LVL33:
+ 252:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 220              		.loc 1 252 17 view .LVU85
+ 221 009e 0CF1100C 		add	ip, ip, #16
+ 222              	.LVL34:
+ 223              	.L5:
+ 243:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     {
+ 224              		.loc 1 243 14 is_stmt 1 view .LVU86
+ 225 00a2 002F     		cmp	r7, #0
+ 226 00a4 D9D1     		bne	.L6
+ 256:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     }
+ 257:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 258:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* If the count is not a multiple of 4, compute any remaining MACs here.
+ 259:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****      ** No loop unrolling is used. */
+ 260:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     k = count % 0x4U;
+ 227              		.loc 1 260 5 view .LVU87
+ 228              		.loc 1 260 7 is_stmt 0 view .LVU88
+ 229 00a6 09F00307 		and	r7, r9, #3
+ARM GAS  /tmp/ccCOIZ3e.s 			page 10
+
+
+ 230              	.LVL35:
+ 261:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 262:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     while (k > 0U)
+ 231              		.loc 1 262 5 is_stmt 1 view .LVU89
+ 232              		.loc 1 262 11 is_stmt 0 view .LVU90
+ 233 00aa 08E0     		b	.L7
+ 234              	.L8:
+ 263:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     {
+ 264:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Perform the multiply-accumulate */
+ 265:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* x[0] * y[srcBLen - 1] */
+ 266:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       sum += *px++ * *py++;
+ 235              		.loc 1 266 7 is_stmt 1 view .LVU91
+ 236              	.LVL36:
+ 237              		.loc 1 266 14 is_stmt 0 view .LVU92
+ 238 00ac BCEC017A 		vldmia.32	ip!, {s14}
+ 239              	.LVL37:
+ 240              		.loc 1 266 22 view .LVU93
+ 241 00b0 F1EC016A 		vldmia.32	r1!, {s13}
+ 242              	.LVL38:
+ 243              		.loc 1 266 20 view .LVU94
+ 244 00b4 27EE267A 		vmul.f32	s14, s14, s13
+ 245              		.loc 1 266 11 view .LVU95
+ 246 00b8 77EE877A 		vadd.f32	s15, s15, s14
+ 247              	.LVL39:
+ 267:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 268:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Decrement the loop counter */
+ 269:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       k--;
+ 248              		.loc 1 269 7 is_stmt 1 view .LVU96
+ 249              		.loc 1 269 8 is_stmt 0 view .LVU97
+ 250 00bc 013F     		subs	r7, r7, #1
+ 251              	.LVL40:
+ 252              	.L7:
+ 262:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     {
+ 253              		.loc 1 262 14 is_stmt 1 view .LVU98
+ 254 00be 002F     		cmp	r7, #0
+ 255 00c0 F4D1     		bne	.L8
+ 270:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     }
+ 271:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 272:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Store the result in the accumulator in the destination buffer. */
+ 273:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     *pOut = sum;
+ 256              		.loc 1 273 5 view .LVU99
+ 257              		.loc 1 273 11 is_stmt 0 view .LVU100
+ 258 00c2 CEED007A 		vstr.32	s15, [lr]
+ 274:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Destination pointer is updated according to the address modifier, inc */
+ 275:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     pOut += inc;
+ 259              		.loc 1 275 5 is_stmt 1 view .LVU101
+ 260              		.loc 1 275 10 is_stmt 0 view .LVU102
+ 261 00c6 0EEB820E 		add	lr, lr, r2, lsl #2
+ 262              	.LVL41:
+ 276:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 277:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Update the inputA and inputB pointers for next MAC calculation */
+ 278:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     py = pSrc1 - count;
+ 263              		.loc 1 278 5 is_stmt 1 view .LVU103
+ 264              		.loc 1 278 8 is_stmt 0 view .LVU104
+ 265 00ca AAEB8901 		sub	r1, r10, r9, lsl #2
+ 266              	.LVL42:
+ 279:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     px = pIn1;
+ARM GAS  /tmp/ccCOIZ3e.s 			page 11
+
+
+ 267              		.loc 1 279 5 is_stmt 1 view .LVU105
+ 280:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 281:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Increment the MAC count */
+ 282:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     count++;
+ 268              		.loc 1 282 5 view .LVU106
+ 269              		.loc 1 282 10 is_stmt 0 view .LVU107
+ 270 00ce 09F10109 		add	r9, r9, #1
+ 271              	.LVL43:
+ 283:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 284:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Decrement the loop counter */
+ 285:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     blockSize1--;
+ 272              		.loc 1 285 5 is_stmt 1 view .LVU108
+ 273              		.loc 1 285 15 is_stmt 0 view .LVU109
+ 274 00d2 013B     		subs	r3, r3, #1
+ 275              	.LVL44:
+ 276              	.L4:
+ 233:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   {
+ 277              		.loc 1 233 21 is_stmt 1 view .LVU110
+ 278 00d4 2BB1     		cbz	r3, .L34
+ 236:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 279              		.loc 1 236 5 view .LVU111
+ 280              	.LVL45:
+ 239:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 281              		.loc 1 239 5 view .LVU112
+ 239:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 282              		.loc 1 239 7 is_stmt 0 view .LVU113
+ 283 00d6 4FEA9907 		lsr	r7, r9, #2
+ 284              	.LVL46:
+ 243:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     {
+ 285              		.loc 1 243 5 is_stmt 1 view .LVU114
+ 243:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     {
+ 286              		.loc 1 243 11 is_stmt 0 view .LVU115
+ 287 00da AC46     		mov	ip, r5
+ 236:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 288              		.loc 1 236 9 view .LVU116
+ 289 00dc DFEDAD7A 		vldr.32	s15, .L37+4
+ 243:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     {
+ 290              		.loc 1 243 11 view .LVU117
+ 291 00e0 DFE7     		b	.L5
+ 292              	.LVL47:
+ 293              	.L34:
+ 286:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   }
+ 287:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 288:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* --------------------------
+ 289:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * Initializations of stage2
+ 290:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * ------------------------*/
+ 291:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 292:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* sum = x[0] * y[0] + x[1] * y[1] +...+ x[srcBLen-1] * y[srcBLen-1]
+ 293:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * sum = x[1] * y[0] + x[2] * y[1] +...+ x[srcBLen] * y[srcBLen-1]
+ 294:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * ....
+ 295:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * sum = x[srcALen-srcBLen-2] * y[0] + x[srcALen-srcBLen-1] * y[1] +...+ x[srcALen-1] * y[srcBLen
+ 296:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    */
+ 297:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 298:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* Working pointer of inputA */
+ 299:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   px = pIn1;
+ 294              		.loc 1 299 3 is_stmt 1 view .LVU118
+ 300:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ARM GAS  /tmp/ccCOIZ3e.s 			page 12
+
+
+ 301:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* Working pointer of inputB */
+ 302:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   py = pIn2;
+ 295              		.loc 1 302 3 view .LVU119
+ 303:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 304:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* count is index by which the pointer pIn1 to be incremented */
+ 305:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   count = 0U;
+ 296              		.loc 1 305 3 view .LVU120
+ 306:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 307:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* -------------------
+ 308:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * Stage2 process
+ 309:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * ------------------*/
+ 310:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 311:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* Stage2 depends on srcBLen as in this stage srcBLen number of MACS are performed.
+ 312:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * So, to loop unroll over blockSize2,
+ 313:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * srcBLen should be greater than or equal to 4, to loop unroll the srcBLen loop */
+ 314:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   if (srcBLen >= 4U)
+ 297              		.loc 1 314 3 view .LVU121
+ 298              		.loc 1 314 6 is_stmt 0 view .LVU122
+ 299 00e2 032E     		cmp	r6, #3
+ 300 00e4 40F20981 		bls	.L31
+ 315:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   {
+ 316:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Loop unroll over blockSize2, by 4 */
+ 317:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     blkCnt = blockSize2 >> 2U;
+ 301              		.loc 1 317 5 is_stmt 1 view .LVU123
+ 302              		.loc 1 317 12 is_stmt 0 view .LVU124
+ 303 00e8 4FEA9B09 		lsr	r9, fp, #2
+ 304              	.LVL48:
+ 318:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 319:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     while (blkCnt > 0U)
+ 305              		.loc 1 319 5 is_stmt 1 view .LVU125
+ 299:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 306              		.loc 1 299 6 is_stmt 0 view .LVU126
+ 307 00ec AC46     		mov	ip, r5
+ 308              		.loc 1 319 11 view .LVU127
+ 309 00ee 31E0     		b	.L11
+ 310              	.LVL49:
+ 311              	.L14:
+ 320:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     {
+ 321:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Set all accumulators to zero */
+ 322:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       acc0 = 0.0f;
+ 323:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       acc1 = 0.0f;
+ 324:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       acc2 = 0.0f;
+ 325:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       acc3 = 0.0f;
+ 326:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 327:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* read x[0], x[1], x[2] samples */
+ 328:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       x0 = *(px++);
+ 329:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       x1 = *(px++);
+ 330:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       x2 = *(px++);
+ 331:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 332:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Apply loop unrolling and compute 4 MACs simultaneously. */
+ 333:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       k = srcBLen >> 2U;
+ 334:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 335:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* First part of the processing with loop unrolling.  Compute 4 MACs at a time.
+ 336:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****        ** a second loop below computes MACs for the remaining 1 to 3 samples. */
+ 337:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       do
+ 338:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       {
+ 339:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* Read y[0] sample */
+ARM GAS  /tmp/ccCOIZ3e.s 			page 13
+
+
+ 340:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         c0 = *(py++);
+ 341:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 342:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* Read x[3] sample */
+ 343:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         x3 = *(px++);
+ 344:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 345:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* Perform the multiply-accumulate */
+ 346:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc0 +=  x[0] * y[0] */
+ 347:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         acc0 += x0 * c0;
+ 348:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc1 +=  x[1] * y[0] */
+ 349:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         acc1 += x1 * c0;
+ 350:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc2 +=  x[2] * y[0] */
+ 351:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         acc2 += x2 * c0;
+ 352:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc3 +=  x[3] * y[0] */
+ 353:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         acc3 += x3 * c0;
+ 354:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 355:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* Read y[1] sample */
+ 356:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         c0 = *(py++);
+ 357:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 358:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* Read x[4] sample */
+ 359:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         x0 = *(px++);
+ 360:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 361:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* Perform the multiply-accumulate */
+ 362:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc0 +=  x[1] * y[1] */
+ 363:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         acc0 += x1 * c0;
+ 364:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc1 +=  x[2] * y[1] */
+ 365:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         acc1 += x2 * c0;
+ 366:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc2 +=  x[3] * y[1] */
+ 367:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         acc2 += x3 * c0;
+ 368:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc3 +=  x[4] * y[1] */
+ 369:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         acc3 += x0 * c0;
+ 370:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 371:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* Read y[2] sample */
+ 372:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         c0 = *(py++);
+ 373:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 374:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* Read x[5] sample */
+ 375:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         x1 = *(px++);
+ 376:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 377:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* Perform the multiply-accumulates */
+ 378:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc0 +=  x[2] * y[2] */
+ 379:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         acc0 += x2 * c0;
+ 380:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc1 +=  x[3] * y[2] */
+ 381:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         acc1 += x3 * c0;
+ 382:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc2 +=  x[4] * y[2] */
+ 383:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         acc2 += x0 * c0;
+ 384:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc3 +=  x[5] * y[2] */
+ 385:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         acc3 += x1 * c0;
+ 386:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 387:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* Read y[3] sample */
+ 388:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         c0 = *(py++);
+ 389:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 390:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* Read x[6] sample */
+ 391:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         x2 = *(px++);
+ 392:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 393:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* Perform the multiply-accumulates */
+ 394:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc0 +=  x[3] * y[3] */
+ 395:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         acc0 += x3 * c0;
+ 396:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc1 +=  x[4] * y[3] */
+ARM GAS  /tmp/ccCOIZ3e.s 			page 14
+
+
+ 397:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         acc1 += x0 * c0;
+ 398:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc2 +=  x[5] * y[3] */
+ 399:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         acc2 += x1 * c0;
+ 400:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc3 +=  x[6] * y[3] */
+ 401:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         acc3 += x2 * c0;
+ 402:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 403:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 404:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       } while (--k);
+ 405:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 406:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* If the srcBLen is not a multiple of 4, compute any remaining MACs here.
+ 407:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****        ** No loop unrolling is used. */
+ 408:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       k = srcBLen % 0x4U;
+ 409:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 410:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       while (k > 0U)
+ 411:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       {
+ 412:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* Read y[4] sample */
+ 413:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         c0 = *(py++);
+ 312              		.loc 1 413 9 is_stmt 1 view .LVU128
+ 313              		.loc 1 413 12 is_stmt 0 view .LVU129
+ 314 00f0 BCEC017A 		vldmia.32	ip!, {s14}
+ 315              	.LVL50:
+ 414:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 415:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* Read x[7] sample */
+ 416:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         x3 = *(px++);
+ 316              		.loc 1 416 9 is_stmt 1 view .LVU130
+ 317              		.loc 1 416 12 is_stmt 0 view .LVU131
+ 318 00f4 F1EC014A 		vldmia.32	r1!, {s9}
+ 319              	.LVL51:
+ 417:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 418:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* Perform the multiply-accumulates */
+ 419:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc0 +=  x[4] * y[4] */
+ 420:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         acc0 += x0 * c0;
+ 320              		.loc 1 420 9 is_stmt 1 view .LVU132
+ 321              		.loc 1 420 20 is_stmt 0 view .LVU133
+ 322 00f8 66EE876A 		vmul.f32	s13, s13, s14
+ 323              	.LVL52:
+ 324              		.loc 1 420 14 view .LVU134
+ 325 00fc 36EE266A 		vadd.f32	s12, s12, s13
+ 326              	.LVL53:
+ 421:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc1 +=  x[5] * y[4] */
+ 422:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         acc1 += x1 * c0;
+ 327              		.loc 1 422 9 is_stmt 1 view .LVU135
+ 328              		.loc 1 422 20 is_stmt 0 view .LVU136
+ 329 0100 65EE876A 		vmul.f32	s13, s11, s14
+ 330              		.loc 1 422 14 view .LVU137
+ 331 0104 73EEA63A 		vadd.f32	s7, s7, s13
+ 332              	.LVL54:
+ 423:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc2 +=  x[6] * y[4] */
+ 424:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         acc2 += x2 * c0;
+ 333              		.loc 1 424 9 is_stmt 1 view .LVU138
+ 334              		.loc 1 424 20 is_stmt 0 view .LVU139
+ 335 0108 65EE076A 		vmul.f32	s13, s10, s14
+ 336              		.loc 1 424 14 view .LVU140
+ 337 010c 34EE264A 		vadd.f32	s8, s8, s13
+ 338              	.LVL55:
+ 425:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc3 +=  x[7] * y[4] */
+ 426:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         acc3 += x3 * c0;
+ARM GAS  /tmp/ccCOIZ3e.s 			page 15
+
+
+ 339              		.loc 1 426 9 is_stmt 1 view .LVU141
+ 340              		.loc 1 426 20 is_stmt 0 view .LVU142
+ 341 0110 27EE247A 		vmul.f32	s14, s14, s9
+ 342              	.LVL56:
+ 343              		.loc 1 426 14 view .LVU143
+ 344 0114 77EE877A 		vadd.f32	s15, s15, s14
+ 345              	.LVL57:
+ 427:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 428:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* Reuse the present samples for the next MAC */
+ 429:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         x0 = x1;
+ 346              		.loc 1 429 9 is_stmt 1 view .LVU144
+ 430:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         x1 = x2;
+ 347              		.loc 1 430 9 view .LVU145
+ 431:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         x2 = x3;
+ 348              		.loc 1 431 9 view .LVU146
+ 432:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 433:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* Decrement the loop counter */
+ 434:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         k--;
+ 349              		.loc 1 434 9 view .LVU147
+ 350              		.loc 1 434 10 is_stmt 0 view .LVU148
+ 351 0118 013F     		subs	r7, r7, #1
+ 352              	.LVL58:
+ 429:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         x1 = x2;
+ 353              		.loc 1 429 12 view .LVU149
+ 354 011a F0EE656A 		vmov.f32	s13, s11
+ 430:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         x2 = x3;
+ 355              		.loc 1 430 12 view .LVU150
+ 356 011e F0EE455A 		vmov.f32	s11, s10
+ 357              	.LVL59:
+ 431:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 358              		.loc 1 431 12 view .LVU151
+ 359 0122 B0EE645A 		vmov.f32	s10, s9
+ 360              	.LVL60:
+ 361              	.L13:
+ 410:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       {
+ 362              		.loc 1 410 16 is_stmt 1 view .LVU152
+ 363 0126 002F     		cmp	r7, #0
+ 364 0128 E2D1     		bne	.L14
+ 435:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       }
+ 436:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 437:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Store the result in the accumulator in the destination buffer. */
+ 438:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       *pOut = acc0;
+ 365              		.loc 1 438 7 view .LVU153
+ 366              		.loc 1 438 13 is_stmt 0 view .LVU154
+ 367 012a 8EED006A 		vstr.32	s12, [lr]
+ 439:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Destination pointer is updated according to the address modifier, inc */
+ 440:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       pOut += inc;
+ 368              		.loc 1 440 7 is_stmt 1 view .LVU155
+ 369              		.loc 1 440 12 is_stmt 0 view .LVU156
+ 370 012e 0EEB820E 		add	lr, lr, r2, lsl #2
+ 371              	.LVL61:
+ 441:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 442:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       *pOut = acc1;
+ 372              		.loc 1 442 7 is_stmt 1 view .LVU157
+ 373              		.loc 1 442 13 is_stmt 0 view .LVU158
+ 374 0132 CEED003A 		vstr.32	s7, [lr]
+ 443:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       pOut += inc;
+ARM GAS  /tmp/ccCOIZ3e.s 			page 16
+
+
+ 375              		.loc 1 443 7 is_stmt 1 view .LVU159
+ 376              		.loc 1 443 12 is_stmt 0 view .LVU160
+ 377 0136 0EEB820E 		add	lr, lr, r2, lsl #2
+ 378              	.LVL62:
+ 444:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 445:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       *pOut = acc2;
+ 379              		.loc 1 445 7 is_stmt 1 view .LVU161
+ 380              		.loc 1 445 13 is_stmt 0 view .LVU162
+ 381 013a 8EED004A 		vstr.32	s8, [lr]
+ 446:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       pOut += inc;
+ 382              		.loc 1 446 7 is_stmt 1 view .LVU163
+ 383              		.loc 1 446 12 is_stmt 0 view .LVU164
+ 384 013e 0EEB820E 		add	lr, lr, r2, lsl #2
+ 385              	.LVL63:
+ 447:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 448:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       *pOut = acc3;
+ 386              		.loc 1 448 7 is_stmt 1 view .LVU165
+ 387              		.loc 1 448 13 is_stmt 0 view .LVU166
+ 388 0142 CEED007A 		vstr.32	s15, [lr]
+ 449:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       pOut += inc;
+ 389              		.loc 1 449 7 is_stmt 1 view .LVU167
+ 390              		.loc 1 449 12 is_stmt 0 view .LVU168
+ 391 0146 0EEB820E 		add	lr, lr, r2, lsl #2
+ 392              	.LVL64:
+ 450:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 451:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Increment the pointer pIn1 index, count by 4 */
+ 452:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       count += 4U;
+ 393              		.loc 1 452 7 is_stmt 1 view .LVU169
+ 394              		.loc 1 452 13 is_stmt 0 view .LVU170
+ 395 014a 0433     		adds	r3, r3, #4
+ 396              	.LVL65:
+ 453:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 454:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Update the inputA and inputB pointers for next MAC calculation */
+ 455:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       px = pIn1 + count;
+ 397              		.loc 1 455 7 is_stmt 1 view .LVU171
+ 398              		.loc 1 455 10 is_stmt 0 view .LVU172
+ 399 014c 05EB830C 		add	ip, r5, r3, lsl #2
+ 400              	.LVL66:
+ 456:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       py = pIn2;
+ 401              		.loc 1 456 7 is_stmt 1 view .LVU173
+ 457:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 458:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Decrement the loop counter */
+ 459:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       blkCnt--;
+ 402              		.loc 1 459 7 view .LVU174
+ 403              		.loc 1 459 13 is_stmt 0 view .LVU175
+ 404 0150 09F1FF39 		add	r9, r9, #-1
+ 405              	.LVL67:
+ 406              	.L11:
+ 319:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     {
+ 407              		.loc 1 319 19 is_stmt 1 view .LVU176
+ 408 0154 B9F1000F 		cmp	r9, #0
+ 409 0158 6BD0     		beq	.L35
+ 322:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       acc1 = 0.0f;
+ 410              		.loc 1 322 7 view .LVU177
+ 411              	.LVL68:
+ 323:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       acc2 = 0.0f;
+ 412              		.loc 1 323 7 view .LVU178
+ARM GAS  /tmp/ccCOIZ3e.s 			page 17
+
+
+ 324:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       acc3 = 0.0f;
+ 413              		.loc 1 324 7 view .LVU179
+ 325:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 414              		.loc 1 325 7 view .LVU180
+ 328:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       x1 = *(px++);
+ 415              		.loc 1 328 7 view .LVU181
+ 328:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       x1 = *(px++);
+ 416              		.loc 1 328 10 is_stmt 0 view .LVU182
+ 417 015a DCED006A 		vldr.32	s13, [ip]
+ 418              	.LVL69:
+ 329:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       x2 = *(px++);
+ 419              		.loc 1 329 7 is_stmt 1 view .LVU183
+ 329:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       x2 = *(px++);
+ 420              		.loc 1 329 10 is_stmt 0 view .LVU184
+ 421 015e DCED015A 		vldr.32	s11, [ip, #4]
+ 422              	.LVL70:
+ 330:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 423              		.loc 1 330 7 is_stmt 1 view .LVU185
+ 330:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 424              		.loc 1 330 16 is_stmt 0 view .LVU186
+ 425 0162 0CF10C01 		add	r1, ip, #12
+ 426              	.LVL71:
+ 330:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 427              		.loc 1 330 10 view .LVU187
+ 428 0166 9CED025A 		vldr.32	s10, [ip, #8]
+ 429              	.LVL72:
+ 333:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 430              		.loc 1 333 7 is_stmt 1 view .LVU188
+ 333:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 431              		.loc 1 333 9 is_stmt 0 view .LVU189
+ 432 016a 4FEA960A 		lsr	r10, r6, #2
+ 433              	.LVL73:
+ 333:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 434              		.loc 1 333 9 view .LVU190
+ 435 016e 8446     		mov	ip, r0
+ 325:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 436              		.loc 1 325 12 view .LVU191
+ 437 0170 DFED887A 		vldr.32	s15, .L37+4
+ 324:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       acc3 = 0.0f;
+ 438              		.loc 1 324 12 view .LVU192
+ 439 0174 B0EE674A 		vmov.f32	s8, s15
+ 323:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       acc2 = 0.0f;
+ 440              		.loc 1 323 12 view .LVU193
+ 441 0178 F0EE673A 		vmov.f32	s7, s15
+ 322:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       acc1 = 0.0f;
+ 442              		.loc 1 322 12 view .LVU194
+ 443 017c B0EE676A 		vmov.f32	s12, s15
+ 444              	.LVL74:
+ 445              	.L12:
+ 337:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       {
+ 446              		.loc 1 337 7 is_stmt 1 view .LVU195
+ 340:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 447              		.loc 1 340 9 view .LVU196
+ 340:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 448              		.loc 1 340 12 is_stmt 0 view .LVU197
+ 449 0180 9CED007A 		vldr.32	s14, [ip]
+ 450              	.LVL75:
+ARM GAS  /tmp/ccCOIZ3e.s 			page 18
+
+
+ 343:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 451              		.loc 1 343 9 is_stmt 1 view .LVU198
+ 343:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 452              		.loc 1 343 12 is_stmt 0 view .LVU199
+ 453 0184 D1ED004A 		vldr.32	s9, [r1]
+ 454              	.LVL76:
+ 347:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc1 +=  x[1] * y[0] */
+ 455              		.loc 1 347 9 is_stmt 1 view .LVU200
+ 347:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc1 +=  x[1] * y[0] */
+ 456              		.loc 1 347 20 is_stmt 0 view .LVU201
+ 457 0188 26EE873A 		vmul.f32	s6, s13, s14
+ 347:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc1 +=  x[1] * y[0] */
+ 458              		.loc 1 347 14 view .LVU202
+ 459 018c 33EE063A 		vadd.f32	s6, s6, s12
+ 460              	.LVL77:
+ 349:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc2 +=  x[2] * y[0] */
+ 461              		.loc 1 349 9 is_stmt 1 view .LVU203
+ 349:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc2 +=  x[2] * y[0] */
+ 462              		.loc 1 349 20 is_stmt 0 view .LVU204
+ 463 0190 65EE876A 		vmul.f32	s13, s11, s14
+ 464              	.LVL78:
+ 349:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc2 +=  x[2] * y[0] */
+ 465              		.loc 1 349 14 view .LVU205
+ 466 0194 76EEA33A 		vadd.f32	s7, s13, s7
+ 467              	.LVL79:
+ 351:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc3 +=  x[3] * y[0] */
+ 468              		.loc 1 351 9 is_stmt 1 view .LVU206
+ 351:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc3 +=  x[3] * y[0] */
+ 469              		.loc 1 351 20 is_stmt 0 view .LVU207
+ 470 0198 25EE076A 		vmul.f32	s12, s10, s14
+ 351:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc3 +=  x[3] * y[0] */
+ 471              		.loc 1 351 14 view .LVU208
+ 472 019c 36EE046A 		vadd.f32	s12, s12, s8
+ 473              	.LVL80:
+ 353:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 474              		.loc 1 353 9 is_stmt 1 view .LVU209
+ 353:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 475              		.loc 1 353 20 is_stmt 0 view .LVU210
+ 476 01a0 27EE247A 		vmul.f32	s14, s14, s9
+ 477              	.LVL81:
+ 353:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 478              		.loc 1 353 14 view .LVU211
+ 479 01a4 37EE277A 		vadd.f32	s14, s14, s15
+ 480              	.LVL82:
+ 356:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 481              		.loc 1 356 9 is_stmt 1 view .LVU212
+ 356:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 482              		.loc 1 356 12 is_stmt 0 view .LVU213
+ 483 01a8 DCED017A 		vldr.32	s15, [ip, #4]
+ 484              	.LVL83:
+ 359:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 485              		.loc 1 359 9 is_stmt 1 view .LVU214
+ 359:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 486              		.loc 1 359 12 is_stmt 0 view .LVU215
+ 487 01ac D1ED016A 		vldr.32	s13, [r1, #4]
+ 488              	.LVL84:
+ 363:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc1 +=  x[2] * y[1] */
+ARM GAS  /tmp/ccCOIZ3e.s 			page 19
+
+
+ 489              		.loc 1 363 9 is_stmt 1 view .LVU216
+ 363:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc1 +=  x[2] * y[1] */
+ 490              		.loc 1 363 20 is_stmt 0 view .LVU217
+ 491 01b0 25EEA74A 		vmul.f32	s8, s11, s15
+ 363:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc1 +=  x[2] * y[1] */
+ 492              		.loc 1 363 14 view .LVU218
+ 493 01b4 34EE034A 		vadd.f32	s8, s8, s6
+ 494              	.LVL85:
+ 365:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc2 +=  x[3] * y[1] */
+ 495              		.loc 1 365 9 is_stmt 1 view .LVU219
+ 365:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc2 +=  x[3] * y[1] */
+ 496              		.loc 1 365 20 is_stmt 0 view .LVU220
+ 497 01b8 25EE273A 		vmul.f32	s6, s10, s15
+ 365:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc2 +=  x[3] * y[1] */
+ 498              		.loc 1 365 14 view .LVU221
+ 499 01bc 33EE233A 		vadd.f32	s6, s6, s7
+ 500              	.LVL86:
+ 367:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc3 +=  x[4] * y[1] */
+ 501              		.loc 1 367 9 is_stmt 1 view .LVU222
+ 367:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc3 +=  x[4] * y[1] */
+ 502              		.loc 1 367 20 is_stmt 0 view .LVU223
+ 503 01c0 64EEA73A 		vmul.f32	s7, s9, s15
+ 367:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc3 +=  x[4] * y[1] */
+ 504              		.loc 1 367 14 view .LVU224
+ 505 01c4 73EE863A 		vadd.f32	s7, s7, s12
+ 506              	.LVL87:
+ 369:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 507              		.loc 1 369 9 is_stmt 1 view .LVU225
+ 369:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 508              		.loc 1 369 20 is_stmt 0 view .LVU226
+ 509 01c8 67EEA67A 		vmul.f32	s15, s15, s13
+ 510              	.LVL88:
+ 369:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 511              		.loc 1 369 14 view .LVU227
+ 512 01cc 37EE877A 		vadd.f32	s14, s15, s14
+ 513              	.LVL89:
+ 372:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 514              		.loc 1 372 9 is_stmt 1 view .LVU228
+ 372:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 515              		.loc 1 372 12 is_stmt 0 view .LVU229
+ 516 01d0 DCED027A 		vldr.32	s15, [ip, #8]
+ 517              	.LVL90:
+ 375:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 518              		.loc 1 375 9 is_stmt 1 view .LVU230
+ 375:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 519              		.loc 1 375 12 is_stmt 0 view .LVU231
+ 520 01d4 D1ED025A 		vldr.32	s11, [r1, #8]
+ 521              	.LVL91:
+ 379:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc1 +=  x[3] * y[2] */
+ 522              		.loc 1 379 9 is_stmt 1 view .LVU232
+ 379:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc1 +=  x[3] * y[2] */
+ 523              		.loc 1 379 20 is_stmt 0 view .LVU233
+ 524 01d8 25EE276A 		vmul.f32	s12, s10, s15
+ 379:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc1 +=  x[3] * y[2] */
+ 525              		.loc 1 379 14 view .LVU234
+ 526 01dc 36EE046A 		vadd.f32	s12, s12, s8
+ 527              	.LVL92:
+ARM GAS  /tmp/ccCOIZ3e.s 			page 20
+
+
+ 381:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc2 +=  x[4] * y[2] */
+ 528              		.loc 1 381 9 is_stmt 1 view .LVU235
+ 381:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc2 +=  x[4] * y[2] */
+ 529              		.loc 1 381 20 is_stmt 0 view .LVU236
+ 530 01e0 24EEA74A 		vmul.f32	s8, s9, s15
+ 381:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc2 +=  x[4] * y[2] */
+ 531              		.loc 1 381 14 view .LVU237
+ 532 01e4 34EE034A 		vadd.f32	s8, s8, s6
+ 533              	.LVL93:
+ 383:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc3 +=  x[5] * y[2] */
+ 534              		.loc 1 383 9 is_stmt 1 view .LVU238
+ 383:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc3 +=  x[5] * y[2] */
+ 535              		.loc 1 383 20 is_stmt 0 view .LVU239
+ 536 01e8 26EEA73A 		vmul.f32	s6, s13, s15
+ 383:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc3 +=  x[5] * y[2] */
+ 537              		.loc 1 383 14 view .LVU240
+ 538 01ec 33EE233A 		vadd.f32	s6, s6, s7
+ 539              	.LVL94:
+ 385:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 540              		.loc 1 385 9 is_stmt 1 view .LVU241
+ 385:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 541              		.loc 1 385 20 is_stmt 0 view .LVU242
+ 542 01f0 67EEA57A 		vmul.f32	s15, s15, s11
+ 543              	.LVL95:
+ 385:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 544              		.loc 1 385 14 view .LVU243
+ 545 01f4 37EE877A 		vadd.f32	s14, s15, s14
+ 546              	.LVL96:
+ 388:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 547              		.loc 1 388 9 is_stmt 1 view .LVU244
+ 388:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 548              		.loc 1 388 12 is_stmt 0 view .LVU245
+ 549 01f8 DCED037A 		vldr.32	s15, [ip, #12]
+ 550 01fc 0CF1100C 		add	ip, ip, #16
+ 551              	.LVL97:
+ 391:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 552              		.loc 1 391 9 is_stmt 1 view .LVU246
+ 391:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 553              		.loc 1 391 12 is_stmt 0 view .LVU247
+ 554 0200 91ED035A 		vldr.32	s10, [r1, #12]
+ 555              	.LVL98:
+ 391:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 556              		.loc 1 391 12 view .LVU248
+ 557 0204 1031     		adds	r1, r1, #16
+ 558              	.LVL99:
+ 395:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc1 +=  x[4] * y[3] */
+ 559              		.loc 1 395 9 is_stmt 1 view .LVU249
+ 395:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc1 +=  x[4] * y[3] */
+ 560              		.loc 1 395 20 is_stmt 0 view .LVU250
+ 561 0206 64EEA74A 		vmul.f32	s9, s9, s15
+ 562              	.LVL100:
+ 395:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc1 +=  x[4] * y[3] */
+ 563              		.loc 1 395 14 view .LVU251
+ 564 020a 34EE866A 		vadd.f32	s12, s9, s12
+ 565              	.LVL101:
+ 397:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc2 +=  x[5] * y[3] */
+ 566              		.loc 1 397 9 is_stmt 1 view .LVU252
+ARM GAS  /tmp/ccCOIZ3e.s 			page 21
+
+
+ 397:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc2 +=  x[5] * y[3] */
+ 567              		.loc 1 397 20 is_stmt 0 view .LVU253
+ 568 020e 66EEA73A 		vmul.f32	s7, s13, s15
+ 397:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc2 +=  x[5] * y[3] */
+ 569              		.loc 1 397 14 view .LVU254
+ 570 0212 73EE843A 		vadd.f32	s7, s7, s8
+ 571              	.LVL102:
+ 399:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc3 +=  x[6] * y[3] */
+ 572              		.loc 1 399 9 is_stmt 1 view .LVU255
+ 399:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc3 +=  x[6] * y[3] */
+ 573              		.loc 1 399 20 is_stmt 0 view .LVU256
+ 574 0216 25EEA74A 		vmul.f32	s8, s11, s15
+ 399:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* acc3 +=  x[6] * y[3] */
+ 575              		.loc 1 399 14 view .LVU257
+ 576 021a 34EE034A 		vadd.f32	s8, s8, s6
+ 577              	.LVL103:
+ 401:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 578              		.loc 1 401 9 is_stmt 1 view .LVU258
+ 401:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 579              		.loc 1 401 20 is_stmt 0 view .LVU259
+ 580 021e 67EE857A 		vmul.f32	s15, s15, s10
+ 581              	.LVL104:
+ 401:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 582              		.loc 1 401 14 view .LVU260
+ 583 0222 77EE877A 		vadd.f32	s15, s15, s14
+ 584              	.LVL105:
+ 404:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 585              		.loc 1 404 16 is_stmt 1 discriminator 1 view .LVU261
+ 404:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 586              		.loc 1 404 16 is_stmt 0 discriminator 1 view .LVU262
+ 587 0226 BAF1010A 		subs	r10, r10, #1
+ 588              	.LVL106:
+ 404:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 589              		.loc 1 404 16 discriminator 1 view .LVU263
+ 590 022a A9D1     		bne	.L12
+ 408:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 591              		.loc 1 408 7 is_stmt 1 view .LVU264
+ 408:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 592              		.loc 1 408 9 is_stmt 0 view .LVU265
+ 593 022c 06F00307 		and	r7, r6, #3
+ 594              	.LVL107:
+ 410:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       {
+ 595              		.loc 1 410 7 is_stmt 1 view .LVU266
+ 410:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       {
+ 596              		.loc 1 410 13 is_stmt 0 view .LVU267
+ 597 0230 79E7     		b	.L13
+ 598              	.LVL108:
+ 599              	.L35:
+ 460:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     }
+ 461:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 462:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* If the blockSize2 is not a multiple of 4, compute any remaining output samples here.
+ 463:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****      ** No loop unrolling is used. */
+ 464:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     blkCnt = blockSize2 % 0x4U;
+ 600              		.loc 1 464 5 is_stmt 1 view .LVU268
+ 601              		.loc 1 464 12 is_stmt 0 view .LVU269
+ 602 0232 0BF00309 		and	r9, fp, #3
+ 603              	.LVL109:
+ARM GAS  /tmp/ccCOIZ3e.s 			page 22
+
+
+ 465:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 466:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     while (blkCnt > 0U)
+ 604              		.loc 1 466 5 is_stmt 1 view .LVU270
+ 605              		.loc 1 466 11 is_stmt 0 view .LVU271
+ 606 0236 3CE0     		b	.L16
+ 607              	.LVL110:
+ 608              	.L18:
+ 467:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     {
+ 468:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Accumulator is made zero for every iteration */
+ 469:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       sum = 0.0f;
+ 470:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 471:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Apply loop unrolling and compute 4 MACs simultaneously. */
+ 472:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       k = srcBLen >> 2U;
+ 473:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 474:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* First part of the processing with loop unrolling.  Compute 4 MACs at a time.
+ 475:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****        ** a second loop below computes MACs for the remaining 1 to 3 samples. */
+ 476:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       while (k > 0U)
+ 477:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       {
+ 478:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* Perform the multiply-accumulates */
+ 479:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         sum += *px++ * *py++;
+ 609              		.loc 1 479 9 is_stmt 1 view .LVU272
+ 610              		.loc 1 479 16 is_stmt 0 view .LVU273
+ 611 0238 9CED007A 		vldr.32	s14, [ip]
+ 612              	.LVL111:
+ 613              		.loc 1 479 24 view .LVU274
+ 614 023c D1ED006A 		vldr.32	s13, [r1]
+ 615              		.loc 1 479 22 view .LVU275
+ 616 0240 27EE267A 		vmul.f32	s14, s14, s13
+ 617              		.loc 1 479 13 view .LVU276
+ 618 0244 77EE877A 		vadd.f32	s15, s15, s14
+ 619              	.LVL112:
+ 480:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         sum += *px++ * *py++;
+ 620              		.loc 1 480 9 is_stmt 1 view .LVU277
+ 621              		.loc 1 480 16 is_stmt 0 view .LVU278
+ 622 0248 9CED017A 		vldr.32	s14, [ip, #4]
+ 623              	.LVL113:
+ 624              		.loc 1 480 24 view .LVU279
+ 625 024c D1ED016A 		vldr.32	s13, [r1, #4]
+ 626              		.loc 1 480 22 view .LVU280
+ 627 0250 27EE267A 		vmul.f32	s14, s14, s13
+ 628              		.loc 1 480 13 view .LVU281
+ 629 0254 77EE877A 		vadd.f32	s15, s15, s14
+ 630              	.LVL114:
+ 481:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         sum += *px++ * *py++;
+ 631              		.loc 1 481 9 is_stmt 1 view .LVU282
+ 632              		.loc 1 481 16 is_stmt 0 view .LVU283
+ 633 0258 9CED027A 		vldr.32	s14, [ip, #8]
+ 634              	.LVL115:
+ 635              		.loc 1 481 24 view .LVU284
+ 636 025c D1ED026A 		vldr.32	s13, [r1, #8]
+ 637              		.loc 1 481 22 view .LVU285
+ 638 0260 27EE267A 		vmul.f32	s14, s14, s13
+ 639              		.loc 1 481 13 view .LVU286
+ 640 0264 77EE877A 		vadd.f32	s15, s15, s14
+ 641              	.LVL116:
+ 482:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         sum += *px++ * *py++;
+ 642              		.loc 1 482 9 is_stmt 1 view .LVU287
+ARM GAS  /tmp/ccCOIZ3e.s 			page 23
+
+
+ 643              		.loc 1 482 16 is_stmt 0 view .LVU288
+ 644 0268 9CED037A 		vldr.32	s14, [ip, #12]
+ 645              	.LVL117:
+ 646              		.loc 1 482 24 view .LVU289
+ 647 026c D1ED036A 		vldr.32	s13, [r1, #12]
+ 648              		.loc 1 482 22 view .LVU290
+ 649 0270 27EE267A 		vmul.f32	s14, s14, s13
+ 650              		.loc 1 482 13 view .LVU291
+ 651 0274 77EE877A 		vadd.f32	s15, s15, s14
+ 652              	.LVL118:
+ 483:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 484:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* Decrement the loop counter */
+ 485:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         k--;
+ 653              		.loc 1 485 9 is_stmt 1 view .LVU292
+ 654              		.loc 1 485 10 is_stmt 0 view .LVU293
+ 655 0278 013F     		subs	r7, r7, #1
+ 656              	.LVL119:
+ 482:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         sum += *px++ * *py++;
+ 657              		.loc 1 482 27 view .LVU294
+ 658 027a 1031     		adds	r1, r1, #16
+ 659              	.LVL120:
+ 482:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         sum += *px++ * *py++;
+ 660              		.loc 1 482 19 view .LVU295
+ 661 027c 0CF1100C 		add	ip, ip, #16
+ 662              	.LVL121:
+ 663              	.L17:
+ 476:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       {
+ 664              		.loc 1 476 16 is_stmt 1 view .LVU296
+ 665 0280 002F     		cmp	r7, #0
+ 666 0282 D9D1     		bne	.L18
+ 486:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       }
+ 487:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 488:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* If the srcBLen is not a multiple of 4, compute any remaining MACs here.
+ 489:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****        ** No loop unrolling is used. */
+ 490:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       k = srcBLen % 0x4U;
+ 667              		.loc 1 490 7 view .LVU297
+ 668              		.loc 1 490 9 is_stmt 0 view .LVU298
+ 669 0284 06F00307 		and	r7, r6, #3
+ 670              	.LVL122:
+ 491:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 492:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       while (k > 0U)
+ 671              		.loc 1 492 7 is_stmt 1 view .LVU299
+ 672              		.loc 1 492 13 is_stmt 0 view .LVU300
+ 673 0288 08E0     		b	.L19
+ 674              	.L20:
+ 493:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       {
+ 494:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* Perform the multiply-accumulate */
+ 495:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         sum += *px++ * *py++;
+ 675              		.loc 1 495 9 is_stmt 1 view .LVU301
+ 676              	.LVL123:
+ 677              		.loc 1 495 16 is_stmt 0 view .LVU302
+ 678 028a BCEC017A 		vldmia.32	ip!, {s14}
+ 679              	.LVL124:
+ 680              		.loc 1 495 24 view .LVU303
+ 681 028e F1EC016A 		vldmia.32	r1!, {s13}
+ 682              	.LVL125:
+ 683              		.loc 1 495 22 view .LVU304
+ARM GAS  /tmp/ccCOIZ3e.s 			page 24
+
+
+ 684 0292 27EE267A 		vmul.f32	s14, s14, s13
+ 685              		.loc 1 495 13 view .LVU305
+ 686 0296 77EE877A 		vadd.f32	s15, s15, s14
+ 687              	.LVL126:
+ 496:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 497:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* Decrement the loop counter */
+ 498:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         k--;
+ 688              		.loc 1 498 9 is_stmt 1 view .LVU306
+ 689              		.loc 1 498 10 is_stmt 0 view .LVU307
+ 690 029a 013F     		subs	r7, r7, #1
+ 691              	.LVL127:
+ 692              	.L19:
+ 492:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       {
+ 693              		.loc 1 492 16 is_stmt 1 view .LVU308
+ 694 029c 002F     		cmp	r7, #0
+ 695 029e F4D1     		bne	.L20
+ 499:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       }
+ 500:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 501:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Store the result in the accumulator in the destination buffer. */
+ 502:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       *pOut = sum;
+ 696              		.loc 1 502 7 view .LVU309
+ 697              		.loc 1 502 13 is_stmt 0 view .LVU310
+ 698 02a0 CEED007A 		vstr.32	s15, [lr]
+ 503:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Destination pointer is updated according to the address modifier, inc */
+ 504:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       pOut += inc;
+ 699              		.loc 1 504 7 is_stmt 1 view .LVU311
+ 700              		.loc 1 504 12 is_stmt 0 view .LVU312
+ 701 02a4 0EEB820E 		add	lr, lr, r2, lsl #2
+ 702              	.LVL128:
+ 505:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 506:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Increment the pointer pIn1 index, count by 1 */
+ 507:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       count++;
+ 703              		.loc 1 507 7 is_stmt 1 view .LVU313
+ 704              		.loc 1 507 12 is_stmt 0 view .LVU314
+ 705 02a8 0133     		adds	r3, r3, #1
+ 706              	.LVL129:
+ 508:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 509:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Update the inputA and inputB pointers for next MAC calculation */
+ 510:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       px = pIn1 + count;
+ 707              		.loc 1 510 7 is_stmt 1 view .LVU315
+ 708              		.loc 1 510 10 is_stmt 0 view .LVU316
+ 709 02aa 05EB830C 		add	ip, r5, r3, lsl #2
+ 710              	.LVL130:
+ 511:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       py = pIn2;
+ 711              		.loc 1 511 7 is_stmt 1 view .LVU317
+ 512:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 513:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Decrement the loop counter */
+ 514:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       blkCnt--;
+ 712              		.loc 1 514 7 view .LVU318
+ 713              		.loc 1 514 13 is_stmt 0 view .LVU319
+ 714 02ae 09F1FF39 		add	r9, r9, #-1
+ 715              	.LVL131:
+ 716              	.L16:
+ 466:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     {
+ 717              		.loc 1 466 19 is_stmt 1 view .LVU320
+ 718 02b2 B9F1000F 		cmp	r9, #0
+ 719 02b6 23D0     		beq	.L22
+ARM GAS  /tmp/ccCOIZ3e.s 			page 25
+
+
+ 469:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 720              		.loc 1 469 7 view .LVU321
+ 721              	.LVL132:
+ 472:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 722              		.loc 1 472 7 view .LVU322
+ 472:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 723              		.loc 1 472 9 is_stmt 0 view .LVU323
+ 724 02b8 B708     		lsrs	r7, r6, #2
+ 725              	.LVL133:
+ 476:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       {
+ 726              		.loc 1 476 7 is_stmt 1 view .LVU324
+ 476:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       {
+ 727              		.loc 1 476 13 is_stmt 0 view .LVU325
+ 728 02ba 0146     		mov	r1, r0
+ 469:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 729              		.loc 1 469 11 view .LVU326
+ 730 02bc DFED357A 		vldr.32	s15, .L37+4
+ 476:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       {
+ 731              		.loc 1 476 13 view .LVU327
+ 732 02c0 DEE7     		b	.L17
+ 733              	.LVL134:
+ 734              	.L23:
+ 515:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     }
+ 516:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   }
+ 517:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   else
+ 518:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   {
+ 519:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* If the srcBLen is not a multiple of 4,
+ 520:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****      * the blockSize2 loop cannot be unrolled by 4 */
+ 521:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     blkCnt = blockSize2;
+ 522:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 523:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     while (blkCnt > 0U)
+ 524:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     {
+ 525:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Accumulator is made zero for every iteration */
+ 526:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       sum = 0.0f;
+ 527:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 528:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Loop over srcBLen */
+ 529:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       k = srcBLen;
+ 530:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 531:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       while (k > 0U)
+ 532:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       {
+ 533:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* Perform the multiply-accumulate */
+ 534:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         sum += *px++ * *py++;
+ 735              		.loc 1 534 9 is_stmt 1 view .LVU328
+ 736              		.loc 1 534 16 is_stmt 0 view .LVU329
+ 737 02c2 F1EC017A 		vldmia.32	r1!, {s15}
+ 738              	.LVL135:
+ 739              		.loc 1 534 24 view .LVU330
+ 740 02c6 FCEC016A 		vldmia.32	ip!, {s13}
+ 741              	.LVL136:
+ 742              		.loc 1 534 22 view .LVU331
+ 743 02ca 67EEA67A 		vmul.f32	s15, s15, s13
+ 744              		.loc 1 534 13 view .LVU332
+ 745 02ce 37EE277A 		vadd.f32	s14, s14, s15
+ 746              	.LVL137:
+ 535:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 536:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* Decrement the loop counter */
+ 537:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         k--;
+ARM GAS  /tmp/ccCOIZ3e.s 			page 26
+
+
+ 747              		.loc 1 537 9 is_stmt 1 view .LVU333
+ 748              		.loc 1 537 10 is_stmt 0 view .LVU334
+ 749 02d2 013F     		subs	r7, r7, #1
+ 750              	.LVL138:
+ 751              	.L24:
+ 531:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       {
+ 752              		.loc 1 531 16 is_stmt 1 view .LVU335
+ 753 02d4 002F     		cmp	r7, #0
+ 754 02d6 F4D1     		bne	.L23
+ 538:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       }
+ 539:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 540:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Store the result in the accumulator in the destination buffer. */
+ 541:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       *pOut = sum;
+ 755              		.loc 1 541 7 view .LVU336
+ 756              		.loc 1 541 13 is_stmt 0 view .LVU337
+ 757 02d8 8EED007A 		vstr.32	s14, [lr]
+ 542:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Destination pointer is updated according to the address modifier, inc */
+ 543:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       pOut += inc;
+ 758              		.loc 1 543 7 is_stmt 1 view .LVU338
+ 759              		.loc 1 543 12 is_stmt 0 view .LVU339
+ 760 02dc 0EEB820E 		add	lr, lr, r2, lsl #2
+ 761              	.LVL139:
+ 544:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 545:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Increment the pointer pIn1 index, count by 1 */
+ 546:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       count++;
+ 762              		.loc 1 546 7 is_stmt 1 view .LVU340
+ 763              		.loc 1 546 12 is_stmt 0 view .LVU341
+ 764 02e0 0133     		adds	r3, r3, #1
+ 765              	.LVL140:
+ 547:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 548:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Update the inputA and inputB pointers for next MAC calculation */
+ 549:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       px = pIn1 + count;
+ 766              		.loc 1 549 7 is_stmt 1 view .LVU342
+ 767              		.loc 1 549 10 is_stmt 0 view .LVU343
+ 768 02e2 05EB8301 		add	r1, r5, r3, lsl #2
+ 769              	.LVL141:
+ 550:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       py = pIn2;
+ 770              		.loc 1 550 7 is_stmt 1 view .LVU344
+ 551:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 552:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Decrement the loop counter */
+ 553:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       blkCnt--;
+ 771              		.loc 1 553 7 view .LVU345
+ 772              		.loc 1 553 13 is_stmt 0 view .LVU346
+ 773 02e6 09F1FF39 		add	r9, r9, #-1
+ 774              	.LVL142:
+ 775              	.L10:
+ 523:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     {
+ 776              		.loc 1 523 19 is_stmt 1 view .LVU347
+ 777 02ea B9F1000F 		cmp	r9, #0
+ 778 02ee 07D0     		beq	.L22
+ 529:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 779              		.loc 1 529 9 is_stmt 0 view .LVU348
+ 780 02f0 3746     		mov	r7, r6
+ 781 02f2 8446     		mov	ip, r0
+ 526:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 782              		.loc 1 526 11 view .LVU349
+ 783 02f4 9FED277A 		vldr.32	s14, .L37+4
+ARM GAS  /tmp/ccCOIZ3e.s 			page 27
+
+
+ 784 02f8 ECE7     		b	.L24
+ 785              	.LVL143:
+ 786              	.L31:
+ 521:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 787              		.loc 1 521 12 view .LVU350
+ 788 02fa D946     		mov	r9, fp
+ 299:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 789              		.loc 1 299 6 view .LVU351
+ 790 02fc 2946     		mov	r1, r5
+ 791 02fe F4E7     		b	.L10
+ 792              	.LVL144:
+ 793              	.L22:
+ 554:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     }
+ 555:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   }
+ 556:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 557:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* --------------------------
+ 558:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * Initializations of stage3
+ 559:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * -------------------------*/
+ 560:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 561:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* sum += x[srcALen-srcBLen+1] * y[0] + x[srcALen-srcBLen+2] * y[1] +...+ x[srcALen-1] * y[srcBLe
+ 562:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * sum += x[srcALen-srcBLen+2] * y[0] + x[srcALen-srcBLen+3] * y[1] +...+ x[srcALen-1] * y[srcBLe
+ 563:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * ....
+ 564:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * sum +=  x[srcALen-2] * y[0] + x[srcALen-1] * y[1]
+ 565:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * sum +=  x[srcALen-1] * y[0]
+ 566:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    */
+ 567:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 568:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* In this stage the MAC operations are decreased by 1 for every iteration.
+ 569:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****      The count variable holds the number of MAC operations performed */
+ 570:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   count = srcBLen - 1U;
+ 794              		.loc 1 570 3 is_stmt 1 view .LVU352
+ 571:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 572:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* Working pointer of inputA */
+ 573:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   pSrc1 = pIn1 + (srcALen - (srcBLen - 1U));
+ 795              		.loc 1 573 3 view .LVU353
+ 796              		.loc 1 573 9 is_stmt 0 view .LVU354
+ 797 0300 05EB8B05 		add	r5, r5, fp, lsl #2
+ 798              	.LVL145:
+ 574:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   px = pSrc1;
+ 799              		.loc 1 574 3 is_stmt 1 view .LVU355
+ 575:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 576:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* Working pointer of inputB */
+ 577:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   py = pIn2;
+ 800              		.loc 1 577 3 view .LVU356
+ 578:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 579:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* -------------------
+ 580:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * Stage3 process
+ 581:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * ------------------*/
+ 582:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 583:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   while (blockSize3 > 0U)
+ 801              		.loc 1 583 3 view .LVU357
+ 205:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 802              		.loc 1 205 14 is_stmt 0 view .LVU358
+ 803 0304 2746     		mov	r7, r4
+ 804              		.loc 1 583 9 view .LVU359
+ 805 0306 39E0     		b	.L25
+ 806              	.LVL146:
+ 807              	.L27:
+ARM GAS  /tmp/ccCOIZ3e.s 			page 28
+
+
+ 584:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   {
+ 585:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Accumulator is made zero for every iteration */
+ 586:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     sum = 0.0f;
+ 587:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 588:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Apply loop unrolling and compute 4 MACs simultaneously. */
+ 589:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     k = count >> 2U;
+ 590:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 591:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* First part of the processing with loop unrolling.  Compute 4 MACs at a time.
+ 592:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****      ** a second loop below computes MACs for the remaining 1 to 3 samples. */
+ 593:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     while (k > 0U)
+ 594:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     {
+ 595:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Perform the multiply-accumulates */
+ 596:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* sum += x[srcALen - srcBLen + 4] * y[3] */
+ 597:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       sum += *px++ * *py++;
+ 808              		.loc 1 597 7 is_stmt 1 view .LVU360
+ 809              		.loc 1 597 14 is_stmt 0 view .LVU361
+ 810 0308 93ED007A 		vldr.32	s14, [r3]
+ 811              	.LVL147:
+ 812              		.loc 1 597 22 view .LVU362
+ 813 030c D1ED006A 		vldr.32	s13, [r1]
+ 814              		.loc 1 597 20 view .LVU363
+ 815 0310 27EE267A 		vmul.f32	s14, s14, s13
+ 816              		.loc 1 597 11 view .LVU364
+ 817 0314 77EE877A 		vadd.f32	s15, s15, s14
+ 818              	.LVL148:
+ 598:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* sum += x[srcALen - srcBLen + 3] * y[2] */
+ 599:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       sum += *px++ * *py++;
+ 819              		.loc 1 599 7 is_stmt 1 view .LVU365
+ 820              		.loc 1 599 14 is_stmt 0 view .LVU366
+ 821 0318 93ED017A 		vldr.32	s14, [r3, #4]
+ 822              	.LVL149:
+ 823              		.loc 1 599 22 view .LVU367
+ 824 031c D1ED016A 		vldr.32	s13, [r1, #4]
+ 825              		.loc 1 599 20 view .LVU368
+ 826 0320 27EE267A 		vmul.f32	s14, s14, s13
+ 827              		.loc 1 599 11 view .LVU369
+ 828 0324 77EE877A 		vadd.f32	s15, s15, s14
+ 829              	.LVL150:
+ 600:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* sum += x[srcALen - srcBLen + 2] * y[1] */
+ 601:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       sum += *px++ * *py++;
+ 830              		.loc 1 601 7 is_stmt 1 view .LVU370
+ 831              		.loc 1 601 14 is_stmt 0 view .LVU371
+ 832 0328 93ED027A 		vldr.32	s14, [r3, #8]
+ 833              	.LVL151:
+ 834              		.loc 1 601 22 view .LVU372
+ 835 032c D1ED026A 		vldr.32	s13, [r1, #8]
+ 836              		.loc 1 601 20 view .LVU373
+ 837 0330 27EE267A 		vmul.f32	s14, s14, s13
+ 838              		.loc 1 601 11 view .LVU374
+ 839 0334 77EE877A 		vadd.f32	s15, s15, s14
+ 840              	.LVL152:
+ 602:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* sum += x[srcALen - srcBLen + 1] * y[0] */
+ 603:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       sum += *px++ * *py++;
+ 841              		.loc 1 603 7 is_stmt 1 view .LVU375
+ 842              		.loc 1 603 14 is_stmt 0 view .LVU376
+ 843 0338 93ED037A 		vldr.32	s14, [r3, #12]
+ 844              	.LVL153:
+ARM GAS  /tmp/ccCOIZ3e.s 			page 29
+
+
+ 845              		.loc 1 603 22 view .LVU377
+ 846 033c D1ED036A 		vldr.32	s13, [r1, #12]
+ 847              		.loc 1 603 20 view .LVU378
+ 848 0340 27EE267A 		vmul.f32	s14, s14, s13
+ 849              		.loc 1 603 11 view .LVU379
+ 850 0344 77EE877A 		vadd.f32	s15, s15, s14
+ 851              	.LVL154:
+ 604:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 605:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Decrement the loop counter */
+ 606:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       k--;
+ 852              		.loc 1 606 7 is_stmt 1 view .LVU380
+ 853              		.loc 1 606 8 is_stmt 0 view .LVU381
+ 854 0348 013E     		subs	r6, r6, #1
+ 855              	.LVL155:
+ 603:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 856              		.loc 1 603 25 view .LVU382
+ 857 034a 1031     		adds	r1, r1, #16
+ 858              	.LVL156:
+ 603:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 859              		.loc 1 603 17 view .LVU383
+ 860 034c 1033     		adds	r3, r3, #16
+ 861              	.LVL157:
+ 862              	.L26:
+ 593:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     {
+ 863              		.loc 1 593 14 is_stmt 1 view .LVU384
+ 864 034e 002E     		cmp	r6, #0
+ 865 0350 DAD1     		bne	.L27
+ 607:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     }
+ 608:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 609:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* If the count is not a multiple of 4, compute any remaining MACs here.
+ 610:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****      ** No loop unrolling is used. */
+ 611:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     k = count % 0x4U;
+ 866              		.loc 1 611 5 view .LVU385
+ 867              		.loc 1 611 7 is_stmt 0 view .LVU386
+ 868 0352 04F00306 		and	r6, r4, #3
+ 869              	.LVL158:
+ 612:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 613:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     while (k > 0U)
+ 870              		.loc 1 613 5 is_stmt 1 view .LVU387
+ 871              		.loc 1 613 11 is_stmt 0 view .LVU388
+ 872 0356 08E0     		b	.L28
+ 873              	.L29:
+ 614:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     {
+ 615:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Perform the multiply-accumulates */
+ 616:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       sum += *px++ * *py++;
+ 874              		.loc 1 616 7 is_stmt 1 view .LVU389
+ 875              	.LVL159:
+ 876              		.loc 1 616 14 is_stmt 0 view .LVU390
+ 877 0358 B3EC017A 		vldmia.32	r3!, {s14}
+ 878              	.LVL160:
+ 879              		.loc 1 616 22 view .LVU391
+ 880 035c F1EC016A 		vldmia.32	r1!, {s13}
+ 881              	.LVL161:
+ 882              		.loc 1 616 20 view .LVU392
+ 883 0360 27EE267A 		vmul.f32	s14, s14, s13
+ 884              		.loc 1 616 11 view .LVU393
+ 885 0364 77EE877A 		vadd.f32	s15, s15, s14
+ARM GAS  /tmp/ccCOIZ3e.s 			page 30
+
+
+ 886              	.LVL162:
+ 617:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 618:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Decrement the loop counter */
+ 619:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       k--;
+ 887              		.loc 1 619 7 is_stmt 1 view .LVU394
+ 888              		.loc 1 619 8 is_stmt 0 view .LVU395
+ 889 0368 013E     		subs	r6, r6, #1
+ 890              	.LVL163:
+ 891              	.L28:
+ 613:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     {
+ 892              		.loc 1 613 14 is_stmt 1 view .LVU396
+ 893 036a 002E     		cmp	r6, #0
+ 894 036c F4D1     		bne	.L29
+ 620:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     }
+ 621:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 622:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Store the result in the accumulator in the destination buffer. */
+ 623:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     *pOut = sum;
+ 895              		.loc 1 623 5 view .LVU397
+ 896              		.loc 1 623 11 is_stmt 0 view .LVU398
+ 897 036e CEED007A 		vstr.32	s15, [lr]
+ 624:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Destination pointer is updated according to the address modifier, inc */
+ 625:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     pOut += inc;
+ 898              		.loc 1 625 5 is_stmt 1 view .LVU399
+ 899              		.loc 1 625 10 is_stmt 0 view .LVU400
+ 900 0372 0EEB820E 		add	lr, lr, r2, lsl #2
+ 901              	.LVL164:
+ 626:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 627:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Update the inputA and inputB pointers for next MAC calculation */
+ 628:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     px = ++pSrc1;
+ 902              		.loc 1 628 5 is_stmt 1 view .LVU401
+ 903              		.loc 1 628 8 is_stmt 0 view .LVU402
+ 904 0376 0435     		adds	r5, r5, #4
+ 905              	.LVL165:
+ 629:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     py = pIn2;
+ 906              		.loc 1 629 5 is_stmt 1 view .LVU403
+ 630:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 631:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Decrement the MAC count */
+ 632:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     count--;
+ 907              		.loc 1 632 5 view .LVU404
+ 908              		.loc 1 632 10 is_stmt 0 view .LVU405
+ 909 0378 013C     		subs	r4, r4, #1
+ 910              	.LVL166:
+ 633:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 634:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Decrement the loop counter */
+ 635:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     blockSize3--;
+ 911              		.loc 1 635 5 is_stmt 1 view .LVU406
+ 912              		.loc 1 635 15 is_stmt 0 view .LVU407
+ 913 037a 013F     		subs	r7, r7, #1
+ 914              	.LVL167:
+ 915              	.L25:
+ 583:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   {
+ 916              		.loc 1 583 21 is_stmt 1 view .LVU408
+ 917 037c 2FB1     		cbz	r7, .L36
+ 586:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 918              		.loc 1 586 5 view .LVU409
+ 919              	.LVL168:
+ 589:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ARM GAS  /tmp/ccCOIZ3e.s 			page 31
+
+
+ 920              		.loc 1 589 5 view .LVU410
+ 589:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 921              		.loc 1 589 7 is_stmt 0 view .LVU411
+ 922 037e A608     		lsrs	r6, r4, #2
+ 923              	.LVL169:
+ 593:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     {
+ 924              		.loc 1 593 5 is_stmt 1 view .LVU412
+ 593:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     {
+ 925              		.loc 1 593 11 is_stmt 0 view .LVU413
+ 926 0380 0146     		mov	r1, r0
+ 927 0382 2B46     		mov	r3, r5
+ 586:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 928              		.loc 1 586 9 view .LVU414
+ 929 0384 DFED037A 		vldr.32	s15, .L37+4
+ 593:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     {
+ 930              		.loc 1 593 11 view .LVU415
+ 931 0388 E1E7     		b	.L26
+ 932              	.LVL170:
+ 933              	.L36:
+ 636:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   }
+ 637:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 638:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** #else
+ 639:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 640:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* Run the below code for Cortex-M0 */
+ 641:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 642:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   float32_t *pIn1 = pSrcA;                       /* inputA pointer */
+ 643:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   float32_t *pIn2 = pSrcB + (srcBLen - 1U);      /* inputB pointer */
+ 644:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   float32_t sum;                                 /* Accumulator */
+ 645:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   uint32_t i = 0U, j;                            /* loop counters */
+ 646:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   uint32_t inv = 0U;                             /* Reverse order flag */
+ 647:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   uint32_t tot = 0U;                             /* Length */
+ 648:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 649:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* The algorithm implementation is based on the lengths of the inputs. */
+ 650:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* srcB is always made to slide across srcA. */
+ 651:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* So srcBLen is always considered as shorter or equal to srcALen */
+ 652:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* But CORR(x, y) is reverse of CORR(y, x) */
+ 653:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* So, when srcBLen > srcALen, output pointer is made to point to the end of the output buffer */
+ 654:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* and a varaible, inv is set to 1 */
+ 655:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* If lengths are not equal then zero pad has to be done to  make the two
+ 656:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * inputs of same length. But to improve the performance, we assume zeroes
+ 657:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * in the output instead of zero padding either of the the inputs*/
+ 658:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* If srcALen > srcBLen, (srcALen - srcBLen) zeroes has to included in the
+ 659:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * starting of the output buffer */
+ 660:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* If srcALen < srcBLen, (srcALen - srcBLen) zeroes has to included in the
+ 661:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * ending of the output buffer */
+ 662:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* Once the zero padding is done the remaining of the output is calcualted
+ 663:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****    * using convolution but with the shorter signal time shifted. */
+ 664:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 665:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* Calculate the length of the remaining sequence */
+ 666:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   tot = ((srcALen + srcBLen) - 2U);
+ 667:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 668:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   if (srcALen > srcBLen)
+ 669:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   {
+ 670:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Calculating the number of zeros to be padded to the output */
+ 671:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     j = srcALen - srcBLen;
+ 672:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 673:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Initialise the pointer after zero padding */
+ARM GAS  /tmp/ccCOIZ3e.s 			page 32
+
+
+ 674:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     pDst += j;
+ 675:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   }
+ 676:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 677:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   else if (srcALen < srcBLen)
+ 678:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   {
+ 679:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Initialization to inputB pointer */
+ 680:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     pIn1 = pSrcB;
+ 681:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 682:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Initialization to the end of inputA pointer */
+ 683:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     pIn2 = pSrcA + (srcALen - 1U);
+ 684:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 685:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Initialisation of the pointer after zero padding */
+ 686:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     pDst = pDst + tot;
+ 687:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 688:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Swapping the lengths */
+ 689:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     j = srcALen;
+ 690:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     srcALen = srcBLen;
+ 691:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     srcBLen = j;
+ 692:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 693:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Setting the reverse flag */
+ 694:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     inv = 1;
+ 695:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 696:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   }
+ 697:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 698:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   /* Loop to calculate convolution for output length number of times */
+ 699:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   for (i = 0U; i <= tot; i++)
+ 700:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   {
+ 701:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Initialize sum with zero to carry on MAC operations */
+ 702:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     sum = 0.0f;
+ 703:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 704:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Loop to perform MAC operations according to convolution equation */
+ 705:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     for (j = 0U; j <= i; j++)
+ 706:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     {
+ 707:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       /* Check the array limitations */
+ 708:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       if ((((i - j) < srcBLen) && (j < srcALen)))
+ 709:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       {
+ 710:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         /* z[i] += x[i-j] * y[j] */
+ 711:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****         sum += pIn1[j] * pIn2[-((int32_t) i - j)];
+ 712:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       }
+ 713:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     }
+ 714:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     /* Store the output in the destination buffer */
+ 715:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     if (inv == 1)
+ 716:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       *pDst-- = sum;
+ 717:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****     else
+ 718:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****       *pDst++ = sum;
+ 719:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c ****   }
+ 720:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 721:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** #endif /*   #if defined (ARM_MATH_DSP) */
+ 722:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** 
+ 723:Drivers/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c **** }
+ 934              		.loc 1 723 1 view .LVU416
+ 935 038a BDE8F08F 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
+ 936              	.LVL171:
+ 937              	.L38:
+ 938              		.loc 1 723 1 view .LVU417
+ 939 038e 00BF     		.align	2
+ 940              	.L37:
+ARM GAS  /tmp/ccCOIZ3e.s 			page 33
+
+
+ 941 0390 FEFFFF3F 		.word	1073741822
+ 942 0394 00000000 		.word	0
+ 943              		.cfi_endproc
+ 944              	.LFE135:
+ 946              		.text
+ 947              	.Letext0:
+ 948              		.file 2 "/usr/arm-none-eabi/include/machine/_default_types.h"
+ 949              		.file 3 "/usr/arm-none-eabi/include/sys/_stdint.h"
+ 950              		.file 4 "Drivers/CMSIS/DSP/Include/arm_math.h"
+ARM GAS  /tmp/ccCOIZ3e.s 			page 34
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 arm_correlate_f32.c
+     /tmp/ccCOIZ3e.s:21     .text.arm_correlate_f32:00000000 $t
+     /tmp/ccCOIZ3e.s:27     .text.arm_correlate_f32:00000000 arm_correlate_f32
+     /tmp/ccCOIZ3e.s:941    .text.arm_correlate_f32:00000390 $d
+
+NO UNDEFINED SYMBOLS
