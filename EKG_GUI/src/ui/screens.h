@@ -10,11 +10,21 @@ extern "C" {
 typedef struct _objects_t {
     lv_obj_t *main;
     lv_obj_t *chart1;
-    lv_obj_t *chart2;
-    lv_obj_t *chart3;
-    lv_obj_t *label1;
-    lv_obj_t *label2;
-    lv_obj_t *label3;
+    lv_obj_t *bpm_value;
+    lv_obj_t *bpm_text;
+    lv_obj_t *status;
+    lv_obj_t *pr_label;
+    lv_obj_t *qt_label;
+    lv_obj_t *pr_segment_label;
+    lv_obj_t *qrs_label;
+    lv_obj_t *st_segment_label;
+    lv_obj_t *names;
+    lv_obj_t *print_value;
+    lv_obj_t *qt_int_value;
+    lv_obj_t *qrs_com_value_2;
+    lv_obj_t *prseg_value_3;
+    lv_obj_t *stseg_value_4;
+    lv_obj_t *obj0;
 } objects_t;
 
 extern objects_t objects;

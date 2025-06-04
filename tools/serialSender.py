@@ -7,6 +7,7 @@ import serial.tools.list_ports
 import threading
 import time
 import pandas as pd
+import numpy as np
 
 class SerialCSVSender(Gtk.Window):
     def __init__(self):
@@ -119,7 +120,7 @@ class SerialCSVSender(Gtk.Window):
             return
 
         port = self.combo_serial.get_active_text()
-        if not port or not self.csv_data is not None:
+        if not port or self.csv_data is None:
             self.append_to_console("Seri port veya CSV dosyası eksik.")
             return
 
@@ -141,17 +142,54 @@ class SerialCSVSender(Gtk.Window):
         self.btn_connect.set_label("Durdur")
 
         def send_loop():
+            # CSV verilerini temizle ve geçerli verileri al
+            valid_data = []
             for index, row in self.csv_data.iterrows():
-                if not self.running:
-                    break
                 try:
-                    value = str(row[column])
+                    value = row[column]
+                    # NaN kontrolü
+                    if pd.isna(value) or (isinstance(value, float) and np.isnan(value)):
+                        continue
+                    # Boş string kontrolü
+                    if str(value).strip() == '':
+                        continue
+                    valid_data.append(str(value))
+                except (KeyError, IndexError):
+                    continue
+            
+            if not valid_data:
+                GLib.idle_add(self.append_to_console, "Geçerli veri bulunamadı!")
+                self.running = False
+                GLib.idle_add(self.btn_connect.set_label, "Bağlan ve Gönder")
+                return
+            
+            GLib.idle_add(self.append_to_console, f"Toplam {len(valid_data)} geçerli veri bulundu. Döngülü gönderim başlıyor...")
+            
+            data_index = 0
+            cycle_count = 1
+            
+            while self.running:
+                try:
+                    value = valid_data[data_index]
                     self.serial_port.write((value + '\r\n').encode())
-                    GLib.idle_add(self.append_to_console, f"Gönderildi: {value}")
+                    GLib.idle_add(self.append_to_console, f"Döngü {cycle_count} - Gönderildi: {value}")
+                    
+                    data_index += 1
+                    
+                    # Veri listesinin sonuna geldiğimizde başa dön
+                    if data_index >= len(valid_data):
+                        data_index = 0
+                        cycle_count += 1
+                        GLib.idle_add(self.append_to_console, f"--- Döngü {cycle_count} başlıyor ---")
+                    
                 except Exception as e:
                     GLib.idle_add(self.append_to_console, f"Hata: {e}")
+                    break
+                    
                 time.sleep(sample_rate)
-            self.serial_port.close()
+            
+            if self.serial_port:
+                self.serial_port.close()
             self.running = False
             GLib.idle_add(self.btn_connect.set_label, "Bağlan ve Gönder")
 
