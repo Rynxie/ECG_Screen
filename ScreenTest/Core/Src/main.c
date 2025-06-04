@@ -37,6 +37,7 @@
 #include "math.h"
 
 #include <math.h>
+#include <stdint.h>
 #include <stdio.h>
 /* USER CODE END Includes */
 
@@ -60,9 +61,11 @@
 #define NUM_TAPS 32 
 #define BLOCK_SIZE 1 
 
-#define jFT_SIZE 128//fast fouirer transorm
+#define FS_SIZE 128//fast fouirer transorm
 
-
+#define SAMPLE_LENGTH 1281
+#define SAMPLE_RATE 128
+#define MW_SIZE (int)(0.15 * SAMPLE_RATE)
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -189,6 +192,11 @@ float fir_coeffs_f32[NUM_TAPS] = {
  -6.46433736e-04  1.86592777e-03  1.41887686e-03 -1.11951795e-04]
 };
 
+float derivative[SAMPLE_LENGTH];
+float squared[SAMPLE_LENGTH];
+float mwa[SAMPLE_LENGTH];
+uint16_t qrs_peaks[SAMPLE_LENGTH];
+uint16_t peaks_counter = 0;
 // fir filter 
 float fir_state_f32[NUM_TAPS - BLOCK_SIZE -1];
 float ecgBuffer[150];
@@ -200,6 +208,35 @@ float fft_output[FFT_SIZE];
 float magnitude[FFT_SIZE/2];
 
 
+
+void compute_derivative(){
+    for (int i = 2; i < SAMPLE_LENGTH - 2; i++){
+        derivative[i] = (2*filtered_ecg[i+1] + filtered_ecg[i+2] - filtered_ecg[i-2] - 2*filtered_ecg[i-1]) / 8.0f;
+}
+
+void compute_squared(){
+    for(int i = 0; i < SAMPLE_LENGTH; i++){
+        squared[i] = derivative[i] * derivative[i];
+    }
+}
+
+// moving window average
+void compute_mwa(){
+    for(int i = MW_SIZE; i < SAMPLE_LENGTH; i++){
+        float sum = 0.0f;
+        for(int j = 0; j < MW_SIZE; j++){
+        sum += squared[i-j];
+    }
+    mwa[i] = sum / MW_SIZE;
+}
+
+void detect_peaks(float threshold){
+    for(int i = 1; i < SAMPLE_LENGTH -1; i++) {
+        if(mwa[i] > threshold && mwa[i] > mwa[i-1] && mwa[i] > mwa[i+1]){
+            qrs_peaks[peaks_counter++] = i;
+        }
+    }
+}
 
 void my_flush_cb(lv_display_t * display, const lv_area_t * area, uint8_t * px_map)
 {
@@ -341,6 +378,18 @@ int main(void)
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
   /* USER CODE BEGIN Init */
+    compute_derivative();
+    compute_squared();
+    compute_mwa();
+    float average = 0.0f;
+    for(int i = 0; i < SAMPLE_LENGTH; i++)
+        average += mwa[i];
+    average /= SAMPLE_LENGTH;
+    detect_peaks(average);
+    printf("bulunan peakler");
+    for (int i = 0; i < peaks_counter; i++) {
+        printf("%d\n", qrs_peaks[i]);
+    }
     arm_fir_init_f32(&S, NUM_TAPS, fir_coeffs_f32, fir_state_f32, BLOCK_SIZE);
     arm_fir_f32(&S, ecgBuffer, filtered_ecg, 1);
     
