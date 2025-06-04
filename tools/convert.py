@@ -91,3 +91,4 @@ try:
 except Exception as e:
     print(f"\nBir hata oluştu: {e}")
     print(f"Hata detayı: {e}")
+
