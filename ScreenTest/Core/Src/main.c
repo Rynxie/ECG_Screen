@@ -202,6 +202,14 @@ float fir_coeffs_f32[NUM_TAPS] = {
   float fft_output[FFT_SIZE];
   float magnitude[FFT_SIZE/2];
 
+
+float ecg[SAMPLE_LENGTH];           // Input ECG buffer
+float derivative[SAMPLE_LENGTH];
+float squared[SAMPLE_LENGTH];
+float mwa[SAMPLE_LENGTH];
+uint16_t r_peaks[SAMPLE_LENGTH];   // Indices of R peaks
+uint16_t num_peaks = 0;
+
 void compute_derivative(){
     for (int i = 2; i < SAMPLE_LENGTH - 2; i++){
         derivative[i] = (2*ecgBuffer[i+1] + ecgBuffer[i+2] - ecgBuffer[i-2] - 2*ecgBuffer[i-1]) / 8.0f;
