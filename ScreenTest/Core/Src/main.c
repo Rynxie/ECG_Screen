@@ -390,6 +390,8 @@ int main(void)
     for (int i = 0; i < peaks_counter; i++) {
         printf("%d\n", qrs_peaks[i]);
     }
+    float period = (qrs_peaks[1] - qrs_peaks[0]) * (1 / 128);
+    float bpm = (1 / period) * 60;
     arm_fir_init_f32(&S, NUM_TAPS, fir_coeffs_f32, fir_state_f32, BLOCK_SIZE);
     arm_fir_f32(&S, ecgBuffer, filtered_ecg, 1);
     
