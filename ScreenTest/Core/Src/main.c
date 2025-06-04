@@ -211,7 +211,7 @@ float magnitude[FFT_SIZE/2];
 
 void compute_derivative(){
     for (int i = 2; i < SAMPLE_LENGTH - 2; i++){
-        derivative[i] = (2*filtered_ecg[i+1] + filtered_ecg[i+2] - filtered_ecg[i-2] - 2*filtered_ecg[i-1]) / 8.0f;
+        derivative[i] = (2*ecgBuffer[i+1] + ecgBuffer[i+2] - ecgBuffer[i-2] - 2*ecgBuffer[i-1]) / 8.0f;
 }
 
 void compute_squared(){
