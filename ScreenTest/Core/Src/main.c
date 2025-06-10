@@ -65,7 +65,8 @@
 
 #define SAMPLE_LENGTH 1281
 #define SAMPLE_RATE 128
-#define MW_SIZE (int)(0.15 * SAMPLE_RATE)
+#define MW_SIZE 15
+#define MAX_PEAKS 50
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -136,9 +137,6 @@ SDRAM_HandleTypeDef hsdram1;
 /* USER CODE BEGIN PV */
 LTDC_LayerCfgTypeDef pLayerCfg;
 
-arm_fir_instance_f32 S;
-arm_rfft_fast_instance_f32 fft;
-arm_rfft_fast_init_f32(&fft, FFT_SIZE);
 
 /* USER CODE END PV */
 
@@ -198,36 +196,39 @@ float mwa[SAMPLE_LENGTH];
 uint16_t qrs_peaks[SAMPLE_LENGTH];
 uint16_t peaks_counter = 0;
 // fir filter 
-float fir_state_f32[NUM_TAPS - BLOCK_SIZE -1];
 float ecgBuffer[150];
-float filtered_ecg[150];
-float input128[128];
-
-//fft buffers 
-float fft_output[FFT_SIZE];
-float magnitude[FFT_SIZE/2];
 
 
 
 void compute_derivative(){
-    for (int i = 2; i < SAMPLE_LENGTH - 2; i++){
+    for (int i = 2; i < SAMPLE_LENGTH - 2; i++) {
         derivative[i] = (2*ecgBuffer[i+1] + ecgBuffer[i+2] - ecgBuffer[i-2] - 2*ecgBuffer[i-1]) / 8.0f;
+    }
+    // İlk ve son değerleri sıfırla
+    derivative[0] = derivative[1] = 0.0f;
+    derivative[SAMPLE_LENGTH-1] = derivative[SAMPLE_LENGTH-2] = 0.0f;
 }
 
 void compute_squared(){
-    for(int i = 0; i < SAMPLE_LENGTH; i++){
+    for(int i = 0; i < SAMPLE_LENGTH; i++) {
         squared[i] = derivative[i] * derivative[i];
     }
 }
 
 // moving window average
 void compute_mwa(){
-    for(int i = MW_SIZE; i < SAMPLE_LENGTH; i++){
-        float sum = 0.0f;
-        for(int j = 0; j < MW_SIZE; j++){
-        sum += squared[i-j];
+    // İlk MW_SIZE değerini sıfırla
+    for(int i = 0; i < MW_SIZE; i++) {
+        mwa[i] = 0.0f;
     }
-    mwa[i] = sum / MW_SIZE;
+    
+    for(int i = MW_SIZE; i < SAMPLE_LENGTH; i++) {
+        float sum = 0.0f;
+        for(int j = 0; j < MW_SIZE; j++) {
+            sum += squared[i-j];
+        }
+        mwa[i] = sum / MW_SIZE;
+    }
 }
 
 void detect_peaks(float threshold){
@@ -236,6 +237,106 @@ void detect_peaks(float threshold){
             qrs_peaks[peaks_counter++] = i;
         }
     }
+}
+
+void detect_peaks_improved() {
+    peaks_counter = 0; // Counter'ı sıfırla
+    
+    // Adaptive threshold hesapla (maksimum değerin %40'ı)
+    float max_mwa = 0.0f;
+    for(int i = 0; i < SAMPLE_LENGTH; i++) {
+        if(mwa[i] > max_mwa) {
+            max_mwa = mwa[i];
+        }
+    }
+    float threshold = max_mwa * 0.4f;
+    
+    // Minimum R-R mesafesi (128Hz örnekleme için ~0.5 saniye)
+    int min_distance = 32; // 409 örnekte daha kısa mesafe kullan
+    
+    printf("Threshold: %.3f, Max MWA: %.3f\n", threshold, max_mwa);
+    
+    for(int i = min_distance; i < SAMPLE_LENGTH - min_distance; i++) {
+        // Peak kontrolü: threshold üstünde ve lokal maksimum
+        if(mwa[i] > threshold && 
+           mwa[i] > mwa[i-1] && 
+           mwa[i] > mwa[i+1]) {
+            
+            // Minimum mesafe kontrolü
+            int too_close = 0;
+            for(int j = 0; j < peaks_counter; j++) {
+                if(abs(i - qrs_peaks[j]) < min_distance) {
+                    too_close = 1;
+                    break;
+                }
+            }
+            
+            // Peak'i kaydet
+            if(!too_close && peaks_counter < MAX_PEAKS) {
+                qrs_peaks[peaks_counter] = i;
+                peaks_counter++;
+            }
+        }
+    }
+    
+    printf("Bulunan peak sayisi: %d\n", peaks_counter);
+    for (int i = 0; i < peaks_counter; i++) {
+        printf("Peak %d: %d\n", i+1, qrs_peaks[i]);
+    }
+}
+
+void calculate_bpm() {
+    if (peaks_counter < 3) {
+        printf("BPM hesaplamak icin yeterli peak bulunamadi (minimum 3 gerekli)\n");
+        return;
+    }
+    
+    float total_interval = 0.0f;
+    int valid_intervals = 0;
+    
+    printf("\nR-R Intervalleri:\n");
+    
+    // Tüm R-R intervallerini hesapla
+    for (int i = 1; i < peaks_counter; i++) {
+        float interval = (float)(qrs_peaks[i] - qrs_peaks[i-1]) / 128.0f; // saniye cinsinden
+        
+        printf("Interval %d: %.3f s\n", i, interval);
+        
+        // Outlier kontrolü (0.3s - 2.0s arası fizyolojik olarak normal)
+        if (interval > 0.3f && interval < 2.0f) {
+            total_interval += interval;
+            valid_intervals++;
+        } else {
+            printf("  -> Outlier, hesaplamaya katilmadi\n");
+        }
+    }
+    
+    if (valid_intervals > 0) {
+        float avg_rr_interval = total_interval / valid_intervals;
+        float bpm = 60.0f / avg_rr_interval;
+        
+        printf("\nOrtalama R-R interval: %.3f s\n", avg_rr_interval);
+        printf("Hesaplanan BPM: %.1f\n", bpm);
+        
+        // BPM'in mantıklı aralıkta olup olmadığını kontrol et
+        if (bpm < 40.0f || bpm > 200.0f) {
+            printf("UYARI: BPM degeri normal aralikta degil!\n");
+        }
+    } else {
+        printf("Gecerli R-R interval bulunamadi\n");
+    }
+}
+
+void process_ecg_signal() {
+    compute_derivative();
+    
+    compute_squared();
+    
+    compute_mwa();
+    
+    detect_peaks_improved();
+    
+    calculate_bpm();
 }
 
 void my_flush_cb(lv_display_t * display, const lv_area_t * area, uint8_t * px_map)
