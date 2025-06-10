@@ -310,7 +310,7 @@ void calculate_bpm() {
     
     if (valid_intervals > 0) {
         float avg_rr_interval = total_interval / valid_intervals;
-        float bpm = 60.0f / avg_rr_interval;
+        bpm = 60.0f / avg_rr_interval;
         
         printf("\nOrtalama R-R interval: %.3f s\n", avg_rr_interval);
         printf("Hesaplanan BPM: %.1f\n", bpm);
@@ -579,18 +579,7 @@ int main(void)
       // kullan val değişkenini
     }
 
-  compute_derivative();
-  compute_squared();
-  compute_mwa();
-  float average = 0.0f;
-  for(int i = 0; i < SAMPLE_LENGTH; i++)
-      average += mwa[i];
-  average /= SAMPLE_LENGTH;
-  detect_peaks(2);
-
-  /* float period = (qrs_peaks[1] - qrs_peaks[0]) * (128);
-  bpm = (1 / period) * 60; */
-  bpm = 62;
+    process_ecg_signal();
 
   }
   /* USER CODE END 3 */
