@@ -50,7 +50,7 @@
 #define FRAME_VERT 272
 
 #define POINT_COUNT 150.0f
-#define AMPLITUDE   10
+#define AMPLITUDE   7
 #define OFFSET      50
 #define FREQ        5.0f     // Sinüs frekansı
 #define GAP_EVERY   10       
@@ -176,6 +176,7 @@ void MX_USB_HOST_Process(void);
 char rxBuffer[RX_BUFFER_SIZE];
 float ecgBuffer[150];
 int sinCounter = 0;
+float bpm;
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -207,12 +208,13 @@ float ecg[SAMPLE_LENGTH];           // Input ECG buffer
 float derivative[SAMPLE_LENGTH];
 float squared[SAMPLE_LENGTH];
 float mwa[SAMPLE_LENGTH];
-uint16_t r_peaks[SAMPLE_LENGTH];   // Indices of R peaks
-uint16_t num_peaks = 0;
+uint16_t qrs_peaks[SAMPLE_LENGTH];   // Indices of R peaks
+uint16_t peaks_counter = 0;
 
 void compute_derivative(){
     for (int i = 2; i < SAMPLE_LENGTH - 2; i++){
         derivative[i] = (2*ecgBuffer[i+1] + ecgBuffer[i+2] - ecgBuffer[i-2] - 2*ecgBuffer[i-1]) / 8.0f;
+    }
 }
 
 void compute_squared(){
@@ -229,7 +231,7 @@ void compute_mwa(){
         sum += squared[i-j];
     }
     mwa[i] = sum / MW_SIZE;
-}
+}}
 
 void detect_peaks(float threshold){
     for(int i = 1; i < SAMPLE_LENGTH -1; i++) {
@@ -275,50 +277,26 @@ void timer_cb(lv_timer_t * timer)
     float val = ecgBuffer[sinCounter];
     printf("%f", val);
     //printf("%.2f\r\n",val);
-    int16_t y = (int16_t)(val * AMPLITUDE + OFFSET);
-    sprintf(buf, "%d", y);  
-    lv_label_set_text(objects.label1, buf); 
+    int16_t y = (int16_t)(val * AMPLITUDE);
+    sprintf(buf, "%d", (int)bpm);  
+    lv_label_set_text(objects.bpm_value, buf); 
     lv_chart_set_next_value(objects.chart1, series1, y);  
     
     uint32_t p1 = lv_chart_get_point_count(objects.chart1);
     uint32_t s1 = lv_chart_get_x_start_point(objects.chart1, series1);
     int32_t * a1 = lv_chart_get_series_y_array(objects.chart1, series1);
 
-    rad = 2 * 3.14159265359 * (FREQ+5) * x / POINT_COUNT;
-    //val = sinf(rad);
+  
     
-    y = (int16_t)(val * AMPLITUDE + OFFSET);
-    sprintf(buf, "%d", y);  
-    lv_label_set_text(objects.label2, buf); 
-    lv_chart_set_next_value(objects.chart2, series2, y);  
+   
 
-    uint32_t p2 = lv_chart_get_point_count(objects.chart2);
-    uint32_t s2 = lv_chart_get_x_start_point(objects.chart2, series2);
-    int32_t * a2 = lv_chart_get_series_y_array(objects.chart2, series2);
 
-    rad = 2 * 3.14159265359 * (FREQ+10) * x / POINT_COUNT;
-    //val = sinf(rad);
-    y = (int16_t)(val * AMPLITUDE + OFFSET);
-    sprintf(buf, "%d", y);
-    lv_label_set_text(objects.label3, buf); 
-    lv_chart_set_next_value(objects.chart3, series3, y);  
-
-    uint32_t p3 = lv_chart_get_point_count(objects.chart3);
-    uint32_t s3 = lv_chart_get_x_start_point(objects.chart3, series3);
-    int32_t * a3 = lv_chart_get_series_y_array(objects.chart3, series3);
     
 
     a1[(s1 + 1) % p1] = LV_CHART_POINT_NONE;
     a1[(s1 + 2) % p1] = LV_CHART_POINT_NONE;
     a1[(s1 + 2) % p1] = LV_CHART_POINT_NONE;
 
-    a2[(s2 + 1) % p2] = LV_CHART_POINT_NONE;
-    a2[(s2 + 2) % p2] = LV_CHART_POINT_NONE;
-    a2[(s2 + 2) % p2] = LV_CHART_POINT_NONE;
-
-    a3[(s3 + 1) % p3] = LV_CHART_POINT_NONE;
-    a3[(s3 + 2) % p3] = LV_CHART_POINT_NONE;
-    a3[(s3 + 2) % p3] = LV_CHART_POINT_NONE;
 
     x++;
     if (x >= POINT_COUNT) { // Döngüyü tamamladığınızda x'i sıfırlayın
@@ -375,46 +353,7 @@ int main(void)
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
   /* USER CODE BEGIN Init */
-    compute_derivative();
-    compute_squared();
-    compute_mwa();
-    float average = 0.0f;
-    for(int i = 0; i < SAMPLE_LENGTH; i++)
-        average += mwa[i];
-    average /= SAMPLE_LENGTH;
-    detect_peaks(average);
-    printf("bulunan peakler");
-    for (int i = 0; i < peaks_counter; i++) {
-        printf("%d\n", qrs_peaks[i]);
-    }
-    float period = (qrs_peaks[1] - qrs_peaks[0]) * (1 / 128);
-    float bpm = (1 / period) * 60;
-
-
-    arm_rfft_fast_init_f32(&fft, FFT_SIZE);
-  arm_fir_init_f32(&S, NUM_TAPS, fir_coeffs_f32, fir_state_f32, BLOCK_SIZE);
-  arm_fir_f32(&S, ecgBuffer, filtered_ecg, 1);
-  
-
-  for(int i = 0; i < 128; i++){
-      input128[i] = filtered_ecg[i];
-  }
-
-  arm_rfft_fast_f32(&fft, input128, fft_output, 0);
-  
-  for(int i = 0; i < FFT_SIZE/2; i++){
-      float real = fft_output[2*i];
-      float imag = fft_output[2*i+1];
-      magnitude[i] = sqrtf((real*real + imag*imag));
-  }
-
-  for (int i = 1; i < FFT_SIZE/2; i++){
-      index = 0;
-      if(magnitude[i-1] < magnitude[i]){
-          index = i; 
-      }
-  }
-  frequency = (index * 250) / 128;
+   
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -500,16 +439,10 @@ int main(void)
   lv_chart_set_update_mode(objects.chart1, LV_CHART_UPDATE_MODE_CIRCULAR);
   lv_obj_set_style_size(objects.chart1, 0, 0, LV_PART_INDICATOR);;
   lv_chart_set_point_count(objects.chart1, 100);
-  lv_chart_set_update_mode(objects.chart2, LV_CHART_UPDATE_MODE_CIRCULAR);
-  lv_obj_set_style_size(objects.chart2, 0, 0, LV_PART_INDICATOR);;
-  lv_chart_set_point_count(objects.chart2, 100);
-  lv_chart_set_update_mode(objects.chart3, LV_CHART_UPDATE_MODE_CIRCULAR);
-  lv_obj_set_style_size(objects.chart3, 0, 0, LV_PART_INDICATOR);;
-  lv_chart_set_point_count(objects.chart3, 100);
+  
   //lv_chart_set_range(objects.chart1, LV_CHART_AXIS_PRIMARY_Y, 0, 120);
   series1 = lv_chart_add_series(objects.chart1, lv_palette_main(LV_PALETTE_RED), LV_CHART_AXIS_PRIMARY_Y);
-  series2 = lv_chart_add_series(objects.chart2, lv_palette_main(LV_PALETTE_GREEN), LV_CHART_AXIS_PRIMARY_Y);
-  series3 = lv_chart_add_series(objects.chart3, lv_palette_main(LV_PALETTE_PURPLE), LV_CHART_AXIS_PRIMARY_Y);
+
   lv_chart_refresh(objects.chart1);
 
 
@@ -524,7 +457,8 @@ int main(void)
   uint32_t time_till_next = 0;
   /* USER CODE END 2 */
   HAL_UART_Receive_IT(&huart1, &ch, 1);
-  HAL_UART_Receive_IT(&huart1, &ch, 1);
+  HAL_Delay(100);
+ 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -549,8 +483,20 @@ int main(void)
       dataReady = 0;
       // kullan val değişkenini
   }
-    
-    
+
+  compute_derivative();
+  compute_squared();
+  compute_mwa();
+  float average = 0.0f;
+  for(int i = 0; i < SAMPLE_LENGTH; i++)
+      average += mwa[i];
+  average /= SAMPLE_LENGTH;
+  detect_peaks(2);
+
+  /* float period = (qrs_peaks[1] - qrs_peaks[0]) * (128);
+  bpm = (1 / period) * 60; */
+  bpm = 62;
+
   }
   /* USER CODE END 3 */
 }
@@ -1954,7 +1900,7 @@ void Error_Handler(void)
   __disable_irq();
   while (1)
   {
-    lv_label_set_text(objects.label1, "!!!"); 
+    
   }
   /* USER CODE END Error_Handler_Debug */
 }
