@@ -178,6 +178,13 @@ float ecgBuffer[SAMPLE_LENGTH] = {0};
 int sinCounter = 0;
 float bpm;
 float qrs_duration;
+float avg_rr_interval;
+
+lv_chart_series_t * series1;
+
+lv_timer_t * timer;
+int x = 0;
+uint8_t buf[10];
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -190,8 +197,57 @@ float mwa[SAMPLE_LENGTH];
 uint16_t qrs_peaks[SAMPLE_LENGTH];
 uint16_t peaks_counter = 0;
 
+typedef union {
+  uint8_t asWord;
+  struct {
+    uint8_t PRInt_Err   : 1;
+    uint8_t QTInt_Err   : 1;
+    uint8_t QRS_Err     : 1;
+    uint8_t PRSEG_Err   : 1;
+    uint8_t STSEG_Err   : 1;
+    uint8_t BPM_Err     : 1;
+    uint8_t reserved    : 2; 
+  }bits;
+  
+}healthIssues_u;
+
+healthIssues_u healthStatus;
 
 
+
+void checkHealthStatus(){
+  static lv_style_t red_text_style;
+  static lv_style_t green_text_style;
+  static bool styles_initialized = false;
+
+  if (!styles_initialized) {
+      lv_style_init(&red_text_style);
+      lv_style_set_text_color(&red_text_style, lv_color_hex(0xFF0000)); // Kırmızı
+
+      lv_style_init(&green_text_style);
+      lv_style_set_text_color(&green_text_style, lv_color_hex(0x00FF00)); // Yeşil
+
+      styles_initialized = true;
+  }
+
+  
+  // Önceki renk stilini çıkar (yalnızca renk stili)
+  lv_obj_remove_style(objects.status, &red_text_style, LV_PART_MAIN);
+  lv_obj_remove_style(objects.status, &green_text_style, LV_PART_MAIN);
+
+  if (healthStatus.asWord != 0) {
+      lv_led_set_color(objects.led, lv_palette_main(LV_PALETTE_RED));
+      lv_obj_add_style(objects.status, &red_text_style, LV_PART_MAIN);
+      sprintf(buf, "Sick");
+      lv_label_set_text(objects.status, buf);
+  } else {
+      lv_led_set_color(objects.led, lv_palette_main(LV_PALETTE_GREEN));
+      lv_obj_add_style(objects.status, &green_text_style, LV_PART_MAIN);
+      sprintf(buf, "Healthy");
+      lv_label_set_text(objects.status, buf);
+  }
+  printf("Health -> %d \r\n",healthStatus.asWord);
+}
 
 void compute_derivative(){
     for (int i = 2; i < SAMPLE_LENGTH - 2; i++) {
@@ -299,7 +355,7 @@ void calculate_bpm() {
     }
     
     if (valid_intervals > 0) {
-        float avg_rr_interval = total_interval / valid_intervals;
+        avg_rr_interval = total_interval / valid_intervals;
         bpm = 60.0f / avg_rr_interval;
         
         printf("\nOrtalama R-R interval: %.3f s\n", avg_rr_interval);
@@ -308,6 +364,9 @@ void calculate_bpm() {
         // BPM'in mantıklı aralıkta olup olmadığını kontrol et
         if (bpm < 40.0f || bpm > 200.0f) {
             printf("UYARI: BPM degeri normal aralikta degil!\n");
+            healthStatus.bits.BPM_Err = 1;
+        }else{
+          healthStatus.bits.BPM_Err = 0;
         }
     } else {
         printf("Gecerli R-R interval bulunamadi\n");
@@ -338,7 +397,9 @@ void calculate_qrs_interval(void){
         }
         qrs_duration = (float)(s_index - q_index) / 128.0f;
         if(qrs_duration > 0.12f){
-            //sickness
+          healthStatus.bits.QRS_Err = 1;
+        }else{
+          healthStatus.bits.QRS_Err = 0;
         }
     }
 }
@@ -376,12 +437,7 @@ void my_flush_cb(lv_display_t * display, const lv_area_t * area, uint8_t * px_ma
     lv_display_flush_ready(display);
     
 }
-lv_chart_series_t * series1;
-lv_chart_series_t * series2;
-lv_chart_series_t * series3;
-lv_timer_t * timer;
-int x = 0;
-uint8_t buf[10];
+
 
 
 void timer_cb(lv_timer_t * timer)
@@ -525,7 +581,7 @@ int main(void)
   
   lv_chart_set_update_mode(objects.chart1, LV_CHART_UPDATE_MODE_CIRCULAR);
   lv_obj_set_style_size(objects.chart1, 0, 0, LV_PART_INDICATOR);;
-  lv_chart_set_point_count(objects.chart1, 75);
+  lv_chart_set_point_count(objects.chart1, 150);
   
   //lv_chart_set_range(objects.chart1, LV_CHART_AXIS_PRIMARY_Y, 0, 120);
   series1 = lv_chart_add_series(objects.chart1, lv_palette_main(LV_PALETTE_RED), LV_CHART_AXIS_PRIMARY_Y);
@@ -576,9 +632,11 @@ int main(void)
     float screenVal = ecgBuffer[sinCounter];
     
 
-    int16_t y = (int16_t)(screenVal * 30) + 30;
+    int16_t y = (int16_t)(screenVal * 25) + 30;
     sprintf(buf, "%d", (int)bpm);  
-    lv_label_set_text(objects.bpm_value, buf); 
+    lv_label_set_text(objects.bpm_value, buf);
+    sprintf(buf, "%.4f", avg_rr_interval);  
+    lv_label_set_text(objects.rrseg_value_5, buf); 
     sprintf(buf, "%.4f", qrs_duration); 
     lv_label_set_text(objects.qrs_com_value_2,buf);
     lv_chart_set_next_value(objects.chart1, series1, y);  
@@ -602,6 +660,7 @@ int main(void)
 
     if(HAL_GetTick() - processTimer > 1000){
       process_ecg_signal();
+      checkHealthStatus();
       processTimer = HAL_GetTick();
       printf("qrs duration %.5f\r\n",qrs_duration);
     }

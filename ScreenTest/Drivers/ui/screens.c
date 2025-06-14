@@ -26,8 +26,8 @@ void create_screen_main() {
             // chart1
             lv_obj_t *obj = lv_chart_create(parent_obj);
             objects.chart1 = obj;
-            lv_obj_set_pos(obj, 11, 45);
-            lv_obj_set_size(obj, 339, 147);
+            lv_obj_set_pos(obj, 11, 15);
+            lv_obj_set_size(obj, 339, 177);
             lv_obj_set_style_bg_color(obj, lv_color_hex(0xff000000), LV_PART_MAIN | LV_STATE_DEFAULT);
             lv_obj_set_style_border_opa(obj, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
             lv_obj_set_style_line_color(obj, lv_color_hex(0xff000000), LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -174,12 +174,32 @@ void create_screen_main() {
             lv_label_set_text(obj, "000ms");
         }
         {
+            // LED
             lv_obj_t *obj = lv_led_create(parent_obj);
-            objects.obj0 = obj;
+            objects.led = obj;
             lv_obj_set_pos(obj, 436, 216);
             lv_obj_set_size(obj, 32, 32);
             lv_led_set_color(obj, lv_color_hex(0xff00ff03));
             lv_led_set_brightness(obj, 255);
+        }
+        {
+            // RRSegment
+            lv_obj_t *obj = lv_label_create(parent_obj);
+            objects.rr_segment = obj;
+            lv_obj_set_pos(obj, 205, 244);
+            lv_obj_set_size(obj, 97, 20);
+            lv_obj_set_style_text_color(obj, lv_color_hex(0xfffff000), LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_text_align(obj, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_label_set_text(obj, "RR Segment");
+        }
+        {
+            // rrsegValue_5
+            lv_obj_t *obj = lv_label_create(parent_obj);
+            objects.rrseg_value_5 = obj;
+            lv_obj_set_pos(obj, 302, 246);
+            lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+            lv_obj_set_style_text_color(obj, lv_color_hex(0xffffffff), LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_label_set_text(obj, "000ms");
         }
     }
     
