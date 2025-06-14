@@ -179,23 +179,11 @@ char rxBuffer[RX_BUFFER_SIZE];
 /* USER CODE BEGIN 0 */
 
 // fir filter coefficients
-float fir_coeffs_f32[NUM_TAPS] = {
--1.11951795e-04  1.41887686e-03  1.86592777e-03 -6.46433736e-04
- -6.09599105e-03 -9.31113805e-03 -3.11081339e-03  1.16811347e-02
-  2.04652487e-02  5.35656673e-03 -3.23527615e-02 -6.03046484e-02
- -3.32833994e-02  6.66737800e-02  2.03186887e-01  3.01656326e-01
-  3.01656326e-01  2.03186887e-01  6.66737800e-02 -3.32833994e-02
- -6.03046484e-02 -3.23527615e-02  5.35656673e-03  2.04652487e-02
-  1.16811347e-02 -3.11081339e-03 -9.31113805e-03 -6.09599105e-03
- -6.46433736e-04  1.86592777e-03  1.41887686e-03 -1.11951795e-04]
-};
-
 float derivative[SAMPLE_LENGTH];
 float squared[SAMPLE_LENGTH];
 float mwa[SAMPLE_LENGTH];
 uint16_t qrs_peaks[SAMPLE_LENGTH];
 uint16_t peaks_counter = 0;
-// fir filter 
 float ecgBuffer[150];
 
 
@@ -327,6 +315,35 @@ void calculate_bpm() {
     }
 }
 
+void calculate_qrs_interval(void){
+    for(int i = 0; i < peaks_counter; i++){
+        int r_index = qrs_peaks[i];
+
+        int search_range = 15; // +-15 örneğe bakıyoruz
+        int q_start = r_index - search_range;
+        int s_end= r_index + search_range;
+
+        if(q_start < 1 || s_end >= SAMPLE_LENGTH -1) continue;;
+        
+        int q_index = q_start;
+        for(int j = q_start; j < r_index; j++){
+            if(ecgBuffer[j] < ecgBuffer[q_index]{
+                q_index = j;
+            }
+        }
+        int s_index = r_index;
+        for(int j = r_index + 1; j <= s_end; j++){
+            if(ecgBuffer[j] < ecgBuffer[s_index]{
+                s_index = j;
+            }
+        }
+        float qrs_duration = (float)(s_index - q_index) / 128.0f;
+        if(qrs_duration > 0.12f){
+            //sickness
+        }
+    }
+}
+
 void process_ecg_signal() {
     compute_derivative();
     
@@ -337,6 +354,8 @@ void process_ecg_signal() {
     detect_peaks_improved();
     
     calculate_bpm();
+    
+    calculate_qrs_interval();
 }
 
 void my_flush_cb(lv_display_t * display, const lv_area_t * area, uint8_t * px_map)
