@@ -185,8 +185,10 @@ float mwa[SAMPLE_LENGTH];
 uint16_t qrs_peaks[SAMPLE_LENGTH];
 uint16_t peaks_counter = 0;
 float ecgBuffer[150];
-
-
+float p_points[MAX_PEAKS];
+float t_points[MAX_PEAKS];
+float pr_duration;
+float qt_duration;
 
 void compute_derivative(){
     for (int i = 2; i < SAMPLE_LENGTH - 2; i++) {
@@ -327,13 +329,13 @@ void calculate_qrs_interval(void){
         
         int q_index = q_start;
         for(int j = q_start; j < r_index; j++){
-            if(ecgBuffer[j] < ecgBuffer[q_index]{
+            if(ecgBuffer[j] < ecgBuffer[q_index]){
                 q_index = j;
             }
         }
         int s_index = r_index;
         for(int j = r_index + 1; j <= s_end; j++){
-            if(ecgBuffer[j] < ecgBuffer[s_index]{
+            if(ecgBuffer[j] < ecgBuffer[s_index]){
                 s_index = j;
             }
         }
@@ -344,6 +346,79 @@ void calculate_qrs_interval(void){
     }
 }
 
+void calculate_p_t_points(void){
+    for(int i = 0; i < peaks_counter; i++){
+        int r_index = qrs_peaks[i];
+
+        int p_start = r_index - (int)(0.25f * 128);
+        int p_end   = r_index - (int)(0.10f * 128);
+        if(p_start < 1 || p_end >= SAMPLE_LENGTH) {
+            p_points[i] = -1; // geçersiz
+        } else {
+            int max_index = p_start;
+            for(int j = p_start + 1; j <= p_end; j++){
+                if(ecgBuffer[j] > ecgBuffer[max_index]){
+                    max_index = j;
+                }
+            }
+            p_points[i] = max_index;
+        }
+
+        int s_index = r_index;
+        int s_search_end = r_index + (int)(0.1f * 128);
+        if(s_search_end >= SAMPLE_LENGTH) s_search_end = SAMPLE_LENGTH - 1;
+        for(int j = r_index + 1; j <= s_search_end; j++){
+            if(ecgBuffer[j] < ecgBuffer[s_index]){
+                s_index = j;
+            }
+        }
+
+        int t_start = s_index + (int)(0.1f * 128);
+        int t_end   = s_index + (int)(0.4f * 128);
+        if(t_end >= SAMPLE_LENGTH) t_end = SAMPLE_LENGTH - 1;
+        if(t_start >= SAMPLE_LENGTH) {
+            t_points[i] = -1; // geçersiz
+        } else {
+            int max_index = t_start;
+            for(int j = t_start + 1; j <= t_end; j++){
+                if(ecgBuffer[j] > ecgBuffer[max_index]){
+                    max_index = j;
+                }
+            }
+            t_points[i] = max_index;
+        }
+    }
+}
+
+void calculate_pr_intervals(void){
+    for(int i = 0; i < peaks_counter; i++){
+        int r_index = qrs_peaks[i];
+        int p_index = p_points[i];
+
+        if(p_index == -1){
+            continue;
+        }
+        pr_duration= (float) (r_index - p_index) / 128.0f;       
+        if(pr_duration > 0.2f){
+        //hasta
+        }
+    }
+}
+
+void calculate_qt_intervals(void){
+    for(int i = 0; i < peaks_counter; i++){
+        int q_index = qrs_peaks[i];
+        int t_index = t_points[i];
+        
+        if(t_index == -1) {
+            continue;
+        }
+        qt_duration = (float)(q_index - t_index) / 128.0f;
+        if(qt_duration > 0.44f){
+            //hasta
+        }
+    }
+}
 void process_ecg_signal() {
     compute_derivative();
     
@@ -356,6 +431,12 @@ void process_ecg_signal() {
     calculate_bpm();
     
     calculate_qrs_interval();
+
+    calculate_p_t_points();
+
+    calculate_qt_intervals();
+
+    calculate_pr_intervals();
 }
 
 void my_flush_cb(lv_display_t * display, const lv_area_t * area, uint8_t * px_map)
