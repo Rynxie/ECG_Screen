@@ -88,16 +88,6 @@ void create_screen_main() {
             lv_label_set_text(obj, "QT Interval");
         }
         {
-            // PRSegmentLabel
-            lv_obj_t *obj = lv_label_create(parent_obj);
-            objects.pr_segment_label = obj;
-            lv_obj_set_pos(obj, 205, 203);
-            lv_obj_set_size(obj, 97, 20);
-            lv_obj_set_style_text_color(obj, lv_color_hex(0xfffff000), LV_PART_MAIN | LV_STATE_DEFAULT);
-            lv_obj_set_style_text_align(obj, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN | LV_STATE_DEFAULT);
-            lv_label_set_text(obj, "PR Segment");
-        }
-        {
             // QRSLabel
             lv_obj_t *obj = lv_label_create(parent_obj);
             objects.qrs_label = obj;
@@ -108,14 +98,14 @@ void create_screen_main() {
             lv_label_set_text(obj, "QRS Complex");
         }
         {
-            // STSegmentLabel
+            // RRSegmentLabel
             lv_obj_t *obj = lv_label_create(parent_obj);
-            objects.st_segment_label = obj;
+            objects.rr_segment_label = obj;
             lv_obj_set_pos(obj, 205, 222);
             lv_obj_set_size(obj, 97, 20);
             lv_obj_set_style_text_color(obj, lv_color_hex(0xfffff000), LV_PART_MAIN | LV_STATE_DEFAULT);
             lv_obj_set_style_text_align(obj, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN | LV_STATE_DEFAULT);
-            lv_label_set_text(obj, "ST Segment");
+            lv_label_set_text(obj, "RR Segment");
         }
         {
             // Names
@@ -156,50 +146,22 @@ void create_screen_main() {
             lv_label_set_text(obj, "000ms");
         }
         {
-            // prsegValue_3
+            // rrseg_value_5
             lv_obj_t *obj = lv_label_create(parent_obj);
-            objects.prseg_value_3 = obj;
-            lv_obj_set_pos(obj, 302, 204);
-            lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
-            lv_obj_set_style_text_color(obj, lv_color_hex(0xffffffff), LV_PART_MAIN | LV_STATE_DEFAULT);
-            lv_label_set_text(obj, "000ms");
-        }
-        {
-            // stsegValue_4
-            lv_obj_t *obj = lv_label_create(parent_obj);
-            objects.stseg_value_4 = obj;
+            objects.rrseg_value_5 = obj;
             lv_obj_set_pos(obj, 303, 223);
             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
             lv_obj_set_style_text_color(obj, lv_color_hex(0xffffffff), LV_PART_MAIN | LV_STATE_DEFAULT);
             lv_label_set_text(obj, "000ms");
         }
         {
-            // LED
+            // led
             lv_obj_t *obj = lv_led_create(parent_obj);
             objects.led = obj;
             lv_obj_set_pos(obj, 436, 216);
             lv_obj_set_size(obj, 32, 32);
             lv_led_set_color(obj, lv_color_hex(0xff00ff03));
             lv_led_set_brightness(obj, 255);
-        }
-        {
-            // RRSegment
-            lv_obj_t *obj = lv_label_create(parent_obj);
-            objects.rr_segment = obj;
-            lv_obj_set_pos(obj, 205, 244);
-            lv_obj_set_size(obj, 97, 20);
-            lv_obj_set_style_text_color(obj, lv_color_hex(0xfffff000), LV_PART_MAIN | LV_STATE_DEFAULT);
-            lv_obj_set_style_text_align(obj, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN | LV_STATE_DEFAULT);
-            lv_label_set_text(obj, "RR Segment");
-        }
-        {
-            // rrsegValue_5
-            lv_obj_t *obj = lv_label_create(parent_obj);
-            objects.rrseg_value_5 = obj;
-            lv_obj_set_pos(obj, 302, 246);
-            lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
-            lv_obj_set_style_text_color(obj, lv_color_hex(0xffffffff), LV_PART_MAIN | LV_STATE_DEFAULT);
-            lv_label_set_text(obj, "000ms");
         }
     }
     

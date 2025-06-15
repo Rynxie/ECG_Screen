@@ -731,7 +731,7 @@ int main(void)
     sprintf(buf, "%.4f", qt_duration); 
     lv_label_set_text(objects.qt_int_value, buf); 
     sprintf(buf, "%.4f", pr_duration); 
-    lv_label_set_text(objects.prseg_value_3,buf);
+    lv_label_set_text(objects.print_value,buf);
     
     float screenVal = ecgBuffer[sinCounter];
     int16_t y = (int16_t)(screenVal * 25) + 30;

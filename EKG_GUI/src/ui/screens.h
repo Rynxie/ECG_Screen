@@ -15,18 +15,14 @@ typedef struct _objects_t {
     lv_obj_t *status;
     lv_obj_t *pr_label;
     lv_obj_t *qt_label;
-    lv_obj_t *pr_segment_label;
     lv_obj_t *qrs_label;
-    lv_obj_t *st_segment_label;
+    lv_obj_t *rr_segment_label;
     lv_obj_t *names;
     lv_obj_t *print_value;
     lv_obj_t *qt_int_value;
     lv_obj_t *qrs_com_value_2;
-    lv_obj_t *prseg_value_3;
-    lv_obj_t *stseg_value_4;
-    lv_obj_t *led;
-    lv_obj_t *rr_segment;
     lv_obj_t *rrseg_value_5;
+    lv_obj_t *led;
 } objects_t;
 
 extern objects_t objects;
