@@ -463,7 +463,9 @@ void calculate_pr_intervals(void){
         }
         pr_duration= (float) (r_index - p_index) / 128.0f;       
         if(pr_duration > 0.2f){
-        //hasta
+          healthStatus.bits.PRInt_Err = 1;
+        }else{
+          healthStatus.bits.PRInt_Err = 0;
         }
     }
 }
@@ -476,9 +478,11 @@ void calculate_qt_intervals(void){
         if(t_index == -1) {
             continue;
         }
-        qt_duration = (float)(q_index - t_index) / 128.0f;
+        qt_duration = (float)(t_index - q_index) / 128.0f;
         if(qt_duration > 0.44f){
-            //hasta
+          healthStatus.bits.QTInt_Err = 1;
+        }else{
+          healthStatus.bits.QTInt_Err = 0;
         }
     }
 }
@@ -713,7 +717,7 @@ int main(void)
       
 
       
-    float screenVal = ecgBuffer[sinCounter];
+    
     
 
     
@@ -723,12 +727,13 @@ int main(void)
     sprintf(buf, "%.4f", avg_rr_interval);  
     lv_label_set_text(objects.rrseg_value_5, buf); 
     sprintf(buf, "%.4f", qrs_duration); 
-    lv_label_set_text(objects.rrseg_value_5, buf); 
+    lv_label_set_text(objects.qrs_com_value_2, buf); 
     sprintf(buf, "%.4f", qt_duration); 
     lv_label_set_text(objects.qt_int_value, buf); 
     sprintf(buf, "%.4f", pr_duration); 
     lv_label_set_text(objects.prseg_value_3,buf);
     
+    float screenVal = ecgBuffer[sinCounter];
     int16_t y = (int16_t)(screenVal * 25) + 30;
     lv_chart_set_next_value(objects.chart1, series1, y);  
     
