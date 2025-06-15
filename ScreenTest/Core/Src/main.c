@@ -215,6 +215,11 @@ healthIssues_u healthStatus;
 
 
 
+float p_points[MAX_PEAKS];
+float t_points[MAX_PEAKS];
+float pr_duration;
+float qt_duration;
+
 void checkHealthStatus(){
   static lv_style_t red_text_style;
   static lv_style_t green_text_style;
@@ -404,6 +409,79 @@ void calculate_qrs_interval(void){
     }
 }
 
+void calculate_p_t_points(void){
+    for(int i = 0; i < peaks_counter; i++){
+        int r_index = qrs_peaks[i];
+
+        int p_start = r_index - (int)(0.25f * 128);
+        int p_end   = r_index - (int)(0.10f * 128);
+        if(p_start < 1 || p_end >= SAMPLE_LENGTH) {
+            p_points[i] = -1; // geçersiz
+        } else {
+            int max_index = p_start;
+            for(int j = p_start + 1; j <= p_end; j++){
+                if(ecgBuffer[j] > ecgBuffer[max_index]){
+                    max_index = j;
+                }
+            }
+            p_points[i] = max_index;
+        }
+
+        int s_index = r_index;
+        int s_search_end = r_index + (int)(0.1f * 128);
+        if(s_search_end >= SAMPLE_LENGTH) s_search_end = SAMPLE_LENGTH - 1;
+        for(int j = r_index + 1; j <= s_search_end; j++){
+            if(ecgBuffer[j] < ecgBuffer[s_index]){
+                s_index = j;
+            }
+        }
+
+        int t_start = s_index + (int)(0.1f * 128);
+        int t_end   = s_index + (int)(0.4f * 128);
+        if(t_end >= SAMPLE_LENGTH) t_end = SAMPLE_LENGTH - 1;
+        if(t_start >= SAMPLE_LENGTH) {
+            t_points[i] = -1; // geçersiz
+        } else {
+            int max_index = t_start;
+            for(int j = t_start + 1; j <= t_end; j++){
+                if(ecgBuffer[j] > ecgBuffer[max_index]){
+                    max_index = j;
+                }
+            }
+            t_points[i] = max_index;
+        }
+    }
+}
+
+void calculate_pr_intervals(void){
+    for(int i = 0; i < peaks_counter; i++){
+        int r_index = qrs_peaks[i];
+        int p_index = p_points[i];
+
+        if(p_index == -1){
+            continue;
+        }
+        pr_duration= (float) (r_index - p_index) / 128.0f;       
+        if(pr_duration > 0.2f){
+        //hasta
+        }
+    }
+}
+
+void calculate_qt_intervals(void){
+    for(int i = 0; i < peaks_counter; i++){
+        int q_index = qrs_peaks[i];
+        int t_index = t_points[i];
+        
+        if(t_index == -1) {
+            continue;
+        }
+        qt_duration = (float)(q_index - t_index) / 128.0f;
+        if(qt_duration > 0.44f){
+            //hasta
+        }
+    }
+}
 void process_ecg_signal() {
     compute_derivative();
     
@@ -416,6 +494,12 @@ void process_ecg_signal() {
     calculate_bpm();
     
     calculate_qrs_interval();
+
+    calculate_p_t_points();
+
+    calculate_qt_intervals();
+
+    calculate_pr_intervals();
 }
 
 void my_flush_cb(lv_display_t * display, const lv_area_t * area, uint8_t * px_map)
@@ -632,13 +716,20 @@ int main(void)
     float screenVal = ecgBuffer[sinCounter];
     
 
-    int16_t y = (int16_t)(screenVal * 25) + 30;
+    
+    
     sprintf(buf, "%d", (int)bpm);  
     lv_label_set_text(objects.bpm_value, buf);
     sprintf(buf, "%.4f", avg_rr_interval);  
     lv_label_set_text(objects.rrseg_value_5, buf); 
     sprintf(buf, "%.4f", qrs_duration); 
-    lv_label_set_text(objects.qrs_com_value_2,buf);
+    lv_label_set_text(objects.rrseg_value_5, buf); 
+    sprintf(buf, "%.4f", qt_duration); 
+    lv_label_set_text(objects.qt_int_value, buf); 
+    sprintf(buf, "%.4f", pr_duration); 
+    lv_label_set_text(objects.prseg_value_3,buf);
+    
+    int16_t y = (int16_t)(screenVal * 25) + 30;
     lv_chart_set_next_value(objects.chart1, series1, y);  
     
     uint32_t p1 = lv_chart_get_point_count(objects.chart1);
