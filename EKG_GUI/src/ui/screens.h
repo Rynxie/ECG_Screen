@@ -24,7 +24,9 @@ typedef struct _objects_t {
     lv_obj_t *qrs_com_value_2;
     lv_obj_t *prseg_value_3;
     lv_obj_t *stseg_value_4;
-    lv_obj_t *obj0;
+    lv_obj_t *led;
+    lv_obj_t *rr_segment;
+    lv_obj_t *rrseg_value_5;
 } objects_t;
 
 extern objects_t objects;
