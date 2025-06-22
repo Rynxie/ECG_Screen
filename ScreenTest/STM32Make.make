@@ -221,13 +221,17 @@ AS_DEFS =
 
 # C defines
 C_DEFS =  \
+-DARM_MATH_CM7 \
 -DSTM32F746xx \
+-DUSE_ARM_MATH \
 -DUSE_HAL_DRIVER
 
 
 # CXX defines
 CXX_DEFS =  \
+-DARM_MATH_CM7 \
 -DSTM32F746xx \
+-DUSE_ARM_MATH \
 -DUSE_HAL_DRIVER
 
 
@@ -243,6 +247,7 @@ C_INCLUDES =  \
 -I-type \
 -ICore/Inc \
 -IDrivers/BSP/ \
+-IDrivers/CMSIS/DSP/Include \
 -IDrivers/CMSIS/Device/ST/STM32F7xx/Include \
 -IDrivers/CMSIS/Include \
 -IDrivers/STM32F7xx_HAL_Driver/Inc \

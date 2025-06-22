@@ -64,7 +64,7 @@
 #define FS_SIZE 128//fast fouirer transorm
 
 #define SAMPLE_LENGTH 409
-#define SAMPLE_RATE 128
+#define SAMPLE_RATE 80
 #define MW_SIZE 15
 #define MAX_PEAKS 50
 /* USER CODE END PD */
@@ -346,17 +346,17 @@ void calculate_bpm() {
     
     // Tüm R-R intervallerini hesapla
     for (int i = 1; i < peaks_counter; i++) {
-        float interval = (float)(qrs_peaks[i] - qrs_peaks[i-1]) / 128.0f; // saniye cinsinden
+        float interval = (float)(qrs_peaks[i] - qrs_peaks[i-1]) / SAMPLE_RATE; // saniye cinsinden
         
         printf("Interval %d: %.3f s\n", i, interval);
         
         // Outlier kontrolü (0.3s - 2.0s arası fizyolojik olarak normal)
-        if (interval > 0.3f && interval < 2.0f) {
+        //if (interval > 0.3f && interval < 2.0f) {
             total_interval += interval;
             valid_intervals++;
-        } else {
-            printf("  -> Outlier, hesaplamaya katilmadi\n");
-        }
+        //} else {
+            //printf("  -> Outlier, hesaplamaya katilmadi\n");
+        //}
     }
     
     if (valid_intervals > 0) {
